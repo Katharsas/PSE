@@ -1,4 +1,4 @@
-## Nachrichten-Suchmaschine
+﻿## Nachrichten-Suchmaschinek
 
 #### Für das Nachrichtenarchiv soll eine Suchmaschine entwickelt werden, mit deren Hilfe die folgenden Suchkriterien unterstützt werden:
 
