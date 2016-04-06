@@ -1,0 +1,13 @@
+Code Conventions:
+
+http://www.oracle.com/technetwork/java/index-135089.html
+
+Javadoc Tool
+
+http://www.oracle.com/technetwork/articles/java/index-jsp-135444.html
+
+Tutorial Javadoc
+
+http://openbook.rheinwerk-verlag.de/javainsel9/javainsel_05_014.htm 
+
+

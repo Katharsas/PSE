@@ -1,0 +1,10 @@
+Textdokumentation, Tabellen:
+Google Docs
+https://drive.google.com/folderview?id=0ByGtVjOemF5Va1RaVEFCSmk3dDA&usp=sharing_eid&ts=570502ef
+
+Versionskontrolle
+Github, Zenhub
+
+Git Client:
+SourceTree
+
