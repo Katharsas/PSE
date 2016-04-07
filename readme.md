@@ -1,4 +1,4 @@
-﻿## Nachrichten-Suchmaschinek
+﻿## Nachrichten-Suchmaschine
 
 #### Für das Nachrichtenarchiv soll eine Suchmaschine entwickelt werden, mit deren Hilfe die folgenden Suchkriterien unterstützt werden:
 
@@ -17,7 +17,7 @@ Dazu alle neuen Nachrichten über den Subscription-Mechanismus des Nachrichtenar
 ```Task 2 - Filtering```
 
 Da häufig Quellen gleiche Nachrichten anbieten, sollen ähnliche Nachrichten nicht in den Index eingefügt werden. 
-Hierzu soll ein effizienter Ansatz implementiert werden, der den Suchindex nutzt.
+Hierzu soll ein effizienter   Ansatz implementiert werden, der den Suchindex nutzt.
 
 > TODO: Finde Methode um "Ähnlichkeit" von Artikeln festzustellen (Häufigkeit von Wörtern, ... nutze unsere Suchmaschine dazu?)
 
