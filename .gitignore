@@ -224,3 +224,6 @@ pip-log.txt
 #############
 ## Custom
 #############
+
+*.class
+RSSCrawler/archive
