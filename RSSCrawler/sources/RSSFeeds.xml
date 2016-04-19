@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ASCII"?>
+
+<sites
+  xmlns="http://www.iisys.de/mmis/rssapp"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.iisys.de/mmis/rssapp RSSFeeds.xsd">
+
+  <address ttl="2" topic="politics" language="de" link="http://www.spiegel.de/politik/index.rss"/>
+  <address ttl="2" topic="politics" language="de" link="http://newsfeed.zeit.de/politik/index"/>
+  <address ttl="2" topic="politics" language="en" link="http://rss.cnn.com/rss/edition.rss"/>
+</sites>
+
+
+
