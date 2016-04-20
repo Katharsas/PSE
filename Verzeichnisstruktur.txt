@@ -1,0 +1,25 @@
+doc
+RSSCrawler
+ESFeeder
+	archive
+	src
+		main
+			java
+		test
+			java
+	doc
+	pom.xml - Maven build Konfigurationsdatei
+ConsumerWebApp
+	src
+		main
+			java - java server code (compiled to WEB-INF/classes folder)
+			resources - java server conf (compiled to WEB-INF/classes folder)
+			frontend - frontend code (compiled to webapp/resources folder)
+			webapp
+				web.xml
+				WEB-INF - hidden server files
+				resources - public server files
+		test
+			java
+	doc
+	pom.xml - Maven Konfigurationsdatei
