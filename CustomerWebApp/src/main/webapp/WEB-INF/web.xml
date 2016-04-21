@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xsi:schemaLocation="
+		http://java.sun.com/xml/ns/javaee
+		http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<!-- Application Context Configuration -->
+	
+	<!-- This is the configuration for root/parent container for all servlets.
+		This configuration can be found in java class cwa.ApplicationConfiguration.
+		Holds all data that is shared by the servlets or that must be accessible 
+		to Spring Security. So this context holds DAOs and Services. -->
+	
+	<!-- Bootstrap the root application context as usual using ContextLoaderListener -->
+	<listener>
+	    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener>
+
+	<!-- Configure ContextLoaderListener to use AnnotationConfigWebApplicationContext 
+		instead of the default XmlWebApplicationContext (use java-config, not xml) -->
+	<context-param>
+		<param-name>contextClass</param-name>
+		<param-value>
+	        org.springframework.web.context.support.AnnotationConfigWebApplicationContext
+	    </param-value>
+	</context-param>
+	<!-- Define location of config class -->
+	<context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>cwa</param-value>
+	</context-param>
+
+
+	<!-- Encoding Filter
+		Force UTF-8 encoding. If not used, the server will 
+		not decode received data correctly. -->
+
+	<filter>
+		<filter-name>characterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+		<init-param>
+			<param-name>forceEncoding</param-name>
+			<param-value>true</param-value>
+		</init-param>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>characterEncodingFilter</filter-name>
+		<url-pattern>*</url-pattern>
+	</filter-mapping>
+
+
+	<!-- DispatcherServlet Configuration for the single servlet used in this 
+		project. Servlets are configured in <servlet-name>-servlet.xml. So in this 
+		case the servlet is configured in GMM-servlet.xml -->
+
+	<servlet>
+		<servlet-name>cwa</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>cwa</servlet-name>
+		<url-pattern>/</url-pattern>
+	</servlet-mapping>
+
+</web-app>
