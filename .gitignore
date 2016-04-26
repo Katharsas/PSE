@@ -226,5 +226,6 @@ pip-log.txt
 #############
 
 *.class
-/RSSCrawler/archive
-!/ESServer/*
+!/ESServer/bin/
+/ESServer/data/
+/RSSCrawler/archive/
