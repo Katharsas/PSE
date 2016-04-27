@@ -1,0 +1,18 @@
+business (Wirtschaft)
+career (Beruf & Chance)
+computer 
+culture (Feuilleton)
+entertainment
+finance
+health
+lifestyle
+mobility (Auto)
+opinion
+politics
+science (Wissen
+society (Gesellschaft)
+sport
+study
+technology
+travel
+

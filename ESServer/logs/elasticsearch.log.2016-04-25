@@ -1,0 +1,18 @@
+[2016-04-25 16:14:40,464][INFO ][node                     ] [Frenzy] version[2.2.0], pid[832], build[8ff36d1/2016-01-27T13:32:39Z]
+[2016-04-25 16:14:40,464][INFO ][node                     ] [Frenzy] initializing ...
+[2016-04-25 16:14:41,244][INFO ][plugins                  ] [Frenzy] modules [lang-expression, lang-groovy], plugins [], sites []
+[2016-04-25 16:14:41,284][INFO ][env                      ] [Frenzy] using [1] data paths, mounts [[(C:)]], net usable_space [288.8gb], net total_space [465.6gb], spins? [unknown], types [NTFS]
+[2016-04-25 16:14:41,284][INFO ][env                      ] [Frenzy] heap size [910.5mb], compressed ordinary object pointers [true]
+[2016-04-25 16:14:44,246][INFO ][node                     ] [Frenzy] initialized
+[2016-04-25 16:14:44,246][INFO ][node                     ] [Frenzy] starting ...
+[2016-04-25 16:14:44,596][INFO ][transport                ] [Frenzy] publish_address {127.0.0.1:9300}, bound_addresses {127.0.0.1:9300}, {[::1]:9300}
+[2016-04-25 16:14:44,606][INFO ][discovery                ] [Frenzy] elasticsearch/UHv07t8tS8qTVrIRJanjiQ
+[2016-04-25 16:14:48,686][INFO ][cluster.service          ] [Frenzy] new_master {Frenzy}{UHv07t8tS8qTVrIRJanjiQ}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-join(elected_as_master, [0] joins received)
+[2016-04-25 16:14:48,796][INFO ][gateway                  ] [Frenzy] recovered [0] indices into cluster_state
+[2016-04-25 16:14:48,896][INFO ][http                     ] [Frenzy] publish_address {127.0.0.1:9200}, bound_addresses {127.0.0.1:9200}, {[::1]:9200}
+[2016-04-25 16:14:48,896][INFO ][node                     ] [Frenzy] started
+[2016-04-25 16:16:28,508][INFO ][bootstrap                ] running graceful exit on windows
+[2016-04-25 16:16:28,508][INFO ][node                     ] [Frenzy] stopping ...
+[2016-04-25 16:16:28,544][INFO ][node                     ] [Frenzy] stopped
+[2016-04-25 16:16:28,544][INFO ][node                     ] [Frenzy] closing ...
+[2016-04-25 16:16:28,551][INFO ][node                     ] [Frenzy] closed

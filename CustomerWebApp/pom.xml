@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.hof-university.pse</groupId>
+	<artifactId>cwa</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.0-SNAPSHOT</version>
+	<name>CustomerWebApp</name>
+	<url>https://github.com/Katharsas/PSE</url>
+	
+	<pluginRepositories>
+		<pluginRepository>
+			<id>apache.snapshots</id>
+			<name>Apache Snapshots</name>
+			<url>http://repository.apache.org/snapshots</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<!-- 
+	
+		Maven commands used for building/testing/running etc.
+		#######################################################################
+		
+		1. Build & Run locally with embedded Tomcat:
+		maven tomcat7:run
+		
+		2. Build executable jar file with embedded Tomcat:
+		maven package
+		
+		3. Build & Deploy webapp war to external Tomcat7 using web interface:
+		maven tomcat7:deploy
+		
+		
+		Notes:
+		- SASS/JS Compiling will work automatically in Eclipse (triggered by incremental building)
+		- You may want to clear external Tomcat before deploying or redeploying.
+		
+	 -->
+
+	<properties>
+		<org.springframework.version>4.2.0.RELEASE</org.springframework.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<!-- Tomcat7-Maven-Plugin only works with tomcat 7, dont even try 8+ -->
+		<!-- In the long run, the plugin should be replaced -->
+		<tomcat.version>7.0.68</tomcat.version>
+	</properties>
+
+	<dependencies>
+		<!-- Thymeleaf -->
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf</artifactId>
+			<version>3.0.0.BETA03</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring4</artifactId>
+			<version>3.0.0.BETA03</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Java EE -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>3.0.1</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Tomcat stuff -->
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-juli</artifactId>
+			<version>${tomcat.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<!-- Logging: Bridge to slf4j -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>jcl-over-slf4j</artifactId>
+			<version>1.7.21</version>
+		</dependency>
+		<!-- Logging: Logback, bridge includes later slf4j-api than Logback -->
+		<dependency>
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.1.3</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<!-- Spring Framework -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-messaging</artifactId>
+			<version>${org.springframework.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- Building with embedded Server/Deploying to local Server -->
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat7-maven-plugin</artifactId>
+					<version>2.3-SNAPSHOT</version>
+					<!-- Overwrite dependencies to effectivly set version of embedded tomcat server -->
+					<!-- Setting version to 8+ will most likely not work. -->
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.tomcat.embed</groupId>
+							<artifactId>tomcat-embed-core</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-util</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-coyote</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-api</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-jdbc</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-dbcp</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-servlet-api</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-jsp-api</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-jasper</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-jasper-el</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-el-api</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-catalina</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-tribes</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-catalina-ha</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-annotations-api</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat</groupId>
+							<artifactId>tomcat-juli</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat.embed</groupId>
+							<artifactId>tomcat-embed-logging-juli</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat.embed</groupId>
+							<artifactId>tomcat-embed-logging-log4j</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+						<dependency>
+							<groupId>org.apache.tomcat.embed</groupId>
+							<artifactId>tomcat-embed-websocket</artifactId>
+							<version>${tomcat.version}</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+		<plugins>
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<configuration>
+					<path>/CWA</path>
+					<port>8080</port>
+					<encoding>UTF-8</encoding>
+				</configuration>
+				<executions>
+					<execution>
+						<id>tomcat-run</id>
+						<goals>
+							<goal>exec-war-only</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+								<path>/CWA</path>                              
+                                <attachartifactclassifier>exec-war</attachartifactclassifier>
+                                <attachartifactclassifiertype>jar</attachartifactclassifiertype>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.1</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			    
+		</plugins>
+	</build>
+</project>

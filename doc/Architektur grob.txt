@@ -1,22 +1,28 @@
 Unabhängige Programme:
 
-Crawler Server
 -------------------
+Crawler Anwendung (RSSCrawler)
+===
 - benötigt Konfiguration & RSS-Feed links (vorgegeben)
 -> erzeugt xml Files
 
-
-Custom Java Servlet
 -------------------
-- Übergibt xml-Pfade an Elasticsearch, um Index zu erzeugen
+ElasticSearch Server (ESServer)
+===
+- ElasticSearch Cluster Server (mit Lucene DB) bietet REST-API zur Kommunikation an.
+
+-------------------
+Custom Java Anwendung (ESFeeder)
+===
+- Übergibt xml-Inhalte an ESServer über Java-API, um Index & DB zu erzeugen
 - prüft den Index, entfernt zu ähnliche Einträge aus dem Index
 
-
-Elasticseach Server
 -------------------
-Bietet Java-API (für Index Erstellung) und REST-API für Datenauslieferung.
+Client Servlet (CustomerWebApp)
+===
+- Holt/Sendet Suchanfragen/-ergebnisse vom ESServer über Java-API
+- Liefert Website sowie Suchergebnisse an Website 
 
-
-Client Servlet
 -------------------
-Liefert Website, welche Rest-API von Elasticsearch queryd.
+Notes:
+- Elasticsearch Version: 2.2.0
