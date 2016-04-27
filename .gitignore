@@ -225,10 +225,6 @@ pip-log.txt
 ## Neatbeans
 #############
 
-*.class
-!/ESServer/bin/
-/ESServer/data/
-/RSSCrawler/archive/
 nbproject/
 build/
 nbbuild/
@@ -240,3 +236,8 @@ nb-configuration.xml
 #############
 ## Custom
 #############
+
+*.class
+!/ESServer/bin/
+/ESServer/data/
+/RSSCrawler/archive/
