@@ -241,3 +241,8 @@ nb-configuration.xml
 !/ESServer/bin/
 /ESServer/data/
 /RSSCrawler/archive/
+.vpprefdata/
+*.vpp~*
+*.vpp.working
+*.vpp.working-journal
+*.lock

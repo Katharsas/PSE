@@ -9,7 +9,7 @@ Crawler Anwendung (RSSCrawler)
 -------------------
 ElasticSearch Server (ESServer)
 ===
-- ElasticSearch Cluster Server (mit Lucene DB) bietet REST-API zur Kommunikation an.
+- ElasticSearch Cluster Server (mit Lucene DB) bietet REST-API (nur im internen Netz, Sicherheit!) zur Kommunikation an.
 
 -------------------
 Custom Java Anwendung (ESFeeder)
@@ -20,6 +20,7 @@ Custom Java Anwendung (ESFeeder)
 -------------------
 Client Servlet (CustomerWebApp)
 ===
+- Webschnittstelle zum öffentlichen Netz
 - Holt/Sendet Suchanfragen/-ergebnisse vom ESServer über Java-API
 - Liefert Website sowie Suchergebnisse an Website 
 
