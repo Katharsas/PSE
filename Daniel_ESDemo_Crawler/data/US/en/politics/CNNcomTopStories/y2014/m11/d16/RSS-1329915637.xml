@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>China's new 'stealth' fighter</title>
+<guid>http://edition.cnn.com/2014/11/13/world/asia/china-stealth-fighter-analysis/index.html</guid>
+<link>http://edition.cnn.com/2014/11/13/world/asia/china-stealth-fighter-analysis/index.html?eref=edition</link>
+<description>Zhuhai's Air Show has always been a venue for surprises, usually first-time showings of advanced Chinese military hardware. </description>
+<pubDate>Sat, 15 Nov 2014 22:55:54 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141113190731-china-jet-fc-31-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141113190731-china-jet-fc-31-top-tease.jpg" width="90"/>
+<ExtractedText>Just how good is China's new 'stealth' fighter?
+By Reuben F. Johnson, special for CNN
+November 14, 2014 -- Updated 0019 GMT (0819 HKT)
+STORY HIGHLIGHTS
+Air show provides rare glimpse of China's home-grown military hardware
+China has made much progress in weapons technology, but doubts about battlefield readiness
+Much interest in its new Shenyang FC-31 fighter, which is said to be "stealthy"
+But some analysts believe it may be overweight and underpowered
+Editor's note: Reuben F. Johnson is a correspondent for IHS Jane's Defence Weekly , a publication devoted to defense and security intelligence and analysis. The views expressed are his own.
+Zhuhai, Guangdong Province (CNN) -- Zhuhai's Air Show has always been a venue for surprises, usually first-time showings of advanced Chinese military hardware.
+China's pathologically secretive defense industry normally shows nothing official of its weapons programs to anyone, which makes the biennial Zhuhai expo the only chance to see what its weapons makers have been up to.
+Much has been written in the past few years about China's defense sector developing increasingly more capable weapons systems that approach the capability of their U.S. and European analogues.
+Some Chinese weapons, such as a full range of anti-ship and air-to-surface missiles, seem to show that its military -- the People's Liberation Army (PLA) -- is equipped to challenge U.S. Navy carrier battle groups and potentially deny the U.S. the ability to operate in certain areas of the Pacific. But questions remain about how battle-ready the PLA is and whether it can function in a modern, network-centric warfare environment.
+Battlefield autonomy
+Today's battlefield operates on the premise that autonomy should be pushed down to the lowest level -- even down to the man in the field -- because time is of the essence. Getting inside of the enemy's "decision loop" is the key to victory. But, giving individual units the ability to make their own tactical decisions without their orders being delivered from several layers up the chain of command is an anathema to the "control uber alles" mentality of the Chinese leadership.
+ China's Shenyang FC-31 fighter
+China's Shenyang FC-31 fighter
+A Chinese J-31 stealth fighter jet takes off for a demonstration flight on November 9, in Zhuhai, China. China's air force is set to debut its newest fighter jet this week at Airshow China. The air show, held once every two years, aims to showcase the country's aviation power and this year coincides with a meeting in Beijing of leaders of the Asia-Pacific Economic Cooperation forum, including U.S. President Barack Obama.
+J-10 fighter jets of the Bayi Aerobatic Team of the Peoples Liberation Army Air Force perform during the air show on Tuesday, November 11, 2014.
+Pilots climb into a J-10 fighter jet on Tuesday, November 11, 2014.
+A guard stands by a Chinese-made drone at Airshow China on Tuesday, November 11.
+Chinese-made J-6 Bomber on display at Airshow China on Tuesday, November 11.
+J-10 fighter jets perform at the Airshow China 2014 in Zhuhai, south China's Guangdong province on Tuesday, November 11.
+A new C919 airliner is celebrated on July 31 in Chengdu, China. The 168-seat C919, being built by the Shanghai-based Commercial Aircraft Corporation of China, is supposed to someday be the nucleus of a fleet of Chinese-built passenger aircraft.
+Currently, at least two new Chinese fighter jets are being developed, including the Chengdu J-20, a successor to the Chengdu J-10 fighter jet shown in Beijing on December 4, 2013.
+China builds fleets of fighters and bombers almost exclusively for the People's Liberation Army and with very few foreign clients. Here, a Chinese-made Shenyang fighter jet is on display at the People's Liberation Army Aviation Museum in Beijing on December 4, 2013.
+The Yi Long drone by the China Aviation Industry Corp. is shown at the 2012 air show.
+A soldier stands guard next to planes displayed during the airshow on November 13, 2012. While most Western aircraft manufacturers stay aloft thanks to sales of commercial jets, China's state-funded aerospace industry is heavily geared toward the military.
+China's J-10 fighter jets perform during the 2010 airshow on November 17, 2010. The day before the show China won orders for 100 of its large, domestically built passenger jets, challenging industry giants Airbus and Boeing in what will soon be the world's largest aviation market.
+China takes flight
+</ExtractedText>
+</item>
+</channel>
+</rss>

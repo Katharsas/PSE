@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 09:49:44 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_entertainment" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_entertainment"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Happy 50th, 'Rudolph!'</title>
+<guid isPermaLink="false">http://www.cnn.com/2014/12/05/showbiz/rudolph-the-red-nosed-reindeer-anniversary/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_entertainment/~3/tcQy_KRxWjM/index.html</link>
+<description>The longest-running holiday special still has a very shiny nose.&lt;img src="//feeds.feedburner.com/~r/rss/edition_entertainment/~4/tcQy_KRxWjM" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Fri, 05 Dec 2014 10:15:59 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141204135426-01-holiday-tv-and-movies-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141204135426-01-holiday-tv-and-movies-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://www.cnn.com/2014/12/05/showbiz/rudolph-the-red-nosed-reindeer-anniversary/index.html</feedburner:origLink>
+<ExtractedText>Happy 50th, 'Rudolph the Red-Nosed Reindeer'!
+By Lisa Respers France, CNN
+December 5, 2014 -- Updated 1302 GMT (2102 HKT)
+"Rudolph the Red-Nosed Reindeer" (1964): It's been 50 years since Rankin/Bass's animated "Rudolph the Red-Nosed Reindeer" premiered on NBC, and it's still just as beloved. It doesn't quite feel like the holidays until we spot this old-school stop-motion special on TV, and it's hands-down one of our holiday favorites. Here are nine more seasonal TV shows and movies that are must-sees every December.
+"A Charlie Brown Christmas" (1965): It's not uncommon to get the blues amid all the Christmas cheer, and if anyone knows that well, it's Charlie Brown. This story of bypassing the commercialization of the holidays in favor of something more uplifting has become adored by generations and will celebrate its own 50th anniversary next year.
+"How the Grinch Stole Christmas" (1966): No offense to the 2000 film, but when we want to see an adaptation of this Dr. Seuss classic, we stick with the original, animated version.
+"Santa Claus Is Comin' to Town" (1970): With Fred Astaire narrating and Mickey Rooney voicing Kris Kringle -- a.k.a. Santa Claus -- this 1970 special never fails to make us nostalgic. And just like "Rudolph the Red-Nosed Reindeer," it's done in Rankin/Bass' quaint stop-motion style.
+"Frosty the Snowman" (1969): For a lot of kids, the dream of seeing a hand-crafted snowman come to life can be traced directly to another Rankin/Bass special, "Frosty the Snowman."
+"It's a Wonderful Life" (1946): It doesn't matter how often you rewatch "It's A Wonderful Life"; that fantastic, emotional ending's going to get you every time. Beyond being a tradition during the holiday season, this is also a sparkling example of top-notch movie-making.
+"A Christmas Story" (1983): This enduring '80s comedy has taught us three things: 1. Never lick a flagpole. 2. "You'll shoot your eye out!" 3. We're incapable of celebrating the holidays until we've watched this movie at least once. OK, more like twice.
+"Miracle on 34th Street" (1947): After so many decades, this is still a mainstay each holiday season. (And that's even after a 1994 remake.) Starring Maureen O'Hara, John Payne and a young Natalie Wood, this story never loses its magic.
+"Home Alone" (1990): If you think about it, this definitive Macaulay Culkin film is really kind of disturbing. What family gets so busy that they forget a kid over the holidays?! But what it lacks in human decency, "Home Alone" more than makes up in charm and humor. Plus, it's educational -- who among us hasn't tried to pull off some of those robber-catching traps?
+"The Preacher's Wife" (1996): This heartwarming movie had us at Denzel Washington and Whitney Houston, but the story's really good, too. Washington plays a suave angel who shows up to help a struggling preacher (Courtney B. Vance) who has disconnected from his wife (Houston) and young son during the Christmas season.
+HIDE CAPTION
+</ExtractedText>
+</item>
+</channel>
+</rss>

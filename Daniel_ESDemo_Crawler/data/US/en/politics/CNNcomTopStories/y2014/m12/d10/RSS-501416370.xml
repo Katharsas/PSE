@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Heartbeat log-in </title>
+<guid>http://edition.cnn.com/2014/12/10/business/body-password-cybersecurity/index.html</guid>
+<link>http://edition.cnn.com/2014/12/10/business/body-password-cybersecurity/index.html?eref=edition</link>
+<description>Thought your fingerprint was secure? Not so. Check out the new technology to protect your identity. </description>
+<pubDate>Wed, 10 Dec 2014 09:44:00 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141208165519-bpay-cybersecurity-2-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141208165519-bpay-cybersecurity-2-top-tease.jpg" width="90"/>
+<ExtractedText>How your heartbeat will make passwords obsolete
+By Tracey Hobbs and Monique Todd, for CNN
+December 10, 2014 -- Updated 1313 GMT (2113 HKT)
+The rise of social media and mobile devices mean businesses are more vulnerable to hacking. In a bid to keep information secure, a new wave of body-centric devices are replacing passwords. The Nymi, pictured, authenticates identity by measuring your heartbeat.
+Created by biomentrics technology company Bionym, The Nymi has a built in sensor which detects the unique electrical pulse produced by your heartbeat. "By using this type of technology we can establish a very high level of trust because it's so closely tied to the body" says Kevin Martin, CEO &amp; founder of Bionym.
+Unveiled earlier this year by eyeLock -- an iris based identity technology company -- Myris is a palm-sized device that scans the unique features of your eye.
+Fitted with a small mirror and camera, the Myris is able to scan the unique colors and vein patterns in your iris. Storing this information within its hardware, the Myris is able to accurately identify it's user. EyeLock even claims that the device cannot be fooled by a video or photograph of your eye.
+Using palm vein recognition, Quixter identifies users by scanning vein patterns with an infrared light. Quixter only works when blood is flowing through the veins, so there's no need to worry about someone cutting your hand off.
+An identity and access management platform for the 'post-password era', LaunchKey is part of a wave of mobile-based authentication apps that do away with passwords - most of which are tied to personal information.
+The launchKey app allows for password-free login capabilities on your mobile phone, allowing users to access websites and applications by simply swiping the mobile phone interface. Security is provided by the simple fact that the mobile phone is in your possession - a key deterrent for hackers.
+In light of these more secure developments, it looks as though fingerprint identification will be a thing of the past. Seeing as our fingerprints are left on a variety of surfaces on a day to day basis, iris scanners and heartbeat monitors could be a promising alternative.
+Whilst identity authentication is becoming more secure, many companies are looking to streamline transactions. Bacrlaycard's bPay wristband does away with PIN numbers and credit cards, allowing wearers to make contactless payments for items under £20.
+Does your phone double up as a travel card? Digital communications company EE announced earlier this year that customers can use their mobile devices to travel on London bus routes.
+HIDE CAPTION
+Use your pulse as your password?
+The Nymi
+</ExtractedText>
+</item>
+</channel>
+</rss>

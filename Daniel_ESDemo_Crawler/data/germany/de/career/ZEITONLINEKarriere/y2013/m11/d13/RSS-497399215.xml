@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Karriere</title>
+<description>Für Ein-, Um- und Aufsteiger: Das Karriereportal für Berufsanfänger, Quereinsteiger und die eigene Karriereleiter. Aktuelle Informationen rund um den Beruf.</description>
+<pubDate>Sat, 16 Nov 2013 12:14:52 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:55:49 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/karriere/index</link>
+<atom:link href="http://newsfeed.zeit.de/karriere/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Karriere</title>
+      <link>http://www.zeit.de/karriere/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/karriere/beruf/2013-11/urteil-anspruch-weihnachtsgeld</link>
+      <guid>http://www.zeit.de/karriere/beruf/2013-11/urteil-anspruch-weihnachtsgeld</guid>
+      <category>Karriere</category>
+      <title>Urteil: Weihnachtsgeld auch bei vorzeitiger Kündigung möglich</title>
+      <description>&lt;a href="http://www.zeit.de/karriere/beruf/2013-11/urteil-anspruch-weihnachtsgeld"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/karriere/beruf/2013-11/weihnachten/weihnachten-148x84.jpg"/&gt;&lt;/a&gt; Kündigt ein Mitarbeiter im laufenden Jahr, kann er dennoch Anspruch auf Weihnachtsgeld haben. Das urteilte das Bundesarbeitsgericht. Es kommt aber auf die Umstände an.</description>
+      <dc:creator>ZEIT ONLINE : Karriere</dc:creator>
+      <pubDate>Wed, 13 Nov 2013 18:19:26 GMT</pubDate>
+    <ExtractedText>Urteil: Weihnachtsgeld auch bei vorzeitiger Kündigung möglich
+Urteil: Weihnachtsgeld auch bei vorzeitiger Kündigung möglich
+Kündigt ein Mitarbeiter im laufenden Jahr, kann er dennoch Anspruch auf Weihnachtsgeld haben. Das urteilte das Bundesarbeitsgericht. Es kommt aber auf die Umstände an.
+13. November 2013  19:18 Uhr 
+Auch wenn Mitarbeiter vor Jahresende kündigen, können sie unter bestimmten Umständen Anspruch auf einen Teil des Weihnachtsgeldes haben . Dies ist etwa dann der Fall, wenn die Sonderzahlungen zusätzlich zur Belohnung für die  Betriebstreue auch eine monatlich anteilige Vergütung für erbrachte Arbeitsleistungen beinhalten. Das entschied das Bundesarbeitsgericht  (BAG) in einem am Mittwoch in Erfurt verkündeten Urteil. Solche  Sonderzahlungen dürften wegen ihres "Mischcharakters" nicht von einem  Stichtag zum Jahresende abhängig gemacht werden, hieß es zur Begründung  ( Az. 10 AZR 848/12 ).
+Das Urteil beziehe sich auf frei ausgehandelte Arbeitsverträge,  sagte Gerichtssprecherin Inken Gallner. Zu den Auswirkungen auf  Tarifverträge hätten sich die Richter nicht geäußert.
+Anzeige
+In dem  vorliegenden Fall hatte ein Controller eines Verlag in Frankfurt am Main  die Weihnachtsgratifikation für das Jahr 2010 eingeklagt. Er hatte  zuvor zum 30. September 2010 gekündigt. Der Mann forderte die anteilige  (9/12) Sonderzahlung und scheiterte damit in den Vorinstanzen. Nun verurteilten die Erfurter Richter den Verlag auf Zahlung des Weihnachtsgeldes in Höhe von rund 2.300 Euro.
+Der Verlag hatte laut Gericht in seinen Richtlinien bestimmt,  dass Mitarbeiter in einem zum Jahresende ungekündigten Arbeitsverhältnis "für jeden Kalendermonat mit einer bezahlten Arbeitsleistung ein Zwölftel des Bruttomonatsgehalts" als sogenannte Weihnachtsgratifikation  erhalten sollten. Im Lauf des Jahres eintretende Beschäftigte erhielten  die Sonderzahlung anteilig. 
+So sollten einerseits die Mitarbeiter an das Unternehmen über das Jahresende hinaus gebunden werden und die  Betriebstreue somit belohnt werden. Dem Gericht zufolge diene die Vergütung allerdings auch der im Laufe des Jahres geleisteten Arbeit. Daher entziehe die Stichtagsregelung zum Jahresende dem Arbeitnehmer, der im laufenden Jahr kündige, bereits erarbeiteten Lohn. Das ist unzulässig.
+</ExtractedText>
+</item>
+</channel>
+</rss>

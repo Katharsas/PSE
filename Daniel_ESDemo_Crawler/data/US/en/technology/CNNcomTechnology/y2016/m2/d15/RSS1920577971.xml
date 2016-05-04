@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 24 Feb 2016 20:40:10 GMT</pubDate>
+<lastBuildDate>Wed, 24 Feb 2016 20:40:10 GMT</lastBuildDate>
+<ttl>5</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Earthquake app may one day warn you tremors are coming</title>
+<link>http://rss.cnn.com/c/35494/f/676977/s/4d9a075c/sc/13/l/0L0Scnn0N0C20A160C0A20C120Ctech0Cearthquake0Eapp0Ecal0Eberkeley0Cindex0Bhtml0Deref0Frss0Itech/story01.htm</link>
+<description>&lt;br clear='all'/&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/rc/1/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/rc/1/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/rc/2/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/rc/2/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/rc/3/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/rc/3/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://da.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/a2.htm"&gt;&lt;img src="http://da.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/a2.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;a href="http://adchoice.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/ach.htm"&gt;&lt;img src="http://adchoice.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/ach.img" border="0"/&gt;&lt;/a&gt;&lt;img width="1" height="1" src="http://pi.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/a2t.img" border="0"/&gt;&lt;img width="1" height="1" src="http://pi2.feedsportal.com/r/247391618093/u/89/f/676977/c/35494/s/4d9a075c/sc/13/a2t2.img" border="0"/&gt;&lt;img width='1' height='1' src='http://rss.cnn.com/c/35494/f/676977/s/4d9a075c/sc/13/mf.gif' border='0'/&gt;</description>
+<pubDate>Mon, 15 Feb 2016 14:55:15 GMT</pubDate>
+<guid isPermaLink="false">http://www.cnn.com/2016/02/12/tech/earthquake-app-cal-berkeley/index.html</guid>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160212194641-myshake-app-top-tease.jpg" width="90"/>
+<media:content height="51" lang="" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160212194641-myshake-app-top-tease.jpg" width="90"/>
+<ExtractedText>Early warning is a function developers hope to implement in a future version
+Right now goal is to get app distributed around the world, test and validate it
+Target is to give 40 seconds of warning that tremors are coming
+(CNN)
+What would you do with a 40-second warning that an earthquake is coming? Scientists at the University of California in Berkeley released a smartphone app Friday they hope one day will let people know a tremor is coming and give them time to move to a safer place.
+For now, the MyShake app (available for Android phones) will act as a data collector that will use a phone's accelerometer to record shaking. If it determines it has the same characteristics as an earthquake, the app will send the data to the Berkeley Seismological Laboratory.
+Richard Allen, the developer of the app, told CNN that smartphones will never replace seismic networks, but the app could help contribute and potentially speed up quake alert systems.
+The goal is to get people all over the world to download the app then validate this version and test it. On release day, the app was downloaded by users on six continents. Most of the users were in the United States.
+Allen said simulations suggest they will need 300 users in a 1,000 square kilometer area to get good data from that quake.
+Read More
+"Now, ShakeAlert only issues alerts when four of our traditional seismic stations are triggered," Allen said on the university's website . "But if we also have mobile phone data, maybe we would need only one station to trigger before issuing an alert." (ShakeAlert is a product of the U.S. Geological Survey and several West Coast university partners.)
+Allen thinks MyShake could be particularly useful in countries like Nepal and Peru.
+"They don't have advanced seismic technology but they do have millions of cell phones," he said. Most of those phones are Android based, he said, so the first app was designed for those phones. An iPhone version is planned.
+According to the MyShake website, the average phone can record a magnitude-5 earthquake if it's within 6 miles (10 kilometers).
+So how does the app know the difference between, say, a person doing an aerobics class and an earthquake? The app has been fed the different characteristics of earthquakes and human activity and it trains the phone to recognize the difference. If the phone thinks the motion it feels is an earthquake, it sends a message to Berkeley for analysis.
+"We can use that data to understand the physics of the process beneath us, how the buildings around us respond to these earthquakes, and we will have more data than we have from the traditional seismic networks," Allen says in a video introducing the app .
+A major goal for developers is to provide location-specific warnings in which the phone can determine how long it will take before the shaking is going to begin in your area.
+Allen said the target is 40 seconds of lead time.
+Theoretically that could give a teacher time to get her students under their desks. You might be able to dash away from a window or get out of the way of objects that might be ready to fall.
+The app works best on a table, Allen said.
+</ExtractedText>
+</item>
+</channel>
+</rss>

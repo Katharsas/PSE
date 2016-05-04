@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:esi="http://www.edge-delivery.org/esi/1.0" version="2.0">
+  <channel>
+<title>Studium – Hochschulen und Universitäten</title>
+<link>http://newsfeed.zeit.de/</link>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<language>de-de</language>
+<copyright>Copyright © 2016, ZEIT ONLINE GmbH</copyright>
+<atom:link href="http://newsfeed.zeit.de/studium/index" type="application/rss+xml"/>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>zeit.web 2.59</generator>
+<managingEditor>online-cr.zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Technik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>Studium – Hochschulen und Universitäten</title>
+      <link>http://newsfeed.zeit.de/</link>
+    </image>
+<item>
+      <title>Unterricht: Ein Lehrer für mich allein</title>
+      <link>http://www.zeit.de/2016/05/schule-computer-lernen-unterricht-digitalisierung</link>
+      <description>&lt;a href="http://www.zeit.de/2016/05/schule-computer-lernen-unterricht-digitalisierung"&gt;&lt;img style="float:left; margin-right:5px" src="http://www.zeit.de/studium/hochschule/2016-02/schule-computer-lernen-unterricht-digitalisierung/wide__148x84"&gt;&lt;/a&gt; "Wenn du das Problem in 17 Minuten meisterst, steigst du eine Kategorie auf." Das ist nicht Science-Fiction. Das ist Deutschland 2036. Dann wird Bildung so ablaufen.</description>
+      <category>Hochschule</category>
+      <dc:creator>ZEIT ONLINE: Hochschule - Fritz Breithaupt</dc:creator>
+      <pubDate>Sun, 14 Feb 2016 18:08:29 -0000</pubDate>
+      <guid isPermaLink="false">http://www.zeit.de/2016/05/schule-computer-lernen-unterricht-digitalisierung</guid>
+    <ExtractedText>Unterricht: Ein Lehrer für mich allein
+Das Lernen wird sich dramatisch verändern. Maßgeschneiderte Computerprogramme ersetzen den herkömmlichen Unterricht. Großartig, oder?
+Ein Gastbeitrag    von Fritz Breithaupt
+14. Februar 2016, 19:08 Uhr
+DIE ZEIT Nr. 5/2016 60 Kommentare
+Das Computerprogramm erkennt, was sein Schüler schon kann, wo er Nachholbedarf hat, wie er zum Lernen gekitzelt wird. © Martin Bureau/AFP/Getty Images
+Inhalt
+Wie wäre es mit Mathe? Ich sehe an deinem Blick und an deinem         Blutdruck, dass du gerade sehr fokussiert bist.
+Die letzte Aufgabe war aber so hart!
+Trotzdem geben wir nicht auf. Ich zeige dir ein Video dazu. Die meisten User mit ähnlichen Lerneigenschaften wie du konnten es danach lösen.
+Okay, was bekomme ich, wenn ich es löse?
+Wenn du das Problem in 17 Minuten meisterst, steigst du eine Kategorie auf.
+Dieser Artikel stammt aus der ZEIT Nr. 5 vom 28.1.2016. Die aktuelle ZEIT können Sie am Kiosk oder hier erwerben.
+Das ist nicht Science-Fiction. Das ist Deutschland 2036. In spätestens zwanzig Jahren wird Bildung so ablaufen – der Einzelne im Gespräch mit seinem virtuellen Lehrer. Der ist eine App, die Zugriff auf gewaltige Datenmengen hat. Vielleicht hat er ein Gesicht, das einen von intelligenten Oberflächen aus anschaut. Der virtuelle Lehrer straft nicht, wenn ein Schüler nicht genügend lernt. Er regt an. Wenn sein Schüler gerade nicht kann oder will, stellt der Lehrer sich ab. 2036 werden Eltern schon für ihre fünf Jahre alten Kinder einen virtuellen Lehrer abonnieren. Die Stimme des Computers wird uns durchs Leben begleiten. Vom Kindergarten über Schule und Universität bis zur beruflichen Weiterbildung. Das Computerprogramm erkennt, was sein Schüler schon kann, wo er Nachholbedarf hat, wie er zum Lernen gekitzelt wird. Wir werden uns als der lernende Mensch neu erfinden. Dabei wird der zu bewältigende Stoff vollkommen auf den Einzelnen zugeschnitten sein.
+Ein diabolischer maschinengesteuerter Lernterror, der uns keine ruhige Sekunde gönnt, werden die einen sagen. Die Erlösung von der alten Gleichmacherei, die anderen. Wer hat recht?
+Ich glaube: Die Individualerziehung wird den größten Fortschritt in der Bildung seit 250 Jahren bringen – ironischerweise aber auch gleichzeitig einen Rückschritt bedeuten. Warum, dazu später mehr.
+Fritz Breithaupt
+ist Professor für Germanistik an der Indiana University Bloomington.
+Jörg Dräger und Ralph Müller-Eiselt haben an dieser Stelle die sogenannten Moocs als größte Revolution seit 500 Jahren gefeiert (ZEIT Nr. 39/15). Sicher, diese Massive Open Online Courses machen die Bildung weltweit gerechter – jetzt kann jeder eine Harvard-Vorlesung hören und nicht nur eine kleine Elite. Doch die frei zugänglichen Onlinekurse sind oft nichts anderes als schlecht abgefilmte Vorlesungen, also ein Seminarraum mit unbegrenzt vielen Plätzen. Jeder bekommt Einheitskost und wird am Ende mit einem Ankreuztest oder gar einer vom Computer bewerteten Klausur entlassen. Im Zweifelsfall sind Universitätskurse im heruntergekommenen Vorlesungssaal besser – dort redet man mit seinen Mitstudenten, manchmal auch mit seinem Professor. Bislang ist der Einzug der Digitalisierung in Bildung und Weiterbildung also nur ein Revolutiönchen .
+Die Individualerziehung dagegen wird alles verändern – die Komponenten dieser technisierten Lernrevolution existieren bereits. Computer verstehen mittels Spracherkennung bereits nach wenigen Minuten verschiedene Sprecher, in den meisten großen Technologiefirmen haben die Mitarbeiter schon persönliche Assistenten mit künstlicher Intelligenz. Und die Algorithmen hinter Programmen von Amazon, Spotify oder Pandora werten die Vorlieben ihrer Nutzer mit raffinierten Mustererkennungen aus, um ihnen Passendes zu liefern. Was fehlt, ist, dass diese Komponenten für die Bildung zusammengebracht werden.
+Zuerst müssten Zigtausende von Lehrern und Schülern, Professoren und Studenten Lerndialoge aufnehmen. Dialoge, die ja zu Millionen täglich stattfinden. Diese "menschlichen" Dialogelemente können dann maschinell verglichen und nach ihrem Erfolg bewertet werden. Zu den Kriterien gehört etwa, dass sich der Lernende später an die Antworten erinnert, dass er den Dialog lange fortführt, er komplexe Vokabeln benutzt und den Dialog als hilfreich bewertet.
+Die Revolution liegt in der Mischung aus Algorithmen und computerisierter Spracherkennung. Die meisten von uns kennen dies unter dem Namen Siri (Speech Interpretation and Recognition Interface), also die Computerstimme, die sich etwa auf dem iPhone an den Nutzer wendet. Um diese Stimme als intelligenten persönlichen Assistenten für die Bildung anzuwenden, fehlt nur noch der große Freilandversuch, in dem das System sich selbst verbessern kann.
+Seitennavigation
+</ExtractedText>
+</item>
+</channel>
+</rss>

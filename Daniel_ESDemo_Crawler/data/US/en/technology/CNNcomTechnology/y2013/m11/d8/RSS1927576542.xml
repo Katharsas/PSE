@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 14:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_technology" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_technology"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Is this the 'unifying theory of everything?'</title>
+<guid isPermaLink="false">http://www.cnn.com/2013/11/05/tech/innovation/international-linear-collider-higgs/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_technology/~3/3qFlb1VRifM/index.html</link>
+<description>The International Linear Collider aims to help unlock the secrets of the Universe&lt;img src="http://feeds.feedburner.com/~r/rss/edition_technology/~4/3qFlb1VRifM" height="1" width="1"/&gt;</description>
+<pubDate>Fri, 08 Nov 2013 09:32:38 EST</pubDate>
+<feedburner:origLink>http://www.cnn.com/2013/11/05/tech/innovation/international-linear-collider-higgs/index.html</feedburner:origLink>
+<ExtractedText>By Arion McNicoll , for CNN
+November 5, 2013 -- Updated 1426 GMT (2226 HKT) | Filed under: Innovations
+Deep in the Kitakami Mountains of Japan, a group of impassioned scientists are working on proposals for a revolutionary project: a machine that will hunt for dark matter. The aim of the International Linear Collider (ILC) is to shed light on the mystery of what makes up most of the universe. This problem has been pursued for millennia, but could this machine hold the key? Here, we take a closer look at the ILC and go on a journey through time to look at some of the inventions that led to the most significant breakthroughs in scientific history. Gallery by Monique Rivalland
+The machine is colossal. Once built, it will consist of two opposing tunnels that run underground for 31km -- over 10 times bigger than the current largest linear particle accelerator in the world. But what is a particle accelerator? Think of it as an atom smasher, a device that propels particles -- in this case electrons and positrons -- towards each other at extremely high speeds (almost the speed of light) so that they collide and create a myriad of other subatomic particles that otherwise might not exist or that we might not be able to see. Observing these particles could teach us critical things about our origins and even uncover entirely new dimensions.
+Scientists estimate that we remain in the dark about a mind-boggling 96% of the universe. Brian Foster, European Regional Director of the International Collider Collaboration and former professor of physics at Oxford University explained to CNN how the ILC would "recreate the conditions fractions of a second after the Big Bang that created our universe." "If we are lucky," he added, "the ILC will detect a whole new family of particles that might help us to realize Einstein's dream of uniting all the theories of physics into one overarching theory." Decisions on the multi-billion dollar machine looks likely to start by 2015 and construction would take 8-10 years.
+Plans for the ILC follow the recent discovery of the elusive Higgs Boson, which resulted in professors Peter Higgs and Francois Englert winning the Nobel Prize in Physics last month. The Higgs Boson, a subatomic particle that may help us understand why other particles have mass, was proposed by the two winners (and Robert Brout) back in 1964 but only proved last year by use of a circular particle accelerator called the Large Hadron Collider (pictured) at CERN.
+Two scientists show the scale of an earlier accelerator at the U.S. Department of Energy's Lawrence Berkeley National Laboratory. The Super HILAC (Super Heavy Ion Linear Accelerator) was one of the first accelerators that could accelerate the ions of all known natural elements to energies where they could be smashed apart. The lab is aptly named after Ernest Lawrence who invented the first circular accelerator at the University of California, Berkeley, back in 1929.
+Up, Down, Strange, Charm, Bottom and Top. These are the six 'flavors' of quarks. But you can't taste them -- they're the elementary particles that make up bigger particles such as neutrons and protons. Quarks exist only fleetingly outside of these particles and thus only be detected by their behaviour in high-energy collisions, which is precisely what happened back in 1968 at the Stanford Linear Accelerator Center (pictured), when scientists observed Up and Down quarks. Initially proposed by Murray Gell-Mann and George Zweig in 1964, the discovery of quarks gave further credence to the "Standard Model" of physics and prior to the discovery of a Higgs Boson was widely regarded as the most significant advancement in physics of the last 50 years.
+In the throes of World War II, an important letter arrived for President Franklin D. Roosevelt. Written by Hungarian scientist Léo Szilárd and signed by Albert Einstein, the letter warned the President that Germany may be working on a powerful bomb. For the previous 10 years Szilárd, along with Italian scientist Enrico Fermi, had been experimenting with nuclear chain reactions and had filed a patent for a simple nuclear chain reactor. Finally, on December 2, 1942, the first artificial nuclear chain reaction took place in a racquets court at the University of Chicago (artist's impression). This launched the Manhattan Project and three years later the U.S. produced the first atomic bomb.
+Szilárd was a canny young scientist who also filed a patent for the electron microscope back in 1928. However, it was Ernst Ruska in 1933 who managed to build the first electron microscope that exceeded the resolution of a standard light microscope. His invention, today an everyday piece of research equipment, used electron beams to illuminate tiny specimens and produce a magnified image of their structure.
+This very instrument was used by the scientist Sir James Chadwick, who discovered the neutron. As a young man he studied radiation in Germany under the creator of the counter, Hans Geiger. The Geiger counter detects the emission of nuclear radiation and is perhaps one of the world's best known radiation instruments. Still in Germany when WW1 broke out, Chadwick spent a few years in a detention camp west of Berlin, but after the war went on to be knighted for his achievements in physics.
+The most famous equation ever written by arguably the most famous scientist ever to live, Einstein's greatest tool was his brain. This is the earliest and longest manuscript on relativity that he ever wrote. In it he negates many assumptions made in earlier physical theories and redefines concepts of space, time, matter, energy, and gravity. While the equation denotes his theory of special relativity, which is concerned with light, Einstein's theory of general relativity helps us to understand planetary dynamics and the evolution of the universe.
+This apparatus was used to discover the electron. In 1896, in Cambridge, Joseph John Thomson began experiments on cathode rays. Thomson showed that the cathode rays were particles with a negative charge and much smaller than an atom. They were later named electrons and in 1906 Thomson was awarded the Nobel Prize in physics for discovering one of the fundamental building blocks of matter.
+This device was developed by French physicist Pierre Curie and used by him and his wife, Marie Curie, in radioactivity investigations. Both were awarded the Nobel Prize in physics alongside Henri Becquerel in 1903 for their pioneering work in spontaneous radioactivity -- a term that Marie coined. Marie Curie went on to use her knowledge of radioactivity extensively in medicine, for example to treat tumors. With it, she also discovered the elements polonium and radium.
+It may not look very complicated, but when Michael Faraday spent 10 days winding two long pieces of copper wire around an iron ring, he may not have realized the magnitude of his what he was doing. When he passed an electric current through one coiled wire, it induced electricity in the other -- he had created the first electric transformer. Today, transformers are crucial to mass supply of electricity to towns and cities as they reduce high-voltage electricity generated by power stations to a lower, safer voltage.
+This is the glass prism used by Sir William Herschel to discover infrared radiation. He discovered this invisible type of radiation by studying the area just past red on the color spectrum. To his surprise, it was hotter than all the rest. He was the first person to discover forms of light that are not visible to the human eye. Oh yes, and he also discovered Uranus and wrote 24 symphonies.
+Could this really be the tree under which Sir Isaac Newton sat and conceived the universal theory of gravity as an apple conked him on the head? Well, we're pretty sure it isn't, considering the story itself is widely considered to be apocryphal. But, according to the Isaac Newton Institute for Mathematical Sciences at the University of Cambridge, where Newton was a fellow, it was taken as a cutting from the alleged tree at Newton's birthplace in Woolsthorpe Manor, UK. Other alleged cuttings have been replanted as far as Nebraska, Vancouver, and Tokyo.
+Here are two of the telescopes belonging to Italian astronomer Galileo Galilei, who was famous for the improvements he made to the instrument. With his advancements in observational astronomy he was the first to see craters on the moon and confirmed the four largest satellites of Jupiter.
+HIDE CAPTION
+Can we solve the mysteries of the universe?
+Atom smasher
+</ExtractedText>
+</item>
+</channel>
+</rss>

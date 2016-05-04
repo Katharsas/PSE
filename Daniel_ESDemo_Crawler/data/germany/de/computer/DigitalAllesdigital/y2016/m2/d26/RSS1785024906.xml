@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:esi="http://www.edge-delivery.org/esi/1.0" version="2.0">
+  <channel>
+<title>Digital: Alles digital</title>
+<link>http://newsfeed.zeit.de/</link>
+<description>Internet, Schönes wie Kritisches zur Netzkultur, und ganz viel zum Spielen.</description>
+<language>de-de</language>
+<copyright>Copyright © 2016, ZEIT ONLINE GmbH</copyright>
+<atom:link href="http://newsfeed.zeit.de/digital/index" type="application/rss+xml"/>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>zeit.web 2.59</generator>
+<managingEditor>online-cr.zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Technik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>Digital: Alles digital</title>
+      <link>http://newsfeed.zeit.de/</link>
+    </image>
+<item>
+      <title>iPhone-Entschlüsselung: Apple beantragt Einstellung des Verfahrens</title>
+      <link>http://www.zeit.de/digital/datenschutz/2016-02/apple-tim-cook-iphones-entsperrung-fbi</link>
+      <description>&lt;a href="http://www.zeit.de/digital/datenschutz/2016-02/apple-tim-cook-iphones-entsperrung-fbi"&gt;&lt;img style="float:left; margin-right:5px" src="http://www.zeit.de/digital/datenschutz/2016-02/apple-tim-cook-iphone/wide__148x84"&gt;&lt;/a&gt; Im Streit mit dem FBI um die Entsperrung von iPhones wehrt sich das Unternehmen juristisch. Apple-Chef Tim Cook will notfalls bis vor das Oberste Bundesgericht ziehen.</description>
+      <category>Datenschutz</category>
+      <dc:creator>ZEIT ONLINE: Datenschutz - </dc:creator>
+      <pubDate>Thu, 25 Feb 2016 23:03:42 -0000</pubDate>
+      <guid isPermaLink="false">http://www.zeit.de/digital/datenschutz/2016-02/apple-tim-cook-iphones-entsperrung-fbi</guid>
+    <ExtractedText>suchen
+iPhone-Entschlüsselung: Apple beantragt Einstellung des Verfahrens
+Im Streit mit dem FBI um die Entsperrung von iPhones wehrt sich das Unternehmen juristisch. Apple-Chef Tim Cook will notfalls bis vor das Oberste Bundesgericht ziehen.
+26. Februar 2016, 0:03 Uhr
+Quelle: ZEIT ONLINE, AFP, dpa, nsc 14 Kommentare
+Apple-Chef Tim Cook © Astrid Stawiarz/Getty Images
+Der Apple-Konzern hat die Aufhebung einer Anordnung beantragt, nach der das Unternehmen gezwungen werden kann, iPhones zu Ermittlungszwecken zu entsperren. "Kein Gericht hat jemals das erlaubt, was die Regierung nun versucht", heißt es in dem Antrag an das Gericht in Kalifornien . Apple argumentiert, dass die US-Behörden gegen das Gesetz handeln würden. "Kein Gesetz rechtfertigt solch eine unbegrenzte und weitreichende Auslegung des gerichtlichen Verfahrens und die Verfassung verbietet es."
+Das Justizministerium hatte versucht, Apple per Gerichtsurteil zu zwingen, das iPhone des Angreifers von San Bernadino für die Entwickler zu entsperren. Apple verweigerte dies und teilte mit, dafür müsse zunächst eine Software geschrieben werden, die die Zugangssperre umgehen kann. "Wenn ein Gericht von uns verlangen kann, eine solche Software zu schreiben, bedenken Sie, was sie noch von uns fordern könnten – vielleicht ein Betriebssystem für Überwachung oder die Möglichkeit, die Kamera einzuschalten", sagte Apple-Chef Tim Cook.
+Den Forderungen nachzugeben, wäre schlecht für die USA, sagte Cook dem Sender ABC News. Er sei bereit, den Fall vor dem Obersten Bundesgericht auszutragen. Unterdessen soll Apple an einer Technik arbeiten, die es Regierungen künftig erschwere, Zugang zu den Daten eines iPhones zu erhalten, berichtet die New York Times .
+Apple will im Streit um Entsperren von iPhones standhaft bleiben Apple-Chef Tim Cook bleibt im Streit um die Entschlüsselung eines iPhones hart. Das Smartphone des Attentäters im kalifornischen San Bernardino zu entschlüsseln, wäre "schlecht für Amerika", sagte Cook in einem Fernsehinterview.
+Aus Unterlagen des Justizministeriums geht hervor, dass der Streit zwischen den Behörden und Apple größere Ausmaße hat als bislang bekannt. In den vergangenen vier Monaten hatte das Ministerium demnach bei Gerichten landesweit versucht zu erwirken, dass die Schutzmechanismen von 15 Geräten entsperrt werden sollten. Bislang war nur bekannt, dass es sich mit Apple um das Handy eines der Attentäter von San Bernadino streitet.
+Seitennavigation
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -26,6 +26,7 @@ import org.elasticsearch.node.NodeBuilder;
 import org.elasticsearch.search.SearchHit;
 
 import   XmlParser.XmlParser;
+import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
 /**
  *
  * @author Daniel
@@ -66,7 +67,7 @@ public class GetStarted {
         }
         */
         
-        String index_name = "idx_4";
+        String index_name = "idx_6";
         String index_type = "tweet";
         
         String obj_title = "title", obj_pubDate = "pubDate", obj_ExtractedText = "ExtractedText";
@@ -166,13 +167,13 @@ public class GetStarted {
         
         */
         
-        //QueryBuilder qb = matchQuery(obj_title, "is");
+        QueryBuilder qb = matchQuery(obj_title, "Greece");
         
-        QueryBuilder qb;  
-            qb = moreLikeThisQuery(obj_title)  
-            .likeText("Tiger")
-            .minTermFreq(1)
-            .maxQueryTerms(8); 
+//        QueryBuilder qb;  
+//            qb = moreLikeThisQuery(obj_title)  
+//            .likeText("Tiger")
+//            .minTermFreq(1)
+//            .maxQueryTerms(8); 
 
         
         SearchResponse scrollResp = client.prepareSearch(index_name)

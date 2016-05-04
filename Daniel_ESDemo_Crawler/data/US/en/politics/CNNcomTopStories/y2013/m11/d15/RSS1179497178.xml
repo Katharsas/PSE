@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>5 ways to combat flu in your home</title>
+<guid>http://edition.cnn.com/2013/11/15/health/flu-virus-home/index.html</guid>
+<link>http://edition.cnn.com/2013/11/15/health/flu-virus-home/index.html?eref=edition</link>
+<description>Now that we are in the height of cold and flu season, it's time to defend yourself against the flu virus, starting with your home.</description>
+<pubDate>Fri, 15 Nov 2013 06:58:12 EST</pubDate>
+<ExtractedText>Millions of flu particles may be lingering in your home
+Controlling humidity is one way to fight the spread of flu
+UV lights and air purifiers can also help
+Editor's note: Ted Myatt is a senior scientist at the leading consulting firm Environmental Health and Engineering, Inc. and Director of Research Compliance at University of Rhode Island. He is also a lecturer in Environmental Sciences at Brandeis University.
+(CNN) -- Now that we are in the height of cold and flu season, it's time to defend yourself against the flu virus, starting with your home.
+Your home may feel tidy once the carpets and floors are vacuumed and counters dusted, but millions of flu particles can linger in the air and on the surfaces we touch each day.
+We have all heard time and time again to wash our hands and cover our mouths when we sneeze -- and that the flu vaccine should always be our first line of defense -- but below are five ways to decrease flu survival on surfaces and in the air that you may not have considered at the home or office.
+1. Control humidity
+Ted Myatt
+In the winter months, temperatures and humidity levels plummet to as low as 10%, which is as dry as the Sahara Desert. People also spend significantly more time indoors, which contributes to the spread of the flu, but recent scientific literature suggests that the low humidity levels may be contributing to the virus' survival.
+A review of nearly 40 peer-reviewed studies conducted over the last decades shows that homes kept at 40-60% relative humidity are likely to have fewer flu viruses lingering in the air and on surfaces like sink faucets, door handles, and countertops.
+Flu season is here
+Universal flu vaccine may be in future
+Available at most hardware stores and online retailers, hygrometers provide a digital readout of the relative humidity in your home and are compact and low-cost. Homes can be kept at the optimal 40-60% relative humidity level through the use of a portable humidifier. In this humidity range, the flu virus survival in the air can be decreased by up to 30%.
+There's an added benefit too -- the American Academy of Pediatrics recommends using a cool mist humidifier throughout the winter months to help relieve congestion and coughs.
+2. Use UV lights
+Many people may ask "how can light kill bacteria?" But if you purchase the germicidal type of UV lights, they are capable of inactivating microorganisms such as bacteria and viruses.
+There's a variety of lightweight disinfection devices that use ultra-violet light on the market. You simply spread the light over the surface you wish to clean for the directed amount of time and the virus and bacteria will decrease substantially.
+This type of tool may be handy for keyboards, a computer mouse, and other hand-held devices, but keep in mind the flu virus also lives in the air, so disinfecting large areas is not as feasible.
+You can also look for gadgets like humidifiers with a UV light chamber that will kill the flu virus, mold, and other bacteria potentially living in the water. This germ-free technology is an added safeguard for homeowners that may not always remember to change their water or filters.
+3. Purchase an air purifier
+Regular surface cleaning with a disinfectant labeled as "kills bacteria and viruses" will help remove particles that have landed on your floors, faucets, and countertops, but it is important to consider the air you breathe in your home.
+During the winter months, most people keep windows sealed and the heat on full blast, causing stagnant, recycled air that can harbor airborne allergens and bacteria.
+Consider using a portable air purifier in the rooms you spend most of your time. Most air purifiers circulate air several times per hour, cleaning the air. Look for a model with a HEPA filter, which is what most allergists and doctors recommend.
+Air purifiers can remove the smallest microbes in the air, reducing harmful airborne germs that not only include cold and flu viruses but also dust, pollen, mold spores, pet dander and smoke particles. Those can aggravate allergies as well.
+Better flu vaccine on the horizon
+4. Disinfect surfaces
+This idea is likely one you've heard before, but it is still one of the most effective and easy flu prevention methods. When disinfecting, think beyond the countertop and focus on the objects used most throughout the home, such as the family tablet, TV remote, or doorknobs.
+Cleaning works by using soap and water to physically remove germs from surfaces. It's important to note that you're not killing germs with this process though -- you're mainly removing them and lowering their numbers.
+Use a registered disinfectant that states the EPA has approved the product for effectiveness against influenza A virus. And, finally, always follow label directions on cleaning products and disinfectants.
+5. Wash linens
+The flu virus can live on surfaces for several hours -- and even longer on more porous surfaces like towels, washcloths, blankets and linens. While linens don't need to be washed separately, it's important that they're not shared without being cleaned thoroughly.
+Wash bedding, towels and clothes with household detergent in hot water and tumble dry on a hot setting. Don't forget to wash your hands with soap and water immediately after handling them.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 18:54:09 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Football: Players protest in Brazil</title>
+<guid isPermaLink="false">http://edition.cnn.com/2013/11/15/sport/football/brazil-football-crossing-arms-protests/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/bXqcamHSGYg/index.html</link>
+<description>Less than a year before it stages the World Cup, Brazil is once again in the news for the wrong reasons. Footballers crossed their arms in games and took other action because they want, among other things, a better schedule.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_sport/~4/bXqcamHSGYg" height="1" width="1"/&gt;</description>
+<pubDate>Fri, 15 Nov 2013 12:04:03 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2013/11/15/sport/football/brazil-football-crossing-arms-protests/index.html</feedburner:origLink>
+<ExtractedText>Another black eye for Brazil ahead of World Cup as footballers protest
+November 15, 2013 -- Updated 1638 GMT (0038 HKT)
+Brazilian footballers protested Wednesday because they want, among other things, a better schedule.
+STORY HIGHLIGHTS
+Brazilian footballers cross their arms in games to protest against their confederation
+The players want changes made, including more vacation time and fewer games
+If their demands aren't met, they say "drastic measures" could be taken
+The protests are the latest black eye for the country that hosts next year's World Cup
+(CNN) -- Less than a year before it stages the World Cup, Brazil is once again in the news for the wrong reasons.
+Brazilian football players protested Wednesday and said they could take more action -- possibly "drastic measures" -- if their confederation doesn't make changes to the country's overcrowded calendar.
+They want, among other things, more vacation time, longer preseasons, fewer games and a bigger voice in decision making.
+In some matches, the players crossed their arms before the opening whistle. In others they did so after the whistle blew.
+Tweets by @CNNFC
+And in some instances, they passed the ball from one end of the field to the other after the referees threatened to give players yellow cards.
+Also in a game, players from both sides unfurled a banner in the middle of the pitch while the national anthem played. It read: "For a football that is better for everyone."
+In a statement, Common Sense F.C. -- not a club but a movement symbolizing the changes the players want -- said on its Facebook page: "If there are attempts to prevent players from expressing themselves in a peaceful way, drastic measures will be taken.
+"We expect an official position followed by moves that will benefit Brazilian football."
+According to Brazilian media, the future measures could include players crossing their arms for a longer period of time, wearing red clown noses or even halting a game.
+There was no official reaction on Friday, which is a national holiday in Brazil.
+The protests came two weeks after a former professional football player was found decapitated in Rio de Janeiro.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/mobil/2014-12/umano-vorlese-app-kritik</link>
+      <guid>http://www.zeit.de/digital/mobil/2014-12/umano-vorlese-app-kritik</guid>
+      <category>Digital</category>
+      <title>Umano: Zeitung hören</title>
+      <description>&lt;a href="http://www.zeit.de/digital/mobil/2014-12/umano-vorlese-app-kritik"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/mobil/2014-12/umano-vorlese-app-website/umano-vorlese-app-website-148x84.jpg"/&gt;&lt;/a&gt; Die App Umano verwandelt Texte aus dem Netz in kleine Hörbücher. Algorithmen suchen die beliebtesten Artikel zusammen und schicken sie an Vorleser, die sie einsprechen.</description>
+      <dc:creator>ZEIT ONLINE : Digital - Thorsten Schröder</dc:creator>
+      <pubDate>Sat, 06 Dec 2014 18:31:33 GMT</pubDate>
+    <ExtractedText>Umano: Zeitung hören
+Umano: Zeitung hören
+Die App Umano verwandelt Texte aus dem Netz in kleine Hörbücher. Algorithmen suchen die beliebtesten Artikel zusammen und schicken sie an Vorleser, die sie einsprechen. von  Thorsten Schröder
+6. Dezember 2014           19:30 Uhr  5 Kommentare
+Screenshot der Umano-Website  |  © Umano
+Ich bin kein großer Hörbuch-Fan. Zwar mag ich die beruhigende Wirkung des Hintergrundsäuselns als Einschlafhilfe, aber fürs echte Hören fehlt es mir offenbar an der dafür nötigen Konzentration. Meist driften meine Gedanken nach wenigen Minuten ab und ich verliere den Faden. Dann muss ich das Kapitel nochmal von vorne anfangen. Alles, was über die Länge eines handelsüblichen Podcasts hinausgeht, wird deshalb in der Regel nicht zu Ende gehört. 
+Umano hat mein Interesse trotzdem geweckt. Denn hier werden keine Geschichten erzählt oder Bücher vorgelesen, sondern Nachrichten aus dem Netz. Ich nehme mir schon lange vor, jeden Tag mindestens vier lange Zeitungsartikel zu lesen. Und seit Langem scheitere ich, weil die Augen nach dem Tag am Bildschirm doch zu müde sind. Wenn Hören auch zählt, könnte ich dem Ziel jetzt näher kommen. 
+Anzeige
+Bei Umano (italienisch für menschlich) suchen Algorithmen die beliebtesten Artikel aus dem Internet zusammen und schicken sie vollautomatisch an freie Sprecher (daher der Name), die sich mit dem Einsprechen ein paar Dollar dazuverdienen. Das Ergebnis ist eine Hör-Zeitung, die mit zum Hausputz, auf die Laufstrecke oder ans Steuer genommen werden kann – überall dahin also, wo man die Augen gerade nicht frei hat. 
+Versuche, Texte auch hörbar zu machen, gab es immer wieder. Meist ist das Ergebnis dabei aber eher unhörbar, weil monotone Computerstimmen den Texten jegliches Leben nehmen und Wörter mit kreativer Betonung neu erfinden. Das, was bei Umano am Ende dabei herauskommt, klingt tatsächlich jedes Mal wie ein echtes kleines Hörbuch. 
+Screenshot aus Umano  |  © Umano
+Zum Start kann man, ähnlich wie bei den News-Aggregatoren Flipboard und Zite, die eigenen Interessenfelder festlegen. Es gibt Geschichten von großen Outlets wie Huffington Post oder Wired, aber auch von kleinen Quellen wie eharmony und Lifehack. Wie viele Minuten man pro Artikel investieren muss, zeigt die App netterweise an. 
+Statt Musik auf Spotify oder Radio auf NPR höre ich am Arbeitsplatz jetzt also Zeitung. Ich höre mich probeweise durch Analysen zum Rassenproblem in den USA und den Anschuldigungen gegen Bill Cosby. Auch Silicon Valley's God Complex aus EWeek und What's it like to grow up in a religious sect aus dem Telegraph höre ich auf dem Nachhauseweg noch spielend weg. 40 Minuten Zeitung höre ich am ersten Tag. Das meiste davon hätte ich bislang wahrscheinlich zum Späterlesen auf dem iPhone abgelegt – und dann doch nie wieder geöffnet. 
+Seit dem Start im Oktober 2012 ist die App mehrere Millionen Mal heruntergeladen worden, die erfolgreichsten Artikel (sofern das noch das richtige Wort ist) schaffen es nach Angaben der Macher auf 10.000 bis 15.000 Hörer innerhalb weniger Tage. Die große Mehrheit der Nutzer ist laut Umano zwischen 25 und 36 Jahre alt, männlich und Pendler. 
+Unumstritten ist das Konzept nicht. Zwar hat die Firma inzwischen mit einigen Verlagshäusern Kooperationen vereinbart. Aber die Mehrheit der Autoren und Herausgeber erfährt nur durch Zufall, wenn ihre Texte vertont wurden. Ist jemand mit der Verwendung nicht einverstanden, nimmt Umano die Beiträge erst nachträglich von der Seite.
+Offline-Zugriff ist kostenpflichtig
+Anfangs verzichtete die App sogar auf Autorenzeile und Quelle und besserte erst nach, als sich die Schreiber beschwerten. Langfristig wollen die Macher die Urheber finanziell beteiligen, um Ärger zu vermeiden. Umano plant, neben den kostenpflichtigen Premiumangeboten zusätzlich Werbung in die Beiträge einzubauen.
+Die App für iOS und Androidist gratis, solange man die Artikel streamt. Auch auf der Website umano.me kann man sich Texte kostenlos anhören. Wer sich eine Playlist erstellen und diese auch ohne Netzverbindung abspielen möchte, der muss 3,99 Dollar im Monat (oder 35,99 Dollar im Jahr) zahlen. Billiger als ein Zeitungsabo ist das allemal. 
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/2014/50/datenschutz-kopenhagen-ueberwachung</link>
+      <guid>http://www.zeit.de/2014/50/datenschutz-kopenhagen-ueberwachung</guid>
+      <category>Digital</category>
+      <title>Datenschutz: Alma Mater als Big Brother</title>
+      <description>&lt;a href="http://www.zeit.de/2014/50/datenschutz-kopenhagen-ueberwachung"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/2014-12/datenschutz-kopenhagen-ueberwachung-2/datenschutz-kopenhagen-ueberwachung-2-148x84.jpg"/&gt;&lt;/a&gt; In einem weltweit einzigartigen Experiment wollen dänische Soziologen das Leben von Studenten erforschen. Dazu überwachen sie die jungen Menschen wie ein Geheimdienst.</description>
+      <dc:creator>ZEIT ONLINE : Digital - Haluka Maier-Borst</dc:creator>
+      <pubDate>Mon, 08 Dec 2014 08:34:30 GMT</pubDate>
+    <ExtractedText>Datenschutz: Eine Uni als Big Brother
+Datenschutz: Eine Uni als Big Brother
+Dänische Studenten lassen ihren kompletten Alltag per Handy überwachen – nicht von der NSA oder von Facebook. Sondern vom Professor von  Haluka Maier-Borst
+DIE ZEIT Nº 50/2014 8. Dezember 2014           09:33 Uhr  5 Kommentare
+Eine junge Frau mit Smartphone  |   © christophe papke/photocase.de
+Mehr als eine Stunde lang hat Sune Lehmann über Verschlüsselungstechniken gesprochen. Mit weicher Stimme und Schwiegersohnlächeln hat der Däne erklärt, wie sorgsam sein       Team mit dem Datenschatz umgeht. Und was sie alles darin lesen können. Dann ist sein       Mitarbeiter Arkadiusz Stopczynski an der Reihe und macht aus langatmiger Theorie in       Sekundenschnelle Praxis.
+Der Pole trägt Vollbart und tiefe Augenringe. Um ihn herum liegen Kabel und       auseinandergeschraubte Handys. "Ark" nennen sie ihn hier. Ark gibt wenige Zahlen ein, klickt       drei Mal. Auf dem Bildschirm, der die Größe einer Lkw-Frontscheibe hat, poppen auf einer       Landkarte Skandinaviens rote Kleckse auf. "Schau mal, hier sind einige Leute in Kopenhagen       unterwegs, und dort", sagt er und zeigt auf einen einzelnen Punkt im Nirgendwo, "scheint wer       Urlaub in Schweden zu machen."
+Anzeige
+Lehmann und Stopczynski sind nicht von der NSA. Nicht von der dänischen Polizei, von keiner       Telefonfirma. Aber wenn sie wollen, sehen sie den gesamten Alltag der Menschen hinter den       roten Klecksen: mit wem die Leute gesprochen und wen sie getroffen haben, wie sie sich       fortbewegen. Sie führen ein Experiment durch, in seiner Art weltweit einzigartig.
+Seit dem Jahr 2012 können Studenten an Dänemarks Technischer Universität (DTU) sich auf einen       heiklen Deal einlassen: Lehmanns Forschungsgruppe bietet ihnen kostenlose Smartphones an, im       Tausch gegen ihre Privatsphäre. Die GPS-Daten der Handys zeigen, wo die Studenten sich       aufhalten. Ihre Anruflisten, SMS, Kurznachrichten und Facebook-Aktivitäten zeugen von ihrer       Kommunikation.
+Selbst Treffen in der realen Welt hinterlassen digitale Spuren , dank des Kurzstreckenfunks       Bluetooth. Normalerweise werden damit drahtlose Kopfhörer an Smartphones gekoppelt. Lehmann       und Ark jedoch vermessen per Bluetooth den Abstand zweier Personen zueinander. Je geringer,       desto wahrscheinlicher sprechen sie gerade miteinander. Der ständig wachsende DTU-Datensatz       macht nicht bloß Handykommunikation nachlesbar, sondern Sozialverhalten. So wird die Sache für       die Wissenschaftler reizvoll.
+Aber wie führt man im Jahr zwei seit den Enthüllungen von Edward Snowden so ein Projekt       durch, das jedem Datenschützer den Schlaf rauben müsste? Zugegeben, die Klarnamen der       Studenten stehen nicht im Datensatz. Die Wissenschaftler wissen also nicht, wie der Punkt       heißt, der dort auf der Landkarte herumwuselt. Trotzdem ließe sich wohl jede Identität       aufdecken – so vielfältig sind die Daten, so individuell die aufgezeichneten Muster: sei es       bei der einen Studentin, die zu jeder Vorlesung 15 Minuten zu spät kommt, oder bei dem       Einzigen aus dem Mathematikkurs, der am vergangenen Wochenende in Warschau war ...
+Dieser Artikel stammt aus der ZEIT No 50 vom 4.12.2014.  |   Hier können Sie die aktuelle Ausgabe lesen.
+Die 24-jährige Mette hat sich dennoch auf das Experiment eingelassen. Die angehende       Biomedizin-Ingenieurin gesteht auf Nachfrage offen ein: Manche Teile der       Einverständniserklärung hätte sie wohl genauer lesen sollen. "Aber mir ging es nicht bloß um       das kostenlose Handy. Ich glaube an die Forscher hier, und wenn ich ihnen und der Wissenschaft       helfen kann, tue ich das gern", sagt sie.
+Der Campus der DTU in Lyngby ist kein schöner Ort. Man muss der dänischen Natur dankbar sein       für den grünen Schleier, den sie über die Betonklötze und Kastenbauten gelegt hat. Aber die       Begeisterung für Wissenschaft, die bereits die Erstsemester hier einatmen, bestimmt das Leben       in Lyngby seit Generationen. "Meine Mutter und mein Vater haben an der DTU studiert, und sie       haben von dieser Uni zu Hause geschwärmt", sagt die 21-jährige Emilie, Mathematikstudentin und       Probandin in Lehmanns Handystudie. "Ich bin extra aus Kopenhagen rausgezogen, denn ich wollte       das alles hier erleben. Die Leute leben wirklich Tag für Tag für die Wissenschaft, und sie       vertrauen einander." Das ist wohl der Grund, warum Lehmanns Versuch hier überhaupt möglich       ist. Der gelernte Physiker hat Jahre gebraucht, um für sein Vorhaben Informatiker, Ökonomen,       Psychologen und Soziologen zusammenzubringen.
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>This dog can make you seriously rich</title>
+<guid>http://edition.cnn.com/2014/12/09/business/pet-startups/index.html</guid>
+<link>http://edition.cnn.com/2014/12/09/business/pet-startups/index.html?eref=edition</link>
+<description>There has never been a better time for entrepreneurs to make hay from an accessory or service for pets, as they become ever more humanized and demand grows for new ways to spoil them.</description>
+<pubDate>Tue, 09 Dec 2014 11:29:59 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141209123043-fitbark-pet-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141209123043-fitbark-pet-top-tease.jpg" width="90"/>
+<ExtractedText>Pet industry has grown in value to a record-breaking $58 billion a year
+New opportunities for entrepreneurs as technology improves and demand grows
+Quantified health, high end hotels and safety jackets among the new innovations
+Editor's note: Going Global showcases entrepreneurs taking their businesses around the world, tackling issues like business strategy, marketing and international logistics.
+(CNN) -- From Maru to Snoopy Babe , anyone familiar with YouTube will know that it runs on cat videos, and the adorable feats of pets in general. Given the scale of this fascination, it will come as little surprise that the pet industry is riding a historic peak, set to generate over $58 billion in the U.S. alone in 2014.
+There has never been a better time for entrepreneurs to make hay from an accessory or service for pets, as they become ever more humanized and demand grows for new ways to spoil them. With the help of Mark Kalaygian, editor of Pet Business magazine, we broke down the growth areas.
+Quantified hounds
+Monitoring tools are becoming must-have accessories for dedicated owners and a crowded marketplace is emerging. Fitbark smashed its crowdfunding target last year with a service to equip dogs with sensors that provide detailed data on their activity, offering insights into their health and behaviour, while GPS trackers such as Whistle offer security and peace of mind.
+There is even "animal Skype" Petchatz which uses sound and motion detectors to facilitate video interaction between homesick owners and their pets.
+Mark Kalaygian: "We're seeing a lot of new products in the monitoring space with connected online resources. Certainly GPS tracking can be very important for ensuring that pets always make it back to their owners."
+Five-star kennels
+High end luxury is no longer limited to humans. D Pet Hotels , fittingly located in Hollywood, provides palatial suites for its pampered occupants, as well as chauffeur services, spa centers for extravagant grooming and a range of exercise classes.
+A feline alternative in the UK offers stunning views, entertainment and gourmet cuisine, although whether all this is appreciated is open to question.
+For more homely tastes, DogVacay offers an Airbnb-type experience, with pets boarding with a carefully vetted foster family.
+Human trends now trickle down in months instead of years
+Mark Kalaygian, editor, Pet Business
+MK: "There is much more demand for higher-end boarding services that do not keep the pets in small, wire crates, but rather large penned-in areas or even their own rooms. These are often marketed based not only on the comfortable spaces...but also on the care, interaction and high-quality food."
+Fine dining
+Organic and gluten-free are among the human nutrition trends also in demand at animal level, partly in response to growing fears over pet obesity.
+Significant rewards are on offer for entrepreneurs that meet the demand, such as healthy treat producers Dogswell , that has grown rapidly since its launch. Innovative variations include Barkbox , which includes toys in a monthly delivery, and Bistro -- a smart feeder for cats that precisely regulates their nutritional intake.
+MK: "There are certainly opportunities for new companies in the space...Limited ingredients and raw foods are two of the biggest growth trends. Human trends now trickle down in months instead of years."
+Furry style
+From glamourpuss shades to avant-garde jackets, clothing is among the most vibrant and diverse sectors of the industry, reaching into boutique brands such as Ralph Lauren and American Apparel, vividly illustrating the taste for humanizing pets.
+There is no little ingenuity in the market, as shown by recent initiatives to protect chickens from traffic with luminous jackets , and winter gear to protect vulnerable creatures from the harsh climate.
+MK: "The market took a big hit in the recession, certainly at the high end, and it's come back mainly on the functional side, with less novelty."
+Specialist medicine
+The veterinary space has been flooded with new businesses as it has swelled into a $15 billion market in the U.S. alone. Giants such as Aratana -- which raised over $100 million last year -- have established strong market shares, but new players such as Nexvet and Fetch Pharma are also growing fast, offering solutions to pet health problems from joint pain to cancer.
+The field also offers crossover opportunities with markets in healthy eating and activity trackers, with integrated services likely to develop.
+MK: "People are now willing to pay a premium to treat an illness when previously they might have put the animal to sleep. Vets have done a lot to extend lifespan, with great advances on treatments such as cancer. People used to say a dog year was seven human years, now it's more like five."
+</ExtractedText>
+</item>
+</channel>
+</rss>

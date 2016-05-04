@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 18:54:09 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Jockey pic pips Annan to prize</title>
+<guid isPermaLink="false">http://edition.cnn.com/2013/11/14/sport/katie-walsh-spencer-murphy-horse-racing/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/guh5ez8zzJA/index.html</link>
+<description>The life of a jockey is far from glamorous -- a world away from the confines of the rarefied, hushed atmosphere of London's National Portrait Gallery.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_sport/~4/guh5ez8zzJA" height="1" width="1"/&gt;</description>
+<pubDate>Fri, 15 Nov 2013 13:49:27 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2013/11/14/sport/katie-walsh-spencer-murphy-horse-racing/index.html</feedburner:origLink>
+<ExtractedText>A portrait of jockey Katie Walsh has won a prestigious photography prize
+Briton Spencer Murphy received a $19,000 check for the shot of the Irishwoman
+Walsh is pictured in the colors of the racehorse Seabass
+A picture of former UN secretary general Kofi Annan was awarded third place
+(CNN) -- The life of a jockey is far from glamorous -- a world away from the confines of the rarefied, hushed atmosphere of London's National Portrait Gallery.
+It's a life of blood, sweat and mud-splattered silks and it's also a hazardous profession, with jockeys at frequent risk of serious injury.
+That gritty reality has been key to a photograph of jockey Katie Walsh winning a prestigious portrait competition featuring esteemed subjects like former United Nations secretary general Kofi Annan.
+British photographer Spencer Murphy took the award-winning picture of Walsh -- sister of famed Irish jockey Ruby Walsh and the daughter of trainer Ted Walsh -- during a promotional shoot at Kempton racehorse.
+Chris Levine's "Frankel the Great," is a portrait of arguably the world's finest racehorse which will be officially unveiled at Ascot Racecourse this weekend. The stallion finished its career undefeated, winning all 14 of its races.
+Levine produced this 3D image of Queen Elizabeth II in 2004. The portrait was commissioned to celebrate 800 years of the island of Jersey's association with the British monarchy.
+Her majesty isn't the only iconic woman Levine has trained his lens on. He shot supermodel Kate Moss for this portrait called "She's Light (Pure)."
+Model turned pop diva Grace Jones has also posed for Levine, with this piece called "Stillness at the Speed of Light."
+Jones and Levine first met in 2008 and have enjoyed a successful collaboration. Levine created original laser displays for Jones' tour, while also publishing a number of photographs, including "Superstar" which is displayed here.
+Frankel's energy and effervescence made him a difficult subject, with Levine eventually having to shoot the horse inside the stables. He used multiple cameras to capture a complete image of the super stallion.
+Levine wanted to shoot Frankel in direct sunlight to show off the gleam of his coat. But predictable cloudy British weather meant he had to wait six days in order to shoot the horse.
+Levine isn't the first artist to draw inspiration from Frankel. Michael Kirkbride's painting, "Armchair Ride," was inspired by a poem about Frankel demolishing the field in last year's 2000 Guineas race.
+Champion thoroughbred Black Caviar appeared on the December issue of Vogue Australia. It was the first time in the 53-year history of the magazine that a horse had featured on the front.
+'Frankel the Great'
+</ExtractedText>
+</item>
+</channel>
+</rss>

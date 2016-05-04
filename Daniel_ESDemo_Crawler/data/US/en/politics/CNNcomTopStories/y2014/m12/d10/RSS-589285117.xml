@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>A very French look at 'The Little Prince'</title>
+<guid>http://edition.cnn.com/2014/12/10/showbiz/movies/the-little-prince-movie-trailer/index.html</guid>
+<link>http://edition.cnn.com/2014/12/10/showbiz/movies/the-little-prince-movie-trailer/index.html?eref=edition</link>
+<description>The just-released trailer for 2015's "The Little Prince" is rather magnifique. </description>
+<pubDate>Wed, 10 Dec 2014 08:38:50 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141210071132-the-little-prince-movie-still-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141210071132-the-little-prince-movie-still-top-tease.jpg" width="90"/>
+<ExtractedText>A very French look at 'The Little Prince'
+By Breeanna Hare, CNN
+December 10, 2014 -- Updated 1300 GMT (2100 HKT)
+An animated adaptation of Antoine de Saint-Exupery's beloved "The Little Prince" is set to bow in the U.S. in 2015.
+STORY HIGHLIGHTS
+A trailer for 2015's "The Little Prince" arrived this week
+The animated movie is an adaptation of the classic book
+The current trailer is in French
+(CNN) -- The just-released trailer for 2015's "The Little Prince" is rather magnifique.
+Directed by Mark Osborne ("Kung Fu Panda"), the upcoming adaptation will bring Antoine de Saint-Exupery's beloved novella into the 21st century through the eyes of a young girl.
+Although the first trailer, which was released internationally this week, is entirely in French, you can still get the gist: Amid the busy schedule of the modern day, a studious kid discovers the Little Prince through a friendship she develops with an older gentleman next door.
+It seems that seasoned neighbor is the pilot of de Saint-Exupery's rich story, which tells of an aviator who crashes in the Sahara and encounters a young prince full of stories about the far-off asteroid he came from.
+"I've flown almost everywhere in the world ... until something miraculous happened," the old man says in the trailer, according to a few translations . "I've always wanted to find someone to share my story with, but I think this world, it's become too adult. It's only the beginning of the story!"
+"The Little Prince" was published in 1943 and has had an impact on readers of all ages, all around the world.
+The 2015 animated retelling stars some major actors, including Jeff Bridges, Rachel McAdams, James Franco, Marion Cotillard and Benicio del Toro. "Interstellar" actress Mackenzie Foy provides the voice of the young girl.
+"The Little Prince" opens stateside in 2015.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Science and Space</title>
+<link>http://edition.cnn.com/TECH/space/?eref=edition_space</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-us</language>
+<copyright>© 2008 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 31 Dec 2008 10:36:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Science and Space</title>
+<link>http://edition.cnn.com/TECH/space/?eref=edition_space</link>
+<url>http://i2.cdn.turner.com/cnn/.element/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_space" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_space"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Indian lunar orbiter hit by heat rise</title>
+<guid isPermaLink="false">http://edition.cnn.com/2008/TECH/space/11/26/india.moon.probe/index.html?eref=edition_space</guid>
+<link>http://rss.cnn.com/~r/rss/edition_space/~3/utoHWQBr1hc/index.html</link>
+<description>Scientists have switched off several on-board instruments to halt rising temperatures inside India's first unmanned lunar spacecraft.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_space/~4/utoHWQBr1hc" height="1" width="1"/&gt;</description>
+<pubDate>Wed, 26 Nov 2008 07:26:44 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2008/TECH/space/11/26/india.moon.probe/index.html?eref=edition_space</feedburner:origLink>
+<ExtractedText>Indian lunar orbiter hit by heat rise
+Story Highlights
+Scientists lower temperature onboard India's first lunar satellite Chandrayaan-1
+Craft was launched in late October, has already released probe at the moon
+Two-year mission seeks high-resolution, 3-D imaging of the moon's surface
+Officials: Chandrayaan-1 under no threat of damage due to heat changes
+From Harmeet Shah Singh
+CNN
+NEW DELHI, India (CNN) -- Scientists have switched off several on-board instruments to halt rising temperatures inside India's first unmanned lunar spacecraft.
+The spacecraft carrying India's first lunar probe, Chandrayaan-1, lifts off from Sriharikota.
+Mylswamy Annadurai, the project director for the lunar mission, told CNN that temperatures onboard Chandrayaan-1 had risen to 49 degrees Celsius (120 degrees Fahrenheit).
+The increase occurred as the craft, the moon -- which it is orbiting -- and the sun lined up, a phenomenon which Annadurai said was not unexpected and which would likely last until the end of December.
+"We have switched off the systems (aboard) that are not needed to be on," Annadurai said, ruling out the possibility of damage and adding that the temperature was now down to 40 degrees Celsius (104 degrees Fahrenheit).
+Heat on board the Chandrayaan-1 should not exceed 50 degrees Celsius (122 degrees Fahrenheit), Annadurai said -- but insisted the orbiter is designed to withstand up to 60 degrees Celsius (140 degrees Fahrenheit).
+The Chandrayaan-1 -- Chandrayaan means "moon craft" in Sanskrit -- was successfully launched from southern India on October 22.
+</ExtractedText>
+</item>
+</channel>
+</rss>

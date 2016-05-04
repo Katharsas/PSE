@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Sport</title>
+<description>Alles rund um den Sport: Informationen, News und Reportagen zu den Themen Fußball, Formel 1, Tennis, Radsport und Handball sowie Live-Ticker zur Fußball-Bundesliga.</description>
+<pubDate>Wed, 10 Dec 2014 14:55:31 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:08:15 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/sport/index</link>
+<atom:link href="http://newsfeed.zeit.de/sport/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Sport</title>
+      <link>http://www.zeit.de/sport/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/sport/championsleague-ticker</link>
+      <guid>http://www.zeit.de/sport/championsleague-ticker</guid>
+      <category>Sport</category>
+      <title>Champions League: Live: Benfica – Leverkusen, Dortmund – Anderlecht</title>
+      <description>&lt;a href="http://www.zeit.de/sport/link-championsleague-ticker"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/sport/2014-11/ball-symbol-champions-league/ball-symbol-champions-league-148x84.jpg"/&gt;&lt;/a&gt; Bayer und der BVB stehen schon im Achtelfinale. Für sie geht es um den Gruppensieg, um im Achtelfinale den stärksten Gegnern aus dem Weg zu gehen. Der Liveticker</description>
+      <dc:creator>ZEIT ONLINE : Sport</dc:creator>
+      <pubDate>Thu, 31 Jan 2013 16:29:23 GMT</pubDate>
+    <ExtractedText>Champions League live
+Champions League live
+Die Champions League live auf ZEIT ONLINE: Hier finden Sie ausführliche Spielberichte aller Begegnungen der Saison 2014/15, von der Gruppenphase bis zum Endspiel. Am 6. Juni 2015 treffen die Finalisten im Berliner Olympiastadion aufeinander.
+Seit 1991/92 trägt die Uefa die Champions League mit den besten Teams der europäischen Fußball-Ligen aus. Sie ist der Nachfolgewettbewerb des Europapokals der Landesmeister, der seit 1955 existierte.
+</ExtractedText>
+</item>
+</channel>
+</rss>

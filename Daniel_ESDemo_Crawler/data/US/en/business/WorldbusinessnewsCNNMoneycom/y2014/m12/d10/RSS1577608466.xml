@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 12:01:15 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>3 reasons why Greek turmoil matters</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/uaM-IZAnejs/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/10/investing/greece-syriza-why-it-matters/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141210153206-greece-syriza-120x90.jpg" width="120"/>
+<description>Read full story for latest details.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/ubTbPa1Vydk" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/uaM-IZAnejs" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Wed, 10 Dec 2014 11:12:15 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/10/investing/greece-syriza-why-it-matters/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/ubTbPa1Vydk/index.html</feedburner:origLink>
+<ExtractedText>3 reasons why Greek turmoil matters
+By Virginia Harrison   @vharrisoncnn December 10, 2014: 11:12 AM ET
+ 
+Getting Greece back on track
+LONDON (CNNMoney)
+Political turmoil in Greece has sent investors packing and raises this question for the rest of the world: Should we be worried too?
+Greek stocks suffered their worst one-day fall in 27 years Tuesday after presidential elections were brought forward. Parliament holds the first of three votes to elect a new president next week. Failure to do so by the end of the year would trigger snap elections.
+Left-wing opposition party Syriza is ahead in the polls and victory would threaten the viability of Greece's mammoth bailout and its fragile recovery after six years of painful recession.
+A win for Syriza could savage the Greek economy and spell trouble for Europe.
+"Suddenly it's a very tangible risk and markets are panicking," said Sarah Pemberton, European economist at Capital Economics.
+Investors are worried about three things:
+1. The bailout unravels: A Syriza-led government may rip up agreements Greece has made with its lenders -- the International Monetary Fund, European Commission and European Central Bank -- and seek to have part of the country's enormous debt written off again.
+That would impose new losses on other EU states, and some private investors.
+The anti-austerity party has also vowed to reverse many of the reforms that have helped Greece return to growth.
+In addition, it wants to implement an 11.5 billion euro ($14.3 billion) social spending program, hike wages and scrap some taxes introduced under the bailout.
+2. Grexit risk returns: But it's hard to see EU leaders allowing Greece to rack up even more debt, especially if Athens is trying at the same time to rewrite the terms of the rescue loans it has already received -- 240 billion euros in total.
+If push comes to shove, a Syriza-led Greece could be forced to abandon the euro.
+"Greece should be reducing the deficit not increasing it," said Pemberton. "Germany wouldn't agree to any of it. It could come down to whether they stay in the eurozone."
+Other analysts see little chance of the EU stumping up cash for Syriza. ETX Capital's market strategist Daniel Sugarman said a win for the party would spell an "economic apocalypse for Greece."
+Related: Europe punts again on more stimulus
+3. Chain reaction: A forced exit from the currency bloc -- or indeed concessions made to Greece to avoid that -- would set a dangerous precedent, and could trigger a damaging ripple effect.
+"To have one country leave could set off a chain reaction," said Sugarman. " Do [other] countries use the threat of leaving the eurozone as a bargaining tool?"
+For now, Greece's political headaches are largely a domestic problem.
+While stocks in Athens tumbled Tuesday, the muted reaction in other European bond markets suggest this crisis is -- at least for now -- contained.
+But investors will be on alert for any sign of a spike in borrowing costs for other struggling eurozone countries.
+First Published: December 10, 2014: 11:12 AM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

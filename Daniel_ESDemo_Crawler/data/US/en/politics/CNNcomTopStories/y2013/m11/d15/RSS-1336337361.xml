@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Iraq: Dozens killed in Ashura blasts</title>
+<guid>http://edition.cnn.com/2013/11/14/world/meast/iraq-violence/index.html</guid>
+<link>http://edition.cnn.com/2013/11/14/world/meast/iraq-violence/index.html?eref=edition</link>
+<description>At least 27 people were killed and 58 others wounded in Iraq Thursday when a suicide bomber wearing an explosive vest blew himself up among Shiite pilgrims, police said. </description>
+<pubDate>Fri, 15 Nov 2013 00:29:32 EST</pubDate>
+<ExtractedText>36 killed in blasts targeting Iraqi Shiite Muslims on holy day
+By Saad Abedine and Mohammed Tawfeeq, CNN
+November 14, 2013 -- Updated 2112 GMT (0512 HKT)
+STORY HIGHLIGHTS
+NEW: 27 people are killed by a suicide bomber in a crowd of Shiite pilgrims
+The latest attacks took place on the most important holy day on the Shiite calendar
+At least seven blasts have targeted Shiite Muslims in Iraq over the past two days
+Dozens have been injured in those explosions
+(CNN) -- At least 27 people were killed and 58 others wounded in Iraq Thursday when a suicide bomber wearing an explosive vest blew himself up among Shiite pilgrims, police said.
+The bomber was wearing a police uniform, police said. The incident occurred in al-Saadiya, about 75 miles (120 kilometers) northeast of Baghdad.
+The suicide bombing followed a pair of blasts in eastern Iraq that killed nine and injured 25, health officials said.
+Those attacks took place in Wasit as thousands of worshipers jammed the streets to attend festivals marking Ashura, the most important holy day on the Shiite Muslim calendar.
+Conditions in Iraq far from stable
+Violence and murder on upswing in Iraq
+Ashura commemorates the death of Imam Hussein, grandson of the Prophet Mohammed.
+In Iraq, a bushel of problems threaten stability
+The twin blasts targeted a procession tent. During Ashura, pilgrims often set up tents to distribute water and food to passersby. The tents also give fellow pilgrims a place to rest, mourn, chant and pray before they march to Karbala, the holy shrine of Imam Hussein.
+Wasit is about 100 miles (161 kilometers) southeast of Baghdad.
+The explosions are the latest in a spate of attacks apparently targeting Shiite Muslims during this holy week.
+On Wednesday, four coordinated blasts killed 10 people in Baquba, police said. Those explosions targeted a series of Shiite processions.
+Imam Hussein's death was one of the events that helped create the schism between Sunni and Shiite Islam, the two main Muslim religious movements. He was killed in Karbala during battle in 680 A.D.
+</ExtractedText>
+</item>
+</channel>
+</rss>

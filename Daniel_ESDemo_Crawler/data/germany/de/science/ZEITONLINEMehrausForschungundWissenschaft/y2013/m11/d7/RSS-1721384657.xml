@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+<description>Nachrichten und Analysen zu Wissenschaft, Forschung, Gesundheit, Umwelt und Geschichte. Lesen Sie aktuelle Informationen aus dem Ressort Wissen.</description>
+<pubDate>Sat, 16 Nov 2013 12:18:22 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:40:00 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wissen/index</link>
+<atom:link href="http://newsfeed.zeit.de/wissen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+      <link>http://www.zeit.de/wissen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/2013/46/stimmts-fliegen</link>
+      <guid>http://www.zeit.de/2013/46/stimmts-fliegen</guid>
+      <category>Wissen</category>
+      <title>Kolumne Stimmt's?: Plastiktüten zur Fliegenabwehr</title>
+      <description>&lt;a href="http://www.zeit.de/2013/46/stimmts-fliegen"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wissen/2013-11/fliege-plastik-tuete/fliege-plastik-tuete-148x84.jpg"/&gt;&lt;/a&gt; Mit Wasser gefüllte Plastikbeutel sollen Fliegen verjagen. Zumindest in den USA und der Schweiz gilt das als zielführende Abwehrmaßnahme. Die Wissenschaft zweifelt.</description>
+      <dc:creator>ZEIT ONLINE : Wissen - Christoph Drösser</dc:creator>
+      <pubDate>Thu, 07 Nov 2013 06:00:00 GMT</pubDate>
+    <ExtractedText>Stimmt's?: Verscheuchen mit Wasser gefüllte durchsichtige Plastikbeutel vor der Tür Fliegen?
+Stimmt's?: Verscheuchen mit Wasser gefüllte durchsichtige Plastikbeutel vor der Tür Fliegen?
+... fragt Lothar Wiedemer aus  Bräunlingen. von  Christoph Drösser
+16. November 2013  08:31 Uhr  5 Kommentare
+Der Fragesteller stieß auf diese Praxis, als er in einer Schweizer Pension Urlaub machte. Aber warum sollten Fliegen sich von einem Wasserbeutel abschrecken lassen? Es gibt verschiedene Erklärungen für das angebliche Phänomen; etwa dass die Fliegen in dem Beutel ihr eigenes, vergrößertes Spiegelbild sehen und Reißaus nehmen würden. Plausibler klingt schon die Theorie, Lichtreflexe im Wasser würden die Insekten verwirren und zur Umkehr bewegen.
+Serie: Stimmt's?
+Für weitere Artikel zur Serie "Stimmt's?" klicken Sie auf dieses Bild  |  © Jeff J. Mitchell/Getty Images
+Es hat tatsächlich mehr oder weniger wissenschaftliche Versuche gegeben, die Wirksamkeit der Beutel zu testen. Im Jahr 2007 experimentierte Mike Stringham von der North Carolina State University damit in einer Eierfabrik. Dort versah er die Eingänge mancher Räume mit Wasserbeuteln, andere nicht. Um die Zahl der Fliegen zu vergleichen, legte er in den Räumen weiße Karteikarten aus und zählte nachher die Fliegenschisse. Sein Ergebnis: Es hielten sich sogar mehr (wenn auch nicht signifikant mehr) Fliegen in den mit Beuteln behängten Räumen auf. Ein negatives Ergebnis, das auch von den Testern der amerikanischen Fernsehshow Mythbusters bestätigt wurde. Vorläufiges Urteil: Aberglaube.
+Anzeige
+Die Adressen für "Stimmt’s"-Fragen: DIE ZEIT, Stimmt's?, 20079  Hamburg oder stimmts@zeit.de . Das "Stimmt's?"-Archiv: www.zeit.de/stimmts
+Diesen Artikel finden Sie als Audiodatei im Premiumbereich unter www.zeit.de/audio
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Studium</title>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<pubDate>Wed, 10 Dec 2014 10:52:06 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:58:05 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/studium/index</link>
+<atom:link href="http://newsfeed.zeit.de/studium/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Studium</title>
+      <link>http://www.zeit.de/studium/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/studium/uni-leben/2014-11/was-studieren-neuere-geschichte</link>
+      <guid>http://www.zeit.de/studium/uni-leben/2014-11/was-studieren-neuere-geschichte</guid>
+      <category>Studium</category>
+      <title>Was studieren?: Einführung in die Neuere Geschichte</title>
+      <description>&lt;a href="http://www.zeit.de/studium/uni-leben/2014-11/was-studieren-neuere-geschichte"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/studium/uni-leben/2014-11/was-studieren-marie-antoinette/was-studieren-marie-antoinette-148x84.jpg"/&gt;&lt;/a&gt; Wenn das Volk hungert, soll es Kuchen essen. Das soll Marie Antoinette gesagt haben. Raten Sie im Quiz, warum das Zitat nicht von ihr stammen kann.</description>
+      <dc:creator>ZEIT ONLINE : Studium - Saskia Gerhard</dc:creator>
+      <pubDate>Mon, 01 Dec 2014 05:53:32 GMT</pubDate>
+    <ExtractedText>Was studieren?: Einführung in die Neuere Geschichte
+Frage 1 von 10
+Einführung in die Neuere Geschichte
+Welche Zeitspanne umfasst die Neuere Geschichte?
+13. bis 16. Jahrhundert
+</ExtractedText>
+</item>
+</channel>
+</rss>

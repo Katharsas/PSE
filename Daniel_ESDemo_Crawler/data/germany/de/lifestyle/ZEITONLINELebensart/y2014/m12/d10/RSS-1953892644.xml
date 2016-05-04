@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Lebensart</title>
+<description>Die Lust am Leben: Aktuelle Berichte, Ratgeber und Kolumnen rund um die Themen Mode, Essen, Trinken und Partnerschaft.</description>
+<pubDate>Tue, 13 May 2014 13:00:58 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:03:35 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/lebensart/index</link>
+<atom:link href="http://newsfeed.zeit.de/lebensart/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Lebensart</title>
+      <link>http://www.zeit.de/lebensart/index</link>
+    </image>
+<item>
+      <link>http://blog.zeit.de/rezeptor/2014/04/17/fruehlingssalat-mit-saurem-gemuese_3214#more-3214</link>
+      <guid>http://blog.zeit.de/rezeptor/2014/04/17/fruehlingssalat-mit-saurem-gemuese_3214#more-3214</guid>
+      <category>Lebensart</category>
+      <title>Rezeptor-Blog: Nur Frühling im Salatkopf</title>
+      <description>&lt;a href="http://www.zeit.de/lebensart/essen-trinken/2014-04/link-rezeptor-fruehling-salat"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/lebensart/essen-trinken/2014-04/rezeptor-salat-kopf/rezeptor-salat-kopf-148x84.jpg"/&gt;&lt;/a&gt; Endlich liegt in den Supermarktregalen wieder frischer grüner Salat. Rote Beete und Mairübchen sorgen für die nötigen Farbtupfer in diesem Frühlingsgenuss.</description>
+      <dc:creator>ZEIT ONLINE : Lebensart</dc:creator>
+    <ExtractedText>Salz
+Pfeffer
+Das Wurzelgemüse, also beide kleinen Mohrrüben, die rote Bete und das Mairübchen schälen und in hauchdünne schneiden. Die Mohrrübe längs oder diagonal, die anderen beiden werden erst längs halbiert und dann zu halbmondförmigen Scheibchen
+In einem kleinen Topf 200 ml Reisessig mit zwei TL Zucker und einem halben TL Salz aufkochen. Dann abseits der Hitze die Mohr- und Mairübchenstücke darin zehn Minuten fast gar ziehen lassen. Alles mit einer Schöpfkelle wieder aus dem Essig hieven, abtropfen lassen und irgendwo parken. Stattdessen die rote Bete darin weich kochen, das dauert ebenfalls zirka zehn Minuten, vielleicht sogar etwas länger. Diese dann ebenfalls abgetropft beiseite stellen.
+Parallel zum vorigen Schritt kann man sich entspannt um den Salat kümmern: Alles wie immer entstrunken, putzen, waschen und wieder trockenschleudern. Petersilie- und Estragonblätter von den Stängeln zupfen und schon mal die Salatsauce anrühren: Dazu zwei Prisen Salz, eine Prise Pfeffer, ein haselnußgroßer Klacks Senf und ein TL Zitronensaft vermengen, bis sich das Salz aufgelöst hat. Dann vier EL Olivenöl unterrühren, und zum Schluss noch ein TL Aprikosenmarmelade. Wem das jetzt zu dickflüssig ist, der darf noch einen EL Wasser dazugeben.
+Diese Salatsauce ist noch relativ öllastig, aber keine Panik, die Säure kommt gleich punktuell mit dem Wurzelgemüse. Ganz vielleicht könnte man noch einen TL vom Kochessig dazugeben.
+Dann den grünen Salat mit der Hälfte der Salatsauce anmachen und auf die Teller verteilen. Den Rest der Zutaten adrett drumrum drapieren und mit dem Rest des Dressings beträufeln.
+Dazu passt gutes Wetter, ein leichter Weißwein und vielleicht etwas Baguette.
+ 
+</ExtractedText>
+</item>
+</channel>
+</rss>

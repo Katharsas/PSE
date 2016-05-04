@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:esi="http://www.edge-delivery.org/esi/1.0" version="2.0">
+  <channel>
+<title>Studium – Hochschulen und Universitäten</title>
+<link>http://newsfeed.zeit.de/</link>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<language>de-de</language>
+<copyright>Copyright © 2016, ZEIT ONLINE GmbH</copyright>
+<atom:link href="http://newsfeed.zeit.de/studium/index" type="application/rss+xml"/>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>zeit.web 2.59</generator>
+<managingEditor>online-cr.zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Technik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>Studium – Hochschulen und Universitäten</title>
+      <link>http://newsfeed.zeit.de/</link>
+    </image>
+<item>
+      <title>ZEIT Campus Magazin: ZEIT Campus Magazin</title>
+      <link>https://premium.zeit.de/zeit-campus-ausgabenseite?wt_zmc=fix.int.zonpme.zeitde.teaser.zcampusausgsseite.bildtext.cover.cover&amp;utm_medium=fix&amp;utm_source=zeitde_zonpme_int&amp;utm_campaign=teaser&amp;utm_content=zcampusausgsseite_bildtext_cover_cover</link>
+      <description/>
+      <category>Studium</category>
+      <dc:creator>ZEIT ONLINE: Studium - </dc:creator>
+      <pubDate>Mon, 22 Feb 2016 12:42:27 -0000</pubDate>
+      <guid isPermaLink="false">https://premium.zeit.de/zeit-campus-ausgabenseite?wt_zmc=fix.int.zonpme.zeitde.teaser.zcampusausgsseite.bildtext.cover.cover&amp;utm_medium=fix&amp;utm_source=zeitde_zonpme_int&amp;utm_campaign=teaser&amp;utm_content=zcampusausgsseite_bildtext_cover_cover</guid>
+    <ExtractedText> Oder kaufen Sie hier die digitale Einzelausgabe bei iKiosk
+ 
+ 
+Schöne Gastarbeiterin
+Modeln scheint oft nur auf den Fotos glamourös. Aber für Olesja war es die Chance, rauszukommen aus Weißrussland. Unsere Autorin hat sie ein Jahr lang begleitet.
+ 
+In Deutschland entstehen kaum gute Fernsehserien? Abwarten. Die Drehbuchautoren von morgen lernen nach amerikanischem Vorbild.
+ 
+In der Mensa mit Attila Hildmann
+Der Autor veganer Kochbücher provoziert – Fleischesser und Veganer gleichermaßen. Trotzdem sind seine Bücher Bestseller. Ein Gespräch über Schubladendenken, Größenwahn und eine bessere Welt.
+ 
+</ExtractedText>
+</item>
+</channel>
+</rss>

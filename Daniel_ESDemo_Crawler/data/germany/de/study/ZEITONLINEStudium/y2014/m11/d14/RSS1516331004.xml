@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Studium</title>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<pubDate>Wed, 10 Dec 2014 10:52:06 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:58:05 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/studium/index</link>
+<atom:link href="http://newsfeed.zeit.de/studium/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Studium</title>
+      <link>http://www.zeit.de/studium/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/2014/45/fachbegriffe-medizin-studium-verstaendlichkeit</link>
+      <guid>http://www.zeit.de/2014/45/fachbegriffe-medizin-studium-verstaendlichkeit</guid>
+      <category>Studium</category>
+      <title>Fachbegriffe: Was hab ich und wer erklärt mir das?</title>
+      <description>&lt;a href="http://www.zeit.de/2014/45/fachbegriffe-medizin-studium-verstaendlichkeit"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/studium/hochschule/2014-11/medizinstudium-fachbegriffe/medizinstudium-fachbegriffe-148x84.jpg"/&gt;&lt;/a&gt; Medizinstudenten werden auf Fachsprache gedrillt, im Anatomiekurs lernen sie alle Körperteile auf Lateinisch. In Dresden sollen sie auch die einfache Sprache studieren.</description>
+      <dc:creator>ZEIT ONLINE : Studium - Jan Schweitzer</dc:creator>
+      <pubDate>Fri, 14 Nov 2014 08:51:54 GMT</pubDate>
+    <ExtractedText>Fachbegriffe: Was hab ich?
+Fachbegriffe: Was hab ich?
+Schon Medizinstudenten werden auf Fachsprache gedrillt. Jetzt lernen sie an der Uni, sich verständlich auszudrücken von  Jan Schweitzer
+DIE ZEIT Nº 45/201414. November 2014           09:50 Uhr  15 Kommentare
+Medizin-Studenten lernen viel Theorie und Fachbegriffe, das nützt den Patienten nicht immer.   |   © ovokuro/photocase.de
+DIE ZEIT: Herr Bittner, in diesem Wintersemester wird an der Universität Dresden erstmals das         Wahlpflichtfach "Was hab ich?" angeboten. Es orientiert sich an Ihrer Webseite washabich.de – was werden die Medizinstudenten bei Ihnen lernen?
+Johannes Bittner: Wir zeigen ihnen, wie sie Patienten medizinische Befunde so erklären, dass diese alles         verstehen.
+Anzeige
+ZEIT: Bei der Besprechung eines Röntgenbildes vom Knie zum Beispiel müssen die Studenten also         alle Fachbegriffe ins Deutsche übersetzen?
+Bittner: Ja, zusätzlich sollen sie aber auch die Kontextinformationen liefern, die ein Patient         braucht, um den Befund zu verstehen.
+ZEIT: Das heißt?
+Bittner: Sie sollen auch erklären, was bei der Röntgenuntersuchung passiert, wie das Knie aufgebaut         ist, welche Funktion bestimmte Knochen haben.
+ZEIT: Sprechen die Medizinstudenten denn überhaupt schon so viel Ärztelatein?
+Bittner: Ja, die eignen sich das ganz schnell an. Schon im ersten Semester belegen sie einen Kurs,         in dem sie die Fachausdrücke büffeln. Dazu kommen die Anatomiekurse, für die sie sämtliche         Körperteile auf Lateinisch lernen müssen. Das prägt sie schon sehr stark.
+ZEIT: Wie zeigt sich, dass Studenten sich nicht mehr laienverständlich ausdrücken?
+Bittner: In einer unserer ersten Übungen müssen sie in einem Text Wörter markieren, von denen sie         denken, dass Patienten sie nicht verstehen. Etwa 30 davon haben wir versteckt, und nur die         wenigsten Studenten finden alle. Das haben wir in diesem Sommer in einem Pilotkurs an der         Universität Hamburg herausgefunden.
+ZEIT: Oft ist es nicht nur die Fachsprache, die dazu führt, dass Patienten nicht alles verstehen,         sondern die Aufregung während des Gesprächs. Würden nicht leichter verständliche Arztbriefe         helfen, in denen Patienten zu Hause alles in Ruhe nachlesen können?
+Bittner: Auf jeden Fall! Wir starten im kommenden Januar ein Pilotprojekt, in dem wir an einer         Klinik in Rheinland-Pfalz das Konzept eines Patientenbriefs testen werden – als         laienverständliches Entlassungsdokument.
+ZEIT: Es bekommen also nicht mehr nur die weiterbehandelnden Ärzte einen Brief?
+Bittner: Nein, auch die Patienten. Darin erfahren sie, warum genau sie in der Klinik waren, welche         Untersuchungen gemacht wurden und welche Therapien, welche Diagnosen gestellt wurden,         welches die nächsten Schritte sind und wie sie sich so verhalten können, dass sie ihrer         Gesundheit nicht schaden.
+</ExtractedText>
+</item>
+</channel>
+</rss>

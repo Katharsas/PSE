@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Look at me! Selfies of the year</title>
+<guid>http://edition.cnn.com/2014/12/05/living/gallery/2014-selfies-of-the-year/index.html</guid>
+<link>http://edition.cnn.com/2014/12/05/living/gallery/2014-selfies-of-the-year/index.html?eref=edition</link>
+<description>From the red carpet to the Red Planet, these selfies show 2014 in a way you won't find anywhere else.</description>
+<pubDate>Wed, 10 Dec 2014 05:07:06 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141209161042-09-selfies-1210-restricted-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141209161042-09-selfies-1210-restricted-top-tease.jpg" width="90"/>
+<ExtractedText>&lt;&lt; Previous   Next &gt;&gt;
+Host Ellen DeGeneres takes a moment to orchestrate a selfie with a group of movie stars at the Academy Awards ceremony on Sunday, March 2. Actor Bradley Cooper, seen in the foreground, was holding the phone at the time. "If only Bradley's arm was longer," DeGeneres tweeted. "Best photo ever." It became the most retweeted post of all time.
+Loading weather data ...
+</ExtractedText>
+</item>
+</channel>
+</rss>

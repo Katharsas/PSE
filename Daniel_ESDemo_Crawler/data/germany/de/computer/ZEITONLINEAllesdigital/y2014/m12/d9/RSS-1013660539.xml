@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/internet/2014-12/sony-hack-nordkorea-the-interview</link>
+      <guid>http://www.zeit.de/digital/internet/2014-12/sony-hack-nordkorea-the-interview</guid>
+      <category>Digital</category>
+      <title>Sony: Getrollt, gehackt, erpresst</title>
+      <description>&lt;a href="http://www.zeit.de/digital/internet/2014-12/sony-hack-nordkorea-the-interview"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/internet/2014-12/sony-the-interview/sony-the-interview-148x84.jpg"/&gt;&lt;/a&gt; Auch zwei Wochen nach dem Angriff auf Sony sind viele Fragen offen: Was sind die Motive? Welche Rolle spielt Nordkorea? Wie fundamental hat Sonys Sicherheit versagt?</description>
+      <dc:creator>ZEIT ONLINE : Digital - Eike Kühl</dc:creator>
+      <pubDate>Tue, 09 Dec 2014 17:06:53 GMT</pubDate>
+    <ExtractedText>Sony: Getrollt, gehackt, erpresst
+Sony: Getrollt, gehackt, erpresst
+Auch zwei Wochen nach dem Angriff auf Sony sind viele Fragen offen: Was sind die Motive? Welche Rolle spielt Nordkorea? Wie fundamental hat Sonys Sicherheit versagt? von  Eike Kühl
+9. Dezember 2014           18:05 Uhr  10 Kommentare
+Plakat des kommenden Sony-Films "The Interview"  |  © Sony Pictures
+Für die Verantwortlichen von Sony ist es ein Déjà-vu. Schon im April 2011 schöpften unbekannte Hacker mehrere Millionen Nutzerdaten des PlayStation Network ab . Der Spieledienst war daraufhin für Wochen nicht zu erreichen, Sony musste ihn grundlegend umbauen. Seit zwei Wochen steht Sony erneut im Mittelpunkt eines Hackerangriffs. Ende November tauchten die ersten Berichte auf, dass Hacker Zugriff auf die Server von Sonys Filmabteilung Sony Pictures Entertainment erlangten. Dabei kopierten sie mehrere unveröffentlichte Filme, interne Dokumente und persönliche Daten, die anschließend im Netz auftauchten.
+Wie groß der Hack tatsächlich war, wird erst jetzt deutlich. Offenbar griffen die Täter mehrere Terabyte an Daten ab. Neben den Filmen befinden sich darunter 47.000 Sozialversicherungsnummern von Mitarbeitern, Passwörter und Zugangsdaten, sowie Personaldaten und eine Liste mit den Tarnnamen von bekannten Schauspielern.
+Anzeige
+Zu dem Angriff bekannte sich eine Gruppe namens Guardians of Peace (GOP). Was sie genau wollen, ist unklar. Allerdings gibt es drei Theorien über die Motive der Gruppe.
+In der ersten Theorie geht es um Erpressung. Wie Dokumente zeigen, haben sie die Verantwortlichen von Sony Pictures offenbar schon drei Tage vor dem Angriff gewarnt. In einer von Mashable entdeckten E-Mail heißt es, dass  man "großen Schaden" anrichten werde und "finanzielle Entschädigung" suche. Diese Mail ist allerdings nicht mit GOP unterzeichnet, sondern von God'sApstls (sic!). Dennoch könnte eine Verbindung zwischen den beiden Gruppen bestehen: In einer Nachricht , die nach dem Angriff auf einigen Sony-Rechnern auftauchte, war von einer früheren Warnung die Rede.
+Am vergangenen Wochenende hatten Unbekannte zudem mehrere Sony-Mitarbeiter bedroht und erpresst. Die Gruppe rief sie auf, die Fehler des Unternehmens einzuräumen, "um keinen Schaden zu erleiden". Was die Hacker bis jetzt getan haben, sei nur ein kleiner Teil eines größeren Plans. Sony bestätigte die Existenz der E-Mails. Allerdings distanzierten sich die mutmaßlichen Hacker von GOP davon : "Wir wissen nichts von drohenden Mails gegenüber Sony-Mitarbeitern", heißt es in einer neuen Nachricht.
+Ein Film erzürnt Kim Jong Un
+Diese enthält auch Hinweise auf eine zweite Theorie, die sich um die Actionkomödie The Interview dreht. Der von Sony produzierte Film mit Seth Rogen und James Franco handelt von zwei US-Journalisten, die nach Nordkorea reisen und von der CIA rekrutiert werden, um Kim Jong Un zu töten. Unter der Führung Nordkoreas sorgte bereits die Ankündigung des Films für Unmut. Als der Sony-Hack bekannt wurde, mutmaßten deshalb einige, dass der Angriff möglicherweise von Nordkorea aus initiiert wurde.
+In einer Nachricht, die am Montag auf der Plattform GitHub veröffentlicht wurde, fordern die mutmaßlichen Mitglieder von Guardians of Peace Sony auf, der folgenden Forderung nachzukommen: Das Unternehmen solle die Veröffentlichung des "Terrorismus-Films" stoppen, der "den regionalen Frieden bedroht". Es ist das erste Mal, dass die Hacker von GOP explizit den kommenden Film The Interview erwähnen.
+Das klingt abenteuerlich. Ein gezielter Hack auf ein Medienunternehmen, weil einer Regierung die Geschichte eines Films nicht passt, wäre eine sonderbare Entwicklung in der Internetkriminalität. Nicht nur deshalb scheint ein staatlich gesteuerter Angriff unwahrscheinlich. Auch die Tatsache, dass die Täter den angeblich so schlimmen Film selbst im Netz veröffentlichten, lässt Zweifel an der Theorie aufkommen. Die Sprecher der nordkoreanischen Regierung bestreiten jedenfalls eine Beteiligung , nennen die Aktion aber gleichzeitig eine "gerechte Tat".
+Ähnlichkeit mit Angriffen auf Südkorea
+Ganz ausschließen lässt sich eine Beteiligung Nordkoreas oder zumindest von Sympathisanten des Regimes allerdings nicht. Ein Hinweis versteckt sich in einer Warnung des FBI, deren Detail das US-Portal Re/code kennt : Demnach hatten die Angreifer ein koreanisches Sprachpaket von Microsoft Windows für ihre Trojaner benutzt. Das bestätigen auch Untersuchungen des Sicherheitsunternehmens Blue Coat .
+Ein größerer Hinweis ist die Schadsoftware selbst: Die verwendeten Trojaner greifen nicht nur Daten ab, sondern löschen anschließend auch die befallene Festplatte. Diese sogenannte Wiper-Malware kam schon im vergangenen Jahr bei einem Angriff auf südkoreanische TV-Stationen und Banken zum Einsatz. Wie der Sicherheitsexperte Kurt Baumgartner schreibt , gibt es Indizien auf eine Verbindung zur DarkSeoul-Gang , die bereits seit vier Jahren vor allem in Südkorea Cyberangriffe durchführt. Die Regierung Südkoreas vermutet die Nachbarn aus dem Norden dahinter. Doch eindeutige Beweise gibt es dafür ebenso wenig wie für den aktuellen Angriff auf Sony. 
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

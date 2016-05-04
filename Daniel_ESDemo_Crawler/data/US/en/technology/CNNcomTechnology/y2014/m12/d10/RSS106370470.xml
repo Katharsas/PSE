@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 09:48:37 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_technology" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_technology"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>See the U.S. military's stealth dirt bike</title>
+<guid isPermaLink="false">http://www.cnn.com/video/data/2.0/video/tech/2014/04/25/orig-military-stealth-dirt-bike-mg.cnn.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_technology/~3/eCt-zvjER8A/orig-military-stealth-dirt-bike-mg.cnn.html</link>
+<description>The U.S. military's building a stealth bike with an electric battery, capable of silent operation for covert missions.&lt;img src="//feeds.feedburner.com/~r/rss/edition_technology/~4/eCt-zvjER8A" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Wed, 10 Dec 2014 09:10:17 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/140425123312-military-stealth-dirt-bike-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/140425123312-military-stealth-dirt-bike-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://www.cnn.com/video/data/2.0/video/tech/2014/04/25/orig-military-stealth-dirt-bike-mg.cnn.html</feedburner:origLink>
+<ExtractedText/>
+</item>
+</channel>
+</rss>

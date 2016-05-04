@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Swedish police shut down Pirate Bay</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/KIEZeX-guPU/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/10/technology/pirate-bay-shut/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141210140445-pirate-bay-founder-120x90.jpg" width="120"/>
+<description>Swedish police have shut down The Pirate Bay just days after movies stolen from Sony appeared on the site.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/vDO6iix1gAU" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/KIEZeX-guPU" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Wed, 10 Dec 2014 10:28:13 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/10/technology/pirate-bay-shut/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/vDO6iix1gAU/index.html</feedburner:origLink>
+<ExtractedText>Swedish police shut down Pirate Bay
+By Ivana Kottasova   @ivanakottasova December 10, 2014: 10:28 AM ET
+Pirate Bay founder Peter Sunde was recently released from prison.
+LONDON (CNNMoney)
+Sweden has shut down The Pirate Bay just days after several movies stolen from Sony ( SNE ) appeared on the file-sharing site.
+The website -- used by tens of millions to swap movies and music -- was taken offline after a police raid in Stockholm.
+Paul Pinter, the Swedish police national coordinator for intellectual property enforcement, said "quite a few" servers and computers were confiscated because of suspected copyright infringement.
+Films leaked from Sony during a recent hacking attack -- including "Fury" and "Annie," which is scheduled to premiere December 19 -- were among the Top 100 downloaded movies on Pirate Bay.
+The raid was triggered by a complaint from the Rights Alliance, a Swedish group that fights cybercrime. The complaint -- one of several made against the site -- was based on the group's own independent investigation, said Sara Lindback, a lawyer for the alliance.
+ 
+Sony hack could lead to censorship
+The Pirate Bay is huge. It had 40 million active users at the time it was shut down this week.
+"It was the 88th most popular site globally," Lindback said.
+Related: Why the Sony hack is one of the worst hacks ever
+Sweden's battle against The Pirate Bay has been going on for years. The site was taken down once before, in 2006, although the shutdown lasted only three days.
+The website's founders have argued they are not breaching copyright law, because Pirate Bay users download files from each other via peer-to-peer links, rather than from the site itself.
+But that argument was thrown out by Sweden's courts.
+Four co-founders were convicted of collaborating to violate copyright law in 2009. They were sentenced to eight months in prison and ordered to pay fines of several million dollars.
+The website continued to operate throughout their time in prison.
+First Published: December 10, 2014: 9:46 AM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

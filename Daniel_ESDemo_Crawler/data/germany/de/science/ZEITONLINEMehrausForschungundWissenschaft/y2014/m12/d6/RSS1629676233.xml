@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+<description>Nachrichten und Analysen zu Wissenschaft, Forschung, Gesundheit, Umwelt und Geschichte. Lesen Sie aktuelle Informationen aus dem Ressort Wissen.</description>
+<pubDate>Wed, 10 Dec 2014 14:16:20 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:01:27 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wissen/index</link>
+<atom:link href="http://newsfeed.zeit.de/wissen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+      <link>http://www.zeit.de/wissen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/2014/48/weihnachtsbeleuchtung-energie-verbrauch-stimmts</link>
+      <guid>http://www.zeit.de/2014/48/weihnachtsbeleuchtung-energie-verbrauch-stimmts</guid>
+      <category>Wissen</category>
+      <title>Weihnachtsbeleuchtung: Verbraucht Weihnachtsbeleuchtung die Leistung eines Atomkraftwerks?</title>
+      <description>&lt;a href="http://www.zeit.de/2014/48/weihnachtsbeleuchtung-energie-verbrauch-stimmts"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wissen/2014-11/weihnachtsbeleuchtung-energie-verbrauch-stimmts/weihnachtsbeleuchtung-energie-verbrauch-stimmts-148x84.jpg"/&gt;&lt;/a&gt; Die Deutschen verheizen jährlich Hunderte Millionen Kilowattstunden Strom für Lichterketten, Sterne und Christbaumkerzen. Da müssen Kraftwerke mehr Leistung bringen.</description>
+      <dc:creator>ZEIT ONLINE : Wissen - Christoph Drösser</dc:creator>
+      <pubDate>Sat, 06 Dec 2014 14:23:26 GMT</pubDate>
+    <ExtractedText>Weihnachtsbeleuchtung: Verbraucht die Weihnachtsbeleuchtung die Leistung eines Atomkraftwerks?
+Weihnachtsbeleuchtung: Verbraucht die Weihnachtsbeleuchtung die Leistung eines Atomkraftwerks?
+... fragt Ernst-Peter Thieß aus Schaftlach. von  Christoph Drösser
+DIE ZEIT Nº 48/2014 6. Dezember 2014           15:22 Uhr  36 Kommentare
+Mehr als 450.000 Lichter erleuchteten im vergangenen Jahr dieses Haus in Nienburg. 75 Prozent sollen aber LED-Lampen sein, also sehr energiesparend.  |  © David Hecker/Getty Images
+Das Institut für Energiedienstleistungen in Heidelberg rechnet alle Jahre       wieder hoch, wie viel Energie die Deutschen für die festliche Beleuchtung ihrer Häuser und       Straßen verbrauchen. Aktuell beträgt diese Schätzung etwa 500 Millionen Kilowattstunden.       Erstaunlich ist, dass den Löwenanteil davon nicht die öffentliche Beleuchtung schluckt,       sondern private Lichterketten, Weihnachtssterne und Christbaumkerzen (sofern sie elektrisch       sind). Ein Tipp: Wer statt traditioneller Glühbirnchen LED-Lichter verwendet, verbraucht 80       Prozent weniger Strom für die Festtagsbeleuchtung.
+Wie kann man diese riesige Menge an Elektrizität begreifbar machen? Man kann sie ins Verhältnis zu dem setzen, was wir sonst für die Beleuchtung unserer Wohnungen benötigen. In den knapp fünf Wochen zwischen dem ersten Advent und dem Dreikönigstag verbraucht der Durchschnittshaushalt circa 190 Kilowattstunden für die zusätzliche Beleuchtung, das ist etwa die Hälfte des Stromverbrauchs, der sonst im Jahr für Beleuchtung anfällt. Oder man rechnet es auf den Gesamtstromverbrauch um – dann könnte man mit dem Strom für die Weihnachtsbeleuchtung etwa 140.000 Haushalte ein Jahr lang mit Strom versorgen.
+Anzeige
+Für weitere Artikel zur Serie "Stimmt's?" klicken Sie auf dieses Bild  |  © Jeff J. Mitchell/Getty Images
+Man kann aber auch berechnen, wie viel Kraftwerksleistung für diese Zusatzanstrengung nötig       ist. Setzt man ein großes Kraftwerk (ob Atom oder nicht) mit 1.000 Megawatt Leistung an, dann       müsste das 500 Stunden ununterbrochen unter Volllast laufen, um diese Strommenge zu       produzieren. Das sind drei Wochen. Aber die Lichterketten brennen ja nicht rund um die Uhr.       Nimmt man an, dass sie nur im Dunkeln eingeschaltet werden, dann benötigen sie – solange sie       brennen – tatsächlich etwa die Leistung eines mittleren Atomkraftwerks.
+Die Adressen für "Stimmt’s"-Fragen: DIE ZEIT, Stimmt’s?, 20079 Hamburg oder stimmts@zeit.de .
+Das "Stimmt’s?"-Archiv: www.zeit.de/stimmts
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Karriere</title>
+<description>Für Ein-, Um- und Aufsteiger: Das Karriereportal für Berufsanfänger, Quereinsteiger und die eigene Karriereleiter. Aktuelle Informationen rund um den Beruf.</description>
+<pubDate>Sat, 16 Nov 2013 12:14:52 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:55:49 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/karriere/index</link>
+<atom:link href="http://newsfeed.zeit.de/karriere/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Karriere</title>
+      <link>http://www.zeit.de/karriere/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/karriere/beruf/2013-11/urteil-bertriebsrente-alter-ab-50</link>
+      <guid>http://www.zeit.de/karriere/beruf/2013-11/urteil-bertriebsrente-alter-ab-50</guid>
+      <category>Karriere</category>
+      <title>Urteil: Keine Betriebsrente ab 50</title>
+      <description>&lt;a href="http://www.zeit.de/karriere/beruf/2013-11/urteil-bertriebsrente-alter-ab-50"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/karriere/beruf/2013-11/arbeitsgesetz/arbeitsgesetz-148x84.jpg"/&gt;&lt;/a&gt; Wer mit über 50 neu zu einem Unternehmen wechselt, hat keinen Anspruch auf Betriebsrente, sofern der Arbeitgeber dies ausschließt. Das urteilt das Bundesarbeitsgericht.</description>
+      <dc:creator>ZEIT ONLINE : Karriere</dc:creator>
+      <pubDate>Tue, 12 Nov 2013 18:06:57 GMT</pubDate>
+    <ExtractedText>Urteil: Keine Betriebsrente ab 50
+Urteil: Keine Betriebsrente ab 50
+Wer mit über 50 neu zu einem Unternehmen wechselt, hat keinen Anspruch auf Betriebsrente, sofern der Arbeitgeber dies ausschließt. Das urteilt das Bundesarbeitsgericht.
+12. November 2013  19:05 Uhr  3 Kommentare
+Keinen Anspruch auf eine Betriebsrente haben Mitarbeiter, wenn sie im Alter von mehr als 50 Jahren neu in einen Betrieb wechseln. Das Bundesarbeitsgericht in Erfurt wies am Dienstag die Revision eines Urteils des Düsseldorfer Landesarbeitsgerichts  zurück ( 3 AZR 356/12 ). Dabei hatte eine Frau gegen die Aberkennung der  Betriebsrente geklagt. Sie hatte im Alter von 52 Jahren zu einem Einzelhandelsunternehmen gewechselt.
+Um dort einen Anspruch auf eine Betriebsrente zu erhalten, hätte die Mitarbeiterin laut  Leistungsplan aber mindestens zehn Jahre dort beschäftigt sein müssen. Dienstjahre ab dem 60. Lebensjahr wurden diesem Plan zufolge aber nicht  berücksichtigt.
+Anzeige
+Die heute 69-Jährige fand das ungerecht und zog vor Gericht, weil sie in der Nichtanerkennung einen Fall von Altersdiskriminierung sah. Außerdem sei das Allgemeine Gleichbehandlungsgesetz vom 18. August  2006 anwendbar, da der Leistungsfall danach eingetreten sei, argumentierte sie.
+Die höchsten Arbeitsrichter folgten dieser Rechtsauffassung allerdings nicht. Die Regelung im Leistungsplan des Unternehmens sei wirksam. Eine sogenannte Versorgungsanwartschaft konnte die Frau demnach nicht mehr erwerben.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Louis Vuitton's Paris landmark </title>
+<guid>http://edition.cnn.com/2014/10/24/travel/fondation-louis-vuitton-museum/index.html</guid>
+<link>http://edition.cnn.com/2014/10/24/travel/fondation-louis-vuitton-museum/index.html?eref=edition</link>
+<description>Luxury enthusiasts, rejoice: Louis Vuitton is bringing its upscale sensibilities to the art world. </description>
+<pubDate>Mon, 27 Oct 2014 09:29:11 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141020150155-fondation-louis-vuitton-1-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141020150155-fondation-louis-vuitton-1-top-tease.jpg" width="90"/>
+<ExtractedText>Luxury conglomerate LVMH has opened Fondation Louis Vuitton, a new contemporary art museum in Paris
+The building was designed by Frank Gehry for $130 million
+The museum is LVMH's way of giving back to the city of Paris
+(CNN) -- Luxury enthusiasts, rejoice: Louis Vuitton is bringing its upscale sensibilities to the art world.
+Fondation Louis Vuitton , the philanthropic wing of luxury goods conglomerate LVMH , is opening a 41,441-square-foot art museum in Paris to share its cultural values with the general public.
+Designed by starchitect Frank Gehry for more than $130 million, the building will act as a home for the company's public and private art collections, as well as a showcase for temporary exhibitions and performances by contemporary artists. In the months following its official public opening on October 27, the museum's programming will include commissions inspired by the building's architecture and retrospective concerts by German electronic band Kraftwerk .
+Giving back, Louis Vuitton style
+According to LVMH CEO Bernard Arnault -- whose $30 billion fortune makes him France's richest man -- the Fondation Louis Vuitton is a way for the company to give back to the city.
+Read: The most spectacular buildings of 2014
+"(It's) showing that we are very good (citizens) and that we are working not only for profit, but also for something that is transcendent," he told CNN at the building's inauguration. To sweeten the deal, LVMH will give the museum and its contents to the city of Paris in 55 years.
+Louis Vuitton is part of a growing legion of fashion houses lending their names and funds to artistic causes. In 2008, Italian luxury brand Furla started a foundation to support young Italian artists, and Fondazione Prada has co-produced art works and organized contemporary exhibitions since the nineties. A number of brands, including LVMH-owned Fendi, have also volunteered to finance the restoration of various Roman monuments like modern-day Medici.
+Working with a starchitect
+The building itself is as much of a cultural contribution as the art it contains. Gehry, one of the world's most well-known architects, is famous for designing unconventional cultural centers that draw as much interest as the happenings inside, like his Guggenheim Museum in Bilbao, Spain and Walt Disney Concert Hall in Los Angeles.
+It's showing that we are very good citizens and that we are working not only for profit, but also for something that is transcendent.
+Bernard Arnault, CEO of LVMH
+Already referred to as the "glass bird" and "the iceberg" by the public, Gehry's Fondation Louis Vuitton was inspired by classic Parisian glass architecture like the Grand Palais . It is meant to evoke ships and a sense of movement, like wind pushing through sails. Because of its glass covering, the building changes character throughout the day as the light comes and goes.
+The hard sell
+But like other non-traditional buildings in Paris -- from the Eiffel Tower in 1889 to I.M. Pei's glass Louvre Pyramid 100 years later -- Gehry's building has received a certain amount of back-lash.
+"France is a country where, as you know, we have a lot of manifestations, of protests. Each time you do something, people are against," Arnault said. "Even for this fantastic building we had to go through a lot of protests before being able to finish it."
+However, the Fondation is hopeful that their museum will ascend to landmark status like the controversial buildings that preceded it. At this point, it seems more than possible. If anyone can sell an experience, it's LVMH.
+</ExtractedText>
+</item>
+</channel>
+</rss>

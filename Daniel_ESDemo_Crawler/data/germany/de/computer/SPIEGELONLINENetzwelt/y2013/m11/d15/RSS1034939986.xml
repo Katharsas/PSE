@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title>SPIEGEL ONLINE - Netzwelt</title>
+<link>http://www.spiegel.de</link>
+<description>Nachrichten zu Internet und Technik, Handys und Computern. Aktuelle Reportagen, Analysen, Service.</description>
+<language>de</language>
+<pubDate>Sat, 16 Nov 2013 15:43:19 +0100</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:43:19 +0100</lastBuildDate>
+<image>
+<title>SPIEGEL ONLINE</title>
+<link>http://www.spiegel.de</link>
+<url>http://www.spiegel.de/static/sys/logo_120x61.gif</url>
+</image>
+<item>
+<title>Urteil gegen Cyber-Kriminelle: "Der beste Bankraub aller Zeiten"</title>
+<link>http://www.spiegel.de/netzwelt/netzpolitik/duesseldorfer-landgericht-schickt-cyber-bankraeuber-ins-gefaengnis-a-933856.html#ref=rss</link>
+<description>39 Millionen Dollar erbeutete eine Bande von Gangstern im Februar mit einer manipulierten Kreditkarte. Jetzt schickt das Landgericht Düsseldorf zwei Täter ins Gefängnis. Die Hintermänner aber scheinen sicher zu sein. </description>
+<pubDate>Fri, 15 Nov 2013 16:36:00 +0100</pubDate>
+<guid>http://www.spiegel.de/netzwelt/netzpolitik/duesseldorfer-landgericht-schickt-cyber-bankraeuber-ins-gefaengnis-a-933856.html</guid>
+<content:encoded><![CDATA[<img src="http://www.spiegel.de/images/image-568714-thumbsmall-nvaa.jpg" hspace="5" align="left" >39 Millionen Dollar erbeutete eine Bande von Gangstern im Februar mit einer manipulierten Kreditkarte. Jetzt schickt das Landgericht Düsseldorf zwei Täter ins Gefängnis. Die Hintermänner aber scheinen sicher zu sein. ]]></content:encoded>
+<enclosure type="image/jpeg" url="http://www.spiegel.de/images/image-568714-thumbsmall-nvaa.jpg"/>
+<ExtractedText>Düsseldorfer Landgericht schickt Cyber-Bankräuber ins Gefängnis
+Urteil gegen Cyber-Kriminelle: "Der beste Bankraub aller Zeiten"
+Von Jörg Diehl und Ole Reißmann
+DPA
+Eduard (2. v. l.) und Willemina (3. v. r.) im Landgericht Düsseldorf: "Diese Typen wissen, wo du wohnst"
+39 Millionen Dollar erbeutete eine Bande von Gangstern im Februar mit einer manipulierten Kreditkarte. Jetzt schickt das Landgericht Düsseldorf zwei Täter ins Gefängnis. Die Hintermänner aber scheinen sicher zu sein.
+Düsseldorf - Gefragt, ob sie vor dem Urteil noch ein letztes Wort sprechen wollten, schütteln die Angeklagten den Kopf. "Nee", sagen Mutter und Sohn, auf keinen Fall. Die Angeklagten Eduard, 35, und Willemina Z., 56, haben den gesamten Prozess vor dem Landgericht Düsseldorf schweigend verbracht, zu groß ist ihre Angst vor den Hintermännern des weltumspannenden Millionen-Coups, dessen Teil sie waren .
+Nachdem Hacker Mitte Februar in das Computersystem eines indischen Kreditkartenherstellers eingedrungen waren, hoben wenige Tage später Hunderte Täter mit einer manipulierten Mastercard weltweit insgesamt 39 Millionen US-Dollar ab . Willemina Z. und ihr Sohn Eduard erbeuteten allein in Düsseldorf 168.000 Euro. Dafür hat sie die 4. Große Strafkammer am Freitagnachmittag zu jeweils vier Jahren und drei Monaten Gefängnis verurteilt.
+Der Coup sei geprägt von "hoher krimineller Energie" und einem "professionellen Vorgehen", so die Vorsitzende Richterin, Bettina Reucher-Hodges, in ihrer Urteilsbegründung. Der Staatsanwalt Murat Ayilmaz hatte zuvor von dem "am besten organisierten und durchgeführten Bankraub aller Zeiten" gesprochen. Gleichwohl ist den Vertretern der Justiz durchaus bewusst, dass sie bislang nur die kleinsten Fische gefangen haben .
+Ungeheurer Sachverstand
+Dabei weisen die Umstände des globalen Bankraubs, dessen Folgen Staatsanwalt Ayilmaz "epochal" nennt, deutlich in die Tiefen der Organisierten Kriminalität. Ein vertraulicher Ermittlungsbericht der Computerforensiker, die den Hack in Indien untersucht haben und der SPIEGEL ONLINE vorliegt, zeigt zum ersten Mal detailliert, mit welchem ungeheuren Sachverstand die Täter vorgingen.
+Demnach erhielt die Muscat-Bank im Oman am 20. Februar 2013 von einem Dienstleister in Indien einen Hinweis auf betrügerische Aktivitäten mit Prepaid-Zahlungskarten. Bei der Firma enStage in Bangalore, die Zahlungsverkehr für diverse Banken abwickelt, hatte zuvor eine Software Alarm geschlagen, die automatisch Transaktionen nach Unregelmäßigkeiten untersucht. Was war geschehen?
+Laut Ermittlungsbericht hatten enStage-Techniker offenbar zu Wartungszwecken einen Zugang zu ihren Servern geöffnet, aber nicht wieder geschlossen. Dieser Systemzugang, eine "JMX-Konsole", war schlecht gesichert, die Software dahinter, eine Java-Anwendung, veraltet. Die Angreifer konnten eindringen und mehrere eigene Programme installieren, Hintertüren einrichten, wie es im Szenejargon heißt.
+Lottogewinn für die Angreifer
+Zwar waren die Kartendaten auf den Servern verschlüsselt, doch der Zugang der Hacker erwies sich als so weitgehend, dass sie auf Funktionen zur Entschlüsselung der Informationen zugreifen konnten. Außerdem waren einige Pin-Nummern im Klartext auf dem Server abgelegt: so etwas wie ein Lottogewinn für die Angreifer. Daraufhin manipulierten diese die Vorgaben für mehr als ein Dutzend Kreditkarten, setzten die maximale Abhebesumme nach oben und kopierten die Daten.
+Die Angriffe auf das indische Rechnersystem erfolgten laut Ermittlungsbericht von IP-Adressen in Marokko, Deutschland und Russland aus. Allerdings lassen sich die Ursprünge solcher Attacken verschleiern, zum Beispiel indem sie über andere kompromittierte Computer umgeleitet werden. Die erbeuteten Kreditkarten-Daten verteilten die Hintermänner anschließend weltweit an ihre Komplizen, die sie auf Rohlinge kopierten und wiederum an die Fußtruppen ausgaben.
+Sodann zogen in der Nacht vom 19. auf den 20. Februar zeitgleich in 22 Ländern Hunderte Menschen wie Eduard und Willemina Z. los, nur wenige wurden gefasst - und bislang sagt keiner aus.
+Wer sind die Hintermänner?
+Insofern wird es den deutschen Ermittlern mit ihren Befugnissen wohl kaum möglich sein, den Hintermännern des Cyber-Bankraubs auf die Spur zu kommen. Eine intensive und vor allem internationale Spurensuche ist aufwendig. Behörden wie der Düsseldorfer Staatsanwaltschaft und Polizei, die das Verfahren in Deutschland führen, fehlen dazu Mittel und Befugnisse. Zwar gibt es Bezüge ins Rockermilieu, ein weiterer Tatverdächtiger gehört der niederländischen Gang Satudarah an , doch die Planung, Organisation und Umsetzung dieses globalen Coups trauen Fahnder solch gewöhnlichen Gewaltkriminellen eher nicht zu.
+Eine entscheidende Frage der Kriminalisten lautet daher: Welche Organisation ist in der Lage, ein weltumspannendes Verbrechen von dieser Dimension und in dieser Geschwindigkeit durchzuführen? Dafür müssen nicht nur Laufburschen wie Eduard und Willemina Z. angeheuert und instruiert werden. Viel schwieriger ist es, diese kleineren und größeren Kriminellen zu disziplinieren, damit sie die Beute auch abliefern.
+Was für Drohungen das Fußvolk sich ausgesetzt sieht, zeigt dabei ein Brief an Eduard Z., der am Freitagmittag im Prozess verlesen wurde. Darin schreibt die Schwiegermutter des Niederländers, "diese Typen, mit denen du da zu tun hast, wissen, wo du wohnst". Einer sei sogar schon da gewesen. Sie habe daher große Angst um ihre Tochter und darum, dass die Männer deren "Gesicht mal eben bearbeiteten". Er solle daher vernünftig sein, seinen Verstand benutzen.
+Eduard Z. verstand und schwieg.
+</ExtractedText>
+</item>
+</channel>
+</rss>

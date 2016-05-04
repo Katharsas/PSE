@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+<description>Nachrichten und Analysen zu Wissenschaft, Forschung, Gesundheit, Umwelt und Geschichte. Lesen Sie aktuelle Informationen aus dem Ressort Wissen.</description>
+<pubDate>Sat, 16 Nov 2013 12:18:22 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:40:00 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wissen/index</link>
+<atom:link href="http://newsfeed.zeit.de/wissen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+      <link>http://www.zeit.de/wissen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wissen/umwelt/2013-11/japan-kippt-klimaschutzziele</link>
+      <guid>http://www.zeit.de/wissen/umwelt/2013-11/japan-kippt-klimaschutzziele</guid>
+      <category>Wissen</category>
+      <title>Fukushima: Japan kippt Klimaschutzziele</title>
+      <description>&lt;a href="http://www.zeit.de/wissen/umwelt/2013-11/japan-kippt-klimaschutzziele"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/gesellschaft/2013-11/japan-klima-fukushima/japan-klima-fukushima-148x84.jpg"/&gt;&lt;/a&gt; "Nicht realisierbar" und "völlig gegenstandslos": Japan senkt die bisherigen Klimaziele drastisch. Die Reaktorkatastrophe in Fukushima sei der Grund. </description>
+      <dc:creator>ZEIT ONLINE : Wissen</dc:creator>
+      <pubDate>Fri, 15 Nov 2013 09:30:05 GMT</pubDate>
+    <ExtractedText>Fukushima: Japan kippt Klimaschutzziele
+Fukushima: Japan kippt Klimaschutzziele
+"Nicht realisierbar" und "völlig gegenstandslos": Japan senkt die bisherigen Klimaziele drastisch. Die Reaktorkatastrophe in Fukushima sei der Grund.
+15. November 2013  10:43 Uhr  40 Kommentare
+Mitarbeiter der Betreiberfirma Tepco in der Atomanlage Fukushima  |  © Tomohiro Ohsumi/Pool/Reuters
+Japan will nach der Reaktorkatastrophe von Fukushima wieder verstärkt fossile Energieträger nutzen. Wegen der andauernden Abschaltung  sämtlicher Meiler sei das Land auf die Verbrennung von Gas, Öl und Kohle angewiesen. Damit rückt Japan von seinen Zielen zur Verringerung klimaschädlicher Treibhausgase ab.
+Das ursprüngliche unter dem damaligen Regierungschef Yukio Hatoyama im Jahr 2009 ausgegebene Reduktionsziel sei "nicht realisierbar" und "völlig gegenstandslos", sagte Regierungssprecher Yoshihide Suga in Tokio. Umweltminister Nobuteru Ishihara will Japans Position bei den Gesprächen auf der Weltklimakonferenz in Warschau kommende Woche darlegen.
+Anzeige
+Der CO2-Ausstoß sollte ursprünglich zwischen 1990 und 2020 um 25 Prozent gesenkt werden. Neues Ziel ist es nun, die Emissionen bis 2020 um 3,8 Prozent im Vergleich zum Jahr 2005 zu reduzieren.
+Das neue Ziel könne noch bereinigt werden, falls Japan  wieder einiger seiner Kernkraftwerke anfahre, sagte Suga. "Wir werden unsere  Energiepolitik überprüfen und dann unser Ziel endgültig beschließen."  Seit Mitte September sind in Japan die Atomreaktoren wegen Sicherheitsvorkehrungen erneut abgeschaltet. Die Regierung will die ersten Meiler möglichst bald wieder hochfahren.
+Vor der Atomkatastrophe in Fukushima deckte die drittgrößte Volkswirtschaft der  Welt rund ein Drittel ihres Strombedarfs mit Atomkraft. Experten erwarten, dass Japans Stromversorgung zukünftig wieder auf  einem Mix aus Atomkraft, fossilen Energieträgern sowie erneuerbaren  Energien basieren wird.
+</ExtractedText>
+</item>
+</channel>
+</rss>

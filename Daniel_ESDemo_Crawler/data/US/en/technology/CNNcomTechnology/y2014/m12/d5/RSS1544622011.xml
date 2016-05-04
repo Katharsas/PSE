@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 09:48:37 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_technology" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_technology"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Apple Watches for everybody at Buzzfeed</title>
+<guid isPermaLink="false">http://www.cnn.com/2014/12/05/tech/web/buzzfeed-apple-watches/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_technology/~3/z_zXXIn3_58/index.html</link>
+<description>Apparently, all those clicks over at Buzzfeed are paying off in more ways than one.&lt;img src="//feeds.feedburner.com/~r/rss/edition_technology/~4/z_zXXIn3_58" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Fri, 05 Dec 2014 15:55:59 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141205102447-buzzfeed-jonah-peretti-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141205102447-buzzfeed-jonah-peretti-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://www.cnn.com/2014/12/05/tech/web/buzzfeed-apple-watches/index.html</feedburner:origLink>
+<ExtractedText>Apple Watches for everybody at Buzzfeed
+By Doug Gross, CNN
+December 8, 2014 -- Updated 1324 GMT (2124 HKT) | Filed under: Web
+Buzzfeed CEO Jonah Peretti speaks with Re/code editor Kara Swisher during an October Vanity Fair event in San Francisco.
+STORY HIGHLIGHTS
+Buzzfeed's 700 employees will get Apple Watches for hitting traffic goals
+The site topped 200 million visitors in November
+CEO Jonah Peretti announced the bonus on Thursday
+(CNN) -- Apparently, all those clicks over at Buzzfeed are paying off in more ways than one.
+For hitting a big traffic goal, all 700 or so employees of the viral news site will be getting free Apple smartwatches -- a bonus that will cost at least $245,000.
+Early last month, CEO Jonah Peretti sent a memo to his staff celebrating Buzzfeed surpassing $100 million in revenue for the year.
+"This is a huge milestone and amazing accomplishment!" he wrote.
+He also issued a challenge. If the site hit 200 million unique visitors and 750 million video views in November, the entire staff would get one of Apple's watches, which are set to hit the market in early 2015.
+The least expensive model will sell for $349.
+Peretti told the staff they'd met the goals at a meeting on Thursday, according to Business Insider .
+He later confirmed it on Twitter.
+Apple Watch FTW!!! Congrats to the BuzzFeed team on an amazing November!
+— Jonah Peretti (@peretti) December 4, 2014
+.
+Known largely for buzzy, viral posts that have a way of rampaging across social media -- critics would call it clickbait -- Buzzfeed, founded in 2006, has made moves over the past couple of years to expand its coverage to politics and other serious news.
+Ben Smith of Politico was brought on in 2012 as the site's editor-in-chief to push the new direction.
+Friday morning, alongside such light fare as "21 Faces Every Woman Who's Slept With A Guy Will Recognise" and a "How Hipster Are You?" quiz, Buzzfeed's main page included coverage of protests spurred by the NYPD police choking death of Eric Garner and a live feed of President Barack Obama's announcement of a new secretary of defense.
+</ExtractedText>
+</item>
+</channel>
+</rss>

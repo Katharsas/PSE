@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:esi="http://www.edge-delivery.org/esi/1.0" version="2.0">
+  <channel>
+<title>Studium – Hochschulen und Universitäten</title>
+<link>http://newsfeed.zeit.de/</link>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<language>de-de</language>
+<copyright>Copyright © 2016, ZEIT ONLINE GmbH</copyright>
+<atom:link href="http://newsfeed.zeit.de/studium/index" type="application/rss+xml"/>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>zeit.web 2.59</generator>
+<managingEditor>online-cr.zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Technik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>Studium – Hochschulen und Universitäten</title>
+      <link>http://newsfeed.zeit.de/</link>
+    </image>
+<item>
+      <title>Plagiat: Die Zeitbombe von Hannover</title>
+      <link>http://www.zeit.de/2016/09/plagiat-politiker-ruecktritt-doktortitel-aberkennung</link>
+      <description>&lt;a href="http://www.zeit.de/2016/09/plagiat-politiker-ruecktritt-doktortitel-aberkennung"&gt;&lt;img style="float:left; margin-right:5px" src="http://www.zeit.de/studium/hochschule/2016-02/von-der-leyen-doktor/wide__148x84"&gt;&lt;/a&gt; Auch falls sie ihren Doktor verliert. Mit großem Aufwand 30 Jahre alte Doktorarbeiten nach heutigen Standards öffentlich zu sezieren, das sprengt jedes Maß.</description>
+      <category>Hochschule</category>
+      <dc:creator>ZEIT ONLINE: Hochschule - Thomas Kerstan</dc:creator>
+      <pubDate>Fri, 19 Feb 2016 10:25:28 -0000</pubDate>
+      <guid isPermaLink="false">http://www.zeit.de/2016/09/plagiat-politiker-ruecktritt-doktortitel-aberkennung</guid>
+    <ExtractedText>Plagiat: Die Zeitbombe von Hannover
+Warum die Wissenschaft Politiker nicht zum Rücktritt zwingen darf
+DIE ZEIT Nr. 9/2016 506 Kommentare
+Guttenberg, Schavan, und bald von der Leyen? © Kay Nietfeld/dpa
+In Hannover tickt eine Zeitbombe, die Verteidigungsministerin Ursula von       der Leyen zum Verhängnis werden könnte. Seit Monaten wird an der dortigen Medizinischen       Hochschule untersucht, ob die Politikerin für ihre Doktorarbeit zu viel bei anderen       abgeschrieben hat , ohne ihre Quellen korrekt zu nennen. Wann die Hochschule darüber       entscheidet, ist ungewiss, ebenso das Ergebnis, also ob die Ministerin weiterhin ihren       Doktortitel führen darf oder nicht.
+Muss von der Leyen im Falle des Titelentzugs von ihrem Amt zurücktreten? Bislang gilt dieser Automatismus. Doch damit muss jetzt Schluss sein, denn er lädt selbst ernannte Hüter der Wissenschaft ein, demokratisch gewählte Politiker aus dem Amt zu kegeln.
+Unvermeidlich war der Rücktritt des damaligen Verteidigungsministers Karl-Theodor zu Guttenberg . Allzu dreist hatte er ein Patchwork von Texten anderer Autoren als seine Leistung ausgegeben, und selbst im Abgang blieb er großspurig, wo Demut gefordert war.
+Doch schon der Rücktritt Annette Schavans als Bundesbildungsministerin war tragisch. In einer höchst umstrittenen Entscheidung hatte die Universität Düsseldorf ihr den Doktortitel wegen angeblicher Täuschungsabsicht aberkannt. Andere, hoch angesehene Wissenschaftler kritisierten das als "gravierende Fehleinschätzung". Schavans Doktorarbeit entspreche der damals üblichen Praxis.
+Es ist misslich, dass demokratisch legitimierte Politiker derart den Unwägbarkeiten des Wissenschaftsbetriebs ausgeliefert sind, in dem – nicht frei von Willkür – mal so und mal so über akademische Leistungen geurteilt wird. Deshalb ist ein Titelentzug kein Rücktrittsgrund, wenn sich ein gewählter Volksvertreter sonst nichts zuschulden kommen lässt. Der Souverän sollte da souverän sein.
+</ExtractedText>
+</item>
+</channel>
+</rss>

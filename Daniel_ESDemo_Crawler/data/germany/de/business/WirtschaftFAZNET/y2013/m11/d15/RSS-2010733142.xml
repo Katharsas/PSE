@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>Wirtschaft - FAZ.NET</title>
+<link>http://www.faz.net/aktuell/wirtschaft/</link>
+<description>Nachrichten der Wirtschaft über Börse und Finanzen. News von Industrie und Unternehmen. Informationen zur Konjunktur und Wirtschaftskrise.</description>
+<copyright>Copyright 2001-2013 Frankfurter Allgemeine Zeitung GmbH. Alle Rechte vorbehalten.</copyright>
+<category>Wirtschaft - FAZ.NET</category>
+<language>de-de</language>
+<docs>http://www.faz.net/hilfe/services-newsletter-widgets-rss-feeds-mehr/</docs>
+<generator>FAZ.NET</generator>
+<ttl>5</ttl>
+<lastBuildDate>Sat, 16 Nov 2013 15:40:11 +0100</lastBuildDate>
+<atom:link href="http://www.faz.net/rss/aktuell/wirtschaft/" rel="self" type="application/rss+xml"/>
+<image>
+		<title>Wirtschaft - FAZ.NET</title>
+		<url>http://www.faz.net/img/fazlogo_ressort.gif</url>
+		<link>http://www.faz.net/aktuell/wirtschaft/</link>
+	</image>
+<item>
+    <title>Software für die Bundesliga: Chip im Stutzen</title>
+    <description>&lt;img width="190" height="107" border="0" title="Die Spieler trainieren mit einem Chip im Stutzen." alt="Die Spieler trainieren mit einem Chip im Stutzen." src="http://media1.faz.net/polopoly_fs/1.2666147!/image/1033430947.jpg_gen/derivatives/article_teaser/1033430947.jpg"/&gt;&lt;p&gt;Massenhafte Datenanalyse trifft auf Bundesliga. Der Softwarekonzern SAP hat Fußballvereine als neue Zielgruppe entdeckt. Der Trainer kann sich die Statistik dann auf eine Datenbrille spielen lassen.&lt;/p&gt;</description>
+    <link>http://www.faz.net/aktuell/wirtschaft/unternehmen/software-fuer-die-bundesliga-chip-im-stutzen-12666527.html</link>
+    <pubDate>Fri, 15 Nov 2013 22:47:00 +0100</pubDate>
+    <guid isPermaLink="true">http://www.faz.net/-gqi-7jhjz</guid>
+<ExtractedText>Die Spieler trainieren mit einem Chip im Stutzen.
+© SAP
+Die Spieler trainieren mit einem Chip im Stutzen.
+Oliver Bierhoff kann sich noch gut an die Kritik von Franz Beckenbauer erinnern. „Computer schießen keine Tore“, hatte der „Kaiser“ gesagt, als Bierhoff Manager der Fußballnationalmannschaft wurde und die Leistung der Spieler mit Videoanalysen und statistischen Auswertungen vorantreiben wollte. Heute, fast zehn Jahre nach seiner Amtsübernahme, steht Bierhoff selbstbewusst in der Stadionlounge von TSG 1899 Hoffenheim und zieht vor der versammelten Kaufmannselite des Deutschen Fußballs Bilanz. Die Professionalisierung habe alle Bereiche des Fußballs erfasst, sagt er und wirft als Beleg ein Zitat des Erfolgstrainers Jose Mourinho an die Leinwand: „Ich kenne alle Details der Gegner.“
+Mehr Wissen, mehr Information, mehr Details, mehr Statistiken bringen im Millionengeschäft Fußball den entscheidenden Wettbewerbsvorteil. Das ist Bierhoffs Botschaft, davon ist er heute mehr überzeugt denn je. Deshalb ist er nach Sinsheim gefahren, zum Verein des milliardenschweren SAP-Mitbegründers Dietmar Hopp, um für eine Software zu werben, die auch die letzten Fußballnostalgiker ernüchtern dürfte.
+Sensoren in Trikots
+Gerade hat Bayern München die 400-Millionen-Euro-Schwelle beim Umsatz genommen. Sport, nicht nur Fußball, ist zu einem derart großen Geschäft geworden, dass sich jetzt selbst SAP, der größte Hersteller von Software zur Unternehmenssteuerung, dafür interessiert. Mit einer eigens programmierten Branchensoftware „Sport und Entertainment“ will SAP den Vereinen Beine mache. Das Programmpaket hat es in sich: Von der Spieleranalyse über betriebswirtschaftlich Abläufe bis hin zur Fan-Betreuung bietet der Konzern ein Rundumpaket, das Big Data und Bundesliga auf bislang unbekannte Weise zusammenbringen soll.
+© SAP
+Die Software liefert den Trainern die Leistungsdaten.
+© SAP
+Die Software liefert den Trainern die Leistungsdaten.
+„Ich glaube, das ist die Zukunft des Fußballs“, sagt Bierhoff. Der Deutsche Fußball werde dadurch enorm gewinnen, meint der Mann, der 1996 mit seinem Golden Goal bei der Europameisterschaft der Nationalmannschaft den bis dato letzten internationalen Erfolg bescherte und der sich SAP-Markenbotschafter nennen darf. Die starke Marke Nationalmannschaft und die starke Marke SAP, das passe gut zusammen. Ob der Botschafter-Titel honoriert wird, darüber schweigt SAP.
+Die Software aus Walldorf bietet eine Rundumbetreuung von Verein, Spielern und Fans. Neben dem betriebswirtschaftlichen Standard wie Buchhaltung und Personalplanung optimiert SAP auch das operative Geschäft, sprich: das Spiel. Daten über die Laufwege der Spieler, ihre Zweikampfwerte, ihre Antrittsgeschwindigkeit und vieles mehr werden mit Hilfe von Sensoren in Trikots, Schienbeinschützern und selbst im Ball erfasst und dann über Antennen am Spielfeldrand in Echtzeit in das Programm eingespeist und dort mit anderen Daten verknüpft.
+© SAP
+© SAP
+Jeder Schritt zählt
+Bei Bedarf können sich die Trainer die Informationen auf eine Datenbrille spielen lassen, die Ergebnisse wie im Cybertraining gleich live analysieren. Zugleich soll das Programm die Anhänger analog, digital und mobil erfassen und personalisiert bedienen. Ein eigenes Ticketverkaufssystem zeigt dem Fan – „der emotionalen Komponente des Fußballs“ – wo seine Facebookfreunde sitzen, er kann vorab digital prüfen, welche Sicht sein Platz im Stadion bietet, er kann seinen Hamburger vorbestellen, und „Premiumpartner“ des Vereins können ihm später personalisierte Angebote zukommen lassen. Statt Schlangestehen um Karten und Würstchen bietet SAP „Mobile Fan Experience“.
+Die sportliche Leistungsfähigkeit definiere sich auch über die wirtschaftliche Leistungsfähigkeit. SAP-Vorstand Gerhard Oswald sagt, der Konzern habe global 10.000 potentielle Kunden im Sport und in der Unterhaltungsbranche für das Software-Neuheit identifiziert.
+© dpa
+Werben für die SAP-Sofware: Dietmar Hopp (l) und Oliver Bierhoff,
+© dpa
+Werben für die SAP-Sofware: Dietmar Hopp (l) und Oliver Bierhoff,
+Sport und Entertainment ist die 25. Kundenbranche, für die der Konzern ein eigenes Programmpaket entwickelt hat. Das Potential mag deutlich geringer sein als bei Banken, Einzelhandelskonzernen oder Maschinenbauern, die Emotionen sind es nicht. Selbst SAP-Urvater und Hoffenheim-Mäzen Dietmar Hopp ist ins Stadion gekommen, um zusammen mit Bierhoff für die neue Software zu werben. Hopp, der Hoffenheim binnen weniger Jahre von der Kreisklasse in die Bundesliga gehievt hat, war einst selbst Spielführer des Vereins „1957, als Kapitän der ersten Mannschaft, war ich so etwas wie der erste Profifußballer“, sagt er.
+Weitere Artikel
+Hoffenheim: Fußball-Bundesligist soll mit Software besser werden 
+Schließlich habe ihm ein Bauer aus der Gegend für jedes Tor eine Dose Leberwurst geboten. Und mit Bierhoff verbinde ihn eine ganz besondere Tradition. Als er einst in der Universitätsmannschaft von Karlsruhe gespielt habe, „da stand der Vater von Oliver Bierhoff im Tor“. Hopp hat 350 Millionen Euro investiert: in das Stadion, die Infrastruktur und die Mannschaft – die Vorwürfe, Hoffenheim sei ein Retortenclub, reißen deshalb nicht ab, und sie werden nach der Präsentation der neuen Software nicht leiser werden. Hopp verweist auf die vorbildliche Jungendarbeit, die integrative Funktion des Sports, die er selbst erlebt habe. Und er verweist darauf, dass seine Stiftung 350 Millionen Euro gespendet hat für soziale Einrichtungen, vom Kinderhaus bis zum Hospiz.
+</ExtractedText>
+</item>
+</channel>
+</rss>

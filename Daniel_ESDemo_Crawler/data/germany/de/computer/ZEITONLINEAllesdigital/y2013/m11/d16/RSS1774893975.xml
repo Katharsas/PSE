@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Sat, 16 Nov 2013 09:55:47 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:42:08 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://blog.zeit.de/netzfilmblog/2013/11/14/neue-youtube-kommentare-google-plus-reaktionen-kritik</link>
+      <guid>http://blog.zeit.de/netzfilmblog/2013/11/14/neue-youtube-kommentare-google-plus-reaktionen-kritik</guid>
+      <category>Digital</category>
+      <title>Netzfilmblog: YouTube-Nutzer protestieren gegen Google+</title>
+      <description>&lt;a href="http://www.zeit.de/digital/internet/2013-11/link-youtube-kommentare-netzfilmblog"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/internet/2013-11/youtube-blackery/youtube-blackery-148x84.jpg"/&gt;&lt;/a&gt; YouTube möchte seine Kommentare zivilisieren – mithilfe von Google+. Das kommt bei den Nutzern nicht gut an, sie protestieren. Auch die ersten Partner wenden sich ab.</description>
+      <dc:creator>ZEIT ONLINE : Digital</dc:creator>
+    <ExtractedText>YouTube-Kommentare: Viel Lärm um Google+
+Von Eike Kühl 14. November 2013 um 16:15 Uhr
+Vor einer Woche führte YouTube das neue Kommentarsystem auf Basis von Google+ ein . Dass die Reaktionen zunächst nicht besonders freundlich ausfallen würden, war absehbar. Doch dass die Ablehnung so heftig sein würde, hatte die Google-Tochter sicherlich nicht erwartet. Es ist, wie es so schön heißt, ein richtiger Shitstorm, der YouTube gerade entgegenbläst.
+Seit der Umstellung protestieren die Nutzer gegen das neue System, das neben einigen kosmetischen Änderungen die Nutzung eines Profils bei Google+ erfordert. Zuvor genügte ein einfaches und in der Regel anonymes YouTube-Konto. Viele fühlen sich nun genötigt, Googles notorisch zweitrangiges soziales Netzwerk zu nutzen.
+So kam Jawed Karim, YouTube-Mitgründer und Uploader des allerersten Videos, nach acht Jahren plötzlich wieder aus der Versenkung – “Warum zur Hölle brauche ich einen Account bei Google+, um ein Video zu kommentieren?”, fragte er.
+Karim spricht vielen Nutzern aus der Seele. Eine Petition gegen das neue System hat mittlerweile über 110.000 Mitzeichner . Die Nutzer von Reddit fluteten das Google-Forum, das nun bei über 430.000 Beschwerden steht.
+Die Kritiker lassen ihren Unmut aber nicht nur in den Kommentarspalten aus, sondern natürlich auch in Videoform . Nicht alle der Reaktionen fallen so sympathisch aus wie die von Emma Blackery und ihrem passiv-aggressiven Song. In den meisten Videos geht es deutlich derber zur Sache.
+Der bekannte Gamer Athene bezichtigt YouTube sogar des Astroturfings: Er will Beweise gefunden haben , in denen die (überraschend positiv ausfallenden) Top-Kommentare in Wirklichkeit von YouTube selbst stammen, um den Gegenwind etwas abzuschwächen.
+Zu unübersichtlich, viel Spam, seltsame Integration
+Viele kritisieren aber nicht nur die Google-Plus-Pflicht. Die neuen Kommentare bringen ganz andere Probleme mit. So führt die Integration bisweilen zu absurden Ergebnissen: Wer etwa ein Video auf Google+ kommentiert, liefert häufig eine kleine Zusammenfassung für seine Freunde mit, um auf den Link zu klicken. Unter dem YouTube-Video aber wirken diese Zusammenfassungen überflüssig und in der Summe wie Spam.
+Zudem ist es möglich, ganze Romane in einen einzelnen Kommentar zu packen. Die sind zwar in der Ansicht minimiert, aber dennoch lockt es Spammer an. Auch die Option, Links in die Kommentare zu posten, eröffnet Spammern und Kriminellen ganz neue Möglichkeiten: Was wie ein harmloser Link zu einem weiteren Video erscheint, kann Nutzer auf Websites mit Malware führen.
+Und dann wären da noch die ASCII-Zeichen. Richtig benutzt, können Nutzer daraus kleine Bilder aus Sonderzeichen erstellen. Herzen und Blümchen etwa. Oder Hakenkreuze und Penisse. Ausgerechnet dieses, vermutlich ungewollte Feature, nutzen die Kritiker nun zum Protest: Unter fast allen populären Videos tauchte in den vergangenen Tagen stets der gleiche Kommentar mit einem Pixelpanzer auf: “This tank and Bob are against Google+“. Jegliche Diskussion soll damit unmöglich gemacht werden – bislang mit Erfolg.
+So well this Google+ Comments thing is going well for YouTube so far. Checked any popular video lately: pic.twitter.com/A1q11JZZAR
+— Bertram Gugel (@digitalerfilm) November 14, 2013
+ 
+Bekannte YouTuber deaktivieren die Kommentare
+Am bittersten für YouTube dürfte aber nicht nur der Missmut der Nutzer sein. Auch die Partner wenden sich vom neuen System ab. Der Schwede PewDiePie , bis vor Kurzem hatte er den Kanal mit den meisten Abonnenten, hat die Kommentare zu allen seinen Videos geschlossen, bis das System “repariert” sei. Das ist eine ernstzunehmende Warnung für die Plattform, die doch eigentlich gerade die Interaktion mit den Fans verbessern wollte. Sollten sich noch weitere bekannte YouTuber für einen Boykott entschließen, dürfte sich der Druck auf die Verantwortlichen erhöhen.
+Doch was sagt eigentlich YouTube zu den Reaktionen? In einer Stellungnahme gegenüber VideoInk sagt ein Sprecher des Unternehmens, dass man daran arbeite, die Bugs zu beheben. Man wolle nicht “einfach weglaufen”, sondern weiterhin an dem neuen System arbeiten.
+Google steht also zu seiner Entscheidung. Das ist nicht überraschend, schließlich gehört es zur Strategie, sämtliche Produkte früher oder später mit Google+ zu vernetzen . Nur so lassen sich maximal viele Nutzerdaten abgreifen. Für die YouTuber ist das keine gute Nachricht: Es gibt offenbar aller Proteste zum Trotz keinen Weg zurück.
+</ExtractedText>
+</item>
+</channel>
+</rss>

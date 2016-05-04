@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>KFC just can't give up on China</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/EXPPgrZZ8y0/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/09/investing/yum-kfc-china/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141210111000-kfc-china-120x90.jpg" width="120"/>
+<description>It's the wild, wild east out there in China. But brands like KFC and Pizza Hut just won't give up -- no matter how many challenges they face.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/-0H4B68zlC0" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/EXPPgrZZ8y0" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Tue, 09 Dec 2014 22:41:29 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/09/investing/yum-kfc-china/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/-0H4B68zlC0/index.html</feedburner:origLink>
+<ExtractedText>KFC just can't give up on China
+By Sophia Yan   @sophia_yan December 9, 2014: 10:41 PM ET
+ 
+Sriracha, Ginger, &amp; Honey Oh My
+HONG KONG (CNNMoney)
+It's the wild, wild east out there in China. But brands like KFC and Pizza Hut just can't give up -- no matter how many challenges they face.
+Parent company Yum! Brands has been hit in recent years by major food safety scandals that damaged its brands' reputations, including one this July that involved a tainted meat supplier .
+Yum even said on Wednesday its China same-store sales this year will be in the red, as its brands were "significantly impacted by adverse publicity." Shares of the stock plummeted in after-market trading in New York.
+Related: KFC's China sales plunge on tainted food scare
+But despite scandals and poor sales, the company has shown no signs of slowing down its China investments, and continues to open new stores. Yum already has 6,400 restaurants in almost 1,000 Chinese cities, and plans to open another 700 new stores next year.
+China is "the best restaurant opportunity of the 21st century with a consuming class that is expected to double from 300 million to more than 600 million people by 2020," according to the company website. "We continue to invest behind the development of our emerging brands in China."
+Related: The crazy flavor experiments in Chinese fast food
+It's no surprise Yum sees China as an important market -- the company generates more than 40% of its overall operating profits and more than half of its total sales from its KFC and Pizza Hut restaurants in China.
+The company even acquired a local chain -- hot pot cuisine -- called Little Sheep in 2012. And its restaurants also make efforts to appeal to local tastes by putting traditional Chinese dishes on the menu.
+First Published: December 9, 2014: 10:41 PM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

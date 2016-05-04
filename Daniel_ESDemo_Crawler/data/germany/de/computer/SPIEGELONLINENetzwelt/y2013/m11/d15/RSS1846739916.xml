@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title>SPIEGEL ONLINE - Netzwelt</title>
+<link>http://www.spiegel.de</link>
+<description>Nachrichten zu Internet und Technik, Handys und Computern. Aktuelle Reportagen, Analysen, Service.</description>
+<language>de</language>
+<pubDate>Sat, 16 Nov 2013 15:43:19 +0100</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:43:19 +0100</lastBuildDate>
+<image>
+<title>SPIEGEL ONLINE</title>
+<link>http://www.spiegel.de</link>
+<url>http://www.spiegel.de/static/sys/logo_120x61.gif</url>
+</image>
+<item>
+<title>Traffic-Analyse: Europa sieht YouTube, Nordamerika Netflix</title>
+<link>http://www.spiegel.de/netzwelt/web/29-des-europaeischen-traffics-entfallen-auf-youtube-a-933855.html#ref=rss</link>
+<description>Zwei Videoplattformen machen einen großen Teil des internationalen Internettraffics aus. Eine Analyse des kanadischen Unternehmens Sandvine zeigt: YouTube ist Europas Traffic-Monster, Netflix dominiert die USA - und Filesharing geht zurück. </description>
+<pubDate>Fri, 15 Nov 2013 16:13:00 +0100</pubDate>
+<guid>http://www.spiegel.de/netzwelt/web/29-des-europaeischen-traffics-entfallen-auf-youtube-a-933855.html</guid>
+<content:encoded><![CDATA[Zwei Videoplattformen machen einen großen Teil des internationalen Internettraffics aus. Eine Analyse des kanadischen Unternehmens Sandvine zeigt: YouTube ist Europas Traffic-Monster, Netflix dominiert die USA - und Filesharing geht zurück. ]]></content:encoded>
+<ExtractedText>29% des europäischen Traffics entfallen auf YouTube
+Traffic-Analyse: Europa sieht YouTube, Nordamerika Netflix
+Zwei Videoplattformen machen einen großen Teil des internationalen Internettraffics aus. Eine Analyse des kanadischen Unternehmens Sandvine zeigt: YouTube ist Europas Traffic-Monster, Netflix dominiert die USA - und Filesharing geht zurück.
+Statista
+Infografik von Statista: YouTube macht fast 29 Prozent von Europas Downstream-Traffic aus, sagt Sandvine
+Hamburg - Der Bericht "Globale Internetphänomene" des Netz-Dienstleisters Sandvine zeigt eine transatlantische Spaltung. Diese Spaltung hat vor allem mit einem Anbieter zu tun: dem Video-Streaming-Dienst Netflix und dessen umfassenden Unterhaltungsangebot aus Serien und Filmen (" House of Cards "). In Nordamerika ist Netflix Sandvine zufolge für 31,6 Prozent des Downstream-Traffics im Internet verantwortlich. Also den Anteil der Daten, die Nutzer aus dem Internet auf ihre Rechner herunterladen. Die Zahlen von Sandvine stammen direkt von Internetprovidern, mit denen das Unternehmen zusammenarbeitet.
+Beim Upstream, also dem, was Nutzer selbst ins Internet einspeisen, landet in Nordamerika nach wie vor das Filesharing-System Bittorrent auf Platz eins, mit 36,4 Prozent Anteil. Wenn man Down- und Upstream aggregiert, findet Sandvine einen Gesamtanteil von 28,2 Prozent für Netflix in Nordamerika. Auf Platz zwei liegt dann YouTube mit 16,8 Prozent. Bittorrent macht im aggregierten Messwert für Hoch- und Herunterladen nur noch 7,4 Prozent des Traffics aus.
+In einer Pressemitteilung kommentierte Sandvine-Chef Dave Caputo dieses Ergebnis überrascht: "Zum ersten Mal macht Peer-to-Peer Filesharing weniger als zehn Prozent des gesamten Traffics aus." Das sei ein "extremer Unterschied" zu der Situation vor elf Jahren - damals habe der Filesharing -Anteil bei 60 Prozent gelegen. Und das, obwohl die über Filesharing-Plattformen verschobenen Videodateien tendenziell immer größer werden, schließlich wird heute in HD getauscht.
+Mit anderen Worten: Je komfortabler und umfassender die Angebote von Bezahldiensten wie Netflix werden, desto weniger greifen Internetnutzer offenbar auf Filesharing zurück.
+In Europa sieht die Situation derzeit noch ganz anders aus, wie die obige Infografik von Statista zeigt. Betrachtet man wiederum nur den Downstream-Traffic, ist YouTube einsamer Marktführer, was das Datenvolumen angeht: 28,7 Prozent aller auf Rechner heruntergeladenen Daten stammen Sandvine zufolge von Googles Videoportal. Auf Platz zwei landet das Website-Protokoll HTTP mit 15,6 Prozent, danach folgt bereits Bittorrent mit 10,1 Prozent. Netflix gibt es in vielen anderen Ländern Europas bislang nicht.
+Beim Upstream liegt Bittorrent in Europa mit 48,1 Prozent einsam an der Spitze, auf Platz zwei landet YouTube mit 7,1 Prozent. In der Tabelle, in der Up- und Downstream miteinander verrechnet sind, lautet die Rangfolge der Top drei: YouTube (24,2 Prozent), Bittorrent (18 Prozent), HTTP (13,6 Prozent).
+Facebook folgt mit 4,6 Prozent auf Platz vier und erst dahinter Netflix mit 3,3 Prozent auf Platz fünf. Die Video-Streaming-Plattform für Filme und Serien ist derzeit nur in den Niederlanden, Skandinavien und Großbritannien verfügbar. Im Vereinigten Königreich kommt Netflix Sandvine zufolge in der Spitze auf 20 Prozent Anteil - dabei ist der Dienst dort erst seit Januar 2013 verfügbar. In den USA habe Netflix vier Jahre gebraucht, um auf dieses Niveau zu kommen, so Sandvine.
+Die Daten für den Traffic-Report für das zweite Halbjahr 2013 stammen von den Internetprovidern, mit denen Sandvine zusammenarbeitet. Die Daten für Europa stammen aus anonymisierten Daten aus sechs europäischen Ländern, teilte der Autor des Berichtes, Dan Deeth, auf Anfrage mit. Welche Provider genau Daten zugeliefert haben, wollte Sandvine jedoch nicht mitteilen.
+Update : Nach Veröffentlichung dieses Artikels teilte Sandvine-Mitarbeiter Deeth auf Nachfrage mit: "Die Stichprobe für diesen Bericht enthält keine Daten aus Deutschland."
+cis
+</ExtractedText>
+</item>
+</channel>
+</rss>

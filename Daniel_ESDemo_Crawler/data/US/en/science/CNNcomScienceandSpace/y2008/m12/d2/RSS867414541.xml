@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Science and Space</title>
+<link>http://edition.cnn.com/TECH/space/?eref=edition_space</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-us</language>
+<copyright>© 2008 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 31 Dec 2008 10:36:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Science and Space</title>
+<link>http://edition.cnn.com/TECH/space/?eref=edition_space</link>
+<url>http://i2.cdn.turner.com/cnn/.element/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_space" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_space"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>iReporters watch planets, moon align</title>
+<guid isPermaLink="false">http://edition.cnn.com/2008/TECH/space/12/02/planetsalign.irpt/index.html?eref=edition_space</guid>
+<link>http://rss.cnn.com/~r/rss/edition_space/~3/lNpVH39eh3U/index.html</link>
+<description>&lt;img src="http://feeds.feedburner.com/~r/rss/edition_space/~4/lNpVH39eh3U" height="1" width="1"/&gt;</description>
+<pubDate>Tue, 02 Dec 2008 12:52:24 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2008/TECH/space/12/02/planetsalign.irpt/index.html?eref=edition_space</feedburner:origLink>
+<ExtractedText>iReporters watch as planets, moon come together
+Story Highlights
+Venus, Jupiter and the moon formed a bright triangle in the night sky
+iReporters around the world captured photos of the celestial event
+The next time the three will be as close and visible will be November 18, 2052
+</ExtractedText>
+</item>
+</channel>
+</rss>

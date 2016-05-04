@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Football: Pele out of intensive care</title>
+<guid>http://edition.cnn.com/2014/12/06/sport/brazil-pele-hospitalized/index.html</guid>
+<link>http://edition.cnn.com/2014/12/06/sport/brazil-pele-hospitalized/index.html?eref=edition</link>
+<description>Soccer legend Pele has been moved out of intensive care but remains in a Sao Paolo, Brazil, hospital following treatment for an infection, the hospital said Saturday.</description>
+<pubDate>Mon, 08 Dec 2014 15:43:41 EST</pubDate>
+<ExtractedText>Soccer legend Pele out of intensive care
+By Melissa Gray, CNN
+December 6, 2014 -- Updated 2157 GMT (0557 HKT)
+Ask many Brazilians who is the greatest footballer of all time and their answer will be simple: "Pele." The striker, pictured here in 2014, won three World Cups with Brazil between 1958 and 1970.
+Pele is his country's leading goalscorer with 77 goals from 92 caps.
+The Brazil team of 1970, which beat Italy 4-1 in the World Cup final in Mexico, is widely regarded as the greatest of all time. Pele is seen here leaping on his teammates.
+Pele told CNN that his most memorable moment as a player was winning the 1958 World Cup when he was just 17.
+Brazil also won the title in 1962 in Chile, but Pele did not play in the final after being injured in Brazil's second game.
+Ahead of the World Cup earlier this year, Pele told CNN that his ideal final for 2014 would feature Brazil and Uruguay -- so his country can win revenge for 1950's heartbreaking Maracana defeat in the deciding match between the two South American teams. But Brazil crashed out after being beaten by eventual winners Germany 7-1 in the semifinal.
+Aerial view of the Christ the Redeemer statue atop Corcovado Hill, overlooking the Maracana stadium in Rio de Janeiro, Brazil. The famous arena hosted the 2014 World Cup final in July.
+HIDE CAPTION
+Pele was hospitalized in Sao Paolo for a urinary tract infection
+He tells his fans not to worry, and that he's OK
+Pele is one of the best known names in all of sports
+He began his soccer career in the late 1950s
+(CNN) -- Soccer legend Pele has been moved out of intensive care but remains in a Sao Paolo, Brazil, hospital following treatment for an infection, the hospital said Saturday.
+Pele, 74, has no fever and is still on antibiotics, the city's Albert Einstein Hospital said. He was admitted there early last week for a urinary tract infection.
+Pele posted a message to his Twitter followers Friday telling them not to worry.
+"Thank you very much, I know everybody (is) worried about my health, but I'm ok," he wrote. On Facebook, he posted a video of himself strumming a guitar.
+Known as "The Black Pearl" and simply "The King," Pele is one of the best known names in all of sports.
+He burst onto the scene as a teenager, helping lead his native Brazil to the 1958 World Cup championship. Pele went on to star on two other World Cup title teams as well, in 1962 and 1970, in addition to a breakthrough career with the Brazilian club Santos and later with the New York Cosmos of the now-defunct North American Soccer League.
+In 2000, he and Argentina's Diego Maradona were named co-Players of the Century by FIFA, the international soccer governing body.
+Santos named him a lifetime ambassador for the club, Pele told fans this week.
+"It is exciting to know that I will be wearing the shirt of my favorite team for the rest of my life," he wrote on Twitter. "I expect to keep bringing pride and joy to Santos fans all around the world."
+Even after retiring from football, Pele has remained in the public eye as a product pitchman, ambassador for the sport of football and advocate for Brazil's poor, having grown up among them in the inland city of Tres Coracoes.
+CNN's Barbara Arvanitidis contributed to this report.
+</ExtractedText>
+</item>
+</channel>
+</rss>

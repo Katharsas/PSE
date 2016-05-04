@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Sat, 16 Nov 2013 09:55:47 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:42:08 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/datenschutz/2013-11/cia-daten-western-union-bargeldtransfers</link>
+      <guid>http://www.zeit.de/digital/datenschutz/2013-11/cia-daten-western-union-bargeldtransfers</guid>
+      <category>Digital</category>
+      <title>Geheimdienst: CIA überwacht internationale Bargeldtransfers</title>
+      <description>&lt;a href="http://www.zeit.de/digital/datenschutz/2013-11/cia-daten-western-union-bargeldtransfers"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/datenschutz/2013-11/cia-hauptquartier/cia-hauptquartier-148x84.jpg"/&gt;&lt;/a&gt; Nicht nur die NSA überwacht den internationalen Zahlungsverkehr: In riesigen Datenbanken speichert die CIA, wer wem Bargeld mit Western Union oder MoneyGram überweist.</description>
+      <dc:creator>ZEIT ONLINE : Digital - Patrick Beuth</dc:creator>
+      <pubDate>Fri, 15 Nov 2013 09:55:33 GMT</pubDate>
+    <ExtractedText>Geheimdienst: CIA überwacht internationale Bargeldtransfers
+Geheimdienst: CIA überwacht internationale Bargeldtransfers
+Nicht nur die NSA überwacht den internationalen Zahlungsverkehr: In riesigen Datenbanken speichert die CIA, wer wem Bargeld mit Western Union oder MoneyGram überweist. von  Patrick Beuth
+15. November 2013  10:36 Uhr  68 Kommentare
+CIA-Hauptquartier in Langley, US-Bundesstaat Virginia  |  © Getty/David Burnett/Newsmakers
+Die CIA überwacht internationale Geldtransfers, die über Dienstleister wie Western Union und MoneyGram abgewickelt werden. Die Informationen darüber, wer wem Bargeld überweist, landen in riesigen Datenbanken des US-Geheimdienstes, berichten Wall Street Journal und New York Times unter Berufung auf mehrere mit dem Programm vertraute Regierungsvertreter und ehemalige Beamte.
+Es handelt sich den Berichten zufolge um eine Massenabschöpfung von Daten, von der auch US-Amerikaner betroffen sind, obwohl sie vom Auslandsgeheimdienst eigentlich nicht überwacht werden dürfen. Zunächst landen alle Daten in den Datenbanken der CIA, erst im Nachhinein "minimiert" oder "maskiert" die Behörde Informationen über US-Bürger. Das gelte aber nicht, wenn diese für den Geheimdienst von Interesse sind, sagte ein ehemaliger US-Beamter.
+Anzeige
+Die richterlichen Genehmigungen für das Überwachungsprogramm erteilt – wie auch beim Prism-Programm der NSA – der geheim tagende Foreign Intelligence Surveillance Court (Fisc).
+Die rechtliche Grundlage für die Datensammlung bildet der gleiche Abschnitt des Patriot Act , mit dem auch die NSA ihre massenhafte, verdachtsunabhängige Überwachung von Telefonverbindungen rechtfertigt. Es ist der Abschnitt 215, der es den Geheimdiensten erlaubt, mit einem entsprechenden Gerichtsbeschluss "alle greifbaren Dinge, darunter Bücher, Aufzeichnungen, Papiere, Dokumente und andere Dinge" zu sammeln, sofern sie "relevant" für die Terrorabwehr oder Spionageabwehr sind.
+Patrick Beuth
+© ZEIT ONLINE
+Patrick Beuth ist Redakteur im Ressort Digital bei ZEIT ONLINE. Seine Profilseite finden Sie hier .
+Die US-Regierung definiert das Wort "relevant" so breit, dass auch Daten von Millionen von US-Bürgern und Ausländern erfasst werden dürfen, die nicht wirklich verdächtig sind.
+Die Sammlung der Geldtransferdaten soll nach den Anschlägen vom 11. September 2001 begonnen haben. Damals arbeitete Western Union freiwillig mit der CIA zusammen. Im Jahr 2006 wurde die Zusammenarbeit auf eine gesetzliche Basis gestellt – eben jenen Abschnitt 215 des Patriot Act.
+Die CIA arbeitet dem Wall Street Journal zufolge mit dem FBI zusammen und leitet zum Beispiel Informationen weiter, wenn diese Hinweise auf mögliche terroristische Aktivitäten innerhalb der USA geben könnten.
+NSA überwacht Kreditkartenzahlungen und Banken
+Außer Western Union und MoneyGram werden auch viele kleine Unternehmen für Bargeldtransfers zur Zusammenarbeit mit der CIA gezwungen, heißt es in den Zeitungsberichten. Sprecher der beiden bekannten Unternehmen bestätigten, Kundendaten nur auf Basis von US-Gesetzen zu sammeln und herauszugeben. Details dürfe man aufgrund gesetzlicher Bestimmungen nicht nennen. Damit dürften die Verschwiegenheitsklauseln gemeint sein, die Bestandteil der Gerichtsbeschlüsse nach Abschnitt 215 sind.
+Die NSA überwacht den internationalen Zahlungsverkehr ebenfalls, allerdings auf einer anderen Ebene. Aus den Dokumenten von Edward Snowden geht hervor , dass sich die NSA Zugriff auf Kreditkartentransaktionen sowie Überweisungen zwischen Banken verschafft, die über Swift abgewickelt werden.
+</ExtractedText>
+</item>
+</channel>
+</rss>

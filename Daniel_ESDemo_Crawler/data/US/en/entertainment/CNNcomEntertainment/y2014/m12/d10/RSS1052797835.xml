@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 09:49:44 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_entertainment" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_entertainment"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Cuba Gooding Jr. as O.J.? Get ready</title>
+<guid isPermaLink="false">http://www.cnn.com/2014/12/10/showbiz/tv/cuba-gooding-jr-oj-simpson-american-crime-story/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_entertainment/~3/mPo95LHcuN4/index.html</link>
+<description>Cuba Gooding Jr. has been cast as O.J. Simpson in the new FX anthology miniseries "American Crime Story: The People v. O.J. Simpson."&lt;img src="//feeds.feedburner.com/~r/rss/edition_entertainment/~4/mPo95LHcuN4" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Wed, 10 Dec 2014 08:14:26 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141210072107-cuba-gooding-jr-december-2014-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141210072107-cuba-gooding-jr-december-2014-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://www.cnn.com/2014/12/10/showbiz/tv/cuba-gooding-jr-oj-simpson-american-crime-story/index.html</feedburner:origLink>
+<ExtractedText>Can you see Cuba Gooding Jr. playing O.J. Simpson?
+By Lisa Respers France, CNN
+December 10, 2014 -- Updated 1259 GMT (2059 HKT)
+Cuba Gooding Jr. will play O.J. Simpson in Ryan Murphy's new FX miniseries.
+STORY HIGHLIGHTS
+The actor has been cast in "American Crime Story"
+The miniseries comes from "American Horror Story" creator Ryan Murphy
+Sarah Paulson is set to play Marcia Clarke
+(CNN) -- Playing a football player won Cuba Gooding Jr. an Oscar. Could playing another -- one who was the focus of "the trial of the century" -- win him further accolades?
+The actor has been cast as O.J. Simpson in the new FX anthology miniseries "American Crime Story: The People v. O.J. Simpson," the network announced. Gooding won the Academy Award for best actor in a supporting role in 1996 for his performance as wide receiver Rod Tidwell in the film "Jerry Maguire."
+The new miniseries will focus on the famous trial and according to a statement is "told from the perspective of the lawyers that explores the chaotic behind-the-scenes dealings and maneuvering on both sides of the court, and how a combination of prosecution confidence, defense wiliness, and the LAPD's history with the city's African-American community gave a jury what it needed: reasonable doubt."
+The miniseries was developed by Ryan Murphy, who created the very successful "American Horror Story" anthology franchise for FX. Murphy didn't have to look far for his Marcia Clarke; the prosecuting attorney will be played by Sarah Paulson, who has appeared in all four seasons of "American Horror Story."
+Each season of "American Crime Story" will delve into a different true crime story that made headlines and captivated the public. The first season is based on the book "The Run of His Life: The People v. O.J. Simpson" by CNN legal analyst Jeffrey Toobin.
+Production is scheduled to begin early next year in Los Angeles.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/datenschutz/2014-12/nsa-enthuellungen-edward-snowden-mobilfunk-anbieter</link>
+      <guid>http://www.zeit.de/digital/datenschutz/2014-12/nsa-enthuellungen-edward-snowden-mobilfunk-anbieter</guid>
+      <category>Digital</category>
+      <title>Snowden-Enthüllungen: NSA spioniert Mobilfunk-Anbieter aus</title>
+      <description>&lt;a href="http://www.zeit.de/digital/datenschutz/2014-12/nsa-enthuellungen-edward-snowden-mobilfunk-anbieter"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/politik/deutschland/2014-12/nsa-mobilfunk-anbieter/nsa-mobilfunk-anbieter-148x84.jpg"/&gt;&lt;/a&gt; Operation "Auroragold": Der US-Geheimdienst will sich in alle Netze hacken können. Und er arbeitet daran, die Verschlüsselung heutiger Mobilfunkstandards zu brechen.</description>
+      <dc:creator>ZEIT ONLINE : Digital</dc:creator>
+      <pubDate>Thu, 04 Dec 2014 15:28:02 GMT</pubDate>
+    <ExtractedText>Snowden-Enthüllungen: NSA spioniert Mobilfunk-Anbieter aus
+Snowden-Enthüllungen: NSA spioniert Mobilfunk-Anbieter aus
+Operation "Auroragold": Der US-Geheimdienst will sich in alle Netze hacken können. Und er arbeitet daran, die Verschlüsselung heutiger Mobilfunkstandards zu brechen.
+4. Dezember 2014           16:26 Uhr  13 Kommentare
+Ein Mobilfunkmast, Antennen und Satellitenschüsseln auf Berliner Dächern  |  © Alexandra Schuler/dpa
+Die NSA hat Hunderte Mobilfunkanbieter in aller Welt ausgespäht, um auf Schwachstellen in deren Netzen zu stoßen. Unter anderem habe der US-Geheimdienst dafür Arbeitsgruppen der Branchenvereinigung GSMA ausgeforscht, berichtete die Website The Intercept unter Berufung auf Snowden-Unterlagen . Bei der Operation mit dem Namen Auroragold seien mehr als 1.200 E-Mail-Konten in der Branche überwacht worden.
+Die Informationen über mögliche Sicherheitslücken würden an die Teams weitergegeben, die Software zum Eindringen in die Netze entwickeln, heißt es in dem Bericht. Zum Jahr 2012 habe die NSA technische Informationen über 70 Prozent der Mobilfunkbetreiber weltweit gesammelt. Unter anderem habe der Abhördienst die Dokumente ausgewertet, in denen die Anbieter Informationen über das Funktionieren ihrer Netze austauschen, um Roaming zu ermöglichen.
+Anzeige
+Mithilfe solcher Informationen suche die NSA nach Sicherheitslücken – und nach Möglichkeiten, neue Sicherheitslücken in bestehende Standards und Technik einzuschleusen .
+Dass die NSA den Mobilfunk im Visier hat, war bereits bekannt. Sie soll die gängige Verschlüsselung des betagten GSM-Funkstandards geknackt und vor Jahren auch ein ungesichertes Handy von Bundeskanzlerin Angela Merkel abgehört haben. Das Ausmaß der Ausforschung von Mobilfunk-Anbietern war bisher aber nicht bekannt. Laut den Dokumenten arbeitet die NSA auch daran, neuere Verschlüsselungsstandards wie A5/3 zu brechen. 
+IT-Sicherheitsexperte Karsten Nohl sagte The Intercept, das Ziel der NSA dürfte den Dokumenten zufolge gewesen sein, auf alle Mobilfunk-Netze in der Welt zugreifen zu können.
+</ExtractedText>
+</item>
+</channel>
+</rss>

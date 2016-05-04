@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>Wissen - FAZ.NET</title>
+<link>http://www.faz.net/aktuell/wissen/</link>
+<description>Meldungen aus allen Bereichen der Wissenschaft. Nachrichten aus Forschung und Entwicklung: Medizin, Klima und Naturwissenschaft. </description>
+<copyright>Copyright 2001-2014 Frankfurter Allgemeine Zeitung GmbH. Alle Rechte vorbehalten.</copyright>
+<category>Wissen - FAZ.NET</category>
+<language>de-de</language>
+<docs>http://www.faz.net/hilfe/services-newsletter-widgets-rss-feeds-mehr/</docs>
+<generator>FAZ.NET</generator>
+<ttl>5</ttl>
+<lastBuildDate>Wed, 10 Dec 2014 13:44:52 +0100</lastBuildDate>
+<atom:link href="http://www.faz.net/rss/aktuell/wissen/" rel="self" type="application/rss+xml"/>
+<image>
+		<title>Wissen - FAZ.NET</title>
+		<url>http://www.faz.net/img/fazlogo_ressort.gif</url>
+        <link>http://www.faz.net/aktuell/wissen/</link>
+	</image>
+<item>
+    <title>Zoomobjektive für Handy-Kameras: Geht das denn nicht auch kleiner?</title>
+    <description>&lt;img width=190 height=107 border=0 title="Ohne Telezoom geht bei uns gar nichts. Kaiserpinguine am antarktischen Weddell-Meer beim Sightseeing" alt="Ohne Telezoom geht bei uns gar nichts. Kaiserpinguine am antarktischen Weddell-Meer beim Sightseeing" src=http://media0.faz.net/ppmedia/aktuell/wissen/2425972851/1.3306150/article_teaser/ohne-telezoom-geht-bei-uns-gar-nichts-kaiserpinguine-am-antarktischen-weddell-meer-beim-sightseeing.jpg /&gt;&lt;p&gt;Wer zoomen will, braucht Platz. Doch widersetzen sich Tele-Optiken bisher
+hartnäckig jeder Miniaturisierung. Nicht mehr lange.&lt;/p&gt;</description>
+    <link>http://www.faz.net/aktuell/wissen/zoomobjektive-fuer-handy-kameras-geht-das-denn-nicht-auch-kleiner-13306146.html</link>
+    <pubDate>Sun, 07 Dec 2014 23:24:36 +0100</pubDate>
+    <guid isPermaLink="true">http://www.faz.net/-gwz-7x736</guid>
+<ExtractedText>Zoomobjektive für Handy-Kameras: Geht das denn nicht auch kleiner?
+Optik Geht das denn nicht auch kleiner?
+Wer zoomen will, braucht Platz. Doch widersetzen sich Tele-Optiken bisher hartnäckig jeder Miniaturisierung. Nicht mehr lange.
+07.12.2014, von Katharina Menne
+Ohne Telezoom geht bei uns gar nichts. Kaiserpinguine am antarktischen Weddell-Meer beim Sightseeing
+© action press
+Ohne Telezoom geht bei uns gar nichts. Kaiserpinguine am antarktischen Weddell-Meer beim Sightseeing
+Smartphones ohne Kamerafunktion wären nicht mehr smart. Es geht ja nicht nur um lustige Selfies. Wer zum Beispiel notiert sich noch Abfahrtszeiten, wenn man Busfahrpläne auch abfotografieren kann? Aber auch für die Dokumentation der Freizeitbeschäftigung reicht immer mehr Zeitgenossen ihr mobiler Fernsprecher. Denn obwohl die Geräte immer flacher werden, haben sich die eingebauten Kameras in den letzten Jahren stetig verbessert und schlagen jetzt so manche Kompaktkamera: hochauflösend, lichtstark und allzeit griffbereit.
+Nur mit dem Zoomen klappt es noch nicht. Sobald man nicht mehr nur die Kaffeetasse auf dem Schreibtisch fotografieren möchte, wird es schwierig, denn bei entfernteren Objekten ist der sogenannte digitale Zoom keine echte Lösung. Der holt das Bild nämlich nicht optomechanisch näher, sondern vergrößert nur den gewählten Bildausschnitt – mit entsprechend weniger Pixeln. Das Foto ist dann in enttäuschender Weise „verpixelt“.
+Alle bisherigen Lösungen umgehen das Problem
+Unzufrieden sind damit nicht nur Abermillionen von Handyfotografen, tatsächlich suchen Ingenieure und Forscher weltweit nach Möglichkeiten, wie sich ein optischer Zoom miniaturisieren und auf die Größe einer regulären Smartphone-Kamera schrumpfen lässt. Apple, Nokia, Samsung und andere Anbieter liefern sich ein Wettrennen um die leistungsfähigste und praktikabelste Variante. Bisher umgehen alle Lösungen das Problem, anstatt es wirklich zu lösen. Nokia zum Beispiel verbaut derzeit extrem hochauflösende Sensoren mit bis zu 41 Megapixeln Auflösung, peppt damit aber nur den digitalen Zoom auf. Samsung wiederum verschmilzt Smartphone und Digitalkamera zu einem Hybriden, der dafür an Handlichkeit einbüßt, weil das Objektiv nun aus dem Gerät herausragt.
+Die Schwierigkeit, einen optischen Zoom auf Handykamera-Größe zu bringen, beruht allein auf der Physik. Das einfachste Zoomobjektiv benötigt drei Linsen, wovon zwei entlang der optischen Achse beweglich sein müssen: eine für die Einstellung der Schärfe und die andere für die Änderung des Bildwinkels, also für den Zoom. Und je enger der gewünschte Bildwinkel, je kleiner also das Detail, das vergrößert werden soll, desto länger die Strecke, über welche die Linsen verschoben werden müssen. In der Realität bleibt es dabei aber nicht, da in Linsensystemen Abbildungsfehler auftreten. Diese verzerren das Bild, führen zu Randunschärfen oder Farbfehlern. In modernen Objektiven werden diese Fehler korrigiert. Doch das erfordert eben Linsen unterschiedlicher Brennweiten und eine ausgeklügelte Mechanik. Außerdem hat die gewünschte Lichtstärke des Objektivs Einfluss auf die Zahl der benötigten Linsenelemente. Das alles braucht Platz und lässt sich nicht verkleinern, ohne die optischen Eigenschaften zu verschlechtern.
+Der Trick: Drehen statt Schieben
+Trotzdem scheinen Wissenschaftler vom Karlsruher Institut für Technologie (KIT) dem Traum vom miniaturisierten Zoomobjektiv nun näher gekommen zu sein. Ihr Ansatz ist unkonventionell: Sie verschieben nicht wie bisher die Linsen entlang der optischen Achse, sondern lassen sie gegeneinander rotieren. Für eine Bewegung der Linsen bedarf es damit keines zusätzlichen Volumens mehr, und an die Stelle eines sogenannten translatorischen Antriebs vor und zurück auf der Achse des Objektivs tritt ein rotatorischer, der in der Regel sogar weniger Energie verbraucht.
+</ExtractedText>
+</item>
+</channel>
+</rss>

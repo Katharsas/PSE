@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Sony hack: Cruise asked to play Steve Jobs</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/iH58iINivLg/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/09/media/tom-cruise-steve-jobs/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141209161816-tom-cruise-steve-jobs-120x90.png" width="120"/>
+<description>Read full story for latest details.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/WxesLt50x9s" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/iH58iINivLg" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Tue, 09 Dec 2014 17:36:42 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/09/media/tom-cruise-steve-jobs/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/WxesLt50x9s/index.html</feedburner:origLink>
+<ExtractedText>Sony hack: Tom Cruise was asked to play Steve Jobs
+By Jose Pagliery   @Jose_Pagliery December 9, 2014: 4:20 PM ET
+Tom Cruise (left) was asked to play Apple co-founder Steve Jobs.
+NEW YORK (CNNMoney)
+Just as the deal for the Steve Jobs biopic was falling apart at Sony Pictures, the Hollywood studio pushed for Tom Cruise to fill the role.
+That's according to hacked, leaked emails belonging to Sony Pictures Entertainment Co-Chairwoman Amy Pascal. The Sony hackers placed them online publicly Monday,
+The movie about the Apple ( AAPL , Tech30 ) co-founder has run into several hiccups, even though it's still a long way from production. Leonardo DiCaprio passed on the role. The number two pick, Christian Bale, recently ditched the project as well.
+As it turns out, Tom Cruise was yet another candidate.
+ 
+Sony hack could lead to censorship
+In late October, screenwriter Aaron Sorkin said he finally convinced producer Scott Rudin and director Danny Boyle to be interested in Tom Cruise. They feared that Cruise would drag his buddy, writer Chris McQuarrie to rework the script. But Cruise's agent, Maha Dakhil, assured them "that won't happen."
+Pascal's reaction: "love love love this."
+Related: Sony mega-hack - what you need to know
+Producer Michael De Luca wondered if Seth Rogen would be too young to play Apple co-founder Steve Wozniak. Sorkin assured him it would be OK, but said Boyle was worried that the choice to pick Cruise "will be met with derision because it's such a commercial choice."
+As it turns out, it was all for nothing. The deal fell through, and now Universal has picked up the movie, according to The Hollywood Reporter . And Cruise isn't in the running anymore. Now, Michael Fassbender has been tapped to play Jobs.
+First Published: December 9, 2014: 4:10 PM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

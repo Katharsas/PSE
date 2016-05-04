@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+<description>Nachrichten und Analysen zu Wissenschaft, Forschung, Gesundheit, Umwelt und Geschichte. Lesen Sie aktuelle Informationen aus dem Ressort Wissen.</description>
+<pubDate>Wed, 10 Dec 2014 14:16:20 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:01:27 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wissen/index</link>
+<atom:link href="http://newsfeed.zeit.de/wissen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+      <link>http://www.zeit.de/wissen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wissen/2014-12/nasa-orion-raumfahrt-testflug</link>
+      <guid>http://www.zeit.de/wissen/2014-12/nasa-orion-raumfahrt-testflug</guid>
+      <category>Wissen</category>
+      <title>Nasa: "Orion" im Pazifik gelandet</title>
+      <description>&lt;a href="http://www.zeit.de/wissen/2014-12/nasa-orion-raumfahrt-testflug"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wissen/2014-12/orion-landung/orion-landung-148x84.jpg"/&gt;&lt;/a&gt; Die US-Raumkapsel "Orion" hat ihren Jungfernflug erfolgreich absolviert. Seit mehr als 40 Jahren ist kein für Menschen gebautes Raumschiff weiter geflogen.</description>
+      <dc:creator>ZEIT ONLINE : Wissen</dc:creator>
+      <pubDate>Fri, 05 Dec 2014 17:17:55 GMT</pubDate>
+    <ExtractedText>Nasa: "Orion" im Pazifik gelandet
+Nasa: "Orion" im Pazifik gelandet
+Die US-Raumkapsel "Orion" hat ihren Jungfernflug erfolgreich absolviert. Seit mehr als 40 Jahren ist kein für Menschen gebautes Raumschiff weiter geflogen.
+5. Dezember 2014           18:16 Uhr  24 Kommentare
+Bilder der Nasa zeigen die Landung von "Orion" im Pazifik  |  © NASA/AP/dpa
+Der US-Raumtransporter Orion hat seinen Jungfernflug erfolgreich beendet. Nach viereinhalb Stunden in einer Erdumlaufbahn und rund 96.000 Kilometern Reiseweg schlug die Kapsel im Pazifik auf, wie die US-Raumfahrtbehörde Nasa mitteilte . Mit Orion sollen ab Mitte der 2030er Jahre  Menschen zum  Mars gebracht werden.
+Mit 5.800 Kilometern markierte Orion eine Höhe, die ein für den Transport von Menschen gebautes Raumschiff seit vier Jahrzehnten nicht mehr erreicht hat. Die Höhe war zuletzt bei der Apollo-17-Mission beim Flug zum Mond 1972 überschritten worden.
+Anzeige
+Vor der Landung stand als besondere technische Herausforderung der Wiedereintritt in die Atmosphäre im Interesse. Die Ingenieure der US-Raumfahrtbehörde wollten sehen, wie der Hitzeschild der Raumkapsel die Temperaturen von 2.200 Grad Celsius übersteht, bevor Menschen damit ins All fliegen. Mit Spannung  erwarteten die Nasa-Ingenieure Daten zu Strahlenbelastung und  Temperaturen im Inneren der Kapsel – für das Überleben einer Crew sind  diese Faktoren von großer Bedeutung. Auch die Trennung der Kapsel von der Rakete beim Start sowie die Landung  per Fallschirm im Ozean wurden erstmals geprobt.
+Das soll aber nicht vor 2021 der Fall sein. Orion ist für Mars-Missionen ausgelegt . Die USA hoffen, mit Orion ihre Vormachtstellung im Weltall zu behaupten.
+</ExtractedText>
+</item>
+</channel>
+</rss>

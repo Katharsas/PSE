@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>Sport - FAZ.NET</title>
+<link>http://www.faz.net/aktuell/sport/</link>
+<description>Aktuelle News vom Sport. Nachrichten aus Fußball und Handball Bundesliga. Alle Spiele, Wettkämpfe und Meisterschaften auf einen Blick. </description>
+<copyright>Copyright 2001-2014 Frankfurter Allgemeine Zeitung GmbH. Alle Rechte vorbehalten.</copyright>
+<category>Sport - FAZ.NET</category>
+<language>de-de</language>
+<docs>http://www.faz.net/hilfe/services-newsletter-widgets-rss-feeds-mehr/</docs>
+<generator>FAZ.NET</generator>
+<ttl>5</ttl>
+<lastBuildDate>Wed, 10 Dec 2014 15:41:01 +0100</lastBuildDate>
+<atom:link href="http://www.faz.net/rss/aktuell/sport/" rel="self" type="application/rss+xml"/>
+<image>
+		<title>Sport - FAZ.NET</title>
+		<url>http://www.faz.net/img/fazlogo_ressort.gif</url>
+        <link>http://www.faz.net/aktuell/sport/</link>
+	</image>
+<item>
+    <title>Champions-League-Liveticker: Endspiele um die Gruppensiege</title>
+    <description>&lt;img width=190 height=107 border=0 title="Aymen Abdennour schießt Monaco ins Achtelfinale" alt="Aymen Abdennour schießt Monaco ins Achtelfinale" src=http://media0.faz.net/ppmedia/aktuell/sport/3766733945/1.3312446/article_teaser/aymen-abdennour-schiesst-monaco-ins-achtelfinale.jpg /&gt;&lt;p&gt;Borussia Dortmund bringt die Führung nicht über die Zeit. Leverkusen verspielt den Gruppensieg, weil Monaco gewinnt. Liverpool scheitert am FC Basel. Die Champions League im Liveticker.&lt;/p&gt;</description>
+    <link>http://www.faz.net/op900/event/champions-league/live/#/live-e782783</link>
+    <pubDate>Tue, 09 Dec 2014 22:37:57 +0100</pubDate>
+    <guid isPermaLink="true">http://www.faz.net/op900/event/champions-league/live/#/live-e782783#1.3312143</guid>
+<ExtractedText>Champions League
+Liveticker zur Champions League
+Wer gewinnt die Champions League 2014/2015? Die besten Fußball-Teams aus Europa streiten um die Trophäe in der Königsklasse. Real Madrid ist der Titelverteidiger. Das Finale findet am 6. Juni 2015 in Berlin im Olympiastadion statt. Die Teilnahme am Endspiel im eigenen Land ist das große Ziel von Bayern München, Borussia Dortmund, Schalke 04 und Bayer Leverkusen. Verfolgen Sie alle Spiele im Liveticker. Hier finden Sie auch alle Infos zu Spielplan, Terminen, Tabellen und Teams.
+</ExtractedText>
+</item>
+</channel>
+</rss>

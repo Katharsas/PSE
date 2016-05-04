@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>'Missing' Pussy Riot inmate in Siberia</title>
+<guid>http://edition.cnn.com/2013/11/15/world/europe/russia-pussy-riot-tolokonnikova/index.html</guid>
+<link>http://edition.cnn.com/2013/11/15/world/europe/russia-pussy-riot-tolokonnikova/index.html?eref=edition</link>
+<description>Russian authorities have revealed the whereabouts of a convicted Pussy Riot punk rock band member, three weeks after she was moved from a prison where she went on hunger strike over its conditions.</description>
+<pubDate>Fri, 15 Nov 2013 07:15:15 EST</pubDate>
+<ExtractedText>'Missing' Pussy Riot inmate Tolokonnikova in Siberian prison
+By Alla Eshchenko and Susannah Cullinane, CNN
+November 15, 2013 -- Updated 1704 GMT (0104 HKT)
+STORY HIGHLIGHTS
+Nadezhda Tolokonnikova was jailed in Russia last year for her part in a "punk prayer"
+In September, the Pussy Riot band member went on hunger strike over prison conditions
+In October, she was transferred and her family was not informed of her new location
+Her husband said Friday that he had spoken to her at a Siberian prison where she is now held
+(CNN) -- Russian authorities have revealed the whereabouts of a convicted Pussy Riot punk rock band member, three weeks after she was moved from a prison where she went on hunger strike over its conditions .
+On November 2, Nadezhda Tolokonnikova's husband, Pyotr Verzilov, said his wife had not been heard from since she was transferred from a prison in Mordovia, more than 300 miles east of Moscow on October 24 or 25.
+Under law, authorities had to inform her family about her transfer within 10 days of her arrival at a different penal colony.
+Pussy Riot documentary director on band
+Pussy Riot family speaks out
+</ExtractedText>
+</item>
+</channel>
+</rss>

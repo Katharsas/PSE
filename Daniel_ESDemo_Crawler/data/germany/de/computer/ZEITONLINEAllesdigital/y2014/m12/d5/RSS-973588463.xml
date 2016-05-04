@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/mobil/2014-12/wire-plague-apps-test</link>
+      <guid>http://www.zeit.de/digital/mobil/2014-12/wire-plague-apps-test</guid>
+      <category>Digital</category>
+      <title>Plague und Wire: Botschaften verbreiten wie ansteckende Krankheiten</title>
+      <description>&lt;a href="http://www.zeit.de/digital/mobil/2014-12/wire-plague-apps-test"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/mobil/2014-12/wire-app-ios-osx-android/wire-app-ios-osx-android-148x84.jpg"/&gt;&lt;/a&gt; Zwei neue Apps mischen den Messenger-Markt auf: Plague "infiziert" die Nutzer untereinander; Wire versucht, sich unsichtbar zu machen, bis nur noch Inhalte übrig bleiben.</description>
+      <dc:creator>ZEIT ONLINE : Digital - Patrick Beuth</dc:creator>
+      <pubDate>Fri, 05 Dec 2014 09:01:46 GMT</pubDate>
+    <ExtractedText>Plague und Wire: Botschaften verbreiten wie ansteckende Krankheiten
+Plague und Wire: Botschaften verbreiten wie ansteckende Krankheiten
+Zwei neue Apps mischen den Messenger-Markt auf: Plague "infiziert" die Nutzer untereinander; Wire versucht, sich unsichtbar zu machen, bis nur noch Inhalte übrig bleiben. von  Patrick Beuth
+Aktualisiert  5. Dezember 2014           11:19 Uhr  5 Kommentare
+Die Wire-App auf verschiedenen Geräten  |  © Wire
+Mark Zuckerberg hat das frictionless sharing – das reibungslose Teilen von Inhalten – zum Modewort gemacht. 2011 war das, als der Facebook-CEO auf der Entwicklerkonferenz f8 die neue Facebook-Timeline vorstellte und eben jene mühelose Verbreitung von Fotos, Videos und Nachrichten versprach. Drei Jahre später wollen zwei neue Messagingdienste dieses Konzept auf die Spitze treiben: Wire und Plague – The Network.
+Wire hat seinen Hauptsitz in der Schweiz und sein Entwicklungszentrum in Berlin. Das Team besteht aus ehemaligen Mitarbeitern von Apple, Skype, Nokia und Microsoft. Der Skype-Mitgründer Janus Friis gehört zu den Geldgebern. Ihr Produkt: eine kostenlose Kommunikations-App fürs Telefonieren über IP, für persönliche Nachrichten, Gruppenchats und den Austausch von Bild- und Sounddateien. Wire läuft auf iOS, Android, OS X und bald auch im Browser. So weit, so unspektakulär – Wire kann nichts, was andere Anwendungen nicht auch können. Das aber ziemlich elegant. 
+Anzeige
+Eine Bedienungsanleitung bei der Einrichtung gibt es nicht. Die Navigation mit Wischgesten auf Smartphones und Tablets beziehungsweise Klicks in OSX müssen sich Nutzer selbst beibringen. Kein Schriftzug, der auf Wire hindeutet, ist innerhalb der App zu sehen. Metadaten, also wann welche Nachricht oder welches Foto gesendet wurde, werden nur angezeigt, wenn man auf die einzelne Nachricht klickt beziehungsweise mit der Maus darüberfährt.
+Die Folge dieser erklärungslosen, allein auf Intuition ausgelegten Bedienung: Die Technik dahinter scheint zu verschwinden, nur noch Inhalte zählen. An einigen Stellen holpert es noch etwas. Zum Beispiel, wenn Android-Nutzer ein YouTube-Video öffnen wollen, das jemand ihnen geschickt hat – das geht nämlich (noch) nicht direkt in der Wire-App für Android. Die iOS-Version dagegen unterstützt das.
+Patrick Beuth
+© ZEIT ONLINE
+Patrick Beuth ist Redakteur im Ressort Digital bei ZEIT ONLINE. Seine Profilseite finden Sie hier .
+Die weitgehende Abwesenheit von Reibung heißt aber auch, dass unklar bleibt, was im Hintergrund passiert. Beim Einrichten zum Beispiel zeigt Wire andere Nutzer, und zwar people you may know. Woher hat die App deren Namen? Liest sie ungefragt die Kontakte auf dem Smartphone aus? Erklärt wird das nicht. Wem es allein um Bequemlichkeit geht, der wird sich daran nicht stören. Wer wissen will, was seine Apps eigentlich tun, wird den einen oder anderen Warnhinweis von Wire vermissen.
+Nicht einmal im Einstellungsmenü wird wirklich etwas erklärt. Dort lässt sich einstellen, ob Wire auf die eigenen Kontakte zugreifen darf. "Das wird dir helfen, Menschen zu finden die du kennst. Deine Daten sind sicher und werden nie mit Dritten geteilt", heißt es dazu aber nur vage.
+Deshalb lohnt sich ein Blick in die gut verständliche Datenschutzerklärung : Wire verspricht darin, nur Hashwerte von Telefonnummern und E-Mail-Adressen auf seine Server hochzuladen, nicht die Nummern und Adressen selbst. Das unterscheidet die App zum Beispiel von WhatsApp, wo die Telefonnummern aus den ausgelesenen Adressbüchern im Klartext gespeichert werden, sofern es sich um Nummern von anderen WhatAp-Nutzern handelt. (Nur Nummern von Nicht-Nutzern werden als Hash gespeichert, darauf weist surfer-haben-rechte.de hin .)
+Wire sichert nur VoIP-Gespräche mit Ende-zu-Ende-Verschlüsselung
+Allerdings wird die E-Mail-Adresse, mit der man sein Wire-Konto registriert, nicht gehasht, sondern vollständig übertragen. Daher weiß Wire auch, welche anderen Nutzer man kennen könnte, selbst wenn man die eigenen Kontakte nicht freigegeben hat: Haben diese anderen Nutzer ihr Adressbuch mit Wire verknüpft, taucht darin möglicherweise die E-Mail-Adresse auf, mit der man sich selbst registriert hat. So gleicht der Dienst ab, wer wen kennen könnte.
+Zwar können Nutzer einen Fantasienamen angeben. Doch wer von anderen Nutzern nicht gefunden werden will, muss bei der Registrierung auch eine E-Mail-Adresse angeben, die in keinem Adressbuch steht. Das entspricht sicherlich nicht dem normalen Nutzungsszenario, weil das eigene Wire-Netzwerk so nicht von alleine wachsen kann. Aber es soll ja Menschen geben, die sich nur mit bestimmten Menschen vernetzen wollen.
+Immerhin ist die Kommunikation über Wire verschlüsselt, wenn auch mit einer Einschränkung : Während Telefonate nach Unternehmensangaben Ende-zu-Ende-verschlüsselt sind, sodass auch die Betreiber nicht mithören können, gilt das nicht für Textnachrichten und den Austausch von Dateien. Die werden lediglich beim Transport zum und vom Server verschlüsselt. Die Server-Betreiber können also alles einsehen, wenn sie das wollen.
+Fazit: Wire ist hübsch anzusehen, erfordert aber einige Eingewöhnung in der Bedienung, bemüht sich auf den ersten Blick um ein Mindestmaß an Datenschutz und kann eine Alternative zu Skype und anderen Diensten sein. Jedenfalls für alle Nutzer, die auf ihrem Bildschirm die Inhalte einer Kommunikation sehen wollen und nicht den Kanal.
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

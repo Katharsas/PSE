@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Reisen</title>
+<description>Erholsame Reisen - Online Reiseberichte, Bildergalerien von Reisen und Urlaubstipps von Experten für die gute Reise in den Urlaub. Nachrichten und Informationen</description>
+<pubDate>Fri, 15 Nov 2013 09:32:56 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:43:14 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/reisen/index</link>
+<atom:link href="http://newsfeed.zeit.de/reisen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Reisen</title>
+      <link>http://www.zeit.de/reisen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/reisen/2013-11/fs-woanders-mathias-bothor-reise-2</link>
+      <guid>http://www.zeit.de/reisen/2013-11/fs-woanders-mathias-bothor-reise-2</guid>
+      <category>Reisen</category>
+      <title>Fotograf Mathias Bothor: Auf den Spuren eines Reisenden</title>
+      <description>&lt;a href="http://www.zeit.de/reisen/2013-11/fs-woanders-mathias-bothor-reise-2"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/reisen/2013-11/fs-woanders-mathias-bothor-reise-teaser-2/fs-woanders-mathias-bothor-reise-teaser-2-148x84.jpg"/&gt;&lt;/a&gt; Der Berliner Fotograf Mathias Bothor ist viel herumgekommen. Im Bildband "Woanders" gibt er Einblicke in seinen Reisealltag, fernab vom Sightseeing.</description>
+      <dc:creator>ZEIT ONLINE : Reisen</dc:creator>
+      <pubDate>Mon, 11 Nov 2013 07:06:17 GMT</pubDate>
+    <ExtractedText>1 von 12 Zurück Vorwärts
+Fotograf Mathias Bothor:
+Auf den Spuren eines Reisenden
+Lissabon  |           © Mathias Bothor
+Ein milchiges Fenster, davor eine Möwe, hinter ihr das Meer: Seit mehr als 20 Jahren führt Mathias Bothor ein fotografisches Tagebuch. Ob Amsterdam, Lissabon oder Hamburg – festgehalten hat er die Städte in flüchtigen Momentaufnahmen. Sein neuer Bildband Woanders ( Edition Braus ) bildet 17 Stationen seiner Reisen ab und vermittelt Eindrücke, die nicht vergessen werden sollen. 
+Die neuesten Fotostrecken:
+</ExtractedText>
+</item>
+</channel>
+</rss>

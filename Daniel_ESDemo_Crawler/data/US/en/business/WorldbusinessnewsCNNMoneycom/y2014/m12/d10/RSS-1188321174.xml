@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Chinese stocks are on a wild ride</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/2HI3QWDhqQQ/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/09/investing/china-shanghai-stocks/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141209142538-china-economy-120x90.jpg" width="120"/>
+<description>Read full story for latest details.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/wLhpfnmj4cU" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/2HI3QWDhqQQ" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Wed, 10 Dec 2014 00:25:49 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/09/investing/china-shanghai-stocks/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/wLhpfnmj4cU/index.html</feedburner:origLink>
+<ExtractedText>China stocks are on an incredible mystery run
+By Sophia Yan   @sophia_yan December 9, 2014: 5:31 AM ET
+ 
+Invest in China: Stock Connect explained
+HONG KONG (CNNMoney)
+The Shanghai Composite has been on a wild ride, surging 40% since the end of June in a performance that seems out of step with the broader Chinese economy.
+The index's rise is staggering, returning roughly three times the gains made by the S&amp;P 500 this year. It has also been volatile. Indeed, the index shed more than 5% Tuesday in what could be a sign that the party is winding down.
+But why did investors push the benchmark index to levels not seen since 2011? The exuberance is not supported by economic data -- factory activity is at an eight-month low, the real estate sector is shaky and the economy just saw its worst quarter since the financial crisis.
+"While there are some economic reasons for China's equity markets to have done well recently, they can't explain the scale of the recent surge," Mark Williams of Capital Economics wrote in a note. "There is a sense of mania taking hold."
+Markets in Shanghai and Shenzhen soared after the Chinese central bank announced it would cut benchmark interest rates in late November. But as Capital Economics notes, the rate cut "is far from the whole story."
+Related: China is not finished with rate cuts
+For one, China's stock market started gaining steadily in June, far before the policy announcement.
+Plus, the announcement should have been most beneficial to industrial firms, reducing their financing costs . But instead, the biggest market gains have been in financial stocks -- strange, because the rate cut made things more difficult for banks, which are now seeing squeezed margins off lower interest rates.
+Then again, since much of the financial sector is linked to the flailing property market, it's possible investors were cheering lower rates, as reduced mortgage costs may boost sales. But the real estate sector still looks far from healthy, burdened with oversupply, falling prices and slack investment.
+Related: China's economy suffers its worst quarter since the financial crisis
+And while the much-anticipated Hong Kong-Shanghai Stock Connect program was expected to boost Chinese equities, trading volume through the program has been lackluster since the pilot launched Nov. 17.
+Capital Economics says the market boost seems most linked to "an increasing frenzy among retail investors." Experts say they're feeding off the expectation that the government is determined to boost stocks, after state media published pieces months ago highlighting equity investments. (The expectation has been self-fulfilling, to a certain extent.)
+But does the China stock mania have lasting power? After all, the rally still puts the Shanghai Composite under half its October 2007 peak.
+"Looking ahead, we forecast the stock market to make more headway, but do not expect it to remain on a tear," wrote Capital Economics.
+First Published: December 9, 2014: 1:19 AM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+<description>Nachrichten und Analysen zu Wissenschaft, Forschung, Gesundheit, Umwelt und Geschichte. Lesen Sie aktuelle Informationen aus dem Ressort Wissen.</description>
+<pubDate>Sat, 16 Nov 2013 12:18:22 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:40:00 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wissen/index</link>
+<atom:link href="http://newsfeed.zeit.de/wissen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+      <link>http://www.zeit.de/wissen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/2013/46/mathematik-fernsehserie-simpsons</link>
+      <guid>http://www.zeit.de/2013/46/mathematik-fernsehserie-simpsons</guid>
+      <category>Wissen</category>
+      <title>Mathematik bei den "Simpsons": Homers Formel</title>
+      <description>&lt;a href="http://www.zeit.de/2013/46/mathematik-fernsehserie-simpsons"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wissen/2013-11/s39-simpson/s39-simpson-148x84.jpg"/&gt;&lt;/a&gt; In den "Simpsons" ist mehr Mathematik versteckt als in jeder anderen Fernsehserie. Der Schriftsteller Simon Singh hat sie aufgespürt und verrät uns die besten Formeln.</description>
+      <dc:creator>ZEIT ONLINE : Wissen - Simon Singh</dc:creator>
+      <pubDate>Thu, 07 Nov 2013 06:00:00 GMT</pubDate>
+    <ExtractedText>Mathematik bei den "Simpsons": Homers Formel
+Mathematik bei den "Simpsons": Homers Formel
+In den "Simpsons" ist mehr Mathematik versteckt als in jeder anderen Fernsehserie. Der Schriftsteller Simon Singh verrät uns die Höhepunkte. von Simon Singh
+14. November 2013  21:50 Uhr  23 Kommentare
+Die Simpsons sind zweifellos die mathematisch anspruchsvollste Serie in der Geschichte       des Fernsehens. Diese Behauptung ist kein Produkt meiner verqueren Fantasie, obwohl ich       zugegebenermaßen eine Obsession sowohl für die Simpsons als auch für die Mathematik       habe. Ich kann meine Behauptung anhand einer ganzen Reihe von Simpsons-Folgen       belegen.
+Schon die Pilotfolge aus dem Jahr 1989 enthielt zahlreiche mathematische Anspielungen,       darunter ein Scherz über die Infinitesimalrechnung. In der Folge Die Fahrt zur Hölle stecken die intensivsten fünf Minuten Mathematik, die je für ein Massenpublikum gesendet       wurden. Die Simpsons haben sogar einen obskuren Witz über den Großen Fermatschen Satz gemacht – eine der berühmtesten Gleichungen in der Geschichte der Mathematik.
+Anzeige
+Und diese Beispiele sind nur die Spitze des Eisbergs, denn zum Autorenteam der Serie zählen       gleich mehrere mathematische Schwergewichte. Al Jean, der an der ersten Staffel mitgeschrieben       hat und nun ausführender Produzent ist, ging im Alter von 16 Jahren nach Harvard, um       Mathematik zu studieren. Andere Autoren haben Mathematikdiplome von ähnlich eindrucksvollen       Universitäten, einige sind sogar promoviert, und Jeff Westbrook hat gar eine akademische       Position in Yale gekündigt, um Drehbücher für Homer, Marge und die anderen Bewohner von       Springfield zu schreiben.
+In den Fernsehstudios des Senders Fox haben diese Autoren sich ihre Leidenschaft für Zahlen       erhalten und in Dutzenden von Folgen der Serie mathematische Anspielungen untergebracht. Nur       extremen Geeks fiel das auf, am Rest des Publikums ging es unbemerkt vorbei.
+Simon Singh
+© Dan Callister/Getty Images
+Der britische Autor Simon Singh wurde durch sein Buch Fermats letzter Satz international         bekannt. Sein neues Werk Homers letzter Satz: Die Simpsons und die Mathematik erscheint in         diesen Tagen im Hanser Verlag.
+Die Folge Homerun für die Liebe zum Beispiel enthält gleich eine dreifache       Geheimdosis Mathematik. In der Geschichte helfen Marge und Homer dem Baseballstar Buck       Mitchell und seiner Frau Tabitha Vixx, ihre Ehekrise zu bewältigen. Die Folge gipfelt darin,       dass Tabitha auf dem riesigen Bildschirm im Stadion von Springfield erscheint, um Buck       öffentlich ihre Liebe zu erklären. Was wichtiger ist: Vor Tabithas Auftritt ist dort eine       Quizaufgabe zu lesen. Man solle schätzen, wie viele Zuschauer im Stadion sind.
+Drei mögliche Antworten sind vorgegeben: 8128, 8208 und 8191. Diese Zahlen mögen zufällig und       harmlos aussehen, aber tatsächlich stellen sie eine vollkommene Zahl, eine narzisstische Zahl       und eine Mersenne-Primzahl dar.
+8128 gehört zu den sogenannten vollkommenen Zahlen , weil die Summe ihrer Teiler die Zahl       selbst ist. Die kleinste vollkommene Zahl ist 6, weil 1, 2 und 3 nicht nur die Teiler von 6       sind, sondern sich auch zu 6 addieren. Die zweite vollkommene Zahl ist 28, denn 1, 2, 4, 7 und       14 ergeben zusammen 28. Die dritte vollkommene Zahl ist 496, die vierte ist 8128, eben die       Zahl aus der Simpsons-Folge. René Descartes, der berühmte Mathematiker und Philosoph       aus dem 17. Jahrhundert, sagte einmal: "Vollkommene Zahlen sind genauso selten wie vollkommene       Menschen."
+8208 ist eine narzisstische Zahl . Sie enthält vier Ziffern, und wenn man von jeder dieser       Ziffern die vierte Potenz bildet und die Resultate addiert, kommt wieder die Zahl selbst       heraus: 84 + 24 + 04 + 84 = 8208. Die Tatsache, dass die Zahl 8208 sich so aus ihren       Komponenten neu erschaffen kann, deuten die Mathematiker als eine gewisse Selbstverliebtheit,       daher der Name "narzisstisch". In der unendlichen Folge aller Zahlen gibt es weniger als       hundert, die diese Eigenschaft besitzen.
+8191 ist eine Primzahl, denn sie hat keine Teiler außer 1 und sich selbst, und sie heißt       eine Mersenne-Primzahl , weil Marin Mersenne, ein anderer französischer Mathematiker des 17.       Jahrhunderts, herausfand, dass 8191 gleich 213 – 1 ist. Allgemeiner: Mersenne-Primzahlen       gehorchen dem Muster 2p – 1, wobei p eine Primzahl ist.
+Es überrascht nicht, dass viele der mathematischen Anekdoten bei den Simpsons mit       der kleinen Lisa zu tun haben. Sie ist stolz darauf, ein Nerd zu sein, und ihr Sinn für       Trigonometrie und Logarithmen wird in der Folge Ich weiß, was du getudel-tan hast (1999) von Schulleiter Skinner gewürdigt. Als sie unter einem Stapel von Klappstühlen begraben       wird, ruft er verzweifelt: "Sie ist zerquetscht worden! Und damit auch die Hoffnungen unseres       Mathletik-Teams."
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

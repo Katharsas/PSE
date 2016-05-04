@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 18:54:09 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Djokovic crushes Nadal in final</title>
+<guid isPermaLink="false">http://edition.cnn.com/2013/11/11/sport/tennis/djokovic-nadal-finals-tennis/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/h989a74UZtk/index.html</link>
+<description>Rightly billed as a clash of tennis titans, World No. 1 versus World No. 2, few were expecting the comprehensive manner of Novak Djokovic's defeat of Rafael Nadal to retain the ATP World Tour Finals title.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_sport/~4/h989a74UZtk" height="1" width="1"/&gt;</description>
+<pubDate>Thu, 14 Nov 2013 10:12:39 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2013/11/11/sport/tennis/djokovic-nadal-finals-tennis/index.html</feedburner:origLink>
+<ExtractedText>Novak Djokovic wins ATP World Tour Finals title for second straight year
+Thrashes Rafael Nadal in straight sets 6-3 6-4
+Near faultless display from Serbian World No.2
+Fernando Verdasco and David Marrero win thrilling doubles final
+(CNN) -- Rightly billed as a clash of tennis titans, World No.1 versus World No.2, few were expecting the comprehensive manner of Novak Djokovic's defeat of Rafael Nadal to retain the ATP World Tour Finals title Monday night in London.
+Nadal will still end the year as the top ranked player in the world, but he was given a timely reminder that on the fast indoor surface of the 02 Arena, Djokovic reigns supreme, retaining his title with a 6-3 6-4 victory.
+It came after just one hour 36 minutes on his third championship point, with Nadal putting a forehand wide, rounding off an uncharacteristically tame display from the Spaniard.
+Djokovic has been undefeated since losing to Nadal in the final of the U.S. Open in September and he deservedly lifted the trophy, named in honor of former ATP president Brad Drewett, who died earlier this year.
+Djokovic: Anti-doping system not working
+Secret to beating tennis' big four
+After the gladiatorial style entrants by both men, it was Djokovic who struck the first blows, racing to a 3-0 lead with an early break of Nadal's service.
+He had a point for a double break, but the Spaniard weathered the storm before making inroads on Djokovic's next service game to draw them level at 3-3.
+But Djokovic was not to be denied and after holding his own service, he broke Nadal again, the decisive point seeing both men at full stretch with scarcely believable retrieving.
+Djokovic finally put away a decisive volley then held his own service, clinching the set with an ace.
+He was immediately on the front foot in the second set, breaking Nadal early again to take a lead he never relinquished.
+Read: Top pair set for ATP showdown
+Nadal was under pressure as he served to stay in the match at 3-5, saving the first match point and forcing his opponent to serve out for the championship.
+Nadal at last showed glimpses of his true quality by saving a second championship point, but any hopes of an unlikely revival were quickly snuffed out as Djokovic sent down an ace to bring up his third chance to take the title for a third time.
+Tennis greats gather for ATP reunion
+Rafael Nadal: Comeback was difficult
+Nadal still leads their career meetings 22-17 and will be looking to revenge the defeat when the 2014 season starts with the Australian Open in January.
+Before that, Djokovic will lead Serbia in the final of the Davis Cup against the Czech Republic, hoping to continue his unbeaten end to the season.
+Read: Djokovic and Troicki slam doping procedures
+Earlier, Fernando Verdasco and his Spanish compatriot David Marrero lifted the doubles title, beating the top seeds and three-time former champions Mike and Bob Bryan of the United States.
+Verdasco and Marrero won a close final 7-5 6-7 10-7 in one hour and 44 minutes, succeeding Marcel Granollers and Marc Lopez as winners of the end of season finale.
+They shared $335,500 in prize money, while the Bryans -- five-time finalists -- split $195,500. The losing pair have the consolation of comfortably ending 2013 as the top pair in the world, winning three of the four major titles with a 70-13 record.
+</ExtractedText>
+</item>
+</channel>
+</rss>

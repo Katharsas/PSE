@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Gesellschaft</title>
+<description>Menschen in der Gesellschaft. Aktuelles zu Zeitgeschehen, Generationen, Soziales und Bildung.</description>
+<pubDate>Wed, 10 Dec 2014 14:35:55 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:57:49 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/gesellschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/gesellschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Gesellschaft</title>
+      <link>http://www.zeit.de/gesellschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/gesellschaft/2014-12/vereinte-nationen-bootsfluechtlinge-mittelmeer</link>
+      <guid>http://www.zeit.de/gesellschaft/2014-12/vereinte-nationen-bootsfluechtlinge-mittelmeer</guid>
+      <category>Gesellschaft</category>
+      <title>Vereinte Nationen: Zahl der Bootsflüchtlinge höher als je zuvor</title>
+      <description>&lt;a href="http://www.zeit.de/gesellschaft/2014-12/vereinte-nationen-bootsfluechtlinge-mittelmeer"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/politik/ausland/2014-12/fluechtlinge-mittelmeer/fluechtlinge-mittelmeer-148x84.jpg"/&gt;&lt;/a&gt; Seit Januar sind auf den Weltmeeren mehr als 4.700 Menschen auf der Flucht aus ihrer Heimat gestorben. Der Weg über das Mittelmeer ist laut UN die tödlichste Route.</description>
+      <dc:creator>ZEIT ONLINE : Gesellschaft</dc:creator>
+      <pubDate>Wed, 10 Dec 2014 06:49:06 GMT</pubDate>
+    <ExtractedText>Vereinte Nationen: Zahl der Bootsflüchtlinge höher als je zuvor
+Vereinte Nationen: Zahl der Bootsflüchtlinge höher als je zuvor
+Seit Januar sind auf den Weltmeeren mehr als 4.700 Menschen auf der Flucht aus ihrer Heimat gestorben. Der Weg über das Mittelmeer ist laut UN die tödlichste Route.
+10. Dezember 2014           07:48 Uhr  50 Kommentare
+Das Mittelmeer ist laut UN die tödlichste Route für Bootsflüchtlinge auf dem Weg nach Europa.   |  © Filippo Monteforte/AFP/Getty Images
+Auf den Weltmeeren sind nach Angaben der Vereinten Nationen in diesem Jahr schon mehr Menschen per Schiff aus ihren Heimatländern geflohen als jemals zuvor. Seit Januar hätten rund 348.000 Menschen meist gefährliche  Schiffsüberfahrten riskiert, um bewaffneten Konflikten, Verfolgung oder  wirtschaftlicher Not in ihren Heimatländern zu entkommen, teilte das UN-Flüchtlingshilfswerk (UNHCR) mit . Nach offiziell bestätigten Zahlen starben dabei 4.272 Menschen.
+Größter Brennpunkt ist den UN zufolge vor allem wegen des Bürgerkriegs in Syrien und der Lage in Libyen das Mittelmeer , über das seit Jahresbeginn mehr als 207.000 Menschen die Flucht nach Europa versuchten. Dabei wurden etwa 3.420 Flüchtlinge getötet. Das Mittelmeer sei "die tödlichste Route" von allen. Im Jahr 2011, inmitten der Umbrüche in der arabischen Welt, hatten sich  laut den UN nur rund 70.000 Menschen auf den gefährlichen Weg  über das Mittelmeer gemacht.  
+Anzeige
+Viele Flüchtlinge würden Opfer krimineller Schlepperbanden, die die Not  der Menschen in Krisengebieten ausnutzten, heißt es in dem UN-Bericht. Mit Abschreckung könnte man Menschen in Not nicht von der Flucht aus ihrer Heimat abhalten.    
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Wirtschaft</title>
+<description>Aktuelle Nachrichten, Kommentare, Analysen und Hintergründe zu den Themen Wirtschaftspolitik, Finanzen, Unternehmen, Branchen, Börsen und Märkten</description>
+<pubDate>Wed, 10 Dec 2014 15:12:33 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:25 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wirtschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/wirtschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Wirtschaft</title>
+      <link>http://www.zeit.de/wirtschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wirtschaft/2014-12/china-alterung-demografie</link>
+      <guid>http://www.zeit.de/wirtschaft/2014-12/china-alterung-demografie</guid>
+      <category>Wirtschaft</category>
+      <title>Demografie: Altes China</title>
+      <description>&lt;a href="http://www.zeit.de/wirtschaft/2014-12/china-alterung-demografie"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wirtschaft/2014-12/china-alterung-bevoelkerung/china-alterung-bevoelkerung-148x84.jpg"/&gt;&lt;/a&gt; Um die Bevölkerungsexplosion einzudämmen, führte China 1979 die Ein-Kind-Politik ein. Wie die Gesellschaft in den nächsten Jahrzehnten altert, zeigt unsere Infografik.</description>
+      <dc:creator>ZEIT ONLINE : Wirtschaft</dc:creator>
+      <pubDate>Mon, 08 Dec 2014 16:42:19 GMT</pubDate>
+    <ExtractedText>Demografie: Altes China
+Demografie: Altes China
+Um die Bevölkerungsexplosion einzudämmen, führte China 1979 die Ein-Kind-Politik ein. Wie die Gesellschaft in den nächsten Jahrzehnten altert, zeigt unsere Infografik.
+8. Dezember 2014           17:41 Uhr  9 Kommentare
+© Statista
+China hat vom Westen nicht nur ökonomisch einiges übernommen und zumindest in Teilen marktwirtschaftliche Prinzipien eingeführt. Die Bevölkerungsstruktur zeigt ebenfalls Entwicklungen, die aus den klassischen Industrieländern bekannt sind: Auch in China altert die Bevölkerung. Das zeigt die Infografik, die das Portal Statista für ZEIT ONLINE erstellt hat.
+Zwar begann der demografische Wandel später als etwa in Japan oder in Europa, doch die Tendenz ist ähnlich. Die Geburtenrate in China nahm im Lauf der Jahrzehnte deutlich ab. Lag sie im Jahr 1960 noch bei etwa 5,5 Kindern pro Frau, so sank sie bis 1975 auf 3,0 und fiel bis Mitte der neunziger Jahre auf unter 2,0.
+Anzeige
+Dazu trug auch die 1979 eingeführte Ein-Kind-Politik bei. Vor allem in ländlichen Regionen wurde die Vorgabe nicht strikt umgesetzt, außerdem gab es Ausnahmeregelungen. Auch deshalb liegt die Geburtenrate heute bei 1,7. Zugleich stieg die Lebenserwartung: Sie liegt heute mit rund 76 Jahren über dem Durchschnitt im asiatisch-pazifischen Raum.
+Damit droht auch China eine Überalterung der Gesellschaft – mit den Folgen und Problemen, die auch die Politiker im Westen umtreiben. Etwa die Frage der künftigen Gesundheitsversorgung und der Rentenfinanzierung. Derzeit ist laut der OECD die Abhängigkeitsrate in China noch relativ niedrig: Auf 100 Personen im erwerbsfähigen Alter kommen 50 Nichtarbeitende, also Kinder und Rentner. Bis 2050, prognostiziert die Organisation, werde die Zahl auf 77 steigen – ein Wert, den Japan schon heute erreicht hat. Der Inselstaat zählt zu den weltweit ältesten Gesellschaften.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Scenes from the field</title>
+<guid>http://edition.cnn.com/2013/11/05/world/gallery/scenes-from-the-field/index.html</guid>
+<link>http://edition.cnn.com/2013/11/05/world/gallery/scenes-from-the-field/index.html?eref=edition</link>
+<description/>
+<pubDate>Fri, 06 Dec 2013 03:12:27 EST</pubDate>
+<ExtractedText>CAMBODIA: "Postcard seller in the Angkor complex, who can count to ten in 7 languages." - CNN's Bex Wright. Follow Bex (@bextables) and other CNNers along on Instagram at instagram.com/cnn .
+Loading weather data ...
+</ExtractedText>
+</item>
+</channel>
+</rss>

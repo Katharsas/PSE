@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr Kultur</title>
+<description>Aktuelle Kultur-Nachrichten, Informationen und Interviews rund um die Themen Kultur, Feuilleton, Literatur, Kunst, Film und Musik. Dazu Reportagen und Kritiken.</description>
+<pubDate>Sat, 16 Nov 2013 11:20:58 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:50:12 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/kultur/index</link>
+<atom:link href="http://newsfeed.zeit.de/kultur/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr Kultur</title>
+      <link>http://www.zeit.de/kultur/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/video/2013-11/2834113152001</link>
+      <guid>http://www.zeit.de/video/2013-11/2834113152001</guid>
+      <category>Kultur</category>
+      <title>Videolesung: Florian Werner liest aus "Verhalten bei Weltuntergang"</title>
+      <description>Jede Woche stellen Autoren auf ZEIT ONLINE ihre Werke vor. Diese Woche liest Florian Werner aus seinem Buch "Verhalten bei Weltuntergang".</description>
+      <dc:creator>ZEIT ONLINE : Kultur</dc:creator>
+      <pubDate>Thu, 14 Nov 2013 07:18:42 GMT</pubDate>
+    <ExtractedText>Videolesung: Florian Werner liest aus "Verhalten bei Weltuntergang"
+VideolesungFlorian Werner liest aus "Verhalten bei Weltuntergang"
+14. November 2013  10:24 Uhr 
+Jede Woche stellen Autoren auf ZEIT ONLINE ihre Werke vor. Diese Woche liest Florian Werner aus seinem Buch "Verhalten bei Weltuntergang".
+ 
+</ExtractedText>
+</item>
+</channel>
+</rss>

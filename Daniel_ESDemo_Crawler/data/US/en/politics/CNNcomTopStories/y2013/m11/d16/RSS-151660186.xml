@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>World's sexiest hotel room</title>
+<guid>http://edition.cnn.com/2013/11/12/travel/sexiest-hotel-room/index.html</guid>
+<link>http://edition.cnn.com/2013/11/12/travel/sexiest-hotel-room/index.html?eref=edition</link>
+<description>A white, bright, mother-of-pearl-themed hotel room in London has won an award for world's sexiest bedroom. </description>
+<pubDate>Sat, 16 Nov 2013 02:39:49 EST</pubDate>
+<ExtractedText>Is this the world's 'sexiest hotel room'?
+By Frances Cha, CNN
+November 13, 2013 -- Updated 1309 GMT (2109 HKT)
+The Corfu Suite at the Blakes Hotel in London won the judges' vote for the sexiest hotel room for its white drapes, mother-of-pearl accents and a four-poster bed "you can't leave." Do you agree with the judges?
+Ca Maria Adele hotel in Venice, described by judge and burlesque dancer Immodesty Blaize as a "fantasy cocoon," was one of the runners-up in the world's sexiest bedroom category.
+Made of bamboo and reclaimed wood, the Alila Villas Uluwatu in Bali hangs over a cliff-edge, looking out over the Indian Ocean.
+This one was a no-brainer. A New York favorite, the ever-crammed, quirky Ace Hotel bar was the winner in the Best Hotel Bar category.
+The owner of La Bastide de Moustiers, located inside an inn in Provence, France, has been awarded more Michelin stars than any other chef in the world, and serves up "show-stopping" food, according to the judges in the Best Hotel Restaurant category. The restaurant "is a love poem to the surrounding area, a gastronome's daydream that showcases the finest local produce in a daily changing menu of delectably inventive dishes."
+Located in Ubud, Bali, "the world capital of wellness retreats," the Como Shambhala Estate offers the most luxurious of therapies in a tropical, holistic setting.
+The criteria for the Eco Award included "low environmental impact without sacrificing on comfort and quality," "pioneering use of new technology" and the use of renewable energy resources and products. The 27-room Sextantio Albergo Diffuso took the top spot for its minimalist, medieval rooms with working fireplaces and village craftwork.
+The kids' club at the Soneva Kiri in Koh Kood, Thailand, was designed by Dutch eco-architect Olv Bruin, who asked children to design their dream play area and made that come to life.
+Budget and boutique don't necessarily go hand in hand, but the Brody House in Budapest, Hungary, manages to provide cheap accommodations (starting at £50 ($80) per night) in a cool, boho chic setting.
+The Rockies, a Colorado mining town, a mountain hideaway with log cabins and incredible views, The Dunton Hot Springs resort is a "year-round alfresco spa haven" thanks to its hot springs, and took the top spot for best outdoor setting.
+Hong Kong's The Upper House gets rid of all the little annoying things about staying in a hotel, and blows their guests away by going "above and beyond all expectations," hence the win in this category.
+Modern architecture in a Canadian island fishing village. The Fogo Island Inn is a boutique eco hotel set against an ocean backdrop, and considered the best new hotel by Mr and Mrs Smith users and judges.
+The Post Ranch Inn at Big Sur is "quite simply, one of the world's very best places to say," according to the judges in this category, which included a Sunday Times editor and an award-winning photographer. Their reasons: California cliff-top setting, fireside massages, hot tubs, views of tall redwoods and the Pacific ocean.
+HIDE CAPTION
+Sexiest Bedroom in the World
+Sexiest Bedroom -- Runner-up
+</ExtractedText>
+</item>
+</channel>
+</rss>

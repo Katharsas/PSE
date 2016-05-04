@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Wirtschaft</title>
+<description>Aktuelle Nachrichten, Kommentare, Analysen und Hintergründe zu den Themen Wirtschaftspolitik, Finanzen, Unternehmen, Branchen, Börsen und Märkten</description>
+<pubDate>Wed, 10 Dec 2014 15:12:33 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:25 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wirtschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/wirtschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Wirtschaft</title>
+      <link>http://www.zeit.de/wirtschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wirtschaft/2014-12/demographie-arbeitsmarkt</link>
+      <guid>http://www.zeit.de/wirtschaft/2014-12/demographie-arbeitsmarkt</guid>
+      <category>Wirtschaft</category>
+      <title>Demographie: Die Alten ins Büro, die Jungen in die Bar</title>
+      <description>&lt;a href="http://www.zeit.de/wirtschaft/2014-12/demographie-arbeitsmarkt"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wirtschaft/2014-12/altersstruktur/altersstruktur-148x84.jpg"/&gt;&lt;/a&gt; Fast jeder dritte Arbeitnehmer ist inzwischen über 50 Jahre alt. Aber in welchen Branchen arbeiten sie? Unsere Grafik des Tages zeigt die Altersstruktur der Beschäftigen.</description>
+      <dc:creator>ZEIT ONLINE : Wirtschaft</dc:creator>
+      <pubDate>Wed, 10 Dec 2014 15:05:55 GMT</pubDate>
+    <ExtractedText>Demographie: Die Alten ins Büro, die Jungen in die Bar
+Demographie: Die Alten ins Büro, die Jungen in die Bar
+Fast jeder dritte Arbeitnehmer ist inzwischen über 50 Jahre alt. Aber in welchen Branchen arbeiten sie? Unsere Grafik des Tages zeigt die Altersstruktur der Beschäftigen.
+10. Dezember 2014           16:04 Uhr  1 Kommentar
+© Statista
+Wer in Deutschland über die "Demografie-Falle" spricht, schert schnell alle Wirtschaftszweige  über einen Kamm. Dabei schlägt sich der baldige Renteneintritt der geburtenstarken Jahrgänge in den einzelnen Wirtschaftszweigen ganz unterschiedlich nieder. In der Werbung und im Hotel- und Gaststättengewerbe ist beispielsweise jeder zweite Mitarbeiter unter 30 Jahre alt. Das zeigen Daten, die das Statistikportal Statista für ZEIT ONLINE aufbereitet hat.
+In weiterführenden Schulen und in der Öffentlichen Verwaltung sieht die Lage dagegen ganz anders aus. Hier sind mehr als 40 Prozent aller Beschäftigten über 50 Jahre alt. Dementsprechend ist der Bedarf an qualifiziertem Nachwuchs besonders hoch. Ähnlich sieht es auch in der Energiebranche aus. Auch in der IT-Welt arbeiten vor allem junge Menschen, nur jeder fünfte Mitarbeiter ist älter als 50 Jahre.
+Anzeige
+Der demografische Wandel in Deutschland ist eine der größten  Herausforderungen der kommenden Jahrzehnte. Er wird die öffentlichen  Finanzen und auch die Sozialsysteme stark belasten. Die Zahl der  Erwerbspersonen könnte von 50 Millionen im Jahr 2008 auf mindestens 39  Millionen Euro schrumpfen, prognostiziert beispielsweise das Statistische Bundesamt .
+Der demographische Wandel und die Folgen für Arbeitsmarkt und Sozialsysteme seien aber durchaus beherrschbar, analysierte der Sachverständigenrat bereits im Jahr 2011. Die Wirtschafts- und Gesellschaftspolitik müsse die Herausforderung nur annehmen, schrieben die Experten in dem damaligen Jahresgutachten . Die Experten schlagen vor, insbesondere die Erwerbstätigkeit von Frauen und das Renteneintrittsalter zu erhöhen. Darüber hinaus würde auch eine qualifizierte Zuwanderung entlastend wirken.
+</ExtractedText>
+</item>
+</channel>
+</rss>

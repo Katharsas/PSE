@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Vehicle explodes in heart of Kabul</title>
+<guid>http://edition.cnn.com/2013/11/16/world/asia/afghanistan-violence/index.html</guid>
+<link>http://edition.cnn.com/2013/11/16/world/asia/afghanistan-violence/index.html?eref=edition</link>
+<description>An explosive-laden vehicle detonated in the heart of Kabul Saturday, a spokesman for the Afghan interior ministry told CNN. </description>
+<pubDate>Sat, 16 Nov 2013 07:40:36 EST</pubDate>
+<ExtractedText>Vehicle explodes in heart of Kabul, 6 dead
+From Masoud Popalzai, CNN
+November 16, 2013 -- Updated 1428 GMT (2228 HKT)
+STORY HIGHLIGHTS
+A vehicle exploded in the heart of Kabul
+At least 6 people are dead, police say
+No one has claimed responsibility for the attack
+(CNN) -- An explosive-laden vehicle detonated in the heart of Kabul on Saturday, killing at least six people, an Afghan interior ministry spokesman told CNN.
+Both civilians and military personnel were among the victims, spokesman Sediq Sediqqi said.
+The government gave a lower death toll than what local police reported earlier.
+Sediqqi said that 22 others were injured and 17 vehicles were damaged.
+The explosion happened close to the venue where a large meeting of Afghan elders is scheduled to take place at the end of the week.
+The meeting, or Loya Jirga, is to discuss the signing of a bilateral security agreement between Afghanistan and the United States.
+No one has claimed responsibility for Saturday's attack, but the Taliban has said that it condemned the meeting and would attack anyone participating in it.
+</ExtractedText>
+</item>
+</channel>
+</rss>

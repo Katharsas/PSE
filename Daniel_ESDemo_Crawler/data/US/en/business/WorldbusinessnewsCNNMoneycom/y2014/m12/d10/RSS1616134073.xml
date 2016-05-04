@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Sorry? Why some execs can't apologize</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/XePgVcHBvc8/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/09/news/corporate-apology/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141208091634-corporate-apology-120x90.jpg" width="120"/>
+<description>Companies screw up all the time. But some executives just can't come clean.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/VJXDnJNUn9o" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/XePgVcHBvc8" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Wed, 10 Dec 2014 09:51:58 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/09/news/corporate-apology/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/VJXDnJNUn9o/index.html</feedburner:origLink>
+<ExtractedText>Sorry, not sorry: Why some corporations can't apologize
+By Charles Riley   @CRrileyCNN December 9, 2014: 9:45 PM ET
+ 
+The worst apologies in business
+HONG KONG (CNNMoney)
+Corporations screw up all the time. Some offer a heartfelt apology and move on. Others appear incapable of admitting they've stumbled.
+Confronted with their sins, businesses too often apologize only for having upset the public or their customers, not for the mishap itself. Or they lard up their apologies with obfuscation.
+When that happens, executives are doing more harm than good. Experts say apologies that lack real regret or responsibility only serve to sew more distrust between businesses and the public.
+Examples are everywhere: Facebook ( FB , Tech30 ) COO Sheryl Sandberg issued a classic non-apology after the social media giant performed psychological experiments on users without their express consent.
+"It was poorly communicated," Sandberg said. "And for that communication we apologize. We never meant to upset you."
+A close reading suggests Sandberg was not sorry for conducting the experiment -- only poor communication. (In reality, the experiment was not communicated at all, and upsetting some users was the entire point of the research.)
+A more recent flawed apology came courtesy of Uber CEO Travis Kalanick after a deputy suggested the company dig up dirt on journalists. Kalanick took 14 tweets to get to a sort-of apology -- and even then, he earned low marks for sincerity.
+Chip Wilson, the founder of Lululemon ( LULU ), apologized to employees for suggesting some women were too fat for the company's pants -- but he forgot his customers.
+Former BP CEO Tony Hayward had barely finished expressing remorse for the Gulf oil spill when he dropped his guard: "I'd like my life back," he said.
+Plenty of corporations do a fine job of apologizing (Tim Cook on Apple Maps and Mary Barra on the GM ( GM ) recall come to mind). But why do many others struggle to get it right?
+Experts say different interpretations of what an apology implies about culpability is partly to blame.
+In Japan, for example, corporate apologies often include the CEO performing a deep, sustained bow before ranks of photographers. The accompanying apology is typically remorseful and direct.
+Yet the Japanese public is unlikely to see this as the CEO taking personal responsibility for wrongdoing. Experts say the message is closer to: "It is unfortunate that this happened."
+"Americans see an apology as an admission of wrongdoing, whereas Japanese see it as an expression of eagerness to repair a damaged relationship, with no culpability necessarily implied," wrote a team of senior researchers in the Harvard Business Review .
+Related: Japan needs more women at work
+Western audiences are more likely to focus on whether an apology is being made on behalf of an individual, or an institution, according to Barbara Kellerman of the Harvard Kennedy School.
+Individuals who pass the buck may be slated in public, while companies escape similar censure, Kellerman has written.
+And that may explain why many American executives find it hard to apologize properly -- they don't feel personally responsible, and the public is more likely to give a corporation a pass.
+Even if responsibility lies elsewhere, they would benefit from mastering the art.
+Take medicine. Physicians in the U.S. have long been advised never to apologize for mistakes, for fear of costly malpractice lawsuits.
+Yet since some states enacted "Apology Laws" that provide legal cover for expressions of remorse, physicians have been more open to saying "I'm sorry." Research suggests that both the number of lawsuits and monetary payouts have declined as a result.
+Why? Victims just wanted to be acknowledged. Corporations, take note.
+First Published: December 9, 2014: 9:45 PM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

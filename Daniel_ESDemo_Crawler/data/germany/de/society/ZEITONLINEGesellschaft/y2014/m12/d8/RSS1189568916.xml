@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Gesellschaft</title>
+<description>Menschen in der Gesellschaft. Aktuelles zu Zeitgeschehen, Generationen, Soziales und Bildung.</description>
+<pubDate>Wed, 10 Dec 2014 14:35:55 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:57:49 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/gesellschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/gesellschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Gesellschaft</title>
+      <link>http://www.zeit.de/gesellschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/gesellschaft/zeitgeschehen/2014-12/kuba-fluechtlinge-florida-fs</link>
+      <guid>http://www.zeit.de/gesellschaft/zeitgeschehen/2014-12/kuba-fluechtlinge-florida-fs</guid>
+      <category>Gesellschaft</category>
+      <title>Kuba: Runter von den Booten</title>
+      <description>&lt;a href="http://www.zeit.de/gesellschaft/zeitgeschehen/2014-12/kuba-fluechtlinge-florida-fs"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/gesellschaft/zeitgeschehen/2014-12/kuba-fluechtlinge-florida-fs-teaser/kuba-fluechtlinge-florida-fs-teaser-148x84.jpg"/&gt;&lt;/a&gt; 1994 flohen über  35.000 Menschen aus Kuba mit kleinen Booten und Floßen in die USA. Diese Bilder zeigen die Menschen damals und heute.</description>
+      <dc:creator>ZEIT ONLINE : Gesellschaft</dc:creator>
+      <pubDate>Mon, 08 Dec 2014 15:38:39 GMT</pubDate>
+    <ExtractedText>1 von 16 Zurück Vorwärts
+Kuba:
+Runter von den Booten
+Diese Menschen haben ihr Boot auf dem Dach eines Wohnhauses in Havanna selbst gebaut und verladen es nun auf einen Laster.   |  © Rolando Pujol Rodriguez/Reuters
+Fidel Castro verkündete den Kubanern im August 1994: Wer das Land verlassen wolle,  solle gehen. Über 35.000 Menschen ergriffen die Gelegenheit, die meisten wollten in die USA. Männer, Frauen Kinder versuchten in kleinen Booten und auf selbst gebauten Flößen nach Florida zu gelangen. US-Boote fischten etwa 30.000 von ihnen aus dem Wasser. Rolando Pujol Rodriguez fotografierte 1994 die Flüchtlinge. Heute, 20 Jahre später, hat Enrique de la Osa einige der Menschen porträtiert, die es damals in die USA geschafft haben.
+Die neuesten Fotostrecken:
+</ExtractedText>
+</item>
+</channel>
+</rss>

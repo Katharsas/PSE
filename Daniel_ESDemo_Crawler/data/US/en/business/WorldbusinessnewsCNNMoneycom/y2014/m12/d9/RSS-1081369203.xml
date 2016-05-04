@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Amazon takes on eBay ... sort of</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/G6xAGrd6S7M/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/09/technology/amazon-ebay-make-an-offer/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141209070755-buffy-sarah-michelle-gellar-120x90.jpg" width="120"/>
+<description>Read full story for latest details.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/wCAAV_W22nM" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/G6xAGrd6S7M" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Tue, 09 Dec 2014 08:00:23 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/09/technology/amazon-ebay-make-an-offer/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/wCAAV_W22nM/index.html</feedburner:origLink>
+<ExtractedText>Amazon takes on eBay ... sort of
+By Aaron Smith   @AaronSmithCNN December 9, 2014: 8:00 AM ET
+ 
+See Amazon's new robot army
+NEW YORK (CNNMoney)
+Amazon is the new eBay ... sort of.
+Amazon ( AMZN , Tech30 ) has a new feature called "make an offer" that allows customers to place bids, rather than buy outright. But unlike Ebay, ( EBAY , Tech30 ) it's a one to one bid where the customer haggles privately with the seller.
+"The 'make an offer' feature is not an auction format," said Amazon, in a press release. "The intention is to lower prices, and a customer negotiating with a seller will never pay more than the listed price."
+This works in the opposite of an auction , where the price goes up as multiple customers bid on an item.
+Related: Amazon Prime gets another perk: diapers
+The new Amazon feature launched Tuesday with 150,000 items classified as sports and entertainment collectibles, and collectible coins and art.
+Amazon is allowing customers to "make an offer" to bring down prices on certain collectibles, such as a signed nude photo (not this one) of Sarah Michelle Gellar from "Buffy the Vampire Slayer."
+Sports items include a Dallas Cowboys helmet signed by Tony Romo, with a starting bid of $555.25 (down from $621.44) and a Green Bay Packers jersey signed by Brett Favre ($252.81, down from $274.69.)
+Green Bay Packers jersey signed by Brett Favre ($252.81, down from $274.69.) Related: Amazon: Shop while you're in the toilet
+Entertainment items include a signed nude photo of "Buffy of the Vampire Slayer" star Sarah Michelle Gellar, with a starting bid of $200, and a prop shotgun from the "Resident Evil" movies, starting at $1,995.
+Coins include a 1938 buffalo nickel for $150. Art includes "Watermelon Jack," an acrylic portrait resembling Jack Nicholson, in the green and pink tones of watermelon, for $30,000.
+First Published: December 9, 2014: 8:00 AM ET
+Most Popular
+</ExtractedText>
+</item>
+</channel>
+</rss>

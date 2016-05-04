@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Studium</title>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<pubDate>Fri, 15 Nov 2013 10:41:45 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:56:04 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/studium/index</link>
+<atom:link href="http://newsfeed.zeit.de/studium/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Studium</title>
+      <link>http://www.zeit.de/studium/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/studium/hochschule/2013-11/interview-professoren-dozenten-klausurrelevant-pflichtlektuere</link>
+      <guid>http://www.zeit.de/studium/hochschule/2013-11/interview-professoren-dozenten-klausurrelevant-pflichtlektuere</guid>
+      <category>Studium</category>
+      <title>Pflichtlektüre: "Die Eitelkeit des Professors darf keine Rolle spielen"</title>
+      <description>&lt;a href="http://www.zeit.de/studium/hochschule/2013-11/interview-professoren-dozenten-klausurrelevant-pflichtlektuere"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/studium/2013-07/s14-professor-studenten/s14-professor-studenten-148x84.jpg"/&gt;&lt;/a&gt; Dürfen Professoren bestimmte Bücher für klausurrelevant erklären? Nein, sagt die Anwältin Sibylle Schwarz im Interview. In Prüfungen gebe es immer einen Antwortspielraum.</description>
+      <dc:creator>ZEIT ONLINE : Studium - Ruben Karschnick</dc:creator>
+      <pubDate>Fri, 08 Nov 2013 14:37:57 GMT</pubDate>
+    <ExtractedText>Interview: Das Konzept Pflichtlektüre ist unzulässig
+Pflichtlektüre: "Die Eitelkeit des Professors darf keine Rolle spielen"
+Dürfen Professoren bestimmte Bücher für klausurrelevant erklären? Nein, sagt die Anwältin Sibylle Schwarz im Interview. In Prüfungen gebe es immer einen Antwortspielraum. von  Ruben Karschnick
+8. November 2013  15:36 Uhr  31 Kommentare
+ZEIT ONLINE: Viele Studenten bekommen am Anfang des Semesters gesagt: Wer den Kurs bestehen will, braucht dieses Buch. Darf der Professor solche Bedingungen stellen?
+Sibylle Schwarz: Nein. Empfehlungen sind okay, aber in der Prüfung dürfen nur Vorlesungsinhalte oder der Stand der Wissenschaft abgefragt werden. Ein Buch darf nicht für alle Studenten verpflichtend sein.
+Anzeige
+ZEIT ONLINE: Wieso nicht?
+Schwarz: Sonderregeln in Klausuren sind nur okay, wenn sie der Allgemeinheit nützen; etwa wenn ein angehender Arzt zeigen muss, dass er mit einem Skalpell umgehen kann. Die Dienstpflicht von Professoren sieht außerdem eine gewisse Sachlichkeit vor. Die Eitelkeit des Professors darf keine Rolle spielen.
+ZEIT ONLINE: Das heißt, Begriffe wie Pflichtlektüre oder prüfungsrelevant führen in die Irre?
+Schwarz: Sie wären vielleicht angebracht, wenn neueste Forschungsergebnisse bisher nur in einer Zeitschrift publiziert worden sind. Für alles andere gibt es immer mehrere Bücher. Zwischen denen können Studenten frei wählen. Zum einen, weil jeder ein anderer Lerntyp ist. Zum anderen muss ich auch Preise vergleichen können.
+Wird geladen...
+ZEIT ONLINE: Und wenn der Professor fordert, dass in der Klausur die Antwort geschrieben wird, die er in seinem Buch vorgibt?
+Schwarz: In Prüfungen gibt es einen sogenannten Antwortspielraum. In der Wissenschaft existiert ja oft nicht die eine richtige Meinung. Und wenn doch, steht sie in jedem Lehrbuch. Der Verweis auf ein bestimmtes Buch müsste inhaltlich begründet sein, aber der Professor in München ist ja nicht schlauer als der in Berlin.
+ZEIT ONLINE: Was kann ein Student tun, um sein Recht einzufordern?
+Schwarz: Ich würde empfehlen, mich mit dem ganzen Kurs an die Hochschulleitung zu wenden. Der Prüfungserfolg darf nicht von der Meinungsverschiedenheit zwischen Prüfer und Prüfling abhängen.
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

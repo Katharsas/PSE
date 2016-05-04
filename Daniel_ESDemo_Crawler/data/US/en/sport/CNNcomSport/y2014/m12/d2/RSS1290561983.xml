@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 08:57:44 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Flying high: Best sports photos</title>
+<guid isPermaLink="false">http://edition.cnn.com/2014/12/02/worldsport/gallery/what-a-shot-1202/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/PIIgfDz0E_A/index.html</link>
+<description>&lt;img src="//feeds.feedburner.com/~r/rss/edition_sport/~4/PIIgfDz0E_A" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Tue, 02 Dec 2014 07:02:59 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141201163859-10-what-a-shot-1202-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141201163859-10-what-a-shot-1202-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://edition.cnn.com/2014/12/02/worldsport/gallery/what-a-shot-1202/index.html</feedburner:origLink>
+<ExtractedText>Baltimore Ravens safety Matt Elam catches a cleat in the face while playing the San Diego Chargers on Sunday, November 30.
+Loading weather data ...
+</ExtractedText>
+</item>
+</channel>
+</rss>

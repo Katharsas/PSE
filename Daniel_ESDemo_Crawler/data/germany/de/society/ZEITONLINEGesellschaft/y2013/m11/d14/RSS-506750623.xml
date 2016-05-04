@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Gesellschaft</title>
+<description>Menschen in der Gesellschaft. Aktuelles zu Zeitgeschehen, Generationen, Soziales und Bildung.</description>
+<pubDate>Sat, 16 Nov 2013 11:34:14 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:32:06 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/gesellschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/gesellschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Gesellschaft</title>
+      <link>http://www.zeit.de/gesellschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/gesellschaft/zeitgeschehen/2013-11/budapest-obdachlos-sperrzone</link>
+      <guid>http://www.zeit.de/gesellschaft/zeitgeschehen/2013-11/budapest-obdachlos-sperrzone</guid>
+      <category>Gesellschaft</category>
+      <title>Ungarn: Budapest beschließt Sperrzonen für Obdachlose</title>
+      <description>&lt;a href="http://www.zeit.de/gesellschaft/zeitgeschehen/2013-11/budapest-obdachlos-sperrzone"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/politik/ausland/2013-11/obdachlose-budapest-proteste/obdachlose-budapest-proteste-148x84.jpg"/&gt;&lt;/a&gt; Obdachlose dürfen in Ungarns Hauptstadt nicht mehr in der Nähe von Schulen, Kindergärten oder Touristenattraktionen nächtigen. Ansonsten droht ihnen Gefängnis.</description>
+      <dc:creator>ZEIT ONLINE : Gesellschaft</dc:creator>
+      <pubDate>Thu, 14 Nov 2013 18:14:05 GMT</pubDate>
+    <ExtractedText>Ungarn: Budapest beschließt Sperrzonen für Obdachlose
+Ungarn: Budapest beschließt Sperrzonen für Obdachlose
+Obdachlose dürfen in Ungarns Hauptstadt nicht mehr in der Nähe von Schulen, Kindergärten oder Touristenattraktionen nächtigen. Ansonsten droht ihnen Gefängnis.
+14. November 2013  19:07 Uhr  10 Kommentare
+Demonstranten protestieren gegen das Gesetz für Sperrzonen gegen Obdachlose.  |  © Bernadett Szabo/Reuters
+Das Stadtparlament von Budapest hat Sperrzonen für bis zu 10.000 Obdachlose beschlossen. Die Betroffenen dürfen unter anderem Orte, die zum Weltkulturerbe zählen, nicht mehr als Aufenthaltsort benutzen, der einem "Wohnen" gleichkomme. Ebenfalls tabu sind zudem 29 Unterführungen und ein Umkreis von 100 Metern um Kinderspielplätze, Schulen und Friedhöfe.
+Gegner dieses Beschlusses hatten am Vormittag zeitweise den Sitzungssaal des Stadtparlaments besetzt und die Sitzung verzögert. Sie waren von Polizisten weggebracht worden. Budapest wendet damit ein neues ungarisches Gesetz an, demzufolge Kommunen bestimmte Bereiche für Obdachlose sperren dürfen. Verstöße gegen dieses Gesetz können mit Arbeit für das Gemeinwohl oder einer Geldbuße geahndet werden. Wiederholungstätern droht eine Gefängnisstrafe.
+Anzeige
+Das neue Gesetz hatte die rechtsnationale Regierungspartei Fidesz mit ihrer parlamentarischen Zweidrittelmehrheit gegen den Widerstand der links-liberalen Opposition im Parlament durchgesetzt. Vor einem Jahr hatte das Verfassungsgericht eine ähnliche Regelung gekippt. Daher änderte das Parlament im März dieses Jahres die Verfassung, um diese dennoch durchsetzen zu können.
+Allein in Budapest leben nach Schätzungen von Hilfsorganisationen 8.000 bis 10.000 Obdachlose . Für diese stehen fast 6.000 Plätze in Heimen zur Verfügung. Bürgermeister Tarlos gab bekannt, er werde für alle Obdachlosen zumindest Unterkünfte schaffen und dazu notfalls eine Sporthalle bereitstellen.
+</ExtractedText>
+</item>
+</channel>
+</rss>

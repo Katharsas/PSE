@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/internet/2014-12/ccc-zensur-grossbritannien</link>
+      <guid>http://www.zeit.de/digital/internet/2014-12/ccc-zensur-grossbritannien</guid>
+      <category>Digital</category>
+      <title>Pornofilter: Britische Provider blockieren Chaos Computer Club</title>
+      <description>&lt;a href="http://www.zeit.de/digital/internet/2014-12/ccc-zensur-grossbritannien"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/internet/2014-12/chaos-computer-club/chaos-computer-club-148x84.jpg"/&gt;&lt;/a&gt; Drei Internetanbieter hatten Seiten des Chaos Computer Clubs gesperrt – vermutlich versehentlich. Der Verein ist empört, ein Filter traf auch die Veranstaltungsseiten.</description>
+      <dc:creator>ZEIT ONLINE : Digital - Friedhelm Greis</dc:creator>
+      <pubDate>Sat, 06 Dec 2014 15:48:28 GMT</pubDate>
+    <ExtractedText>Pornofilter: Britische Provider blockieren Chaos Computer Club
+Pornofilter: Britische Provider blockieren Chaos Computer Club
+Drei Internetanbieter hatten Seiten des Chaos Computer Clubs gesperrt – vermutlich versehentlich. Der Verein ist empört, ein Filter traf auch die Veranstaltungsseiten. von Friedhelm Greis
+Erschienen bei golem.de 6. Dezember 2014           16:47 Uhr  43 Kommentare
+Teilnehmer des 29. Jahreskongresses (29C3) des Chaos Computer Clubs (CCC) sitzen im Congress Center (CCH) in Hamburg an ihren Laptops.  |  © Malte Christians/dpa
+Der Chaos Computer Club beklagt eine Blockade durch britische Internetprovider. Besonders schockiert den Verein, dass der Zugriff auf die Veranstaltungsseiten zum 31C3 gesperrt ist.
+Internetnutzer in Großbritannien können teilweise nicht mehr auf die Seiten des Chaos Computer Clubs (CCC) zugreifen. Der Verein vermutet, dass seine Seiten in den sogenannten Pornofilter geraten sind, der vor einigen Wochen auf Websites mit extremistischem Inhalt ausgedehnt wurde. Möglicherweise gehe der CCC in Großbritannien, "einem Land, das seit Jahren abseits mitteleuropäischer Standards der Meinungsfreiheit agiert, als 'extremistisch' durch", heißt es in einer Mitteilung vom Freitag.
+Anzeige
+Betroffen waren zwischenzeitlich Kunden der Anbieter Three, Virgin und Vodafone. Letztere konnten am Wochenende auch die Vorverkaufsseiten für den diesjährigen Chaos Communication Congress (31C3) nicht mehr erreichen. Virgin hat die CCC-Website im November wieder von der Sperrliste genommen, Vodafone erst jetzt, nach den Protesten der deutschen Hacker. Kunden von Three müssen den Filter weiterhin umgehen, wenn sie auf ccc.de zugreifen wollen.
+Auf Druck der britischen Regierung haben sich die größten britischen Internetprovider BT, Virgin, Sky und Talktalk zur Einführung der Filter verpflichtet, Three zog nach. Kunden bekommen ein gefiltertes Netz vorgesetzt und müssen ihren Zugang selbst freischalten oder den Provider kontaktieren, wenn sie gesperrte Inhalte sehen wollen. Schon gleich nach dem Start der Filterung zu Beginn des Jahres hatten Kritiker beklagt, dass auch harmlose Seiten gesperrt würden .
+Inhalte landen auf geheimen Sperrlisten
+Im November wurde die Filterung dann auf extremistische politische Inhalte ausgedehnt, möglicherweise im Zusammenhang mit Botschaften oder Videos des Terrornetzwerks IS. Dem britischen Guardian zufolge wurden die Provider von der Bürgerrechtsorganisation Open Rights Group dafür kritisiert, dass so gemeldete Inhalte auf geheimen Sperrlisten landen würden.
+Laut einer britischen Studie lassen nur vier Prozent der Kunden von Virgin Media, fünf Prozent der Kunden von BT und acht Prozent bei Sky das "familienfreundliche Network Level Filtering" eingeschaltet. Bei dem Internet Provider Talktalk sei die Quote mit 36 Prozent dagegen weit höher.
+CCC ist schockiert
+Nach Ansicht des CCC sind jedoch nicht alle Nutzer in der Lage, die Sperren technisch zu umgehen. So sei die Seite des CCC auch aus Großbritannien weiterhin direkt im Browser über ihre IP-Adresse http://213.73.89.123/ erreichbar. Dies ändere aber nichts daran, dass es zum sogenannten Overblocking komme, "also auch Inhalte gesperrt werden, die keine der faktisch zensierten Themen enthalten".
+Der CCC zeigte sich vor allem "schockiert" darüber, dass sogar der Zugang zu den Veranstaltungen erschwert werde. "Wir sehen uns leider darin bestätigt, dass Zensurinfrastruktur – ganz unabhängig vom Land, in dem sie eingesetzt wird – früher oder später auch zur Durchsetzung politischer Interessen eingesetzt wird", sagte CCC-Sprecher Dirk Engling.
+Anmerkung: Wegen inhaltlicher Fehler wurde dieser Artikel am 9.12. aktualisiert.
+</ExtractedText>
+</item>
+</channel>
+</rss>

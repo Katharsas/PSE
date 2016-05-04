@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 20:08:10 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_entertainment" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_entertainment"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>The CW picks up all new shows</title>
+<guid isPermaLink="false">http://www.cnn.com/2013/11/12/showbiz/tv/cw-freshman-series-pickup-ew/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_entertainment/~3/i5Y3jFAyf0A/index.html</link>
+<description>The CW just gave every one of its freshman dramas a full-season order.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_entertainment/~4/i5Y3jFAyf0A" height="1" width="1"/&gt;</description>
+<pubDate>Tue, 12 Nov 2013 14:44:06 EST</pubDate>
+<feedburner:origLink>http://www.cnn.com/2013/11/12/showbiz/tv/cw-freshman-series-pickup-ew/index.html</feedburner:origLink>
+<ExtractedText>The CW just gave every new show a full season
+By James Hibberd, EW
+November 12, 2013 -- Updated 1619 GMT (0019 HKT)
+"Reign" is one of the feshman primetime shows The CW has picked up for a full season.
+STORY HIGHLIGHTS
+The CW has grabbed up all of their freshman dramas
+It felt like "The Tomorrow People" and "Reign" couldn't both survive
+CW prez says "we have built a much stronger primetime schedule"
+( EW.com ) -- The CW just gave every one of its freshman dramas a full-season order.
+"The Originals"? Full season!
+"The Tomorrow People"? Full season!
+"Reign"? Full season!
+The network is like Oprah giving away cars. Or Miley giving away tongue wags. Or something else that's easy to get from something that gives away stuff.
+"The Originals" was a given. "The Vampire Diaries" spin-off has averaged 2.7 million viewers and a 1.3 rating among adults 18-49 and The CW needs to keep at least one show for a full season. With its solid-ishy performance, the drama was clearly headed toward a pickup.
+"The Tomorrow People" (2.4 million, 0.9) and "Reign" (2.1 million, 0.8) felt like one might survive while the other might not. Not because either are doing really well, exactly, but because The CW has limited inventory to play with (The CW has Twilight-but-with-aliens-romance Star-Crossed and Lost-meets-Avatar-meets-Lord of the Flies drama The 100 in the pipeline). Specifically, many in the industry expected Reign to get beheaded.
+Explained CW president Mark Pedowitz: "In just a few seasons, we have built a much stronger primetime schedule. Our on-air ratings are up year to year, and our digital viewing continues to grow exponentially. We're excited about the creative momentum the producers have established for all three of our new series, and now our fans will have the chance to see the full stories unfold for them this season. With the additional episodes ordered, plus two new dramas and new reality for midseason, we'll be able to continue our commitment to adding more original programming all year long."
+CLICK HERE to Try 2 RISK FREE issues of Entertainment Weekly
+© 2011 Entertainment Weekly and Time Inc. All rights reserved.
+</ExtractedText>
+</item>
+</channel>
+</rss>

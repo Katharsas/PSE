@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Sat, 16 Nov 2013 09:55:47 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:42:08 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/internet/2013-11/hammond-anonymus-hacking-urteil</link>
+      <guid>http://www.zeit.de/digital/internet/2013-11/hammond-anonymus-hacking-urteil</guid>
+      <category>Digital</category>
+      <title>Jeremy Hammond: Anonymous-Hacker zu zehn Jahren Haft verurteilt</title>
+      <description>&lt;a href="http://www.zeit.de/digital/internet/2013-11/hammond-anonymus-hacking-urteil"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/datenschutz/2013-11/Jeremy-Hammond/Jeremy-Hammond-148x84.jpg"/&gt;&lt;/a&gt; Jeremy Hammond hat sich Zutritt zu Systemen der US-Regierung verschafft und Daten eines Unternehmens an WikiLeaks weitergegeben. Jetzt ist er dafür verurteilt worden.</description>
+      <dc:creator>ZEIT ONLINE : Digital</dc:creator>
+      <pubDate>Sat, 16 Nov 2013 09:54:09 GMT</pubDate>
+    <ExtractedText>Jeremy Hammond: Anonymous-Hacker muss in Haft
+Jeremy Hammond: Anonymous-Hacker zu zehn Jahren Haft verurteilt
+Jeremy Hammond hat sich Zutritt zu Systemen der US-Regierung verschafft und Daten eines Unternehmens an WikiLeaks weitergegeben. Jetzt ist er dafür verurteilt worden.
+16. November 2013  10:53 Uhr  4 Kommentare
+Das Polizeifoto zeigt Jeremy Hammond.  |  © AP/dpa
+Ein Gericht in New York hat Jeremy Hammond zu zehn Jahren Gefängnis wegen Hacken verurteilt. Die Anklage bezeichnete Hacking als "schwere Straftat mit schädigenden Folgen für die Opfer". Der Anonymous -Aktivist hatte sich im Mai schuldig bekannt, 2011 in die Computer der Beratungsfirma Stratfor eingedrungen zu sein. Auch soll er in die Systeme von zahlreichen Regierungsstellen wie die der Bundespolizei FBI eingedrungen sein.
+Bei Stratfor eignete sich Hammond 60.000 Kreditkartennummern und Unterlagen von 860.000 Kunden an, die er online stellte. E-Mails des Unternehmens übergab er an WikiLeaks .
+Anzeige
+Nach Angaben von WikiLeaks stammen die fünf Millionen E-Mails aus der  Zeit zwischen Juli 2004 und Dezember 2011. Sie entlarvten, dass Stratfor große Unternehmen wie Dow Chemical und Rüstungskonzerne wie Lockheed Martin, Raytheon und Northrop Grumman , aber auch das US-Heimatschutzministerium und sogar  US-Geheimdienste mit vertraulichem nachrichtendienstlichen Material  versorgt habe. In rund 4.000 dieser E-Mails sollen entweder WikiLeaks  selbst oder dessen Gründer Julian Assange erwähnt worden sein.
+Außerdem verschafften Hammond und seine Mitstreiter sich die Daten  von 60.000 Kreditkarten-Nutzern. Laut Anklage wurden mit den Karten mehr  als 700.000 Dollar (519.000 Euro) bewegt.
+Hammond bezeichnet sich als politischen Hacker
+In einem Interview mit der britischen Zeitung The Guardian bezeichnete Hammond das Verhalten der Behörden als "nachtragend und boshaft". Das Urteil sei als Signal an andere Hacker zu verstehen, die ihm nacheiferten. Die US-Behörden seien von Anonymus gedemütigt worden und wollten mit dem Urteil ihr Gesicht wahren.
+In einer Erklärung hatte der 28-Jährige seine Taten vor Gericht als "zivilen Ungehorsam" bezeichnet. Er sei sich im Klaren gewesen, dass er gesetzeswidrig gehandelt habe. Doch er sei der Überzeugung gewesen, dass es "seine Pflicht" gewesen sei, seine Fähigkeiten und sein Wissen gegen "Ungerechtigkeit" und für "Wahrheit" einzusetzen.
+Hammond beteiligte sich unter dem Spitznamen Anarchaos an den Onlineangriffen von Gruppen wie AntiSec und LulzSec, die mit der Onlinegruppe Anonymous zusammenarbeiten. Seine Anwälte hatten ihn in dem Verfahren als politischen Aktivisten dargestellt, der sich Sorgen über die Rolle von Unternehmen bei der Sammlung von vertraulichen Informationen gemacht habe. 
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 24 Feb 2016 20:40:10 GMT</pubDate>
+<lastBuildDate>Wed, 24 Feb 2016 20:40:10 GMT</lastBuildDate>
+<ttl>5</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Opening 'back door' could aid terrorists, app creator says</title>
+<link>http://rss.cnn.com/c/35494/f/676977/s/4dd2d22a/sc/7/l/0L0Scnn0N0C20A160C0A20C230Ceurope0Cpavel0Edurov0Etelegram0Eencryption0Cindex0Bhtml0Deref0Frss0Itech/story01.htm</link>
+<description>&lt;br clear='all'/&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/rc/1/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/rc/1/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/rc/2/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/rc/2/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/rc/3/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/rc/3/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://da.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/a2.htm"&gt;&lt;img src="http://da.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/a2.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;a href="http://adchoice.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/ach.htm"&gt;&lt;img src="http://adchoice.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/ach.img" border="0"/&gt;&lt;/a&gt;&lt;img width="1" height="1" src="http://pi.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/a2t.img" border="0"/&gt;&lt;img width="1" height="1" src="http://pi2.feedsportal.com/r/247392669318/u/89/f/676977/c/35494/s/4dd2d22a/sc/7/a2t2.img" border="0"/&gt;&lt;img width='1' height='1' src='http://rss.cnn.com/c/35494/f/676977/s/4dd2d22a/sc/7/mf.gif' border='0'/&gt;</description>
+<pubDate>Wed, 24 Feb 2016 17:05:10 GMT</pubDate>
+<guid isPermaLink="false">http://www.cnn.com/2016/02/23/europe/pavel-durov-telegram-encryption/index.html</guid>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160223034420-inside-encrypted-app-telegram-mclaughlin-pkg-00003217-top-tease.jpg" width="90"/>
+<media:content height="51" lang="" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160223034420-inside-encrypted-app-telegram-mclaughlin-pkg-00003217-top-tease.jpg" width="90"/>
+<ExtractedText>Paris attackers reportedly used this app 01:41
+Story highlights
+Pavel Durov, co-creator of Telegram app, says allowing governments to break in to secure communications will not stop terrorism
+"You cannot make it safe against criminals and open for governments. It's either secure or not secure," Durov says
+"In America they started to refer to Telegram as 'ISIS's preferred messaging app,'" he says. "But there are many more legitimate users"
+(CNN)
+The founder of an encrypted app favored by ISIS militants says opening a "back door" in to such communications tools could aid terrorists and criminals.
+Pavel Durov , 31, is the elusive tech entrepreneur behind Telegram, an application designed to allow users to send messages protected by end-to-end encryption -- the kind authorities can't intercept easily.
+And that secrecy means it has developed a reputation as one of the go-to tools for terrorists -- an image the black-clad Durov is keen to dispel, pointing out that most of his app's 100 million users are ordinary people.
+"In America they started to refer to Telegram as 'ISIS's preferred messaging app,'" he says. "But in reality there are many more legitimate users."
+The issue of encryption is a thorny one -- Apple's recent decision to defy the FBI in refusing to unlock the phone of one of the San Bernardino killers , saying it would set a dangerous precedent , has sparked controversy.
+Read More
+But Durov insists that the "overly simplistic solutions" suggested by intelligence services, blocking access to apps and allowing governments to break in to secure communications are not the answer.
+Private data at risk
+</ExtractedText>
+</item>
+</channel>
+</rss>

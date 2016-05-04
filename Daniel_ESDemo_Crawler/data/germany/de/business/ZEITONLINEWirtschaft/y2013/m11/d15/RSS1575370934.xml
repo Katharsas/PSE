@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Wirtschaft</title>
+<description>Aktuelle Nachrichten, Kommentare, Analysen und Hintergründe zu den Themen Wirtschaftspolitik, Finanzen, Unternehmen, Branchen, Börsen und Märkten</description>
+<pubDate>Sat, 16 Nov 2013 12:16:50 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:52:17 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wirtschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/wirtschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Wirtschaft</title>
+      <link>http://www.zeit.de/wirtschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wirtschaft/unternehmen/2013-11/jpmorgan-twitter</link>
+      <guid>http://www.zeit.de/wirtschaft/unternehmen/2013-11/jpmorgan-twitter</guid>
+      <category>Wirtschaft</category>
+      <title>Twitter-Aktion: Die Bank ruft, Spott kommt zurück</title>
+      <description>&lt;a href="http://www.zeit.de/wirtschaft/unternehmen/2013-11/jpmorgan-twitter"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wirtschaft/unternehmen/2013-11/jp-morgan-twitter/jp-morgan-twitter-148x84.jpg"/&gt;&lt;/a&gt; Das US-Geldinstitut J.P. Morgan rief auf Twitter zu einer Fragestunde auf. Eine der höhnischen Antworten: "Wie viel Blut trinken eure Banker eigentlich monatlich?"</description>
+      <dc:creator>ZEIT ONLINE : Wirtschaft</dc:creator>
+      <pubDate>Fri, 15 Nov 2013 12:21:05 GMT</pubDate>
+    <ExtractedText>More of the same. 
+Neh wir haben Google Translate. Aber wirklich JPM ist nur "the tip of the iceberg", BOA und andere sind auch Verbrecher. Viele in unsere system is gebrochen von Gesundheitswesen zu Staat Überwachung. Obama promised change and hope, but fooled us all with his silver tongue, instead we saw huge profits on Wall Street, marginalization of the poor, increased state surveillance and a crippled economy bolstered by QE. We have no party to look to, no politician that "makes a difference".The political parties are no different, and yet nothing gets accomplished. For the first time I feel like my vote truly means nothing.
+</ExtractedText>
+</item>
+</channel>
+</rss>

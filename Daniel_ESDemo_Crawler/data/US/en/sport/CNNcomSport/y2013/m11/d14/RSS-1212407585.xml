@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 18:54:09 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>MotoGP's Spanish civil war </title>
+<guid isPermaLink="false">http://edition.cnn.com/2013/11/07/sport/motorsport/motogp-marquez-lorenzo-motorsport/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/7LcBO2lmM-g/index.html</link>
+<description>Marc Marquez is seeking to become the youngest champion in motorcycling's elite class this weekend, but titleholder Jorge Lorenzo stands in his way -- and their fellow Spaniard Dani Pedrosa will also play a key role.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_sport/~4/7LcBO2lmM-g" height="1" width="1"/&gt;</description>
+<pubDate>Thu, 14 Nov 2013 09:48:44 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2013/11/07/sport/motorsport/motogp-marquez-lorenzo-motorsport/index.html</feedburner:origLink>
+<ExtractedText>Marc Marquez seeking to be first rookie to win motorcycling's premier title since 1978
+The 20-year-old has a 13-point lead over defending MotoGP champion Jorge Lorenzo
+They will battle head-to-head in Sunday's final race of 2013 season at Valencia
+Fellow Spaniard Dani Pedrosa won last season's event at the Circuit Ricardo Tormo
+(CNN) -- If Sebastian Vettel's efficient march towards his fourth Formula One crown left fans of motor racing's premier competition stifling yawns, things in the top class on two wheels are rather different.
+Last month, the latest in Spain's prodigious production line of motorcycle racers, Marc Marquez, looked to have the MotoGP title sewn up.
+Arriving in Australia with a cavernous 43-point lead over compatriot Jorge Lorenzo, it seemed almost inevitable that the 20-year-old would become the division's youngest champion, and the first rookie to win the title since Kenny Roberts in 1978.
+Instead, the twisting undulations of Phillip Island flipped the season's story on its head.
+Bridgestone, MotoGP's tire supplier, had been unable to properly test on the newly resurfaced circuit, and the teams quickly discovered that the fresh tarmac was causing their rubber to disintegrate at a dangerous rate.
+MotoGP title permutations:
+If Lorenzo is lower than fourth, Marquez is champion
+If Lorenzo wins, Marquez must finish fourth or higher
+If Lorenzo is second, Marquez must be eighth
+If Lorenzo is third, Marquez needs to be at least 12th
+If Lorenzo is fourth, Marquez must finish 15th
+For safety, the race was reduced to 19 laps, and a mandatory bike change introduced at the halfway point.
+To widespread astonishment, Marquez's Repsol Honda team misinterpreted the strict guidance on pit stops and he stayed out on track a lap too long, leading to his disqualification.
+The black flag for Marquez may have been harsh -- a tweet from veteran rider Colin Edwards summed up the feelings of many fans -- but Honda's loss was Yamaha's gain. Lorenzo went on to win, and suddenly the championship race was back on.
+Lorenzo carved further into Marquez's lead the following week, beating his younger rival into second place at Honda's home circuit in Motegi, Japan. Now, as the teams arrive in Valencia for Sunday's season finale, the title is well and truly up for grabs -- with just 13 points separating the top two.
+The most likely scenario for Lorenzo to defend his title, and claim a third overall, is for the Mallorcan to win the race and hope Marquez is no higher than fifth. The other permutations would require Marquez to either not finish -- which has happened only once this season, in June -- or be lower than eighth. However, he has been on the podium for 15 of 17 races.
+Hervé Poncharal, a former rider who is now principal of the Monster Yamaha Tech 3 team he co-founded, is a big admirer of both men.
+Pamela Anderson has become joint owner of GT Series team Race Alliance.
+Anderson fronted the Downforce1 racing team in March 2012, which planned to compete in the 2012 European Le Mans and International GT Open series. The plan, however, failed to materialize.
+The Canadian star is pictured here with Markus Fux at the Downforce1 launch. Occasional racing driver Fux is also involved in the Race Alliance team.
+The former Playboy model pictured alongside German socialite Marcus Prinz von Anhalt at the Downforce1 launch last year.
+Anderson shot to fame in the hit U.S. TV show Baywatch, in which she played lifeguard C.J. Parker between 1992 and 1998.
+Anderson is not the first female celebrity to enter motorsport. Socialite Paris Hilton co-founded the SuperMartxe VIP MotoGP team in December 2010.
+Baywatch to burned rubber
+</ExtractedText>
+</item>
+</channel>
+</rss>

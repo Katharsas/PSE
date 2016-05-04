@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>2nd-term woes: Obamacare, Katrina</title>
+<guid>http://edition.cnn.com/2013/11/15/politics/second-term-drama/index.html</guid>
+<link>http://edition.cnn.com/2013/11/15/politics/second-term-drama/index.html?eref=edition</link>
+<description>When President Barack Obama took to the podium for Thursday's news conference/cum-mea culpa on the disastrous Obamacare roll out, the commander-in-chief said repairing his damaged credibility was on him and no one else.</description>
+<pubDate>Fri, 15 Nov 2013 21:41:36 EST</pubDate>
+<ExtractedText>Riley points to the Reagan administration as an example.
+When Reagan was inaugurated in 1981, he brought with him three confidants who became "The Troika."
+James Baker, Ed Meese and Michael Deaver effectively ran the White House staff and it paid off with reelection and a historic 525 electoral votes in 1984.
+But then the team began to fray.
+Baker became Treasury Secretary and Meese, Attorney General, while Deaver left the White House for lobbying.
+Under new leadership, Act II of the Reagan White House did not hit on all cylinders.
+The Iran-Contra affair, in which the Reagan administration was fingered for selling arms to Iran and circumventing a congressional ban by using the proceeds to send arms and money to anti-Communist rebels in Nicaragua, became a huge scandal.
+"It was disaster at the White House," Riley said. "That is not a mistake you make typically in a first term. It is case where you are trying to juggle the staffing apparatus later on."
+Digging for dirt and sensing a lame duck
+To David Nichols, a presidential historian and expert on President Dwight Eisenhower, the reason for second-term woes is a combination of leverage and time.
+"Their leverage on lawmakers in the Congress and with the voters is just inevitably diminished," Nichols said, pointing out that once Congress begins to smell presidential weakness, they seize on it as a way to speed up the "lame duck" process.
+"The longer Presidents are around and when people get to know you well, they begin to know where your soft spots are and they know what you are good and what you aren't good at," Nichols said. "People eventually begin to figure out how to get to the Presidents. That is just a function of the number of years."
+To Nichols, this could already be happening with Obama.
+</ExtractedText>
+</item>
+</channel>
+</rss>

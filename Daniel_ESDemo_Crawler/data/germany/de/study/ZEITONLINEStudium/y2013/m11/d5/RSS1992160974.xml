@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Studium</title>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<pubDate>Fri, 15 Nov 2013 10:41:45 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:56:04 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/studium/index</link>
+<atom:link href="http://newsfeed.zeit.de/studium/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Studium</title>
+      <link>http://www.zeit.de/studium/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/studium/hochschule/2013-11/steinmeier-dissertation-transparenz</link>
+      <guid>http://www.zeit.de/studium/hochschule/2013-11/steinmeier-dissertation-transparenz</guid>
+      <category>Studium</category>
+      <title>Plagiatsvorwürfe: Digitalisiert die Dissertationen</title>
+      <description>&lt;a href="http://www.zeit.de/studium/hochschule/2013-11/steinmeier-dissertation-transparenz"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/studium/2013-11/frank-walter-steinmeier/frank-walter-steinmeier-148x84.jpg"/&gt;&lt;/a&gt; Steinmeiers Plagiatsverfahren verlief schnell und reibungslos. Das ist leider nicht die Regel. Wir sollten über alternative Prüfverfahren nachdenken. </description>
+      <dc:creator>ZEIT ONLINE : Studium - Ruben Karschnick</dc:creator>
+      <pubDate>Tue, 05 Nov 2013 19:26:15 GMT</pubDate>
+    <ExtractedText>Kommentar: Neue Prüfverfahren für Dissertationen
+Plagiatsvorwürfe: Digitalisiert die Dissertationen
+Steinmeiers Plagiatsverfahren verlief schnell und reibungslos. Das ist leider nicht die Regel. Wir sollten über alternative Prüfverfahren nachdenken. Ein Kommentar von  Ruben Karschnick
+5. November 2013  20:25 Uhr  31 Kommentare
+Frank-Walter Steinmeier  |  © Jens Wolf/dpa
+Gut einen Monat stand Frank-Walter Steinmeier unter Plagiatsverdacht. Nun verkündete die Universität , es liege kein wissenschaftliches Fehlverhalten vor. Der SPD-Fraktionsvorsitzende darf seinen Doktortitel behalten.
+Urheber der Vorwürfe ist ein Dortmunder Fachhochschulprofessor , der mithilfe einer selbstgeschriebenen Plagiatssoftware mehr als 500 verdächtige Stellen in Steinmeiers Dissertation gefunden haben wollte. Man kann ihn freundlich einen Hüter der Wissenschaft nennen oder unfreundlich einen Denunzianten. Fest steht: Er beschuldigte Steinmeier zu unrecht.
+Anzeige
+Steinmeier kann froh sein, dass die Prüfung in Gießen nur einen Monat dauerte. Die Rufschädigung dürfte sich in Grenzen halten. Im Fall der früheren Bildungsministerin Annette Schavan (CDU) brauchte die Uni Düsseldorf rund ein Dreivierteljahr. Und Bundestagspräsident Norbert Lammert wartet schon seit drei Monaten auf das Ergebnis der Vorprüfung der Uni Bochum.
+Für die Länge eines Plagiatsverfahrens gibt es keine Höchstdauer. Das ist ärgerlich, schließlich hat es einen Grund, dass Tatverdächtige nicht ewig in Untersuchungshaft festgehalten werden dürfen.
+Ein Plagiatsverfahren ist ein unablässiges Mittel, Dissertationen zu beurteilen. Doch es gibt auch andere. Plagiatsjäger wie die Aktivisten von Vroniplag bedienen sich schon länger technischer Hilfe und veröffentlichten verdächtige Arbeiten im Netz. Warum aber nur verdächtige Arbeiten digitalisieren? Eine Online-Datenbank aller Dissertationen würde mehr Transparenz schaffen und hätte viele Vorteile.
+Erstens: Jeder könnte überprüfen, ob die angeblich fehlende Quelle oder die zitierenden Anführungszeichen wirklich fehlen. Theoretisch ist das schon heute möglich, schließlich gibt es für Dissertationen eine Publikationspflicht. Doch diese stellt nur sicher, dass in manchen Bibliotheken Exemplare der Dissertation stehen. Eine digitale Datenbank mit Schlagwortsuche würde die Recherche vereinfachen und beschleunigen.
+Eine Digitalisierungspflicht könnte helfen
+Zweitens würde der Doktorgrad vergleichbarer, mehr Transparenz würde die Standards vereinheitlichen. Das sieht man etwa an der Benzinpreis-App. Seit Ende August müssen fast alle Tankstellen Preisänderungen binnen fünf Minuten dem Bundeskartellamt melden, sonst droht ein Bußgeld. Der Effekt: Benzin wird zwar nicht billiger, aber die Tankstellen weichen weniger voneinander ab.
+Drittens ließen sich neue wissenschaftliche Erkenntnisse gewinnen. Ein digitales Archiv aller Dissertationen böte Wissenschaftlern unkomplizierten Zugang zu einem großen Wissensfundus. Zudem flössen auch bislang weniger beachtete Dissertationen in die Forschung ein.  
+Durch die bessere Durchsuchbarkeit hätten es Plagiatsjäger leichter, Fälscher und Kopierer zu überführen. Sie prüften bislang vor allem Arbeiten von Politikern und anderen öffentlichen Personen. Eine Digitalisierungspflicht könnte diese Ungerechtigkeit beenden.
+</ExtractedText>
+</item>
+</channel>
+</rss>

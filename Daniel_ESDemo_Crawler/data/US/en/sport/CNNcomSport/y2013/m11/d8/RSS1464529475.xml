@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 18:54:09 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Star 'humiliated' over gender</title>
+<guid isPermaLink="false">http://edition.cnn.com/2013/11/08/sport/football/south-korea-gender-boycott-football/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/ooTMQLp9ieU/index.html</link>
+<description>She has played football at the highest level for her country, and has returned to the top of her game after a career lull, but Park Eun-seon is suffering "humiliating" scrutiny of the most personal kind.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_sport/~4/ooTMQLp9ieU" height="1" width="1"/&gt;</description>
+<pubDate>Fri, 08 Nov 2013 07:16:15 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2013/11/08/sport/football/south-korea-gender-boycott-football/index.html</feedburner:origLink>
+<ExtractedText>South Korean female footballer caught up in gender row
+Park Eun-seon represented her country at 2004 Athens Olympics
+She top-scored for her club Seoul City Amazones last season
+Other clubs demanding she is excluded from the league
+(CNN) -- She has played football at the highest level for her country, and has returned to the top of her game after a career lull, but Park Eun-seon is suffering "humiliating" scrutiny of the most personal kind.
+In a controversy that echoes the ordeal of South African runner Caster Semenya, the 27-year-old is facing accusations about her gender.
+At 1.80 meters tall and weighing 74 kg, Park was top scorer in the South Korean women's league last season with 19 goals and she led Seoul City Hall Amazones to second place in the table.
+However, six rival teams have threatened a boycott if Park, who went to the 2004 Olympics, continues to play.
+Her club manager Seo Jung-ho has leaped to her defense and was quoted in the local media saying it was a "conspiracy" because she had shown remarkably improved form after a slump.
+Lady weightlifter challenges stereotypes
+Marta Vieira da Silva, or Marta as she is simply known, is considered the finest female football star on the planet. The Brazilian has won FIFA's World Player of the Year on five out of the nine times she has been nominated.
+Nicknamed "Pele with skirts," she has been the stand out player for Brazil since making her debut as a 17-year-old at the 2003 World Cup. She has scored 14 goals in 14 World Cup matches.
+The 27-year-old won her world's best player titles in consecutive years from 2006-10.
+Marta has been an inspiration to young Brazilian girls who want to play football. At the age of 14 she was invited to join Vasco de Gama in Rio de Janeiro where she began to play with the girls' team and establish herself as the nation's most promising female player.
+Marta and Pele have met on several occasions with Brazil's greatest ever male football star speaking in glowing terms of the woman known to many as the "Female Pele." Like Pele in his prime, Marta also has the number 10 on her shirt.
+Marta is one of the most fearsome predators in women's football, scoring goals for fun wherever she has played. Her career has seen her record huge success in the U.S. and Sweden as well as on the international stage, where she is Brazil's most-capped player.
+Pele 'with skirts'
+</ExtractedText>
+</item>
+</channel>
+</rss>

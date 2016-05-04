@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+<description>Nachrichten und Analysen zu Wissenschaft, Forschung, Gesundheit, Umwelt und Geschichte. Lesen Sie aktuelle Informationen aus dem Ressort Wissen.</description>
+<pubDate>Wed, 10 Dec 2014 14:16:20 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:01:27 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/wissen/index</link>
+<atom:link href="http://newsfeed.zeit.de/wissen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Mehr aus Forschung und Wissenschaft</title>
+      <link>http://www.zeit.de/wissen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wirtschaft/unternehmen/2014-12/medikamente-studien-verdacht-faelschung</link>
+      <guid>http://www.zeit.de/wirtschaft/unternehmen/2014-12/medikamente-studien-verdacht-faelschung</guid>
+      <category>Wissen</category>
+      <title>Gefälschte Studien: Nehmen wir Medikamente, die nie richtig geprüft wurden?</title>
+      <description>&lt;a href="http://www.zeit.de/wirtschaft/unternehmen/2014-12/medikamente-studien-verdacht-faelschung"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wirtschaft/unternehmen/2014-12/studien-medikamente/studien-medikamente-148x84.jpg"/&gt;&lt;/a&gt; Hunderte Arzneimittel könnten auf den Markt gekommen sein, nachdem die Studien dazu in Indien gefälscht wurden. In Deutschland werden knapp 200 Zulassungen überprüft.</description>
+      <dc:creator>ZEIT ONLINE : Wissen</dc:creator>
+      <pubDate>Fri, 05 Dec 2014 03:02:26 GMT</pubDate>
+    <ExtractedText>Gefälschte Studien: Nehmen wir Medikamente, die nie richtig geprüft wurden?
+Gefälschte Studien: Nehmen wir Medikamente, die nie richtig geprüft wurden?
+Hunderte Arzneimittel könnten auf den Markt gekommen sein, nachdem die Studien dazu in Indien gefälscht wurden. In Deutschland werden knapp 200 Zulassungen überprüft.
+5. Dezember 2014           04:01 Uhr  23 Kommentare
+Behörden überprüfen die Zulassung von 176 in Deutschland erhältlichen Medikamenten , weil der Verdacht besteht, dass Studienergebnisse gefälscht wurden. Im Zentrum des mutmaßlichen Pharmaskandals steht Berichten des NDR, WDR und der Süddeutschen Zeitung zufolge die indische Firma GVK Bio, bei der Pharmahersteller Zulassungsstudien in Auftrag gegeben hatten.
+Die französische Überwachungsbehörde ANSM habe in diesem Jahr neun Studien des Unternehmens aus Hyderabad untersucht, berichten die drei Medien. Bei allen sei die Behörde zu der Einschätzung gekommen, dass ein Teil der Ergebnisse offenbar gefälscht sei. GVK Bio gilt als eines der größten Unternehmen für Auftragsforschungen in Asien. Viele weltweit agierende Pharmakonzerne gehören zu den Kunden der Firma.
+Anzeige
+Die für Medikamentensicherheit zuständigen Behörden in Europa erwägen Konsequenzen für die Medikamente, die auf Grundlage der GVK-Studien ihre Zulassung erhielten. "Es wird derzeit geprüft, ob das Ruhen der betroffenen Zulassungen angeordnet wird", teilte das zuständige Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM) auf Anfrage von WDR, NDR und SZ mit. Zudem ließ die Behörde wissen, dass die bisherigen Untersuchungen keine Hinweise auf Gesundheitsgefahren für die Verbraucher ergeben hätten.
+"Systematische Natur" von Fälschungen
+Behördenvertreter sprechen von einer "systematischen Natur der Fälschungen". Das geht den Berichten zufolge aus einem Brief der Leiterin der Abteilung für die Zulassung von Arzneimitteln bei der EU-Kommission, Sabine Jülicher, an die europäische Arzneimittelbehörde EMA hervor. Die Schwere der identifizierten Mängel bei GVK Bio würden aus ihrer Sicht die Zulässigkeit aller dort vorgenommen Bioäquivalenz-Studien infrage stellen.
+Wie das BfArM am Freitag mitteilte, lägen dem Bundesinstitut bisher keine Hinweise auf Gesundheitsgefahren für Patienten vor.  Parallel zum nationalen Prüfverfahren werden in ganz Europa nun weitere Zulassungen auf mögliche Mängel untersucht.
+</ExtractedText>
+</item>
+</channel>
+</rss>

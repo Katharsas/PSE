@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 08:57:44 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Skiing: Violinist Mae appeals ban</title>
+<guid isPermaLink="false">http://edition.cnn.com/2014/12/04/sport/vanessa-mae-appeals-against-ski-ban/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/bVL3_PIEHFU/index.html</link>
+<description>Musical maestro Vanessa Mae lodges appeal to get her four year skiing banned lifted.&lt;img src="//feeds.feedburner.com/~r/rss/edition_sport/~4/bVL3_PIEHFU" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Mon, 08 Dec 2014 12:28:36 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141204154105-vanessa-mae-ski-profile-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141204154105-vanessa-mae-ski-profile-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://edition.cnn.com/2014/12/04/sport/vanessa-mae-appeals-against-ski-ban/index.html</feedburner:origLink>
+<ExtractedText>Vanessa Mae is appealing her four year ban from international skiing competitions
+The star violinist competed at the 2014 WInter Olympics using her father's surname Vanakorn
+Mae has lodged an appeal with the Court of Arbitration for Sport
+The 36-year-old was found guilty of involvent in manipulating results at her final Olympic qualifying event
+Follow us at @WorldSportCNN and like us on Facebook
+(CNN) -- Musical maestro Vanessa Mae wants her ban from international skiing competitions lifted.
+The multi-million selling violin star -- who competed at the 2014 Winter Olympics under the name Vanessa Vanakorn -- has lodged an appeal with the Court of Arbitration for Sport (CAS).
+Mae was given a four-year ban by the International Ski Federation (FIS) in November after the results of her final Olympic qualifying event were adjudged to have been manipulated.
+"The FIS panel found Ms Vanakorn was either an active or knowing participant in the manipulation of the results of four giant slalom races that took place in Krvavec, Slovenia in January 2014," explained a statement issued by CAS Thursday.
+"The FIS council subsequently canceled the results of the four races in question. As a consequence of this decision, Ms Vanakorn was no longer eligible to compete in the Sochi 2014 Winter Olympic Games.
+"In appealing to the CAS, Ms Vanakorn seeks the annulment of both decisions. Two arbitration procedures have been opened."
+Iconic images from Sochi
+Silver medalist rescues dogs from Sochi
+Visually impaired skier's Sochi mission
+The giant slalom events in question were organized by the Thai Olympic Committee at the request of Mae's management.
+They were the last chance for the violinist to fulfill her dream of representing her father's homeland, Thailand, at the 2014 Winter Olympics, held in Russia.
+The 36-year-old, who was born in Singapore but grew up in Britain, went on to make her Games bow on the Sochi slopes.
+Her appearance in the giant slalom made history as she became Thailand's first ever female skier . The fact that she finished 67th and dead last did not dampen her enthusiasm.
+"I expected to be last but at the end of the day the Olympics is a great opportunity," she told reporters. "I nearly crashed three times, but I made it down and that was the main thing."
+Last-minute decision
+She also revealed that her decision to make the transition from musician to Olympian had been made at short notice.
+"I'm a last-minute kind of girl, I mean training for the Olympics with six months to go was a last-minute thing," she added.
+But it was that last-minute rush to qualify for the Sochi Games that appears to have landed Mae in trouble with the skiing authorities. She has described her ban by the FIS as "nonsensical."
+Mae's musical prowess made her a household name in Britain and much of the rest of the world, with global sales in excess of 10 million.
+She made her solo debut with the Philharmonia Orchestra in London at the age of 10, three years later becoming the youngest soloist ever to record the Beethoven and Tchaikovsky violin concertos.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Take Viagra to cure ... jetlag? </title>
+<guid>http://edition.cnn.com/2013/11/12/travel/jetlag-cures/index.html</guid>
+<link>http://edition.cnn.com/2013/11/12/travel/jetlag-cures/index.html?eref=edition</link>
+<description>The curious ways some passengers adapt their body clocks.</description>
+<pubDate>Fri, 15 Nov 2013 20:51:33 EST</pubDate>
+<ExtractedText>Exercise, alcohol and Viagra -- best cures for jet lag?
+By CNN Staff
+November 13, 2013 -- Updated 0048 GMT (0848 HKT)
+Stretching and doing some light exercise in flight is recommended for avoiding muscle cramps and deep-vein thrombosis, but 61% of the Singaporean fliers polled by Skyscanner also claimed to do it to avoid jetlag. Some 51% of people who tried this cure said it worked, making it the most successful jetlag cure on the list.
+In 48% of cases popping a sleeping pill is a quick and easy way to ensure you don't fall asleep in that 4 p.m. meeting once at your destination. Sleeping pills were the second most successful remedy on the list.
+Eating well and not too much is good advice whether you're flying long distance or not, and in 46% of cases it also helps jetlag, according to those surveyed.
+46% also said setting your watch to the new time zone before you got there helped you get over jetlag quicker.
+"No no sweetheart, it's for the jetlag, honest." Viagra started as a treatment for high blood pressure and angina, became popular as a cure for erectile dysfunction and now, it seems, is good for jetlag, at least in 45% of cases, making it the fifth-equal most successful cure mentioned.
+Getting some exercise and fresh air pre-flight was tied with Viagra as a jetlag cure in fifth place. Incheon Airport's spacious golf driving range could help there.
+In 42% of reported cases, avoiding alcohol completely was the key to adapting to a new destination's hours quickly.
+With a 42% success rate for jetlag, herbal cures were surprisingly successful. The survey unfortunately didn't detail which remedies were chosen.
+We don't think you need this much booze to keep the jetlag devil at bay, but several people -- 41% -- said it helped them get over their travel fatigue quicker.
+Staying awake in flight isn't a choice for the light sleepers among us, even with a sumptuous cabin like this. Some 40% said it helped cure their jetlag.
+HIDE CAPTION
+1. Stretch/light exercise on flight
+2. Sleeping tablets
+3.= Light and healthy diet
+3.= Set watch to new time zone
+5.= Viagra
+5.= Exercise/fresh air before flight
+7.= Avoid alcohol completely
+</ExtractedText>
+</item>
+</channel>
+</rss>

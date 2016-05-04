@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title>SPIEGEL ONLINE - Wissenschaft</title>
+<link>http://www.spiegel.de</link>
+<description>Nachrichten aus der Wissenschaft über Mensch und Technik, Natur und Weltall. Aktuelle Reportagen, Analysen, Interviews.</description>
+<language>de</language>
+<pubDate>Sat, 16 Nov 2013 15:49:09 +0100</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:49:09 +0100</lastBuildDate>
+<image>
+<title>SPIEGEL ONLINE</title>
+<link>http://www.spiegel.de</link>
+<url>http://www.spiegel.de/static/sys/logo_120x61.gif</url>
+</image>
+<item>
+<title>Physik: Photon überlebt erstmals eigenen Nachweis</title>
+<link>http://www.spiegel.de/wissenschaft/technik/physik-photon-ueberlebt-erstmals-eigenen-nachweis-a-933122.html#ref=rss</link>
+<description>Mit zwei Minispiegeln und einem Atom dazwischen haben Forscher erstmals optische Photonen einzeln registriert, ohne sie dabei zu zerstören. Die neue Methode könnte eines Tages in der Quantenkommunikation genutzt werden. </description>
+<pubDate>Thu, 14 Nov 2013 22:01:00 +0100</pubDate>
+<guid>http://www.spiegel.de/wissenschaft/technik/physik-photon-ueberlebt-erstmals-eigenen-nachweis-a-933122.html</guid>
+<content:encoded><![CDATA[Mit zwei Minispiegeln und einem Atom dazwischen haben Forscher erstmals optische Photonen einzeln registriert, ohne sie dabei zu zerstören. Die neue Methode könnte eines Tages in der Quantenkommunikation genutzt werden. ]]></content:encoded>
+<ExtractedText>Physik: Photon überlebt erstmals eigenen Nachweis
+Physik: Photon überlebt erstmals eigenen Nachweis
+Von Holger Dambeck
+MPI für Quantenoptik Garching
+Mit zwei Minispiegeln und einem Atom dazwischen haben Forscher erstmals optische Photonen einzeln registriert, ohne sie dabei zu zerstören. Die neue Methode könnte eines Tages in der Quantenkommunikation genutzt werden.
+Kleine Teilchen sind kaum zu fassen. Für sie gelten nicht die uns vertrauten Regeln der Mechanik, sondern die Gesetze der Quantenmechanik. Beispielsweise ist es unmöglich, gleichzeitig Geschwindigkeit und Ort eines Elektrons präzise zu messen. Die Heisenbergsche Unschärferelation schließt genau das aus.
+Als besonders schwierige Beobachtungsobjekte haben sich Photonen erwiesen. "Alle bisherigen Detektoren für optische Photonen arbeiten destruktiv", sagt Stephan Ritter vom Max-Planck-Institut für Quantenoptik in Garching. Wollte man ein einzelnes Photon nachweisen, musste man es bislang bei der Messung zerstören. Ritters Team hat nun einen Detektor gebaut, der Photonen registriert, ohne sie zu beschädigen. Über ihre Entwicklung berichten die Forscher im Fachblatt "Science" .
+Lichtquanten, wie man Photonen auch bezeichnet, bewegen sich mit Lichtgeschwindigkeit. Im Vakuum beträgt diese 300.000 Kilometer pro Sekunde. Durchquert es ein Medium wie Luft oder Wasser, wird es gebremst. In den vergangenen Jahren sind Forschern bereits spektakuläre Kunststücke mit Licht gelungen: Sie haben es gespeichert und sogar gestoppt .
+Für ihr Experiment nutzten die Garchinger Physiker schwache Laserpulse, die im Mittel weniger als ein Photon enthalten. Ein vom Laser erzeugtes Photon wird auf zwei gekrümmte, einander gegenüberliegende Spiegel geleitet. Dieses System bezeichnen die Forscher auch als Resonator. Das Photon durchdringt den einen Spiegel und rast anschließend wie ein Pingpong-Ball zwischen beiden Spiegeln hin und her - nach Messungen der Forscher bis zu 20.000 Mal. Dann verlässt es den Resonator durch einen Spiegel nach außen, denn die Spiegel sind zwar hochreflektierend, aber nicht vollkommen undurchlässig.
+Anwendung in Quantenkommunikation
+Ob tatsächlich ein Photon zwischen den Spiegeln war, erfahren die Forscher durch eine Messung, die quantenmechanische Effekte ausnutzt. Zwischen den Spiegeln, deren Abstand nur 0,5 Millimeter beträgt, befindet sich ein einzelnes Rubidium-Atom. Es wird mit drei Laserstrahlen, die senkrecht zueinander stehen, an seiner Position gehalten. In Gegenwart eines Photons kommt es zu einer Phasenänderung des Atoms - und diese Änderung können die Forscher durch einen Vergleich mit einem zweiten Atom außerhalb des Systems registrieren.
+Eine besondere technische Herausforderung seien die Spiegel gewesen, berichtet Ritter. Sie bestehen aus poliertem Glas, auf das viele dünne Schichten aufgedampft sind, die den Spiegel bilden. "Wären die Spiegel eben, würde das hin- und herrasende Photon irgendwann aus dem System herauslaufen." Die gekrümmten Spiegel verhinderten das. "Trotzdem müssen die Spiegel sehr gut justiert werden, damit die Messung gelingt."
+Perfekt ist der Photonendetektor freilich noch nicht. Die Nachweisgenauigkeit liegt bei 74 Prozent. Sie könnte aber noch erhöht werden, indem man ein Photon nacheinander durch mehrere Detektoren schickt. Die Überlebensrate beträgt 66 Prozent. Das heißt, dass bislang nur zwei Drittel der Photonen eine Messung unbeschadet überstehen.
+Die Entwicklung des Detektors ist klassische Grundlagenforschung, doch die Wissenschaftler denken bereits über mögliche Anwendungen in der Quanteninformatik nach. Man kann in Photonen Quanteninformationen kodieren und auf diese Weise Informationen übertragen. "Wenn man wissen will, ob die Information den Empfänger erreicht hat, ohne das Photon selbst zu zerstören, könnte man ein System verwenden, wie wir es entwickelt haben."
+Dem Autor auf Twitter folgen:
+</ExtractedText>
+</item>
+</channel>
+</rss>

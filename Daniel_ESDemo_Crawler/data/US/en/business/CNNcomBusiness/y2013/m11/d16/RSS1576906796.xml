@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Business</title>
+<link>http://edition.cnn.com/BUSINESS/index.html?eref=rss_business</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 21:51:58 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Business</title>
+<link>http://edition.cnn.com/BUSINESS/index.html?eref=rss_business</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Designing a great career</title>
+<guid isPermaLink="false">http://edition.cnn.com/video/data/2.0/video/business/2013/11/15/qmb-intv-paul-smith.cnn.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/LSFxhZPJIiE/qmb-intv-paul-smith.cnn.html</link>
+<description>CNN's Richard Quest talks to Paul Smith about the new exhibit at London's Design Museum celebrating his fashion career.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_business/~4/LSFxhZPJIiE" height="1" width="1"/&gt;</description>
+<pubDate>Fri, 15 Nov 2013 21:50:24 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/video/data/2.0/video/business/2013/11/15/qmb-intv-paul-smith.cnn.html</feedburner:origLink>
+<ExtractedText/>
+</item>
+</channel>
+</rss>

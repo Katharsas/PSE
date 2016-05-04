@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Fri, 15 Nov 2013 18:54:09 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Sport</title>
+<link>http://edition.cnn.com/SPORT/index.html?eref=rss_sport</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_sport" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_sport"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Messi sidelined again </title>
+<guid isPermaLink="false">http://edition.cnn.com/2013/11/11/sport/football/messi-injured-barcelona-football/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_sport/~3/hSnJLZc65uA/index.html</link>
+<description>Barcelona must do without the services of four-time World Player of the Year Lionel Messi for between six to eight weeks, the club said Monday.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_sport/~4/hSnJLZc65uA" height="1" width="1"/&gt;</description>
+<pubDate>Thu, 14 Nov 2013 13:20:34 EST</pubDate>
+<feedburner:origLink>http://edition.cnn.com/2013/11/11/sport/football/messi-injured-barcelona-football/index.html</feedburner:origLink>
+<ExtractedText>Fresh Lionel Messi injury blow sees him sidelined for up to two months
+November 11, 2013 -- Updated 1826 GMT (0226 HKT)
+Lionel Messi must endure another frustrating spell on the sidelines after picking up a hamstring injury against Real Betis.
+STORY HIGHLIGHTS
+Lionel Messi ruled out for between six to eight weeks
+Barcelona say he has torn a hamstring in his left leg
+Third injury layoff this season for the World Player of Year
+Also ruled out of Argentina's friendlies in international break
+(CNN) -- Barcelona must do without the services of four-time World Player of the Year Lionel Messi for between six to eight weeks, the club said Monday.
+The Argentina ace limped off after 19 minutes of Barcelona's win at Real Betis Sunday and the worst fears of the fans were confimed by a statement on their website.
+"The club's medical services confirmed after tests this Monday morning that Leo Messi has a torn hamstring muscle in his left thigh," it read.
+"The first phase of Messi's recovery will be covered in Barcelona and he will then travel to Buenos Aires," it added.
+It is the third time that Messi has been sidelines, suffering a bruised thigh in the Spanish Super Cup match against Atletico Madrid on August 21, which kept him out for a week.
+Messi claims fourth Ballon d'Or
+Lionel Messi breaks goal scoring record
+'El Tigre' Falcao on the hunt for goals
+The second, more serious injury, came against Almeria on September 28 where he suffered a small muscle tear in his right thigh, meaning he missed three weeks.
+His absences have not prevented Barcelona from making a storming start to their La Liga programme with 37 points from 13 games and they have already qualified for the last 16 of the Champions League.
+Messi is set to miss their last two group games against Ajax and Celtic, plus six other matches in La Liga and the Copa del Rey.
+He has scored 14 goals in his 14 appearances for the Catalan giants this season and manager Gerardo Martino will be hoping he can be restored to full fitness for their clash at second placed Atletico Madrid on January 12.
+Read: Messi pays over $6 million to tax authorities
+Martino wants other players to step up to the plate in his absence.
+"We have the best player in the world, but we also have four or five of the next six or seven best players in the world," he said after the 4-1 win at Betis.
+"The injury to Messi doesn't have anything to do with the previous ones because it is in the other leg.
+"We also need to speak with Leo, it is the third episode he has had in a short time so it is obviously playing on his mind," he told AFP.
+Messi has also been ruled out of Argentina's forthcoming friendlies against Ecuador and Bosnia and Herzegovina as he begins his recuperation.
+</ExtractedText>
+</item>
+</channel>
+</rss>

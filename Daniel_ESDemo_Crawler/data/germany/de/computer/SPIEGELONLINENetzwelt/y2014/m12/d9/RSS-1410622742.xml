@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title>SPIEGEL ONLINE - Netzwelt</title>
+<link>http://www.spiegel.de</link>
+<description>Nachrichten zu Internet und Technik, Handys und Computern. Aktuelle Reportagen, Analysen, Service.</description>
+<language>de</language>
+<pubDate>Wed, 10 Dec 2014 16:54:37 +0100</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:54:37 +0100</lastBuildDate>
+<image>
+<title>SPIEGEL ONLINE</title>
+<link>http://www.spiegel.de</link>
+<url>http://www.spiegel.de/static/sys/logo_120x61.gif</url>
+</image>
+<item>
+<title>SSL-Sicherheitslücke: Poodle betrifft bis zu zehn Prozent aller Webseiten </title>
+<link>http://www.spiegel.de/netzwelt/web/sicherheitsluecke-poodle-10-prozent-der-untersuchten-webseiten-betroffen-a-1007403.html#ref=rss</link>
+<description>Im Oktober hat Google eine Sicherheitslücke in der Web-Verschlüsselung bekannt gemacht. Eine Studie zeigt jetzt: Sie macht auch jetzt noch einige der größten Webseiten der Welt unsicher.</description>
+<pubDate>Tue, 09 Dec 2014 14:28:00 +0100</pubDate>
+<guid>http://www.spiegel.de/netzwelt/web/sicherheitsluecke-poodle-10-prozent-der-untersuchten-webseiten-betroffen-a-1007403.html</guid>
+<content:encoded><![CDATA[<img src="http://www.spiegel.de/images/image-428696-thumbsmall-pgik.jpg" hspace="5" align="left" >Im Oktober hat Google eine Sicherheitslücke in der Web-Verschlüsselung bekannt gemacht. Eine Studie zeigt jetzt: Sie macht auch jetzt noch einige der größten Webseiten der Welt unsicher.]]></content:encoded>
+<enclosure type="image/jpeg" url="http://www.spiegel.de/images/image-428696-thumbsmall-pgik.jpg"/>
+<ExtractedText>Sicherheitslücke Poodle: 10 Prozent der untersuchten Webseiten betroffen
+SSL-Sicherheitslücke: Poodle betrifft bis zu zehn Prozent aller Webseiten
+REUTERS
+PayPal-Seite: Auch sie wird von den Sicherheitsexperten genannt
+Im Oktober hat Google eine Sicherheitslücke in der Web-Verschlüsselung bekannt gemacht. Eine Studie zeigt jetzt: Sie macht auch jetzt noch einige der größten Webseiten der Welt unsicher.
+Softwareentwickler und Sicherheitsexperten haben entdeckt, dass die ursprünglich von Google entdeckte Poodle-Sicherheitslücke doch schlimmer ist als zunächst angenommen. Laut Messungen des US-Sicherheitsunternehmens Qualys könnten bis zu zehn Prozent aller Webseiten der Welt betroffen sein. Dazu gehören auch große Unternehmen wie die Bank of America , VMWare und PayPal . Ihnen ist gemein, dass Ihre Server auf bestimmte Angriffe reagieren könnten statt die Anfragen abzulehnen.
+Die Abkürzung Poodle steht für "Padding Oracle On Downgraded Legacy Encryption", einen Angriff, der sich eine Schwachstelle in der fast 18 Jahre alten SSL-Verschlüsselung zunutze macht. Poodle ermöglicht es Angreifern, über Fehler im Verschlüsselungsprotokoll SSL 3.0 Daten von Servern und Client-Rechnern abzufangen.
+Der Angriff setzt auf dem Prinzip auf, dass der Server bei missglückten Verbindungsaufbauten auf eine ältere Verschlüsselungsversion zurückgreift, um überhaupt eine Verbindung zu ermöglichen. Gelingt es dem Angreifer, den Server zu einer Verbindung per SSL 3.0 zu "überreden", wird der Server angreifbar.
+Jetzt wird es für die Angreifer noch einfacher
+Waren diese Angriffe nur auf Systemen erfolgreich, die mit der nach heutigen Maßstäben sehr unsicheren Version SSL 3 unzureichend abgesichert waren, richten sie sich jetzt an mit dem SSL-Nachfolger TLS verschlüsselte Webseiten, und zwar mit einer TLS-Version vor 1.2.
+"Die Auswirkungen dieses Problems sind ähnlich wie bei Poodle, nur dass es für die Angreifer noch etwas einfacher wird", schreibt Ivan Ristic von Qualys in einem Blogpost zum Thema.
+Das Google-Sicherheitsteam hatte die Lücke im Oktober entdeckt und davor gewarnt. Einige Browser-Hersteller haben recht schnell reagiert und die Unterstützung des Uralt-Protokolls eingestellt, darunter Chrome 39 und Firefox 34. Der neue Google-Browser Chrome 40 soll das alte SSL gar nicht mehr beachten. Wer den Microsoft Internet Explorer nutzt, kann unter "Internetoptionen" "Erweitert" "Sicherheit" die Option "SSL 3 verwenden" durch Löschen des Häkchens abwählen. Für die neue TLS-Lücke müssen die Browser nun wohl erneut angepasst werden.
+abr
+</ExtractedText>
+</item>
+</channel>
+</rss>

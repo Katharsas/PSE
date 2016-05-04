@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>Technik &amp; Motor - FAZ.NET</title>
+<link>http://www.faz.net/aktuell/technik-motor/</link>
+<description>Aktuelle Nachrichten und Hintergründe zu den Themen Technik &amp; Motor. Die Themenseite für alle Technik &amp; Motor, Computer &amp; Internet Fans. </description>
+<copyright>Copyright 2001-2014 Frankfurter Allgemeine Zeitung GmbH. Alle Rechte vorbehalten.</copyright>
+<category>Technik &amp; Motor - FAZ.NET</category>
+<language>de-de</language>
+<docs>http://www.faz.net/hilfe/services-newsletter-widgets-rss-feeds-mehr/</docs>
+<generator>FAZ.NET</generator>
+<ttl>5</ttl>
+<lastBuildDate>Wed, 10 Dec 2014 17:26:48 +0100</lastBuildDate>
+<atom:link href="http://www.faz.net/rss/aktuell/technik-motor/" rel="self" type="application/rss+xml"/>
+<image>
+		<title>Technik &amp; Motor - FAZ.NET</title>
+		<url>http://www.faz.net/img/fazlogo_ressort.gif</url>
+        <link>http://www.faz.net/aktuell/technik-motor/</link>
+	</image>
+<item>
+    <title>So steuert man Ampeln mit dem Smartphone</title>
+    <description>&lt;img width=190 height=107 border=0 title="Freie Fahrt voraus: Die meisten Lichtsignalanlagen sollten sich dem Verkehrsgeschehen anpassen" alt="Freie Fahrt voraus: Die meisten Lichtsignalanlagen sollten sich dem Verkehrsgeschehen anpassen" src=http://media1.faz.net/ppmedia/aktuell/2592980658/1.3306995/article_teaser/lichtsignalanlagen-im-verkehrsgeschehen.jpg /&gt;&lt;p&gt;Die grüne Welle entsteht im Netz: Moderne Verkehrsampeln sind komplexe Systeme, die von eigenen Rechnern gesteuert werden. Über Cloud-Lösungen können Betreiber per Smartphone zugreifen.&lt;/p&gt;</description>
+    <link>http://www.faz.net/aktuell/technik-motor/auto-verkehr/moderne-ampeln-mit-dem-smartphone-aus-der-cloud-steuern-13306662.html</link>
+    <pubDate>Wed, 10 Dec 2014 09:18:40 +0100</pubDate>
+    <guid isPermaLink="true">http://www.faz.net/-gya-7x7hi</guid>
+<ExtractedText>Moderne Ampeln mit dem Smartphone aus der Cloud steuern
+Steuerung via Cloud So schaltet man Ampeln mit dem Smartphone
+Die grüne Welle entsteht im Netz: Moderne Verkehrsampeln sind komplexe Systeme, die von eigenen Rechnern gesteuert werden. Über Cloud-Lösungen können Betreiber per Smartphone zugreifen.
+10.12.2014, von Peter Thomas
+Freie Fahrt voraus: Die meisten Lichtsignalanlagen sollten sich dem Verkehrsgeschehen anpassen
+© Peter Thomas
+Freie Fahrt voraus: Die meisten Lichtsignalanlagen sollten sich dem Verkehrsgeschehen anpassen
+„Blöde Ampel!“ So hat wohl jeder Verkehrsteilnehmer wenigstens innerlich schon geflucht, wenn das rote Licht mal wieder zum Halt an einer völlig fahrzeugfreien Kreuzung zwingt. Dabei sind die meisten Lichtsignalanlagen (zu denen gehört der einzelne, umgangssprachlich Ampel genannte Signalgeber) vergleichsweise klug und können sich dem Verkehrsgeschehen anpassen.
+Je komplexer die Technik, desto höher sind aber auch die Anforderungen an die Möglichkeiten der Wartung. Seit diesem Jahr bietet Siemens deshalb Steuergeräte für Ampelanlagen an, die sich über eine private Cloud im Internet von ihren Betreibern erreichen lassen. Dazu braucht es keine spezielle Technik, sondern lediglich ein Endgerät wie Smartphone, Tablet und Laptop mit einem passenden Browser: Fernwartung durch die Verkehrsbehörde per Fingerklick. Wer schon einmal den typischen, etwas ältlichen Verkehrsrechner einer deutschen Kleinstadt im Keller von Polizeiwache oder Rathaus gesehen hat, kann die Reichweite dieser Innovation erahnen.
+© Thomas
+Statt Leitstand: Ampelsteuerung auf dem Tablet
+© Thomas
+Statt Leitstand: Ampelsteuerung auf dem Tablet
+Dabei ist die Ansteuerung von Lichtsignalanlagen über das Datennetz bei Siemens nicht völlig neu. In dem 2007 gegründeten Service Support Center RCM von Siemens in München-Perlach beispielsweise können Fachleute schon seit Jahren auf die Signaltechnik ihrer Kunden in aller Welt zugreifen. Auf den großen Monitoren sehen die Ampelmänner dann beispielsweise, ob im Straßenverkehr von Abu Dhabi die Verkehrsregelung reibungslos funktioniert - und zwar in Echtzeit. Denn wenn mehrere tausend Kilometer entfernt im Wüstenemirat eine Ampel von Rot auf Grün springt, dann wechselt auch die Grafik auf dem Display in der Bayernhauptstadt. Dargestellt wird das jeweilige System als digitaler Stadtplan, der den gesamten Betriebszustand abbildet.
+65.000 Einsätze an 40.000 Ampeln pro Jahr
+Diese Lösung, bei der sich die Siemens-Fachleute über eine sichere Remote-Service-Plattform auf die jeweiligen Verkehrsrechner aufschalten, gibt es für mehr als 250 Kommunen weltweit - von Abu Dhabi bis Würzburg. Sie wird vor allem zur unterstützenden Fernwartung genutzt, dem sogenannten „Second Level Support“ durch Fachleute. Die technische Betreuung der Ampeln am Standort erledigt hingegen der „First Level Support“ - für gewöhnlich in Form eines Mitarbeiters mit Lieferwagen, Klappleiter und Werkzeugkoffer. Bei Siemens absolvieren diese Techniker allein in Deutschland jährlich rund 65.000 Einsätze an etwa 40.000 Ampeln im Land, die das Logo des Münchener Herstellers tragen.
+Mehr zum Thema
+</ExtractedText>
+</item>
+</channel>
+</rss>

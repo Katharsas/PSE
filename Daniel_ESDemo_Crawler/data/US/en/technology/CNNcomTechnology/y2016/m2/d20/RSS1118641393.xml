@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 24 Feb 2016 20:40:10 GMT</pubDate>
+<lastBuildDate>Wed, 24 Feb 2016 20:40:10 GMT</lastBuildDate>
+<ttl>5</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Billions at stake in Apple encryption case</title>
+<link>http://rss.cnn.com/c/35494/f/676977/s/4db63d40/sc/28/l/0L0Scnn0N0C20A160C0A20C190Copinions0Capple0Evs0Efbi0Eon0Eencryption0Ebergen0Cindex0Bhtml0Deref0Frss0Itech/story01.htm</link>
+<description>&lt;br clear='all'/&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/rc/1/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/rc/1/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/rc/2/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/rc/2/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://rc.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/rc/3/rc.htm" rel="nofollow"&gt;&lt;img src="http://rc.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/rc/3/rc.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;br/&gt;&lt;a href="http://da.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/a2.htm"&gt;&lt;img src="http://da.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/a2.img" border="0"/&gt;&lt;/a&gt;&lt;br/&gt;&lt;a href="http://adchoice.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/ach.htm"&gt;&lt;img src="http://adchoice.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/ach.img" border="0"/&gt;&lt;/a&gt;&lt;img width="1" height="1" src="http://pi.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/a2t.img" border="0"/&gt;&lt;img width="1" height="1" src="http://pi2.feedsportal.com/r/247392139217/u/89/f/676977/c/35494/s/4db63d40/sc/28/a2t2.img" border="0"/&gt;&lt;img width='1' height='1' src='http://rss.cnn.com/c/35494/f/676977/s/4db63d40/sc/28/mf.gif' border='0'/&gt;</description>
+<pubDate>Sat, 20 Feb 2016 00:38:32 GMT</pubDate>
+<guid isPermaLink="false">http://www.cnn.com/2016/02/19/opinions/apple-vs-fbi-on-encryption-bergen/index.html</guid>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/111006055359-apple-logo-new-york-top-tease.jpg" width="90"/>
+<media:content height="51" lang="" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/111006055359-apple-logo-new-york-top-tease.jpg" width="90"/>
+<ExtractedText>On the face of it, Apple's rejection of the judge's order seems quite wrongheaded. After all, the San Bernardino attack was the most lethal since 9/11 .
+Apple's position, however, is that helping the FBI to decrypt Farook's iPhone would give the government access to all other similar iPhones and would also lead to an unfortunate precedent in which the government could eventually access encrypted communications on any American tech platform. Google has publicly supported Apple's position .
+So who is right here? The revelations by National Security Agency leaker Edward Snowden in 2013 about just how much U.S. tech companies had been playing footsie with the U.S. government had an effect on the firms' bottom lines around the globe.
+What explains the biggest U.S. terror attack since 9/11?
+A 2014 paper by my colleagues at the New America think tank estimated that the Snowden revelations cost U.S. tech companies billions of dollars.
+Since Snowden went public, companies such as Apple and Google -- two of the world's most valuable companies -- have incorporated much greater encryption into their products and have also been at pains to show that they will not go along with U.S. government demands to access their encrypted products.
+What might be learned from Farook's iPhone? Of course, we don't know, but it's likely that it wouldn't be much beyond what we already know from the couple's Facebook postings , their Verizon phone account, their computers seized by police, the evidence found at their apartment complex and the fulsome confession of their friend Enrique Marquez , who allegedly provided them with the rifles used in their massacre and also allegedly knew of their plans to commit a terrorist attack as early as 2012.
+FBI snooping at Apple 'backdoor' makes you less safe
+No evidence has emerged that Farook and his wife had any formal connection to a terrorist organization, and the plot involved only the couple and the alleged connivance of Marquez. What might be found on Farook's iPhone therefore is more than likely simply only some additional details to buttress the overall account of what we know already.
+Balanced against that is what the tech companies lose if they are seen to be doing the bidding of the FBI -- tens of billions of dollars and also the strong possibility of losing market share to other non-American tech companies, particularly software and cloud computing firms, around the world.
+A further wrinkle in the story is provided by Daily Beast reporter (and my New America colleague) Shane Harris who reported that Apple has decrypted iPhones for U.S. law enforcement authorities 70 times in the past several years and as recently as 2015. At the same time, Harris reports the government has successfully decrypted at least one version of the iPhone.
+These revelations suggest the possibility that the facts of this particular case aren't as important as the larger principles at stake and that both Apple and the U.S. government are using the San Bernardino case as something of a test of the question: Should tech companies give the FBI any kind of permanent backdoor?
+The San Bernardino test case will likely set up a legal fight that could go to the Supreme Court. It also may prompt Congress to intervene to pass legislation on the matter.
+Although the fight between American tech companies and the FBI hunting terrorists is undeniably important, to some degree it may also be increasingly moot.
+ISIS' key social media-encrypted platform is Telegram, which is engineered by a Berlin-based tech company that can simply ignore the rulings of American federal judges as well as legislation passed by the U.S. Congress.
+ISIS also advocates to its followers to use the "dark Web" Tor browser, which disguises users' IP addresses and is not controlled by any American tech company.
+In other words, once again, technology is outrunning the ability of both law enforcement and legislation to keep pace with it.
+</ExtractedText>
+</item>
+</channel>
+</rss>

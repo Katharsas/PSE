@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+<channel>
+<title>SPIEGEL ONLINE - Netzwelt</title>
+<link>http://www.spiegel.de</link>
+<description>Nachrichten zu Internet und Technik, Handys und Computern. Aktuelle Reportagen, Analysen, Service.</description>
+<language>de</language>
+<pubDate>Wed, 10 Dec 2014 16:54:37 +0100</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:54:37 +0100</lastBuildDate>
+<image>
+<title>SPIEGEL ONLINE</title>
+<link>http://www.spiegel.de</link>
+<url>http://www.spiegel.de/static/sys/logo_120x61.gif</url>
+</image>
+<item>
+<title>Angeblicher Sony-Hack: Playstation Store zeitweise lahmgelegt</title>
+<link>http://www.spiegel.de/netzwelt/web/sony-hack-unbekannte-legen-playstation-store-lahm-a-1007201.html#ref=rss</link>
+<description>Schon wieder Sony: Nach dem spektakulären Datenraub bei Sony Pictures hatte am Montag der Playstation Store Probleme. </description>
+<pubDate>Mon, 08 Dec 2014 14:54:00 +0100</pubDate>
+<guid>http://www.spiegel.de/netzwelt/web/sony-hack-unbekannte-legen-playstation-store-lahm-a-1007201.html</guid>
+<content:encoded><![CDATA[Schon wieder Sony: Nach dem spektakulären Datenraub bei Sony Pictures hatte am Montag der Playstation Store Probleme. ]]></content:encoded>
+<ExtractedText>Klicken Sie auf die Stichworte, um mehr zu erfahren
+Trojaner
+Wie das Trojanische Pferd in der griechischen Mythologie verbergen Computer-Trojaner ihre eigentliche Aufgabe (und Schädlichkeit!) hinter einer Verkleidung. Meist treten sie als harmlose Software auf: Bildschirmschoner, Videodatei, Zugangsprogramm. Sie werden zum Beispiel als E-Mail-Anhang verbreitet. Wer das Programm startet, setzt damit immer eine verborgene Schadfunktion ein: Meist besteht diese aus der Öffnung einer sogenannten Backdoor , einer Hintertür, die das Computersystem gegenüber dem Internet öffnet und durch die weitere Schadprogramme nachgeladen werden.
+Virus
+Computerviren befallen vorhandene Dateien auf den Computern ihrer Opfer. Die Wirtsdateien funktionieren &#150; zumindest eine Zeit lang - weiterhin wie zuvor. Denn Viren sollen nicht entdeckt werden. Sie verbreiten sich nicht selbständig, sondern sind darauf angewiesen, dass Computernutzer infizierte Dateien weitergeben, sie per E-Mail verschicken, auf USB-Sticks kopieren oder in Tauschbörsen einstellen. Von den anderen Schad- und Spähprogrammen unterscheidet sich ein Virus allein durch die Verbreitungsmethode. Welche Schäden er anrichtet, hängt allein vom Willen seiner Schöpfer ab.
+Rootkit
+Das kleine Kompositum führt die Worte "Wurzel" und "Bausatz" zusammen: "Root" ist bei Unix-Systemen der Benutzer mit den Administratorenrechten, der auch in die Tiefen des Systems eingreifen darf. Ein "Kit" ist eine Zusammenstellung von Werkzeugen. Ein Rootkit ist folglich ein Satz von Programmen, die mit vollem Zugriff auf das System eines Computers ausgestattet sind. Das ermöglicht dem Rootkit weitgehende Manipulationen, ohne dass diese beispielsweise von Virenscannern noch wahrgenommen werden können. Entweder das Rootkit enthält Software, die beispielsweise Sicherheitsscanner deaktiviert, oder es baut eine sogenannte Shell auf, die als eine Art Mini-Betriebssystem im Betriebssystem alle verdächtigen Vorgänge vor dem Rechner verbirgt. Das Gros der im Umlauf befindlichen Rootkits wird genutzt, um Trojaner , Viren und andere zusätzliche Schadsoftware über das Internet nachzuladen. Rootkits gehören zu den am schwersten aufspürbaren Kompromittierungen eines Rechners.
+Wurm
+Computerwürmer sind in der Praxis die getunte, tiefergelegte Variante der Viren und Trojaner. Im strengen Sinn wird mit dem Begriff nur ein Programm beschrieben, das für seine eigene Verbreitung sorgt - und der Programme, die es transportiert. Würmer enthalten als Kern ein Schadprogramm , das beispielsweise durch Initiierung eines eigenen E-Mail-Programms für die Weiterverbreitung von einem befallenen Rechner aus sorgt. Ihr Hauptverbreitungsweg sind folglich die kommunikativen Wege des Webs: E-Mails, Chats, AIMs , P2P-Börsen und andere. In der Praxis werden sie oft als Vehikel für die Verbreitung verschiedener anderer Schadprogramme genutzt.
+Drive-by
+Unter einem Drive-by versteht man die Beeinflussung eines Rechners oder sogar die Infizierung des PC durch den bloßen Besuch einer verseuchten Web-Seite. Die Methode liegt seit einigen Jahren sehr im Trend: Unter Ausnutzung aktueller Sicherheitslücken in Browsern und unter Einsatz von Scripten nimmt ein auf einer Web-Seite hinterlegter Schadcode Einfluss auf einen Rechner. So werden zum Beispiel Viren verbreitet, Schnüffelprogramme installiert, Browseranfragen zu Web-Seiten umgelenkt, die dafür bezahlen und anderes. Drive-bys sind besonders perfide, weil sie vom PC-Nutzer keine Aktivität (wie das Öffnen einer E-Mail) verlangen, sondern nur Unvorsichtigkeit. Opfer sind zumeist Nutzer, die ihre Software nicht durch regelmäßige Updates aktuell halten - also potentiell so gut wie jeder.
+Botnetz
+Botnets sind Netzwerke gekidnappter Rechner - den Bots. Mit Hilfe von Trojaner-Programmen, die sie beispielsweise durch manipulierte Web-Seiten oder fingierte E-Mails auf die Rechner einschleusen, erlangen die Botnet-Betreiber Zugriff auf die fremden PC und können sie via Web steuern. Solche Botnets zu vermieten, kann ein einträgliches Geschäft sein. Die Zombiearmeen werden unter anderem genutzt, um millionenfache Spam-Mails zu versenden, durch eine Vielzahl gleichzeitiger Anfragen Web-Seiten in die Knie zu zwingen oder in großem Stile Passwörter abzugrasen. (mehr bei SPIEGEL ONLINE )
+Fakeware, Ransomware
+Das Wort setzt sich aus "Fake", also "Fälschung", und "Ware", der Kurzform für Software zusammen: Es geht also um "falsche Software" . Gemeint sind Programme, die vorgeben, eine bestimmte Leistung zu erbringen, in Wahrheit aber etwas ganz anderes tun. Häufigste Form: angebliche IT-Sicherheitsprogramme oder Virenscanner. In ihrer harmlosesten Variante sind sie nutzlos, aber nervig: Sie warnen ständig vor irgendwelchen nicht existenten Viren und versuchen, den PC-Nutzer zu einem Kauf zu bewegen. Als Adware-Programme belästigen sie den Nutzer mit Werbung.
+Die perfideste Form aber ist Ransomware : Sie kidnappt den Rechner regelrecht, macht ihn zur Geisel. Sie behindert oder verhindert das normale Arbeiten, lädt Viren aus dem Netz und stellt Forderungen auf eine "Reinigungsgebühr" oder Freigabegebühr, die nichts anderes ist als ein Lösegeld: Erst, wenn man zahlt, kann man mit dem Rechner wieder arbeiten. War 2006/2007 häufig, ist seitdem aber zurückgegangen.
+Zero-Day-Exploits
+Ein Zero-Day-Exploit nutzt eine Software-Sicherheitslücke bereits an dem Tag aus, an dem das Risiko überhaupt bemerkt wird. Normalerweise liefern sich Hersteller von Schutzsoftware und die Autoren von Schadprogrammen ein Kopf-an-Kopf-Rennen beim Stopfen, Abdichten und Ausnutzen bekanntgewordener Lücken.
+Risiko Nummer eins: Nutzer
+Das größte Sicherheitsrisiko in der Welt der Computer sitzt vor dem Rechner. Nicht nur mangelnde Disziplin bei nötigen Software-Updates machen den Nutzer gefährlich: Er hat auch eine große Vorliebe für kostenlose Musik aus obskuren Quellen, lustige Datei-Anhänge in E-Mails und eine große Kommunikationsfreude im ach so informellen Plauderraum des Webs. Die meisten Schäden in der IT dürften von Nutzer-Fingern auf Maustasten verursacht werden.
+DDoS-Attacken
+Sogenannte distribuierte Denial-of-Service-Attacken (DDoS) sind Angriffe, bei denen einzelne Server oder Netzwerke mit einer Flut von Anfragen anderer Rechner so lange überlastet werden, bis sie nicht mehr erreichbar sind. Üblicherweise werden für solche verteilten Attacken heutzutage sogenannte Botnetze verwendet, zusammengeschaltete Rechner, oft Tausende oder gar Zehntausende, die von einem Hacker oder einer Organisation ferngesteuert werden.
+Mehr auf SPIEGEL ONLINE
+</ExtractedText>
+</item>
+</channel>
+</rss>

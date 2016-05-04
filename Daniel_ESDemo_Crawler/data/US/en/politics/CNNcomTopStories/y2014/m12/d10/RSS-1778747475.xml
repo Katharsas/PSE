@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 10:09:24 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>India Uber case</title>
+<guid>http://edition.cnn.com/2014/12/10/world/asia/india-uber-rape-case/index.html</guid>
+<link>http://edition.cnn.com/2014/12/10/world/asia/india-uber-rape-case/index.html?eref=edition</link>
+<description>The Indian Uber driver accused of raping a passenger in New Delhi is awaiting trial in at least four criminal cases in his home state, a police official said Wednesday.</description>
+<pubDate>Wed, 10 Dec 2014 03:33:28 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141208133457-india-uber-rape-suspect-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141208133457-india-uber-rape-suspect-top-tease.jpg" width="90"/>
+<ExtractedText>Part of complete coverage on
+India
+Cities of the future -- in India?
+July 18, 2014 -- Updated 0621 GMT (1421 HKT)
+In an ambitious plan to upgrade urban India, Prime Minister Narendra Modi says he will build 100 "smart cities" across the country.
+New life for Indian boy tied to bus stop
+July 17, 2014 -- Updated 1139 GMT (1939 HKT)
+A few weeks ago, a young boy tied to a Mumbai bus stop barely received a glance from passersby. Now, he has a home, thanks to a local NGO.
+Rape order brings scrutiny on councils
+July 15, 2014 -- Updated 1202 GMT (2002 HKT)
+When a 14-year-old girl was pulled from her home and raped, police revealed the assault was ordered by the head of her village council.
+Has Modi given India its mojo back?
+July 10, 2014 -- Updated 2249 GMT (0649 HKT)
+If you believe the mood here, India is going to be the next China, the new frontier of global growth.
+India's construction time bomb
+July 8, 2014 -- Updated 0758 GMT (1558 HKT)
+Decrepit constructions that don't conform to safety codes are a big problem in cities and towns across India.
+Crying elephant raises awareness
+July 11, 2014 -- Updated 1727 GMT (0127 HKT)
+When Raju the elephant was rescued after being shackled and abused for five decades, the story and picture of him "crying" went viral.
+Can 'water ATMs' quench thirst?
+July 3, 2014 -- Updated 1609 GMT (0009 HKT)
+The tall cylindrical concrete structures hold solar powered machines that look and function like an ATM. Instead of cash, they dispense water.
+World Cup fever hits India
+July 8, 2014 -- Updated 0027 GMT (0827 HKT)
+Despite not having a national team in the tournament, many Indians have caught World Cup fever. Mallika Kapur reports.
+June 23, 2014 -- Updated 1433 GMT (2233 HKT)
+An Indian grandmother tells CNN's Mallika Kapur why she tied her grandson to a bus stop.
+June 19, 2014 -- Updated 0212 GMT (1012 HKT)
+India has a rape crisis -- but it will take a broad effort to change it.
+June 17, 2014 -- Updated 0004 GMT (0804 HKT)
+Could certain spices help you live longer? CNN's Dr. Sanjay Gupta reports from Delhi, India.
+Fighting 'boys will be boys' in India
+June 10, 2014 -- Updated 1925 GMT (0325 HKT)
+CNN's Mallika Kapur takes a look at the push for change in India after another brutal rape has shocked the nation.
+May 27, 2014 -- Updated 1324 GMT (2124 HKT)
+Is there a historic opportunity for peace and understanding between the two nations?
+May 20, 2014 -- Updated 0310 GMT (1110 HKT)
+What will Narendra Modi's India look like? Likely less inclusive and less secular, say analysts.
+Sizing up Modi's foreign policy
+May 27, 2014 -- Updated 0250 GMT (1050 HKT)
+India's new leader is considered a wildcard. Will he be aggressive, or a dove? What is his foreign policy? Does he have a vision?
+Modi's energy policy crucial
+May 26, 2014 -- Updated 0400 GMT (1200 HKT)
+For incoming Prime Minister Narendra Modi, securing India's energy needs over the next decade ranks among his greatest challenges.
+May 16, 2014 -- Updated 0738 GMT (1538 HKT)
+Narenda Modi's track record leaves some worried about the future, writes Sunny Hundal.
+</ExtractedText>
+</item>
+</channel>
+</rss>

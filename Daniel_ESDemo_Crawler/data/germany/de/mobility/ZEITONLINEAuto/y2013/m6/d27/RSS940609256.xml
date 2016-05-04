@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Auto</title>
+<description>Alles zum Thema Auto: Nachrichten, Neuheiten, Testberichte, Reportagen und Autobilder. Informationen zu Probefahrten, Fahrberichte, Autotest, Ratgeber und Geschichten aus der KFZ-Branche.
+</description>
+<pubDate>Sat, 29 Jun 2013 11:33:08 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:54:56 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/auto/index</link>
+<atom:link href="http://newsfeed.zeit.de/auto/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Auto</title>
+      <link>http://www.zeit.de/auto/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/auto/2013-06/co2-grenzwert-autoindustrie-lobby</link>
+      <guid>http://www.zeit.de/auto/2013-06/co2-grenzwert-autoindustrie-lobby</guid>
+      <category>Auto</category>
+      <title>Klimaschutz: Die Autokanzlerin</title>
+      <description>Berlin blockiert auf EU-Ebene strengere CO2-Grenzen für Autos. Dass sich Merkel zum Handlanger der Industrie macht, schadet Verbrauchern, kommentiert Matthias Breitinger.</description>
+      <dc:creator>ZEIT ONLINE : Auto - Matthias Breitinger</dc:creator>
+      <pubDate>Thu, 27 Jun 2013 11:04:13 GMT</pubDate>
+    <ExtractedText>Klimaschutz: Merkel ist der Autolobby zu Diensten
+Klimaschutz: Merkel ist der Autolobby zu Diensten
+Berlin blockiert auf EU-Ebene strengere CO2-Grenzen für Autos. Dass sich Merkel zum Handlanger der Industrie macht, schadet Verbrauchern, kommentiert Matthias Breitinger. von  Matthias Breitinger
+27. Juni 2013  13:57 Uhr  132 Kommentare
+Die Bundesregierung gilt als die ausführende Gewalt im Staate. Wenn es um strengere CO2-Grenzwerte in Europa geht, führt die Regierung allerdings offenkundig vor allem aus, was ihr die deutsche Autoindustrie vorgibt. Die klagt seit Monaten, die für 2020 vorgesehenen Obergrenzen seien zu niedrig, außerdem müssten emissionsarme Neuwagen stärker als geplant in die Berechnungen eingehen.
+Die jammernde Autoindustrie ist nicht irgendwer, sie steht der Kanzlerin nah – allen voran Merkels CDU-Parteifreund Matthias Wissmann , einst Bundesverkehrsminister unter Kanzler Helmut Kohl und heute Präsident des deutschen Automobilverbandes VDA. Wissmann schrieb schon am 8. Mai an die "liebe Angela", sie möge sich "für Verbesserungen einsetzen": "Es kommt nun entscheidend auf den Ministerrat und damit auf die Position der Bundesregierung an."
+Anzeige
+Genau dort, im Ministerrat, sollte am heutigen Donnerstag endgültig abgesegnet werden, worauf sich schon in der Nacht zum Dienstag Vertreter der EU-Staaten, des Europaparlaments und der EU-Kommission geeinigt hatten : einen CO2-Ausstoß von im Schnitt maximal 95 Gramm je Kilometer im Jahr 2020. Laut Diplomaten in Brüssel übte nun die Bundesregierung auf die irische EU-Ratspräsidentschaft Druck aus, die Abstimmung von der Tagesordnung zu streichen. Offenbar mit Erfolg. Zwar stehen die Klimavorgaben weiterhin auf der Agenda, allerdings nur noch zur Beratung. EU-Diplomaten erwarten keine Abstimmung mehr.
+Knackpunkt sind die Supercredits
+Die deutsche Autoindustrie ärgert an dem ausgehandelten Kompromiss, dass sie bei der Berechnung des CO2-Ausstoßes ihrer Flotte besonders emissionsarme Autos nicht schon ab 2016 mehrfach zählen darf. Die Mehrfachanrechnung höhlt den Grenzwert aus, denn de facto blasen die verkauften Neuwagen mehr CO2 in die Luft, als sie dürften. Auf dem Papier hat der Hersteller den Grenzwert aber eingehalten, weil in die Rechnung Elektroautos einfließen, die gar nicht verkauft wurden.
+Für diese sogenannten "Supercredits" hatte sich in Brüssel auch die Bundesregierung eingesetzt. Zwar wurden Supercredits ab 2020 vereinbart. Zunächst zählt jedes verkaufte Elektroauto doppelt, ab 2023 ist das aber nicht mehr zulässig. Die deutsche Autobranche wollte die Elektroautos am liebsten mehr als dreifach anrechnen und schon vor 2020.
+Umweltschützer kritisieren die Supercredits als Verschmutzungsrechte. Angela Merkel dagegen sagte beim Elektromobilitätsgipfel kürzlich in Berlin: "Supercredits kommt eine Super-Bedeutung zu" – ganz im Sinne des VDA. 
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

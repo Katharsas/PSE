@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Reisen</title>
+<description>Erholsame Reisen - Online Reiseberichte, Bildergalerien von Reisen und Urlaubstipps von Experten für die gute Reise in den Urlaub. Nachrichten und Informationen</description>
+<pubDate>Wed, 10 Dec 2014 15:25:32 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:00:13 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/reisen/index</link>
+<atom:link href="http://newsfeed.zeit.de/reisen/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Reisen</title>
+      <link>http://www.zeit.de/reisen/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/wirtschaft/unternehmen/2014-12/bahn-investition</link>
+      <guid>http://www.zeit.de/wirtschaft/unternehmen/2014-12/bahn-investition</guid>
+      <category>Wirtschaft</category>
+      <title>Rüdiger Grube: Bahn verspricht kostenloses WLAN</title>
+      <description>&lt;a href="http://www.zeit.de/wirtschaft/unternehmen/2014-12/bahn-investition"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/wirtschaft/2014-12/bahn-internet/bahn-internet-148x84.jpg"/&gt;&lt;/a&gt; Die Bahn will mehrere Millionen Euro investieren, auch um die Pünktlichkeit zu verbessern. Und die WLAN-Verbindung soll ab 2016 kostenlos sein und zuverlässig.</description>
+      <dc:creator>ZEIT ONLINE : Wirtschaft</dc:creator>
+      <pubDate>Wed, 03 Dec 2014 02:00:45 GMT</pubDate>
+    <ExtractedText>Wie kommen Sie auf die Preise?
+Meine BC 25 2. Kl kostet 60€ / Jahr.
+Die Fahrten die ich mache, kosten ohne BC im Normalpreis ~110€.
+-25 % mit der BC = 27,50€ gespart pro Fahrt.
+Der Sparpreis (wenn man 3 Tage früher bucht), kostet ~80€.
+-25 % = 20€. (=60€ für eine Strecke von über 800 km, ausschließlich ICE Nutzung.Versuchen Sie, das mit dem Auto so günstig zu schaffen)
+D.h bereits nach der 3. Fahrt (im Sparpreis) spare ich! Ich fahre ca. 4 mal pro Jahr Hin und Zurück, also 8 mal.
+Macht eine Ersparnis von 100€ mit der "Einsteigerbahncard", und ich bin kein Vielfahrer.
+Wenn Sie beruflich pro Woche mal eine solche Strecke zurücklegen (1xHin, 1xZurück), haben Sie ihre gigantischen 510€ schon rausgefahren nach 4 Wochen rausgefahren und sparen die folgenden 11 Monate 50%.
+Wenn man sich eine BC 50% kauft und nur 1 mal im Jahr fährt, hat man natürlich ein Verlustgeschäft gemacht. Aber was kann die Bahn dafür, wenn jemand so doof ist?
+Fakt ist: Wenn man die Angebote zu nutzen weiß und nicht auf den Kopf gefallen ist, ist die Bahn preiswert. Punkt.
+3 Leserempfehlungen
+</ExtractedText>
+</item>
+</channel>
+</rss>

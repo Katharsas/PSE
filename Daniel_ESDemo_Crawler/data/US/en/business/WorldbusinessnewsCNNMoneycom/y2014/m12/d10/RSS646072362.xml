@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 11:00:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<feedburner:info uri="rss/money_news_international"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_business" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_business"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Uber's global ambitions hit roadblocks</title>
+<link>http://rss.cnn.com/~r/rss/edition_business/~3/LOzghc-ldjI/index.html</link>
+<guid isPermaLink="false">http://money.cnn.com/2014/12/09/technology/uber-ban-global-spain-india-portland/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/141209141659-uber-bumps-in-the-road-120x90.jpg" width="120"/>
+<description>In places like Spain and India, Uber is running into problems on its path to global domination.&lt;img src="//feeds.feedburner.com/~r/rss/money_news_international/~4/Op_mSCcsZ4Q" height="1" width="1" alt=""/&gt;&lt;img src="//feeds.feedburner.com/~r/rss/edition_business/~4/LOzghc-ldjI" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Tue, 09 Dec 2014 21:36:37 EST</pubDate>
+<feedburner:origLink>http://money.cnn.com/2014/12/09/technology/uber-ban-global-spain-india-portland/index.html?section=money_news_international</feedburner:origLink>
+<feedburner:origLink>http://rss.cnn.com/~r/rss/money_news_international/~3/Op_mSCcsZ4Q/index.html</feedburner:origLink>
+<ExtractedText>Uber's global ambitions hit roadblocks
+By Gregory Wallace   @gregorywallace December 9, 2014: 9:36 PM ET
+ 
+NEW YORK (CNNMoney)
+Uber is running into a few roadblocks on its path to global domination.
+On Tuesday, a Spanish judge temporarily blocked the car service there. A day earlier, authorities in the Indian capital New Delhi banned it , and the country's government urged other areas to follow suit.
+Those are just the latest in a string of bumps for Uber, which operates its online car sharing service in 60 cities across 21 countries.
+Related: Uber removes racy blog post on prostitution
+Here's are more details on the various bans and resistances that Uber faces:
+Spain: The Madrid taxi association filed a complaint that Uber was unfair to competition and not properly licensed. So the judge temporarily blocked the car service. After a formal lawsuit is filed soon, Uber will get a chance to present its case. The company called the development "sudden and unusual" and said it was "assessing its legal options."
+Thailand: Uber services have been sharply curtailed in Thailand. On Tuesday, the country's transportation director said the company's cars had not been properly registered, the drivers had improper licenses and the rates were not approved. He warned that Uber drivers would be heavily fined. Uber told CNN it has operations in Bangkok and Phuket, and it would have "continued conversations" with regulators.
+Portland, Oregon: On Friday -- Uber's launch date in Portland -- the city said it would "issue civil and criminal penalties" against drivers who do not have proper permits. Then on Monday, the city sued and asked a county judge to "order Uber to stop operating in Portland until it is in compliance with the city's safety, health and consumer protection rules." The judge hasn't ruled yet.
+California: San Francisco and Los Angeles counties sued the company on Tuesday for allegedly misleading consumers over driver hiring practices, and conducting illegal operations at airports.
+The Netherlands: An appeals court on Monday ordered Uber to stop operating there because drivers were not properly licensed, Reuters reported. The company told the news agency it would appeal.
+New Delhi: The alleged rape of a passenger by an Uber driver -- who police said did not have a proper background check -- led to authorities shutting down the service on Monday. The company has a license to transport customers from one city to another, but did not have a permit from the local government to shuttle customers from one point to another inside the city. Uber's CEO Travis Kalanick, called the rape "horrific" and a "despicable crime." He also blamed the government for not requiring a background check for drivers.
+Nevada: Just before Thanksgiving, the service was banned there after the state took Uber to court over taxicab rule violations. The vice president of the Nevada Bus and Limousine Association told the Las Vegas Review Journal that the arrival of Uber "was like we were invaded by aliens from outer space that had no regard for any of our rules." Uber said the decision meant job losses and said it would work with regulators.
+Uber is also facing regulator scrutiny in Indonesia, Singapore, Vietnam, as well as in Toronto, according to media reports.
+Despite all these bumps, the car-sharing service company has in the past managed to overcome many hurdles. Investors are betting it will be able to resolve these latest ones as well: CEO Travis Kalanick recently announced a $1.2 billion round of funding that values the company at $40 billion.
+Kalanick said the company has seen "tremendous growth" this year, but has room to grow in the "coming years."
+</ExtractedText>
+</item>
+</channel>
+</rss>

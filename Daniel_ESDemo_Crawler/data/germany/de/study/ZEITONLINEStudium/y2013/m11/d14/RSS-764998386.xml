@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Studium</title>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<pubDate>Fri, 15 Nov 2013 10:41:45 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:56:04 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/studium/index</link>
+<atom:link href="http://newsfeed.zeit.de/studium/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Studium</title>
+      <link>http://www.zeit.de/studium/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/studium/hochschule/2013-11/bewerbung-portal-hochschulstart</link>
+      <guid>http://www.zeit.de/studium/hochschule/2013-11/bewerbung-portal-hochschulstart</guid>
+      <category>Studium</category>
+      <title>Hochschulstart: Neues Uni-Bewerbungsportal versinkt im Chaos</title>
+      <description>&lt;a href="http://www.zeit.de/studium/hochschule/2013-11/bewerbung-portal-hochschulstart"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/studium/hochschule/2013-11/bewerbung-universitaet-student/bewerbung-universitaet-student-148x84.jpg"/&gt;&lt;/a&gt; Eine neue bundesweite Zulassungsplattform sollte für eine bessere Auslastung der Studienplätze sorgen. Bewerber und Universitäten spüren davon bislang wenig.</description>
+      <dc:creator>ZEIT ONLINE : Studium - Sarah Schaschek</dc:creator>
+      <pubDate>Thu, 14 Nov 2013 12:14:44 GMT</pubDate>
+    <ExtractedText>Bewerbungsportal Hochschulstart.de hat große Probleme
+Hochschulstart: Neues Uni-Bewerbungsportal versinkt im Chaos
+Eine neue bundesweite Zulassungsplattform sollte für eine bessere Auslastung der Studienplätze sorgen. Bewerber und Universitäten spüren davon bislang wenig. von Sarah Schaschek
+14. November 2013  13:13 Uhr  9 Kommentare
+Wann können Studieninteressierte endlich mit einer unkomplizierteren Unibewerbung rechnen? Noch immer ist nicht klar, wann Bewerber über die bundesweite Zulassungsplattform Hochschulstart.de flächendeckend einen Studienplatz suchen können. Bislang beteiligt sich weniger als ein Drittel der 170 Hochschulen an dem Portal. Dabei wäre es wichtig, dass möglichst viele mitmachen, denn nur so lässt sich das riesige Verwaltungsproblem in den Griff kriegen, das durch das Portal gelöst werden sollte: Häufig bewerben sich Abiturienten mehrfach, um ihre Chancen auf einen Platz zu erhöhen. Bekommen sie irgendwo eine Zusage, geben sie den restlichen Unis meist nicht Bescheid. Nachrückerplätze vergeben Unis so oft erst weit nach Semesterstart. Das "Dialogorientierte Serviceverfahren" (DOSV) von Hochschulstart sollte den Prozess beschleunigen. Doch dessen Einführung wurde wegen technischer Probleme mehrfach verschoben.
+Im Mai nahm das Portal immerhin seinen "Regelbetrieb" auf – allerdings nur für 176 von bundesweit 3.500 NC-Studiengängen. 75.000 Studieninteressierte hatten sich dort für das Wintersemester registriert. Laut der Stiftung für Hochschulzulassung, die das Portal betreibt, waren alle Studienplätze Ende August verteilt. An der Freien Universität etwa, die mit vier Studiengängen vertreten war, ist von Erleichterung dennoch wenig zu spüren. Das Verfahren funktioniere zwar technisch. Die Auslastung der Studienplätze habe sich aber nicht verbessert, heißt es. Weil im Fach Psychologie viele Plätze frei blieben, musste die FU "aus dem Stand" ein lokales Nachrückverfahren umsetzen. Mit einem Vollbetrieb rechnet die Kultusministerkonferenz inzwischen frühestens im Wintersemester 2017/18.
+Anzeige
+Wer schuld ist an den Schwierigkeiten, ist unklar. War es die staatliche Hochschul-Informations-System GmbH (HIS), die 80 Prozent der Hochschulen in Deutschland mit Campus-IT versorgt? Deren Campus-Managementsysteme versagten bei der Verknüpfung mit dem Portal. Viele machten die HIS daher für die Probleme verantwortlich. Oder war es die Firma T-Systems, die das Bewerbungsportal programmierte? Der Leiter des Rechenzentrums der Humboldt-Universität , Peter Schirmbacher, geht von einem prinzipiellen Problem aus: Die teils großen Unterschiede zwischen den Studiengängen der Unis seien schwierig in der IT abzubilden.
+Trotz 15 Millionen Euro Anschubfinanzierung kein Erfolg
+Für die His scheint das Desaster nicht ohne Folgen geblieben zu sein. Die ehemalige Bildungsministerin Annette Schavan drohte bereits mit der Privatisierung der HIS, nachdem das Bewerbungsportal trotz einer Anschubfinanzierung des Bundes von 15 Millionen Euro erfolglos blieb. Nun zieht sich der Bund aus der Uni-IT zurück. Stattdessen sollen die Hochschulen selbst die Führung übernehmen. Geplant ist eine Genossenschaft in den Händen staatlicher Hochschulen.
+Offiziell hat die Veränderung nichts mit dem DOSV zu tun. Die HIS spricht von einer Föderalismus-Anpassung. Ab 2014 wird sich der Bund nur noch am neu gegründeten "Deutschen Zentrum für Hochschul- und Wissenschaftsforschung" (DZHW) einbringen. Darin sind das ehemalige Institut für Hochschulforschung und die Abteilung für Hochschulentwicklung untergebracht, die bislang zum HIS gehörten. Auf die zukünftige Gestaltung des DOSV hat das Genossenschaftsmodell angeblich keinen Einfluss. Auch die Stiftung für Hochschulzulassung, die das Bewerberportal betreibt, erwartet keine Auswirkungen.
+Im Hintergrund heißt es jedoch, der Rückzug des Bundes sei durchaus eine Konsequenz aus den DOSV-Problemen. Die Gründung des DZHW sei eine Möglichkeit, wenigstens den Hochschulforschungsbereich der HIS zu retten. Die Zukunft staatlicher IT sei ohnehin fraglich. Schon jetzt arbeiten etliche Hochschulen mit der Campus-Software anderer Anbieter. Das Genossenschaftsmodell wird als Versuch gewertet, die existierenden HIS-Systeme am Markt zu halten.
+An den Hochschulen gibt es gemischte Reaktionen. Die Kanzlerin der TU Berlin , Ulrike Gutheil, hält es für "fraglich, wie ein solches Modell sich in der Steuerung bei der Produktentwicklung bewähren kann". Peter Schirmbacher vom HU-Rechenzentrum kann sich dagegen vorstellen, dass "die Konstruktion" funktioniert. "Wenn wir uns zusammenraufen, finden wir vielleicht sogar wirtschaftlich günstigere Lösungen." Am Bewerberportal wird die neue Unternehmensform aber vorerst nichts verbessern, denn Probleme haben damit alle Hochschulen: ob mit oder ohne HIS-System.
+</ExtractedText>
+</item>
+</channel>
+</rss>

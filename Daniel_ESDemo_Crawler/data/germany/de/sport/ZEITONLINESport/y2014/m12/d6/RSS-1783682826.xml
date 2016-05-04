@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Sport</title>
+<description>Alles rund um den Sport: Informationen, News und Reportagen zu den Themen Fußball, Formel 1, Tennis, Radsport und Handball sowie Live-Ticker zur Fußball-Bundesliga.</description>
+<pubDate>Wed, 10 Dec 2014 14:55:31 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 17:08:15 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/sport/index</link>
+<atom:link href="http://newsfeed.zeit.de/sport/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Sport</title>
+      <link>http://www.zeit.de/sport/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/sport/2014-12/bewerbung-olympia</link>
+      <guid>http://www.zeit.de/sport/2014-12/bewerbung-olympia</guid>
+      <category>Sport</category>
+      <title>Olympia: Olympischer Sportbund beschließt Bewerbung offiziell</title>
+      <description>&lt;a href="http://www.zeit.de/sport/2014-12/bewerbung-olympia"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/sport/2014-12/deutscher-olympischer-sportbund-dosb-dresden-bewerbung/deutscher-olympischer-sportbund-dosb-dresden-bewerbung-148x84.jpg"/&gt;&lt;/a&gt; Deutschland wird sich um die Ausrichtung der Olympischen Sommerspiele 2024 bewerben. Ob Berlin oder Hamburg ins Rennen gehen, wird im März beschlossen.</description>
+      <dc:creator>ZEIT ONLINE : Sport</dc:creator>
+      <pubDate>Sat, 06 Dec 2014 14:29:12 GMT</pubDate>
+    <ExtractedText>Olympia: Olympischer Sportbund beschließt Bewerbung offiziell
+Olympia: Olympischer Sportbund beschließt Bewerbung offiziell
+Deutschland wird sich um die Ausrichtung der Olympischen Sommerspiele 2024 bewerben. Ob Berlin oder Hamburg ins Rennen gehen, wird im März beschlossen.
+6. Dezember 2014           15:27 Uhr  37 Kommentare
+Der Präsident des Deutschen Olympischen Sportbundes (DOSB), Alfons Hörmann, spricht auf der Mitgliederversammlung des DOSB in Dresden.   |  © Arno Burgi/dpa
+Die Mitgliederversammlung des Deutschen Olympischen Sportbundes (DOSB) hat offiziell die deutsche Bewerbung für die Olympischen Sommerspiele 2024 beschlossen. Außerdem wurde der bisherige Präsident Alfons Hörmann in Dresden mit 100 Prozent der Stimmen im Amt bestätigt. "Sport-Deutschland will Olympische und Paralympische Spiele, Sport-Deutschland kann Olympische und Paralympische Spiele", sagte Hörmann.
+Unterstützung für die Olympia-Bewerbung erhielt der Verband von dem für Sport zuständigen Bundesinnenminister Thomas de Mazière. "Die Bundesregierung unterstützt den Weg des DOSB für eine Bewerbung mit voller Kraft. Ich halte das für total richtig", sagte er. Allerdings mahnte de Mazière, dass es nicht in erster Linie um die beiden Kandidatenstädte Berlin und Hamburg geht, von der eine am 21. März 2015 in der Frankfurter Paulskirche ausgewählt werden soll. "Es geht um eine deutsche Bewerbung. Nur dann haben wir Chancen und Erfolg."
+Anzeige
+Nach 1936 in Berlin und 1972 in München wäre Deutschland zum dritten Mal Ausrichter Olympischer Sommerspiele.  Die Stadt München war zuletzt zweimal mit einer Bewerbung für die Olympischen Winterspiele gescheitert. Bei der Kandidatur für 2018 gab das Internationale Olympische Komitee der südkoreanischen Stadt Pyeongchang den Vorzug. Der zweite Versuch für 2022 scheiterte an der Ablehnung der Bevölkerung in der Olympia-Region München.
+</ExtractedText>
+</item>
+</channel>
+</rss>

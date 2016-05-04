@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Gesellschaft</title>
+<description>Menschen in der Gesellschaft. Aktuelles zu Zeitgeschehen, Generationen, Soziales und Bildung.</description>
+<pubDate>Wed, 10 Dec 2014 14:35:55 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:57:49 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/gesellschaft/index</link>
+<atom:link href="http://newsfeed.zeit.de/gesellschaft/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Gesellschaft</title>
+      <link>http://www.zeit.de/gesellschaft/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/gesellschaft/2014-12/nonnen-kloster-untermarchtal-fs</link>
+      <guid>http://www.zeit.de/gesellschaft/2014-12/nonnen-kloster-untermarchtal-fs</guid>
+      <category>Gesellschaft</category>
+      <title>Porträt: Halleluja!</title>
+      <description>&lt;a href="http://www.zeit.de/gesellschaft/2014-12/nonnen-kloster-untermarchtal-fs"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/gesellschaft/2014-12/nonnen-kloster-untermarchtal-teaser-4/nonnen-kloster-untermarchtal-teaser-4-148x84.jpg"/&gt;&lt;/a&gt; Stocksteif und frömmelnd, so stellte sich der Fotograf Andreas Reiner Nonnen vor. Bis er den Auftrag bekam, in einem Kloster zu fotografieren. </description>
+      <dc:creator>ZEIT ONLINE : Gesellschaft</dc:creator>
+      <pubDate>Tue, 09 Dec 2014 12:59:08 GMT</pubDate>
+    <ExtractedText>8. Das Lachen der Oberflächlichkeit
+Es gäbe sicherlich viel zu entdecken in den Gesichtern jener Frauen, die ihr Leben freiwillig der Welt entziehen, um ganz und gar Gott zu dienen. Nur leider hat es der Fotograf nicht für wert erachtet, sich dieser Lebenshaltung zu stellen. So entstanden reihenweise Heiterkeitsmomente, die aber mit individueller Persönlichkeit und einem spirituellen Hintergrund nicht so viel zu tun haben. Ja die Nonnen wirken auf mich seltsam fremd und ihrer natürlichen Würde und Aura ein wenig beraubt. Schade, machmal reicht es eben nicht aus Menschen nur zum Lachen zu bringen wie in einer Comedy, gerade wenn es doch so viel mehr zu entdecken und zu sagen gäbe.
+2 Leserempfehlungen
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/datenschutz/2014-12/eu-kommission-cdu-wollen-vorratsdatenspeicherung-zurueck</link>
+      <guid>http://www.zeit.de/digital/datenschutz/2014-12/eu-kommission-cdu-wollen-vorratsdatenspeicherung-zurueck</guid>
+      <category>Digital</category>
+      <title>Vorratsdatenspeicherung: Ein Zombie geht um in Europa</title>
+      <description>&lt;a href="http://www.zeit.de/digital/datenschutz/2014-12/eu-kommission-cdu-wollen-vorratsdatenspeicherung-zurueck"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/datenschutz/2014-12/vorratsdatenspeicherung-cdu-eu-kommission/vorratsdatenspeicherung-cdu-eu-kommission-148x84.jpg"/&gt;&lt;/a&gt; Die CDU will die Vorratsdatenspeicherung wiederhaben, die EU-Kommission auch. Gegnern der anlasslosen Massenüberwachung zeigt das: Argumente zählen weniger als Ausdauer. </description>
+      <dc:creator>ZEIT ONLINE : Digital - Patrick Beuth</dc:creator>
+      <pubDate>Wed, 10 Dec 2014 09:43:10 GMT</pubDate>
+    <ExtractedText>Vorratsdatenspeicherung: Ein Zombie geht um in Europa
+Vorratsdatenspeicherung: Ein Zombie geht um in Europa
+Die CDU will die Vorratsdatenspeicherung wiederhaben, die EU-Kommission auch. Gegnern der anlasslosen Massenüberwachung zeigt das: Argumente zählen weniger als Ausdauer. Ein Kommentar von  Patrick Beuth
+10. Dezember 2014           10:41 Uhr  52 Kommentare
+Ist es bald wieder Zeit für Demonstrationen gegen die Vorratsdatenspeicherung? (Archivbild vom Februar 2014)  |  © Britta Pedersen
+Die gute Nachricht: Die CDU will die "Vorratsdatenspeicherung light" nicht einführen. Bundesinnenminister Thomas de Maizière verzichtet offenbar auf einen Abschnitt im geplanten IT-Sicherheitsgesetz, der es Anbietern von Telekommunikationsdiensten erlaubt hätte, "zum Erkennen, Eingrenzen oder Beseitigen von Störungen oder Fehlern" die Bestands- und Verkehrsdaten ihrer Nutzer zu erheben und zu verwenden.
+Die schlechte Nachricht: Die CDU will die Vorratsdatenspeicherung wieder einführen. So steht es im Antrag D 2 des Parteivorstands , der heute beim Parteitag in Köln beschlossen werden soll. "Die Wiedereinführung von Speicherfristen für Verbindungsdaten und die effektive Möglichkeit der Überwachung auch verschlüsselter Kommunikation (Quellen-Telekommunikationsüberwachung) sind (...) essentiell", heißt es da. 
+Anzeige
+Die noch schlechtere Nachricht: Die CDU wird mit ihrem Wunsch in Brüssel auf offene Ohren stoßen. Denn die neue EU-Kommission will die Vorratsdatenspeicherung auch wiederhaben. Laut netzpolitik.org gehe es nur noch um das "wie", nicht mehr um das "ob". Angeblich schon Mitte 2015 wolle EU-Innenkommissar Dimitris Avramopoulos seinen Vorschlag für eine neue Richtlinie vorstellen.
+Man darf gespannt sein, wie der Vorschlag aussehen wird. Denn der Europäische Gerichtshof hat mit seinem Urteil vom April die bisherige EU-Richtlinie 2006/24/EG für ungültig erklärt und die Latte für eine grundrechtskonforme Ausgestaltung extrem hoch gelegt . Zwar hatte der EuGH die Datenspeicherung grundsätzlich als "nützliches Mittel für strafrechtliche Ermittlungen" anerkannt, obwohl es dafür keine belastbaren Belege gibt. 
+Patrick Beuth
+© ZEIT ONLINE
+Patrick Beuth ist Redakteur im Ressort Digital bei ZEIT ONLINE. Seine Profilseite finden Sie hier .
+Der Eingriff in die Grundrechte auf Achtung des Privatlebens und auf Schutz personenbezogener Daten müsse sich aber "auf das absolut Notwendige beschränken". Genau das aber gewährleistet die anlasslose und ausnahmslose Datenspeicherung, die alle EU-Bürger zu Verdächtigen macht, eben nicht, stellten die Richter fest. Damit erklärten sie, ohne es ganz ausdrücklich zu sagen, das Grundprinzip der Vorratsdatenspeicherung für unvereinbar mit EU-Recht.
+Im Urteil heißt es nur, der Unionsgesetzgeber habe "die Grenzen überschritten", die er "zur Wahrung der Verhältnismäßigkeit (...) einhalten musste". Wie die Kommission diese künftig wahren will, um nicht erneut 500 Millionen Verdächtige zu erfinden, ist völlig unklar. Klar ist nur: Der Zombie namens Vorratsdatenspeicherung ist noch immer nicht tot, und nur mit Argumenten ist er offenbar auch nicht totzukriegen.
+Wahrscheinlich setzen EU-Kommission und hierzulande die CDU darauf, dass den Gegnern der Vorratsdatenspeicherung nach ihrem jahrelangen Widerstand irgendwann einfach die Luft ausgeht. Und damit vor allem die Bereitschaft, erneut auf die Straße und vor die Gerichte zu ziehen.
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 09:48:37 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_technology" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_technology"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>Deciphering the conductor's code </title>
+<guid isPermaLink="false">http://www.cnn.com/2014/12/05/tech/boston-symphony-orchestra/index.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_technology/~3/jIiXjU_ZArg/index.html</link>
+<description>With a flick of his wrist, Andris Nelsons uses tiny gestures to conduct the Boston Symphony Orchestra -- the results of which are big, loud and beautiful.&lt;img src="//feeds.feedburner.com/~r/rss/edition_technology/~4/jIiXjU_ZArg" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Fri, 05 Dec 2014 07:44:09 EST</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/141205123010-andris-nelsons-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/141205123010-andris-nelsons-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://www.cnn.com/2014/12/05/tech/boston-symphony-orchestra/index.html</feedburner:origLink>
+<ExtractedText>By Earl Nurse and Phoebe Parke , for CNN
+December 5, 2014 -- Updated 1243 GMT (2043 HKT) |
+STORY HIGHLIGHTS
+Andris Nelsons is the conductor of the Boston Symphony Orchestra
+There is great power in Nelson's gestures, and this energy acts as code for the orchestra
+Nelsons needs to be in sync with the orchestra, and his hands need to work together
+Editor's note: The Art of Movement is a monthly show that highlights the most significant innovations in science and technology that are helping shape our modern world.
+(CNN) -- The slightest movement by this man's hand can change the behavior of at least 100 people. Andris Nelsons is the 35-year-old Latvian conductor of the Boston Symphony Orchestra , known for his energetic conducting style.
+"It's very mystical how you influence the process of music making with your gestures." Nelsons says.
+"You as a conductor have to somehow collect all these great personalities, the energy of these great people you're working with, and bring it together so that it all goes towards the same goal."
+There is great power in Nelson's gestures, and this energy acts as code for the orchestra. Limp hands will not do in this business, as the orchestra needs to know where the upbeats are and how to play them.
+Bringing swans to life
+Creating magic with physical theater
+Celebrated French-American cellist Yo-Yo Ma -- who began performing at just five years old -- understands the importance of the conductor's energy; "The conductor is like the lightning rod. He activates all the molecules in the air to get people to think and feel something that's really special."
+Not only does the conductor need to be in sync with the orchestra, but both his or her hands need to work together. While the right hand typically holds the baton and keeps the beat in a metronome-like fashion, the left hand displays the emotion of the piece, and tells the orchestra whether to hold a note or get louder.
+While conductors train for years to master these fundamentals, natural talent is also important.
+"There are agreed upon things that everybody knows," explains Ma. "But beyond that, the stuff that makes something really special, that's authenticity and people have say he's bringing 100% of who he is on stage."
+Every conductor has their own style and puts their own mark on the movements. But they all aim to move the crowd to their feet at the end of every performance.
+Watch the video to learn more about the art of conducting an orchestra.
+</ExtractedText>
+</item>
+</channel>
+</rss>

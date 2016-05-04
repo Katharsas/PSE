@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Sat, 16 Nov 2013 09:55:47 GMT</pubDate>
+<lastBuildDate>Sat, 16 Nov 2013 15:42:08 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2013, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>wolfgang.blau@zeit.de (Wolfgang Blau)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/datenschutz/2013-11/bnd-internet-ueberwachung-vorwurf</link>
+      <guid>http://www.zeit.de/digital/datenschutz/2013-11/bnd-internet-ueberwachung-vorwurf</guid>
+      <category>Digital</category>
+      <title>Überwachung: Erweitert der BND heimlich seine Späh-Befugnisse?</title>
+      <description>&lt;a href="http://www.zeit.de/digital/datenschutz/2013-11/bnd-internet-ueberwachung-vorwurf"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/datenschutz/2013-11/bnd-berlin/bnd-berlin-148x84.jpg"/&gt;&lt;/a&gt; Der Bundesnachrichtendienst deute Gesetze um und beeinflusse den Gesetzgeber, behaupten ARD-Journalisten. Was ist dran an den Vorwürfen?</description>
+      <dc:creator>ZEIT ONLINE : Digital - Patrick Beuth</dc:creator>
+      <pubDate>Wed, 13 Nov 2013 16:08:38 GMT</pubDate>
+    <ExtractedText>Überwachungsvorwürfe gegen den BND
+Überwachung: Erweitert der BND heimlich seine Späh-Befugnisse?
+Der Bundesnachrichtendienst deute Gesetze um und beeinflusse den Gesetzgeber, behaupten ARD-Journalisten. Was ist dran an den Vorwürfen? von  Patrick Beuth
+13. November 2013  17:07 Uhr  33 Kommentare
+Die Baustelle der künftigen BND-Zentrale in Berlin  |  © REUTERS/euroluftbild.de/Robert Grahn
+Das ARD-Magazin Fakt erhebt schwere Vorwürfe gegen den Bundesnachrichtendienst (BND). Der deutsche Auslandsnachrichtendienst soll auf Gesetzesänderungen hingewirkt und das sogenannte G-10-Gesetz zur Internetüberwachung intern so uminterpretiert haben, dass er auch die Daten von Deutschen in großem Stil durchleuchten kann.
+In der Sendung vom 12. November behaupten die Autoren Christian Bergmann und Marcus Weller: "In Frankfurt, am größten Knoten der Welt, kopiert er [der BND] enorme Datenmengen. Damit die Erhebung und Auswertung wenigstens halblegal stattfindet, ließ sich der BND 2008 vom britischen Geheimdienst helfen, das entsprechende Gesetz neu zu formulieren. Das Ergebnis: Da Daten ständig über Ländergrenzen fließen, wurde der gesamte Datenverkehr per Gesetz zu Auslandskommunikation erklärt – und die darf der BND abhören."
+Anzeige
+Überspitzt gesagt: Im Internet sind wir alle Ausländer – und dürfen als solche vom BND überwacht werden. Das Problem ist nur: Die Vorwürfe der Fakt-Reporter sind schwer nachvollziehbar. 
+Eine vertrauenswürdige Quelle habe den Reportern bestätigt, dass es beim BND Praxis ist, das sogenannte G-10-Gesetz in dieser Weise zu interpretieren, sagt Bergmann auf Nachfrage von ZEIT ONLINE. Dieses Gesetz regelt die BND-Überwachungsbefugnisse und deren Kontrolle. Einen Beleg für dessen heimliche Umdeutung gibt es aber nicht.
+Bergmann verweist des Weiteren auf die Reform des G-10-Gesetzes von 2009, mit der die Befugnisse der BND ausgeweitet wurden. Der Fakt-Bericht deckt sich an dieser Stelle mit einem Bericht des Guardian vom ersten November , in dem aus einem internen GCHQ-Papier zitiert wird: "We have been assisting the BND (along with SIS [Secret Intelligence Service] and Security Service) in making the case for reform or reinterpretation of the very restrictive interception legislation in Germany."
+Patrick Beuth
+© ZEIT ONLINE
+Patrick Beuth ist Redakteur im Ressort Digital bei ZEIT ONLINE. Seine Profilseite finden Sie hier .
+Übersetzt: "Wir haben dem BND geholfen (zusammen mit dem Secret Intelligence Service und dem Security Service), Argumente für eine Reform oder Neuinterpretation der sehr restriktiven deutschen Telekommunikationsüberwachungsgesetze zu liefern."
+Allerdings ergibt sich aus der damaligen Reform nach Ansicht von Thomas Stadler, Fachanwalt für IT-Recht , kein Ansatzpunkt, den der BND nutzen könnte, um jeglichen Internetverkehr per se als Auslandstelekommunikation zu deuten. Vielmehr werde "in Abschnitt 3, Paragraf 5 ausdrücklich zwischen Ausländern und Nicht-Ausländern unterschieden", sagt Stadler.
+Auch der Dienst selbst verweist auf Anfrage darauf, dass der BND nur in Einzelfällen auch Deutsche überwachen darf. Und jede dieser Überwachungsmaßnahmen müsse laut G-10-Gesetz von der G-10-Kommission des Bundestages genehmigt werden. 
+Übersicht zu diesem Artikel
+</ExtractedText>
+</item>
+</channel>
+</rss>

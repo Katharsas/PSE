@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2014 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 10 Dec 2014 09:49:44 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition_entertainment" rel="self" type="application/rss+xml"/>
+<feedburner:info uri="rss/edition_entertainment"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title>'Mad Men' vixen takes on a modern office</title>
+<guid isPermaLink="false">http://www.cnn.com/video/data/2.0/video/showbiz/2014/08/12/fod-christina-hendricks-modern-office.funny-or-die.html</guid>
+<link>http://rss.cnn.com/~r/rss/edition_entertainment/~3/n8CwHlCA8yc/fod-christina-hendricks-modern-office.funny-or-die.html</link>
+<description>"Mad Men" character Joan Holloway visits a more modern office. For more go to funnyordie.com.&lt;img src="//feeds.feedburner.com/~r/rss/edition_entertainment/~4/n8CwHlCA8yc" height="1" width="1" alt=""/&gt;</description>
+<pubDate>Mon, 25 Aug 2014 09:34:57 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/140813182714-fod-christina-hendricks-modern-office-00005626-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/140813182714-fod-christina-hendricks-modern-office-00005626-top-tease.jpg" width="90"/>
+<feedburner:origLink>http://www.cnn.com/video/data/2.0/video/showbiz/2014/08/12/fod-christina-hendricks-modern-office.funny-or-die.html</feedburner:origLink>
+<ExtractedText/>
+</item>
+</channel>
+</rss>

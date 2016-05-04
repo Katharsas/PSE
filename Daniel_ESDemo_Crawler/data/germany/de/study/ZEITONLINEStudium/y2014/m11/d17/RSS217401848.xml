@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Studium</title>
+<description>Studieren, Arbeiten und Leben - Aktuelle Informationen und Hintergründe zum Thema Studium und das neue Hochschulranking.</description>
+<pubDate>Wed, 10 Dec 2014 10:52:06 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:58:05 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/studium/index</link>
+<atom:link href="http://newsfeed.zeit.de/studium/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Studium</title>
+      <link>http://www.zeit.de/studium/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/studium/uni-leben/2014-11/was-studieren-animation</link>
+      <guid>http://www.zeit.de/studium/uni-leben/2014-11/was-studieren-animation</guid>
+      <category>Studium</category>
+      <title>Was studieren?: Einführung in die Animation</title>
+      <description>&lt;a href="http://www.zeit.de/studium/uni-leben/2014-11/was-studieren-animation"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/studium/uni-leben/2014-11/animation-quiz-studium/animation-quiz-studium-148x84.jpg"/&gt;&lt;/a&gt; "Animation Artists" erfinden animierte Figuren für Filme und Computerspiele. Schwirrt auch Ihnen eine Fantasiewelt durch den Kopf? Träumen Sie sich durch unser Quiz!</description>
+      <dc:creator>ZEIT ONLINE : Studium - Saskia Gerhard</dc:creator>
+      <pubDate>Mon, 17 Nov 2014 11:17:02 GMT</pubDate>
+    <ExtractedText>Was studieren?: Einführung in die Animation
+Frage 1 von 10
+Zu welchen Tätigkeiten wird ein Animationskünstler ausgebildet?
+Er entwirft Werbekonzepte, die dazu animieren, Waren zu kaufen.
+Er designt Figuren für Filme, Spiele oder Webseiten.
+Er erstellt Comicbücher.
+</ExtractedText>
+</item>
+</channel>
+</rss>

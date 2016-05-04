@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2013 Cable News Network LP, LLLP.</copyright>
+<pubDate>Sat, 16 Nov 2013 08:41:49 EST</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://rss.cnn.com/rss/edition" rel="self" type="application/rss+xml"/>
+<feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="rss/edition"/>
+<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" href="http://pubsubhubbub.appspot.com/" rel="hub"/>
+<item>
+<title> Polish street art goes large </title>
+<guid>http://edition.cnn.com/2013/11/11/travel/bigger-than-banksy-polish-street-art-goes-large/index.html</guid>
+<link>http://edition.cnn.com/2013/11/11/travel/bigger-than-banksy-polish-street-art-goes-large/index.html?eref=edition</link>
+<description>Poland has become the land of the giants.</description>
+<pubDate>Tue, 12 Nov 2013 05:49:37 EST</pubDate>
+<ExtractedText>Polish street artists 'Etam' have been transforming the sides of buildings across the country
+Their work has appeared in Poland, Russia and Germany
+Artist Natalia Rak has also painted house-size murals in Poland and the U.S.
+Editor's note: CNN's On the Road series brings you a greater insight into the customs and culture of Poland. On TV and online CNN explores the places, the people and the passions unique to this eastern European nation. Watch the episodes during the week of November 18 and the special half-hour show on November 23 &amp; 24.
+(CNN) -- Poland has become the land of the giants.
+In cities across the country artists have transformed the sides of houses and apartment blocks with enormous murals, some pieces stretching upwards of ten stories.
+The artists behind most of the colossal pieces are Przemyslaw Blejzyk and Mateusz Gapski, also known as Sainer and Bezt, and collectively as " Etam ".
+The two twenty-somethings met at art college in the central Polish city of Lodz having been into graffiti in their teens. They now work together on many of the projects.
+The duo has also worked with Natalia Rak , another young Polish artist who has produced her own larger-than-life pieces in Poland and the United States.
+Natalia Rak's 'The Legend of the Giants'
+Most of the recent projects by Rak and Etam have been commissioned by local city festivals, which have given the artists permission to paint without worry about being caught or prosecuted.
+From a tumbling jockey to a fantasy tree house, the artists employ a mix of modern styles and motifs from traditional Polish folklore.
+Each piece takes around a week to produce, says Blejzyk, and the reaction from the public is usually positive.
+"For us most the important thing is to create an illustration where people could stop in front of it and turn on their imagination for a couple of minutes," he says.
+</ExtractedText>
+</item>
+</channel>
+</rss>
