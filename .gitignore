@@ -240,6 +240,7 @@ nb-configuration.xml
 *.class
 !/ESServer/bin/
 /ESServer/data/
+/ESServer/logs/
 /RSSCrawler/archive/
 .vpprefdata/
 *.vpp~*
