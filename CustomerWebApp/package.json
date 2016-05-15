@@ -13,5 +13,9 @@
 	},
 	"unused": {
 		"typescript": "1.8.10"
+	},
+	"scripts": {
+		"gulp-ts": "gulp typescript",
+		"gulp-watch": "gulp watch"
 	}
 }
