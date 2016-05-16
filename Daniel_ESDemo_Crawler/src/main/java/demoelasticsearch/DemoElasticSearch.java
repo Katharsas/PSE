@@ -52,8 +52,8 @@ public class DemoElasticSearch {
  // private static final String pathES = "C:/Users/Daniel/Dropbox/Studium/PSE/Job/mycode/elasticsearch-2.3.1";
  // private static final String pathES = "C:/Users/Daniel/Dropbox/Studium/PSE/Job/mycode/elasticsearch-2.3.1";
   private static final String pathES = "C:/Users/Daniel/Dropbox/Studium/PSE/Job/mycode/elasticsearch-2.2.0";
-  public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
-  /// bug refac todo do elasticsearch change jar version to 2..2.0
+  public static void main_(String[] args) throws IOException, InterruptedException, ExecutionException {
+    /// bug refac todo do elasticsearch change jar version to 2..2.0
     // on startup
 
     

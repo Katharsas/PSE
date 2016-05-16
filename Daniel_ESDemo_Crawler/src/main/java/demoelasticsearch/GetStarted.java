@@ -33,7 +33,7 @@ import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
  */
 public class GetStarted {
 	private static final String pathES = "../ESServer";
-	private static final String pathArchive = "./data/_few";
+	private static final String pathArchive = "./data/US";
 
     public static void main(String[] args) throws IOException  {
     XmlParser xp = new XmlParser();
@@ -67,7 +67,7 @@ public class GetStarted {
         }
         */
         
-        String index_name = "idx_6";
+        String index_name = "idx_8";
         String index_type = "tweet";
         
         String obj_title = "title", obj_pubDate = "pubDate", obj_ExtractedText = "ExtractedText";
@@ -122,24 +122,24 @@ public class GetStarted {
         IndexResponse response = null;
         int idx_i = 100;
         
-//        for (File file : file_list) {
-//            System.out.println(file.getAbsolutePath());
-//            String s = xp.parse(file);
-//            int n = 40;
-//            String up = s.substring(0, Math.min(s.length(), n));
-//            System.out.println(up);
-//            
-//             response = client.prepareIndex(index_name, index_type, String.valueOf(idx_i) )
-//                .setSource(jsonBuilder()        
-//                    .startObject()
-//                        .field(obj_title, s )//"This is a fucking title"
-//                        .field(obj_pubDate, "2000-12-11") //yyyy-MM-dd
-//                        .field(obj_ExtractedText, "Here is some awesome text!")
-//                    .endObject())
-//                .get();
-//             
-//             idx_i++;
-//        }
+        for (File file : file_list) {
+            System.out.println(file.getAbsolutePath());
+            String s = xp.parse(file);
+            int n = 40;
+            String up = s.substring(0, Math.min(s.length(), n));
+            //bug //System.out.println(up);
+            
+             response = client.prepareIndex(index_name, index_type, String.valueOf(idx_i) )
+                .setSource(jsonBuilder()        
+                    .startObject()
+                        .field(obj_title, s )//"This is a fucking title"
+                        .field(obj_pubDate, "2000-12-11") //yyyy-MM-dd
+                        .field(obj_ExtractedText, "Here is some awesome text!")
+                    .endObject())
+                .get();
+             
+             idx_i++;
+        }
         
         
        /*
@@ -167,13 +167,13 @@ public class GetStarted {
         
         */
         
-        QueryBuilder qb = matchQuery(obj_title, "Greece");
+        //QueryBuilder qb = matchQuery(obj_title, "Greece");
         
-//        QueryBuilder qb;  
-//            qb = moreLikeThisQuery(obj_title)  
-//            .likeText("Tiger")
-//            .minTermFreq(1)
-//            .maxQueryTerms(8); 
+        QueryBuilder qb;  
+            qb = moreLikeThisQuery(obj_title)  
+            .like("is")
+            .minTermFreq(1)
+            .maxQueryTerms(8); 
 
         
         SearchResponse scrollResp = client.prepareSearch(index_name)
@@ -193,6 +193,8 @@ public class GetStarted {
                   System.out.println("hit"+hit.getSource().get(obj_title));
                   System.out.println(hit.getSource().get(obj_pubDate));
                   System.out.println(hit.getSource().get(obj_ExtractedText));
+                  System.out.println("==============================================\n\n");
+                  System.out.println(hit.getScore());
                   System.out.println("==============================================\n\n");
                 if (hit_cnt>2) {
                     break;
