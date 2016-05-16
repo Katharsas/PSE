@@ -1,0 +1,21 @@
+{
+	"comments": {
+		"fs": "file utils",
+		"path": "path utils",
+		"gulp": "build framework"
+	},
+	"devDependencies": {
+		"path": "^0.12.7",
+		"gulp": "^3.9.1",
+		"gulp-if": "^2.0.0",
+		"gulp-notify": "^2.2.0",
+		"gulp-typescript": "2.13.4" 
+	},
+	"unused": {
+		"typescript": "1.8.10"
+	},
+	"scripts": {
+		"gulp-ts": "gulp typescript",
+		"gulp-watch": "gulp watch"
+	}
+}

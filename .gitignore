@@ -247,3 +247,4 @@ nb-configuration.xml
 *.vpp.working
 *.vpp.working-journal
 *.lock
+node_modules

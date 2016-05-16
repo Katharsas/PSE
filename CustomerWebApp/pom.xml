@@ -292,7 +292,7 @@
 						</goals>
 						<phase>package</phase>
 						<configuration>
-								<path>/CWA</path>                              
+								<path>/CWA</path>
                                 <attachartifactclassifier>exec-war</attachartifactclassifier>
                                 <attachartifactclassifiertype>jar</attachartifactclassifiertype>
 						</configuration>
