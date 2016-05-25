@@ -7,7 +7,12 @@ import java.io.IOException;
 
 public class ElasticSearchReader extends ElasticSearchController {
 
-	public ElasticSearchReader(){}
+	public ElasticSearchReader(){
+		
+		//siehe Kommentar bei Writer
+		/
+		//super(esPath,  searchIndex);
+	}
 
 	/*
 	 * returns an object from the ES db
@@ -26,7 +31,7 @@ public class ElasticSearchReader extends ElasticSearchController {
 	/*
 	 * returns a list with all objects
 	 * 
-	*/
+	 */
 	public getAll(){}
 
 

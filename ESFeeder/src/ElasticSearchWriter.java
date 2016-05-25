@@ -7,7 +7,18 @@ import java.io.IOException;
 
 public class ElasticSearchWriter extends ElasticSearchController{
 
-	public ElasticSearchWriter(){}
+	private final String mainIndexName = "mainIndex";
+
+	public ElasticSearchWriter(){
+	
+	/*
+		super(pathEs, searchIndex);
+		this.setMainIndexName(mainIndexName);
+	*/
+	
+	//Indexe hier definieren? Wer soll bestimmen, wie der Index lautet?
+	
+	}
 
 	/**
 	 * creates an index in the db. Probably needs to be executed ones
@@ -57,3 +68,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 
 
 }
+
+public String getMainIndex(){}
+
+public setMainIndex(String mainIndex){}
