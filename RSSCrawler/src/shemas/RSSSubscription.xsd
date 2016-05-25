@@ -18,7 +18,7 @@
 
         <xsd:element name="pattern" minOccurs="1" maxOccurs="unbounded">
           <xsd:complexType>
-	    <xsd:attribute name="country" type="xsd:string" use="optional"/>
+	        <xsd:attribute name="country" type="xsd:string" use="optional"/>
             <xsd:attribute name="language" type="xsd:language" use="optional"/>
             <xsd:attribute name="source" type="xsd:string" use="optional"/>
             <xsd:attribute name="topic" type="xsd:string" use="optional"/>

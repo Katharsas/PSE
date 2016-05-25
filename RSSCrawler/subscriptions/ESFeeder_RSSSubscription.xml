@@ -5,7 +5,7 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.iisys.de/mmis/rssapp RSSSubscription.xsd">
 
-  <targetdir path="/topic_names_generated"/>
+  <targetdir path="./../ESFeeder/notifications/notification_"/>
   <pattern/>
 </subscription>
 
