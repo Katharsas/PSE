@@ -1,4 +1,5 @@
 package esfeeder;
+import java.nio.file.Path;
 import java.util.List;
 
 public class ESFeederRunnable implements Runnable {
@@ -14,4 +15,9 @@ public class ESFeederRunnable implements Runnable {
 		duplicateManager.manageDuplicates(newIds);
 	}
 	
+	
+	public static void main(String[] args) {
+		FileService fileService = new FileService();
+		List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
+	}
 }
