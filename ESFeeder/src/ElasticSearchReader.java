@@ -1,5 +1,12 @@
 import java.io.IOException;
 
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.node.NodeBuilder;
+import org.elasticsearch.node.Node;
+import org.elasticsearch.client.Client;
+
+import org.elasticsearch.index.IndexNotFoundException;
+
 /**
  *
  * @author akolb
@@ -7,11 +14,21 @@ import java.io.IOException;
 
 public class ElasticSearchReader extends ElasticSearchController {
 
-	public ElasticSearchReader(){
+	/**
+	 * Can only be created after the writer was started once!
+	 * Throws an exception otherwise
+	 */
+	public ElasticSearchReader() throws IndexNotFoundException{
 		
-		//siehe Kommentar bei Writer
-		/
-		//super(esPath,  searchIndex);
+		super();
+		
+		//checks if the index is in the db
+		boolean searchIndex_exists =  client.admin().indices().prepareExists(searchIndex).execute().actionGet().isExists();
+		if( !searchIndex_exists ){
+			throw new IndexNotFoundException();
+		}else{
+			//Everything is good
+		}
 	}
 
 	/*
@@ -27,10 +44,10 @@ public class ElasticSearchReader extends ElasticSearchController {
 	 * needs an integer or date object from one of the properties (fields) as range
 	 */
 	public getByQuery(){}
-	
+
 	/*
 	 * returns a list with all objects
-	 * 
+	 *
 	 */
 	public getAll(){}
 
