@@ -1,4 +1,5 @@
 import java.io.IOException;
+import java.lang.Exception;
 
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.node.NodeBuilder;
@@ -6,6 +7,7 @@ import org.elasticsearch.node.Node;
 import org.elasticsearch.client.Client;
 
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
+import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
 /**
@@ -14,12 +16,16 @@ import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
  */
 
 public class ElasticSearchWriter extends ElasticSearchController{
-	
+
 	//var is hardcoded, because it's not necessary to create writers with custom indexes
 	private final String mainIndex = "mainIndex";
-	
-	private int createIndex( String indexName ){
-	
+
+	/**
+	 * Creates an index in ES
+	 * jsonBuilder throws an IOException if an issue occurs
+	 */
+	private int createIndex(String indexName) throws IOException, Exception{
+
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		indexBuilder.addMapping(indexType, jsonBuilder()
                         .startObject()
@@ -40,57 +46,63 @@ public class ElasticSearchWriter extends ElasticSearchController{
                                     .field("type","string")
                                     .field("index", "analyzed")
                                 .endObject()
-
                             .endObject()
                         .endObject());
-                irb.execute().actionGet();
-                
-System.out.println("The index "+ indexName +" was created");
-		
-	
+                        
+        //executes and get's the response, which currently isn't used
+        CreateIndexResponse createResponse = indexBuilder.get();
+        
+        //Check if index is created
+        if (!createResponse.isAcknowledged()) {
+            throw new Exception("Failed to create index <" + indexName + ">");
+        }else{
+/*DEBUG*/System.out.println("The index "+ indexName +" was created");
+        }
+
+		return 0;
+
+
 	}
 
 	/**
 	 * Also creates indexes
-	 */ 
-	public ElasticSearchWriter(){
-		
+	 * Throws the Exceptions from createIndex, especially because the Writer is unusable if one Index is missing.
+	 */
+	public ElasticSearchWriter() throws IOException, Exception{
+
 		super();
 		
-		boolean mainIndex_exists =  client.admin().indices().prepareExists(mainIndexName).execute().actionGet().isExists();
-		boolean searchIndex_exists =  client.admin().indices().prepareExists(searchIndexName).execute().actionGet().isExists();
-		
+		// org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse.isExists()
+		boolean mainIndex_exists =  client.admin().indices().prepareExists(mainIndex).get().isExists();
+		boolean searchIndex_exists =  client.admin().indices().prepareExists(searchIndex).get().isExists();
+
 		if(!searchIndex_exists){
-			createIndex( searchIndex );
+			createIndex(searchIndex);
 		}
 		if( !mainIndex_exists ){
-			createIndex( mainIndex );
+			createIndex(mainIndex);
 		}
 	}
 
-	/**
-	 * creates an index in the db. Probably needs to be executed ones
-	 * needs the fields to be created int the db (name, type and if it's get analyzed)
-	 */
-	public initialize(){}
+	public void initialize(){}
 
 	/*
 	 * indexes an object in the ES db
 	 * needs the name and type of the created index and an ID for the object
 	 */
-	public put(){}
+	public void put(){}
 
 	/*
 	 * deletes an object from the index, but lets it stay in the db.
 	 * needs the name and type of the created index and an ID for the object
      */
-	public delete(){}
+	public void delete(){}
 
 	/*
 	 * returns an object from the ES db
 	 * needs the name and type of the created index and an ID for the object
 	 */
-	public getById(){}
+	public void getById(){}
 
 	/*
 	 * returns a list of objects from the db
@@ -98,20 +110,20 @@ System.out.println("The index "+ indexName +" was created");
 	 * needs a string from one of the analyzed properties (fields) as searchquery
 	 * needs an integer or date object from one of the properties (fields) as range
 	 */
-	public getByQuery(){}
+	public void getByQuery(){}
 
 	/*
 	 * returns a list with all objects
 	 *
-	*/
-	public getAll(){}
+	 */
+	public void getAll(){}
 
 	/**
 	 *
 	 *
-	*/
-	public getSimilair(){}
-	
+	 */
+	public void getSimilair(){}
+
 
 
 

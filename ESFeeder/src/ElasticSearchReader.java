@@ -19,13 +19,13 @@ public class ElasticSearchReader extends ElasticSearchController {
 	 * Throws an exception otherwise
 	 */
 	public ElasticSearchReader() throws IndexNotFoundException{
-		
+
 		super();
-		
+
 		//checks if the index is in the db
-		boolean searchIndex_exists =  client.admin().indices().prepareExists(searchIndex).execute().actionGet().isExists();
+		boolean searchIndex_exists =  client.admin().indices().prepareExists(searchIndex).get().isExists();
 		if( !searchIndex_exists ){
-			throw new IndexNotFoundException();
+			throw new IndexNotFoundException(searchIndex);
 		}else{
 			//Everything is good
 		}
@@ -35,7 +35,7 @@ public class ElasticSearchReader extends ElasticSearchController {
 	 * returns an object from the ES db
 	 * needs the name and type of the created index and an ID for the object
 	 */
-	public getById(){}
+	public void getById(){}
 
 	/*
 	 * returns a list of objects from the db
@@ -43,13 +43,13 @@ public class ElasticSearchReader extends ElasticSearchController {
 	 * needs a string from one of the analyzed properties (fields) as searchquery
 	 * needs an integer or date object from one of the properties (fields) as range
 	 */
-	public getByQuery(){}
+	public void getByQuery(){}
 
 	/*
 	 * returns a list with all objects
 	 *
 	 */
-	public getAll(){}
+	public void getAll(){}
 
 
 }
