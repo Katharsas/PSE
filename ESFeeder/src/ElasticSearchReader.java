@@ -6,6 +6,8 @@ import org.elasticsearch.node.Node;
 import org.elasticsearch.client.Client;
 
 import org.elasticsearch.index.IndexNotFoundException;
+import org.elasticsearch.action.get.GetResponse;
+import org.elasticsearch.action.search.SearchResponse;
 
 /**
  *
@@ -30,13 +32,26 @@ public class ElasticSearchReader extends ElasticSearchController {
 			//Everything is good
 		}
 	}
-
+	
 	/*
 	 * returns an object from the ES db
-	 * needs the name and type of the created index and an ID for the object
+	 * needs the ID of the object
+	 * is this method even needed?
 	 */
-	public void getById(){}
-
+	public void getById( Object o ){
+		
+		String id = "";
+		
+		//executes and gets the response
+		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id).get();
+		String title = (String) getResponse.getSource().get(obj_title);
+		String pubDate = (String) getResponse.getSource().get(obj_pubDate);
+		String content = (String) getResponse.getSource().get(obj_content);
+		String author = (String) getResponse.getSource().get(obj_author);
+		
+	
+	}
+	
 	/*
 	 * returns a list of objects from the db
 	 * needs the name and type of the created index

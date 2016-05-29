@@ -12,6 +12,11 @@ import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.admin.indices.flush.FlushRequest;
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.action.get.GetResponse;
+import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
+import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
+import org.elasticsearch.action.search.SearchType;
 
 /**
  *
@@ -28,29 +33,27 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * Creates an index in ES
 	 * jsonBuilder throws an IOException if an issue occurs
 	 */
-	private int createIndex(String indexName) throws IOException, Exception{
+	private void createIndex(String indexName) throws IOException, Exception{
 
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		indexBuilder.addMapping(indexType, jsonBuilder()
         		.startObject()
-                    .startObject("properties")
-                    	.startObject(obj_title)
-                    		.field("type","string")
-                            .field("index", "analyzed")
-                        .endObject()
-                        .startObject(obj_pubDate)
-                             .field("type","date")
-                             .field("index", "analyzed")
-                        .endObject()
-                        .startObject(obj_content)
-                             .field("type","string")
-                             .field("index", "analyzed")
-                        .endObject()
-                        .startObject(obj_author)
-                             .field("type","string")
-                             .field("index", "analyzed")
-                        .endObject()
-        			.endObject()
+                	.startObject(obj_title)
+                    	.field("type","string")
+                        .field("index", "analyzed")
+                    .endObject()
+                    .startObject(obj_pubDate)
+                    	.field("type","date")
+                        .field("index", "analyzed")
+                    .endObject()
+                    .startObject(obj_content)
+                    	.field("type","string")
+                        .field("index", "analyzed")
+                    .endObject()
+                    .startObject(obj_author)
+                    	.field("type","string")
+                        .field("index", "not_analyzed")
+                    .endObject()
         		.endObject()
         );
 
@@ -64,20 +67,18 @@ public class ElasticSearchWriter extends ElasticSearchController{
 /*DEBUG*/System.out.println("The index "+ indexName +" was created");
         }
 
-		return 0;
-
 
 	}
-	
+
 	/*
 	 * indexes an object in the ES db
 	 * jsonBuilder throws an IOException if an issue occurs
 	 */
 	private void put( Object o, String index ) throws IOException{
-	
+
 		//TODO: Muss aus Object rausgelesen werden
 		String id = "", title = "", pubDate = "", content = "", author = "";
-		
+
 		//get() executes and gets the response
 		IndexResponse indexResponse = client.prepareIndex(index, this.indexType, id)
             .setSource(jsonBuilder()
@@ -88,24 +89,56 @@ public class ElasticSearchWriter extends ElasticSearchController{
                     .field(obj_author, author)
                 .endObject()
             ).get();
-            
+
 /*DEBUG*/String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
             // Version (if it's the first time you index this document, you will get: 1)
             long _version = indexResponse.getVersion();
             // isCreated() is true if the document is a new one, false if it has been updated
             boolean created = indexResponse.isCreated();
             System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
-	
+
+	}
+
+	/**
+	 * is called whenever an Article should be indexed
+	 * identical article
+	 * if true -> don't add to DB
+	 */
+	private boolean articleIsAlreadyIndexed( Object o, String indexName ){
+		
+		//TODO: Muss aus Object rausgelesen werden
+		String id = "";
+		
+		//executes and gets the response
+		GetResponse getResponse = client.prepareGet(indexName, indexType, id).get();
+		return getResponse.isExists();
 	}
 	
 	/**
 	 * is called whenever an Article should be indexed
-	 * identical or similair article?
+	 * similair article
 	 * if true -> don't add to DB
 	 */
-	private boolean articleIsAlreadyIndexed( Object o ){
+	private boolean similairArticleIsAlreadyIndexed( Object o, String indexName ){
+	
+		//TODO: Muss aus Object rausgelesen werden
+		String content = "";
 		
-		return false;
+		//Only the contents are compared
+		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
+//		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
+
+		//Execute and get a response
+		SearchResponse searchResponse = client.prepareSearch(indexName)
+                .setTypes(indexType)
+                .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
+                .setQuery(queryBuilder)
+                //.setFrom(0) //0 is default
+                .setSize(1) //because one hit is enough
+                .get();
+                
+        //check the total number of hits that matches the search request
+		return searchResponse.getHits().totalHits() > 0.00;
 	}
 
 	/**
@@ -133,14 +166,17 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * passes the IOException from private put()
 	 */
 	public void put( Object o ) throws IOException{
-	
-		this.put( o, mainIndex );
 		
-		//Should be already indexed if it is worth to us
-		if(!this.articleIsAlreadyIndexed( o )){
+		//Only index unless it is already in
+		if(!this.articleIsAlreadyIndexed( o, mainIndex )){
+			this.put( o, mainIndex );
+		}
+
+		//Only index if there aren't similair articles indexed
+		if(!this.similairArticleIsAlreadyIndexed( o, searchIndex )){
 			this.put( o, searchIndex );
 		}
-		
+
 		/*
 		makes sure, that no data is in the node
 		new FlushRequest(): no parameters, so all indices are flushed
@@ -148,23 +184,23 @@ public class ElasticSearchWriter extends ElasticSearchController{
 		actionGet(): execute and return a org.elasticsearch.action.admin.indices.flush.FlushResponse which isn't used
 		*/
 		client.admin().indices().flush( new FlushRequest().force(true) ).actionGet();
-	
+
 	}
-	
+
 	/*
 	 * puts a list of articles in both indexes
 	 * passes the IOException from public put()
 	 */
 	public void putMany( List<Object> l ) throws IOException{
-	
+
 		for( Object o : l ){
 			this.put( o );
 		}
-	
+
 	}
 
 	/*
-	 * deletes an object from the index, but lets it stay in the db.
+	 * deletes an object from an index
 	 * needs the name and type of the created index and an ID for the object
 	 * obsolete?
      */
@@ -174,20 +210,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * returns an object from the ES db
 	 * needs the name and type of the created index and an ID for the object
 	 */
-	public void getById(){}
-
-	/*
-	 * returns a list of objects from the db
-	 * needs the name and type of the created index
-	 * needs a string from one of the analyzed properties (fields) as searchquery
-	 * needs an integer or date object from one of the properties (fields) as range
-	 */
-	public void getByQuery(){}
-
-	/*
-	 * returns a list with all objects
-	 *
-	 */
+	
 	public void getAll(){}
 
 	/**
