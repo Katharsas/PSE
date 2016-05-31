@@ -54,6 +54,18 @@ public class ElasticSearchWriter extends ElasticSearchController{
                     	.field("type","string")
                         .field("index", "not_analyzed")
                     .endObject()
+                    .startObject(obj_topic)
+                    	.field("type","string")
+                        .field("index", "not_analyzed")
+                    .endObject()
+                    .startObject(obj_source)
+                    	.field("type","string")
+                        .field("index", "not_analyzed")
+                    .endObject()
+                    .startObject(obj_url)
+                    	.field("type","string")
+                        .field("index", "not_analyzed")
+                    .endObject()
         		.endObject()
         );
 
@@ -74,10 +86,10 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * indexes an object in the ES db
 	 * jsonBuilder throws an IOException if an issue occurs
 	 */
-	private void put( Object o, String index ) throws IOException{
+	private void put( Article article, String index ) throws IOException{
 
-		//TODO: Muss aus Object rausgelesen werden
-		String id = "", title = "", pubDate = "", content = "", author = "";
+		//Werte aus dem Artikelobjekt rauslesen
+		String id = article.getId(), title = article.getTitle(), pubDate = article.getPubDate(), content = article.getExtractedText(), author = article.getAuthor(), topic = article.getTopic(), source = article.getSource(), url = article.getUrl();
 
 		//get() executes and gets the response
 		IndexResponse indexResponse = client.prepareIndex(index, this.indexType, id)
@@ -87,6 +99,9 @@ public class ElasticSearchWriter extends ElasticSearchController{
                     .field(obj_pubDate, pubDate)
                     .field(obj_content, content)
                     .field(obj_author, author)
+                    .field(obj_topic, topic)
+                    .field(obj_source, source)
+                    .field(obj_url, url)
                 .endObject()
             ).get();
 
@@ -105,25 +120,25 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * if true -> don't add to DB
 	 */
 	private boolean articleIsAlreadyIndexed( Object o, String indexName ){
-		
+
 		//TODO: Muss aus Object rausgelesen werden
 		String id = "";
-		
+
 		//executes and gets the response
 		GetResponse getResponse = client.prepareGet(indexName, indexType, id).get();
 		return getResponse.isExists();
 	}
-	
+
 	/**
 	 * is called whenever an Article should be indexed
 	 * similair article
 	 * if true -> don't add to DB
 	 */
 	private boolean similairArticleIsAlreadyIndexed( Object o, String indexName ){
-	
+
 		//TODO: Muss aus Object rausgelesen werden
 		String content = "";
-		
+
 		//Only the contents are compared
 		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
 //		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
@@ -136,7 +151,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
                 //.setFrom(0) //0 is default
                 .setSize(1) //because one hit is enough
                 .get();
-                
+
         //check the total number of hits that matches the search request
 		return searchResponse.getHits().totalHits() > 0.00;
 	}
@@ -166,7 +181,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * passes the IOException from private put()
 	 */
 	public void put( Object o ) throws IOException{
-		
+
 		//Only index unless it is already in
 		if(!this.articleIsAlreadyIndexed( o, mainIndex )){
 			this.put( o, mainIndex );
@@ -210,7 +225,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * returns an object from the ES db
 	 * needs the name and type of the created index and an ID for the object
 	 */
-	
+
 	public void getAll(){}
 
 	/**

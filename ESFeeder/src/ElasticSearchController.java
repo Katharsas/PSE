@@ -17,7 +17,7 @@ public abstract class ElasticSearchController{
      */
     protected static final String searchIndex = "searchIndex", indexType = "article";
     //article attributes; obj_id is not required; link/source/topic?
-    protected static final String obj_title = "title", obj_pubDate = "pubDate", obj_content = "content", obj_author = "author";
+    protected static final String obj_title = "title", obj_pubDate = "pubDate", obj_content = "content", obj_author = "author", obj_topic = "topic", obj_source = "source", obj_url = "url";
 
     /*
      * Must not be shared
@@ -39,7 +39,7 @@ public abstract class ElasticSearchController{
         Client client = node.client();
 
 	}
-	
+
 	/**
 	 * Workaround for Java not having destructors -.-
 	 * closes the connection to ES before the Object get's destroyed by GC
