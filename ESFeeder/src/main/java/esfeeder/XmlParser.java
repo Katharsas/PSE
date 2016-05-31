@@ -8,6 +8,7 @@ package XmlParser;
 /**
  *
  * @author Daniel
+ * @author akraft
  */
    
 import java.io.ByteArrayInputStream;
@@ -69,32 +70,50 @@ public class XmlParser {
          Element doc_el;
          doc_el = doc.getDocumentElement();
          
-         parse_xml(doc_el, "title");
-         parse_xml(doc_el, "language");
+         // @now - these attributes are bad, they read wrong stuff from the xml file
+         
+         //parse_xml(doc_el, "title");
+         //parse_xml(doc_el, "language");
          //parse_xml(doc_el, "description");
-         parse_xml(doc_el, "pubDate");
+         //parse_xml(doc_el, "pubDate");
          
          NodeList nList = doc.getElementsByTagName("image");
          Node image_node = nList.item(0);
          Element image_elem = (Element) image_node;
-       
-         parse_xml( image_elem, "url");
-         parse_xml( image_elem, "link");
-
          
+         // @now - thes attributes are useless, they are from some title image
+         //parse_xml( image_elem, "url");
+         //parse_xml( image_elem, "link");
+
+         // @now -  this is important, it finds the item (the article item in the xml file)
+         //         and reads this item node
          
          NodeList nList_c = doc.getElementsByTagName("item");
          Node item_node = nList_c.item(0);
          Element item_elem = (Element) item_node;
        
-         //parse_xml(doc_el, "");
+         
+         // id source and topic and author is missing TODO
+         
          parse_xml(item_elem, "title");
-         parse_xml(item_elem, "link");
+         parse_xml(item_elem, "link"); // = url
          parse_xml(item_elem, "description");
          parse_xml(item_elem, "pubDate");
-          //parse_xml(item_elem, "media:thumbnail");//guid?
-         s = parse_xml(item_elem, "ExtractedText");
           
+         parse_xml(item_elem, "ExtractedText");
+         
+         // @now
+         // TODO - these are missing
+         // id, source, topic, author 
+         // HOW TO FIND id, source, topic and author :
+         // ----------------------------------------------
+         // id - find by parsing file path
+         // source - find by parsing link
+         // topic - find by parsing
+         // author - find by parsing xml file, sometimes they have this in the xml file (didn't see this so far)
+         
+         
+         s = "return value dummy"; 
          
       } catch (Exception e) {
          e.printStackTrace();
