@@ -13,11 +13,10 @@
 		Maven commands used for building/testing/running etc.
 		#######################################################################
 		
-		- Compile, do tests and start ESFeeder:
-		mvn exec:java
-		
-		- Create and executable jar with all dependencies included:
-		mvn package
+		compile  (=> Compile)
+		test  (=> Compile & execute JUnit tests)
+		exec:java  (=> Start ESFeeder main class (configured below))
+		package  (=> Create and executable jar with all dependencies included)
 		
 	 -->
 	
