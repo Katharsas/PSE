@@ -243,6 +243,7 @@ nb-configuration.xml
 /ESServer/logs/
 /RSSCrawler/archive/
 /RSSCrawler/archive_dev/
+/ESFeeder/notifications/
 .vpprefdata/
 *.vpp~*
 *.vpp.working
