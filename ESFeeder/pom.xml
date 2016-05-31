@@ -9,6 +9,18 @@
 	<name>ESFeeder</name>
 	<url>https://github.com/Katharsas/PSE</url>
 	
+	<!-- 
+		Maven commands used for building/testing/running etc.
+		#######################################################################
+		
+		- Compile, do tests and start ESFeeder:
+		mvn exec:java
+		
+		- Create and executable jar with all dependencies included:
+		mvn package
+		
+	 -->
+	
 	<dependencies>
 		<!-- JUnit -->
 		<dependency>
@@ -27,16 +39,65 @@
 	
 	<build>
 		<plugins>
+		
+			<!-- Compile options -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.1</version>
+				<version>3.5.1</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+			
+			<!-- Options for running main methods -->
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>1.5.0</version>
+				<executions>
+					<execution>
+						<id>default-cli</id>
+						<phase>test</phase>
+						<goals>
+							<goal>java</goal>
+						</goals>
+						<configuration>
+							<mainClass>esfeeder.ESFeederRunnable</mainClass>
+							<arguments>
+								<argument>preserveNotificationFiles</argument>
+							</arguments>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<!-- Options for creating an executable jar with all dependencies included -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>attached</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<descriptorRefs>
+								<descriptorRef>jar-with-dependencies</descriptorRef>
+							</descriptorRefs>
+							<archive>
+								<manifest>
+									<mainClass>esfeeder.ESFeederRunnable</mainClass>
+								</manifest>
+							</archive>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			
 		</plugins>
 	</build>
 </project>

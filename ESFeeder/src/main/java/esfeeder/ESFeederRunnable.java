@@ -17,6 +17,7 @@ public class ESFeederRunnable implements Runnable {
 	
 	
 	public static void main(String[] args) {
+		System.out.println("Executing ESFeeder...");
 		FileService fileService = new FileService();
 		List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
 	}
