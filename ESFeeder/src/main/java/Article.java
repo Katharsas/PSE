@@ -80,7 +80,7 @@ public class Article{
 			extractedText,
 			author = "",
 			topic, //buisiness, culture
-			source, //Spiegel, CNN
+			source, //spiegel.de, cnn.com
 			url; //link to article
 			
 	//metainfos can be placed here if needed
