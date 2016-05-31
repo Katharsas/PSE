@@ -1,3 +1,5 @@
+package elasticsearch;
+
 import java.io.IOException;
 import java.lang.Exception;
 import java.util.List;
@@ -17,6 +19,9 @@ import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 import org.elasticsearch.action.search.SearchType;
+
+import esfeeder.Article;
+import esfeeder.ArticleId;
 
 /**
  *
@@ -86,10 +91,10 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * indexes an object in the ES db
 	 * jsonBuilder throws an IOException if an issue occurs
 	 */
-	private void put( Article article, String index ) throws IOException{
+	private void put(Article article, String index) throws IOException{
 
 		//Werte aus dem Artikelobjekt rauslesen
-		String id = article.getId(), title = article.getTitle(), pubDate = article.getPubDate(), content = article.getExtractedText(), author = article.getAuthor(), topic = article.getTopic(), source = article.getSource(), url = article.getUrl();
+		String id = article.getArticleId().getId(), title = article.getTitle(), pubDate = article.getPubDate(), content = article.getExtractedText(), author = article.getAuthor(), topic = article.getTopic(), source = article.getSource(), url = article.getUrl();
 
 		//get() executes and gets the response
 		IndexResponse indexResponse = client.prepareIndex(index, this.indexType, id)
@@ -119,10 +124,9 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * identical article
 	 * if true -> don't add to DB
 	 */
-	private boolean articleIsAlreadyIndexed( Object o, String indexName ){
+	private boolean articleIsAlreadyIndexed(Article article, String indexName){
 
-		//TODO: Muss aus Object rausgelesen werden
-		String id = "";
+		String id = article.getId().getId();
 
 		//executes and gets the response
 		GetResponse getResponse = client.prepareGet(indexName, indexType, id).get();
@@ -134,10 +138,9 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * similair article
 	 * if true -> don't add to DB
 	 */
-	private boolean similairArticleIsAlreadyIndexed( Object o, String indexName ){
+	private boolean similairArticleIsAlreadyIndexed( Article article, String indexName ){
 
-		//TODO: Muss aus Object rausgelesen werden
-		String content = "";
+		String id = article.getExtractedText();
 
 		//Only the contents are compared
 		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated

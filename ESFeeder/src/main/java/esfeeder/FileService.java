@@ -44,7 +44,7 @@ public class FileService {
 	 * @param deleteNotificationFiles - If true,
 	 * @return - All lines as a list of Path objects.
 	 */
-	public List<Path> getSubscribedArticles(boolean deleteNotificationFiles) {
+	private List<Path> getSubscribedArticles(boolean deleteNotificationFiles) {
 		try {
 
 			List<Path> notificationFiles = Files.walk(notificationFolder)
@@ -79,7 +79,10 @@ public class FileService {
 		}
 	};
 
-	public Map<Path, Document> getArticles(List<Path> articlePaths) {
+	public Map<Path, Document> getArticles(boolean deleteNotificationFiles) {
+
+		List<Path> articlePaths = getSubscribedArticles(deleteNotificationFiles);
+
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();

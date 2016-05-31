@@ -1,3 +1,5 @@
+package elasticsearch;
+
 import java.io.IOException;
 
 import org.elasticsearch.common.settings.Settings;
@@ -8,6 +10,9 @@ import org.elasticsearch.client.Client;
 import org.elasticsearch.index.IndexNotFoundException;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
+
+import esfeeder.Article;
+import esfeeder.ArticleId;
 
 /**
  *
@@ -38,9 +43,9 @@ public class ElasticSearchReader extends ElasticSearchController {
 	 * needs the ID of the object
 	 * is this method even needed?
 	 */
-	public void getById( Object o ){
+	public void getById( ArticleId id ){
 
-		String id = "";
+		String id = id.getId();
 
 		//executes and gets the response
 		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id).get();

@@ -1,3 +1,5 @@
+package elasticsearch;
+
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.node.NodeBuilder;
 import org.elasticsearch.node.Node;

@@ -1,12 +1,36 @@
+package esfeeder;
 
+/**
+ * @author dbeckstein
+ * @author akolb
+ */
 
 public class Article{
 
-    public String getId() {
+	private ArticleId id; //hashed article name
+	private String title,
+			pubDate, //"2000-12-11"
+			extractedText,
+			author = "",
+			topic, //buisiness, culture
+			source, //spiegel.de, cnn.com
+			url; //link to article
+
+	//metainfos can be placed here if needed
+	private String[] meta;
+
+	public Article(){
+		//empty
+    }
+
+	/*
+	 * Getter & Setter
+	 */
+    public ArticleId getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(ArticleId id) {
         this.id = id;
     }
 
@@ -73,22 +97,5 @@ public class Article{
     public void setMeta(String[] meta) {
         this.meta = meta;
     }
-
-	private String id, //hashed article name
-			title,
-			pubDate, //"2000-12-11"
-			extractedText,
-			author = "",
-			topic, //buisiness, culture
-			source, //spiegel.de, cnn.com
-			url; //link to article
-			
-	//metainfos can be placed here if needed
-	private String[] meta;
-
-	public Article(){
-    
-    }
-
 
 }
