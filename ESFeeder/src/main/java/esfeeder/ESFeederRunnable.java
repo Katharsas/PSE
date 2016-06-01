@@ -15,15 +15,20 @@ public class ESFeederRunnable implements Runnable {
 
 	@Override
 	public void run() {
-		newArticleManager = new NewArticleManager();
+		newArticleManager = NewArticleManager.getNewArticleManager();
 		List<ArticleId> newIds = newArticleManager.manageArticles();
-		duplicateManager = new DuplicateManager();
+		duplicateManager = DuplicateManager.getDuplicateManager();
 	}
 
 
 	public static void main(String[] args) {
+		startFeeding();
+	}
+	
+	private static void startFeeding(){
 		System.out.println("Executing ESFeeder...");
-    	FileService fileService = new FileService();
+    	//FileService fileService = new FileService();
+		//Bug wh no classed found??
 //      commented this to make project compile #todo refac
 //      List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
 
@@ -33,13 +38,9 @@ public class ESFeederRunnable implements Runnable {
         */
         Article a = new Article();
         XmlParser x = new XmlParser();
-        String name_sample_file = "../Daniel_ESDemo_Crawler/data/_few/RSS973602347.xml";
-        File sample_file = new File(name_sample_file);
-        String s = x.parse(sample_file);
+        //String s = x.parse(sample_file);
+        String s = x.debug();
         System.out.println(s);
         System.out.println("... finished");
-                
-		
-
 	}
 }

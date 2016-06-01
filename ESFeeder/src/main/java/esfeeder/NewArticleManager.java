@@ -10,10 +10,11 @@ import elasticsearch.ElasticSearchController;
 import elasticsearch.ElasticSearchWriter;
 
 public class NewArticleManager {
+	private static NewArticleManager newArticleManager;
 	private ElasticSearchController eswriter;
 	private FileService fileservice;
 	
-	public NewArticleManager(){
+	private NewArticleManager(){
 		try {
 			eswriter = new ElasticSearchWriter();
 		} catch (IOException e) {
@@ -27,6 +28,8 @@ public class NewArticleManager {
 	}
 	
 	public List<ArticleId> manageArticles() {
+		Map<Path, Document> articles;
+		articles = fileservice.getArticles(true);
 		throw new UnsupportedOperationException("Not yet implemented!");
 	}
 	
@@ -37,6 +40,12 @@ public class NewArticleManager {
 	
 	public void parseToJson(Map<Path, Document> xml){
 		throw new UnsupportedOperationException("Not yet implemented!");
+	}
+	
+	public static NewArticleManager getNewArticleManager(){
+		if(newArticleManager == null)
+			newArticleManager = new NewArticleManager();
+		return newArticleManager;
 	}
 	
 }
