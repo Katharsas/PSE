@@ -172,8 +172,12 @@ public class XmlParser {
             String p_us = Pattern.quote("US\\en");
             String p_end = Pattern.quote("\\");
             pattern = ".*" + p_us + "(.*)" + p_end + ".*";
-            // ------- url 
-            pattern = ".*//(.*[^\\.])\\.(.*)/.*";
+            /*
+            * parse url
+            * https:// , http:// - split on "//" sign
+            * blog.google.com/hello/devblog/info.html
+            */
+            pattern = ".*//(.*)/.*";
             System.out.println(pattern);
             //   \\.*
 
