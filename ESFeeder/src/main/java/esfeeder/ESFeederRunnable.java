@@ -23,8 +23,14 @@ public class ESFeederRunnable implements Runnable {
 
 	public static void main(String[] args) {
 		System.out.println("Executing ESFeeder...");
-//		FileService fileService = new FileService();
-//		List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
+    	FileService fileService = new FileService();
+//      commented this to make project compile #todo refac
+//      List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
+
+        /*
+        * Daniel's code
+        * Some test and debugging code to compile and test the XmlParser class
+        */
         Article a = new Article();
         XmlParser x = new XmlParser();
         String name_sample_file = "../Daniel_ESDemo_Crawler/data/_few/RSS973602347.xml";
