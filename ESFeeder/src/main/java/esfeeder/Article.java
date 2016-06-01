@@ -26,11 +26,11 @@ public class Article{
 	/*
 	 * Getter & Setter
 	 */
-    public ArticleId getId() {
+    public ArticleId getArticleId() {
         return id;
     }
 
-    public void setId(ArticleId id) {
+    public void setArticleId(ArticleId id) {
         this.id = id;
     }
 

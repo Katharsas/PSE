@@ -126,7 +126,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 */
 	private boolean articleIsAlreadyIndexed(Article article, String indexName){
 
-		String id = article.getId().getId();
+		String id = article.getArticleId().getId();
 
 		//executes and gets the response
 		GetResponse getResponse = client.prepareGet(indexName, indexType, id).get();
@@ -141,7 +141,8 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	private boolean similairArticleIsAlreadyIndexed( Article article, String indexName ){
 
 		String id = article.getExtractedText();
-
+        // @change - needed to give a dummy variable "content" to make it compile
+        String content = "this is a sample content";
 		//Only the contents are compared
 		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
 //		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
@@ -183,7 +184,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * puts an article in both indexes
 	 * passes the IOException from private put()
 	 */
-	public void put( Object o ) throws IOException{
+	public void put( Article o ) throws IOException{
 
 		//Only index unless it is already in
 		if(!this.articleIsAlreadyIndexed( o, mainIndex )){
@@ -209,9 +210,9 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * puts a list of articles in both indexes
 	 * passes the IOException from public put()
 	 */
-	public void putMany( List<Object> l ) throws IOException{
+	public void putMany( List<Article> l ) throws IOException{
 
-		for( Object o : l ){
+		for( Article o : l ){
 			this.put( o );
 		}
 

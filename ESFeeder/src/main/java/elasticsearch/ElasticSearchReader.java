@@ -45,10 +45,11 @@ public class ElasticSearchReader extends ElasticSearchController {
 	 */
 	public void getById( ArticleId id ){
 
-		String id = id.getId();
+        // renamed id, to id_str because, ArticleId id already uses variable "id"
+		String id_str = id.getId();
 
 		//executes and gets the response
-		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id).get();
+		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
 		String title = (String) getResponse.getSource().get(obj_title);
 		String pubDate = (String) getResponse.getSource().get(obj_pubDate);
 		String content = (String) getResponse.getSource().get(obj_content);

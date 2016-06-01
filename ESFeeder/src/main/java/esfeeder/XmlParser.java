@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package XmlParser;
+package esfeeder;
 
 /**
  *
@@ -98,7 +98,7 @@ public class XmlParser {
          parse_xml(item_elem, "title");
          parse_xml(item_elem, "link"); // = url
          parse_xml(item_elem, "description");
-         parse_xml(item_elem, "pubDate");
+//         s += parse_xml(item_elem, "pubDate");
           
          parse_xml(item_elem, "ExtractedText");
          
