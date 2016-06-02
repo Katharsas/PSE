@@ -30,64 +30,72 @@ public class Article{
         return id;
     }
 
-    public void setArticleId(ArticleId id) {
+    public Article setArticleId(ArticleId id) {
         this.id = id;
+        return this;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    public Article setTitle(String title) {
         this.title = title;
+        return this;
     }
 
     public String getPubDate() {
         return pubDate;
     }
 
-    public void setPubDate(String pubDate) {
+    public Article setPubDate(String pubDate) {
         this.pubDate = pubDate;
+        return this;
     }
 
     public String getExtractedText() {
         return extractedText;
     }
 
-    public void setExtractedText(String extractedText) {
+    public Article setExtractedText(String extractedText) {
         this.extractedText = extractedText;
+        return this;
     }
 
     public String getAuthor() {
         return author;
     }
 
-    public void setAuthor(String author) {
+    public Article setAuthor(String author) {
         this.author = author;
+        return this;
     }
 
     public String getTopic() {
         return topic;
     }
 
-    public void setTopic(String topic) {
+    public Article setTopic(String topic) {
         this.topic = topic;
+        return this;
     }
 
     public String getSource() {
         return source;
     }
 
-    public void setSource(String source) {
+    public Article setSource(String source) {
         this.source = source;
+        return this;
     }
 
     public String getUrl() {
         return url;
     }
 
-    public void setUrl(String url) {
+    public Article setUrl(String url) {
         this.url = url;
+        return this;
     }
 
     public String[] getMeta() {

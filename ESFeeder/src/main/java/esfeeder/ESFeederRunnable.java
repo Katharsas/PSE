@@ -1,4 +1,5 @@
 package esfeeder;
+
 import java.io.File;
 import java.nio.file.Path;
 import java.util.List;
@@ -7,7 +8,6 @@ import java.util.List;
  *
  * @author jmothes
  */
- 
 public class ESFeederRunnable implements Runnable {
 
 	private NewArticleManager newArticleManager;
@@ -20,7 +20,13 @@ public class ESFeederRunnable implements Runnable {
 		duplicateManager = DuplicateManager.getDuplicateManager();
 	}
 
-
+    @Override
+    public void run() {
+        newArticleManager = new NewArticleManager();
+        List<ArticleId> newIds = newArticleManager.manageArticles();
+        duplicateManager = new DuplicateManager();
+    }
+	
 	public static void main(String[] args) {
 		startFeeding();
 	}
@@ -29,13 +35,13 @@ public class ESFeederRunnable implements Runnable {
 		System.out.println("Executing ESFeeder...");
     	//FileService fileService = new FileService();
 		//Bug wh no classed found??
-//      commented this to make project compile #todo refac
-//      List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
+		//commented this to make project compile #todo refac
+		//List<Path> newArticlePaths = fileService.getSubscribedArticles(false);
 
         /*
         * Daniel's code
         * Some test and debugging code to compile and test the XmlParser class
-        */
+         */
         Article a = new Article();
         XmlParser x = new XmlParser();
         //String s = x.parse(sample_file);
@@ -44,3 +50,4 @@ public class ESFeederRunnable implements Runnable {
         System.out.println("... finished");
 	}
 }
+

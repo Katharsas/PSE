@@ -19,6 +19,7 @@ import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
 import esfeeder.ArticleId;
@@ -140,9 +141,8 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 */
 	private boolean similairArticleIsAlreadyIndexed( Article article, String indexName ){
 
-		String id = article.getExtractedText();
-        // @change - needed to give a dummy variable "content" to make it compile
-        String content = "this is a sample content";
+		String content = article.getExtractedText();
+
 		//Only the contents are compared
 		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
 //		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
@@ -153,11 +153,21 @@ public class ElasticSearchWriter extends ElasticSearchController{
                 .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
                 .setQuery(queryBuilder)
                 //.setFrom(0) //0 is default
-                .setSize(1) //because one hit is enough
+                //.setSize(10) //10 is default; either it returns 10 items per hitlist or 10 in total; NEEDS TO BE TESTED
                 .get();
 
-        //check the total number of hits that matches the search request
-		return searchResponse.getHits().totalHits() > 0.00;
+        for (SearchHit hit : searchResponse.getHits().hits()) {
+        		
+                  new Article().setArticleId( new ArticleId().setId(  ) )
+                  .setTitle(hit.getSource().get(obj_title))
+                  .setPubDate(hit.getSource().get(obj_pubDate))
+                  .setExtractedText(hit.getSource().get(obj_ExtractedText))
+                  .setAuthor(hit.getSource().get(obj_source))
+                  .setTopic(hit.getSource().get(obj_topic))
+                  .setUrl(hit.getSource().get(obj_url));
+                  
+                  System.out.println(hit.getScore());
+        }
 	}
 
 	/**
@@ -184,16 +194,16 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * puts an article in both indexes
 	 * passes the IOException from private put()
 	 */
-	public void put( Article o ) throws IOException{
+	public void put(Article article) throws IOException{
 
 		//Only index unless it is already in
-		if(!this.articleIsAlreadyIndexed( o, mainIndex )){
-			this.put( o, mainIndex );
+		if(!this.articleIsAlreadyIndexed(article, mainIndex)){
+			this.put(article, mainIndex);
 		}
 
 		//Only index if there aren't similair articles indexed
-		if(!this.similairArticleIsAlreadyIndexed( o, searchIndex )){
-			this.put( o, searchIndex );
+		if(!this.similairArticleIsAlreadyIndexed(article, searchIndex)){
+			this.put(article, searchIndex);
 		}
 
 		/*
@@ -210,10 +220,10 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * puts a list of articles in both indexes
 	 * passes the IOException from public put()
 	 */
-	public void putMany( List<Article> l ) throws IOException{
+	public void putMany( List<Article> list ) throws IOException{
 
-		for( Article o : l ){
-			this.put( o );
+		for( Article article : list ){
+			this.put( article );
 		}
 
 	}
@@ -224,22 +234,6 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 * obsolete?
      */
 	public void delete(){}
-
-	/*
-	 * returns an object from the ES db
-	 * needs the name and type of the created index and an ID for the object
-	 */
-
-	public void getAll(){}
-
-	/**
-	 * needed?
-	 *
-	 */
-	public void getSimilair(){}
-
-
-
 
 
 }
