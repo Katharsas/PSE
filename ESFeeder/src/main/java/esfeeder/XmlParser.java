@@ -31,9 +31,8 @@ import org.xml.sax.SAXException;
 
 public class XmlParser {
 
-    
     private static String parse_xml(Element node, String fld_name) {
-   
+
         return node
                 .getElementsByTagName(fld_name)
                 .item(0)
@@ -83,7 +82,7 @@ public class XmlParser {
             // id source and topic and author is missing TODO
             //a_title += 
             article.setTitle(
-                parse_xml(item_elem, "title")
+                    parse_xml(item_elem, "title")
             );
             s += "\n";
             s += parse_xml(item_elem, "link"); // = url
@@ -112,14 +111,14 @@ public class XmlParser {
             //String de = "(germany\\de\\)";
             // refac todo debug
             String de = "_few_de\\de\\";
-            
+
             String p_us = Pattern.quote(us);
             String p_de = Pattern.quote(de);
             String p_end = Pattern.quote("\\");
             pattern_str = ".*[" + p_us + "," + p_de + "](.*)" + p_end + ".*";
             pattern_str = ".*" + p_de + "(.*?)" + p_end + ".*";
             System.out.println(pattern_str);
-            
+
             Pattern regex_topic = Pattern.compile(pattern_str);
 
             // Now create matcher object.
@@ -133,12 +132,12 @@ public class XmlParser {
             } else {
                 System.out.println("NO MATCH");
             }
-            
+
             /*
             * parse url
             * https:// , http:// - split on "//" sign
             * blog.google.com/hello/devblog/info.html
-            */
+             */
             pattern = ".*//(.*?)/.*";
             //System.out.println(pattern);
             System.out.println("---");
@@ -175,12 +174,13 @@ public class XmlParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
         return article;
     }
-    
+
     /**
      * Generates <Article> objects from a Hashmap <Path, Document>
+     *
      * @param fileList - Hashmap of files
      */
     public void parseFileList(Map<Path, Document> fileList) {
@@ -191,61 +191,31 @@ public class XmlParser {
         // needed to avoid - object might not hae been initialized error
         doc = null;
         path = null;
-        
+
         for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
             path = entry.getKey();
             doc = entry.getValue();
-            Article article = this.parse(path,doc);
+            Article article = this.parse(path, doc);
             System.out.println(article);
         }
-        return List<Article>;
+        //return List<Article>;
     }
 
     /**
      * Debug functions
+     *
      * @author dbeckstein
      */
     public String debug() {
 
-        try {
+        FileService tmp_FileService = new FileService();
 
-            // US\en\business\CNNcomBusiness\y2011\m11\d11
-            //Path archive = Paths.get("./../RSSCrawler/archive_dev");
-            Path archive = Paths.get("../Daniel_ESDemo_Crawler/data/");
+        Map<Path, Document> fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
 
-            Map<Path, Document> fileList = new HashMap<>();
+        System.out.println(fileList.size());
 
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-
-            String name_sample_file;
-            name_sample_file = "_few/RSS973602347.xml";
-
-            name_sample_file = "US/en/business/CNNcomBusiness/y2011/m11/d11/RSS973602347_test.xml";
-            Path articlePath = Paths.get(name_sample_file);
-            Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
-
-            //fileList.put(articlePath, articleXml);
-            FileService tmp_FileService = new FileService();
-            
-            fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
-            
-            System.out.println(fileList.size());
-        
-
-            this.parseFileList(fileList);
-            return "finished debug";
-        } catch (SAXException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParserConfigurationException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return "error happened";
+        this.parseFileList(fileList);
+        return "finished debug";
     }
-
-    
-    
 
 }
