@@ -1,17 +1,11 @@
 package elasticsearch;
 
-import java.io.IOException;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.node.NodeBuilder;
-import org.elasticsearch.node.Node;
-import org.elasticsearch.client.Client;
-
-import org.elasticsearch.index.IndexNotFoundException;
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.index.IndexNotFoundException;
 import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
@@ -82,30 +76,30 @@ public class ElasticSearchReader extends ElasticSearchController {
 		List<Article> resultList = new ArrayList<Article>(); //TODO welche Art von Liste?
 		
 		//Only the contents are compared
-		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
+//		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
 //		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
 
 		//Execute and get a response
-		currentSearchResponse = client.prepareSearch(indexName)
-                .setTypes(indexType)
-                .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
-                .setQuery(queryBuilder)
-                //.setFrom(0) //0 is default
-                //.setSize(10) //10 is default; either it returns 10 items per hitlist or 10 in total; NEEDS TO BE TESTED
-                .get();
+//		currentSearchResponse = client.prepareSearch(indexName)
+//                .setTypes(indexType)
+//                .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
+//                .setQuery(queryBuilder)
+//                //.setFrom(0) //0 is default
+//                //.setSize(10) //10 is default; either it returns 10 items per hitlist or 10 in total; NEEDS TO BE TESTED
+//                .get();
 
         for (SearchHit hit : currentSearchResponse.getHits().hits()) {
         		
-                  resultList.add(
-                      new Article()
-                      .setArticleId(new ArticleId().setId(hit.getId()))
-                      .setTitle(hit.getSource().get(obj_title))
-                      .setPubDate(hit.getSource().get(obj_pubDate))
-                      .setExtractedText(hit.getSource().get(obj_ExtractedText))
-                      .setAuthor(hit.getSource().get(obj_source))
-                      .setTopic(hit.getSource().get(obj_topic))
-                      .setUrl(hit.getSource().get(obj_url))
-                  );
+//                  resultList.add(
+//                      new Article()
+//                      .setArticleId(new ArticleId().setId(hit.getId()))
+//                      .setTitle(hit.getSource().get(obj_title))
+//                      .setPubDate(hit.getSource().get(obj_pubDate))
+//                      .setExtractedText(hit.getSource().get(obj_ExtractedText))
+//                      .setAuthor(hit.getSource().get(obj_source))
+//                      .setTopic(hit.getSource().get(obj_topic))
+//                      .setUrl(hit.getSource().get(obj_url))
+//                  );
         }
         
         return resultList;

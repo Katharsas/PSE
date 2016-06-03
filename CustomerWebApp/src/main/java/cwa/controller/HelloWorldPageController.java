@@ -10,7 +10,7 @@ public class HelloWorldPageController {
 	// page mapped to: localhost:8080/CWA/hello
 	// =>
 	@RequestMapping(value = "/hello", method = RequestMethod.GET)
-	public String printHelloWorld() {
+	public String serachPage() {
 		return "myHello.html";
 	}
 }

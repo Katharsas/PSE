@@ -29,7 +29,7 @@ public class NewArticleManager {
 	
 	public List<ArticleId> manageArticles() {
 		Map<Path, Document> articles;
-		articles = fileservice.getArticles(true);
+		articles = fileservice.getSubscribedArticles(true);
 		throw new UnsupportedOperationException("Not yet implemented!");
 	}
 	

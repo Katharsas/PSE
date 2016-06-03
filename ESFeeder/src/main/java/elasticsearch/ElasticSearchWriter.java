@@ -1,28 +1,22 @@
 package elasticsearch;
 
-import java.io.IOException;
-import java.lang.Exception;
-import java.util.List;
+import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
+import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.node.NodeBuilder;
-import org.elasticsearch.node.Node;
-import org.elasticsearch.client.Client;
+import java.io.IOException;
+import java.util.List;
 
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
-import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
-import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.admin.indices.flush.FlushRequest;
-import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.get.GetResponse;
-import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
-import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
-import esfeeder.ArticleId;
 
 /**
  *
@@ -158,16 +152,17 @@ public class ElasticSearchWriter extends ElasticSearchController{
 
         for (SearchHit hit : searchResponse.getHits().hits()) {
         		
-                  new Article().setArticleId( new ArticleId().setId(  ) )
-                  .setTitle(hit.getSource().get(obj_title))
-                  .setPubDate(hit.getSource().get(obj_pubDate))
-                  .setExtractedText(hit.getSource().get(obj_ExtractedText))
-                  .setAuthor(hit.getSource().get(obj_source))
-                  .setTopic(hit.getSource().get(obj_topic))
-                  .setUrl(hit.getSource().get(obj_url));
+//                  new Article().setArticleId( new ArticleId().setId(  ) )
+//                  .setTitle(hit.getSource().get(obj_title))
+//                  .setPubDate(hit.getSource().get(obj_pubDate))
+//                  .setExtractedText(hit.getSource().get(obj_ExtractedText))
+//                  .setAuthor(hit.getSource().get(obj_source))
+//                  .setTopic(hit.getSource().get(obj_topic))
+//                  .setUrl(hit.getSource().get(obj_url));
                   
                   System.out.println(hit.getScore());
         }
+        return false;
 	}
 
 	/**

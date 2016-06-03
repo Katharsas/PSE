@@ -1,9 +1,5 @@
 package esfeeder;
 
-import java.io.File;
-import java.nio.file.Path;
-import java.util.List;
-
 /**
  *
  * @author jmothes
@@ -13,18 +9,8 @@ public class ESFeederRunnable implements Runnable {
 	private NewArticleManager newArticleManager;
 	private DuplicateManager duplicateManager;
 
-	@Override
-	public void run() {
-		newArticleManager = NewArticleManager.getNewArticleManager();
-		List<ArticleId> newIds = newArticleManager.manageArticles();
-		duplicateManager = DuplicateManager.getDuplicateManager();
-	}
-
     @Override
     public void run() {
-        newArticleManager = new NewArticleManager();
-        List<ArticleId> newIds = newArticleManager.manageArticles();
-        duplicateManager = new DuplicateManager();
     }
 	
 	public static void main(String[] args) {
