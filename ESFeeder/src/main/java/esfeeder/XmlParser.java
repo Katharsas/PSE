@@ -22,7 +22,9 @@ import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -59,10 +61,6 @@ public class XmlParser {
             Element doc_el;
             doc_el = doc.getDocumentElement();
 
-            NodeList nList = doc.getElementsByTagName("image");
-            Node image_node = nList.item(0);
-            Element image_elem = (Element) image_node;
-
             NodeList nList_c = doc.getElementsByTagName("item");
             Node item_node = nList_c.item(0);
             Element item_elem = (Element) item_node;
@@ -82,31 +80,30 @@ public class XmlParser {
             article.setExtractedText(a_extractedText);
 
             // set author
-            String a_author = "This is an empty string for author";
+            String a_author = "<This is the default string for author>";
             try {
-                a_author = parse_xml(item_elem, "author");
+                a_author = parse_xml(item_elem, "author"); // todo check xml files for author
 
             } catch (NullPointerException ex) {
-                System.out.println("NPE encountered in body");
+                // slightly suboptimal by catching NPE
+                //System.out.println("NPE encountered in body");
             }
-
-            a_author = ap.parse_author(a_author);
             article.setAuthor(a_author);
 
             // set topic
             String a_topic = path.normalize().toString();
             a_topic = ap.parse_topic(a_topic);
-            article.setAuthor(a_topic);
+            article.setTopic(a_topic);
 
             // set source
             String a_source = parse_xml(item_elem, "link");
             a_source = ap.parse_source(a_source);
-            article.setAuthor(a_source);
+            article.setSource(a_source);
 
             // set url
             String a_url = parse_xml(item_elem, "link");
             //a_url = ap.parse_url(a_url);
-            article.setAuthor(a_url);
+            article.setUrl(a_url);
 
             // @now
             // TODO - these are missing
@@ -119,6 +116,7 @@ public class XmlParser {
             // author - find by parsing xml file, sometimes they have this in the xml file (didn't see this so far)
             s += "";
 
+            // collect sets
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -133,20 +131,24 @@ public class XmlParser {
      */
     public List<Article> parseFileList(Map<Path, Document> fileList) {
         List<Article> articles = new ArrayList<Article>();
+        Set<String> topics_set = new HashSet<String>();
         Path path;
         Document doc;
         // . = null;
         // needed to avoid - object might not hae been initialized error
         doc = null;
         path = null;
+        
 
         for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
             path = entry.getKey();
             doc = entry.getValue();
             Article article = this.parse(path, doc);
-            System.out.println(article);
+            //System.out.println(article.getTopic());
             articles.add(article);
+            topics_set.add(article.getSource());
         }
+        System.out.println(topics_set);
         return articles;
     }
 
@@ -159,7 +161,8 @@ public class XmlParser {
 
         FileService tmp_FileService = new FileService();
 
-        Map<Path, Document> fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
+        //Map<Path, Document> fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
+        Map<Path, Document> fileList = tmp_FileService.getArticles_debug("germany/"); //bug
 
         System.out.println(fileList.size());
 
