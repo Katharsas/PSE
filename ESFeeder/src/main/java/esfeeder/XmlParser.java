@@ -1,15 +1,10 @@
 package esfeeder;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author Daniel
+ * @author dbeckstein
  * @author akraft
+ * @author jfranz
  */
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -17,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
-//import javax.json.*;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
@@ -39,11 +34,8 @@ public class XmlParser {
     /**
      * Daniel's Debug function
      * 
-     * @param directoryName
-     * @return 
      */   
-  
-
+     
     private static String parse_xml(Element node, String fld_name) {
         /*
        System.out.println(fld_name + " : " 
@@ -70,7 +62,8 @@ public class XmlParser {
         for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
             path = entry.getKey();
             doc = entry.getValue();
-            this.parse(path,doc);
+            Article article = this.parse(path,doc);
+            System.out.println(article);
         }
         //return path.normalize().toString();
         //return this.parse(path, doc);
@@ -118,8 +111,9 @@ public class XmlParser {
         return "error happened";
     }
 
-    public static String parse(Path path, Document doc) {
+    public static Article parse(Path path, Document doc) {
         String s = "";
+        Article article = new Article();
         try {
 
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
@@ -158,7 +152,10 @@ public class XmlParser {
             Element item_elem = (Element) item_node;
 
             // id source and topic and author is missing TODO
-            s += parse_xml(item_elem, "title");
+            //a_title += 
+            article.setTitle(
+                parse_xml(item_elem, "title")
+            );
             s += "\n";
             s += parse_xml(item_elem, "link"); // = url
             String link_str = parse_xml(item_elem, "link");
@@ -249,7 +246,8 @@ public class XmlParser {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return s;
+        
+        return article;
     }
 
 }

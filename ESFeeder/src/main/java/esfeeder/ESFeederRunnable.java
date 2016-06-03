@@ -31,7 +31,7 @@ public class ESFeederRunnable implements Runnable {
         * Daniel's code
         * Some test and debugging code to compile and test the XmlParser class
          */
-        Article a = new Article();
+        
         XmlParser x = new XmlParser();
 
         //String s = x.parse(sample_file);

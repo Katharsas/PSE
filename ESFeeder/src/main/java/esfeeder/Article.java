@@ -23,6 +23,11 @@ public class Article{
 		//empty
     }
 
+    @Override
+    public String toString(){
+        return this.title;
+    }
+    
 	/*
 	 * Getter & Setter
 	 */
