@@ -3,8 +3,12 @@ package esfeeder;
 import java.util.Objects;
 
 public class ArticleId {
-    private String id_sample = "US/en/business/CNNcomBusiness/y2011/m11/d11/RSS973602347.xml";
-    private String id = id_sample;
+
+    private final String id;
+
+    public ArticleId(String id) {
+        this.id = id;
+    }
 
     @Override
     public int hashCode() {
@@ -30,13 +34,9 @@ public class ArticleId {
         }
         return true;
     }
-    
+
     public String getId() {
         return id;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-    
 }

@@ -4,39 +4,35 @@ package esfeeder;
  * @author dbeckstein
  * @author akolb
  */
+public class Article {
 
-public class Article{
+    private final ArticleId id; //hashed article name
 
-	private ArticleId id; //hashed article name
-	private String title,
-			pubDate, //"2000-12-11"
-			extractedText,
-			author = "",
-			topic, //buisiness, culture
-			source, //spiegel.de, cnn.com
-			url; //link to article
+    private String title,
+            pubDate, //"2000-12-11"
+            extractedText,
+            author = "",
+            topic, //buisiness, culture
+            source, //spiegel.de, cnn.com
+            url; //link to article
 
-	//metainfos can be placed here if needed
-	private String[] meta;
+    //metainfos can be placed here if needed
+    private String[] meta;
 
-	public Article(){
-		//empty
+    public Article(String id) {
+        this.id = new ArticleId(id);
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.title;
     }
-    
-	/*
+
+    /*
 	 * Getter & Setter
-	 */
+     */
     public ArticleId getArticleId() {
         return id;
-    }
-
-    public void setArticleId(ArticleId id) {
-        this.id = id;
     }
 
     public String getTitle() {

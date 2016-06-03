@@ -21,12 +21,15 @@ import org.xml.sax.InputSource;
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.xml.parsers.ParserConfigurationException;
+
 import org.xml.sax.SAXException;
 
 public class XmlParser {
@@ -41,69 +44,54 @@ public class XmlParser {
 
     public static Article parse(Path path, Document doc) {
         String s = "";
-        Article article = new Article();
+
+        //Article - set id
+        String id = path.normalize().toString();
+        Article article = new Article(id);
+
         try {
 
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            /*
-         String xml_str= "<?xml version=\"1.0\"?><class><student></student></class>";
-         InputSource inputFile = new InputSource( new ByteArrayInputStream(xml_str.getBytes("utf-8") )  );
-             */
-            //File inputFile = new File("input.txt");
-            //File inputFile = new File("article.xml");
-
-            //Document doc = dBuilder.parse(inputFile);
             doc.getDocumentElement().normalize();
 
-//         System.out.println("Root element :" 
-//            + doc.getDocumentElement().getNodeName());
             Element doc_el;
             doc_el = doc.getDocumentElement();
 
-            // @now - these attributes are bad, they read wrong stuff from the xml file
-            //parse_xml(doc_el, "title");
-            //parse_xml(doc_el, "language");
-            //parse_xml(doc_el, "description");
-            //parse_xml(doc_el, "pubDate");
             NodeList nList = doc.getElementsByTagName("image");
             Node image_node = nList.item(0);
             Element image_elem = (Element) image_node;
 
-            // @now - thes attributes are useless, they are from some title image
-            //parse_xml( image_elem, "url");
-            //parse_xml( image_elem, "link");
-            // @now -  this is important, it finds the item (the article item in the xml file)
-            //         and reads this item node
             NodeList nList_c = doc.getElementsByTagName("item");
             Node item_node = nList_c.item(0);
             Element item_elem = (Element) item_node;
 
-            // id source and topic and author is missing TODO
-            //a_title += 
-            article.setTitle(
-                    parse_xml(item_elem, "title")
+            // Article - set title
+            String a_title = parse_xml(item_elem, "title");
+
+            article.setTitle(a_title);
+
+            article.setPubDate(
+                    parse_xml(item_elem, "pubDate")
             );
+            article.setExtractedText(
+                    parse_xml(item_elem, "ExtractedText")
+            );
+            article.setAuthor(
+                    ""//parse_xml(item_elem, "author")
+            );
+
             s += "\n";
             s += parse_xml(item_elem, "link"); // = url
-            String link_str = parse_xml(item_elem, "link");
             s += "\n";
-            //s += parse_xml(item_elem, "description");
-            //s += "\n";
+
             s += parse_xml(item_elem, "pubDate");
             s += "\n";
 
+            String link_str = parse_xml(item_elem, "link");
             String path_str = path.normalize().toString();
-
-            s += path_str;
 
             String line = "This order was placed for QT3000! OK?";
             String pattern;
             String pattern_str;
-            //line = path_str;
-            //String pattern = ".*htt(p).*";
-            //String pattern = "http://(\\d+)(.*).";
-            //                  https 
 
             // US\en\
             // Germany\de\
@@ -158,8 +146,6 @@ public class XmlParser {
                 System.out.println("NO MATCH");
             }
 
-            parse_xml(item_elem, "ExtractedText");
-
             // @now
             // TODO - these are missing
             // id, source, topic, author 
@@ -179,12 +165,12 @@ public class XmlParser {
     }
 
     /**
-     * Generates <Article> objects from a Hashmap <Path, Document>
+     * Generates List<Article> object from a Hashmap <Path, Document>
      *
      * @param fileList - Hashmap of files
      */
-    public void parseFileList(Map<Path, Document> fileList) {
-
+    public List<Article> parseFileList(Map<Path, Document> fileList) {
+        List<Article> articles = new ArrayList<Article>();
         Path path;
         Document doc;
         // . = null;
@@ -197,8 +183,9 @@ public class XmlParser {
             doc = entry.getValue();
             Article article = this.parse(path, doc);
             System.out.println(article);
+            articles.add(article);
         }
-        //return List<Article>;
+        return articles;
     }
 
     /**
@@ -214,7 +201,7 @@ public class XmlParser {
 
         System.out.println(fileList.size());
 
-        this.parseFileList(fileList);
+        List<Article> articles = this.parseFileList(fileList);
         return "... finished debug";
     }
 
