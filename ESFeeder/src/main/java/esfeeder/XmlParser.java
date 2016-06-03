@@ -59,7 +59,7 @@ public class XmlParser {
                 .getTextContent();
     }
 
-    public String parseFileList(Map<Path, Document> fileList) {
+    public void parseFileList(Map<Path, Document> fileList) {
         
         // real function
         Path path;
@@ -70,9 +70,10 @@ public class XmlParser {
         for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
             path = entry.getKey();
             doc = entry.getValue();
+            this.parse(path,doc);
         }
         //return path.normalize().toString();
-        return this.parse(path, doc);
+        //return this.parse(path, doc);
     }
 
     public String debug() {
@@ -100,13 +101,13 @@ public class XmlParser {
             //fileList.put(articlePath, articleXml);
             FileService tmp_FileService = new FileService();
             
-            fileList = tmp_FileService.getArticles_debug("_few/"); //bug
+            fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
             
             System.out.println(fileList.size());
         
 
-            String s = this.parseFileList(fileList);
-            return s;
+            this.parseFileList(fileList);
+            return "finished debug";
         } catch (SAXException ex) {
             Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
@@ -203,7 +204,7 @@ public class XmlParser {
             if (m.find()) {
                 System.out.println("Found value: " + m.group(0));
                 System.out.println("Found value: " + m.group(1));
-                System.out.println("Found value: " + m.group(2));
+                //System.out.println("Found value: " + m.group(2));
             } else {
                 System.out.println("NO MATCH");
             }
