@@ -30,85 +30,14 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 public class XmlParser {
+
     
-    /**
-     * Daniel's Debug function
-     * 
-     */   
-     
     private static String parse_xml(Element node, String fld_name) {
-        /*
-       System.out.println(fld_name + " : " 
-            + node
-            .getElementsByTagName(fld_name)
-            .item(0)
-            .getTextContent() 
-         );
-         */
+   
         return node
                 .getElementsByTagName(fld_name)
                 .item(0)
                 .getTextContent();
-    }
-
-    public void parseFileList(Map<Path, Document> fileList) {
-        
-        // real function
-        Path path;
-        Document doc;
-        doc = null;
-        path = null;
-        
-        for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
-            path = entry.getKey();
-            doc = entry.getValue();
-            Article article = this.parse(path,doc);
-            System.out.println(article);
-        }
-        //return path.normalize().toString();
-        //return this.parse(path, doc);
-    }
-
-    public String debug() {
-
-        try {
-            /*
-           *   debug stuff - todo delete on finish
-             */
-            // US\en\business\CNNcomBusiness\y2011\m11\d11
-            //Path archive = Paths.get("./../RSSCrawler/archive_dev");
-            Path archive = Paths.get("../Daniel_ESDemo_Crawler/data/");
-
-            Map<Path, Document> fileList = new HashMap<>();
-
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-
-            String name_sample_file;
-            name_sample_file = "_few/RSS973602347.xml";
-
-            name_sample_file = "US/en/business/CNNcomBusiness/y2011/m11/d11/RSS973602347_test.xml";
-            Path articlePath = Paths.get(name_sample_file);
-            Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
-
-            //fileList.put(articlePath, articleXml);
-            FileService tmp_FileService = new FileService();
-            
-            fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
-            
-            System.out.println(fileList.size());
-        
-
-            this.parseFileList(fileList);
-            return "finished debug";
-        } catch (SAXException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParserConfigurationException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return "error happened";
     }
 
     public static Article parse(Path path, Document doc) {
@@ -249,5 +178,74 @@ public class XmlParser {
         
         return article;
     }
+    
+    /**
+     * Generates <Article> objects from a Hashmap <Path, Document>
+     * @param fileList - Hashmap of files
+     */
+    public void parseFileList(Map<Path, Document> fileList) {
+
+        Path path;
+        Document doc;
+        // . = null;
+        // needed to avoid - object might not hae been initialized error
+        doc = null;
+        path = null;
+        
+        for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
+            path = entry.getKey();
+            doc = entry.getValue();
+            Article article = this.parse(path,doc);
+            System.out.println(article);
+        }
+        return List<Article>;
+    }
+
+    /**
+     * Debug functions
+     * @author dbeckstein
+     */
+    public String debug() {
+
+        try {
+
+            // US\en\business\CNNcomBusiness\y2011\m11\d11
+            //Path archive = Paths.get("./../RSSCrawler/archive_dev");
+            Path archive = Paths.get("../Daniel_ESDemo_Crawler/data/");
+
+            Map<Path, Document> fileList = new HashMap<>();
+
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+            String name_sample_file;
+            name_sample_file = "_few/RSS973602347.xml";
+
+            name_sample_file = "US/en/business/CNNcomBusiness/y2011/m11/d11/RSS973602347_test.xml";
+            Path articlePath = Paths.get(name_sample_file);
+            Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
+
+            //fileList.put(articlePath, articleXml);
+            FileService tmp_FileService = new FileService();
+            
+            fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
+            
+            System.out.println(fileList.size());
+        
+
+            this.parseFileList(fileList);
+            return "finished debug";
+        } catch (SAXException ex) {
+            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ParserConfigurationException ex) {
+            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return "error happened";
+    }
+
+    
+    
 
 }
