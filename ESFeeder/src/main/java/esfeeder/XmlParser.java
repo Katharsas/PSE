@@ -44,13 +44,16 @@ public class XmlParser {
 
     public static Article parse(Path path, Document doc) {
         String s = "";
+        ArticleParser ap = new ArticleParser();
 
-        //Article - set id
+        // Article - set id
         String id = path.normalize().toString();
         Article article = new Article(id);
 
+        // bug todo - check id, is path normal? this long string thingy?
         try {
 
+            // Get proper nodes from xml
             doc.getDocumentElement().normalize();
 
             Element doc_el;
@@ -64,91 +67,50 @@ public class XmlParser {
             Node item_node = nList_c.item(0);
             Element item_elem = (Element) item_node;
 
-            // Article - set title
+            // Article - set several attributes
+            // set title
             String a_title = parse_xml(item_elem, "title");
-
             article.setTitle(a_title);
 
-            article.setPubDate(
-                    parse_xml(item_elem, "pubDate")
-            );
-            article.setExtractedText(
-                    parse_xml(item_elem, "ExtractedText")
-            );
-            article.setAuthor(
-                    ""//parse_xml(item_elem, "author")
-            );
+            // set pubDate
+            String a_pubDate = parse_xml(item_elem, "pubDate");
+            a_pubDate = ap.parse_pubDate(a_pubDate);
+            article.setPubDate(a_pubDate);
 
-            s += "\n";
-            s += parse_xml(item_elem, "link"); // = url
-            s += "\n";
+            // set extractedText
+            String a_extractedText = parse_xml(item_elem, "ExtractedText");
+            article.setExtractedText(a_extractedText);
 
-            s += parse_xml(item_elem, "pubDate");
-            s += "\n";
+            // set author
+            String a_author = "This is an empty string for author";
+            try {
+                a_author = parse_xml(item_elem, "author");
 
-            String link_str = parse_xml(item_elem, "link");
-            String path_str = path.normalize().toString();
-
-            String line = "This order was placed for QT3000! OK?";
-            String pattern;
-            String pattern_str;
-
-            // US\en\
-            // Germany\de\
-            String us = "(US\\en\\)";
-            //String de = "(germany\\de\\)";
-            // refac todo debug
-            String de = "_few_de\\de\\";
-
-            String p_us = Pattern.quote(us);
-            String p_de = Pattern.quote(de);
-            String p_end = Pattern.quote("\\");
-            pattern_str = ".*[" + p_us + "," + p_de + "](.*)" + p_end + ".*";
-            pattern_str = ".*" + p_de + "(.*?)" + p_end + ".*";
-            System.out.println(pattern_str);
-
-            Pattern regex_topic = Pattern.compile(pattern_str);
-
-            // Now create matcher object.
-            line = path_str;
-            Matcher m_topic = regex_topic.matcher(line);
-            System.out.println("in line:   " + line);
-            if (m_topic.find()) {
-                //System.out.println("Found value: " + m_topic.group(0));
-                System.out.println("Found value: " + m_topic.group(1));
-                //System.out.println("Found value: " + m.group(2));
-            } else {
-                System.out.println("NO MATCH");
+            } catch (NullPointerException ex) {
+                System.out.println("NPE encountered in body");
             }
 
-            /*
-            * parse url
-            * https:// , http:// - split on "//" sign
-            * blog.google.com/hello/devblog/info.html
-             */
-            pattern = ".*//(.*?)/.*";
-            //System.out.println(pattern);
-            System.out.println("---");
-            //   \\.*
+            a_author = ap.parse_author(a_author);
+            article.setAuthor(a_author);
 
-            // Create a Pattern object
-            Pattern r = Pattern.compile(pattern);
+            // set topic
+            String a_topic = path.normalize().toString();
+            a_topic = ap.parse_topic(a_topic);
+            article.setAuthor(a_topic);
 
-            // Now create matcher object.
-            line = link_str;
-            Matcher m = r.matcher(line);
-            System.out.println("in line:   " + line);
-            if (m.find()) {
-                //System.out.println("Found value: " + m.group(0));
-                System.out.println("Found value: " + m.group(1));
-                //System.out.println("Found value: " + m.group(2));
-            } else {
-                System.out.println("NO MATCH");
-            }
+            // set source
+            String a_source = parse_xml(item_elem, "link");
+            a_source = ap.parse_source(a_source);
+            article.setAuthor(a_source);
+
+            // set url
+            String a_url = parse_xml(item_elem, "link");
+            //a_url = ap.parse_url(a_url);
+            article.setAuthor(a_url);
 
             // @now
             // TODO - these are missing
-            // id, source, topic, author 
+            // id,source, topic, author 
             // HOW TO FIND id, source, topic and author :
             // ----------------------------------------------
             // id - find by parsing file path
