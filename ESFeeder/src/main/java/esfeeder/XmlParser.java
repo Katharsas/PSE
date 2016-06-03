@@ -161,7 +161,7 @@ public class XmlParser {
             s += parse_xml(item_elem, "title");
             s += "\n";
             s += parse_xml(item_elem, "link"); // = url
-            String link = parse_xml(item_elem, "link");
+            String link_str = parse_xml(item_elem, "link");
             s += "\n";
             //s += parse_xml(item_elem, "description");
             //s += "\n";
@@ -174,35 +174,59 @@ public class XmlParser {
 
             String line = "This order was placed for QT3000! OK?";
             String pattern;
+            String pattern_str;
             //line = path_str;
-            line = link;
             //String pattern = ".*htt(p).*";
             //String pattern = "http://(\\d+)(.*).";
             //                  https 
 
             // US\en\
             // Germany\de\
-            String us = "US\\en\\";
-            String p_us = Pattern.quote("US\\en");
+            String us = "(US\\en\\)";
+            //String de = "(germany\\de\\)";
+            // refac todo debug
+            String de = "_few_de\\de\\";
+            
+            String p_us = Pattern.quote(us);
+            String p_de = Pattern.quote(de);
             String p_end = Pattern.quote("\\");
-            pattern = ".*" + p_us + "(.*)" + p_end + ".*";
+            pattern_str = ".*[" + p_us + "," + p_de + "](.*)" + p_end + ".*";
+            pattern_str = ".*" + p_de + "(.*?)" + p_end + ".*";
+            System.out.println(pattern_str);
+            
+            Pattern regex_topic = Pattern.compile(pattern_str);
+
+            // Now create matcher object.
+            line = path_str;
+            Matcher m_topic = regex_topic.matcher(line);
+            System.out.println("in line:   " + line);
+            if (m_topic.find()) {
+                //System.out.println("Found value: " + m_topic.group(0));
+                System.out.println("Found value: " + m_topic.group(1));
+                //System.out.println("Found value: " + m.group(2));
+            } else {
+                System.out.println("NO MATCH");
+            }
+            
             /*
             * parse url
             * https:// , http:// - split on "//" sign
             * blog.google.com/hello/devblog/info.html
             */
-            pattern = ".*//(.*)/.*";
-            System.out.println(pattern);
+            pattern = ".*//(.*?)/.*";
+            //System.out.println(pattern);
+            System.out.println("---");
             //   \\.*
 
             // Create a Pattern object
             Pattern r = Pattern.compile(pattern);
 
             // Now create matcher object.
+            line = link_str;
             Matcher m = r.matcher(line);
             System.out.println("in line:   " + line);
             if (m.find()) {
-                System.out.println("Found value: " + m.group(0));
+                //System.out.println("Found value: " + m.group(0));
                 System.out.println("Found value: " + m.group(1));
                 //System.out.println("Found value: " + m.group(2));
             } else {
