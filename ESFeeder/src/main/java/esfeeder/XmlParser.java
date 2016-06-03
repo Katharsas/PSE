@@ -71,7 +71,13 @@ public class XmlParser {
             article.setTitle(a_title);
 
             // set pubDate
-            String a_pubDate = parse_xml(item_elem, "pubDate");
+            String a_pubDate = "<This is default for date>";
+            try {
+                a_pubDate = parse_xml(item_elem, "pubDate"); // bug try catch here !
+            } catch (NullPointerException ex) {
+                // slightly suboptimal by catching NPE
+                //System.out.println("NPE encountered in body");
+            }
             a_pubDate = ap.parse_pubDate(a_pubDate);
             article.setPubDate(a_pubDate);
 
@@ -138,7 +144,6 @@ public class XmlParser {
         // needed to avoid - object might not hae been initialized error
         doc = null;
         path = null;
-        
 
         for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
             path = entry.getKey();
@@ -146,7 +151,7 @@ public class XmlParser {
             Article article = this.parse(path, doc);
             //System.out.println(article.getTopic());
             articles.add(article);
-            topics_set.add(article.getSource());
+            topics_set.add(article.getTopic());
         }
         System.out.println(topics_set);
         return articles;
