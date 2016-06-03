@@ -35,6 +35,14 @@ import javax.xml.parsers.ParserConfigurationException;
 import org.xml.sax.SAXException;
 
 public class XmlParser {
+    
+    /**
+     * Daniel's Debug function
+     * 
+     * @param directoryName
+     * @return 
+     */   
+  
 
     private static String parse_xml(Element node, String fld_name) {
         /*
@@ -52,14 +60,13 @@ public class XmlParser {
     }
 
     public String parseFileList(Map<Path, Document> fileList) {
-
+        
         // real function
         Path path;
         Document doc;
         doc = null;
         path = null;
-        String spath = "C:/Users/Daniel/Dropbox/Studium/API/daala/image_conv/files_conv";
-        path = Paths.get(spath);
+        
         for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
             path = entry.getKey();
             doc = entry.getValue();
@@ -90,7 +97,13 @@ public class XmlParser {
             Path articlePath = Paths.get(name_sample_file);
             Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
 
-            fileList.put(articlePath, articleXml);
+            //fileList.put(articlePath, articleXml);
+            FileService tmp_FileService = new FileService();
+            
+            fileList = tmp_FileService.getArticles_debug("_few/"); //bug
+            
+            System.out.println(fileList.size());
+        
 
             String s = this.parseFileList(fileList);
             return s;

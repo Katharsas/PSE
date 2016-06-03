@@ -1,5 +1,6 @@
 package esfeeder;
 
+import java.io.File;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.nio.charset.Charset;
@@ -7,6 +8,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -100,4 +103,78 @@ public class FileService {
 			throw new UncheckedIOException(e);
 		}
 	}
+    
+    
+    /** Daniel's debug code
+     *  
+     * Functions to extract xml files from the Crawler archive,
+     * so that xml_parser.java can be tested an some sample files
+     * 
+     * @return 
+     */
+    //private final static Path archive_devDaniel = Paths.get("../Daniel_ESDemo_Crawler/data/_few");
+    
+    private static List<File> listFiles_debug(String directoryName) {
+        File directory = new File(directoryName);
+
+        List<File> resultList = new ArrayList<File>();
+
+        // get all the files from a directory
+        File[] fList = directory.listFiles();
+        //resultList.addAll(Arrays.asList(fList));
+        for (File file : fList) {
+            if (file.isFile()) {
+                resultList.add(file);
+            } else if (file.isDirectory()) {
+                resultList.addAll(listFiles_debug(file.getAbsolutePath()));
+            }
+        }
+        //System.out.println(fList);
+        return resultList;
+    }    
+    
+    public Map<Path, Document> getArticles_debug(String subpath_name) {
+        
+        String path_name = "../Daniel_ESDemo_Crawler/data/" + subpath_name; // bug todo, not use this bad String concat
+        
+        List<Path> articlePaths = new ArrayList<Path>();//Collections.<Path>emptyList();
+        //List<String> list = Collections.<String>emptyList();
+        
+        List<File> fileList = listFiles_debug(path_name);
+        
+        for (File file : fileList) {
+            //articlePaths.add(  (file.getPath()) );
+            //articlePaths.add(  Paths.get(file.getPath();) );
+            Path _p = file.toPath();
+            System.out.print("added path ");
+            System.out.println(_p);
+            articlePaths.add( _p );
+        }
+        //articlePathString -> Paths.get(articlePathString)
+
+		try {
+			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+			Map<Path, Document> result = new HashMap<>();
+			for(Path articlePath : articlePaths) {
+				//Document articleXml = dBuilder.parse(archive_devDaniel.resolve(articlePath).toFile());
+				Document articleXml = dBuilder.parse(articlePath.toFile());
+				result.put(articlePath, articleXml);
+                //System.out.println(articlePath.toString());
+			}
+			return result;
+
+		} catch (ParserConfigurationException | SAXException e) {
+			throw new RuntimeException(e);
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+	}
+    
+   
+    
+	
+    
+    
 }
