@@ -1,15 +1,22 @@
 package esfeeder;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Collection;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -22,7 +29,8 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 /**
- *
+ * Handles any file based operations for ESFeeder.
+ * 
  * @author jmothes
  * @author akolb
  */
@@ -31,11 +39,20 @@ public class FileService {
 
 	private final static Charset encoding = StandardCharsets.UTF_8;
 
+	// notifications
 	private final static Path notificationFolder = Paths.get("./notifications");
 	private final static String notificationFilePrefix = "notification_";
 
+	// archive
 	private final static Path archive = Paths.get("./../RSSCrawler/archive_dev");
+	
+	// filter for cwa
+	private final static Path cwaTopics = Paths.get("./cwaFilter/topics.ser");
+	private final static Path cwaSources = Paths.get("./cwaFilter/sources.ser");
 
+	/**
+	 * Calls {@link #getArticles(List)} with paths from {@link #getSubscribedArticlePaths(boolean)}.
+	 */
 	public Map<Path, Document> getSubscribedArticles(boolean deleteNotificationFiles) {
 		return getArticles(getSubscribedArticlePaths(deleteNotificationFiles));
 	}
@@ -51,7 +68,9 @@ public class FileService {
 	 */
 	public List<Path> getSubscribedArticlePaths(boolean deleteNotificationFiles) {
 		try {
-
+			if(!notificationFolder.toFile().exists()) {
+				notificationFolder.toFile().mkdirs();
+			}
 			List<Path> notificationFiles = Files.walk(notificationFolder)
 				.filter(Files::isRegularFile)
 				.filter(path -> path.getFileName().toString().startsWith(notificationFilePrefix))
@@ -84,7 +103,11 @@ public class FileService {
 		}
 	};
 
-	public Map<Path, Document> getArticles(List<Path> articlePaths) {
+	/**
+	 * @param articlePaths - Any paths that point to XML article files.
+	 * @return - Maps the given paths to the corresponding XML file content.
+	 */
+	public Map<Path, Document> getArticles(Collection<Path> articlePaths) {
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -98,6 +121,51 @@ public class FileService {
 
 		} catch (ParserConfigurationException | SAXException e) {
 			throw new RuntimeException(e);
+		} catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+	}
+	
+	/**
+	 * @param topics - Any topics that might need to be added for CWA filter. Will be merged
+	 * 		with already knwon topics.
+	 */
+	public void addTopicsForCWA(Collection<String> topics) {
+		Set<String> current = deserializeSet(cwaTopics);
+		current.addAll(topics);
+		serializeSet(cwaTopics, current);
+	}
+	
+	/**
+	 * @param sources - Any sources that might need to be added for CWA filter. Will be merged
+	 * 		with already knwon sources.
+	 */
+	public void addSourcesForCWA(Collection<String> sources) {
+		Set<String> current = deserializeSet(cwaSources);
+		current.addAll(sources);
+		serializeSet(cwaSources, current);
+	}
+	
+	private void serializeSet(Path path, Set<?> anySet) {
+		try(ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path.toFile()));) {
+			oos.writeObject(anySet);
+		}
+		catch (IOException e) {
+			throw new UncheckedIOException(e);
+		}
+	}
+	
+	private <T> Set<T> deserializeSet(Path path) {
+		if(!path.toFile().exists()) {
+			return new HashSet<T>();
+		}
+		try(ObjectInputStream ois = new ObjectInputStream(new FileInputStream(path.toFile()));) {
+			@SuppressWarnings("unchecked")
+			Set<T> anySet = (Set<T>) ois.readObject();
+			return anySet;
+		}
+		catch (ClassNotFoundException e) {
+			throw new RuntimeException("Could not convert serialized object to Set!", e);
 		} catch (IOException e) {
 			throw new UncheckedIOException(e);
 		}
