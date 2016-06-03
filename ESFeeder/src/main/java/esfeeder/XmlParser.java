@@ -215,7 +215,7 @@ public class XmlParser {
         System.out.println(fileList.size());
 
         this.parseFileList(fileList);
-        return "finished debug";
+        return "... finished debug";
     }
 
 }
