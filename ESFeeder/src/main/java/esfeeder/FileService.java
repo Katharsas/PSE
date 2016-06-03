@@ -36,6 +36,11 @@ public class FileService {
 
 	private final static Path archive = Paths.get("./../RSSCrawler/archive_dev");
 
+	public Map<Path, Document> getSubscribedArticles(boolean deleteNotificationFiles) {
+		return getArticles(getSubscribedArticlePaths(deleteNotificationFiles));
+	}
+	
+	
 	/**
 	 * Reads in every line of every notification file in the notification folder.
 	 * Converts the lines to paths and returns them.
@@ -44,7 +49,7 @@ public class FileService {
 	 * @param deleteNotificationFiles - If true,
 	 * @return - All lines as a list of Path objects.
 	 */
-	private List<Path> getSubscribedArticles(boolean deleteNotificationFiles) {
+	public List<Path> getSubscribedArticlePaths(boolean deleteNotificationFiles) {
 		try {
 
 			List<Path> notificationFiles = Files.walk(notificationFolder)
@@ -79,10 +84,7 @@ public class FileService {
 		}
 	};
 
-	public Map<Path, Document> getArticles(boolean deleteNotificationFiles) {
-
-		List<Path> articlePaths = getSubscribedArticles(deleteNotificationFiles);
-
+	public Map<Path, Document> getArticles(List<Path> articlePaths) {
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
