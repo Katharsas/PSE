@@ -1,0 +1,5 @@
+{
+  "watch": true,
+  "rootPath": "ts/",
+  "outputPath": "js/"
+}

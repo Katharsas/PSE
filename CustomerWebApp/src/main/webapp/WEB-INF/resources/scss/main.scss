@@ -1,0 +1,468 @@
+@import "reset";   
+@import "calendar";   
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: black;
+$line_height_gap:1.5em;
+
+   div.gkjkjkjk{}
+   /*  */
+   html { font-size: 62.5%; }  /* =10px */
+   body { font-size: 1.4rem; } /* =14px */
+   
+   /*
+   html, body {
+      min-height: 100%;
+   } /*geht so ?
+   * {
+      margin: 0;
+   }
+   */
+   
+   html{
+      zoom: 1.25 !important; /* bug only for me for firefox viewing, todo */
+   }
+   
+   body{
+      font-family: 'Arial Bold', sans-serif;
+      /*  
+      font-family: "Helvetica Neue",Helvetica,Roboto,
+      font-family: 'Roboto', Arial, sans-serif;  font-family: 
+      300,400,600" HelveticaXXXX, 'Open Sans', 'Roboto', Arial,
+      background:#f3f3f3;
+      background:#eee;
+      */
+      background:#fff;
+   }
+
+   #container_top{
+      width: 100%;
+      min-height: 6rem;
+      background: #ddd;
+      background: #22354C;
+      /*
+      font-size: 2rem !important; #2262EB
+      */
+   }
+
+   #container_top input.search{
+      margin-top: 1rem;
+      padding: 1rem 0.5rem;
+      border: 0px solid black;
+      border-bottom: 0.2rem solid white;
+      background:none;
+   }
+   #container_top input.search:focus{
+      border-color: #22B8EB !important; /*colblue blug*/
+      color:white;
+   }
+   #container_top input.search:active{
+      border-color: #fff !important;
+      color:white;
+   }
+   #container_top *.virtual_input:focus{
+   
+   }
+   #container_top *.virtual_input:active{
+   
+   }
+   
+   #container_top *.virtual_input{
+      margin-top: 1rem;
+      padding: 1rem 0.5rem;
+      border: 0px solid black;
+      border-bottom: 0.2rem solid white;
+      background:none;
+   }
+   
+   #fld_search{
+      margin-left: 10%;
+      width:40%;
+      font-weight:100;
+      color: white;
+      color:#eee;
+   }
+
+   #img_search_container{
+      position:float;
+      display:inline;
+      margin-left: 1rem;
+      width:0%;
+      color: white;
+      border: 0px solid black;
+      background:silver;
+      background:none;
+      padding: 1rem 0.5rem;
+   }
+   #img_search{
+      vertical-align:text-bottom;
+      position:relative;
+
+      height:3rem;
+      background:none;
+      margin-left: 0%;
+      top: 1rem;
+   }
+   
+   #filter_button{
+      display:inline;
+      margin-left: 4rem;
+      color: white;
+      border: 0px solid black !important;
+   }
+   
+   #container_top div.filter_settings{
+      margin-left: 10%;
+      margin-top: 2rem;
+      width: 40%;
+      min-height: 8rem;
+      background:silver;
+      background:noen;
+      background:none;
+      color:white !important;
+      padding-bottom:3rem;
+      display:none;
+      /*
+      display:nonoe;
+      */
+   }
+   
+   #container_top div.filter_settings div.select_topic{
+      margin-top: 2rem;
+      min-height: 8rem;
+      background: grey;
+      background:none;
+      padding-left:0.5rem;
+   }
+   #container_top div.filter_settings div.select_topic ul{
+      margin-top: 4rem;
+      background:white;
+      background:none;
+      list-style-type:none;
+
+   }
+   
+   
+   #container_top div.filter_settings div.select_topic ul li{
+      white-space:nowrap;
+      background: silver;
+      background: none;
+      border-radius:3em;
+      border:2px solid white;
+      display:inline-block;
+      margin-right: 2.5rem;
+      margin-top: 1rem;
+      padding: 0.7rem 2rem;
+      font-size:1rem;
+      
+      padding: 0.4rem 0.8rem; 
+      padding-top: 0.5rem;
+      border: 2px solid #22B8EB;
+      border: 2px solid #fff;
+      border: 2px solid #ccc;
+      margin-right: 1.7rem;
+      font-size: 1.1rem;
+      border-radius: 0.8rem;
+      /*
+      /*padding: 0.4rem 0.8rem; /
+      /*padding: 0.8rem 0.7rem; /
+      */
+   }
+    #container_top div.filter_settings div.select_date{
+      
+    }
+   
+    #container_top div.filter_settings div.select_date table{
+      padding:2rem;
+      margin-top:2rem;
+      text-align:center;
+    }
+    
+    #container_top div.filter_settings div.select_date table td{
+      text-align:center;
+      
+    }
+    
+    #container_top div.filter_settings div.select_date table td input{
+      text-align:center;
+      width:auto;
+      
+      margin-top: 0.5rem;
+      padding: 0.5rem 0.5rem;
+      border: 0px solid black;
+      border-bottom: 0.2rem solid white;
+      background:none;
+      background:rgba(200,200,200,0.2);
+    }
+   #container_top div.filter_settings div.select_date table td input:focus{
+      border-color: #22B8EB !important;
+      color:white;
+   }
+   #container_top div.filter_settings div.select_date table td input:active{
+      border-color: #fff !important;
+      color:white;
+   }
+   
+    
+    #container_top div.filter_settings div.select_date ul{
+    
+     margin-top: 1rem;
+      background:white;
+      background:none;
+      list-style-type:none;
+   }
+   
+   
+   #container_top div.filter_settings div.select_date ul li{
+      white-space:nowrap;
+      background: silver;
+      background: none;
+      border-radius:3em;
+      border:2px solid white;
+      display:inline-block;
+      margin-right: 2.5rem;
+      margin-top: 1rem;
+      padding: 0.7rem 2rem;
+      font-size:1rem;
+      
+      padding: 0.4rem 0.8rem; 
+      padding-top: 0.5rem;
+      border: 2px solid #22B8EB;
+      border: 2px solid #fff;
+      border: 2px solid #ccc;
+      margin-right: 1.7rem;
+      font-size: 1.1rem;
+      border-radius: 0.8rem;
+   }
+   
+   #container_js_log{
+      width:100%;
+      padding:2rem 0rem;
+      background:#ddd;
+      background: #22354C;
+      color:#eee;
+   }
+   #js_log{
+      line-height:1.4;
+      width:40%;
+      margin-left:10%;
+      padding:1rem;
+      padding-left:4em;
+      border:4px solid white;
+      border-radius: 20rem;
+   }
+   
+   
+   
+   #container_middle{
+      margin-left: 10%;
+      margin-top: 5rem;
+      
+      width: 40%;
+      min-height: 60rem;
+      border: 0px solid silver;
+   }
+   
+   ul.results li{
+      /*box-shadow: 2px 3px 4px 4px #ccc;*/
+      background: #fff;
+      margin-left:0.5rem;
+      width:85%;
+      margin-top: 3.6rem; /*2.7, 3, 2, 2.5*/
+   }
+   
+   ul.results li div.result{
+      border: 0px solid blue;
+      margin-top:0rem;
+   }
+   ul.results li div.result div{
+      margin-top:0.55rem;
+      /*margin-top:0.55rem;0.5,0.6*/
+   }
+   
+   ul.results li div.result div.title{
+      font-size:1.8rem;
+   }
+   ul.results li div.result div.title a{
+      color:#2262EB;
+      color:#2255D2;
+      color:#1E3DBC;
+      text-decoration:none;
+   }
+   ul.results li div.result div.title a:hover{
+      color:#22B8EB;
+      color:#2262EB;
+      text-decoration:underline;
+   }
+   
+   
+   ul.results li div.result div.link{
+      font-size:1.4rem;
+      color:green;
+      color:#FF4823;
+      color:#FF2A00;
+      color:#FFB600;
+      color:#9C3FFF;
+      color:#666;
+   }
+   
+   ul.results li div.result div.author{
+      font-size:1.4rem;
+      /*color:#574FFF; colro link??*/
+      color:#888;
+   }
+   
+   
+   ul.results li div.result div.content{
+      font-size:1.4rem;
+      color:#333;
+      font-weight:100 !important;
+      line-height:1.2; /* bug lines all just one (or two here), then force split , wrap ... */
+   }
+   
+
+   ul.results li div.result div.container_topic{
+      margin-top: 0.5rem;
+      margin-bottom:1.2rem;
+      position:relative;
+      float:right;
+      float:left;
+   }  
+      
+   ul.results li div.result  div.container_topic div.myButton{
+      display:inline;
+      border: 2px solid #22B8EB;
+      border: 2px solid #aaa;
+      border-radius: 0.4rem;
+      padding: 0.3rem 0.7rem; 
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+      color:#aaa;
+   }  
+   
+   ul.results li div.result div.container_date{
+
+      margin-bottom:0.7rem;
+      position:relative;
+      float:right;
+      float:left;
+   }  
+   
+   ul.results li div.result div.container_date span.time{
+      display:none;
+   }  
+   
+      
+   ul.results li div.result  div.container_date div.myButton{
+      display:inline;
+      border: 2px solid #22B8EB;
+      border: 0px solid #aaa;
+      border-radius: 0.4rem;
+      padding: 0.3rem 0.7rem; 
+
+      color:#888;
+   }  
+   
+   
+   
+   ul.results li div.result div.container_buttons{
+      margin-top: 0.5rem;
+      position:relative;
+      float:left; 
+      float:right;
+   }  
+   
+   ul.results li div.result  div.container_buttons div.myButton{
+      display:inline;
+      border: 2px solid #22B8EB;
+      border: 2px solid #888;
+      border: 0px solid #888;
+      border-radius: 0.4rem;
+      padding: 0.3rem 0.7rem; 
+      margin-right: 0.5rem;
+      font-size: 1.1rem;
+   }  
+   ul.results li div.result div.container_buttons div.myButton a{
+      color:  #22B8EB;
+      color: #888 !important;
+      text-decoration:none !important;
+   }  
+   ul.results li div.result div.container_buttons div.myButton img{
+      width: 1em;
+      padding-right:0.0rem;
+      padding-right:0.5rem;
+      vertical-align: 0.15rem;
+      background:silver;
+      background:none;
+      display:inline-block;
+   }  
+   
+   ul.results li div.result div.container_buttons div.myButton a:focus{
+      color:  #22B8EB;
+   }  
+   ul.results li div.result div.container_buttons div.myButton:hover a{
+      color:  #22B8EB;
+      color:  #2262EB;
+      text-decoration: underline !important;
+   }  
+   
+   div.clearfix{
+      clear:both;
+   }
+   
+   ul.results li div.result{
+   
+   }  
+ 
+ 
+   
+   #container_footer{
+      
+      /*
+      margin-left: 10%;
+      width: 40%;
+      border: 1px solid silver;
+      */
+      width: 100%;
+      position:relative;
+      margin-top:2rem;
+      height: 6rem;
+      
+      background: #ddd;
+      background: #22354C;
+   }
+   
+   #container_footer div.about{
+      margin-top: 2rem;
+      padding: 2rem 0.5rem;
+      border: 0px solid black;
+      border-bottom: 0.0rem solid white;
+      background:none;
+      
+      border-color: #22B8EB !important;
+      border-color: #fff !important;
+      border-color: none !important;
+
+      margin-left: 10%;
+      width:auto;
+      width:40%;
+      
+      color:#eee;
+   }
+
+   /*
+   .wrapper {
+      min-height: 100%;
+
+      margin: 0 auto -6rem;
+   }
+   #container_footer, .push {
+      height: 6rem; /*++buggy, do wiht js with js, use link-urlline.# parse, with name for ... look, (id), then open it !/
+   }
+      ul.results li div.result div.content span.date{
+      color:grey;
+   }
+   */
+
+
+

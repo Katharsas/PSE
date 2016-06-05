@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="icon" href="http://localhost/resources/img/favicon_white.ico" type="image/x-icon" />
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    
+    <link rel="stylesheet" type="text/css" href="http://localhost/resources/css/main.css">
+    
+    <!--
+    // compile sass with cmd: 
+    //                           node-sass scss/ -o css/
+    
+    <script type="text/javascript" src="js/collection.js"></script>
+    -->
+    
+    <script type="text/javascript" src="http://localhost/resources/js/main.js"></script>
+    <script type="text/javascript" src="http://localhost/resources/js/jquery-1.11.3.js"></script>
+    
+    <title>Search Engine</title>  
+    
+</head>
+
+<body> 
+
+        <div id="container_top">
+            <input id="fld_search" class="search" type="text" placeholder="Enter keywords here" autofocus />
+            <a href="#search_keywords">
+            <div id="img_search_container" >
+                <img id ="img_search" class="search" src="http://localhost/resources/img/lupe.png"/>
+            </div>
+            </a>
+            <a href="#search_filter">
+            <div id="filter_button" class="virtual_input" >
+                Filter
+            </div>
+            </a>
+            
+            <!--
+                Advanced Search
+            <input id="btn_search" class="login_submit" type="submit" value="Search">
+            </input>
+            --> 
+            <div class="filter_settings" id="filter_settings">
+                <div class="selector">
+                </div>
+                <div class="select_topic">
+                    <ul id="select_topic_list">
+                    </ul>
+                </div>
+                
+                <div class="select_date date_pick">
+                    <table>
+                        <tr>
+                            <td><input id="date_start" type="date" value="2016-03-01" style="color:white;"/>
+                            </td>
+                            <td>&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td><input id="date_end" type="date"    value="2016-03-10" style="color:white;"/>
+                            </td>
+                        </tr>
+                    </table>
+                            
+                    <ul>
+                        <li>
+                            today
+                        </li>
+                        <li>
+                            last 3 days
+                        </li>
+                        <li>
+                            last 7 days
+                        </li>
+                        <li>
+                            last 30 days
+                        </li>
+                        <li>
+                            last 300 days
+                        </li>
+                        <li>
+                            last n days
+                        </li>
+                    </ul>
+                    <!--    
+                    
+                     <tr>
+                            <td>Start
+                            </td>
+                            <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                            </td>
+                            <td>End
+                            </td>
+                            
+                        </tr>
+                    
+                        last weglassen ?
+                        <li>
+                            last week
+                        </li>
+                        <li>
+                            last month
+                        </li>
+                         <li>
+                            last quater
+                        </li>
+                        <li>
+                            last year
+                        </li>
+                    Start:
+                    End:
+                    -->
+                </div>
+            </div>
+        </div>
+        <div id="container_js_log">
+            <div id="js_log">
+            k
+            </div>
+        </div>
+        <div id="container_middle">
+            
+            <ul id="result_sample_list" class="results">
+                <li id="result_sample">
+                    <div class="result">
+                        
+                        <div class="clearfix"></div>
+                        <div class="title"><a href="#link_origianl">
+                             Writing shell scripts - Lesson 1: Writing your first script and ...
+                        </a></div>
+                        <div class="link">
+                            <div class="container_topic">
+                                <div class="myButton">
+                                    Politics
+                                </div>                                
+                            </div>
+                            linuxcommand.org/wss0010.php
+                        </div>
+                        <div class="container_date">
+                            <div class="myButton">
+                                <span class="date">10.4.2015<span class="time"> - 9:34</span></span>
+                            </div>                                
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="content">
+                            To successfully write a shell script, you have to do three things: ... 
+                            To create a shell use a text editor. ... bin/bash # My first script echo "Hello World!".
+                        </div>
+                        <div class="author">
+                            Joe Kinley
+                        </div>
+                        
+                        <!-- 
+                            similar, cache (full text, topic, author)
+                                Similar, <span class="date">10.4.2015 <span class="time">- 9:34</span> </span><br>
+                        -->
+                        <div class="container_buttons">
+                            <div class="myButton">
+                                <a href="#cache_id_13244_"><img src="http://localhost/resources/img/cache_arrow_down_small_grey.png"/>Cache</a>
+                            </div>
+                            <div class="myButton">
+                                <a href="#similar_id_13244_">Similar</a>
+                            </div>
+                            
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </li>
+                <li id="result_sample_" style="display:none;">
+                    Show more results  (style like button)
+                </li>
+                <li class="result_elem" style="display:none;">
+                    <span id="res"></span>
+                </li>
+            
+            </ul>
+        </div>
+        
+
+    <div id="container_footer">  
+        <div class="about">About</div>
+    </div>
+    
+    <script type="text/javascript" src="http://localhost/resources/js/load.js"></script>
+    <script type="text/javascript" src="http://localhost/resources/js/polyfiller_date.js"></script>
+  <!--
+    <div class="footer">
+                <p>Copyright (c) 2008</p>
+          </div>
+    <ul>
+        <li class="1 half">
+        
+        billions, elementary castle , house cards, 
+        so movies kinox, endtittiles movie, leverages, nvidia keynote gtc (see 2015), machine learning conf, y.lecun
+        xiv deringing, time energy image ??? see presentations??, variable size??
+        daale, nvidia gtc, check auch 2015 
+            <span id="res"></span>
+        </li><li class="2">
+            <span>Hello this is greate!</span>
+        </li>
+    </ul>
+    
+      <div class="clear"></div>
+        -->
+        
+        
+    <!-- lazy js -->
+    
+</body>
+
+
+
+
+
+
+
+
+

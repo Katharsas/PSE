@@ -13,4 +13,9 @@ public class HelloWorldPageController {
 	public String serachPage() {
 		return "myHello.html";
 	}
+    @RequestMapping(value = "/", method = RequestMethod.GET)
+	public String indexPage() {
+		return "search.html";
+	}
+    
 }
