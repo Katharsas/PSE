@@ -31,6 +31,7 @@ import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.xml.parsers.ParserConfigurationException;
+import org.joda.time.IllegalFieldValueException;
 
 import org.xml.sax.SAXException;
 
@@ -44,7 +45,16 @@ public class XmlParser {
                 .getTextContent();
     }
 
-    public static Article parse(Path path, Document doc) {
+    // refac enclose everything in try catch, use function pointers ?
+    // not use func pointers use switch case
+    private String clean(String s) {
+        if (s != null) {
+            s = s.trim();
+        }
+        return s;
+    }
+
+    public Article parse(Path path, Document doc) {
         String s = "";
         ArticleParser ap = new ArticleParser();
 
@@ -67,48 +77,64 @@ public class XmlParser {
 
             // Article - set several attributes
             // set title
-            String a_title = parse_xml(item_elem, "title");
+            String a_title = "";
+            a_title = parse_xml(item_elem, "title");
+            a_title = clean(a_title);
             article.setTitle(a_title);
 
             // set pubDate
-            String a_pubDate = "<This is default for date>";
+            //String a_pubDate = "<This is default for date>";
+            String a_pubDate = "";
             try {
                 a_pubDate = parse_xml(item_elem, "pubDate"); // bug try catch here !
             } catch (NullPointerException ex) {
                 // slightly suboptimal by catching NPE
                 //System.out.println("NPE encountered in body");
+            } catch (IllegalFieldValueException ex) {
+                // detect function behaviour refac
+                System.out.println("illegal filed value");
             }
+            // refac catch more / all exceptions here !!
+
             a_pubDate = ap.parse_pubDate(a_pubDate);
+            a_pubDate = clean(a_pubDate);
             article.setPubDate(a_pubDate);
 
             // set extractedText
-            String a_extractedText = parse_xml(item_elem, "ExtractedText");
+            String a_extractedText = "";
+            a_extractedText = parse_xml(item_elem, "ExtractedText");
+            a_extractedText = clean(a_extractedText);
             article.setExtractedText(a_extractedText);
 
             // set author
-            String a_author = "<This is the default string for author>";
+            //String a_author = "<This is the default string for author>";
+            String a_author = "";
             try {
                 a_author = parse_xml(item_elem, "author"); // todo check xml files for author
 
             } catch (NullPointerException ex) {
                 // slightly suboptimal by catching NPE
-                //System.out.println("NPE encountered in body");
+                //System.out.println("no author field set"); // refac
             }
+            a_author = clean(a_author);
             article.setAuthor(a_author);
 
             // set topic
             String a_topic = path.normalize().toString();
             a_topic = ap.parse_topic(a_topic);
+            a_topic = clean(a_topic);
             article.setTopic(a_topic);
 
             // set source
             String a_source = parse_xml(item_elem, "link");
             a_source = ap.parse_source(a_source);
+            a_source = clean(a_source);
             article.setSource(a_source);
 
             // set url
             String a_url = parse_xml(item_elem, "link");
             //a_url = ap.parse_url(a_url);
+            a_url = clean(a_url);
             article.setUrl(a_url);
 
             // @now
@@ -141,7 +167,7 @@ public class XmlParser {
         Path path;
         Document doc;
         // . = null;
-        // needed to avoid - object might not hae been initialized error
+        // needed to avoid - object might not have been initialized error
         doc = null;
         path = null;
 
@@ -149,9 +175,12 @@ public class XmlParser {
             path = entry.getKey();
             doc = entry.getValue();
             Article article = this.parse(path, doc);
-            //System.out.println(article.getTopic());
             articles.add(article);
-            topics_set.add(article.getTopic());
+            if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
+                topics_set.add(article.getTopic());
+                GlobalsDebug.set_cnt++;
+                System.out.println(article);
+            }
         }
         System.out.println(topics_set);
         return articles;
@@ -166,12 +195,18 @@ public class XmlParser {
 
         FileService tmp_FileService = new FileService();
 
-        //Map<Path, Document> fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
-        Map<Path, Document> fileList = tmp_FileService.getArticles_debug("germany/"); //bug
+        Map<Path, Document> fileList; //bug
+        fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
+
+        Map<Path, Document> fileList_germany = tmp_FileService.getArticles_debug("germany/");
+        Map<Path, Document> fileList_us = tmp_FileService.getArticles_debug("US"); //bug
 
         System.out.println(fileList.size());
+        List<Article> articles;
+        //articles = this.parseFileList(fileList);
+        articles = this.parseFileList(fileList_us);
+        articles = this.parseFileList(fileList_germany);
 
-        List<Article> articles = this.parseFileList(fileList);
         return "... finished debug";
     }
 

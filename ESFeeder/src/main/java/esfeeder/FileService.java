@@ -29,91 +29,86 @@ import org.xml.sax.SAXException;
  * @author jmothes
  * @author akolb
  */
-
 public class FileService {
 
-	private final static Charset encoding = StandardCharsets.UTF_8;
+    private final static Charset encoding = StandardCharsets.UTF_8;
 
-	private final static Path notificationFolder = Paths.get("./notifications");
-	private final static String notificationFilePrefix = "notification_";
+    private final static Path notificationFolder = Paths.get("./notifications");
+    private final static String notificationFilePrefix = "notification_";
 
-	private final static Path archive = Paths.get("./../RSSCrawler/archive_dev");
+    private final static Path archive = Paths.get("./../RSSCrawler/archive_dev");
 
-	/**
-	 * Reads in every line of every notification file in the notification folder.
-	 * Converts the lines to paths and returns them.
-	 * Notification fileNames must start with {@link #notificationFilePrefix}.
-	 *
-	 * @param deleteNotificationFiles - If true,
-	 * @return - All lines as a list of Path objects.
-	 */
-	private List<Path> getSubscribedArticles(boolean deleteNotificationFiles) {
-		try {
+    /**
+     * Reads in every line of every notification file in the notification folder. Converts the lines to paths and returns them. Notification fileNames must start with {@link #notificationFilePrefix}.
+     *
+     * @param deleteNotificationFiles - If true,
+     * @return - All lines as a list of Path objects.
+     */
+    private List<Path> getSubscribedArticles(boolean deleteNotificationFiles) {
+        try {
 
-			List<Path> notificationFiles = Files.walk(notificationFolder)
-				.filter(Files::isRegularFile)
-				.filter(path -> path.getFileName().toString().startsWith(notificationFilePrefix))
-				.collect(Collectors.toList());
+            List<Path> notificationFiles = Files.walk(notificationFolder)
+                    .filter(Files::isRegularFile)
+                    .filter(path -> path.getFileName().toString().startsWith(notificationFilePrefix))
+                    .collect(Collectors.toList());
 
-			List<Path> newArticles = notificationFiles.stream()
-				.flatMap(getLines)
-				.map(articlePathString -> Paths.get(articlePathString))
-				.collect(Collectors.toList());
+            List<Path> newArticles = notificationFiles.stream()
+                    .flatMap(getLines)
+                    .map(articlePathString -> Paths.get(articlePathString))
+                    .collect(Collectors.toList());
 
-			if (deleteNotificationFiles) {
-				notificationFiles.stream()
-					.forEach(notificationFile -> notificationFile.toFile().delete());
-			}
-			return newArticles;
+            if (deleteNotificationFiles) {
+                notificationFiles.stream()
+                        .forEach(notificationFile -> notificationFile.toFile().delete());
+            }
+            return newArticles;
 
-		} catch (IOException e) {
-			throw new UncheckedIOException(e);
-		}
-	}
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    }
 
-	/**
-	 * Converts a path to a stream of all lines in that file.
-	 */
-	private Function<Path, Stream<String>> getLines = (path) -> {
-		try {
-			return Files.lines(path, encoding);
-		} catch (IOException e) {
-			throw new UncheckedIOException(e);
-		}
-	};
+    /**
+     * Converts a path to a stream of all lines in that file.
+     */
+    private Function<Path, Stream<String>> getLines = (path) -> {
+        try {
+            return Files.lines(path, encoding);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    };
 
-	public Map<Path, Document> getArticles(boolean deleteNotificationFiles) {
+    public Map<Path, Document> getArticles(boolean deleteNotificationFiles) {
 
-		List<Path> articlePaths = getSubscribedArticles(deleteNotificationFiles);
+        List<Path> articlePaths = getSubscribedArticles(deleteNotificationFiles);
 
-		try {
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        try {
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 
-			Map<Path, Document> result = new HashMap<>();
-			for(Path articlePath : articlePaths) {
-				Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
-				result.put(articlePath, articleXml);
-			}
-			return result;
+            Map<Path, Document> result = new HashMap<>();
+            for (Path articlePath : articlePaths) {
+                Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
+                result.put(articlePath, articleXml);
+            }
+            return result;
 
-		} catch (ParserConfigurationException | SAXException e) {
-			throw new RuntimeException(e);
-		} catch (IOException e) {
-			throw new UncheckedIOException(e);
-		}
-	}
-    
-    
-    /** Daniel's debug code
-     *  
-     * Functions to extract xml files from the Crawler archive,
-     * so that xml_parser.java can be tested an some sample files
-     * 
-     * @return 
+        } catch (ParserConfigurationException | SAXException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    }
+
+    /**
+     * Daniel's debug code
+     *
+     * Functions to extract xml files from the Crawler archive, so that xml_parser.java can be tested an some sample files
+     *
+     * @return
      */
     //private final static Path archive_devDaniel = Paths.get("../Daniel_ESDemo_Crawler/data/_few");
-    
     private static List<File> listFiles_debug(String directoryName) {
         File directory = new File(directoryName);
 
@@ -131,50 +126,45 @@ public class FileService {
         }
         //System.out.println(fList);
         return resultList;
-    }    
-    
+    }
+
     public Map<Path, Document> getArticles_debug(String subpath_name) {
-        
+
         String path_name = "../Daniel_ESDemo_Crawler/data/" + subpath_name; // bug todo, not use this bad String concat
-        
+
         List<Path> articlePaths = new ArrayList<Path>();//Collections.<Path>emptyList();
         //List<String> list = Collections.<String>emptyList();
-        
+
         List<File> fileList = listFiles_debug(path_name);
-        
+
         for (File file : fileList) {
             //articlePaths.add(  (file.getPath()) );
             //articlePaths.add(  Paths.get(file.getPath();) );
             Path _p = file.toPath();
-            System.out.print("added path ");
-            System.out.println(_p);
-            articlePaths.add( _p );
+            //System.out.print("added path ");
+            //System.out.println(_p);
+            articlePaths.add(_p);
         }
         //articlePathString -> Paths.get(articlePathString)
 
-		try {
-			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+        try {
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
 
-			Map<Path, Document> result = new HashMap<>();
-			for(Path articlePath : articlePaths) {
-				//Document articleXml = dBuilder.parse(archive_devDaniel.resolve(articlePath).toFile());
-				Document articleXml = dBuilder.parse(articlePath.toFile());
-				result.put(articlePath, articleXml);
+            Map<Path, Document> result = new HashMap<>();
+            for (Path articlePath : articlePaths) {
+                //Document articleXml = dBuilder.parse(archive_devDaniel.resolve(articlePath).toFile());
+                Document articleXml = dBuilder.parse(articlePath.toFile());
+                result.put(articlePath, articleXml);
                 //System.out.println(articlePath.toString());
-			}
-			return result;
+            }
+            return result;
 
-		} catch (ParserConfigurationException | SAXException e) {
-			throw new RuntimeException(e);
-		} catch (IOException e) {
-			throw new UncheckedIOException(e);
-		}
-	}
-    
-   
-    
-	
-    
-    
+        } catch (ParserConfigurationException | SAXException e) {
+            throw new RuntimeException(e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    }
+
 }
