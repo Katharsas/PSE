@@ -176,8 +176,8 @@ public class XmlParser {
             doc = entry.getValue();
             Article article = this.parse(path, doc);
             articles.add(article);
-            if (GlobalsDebug.set_cnt < 1000) {
-                topics_set.add(article.getAuthor());
+            if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
+                topics_set.add(article.getTopic());
                 GlobalsDebug.set_cnt++;
                 System.out.println(article);
             }
