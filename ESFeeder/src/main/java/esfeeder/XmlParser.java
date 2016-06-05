@@ -1,15 +1,10 @@
 package esfeeder;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
- * @author Daniel
+ * @author dbeckstein
  * @author akraft
+ * @author jfranz
  */
 import java.io.ByteArrayInputStream;
 import java.io.File;
@@ -17,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.DocumentBuilder;
-//import javax.json.*;
+
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Node;
@@ -26,180 +21,125 @@ import org.xml.sax.InputSource;
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 import java.util.StringTokenizer;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.xml.parsers.ParserConfigurationException;
+import org.joda.time.IllegalFieldValueException;
+
 import org.xml.sax.SAXException;
 
 public class XmlParser {
 
     private static String parse_xml(Element node, String fld_name) {
-        /*
-       System.out.println(fld_name + " : " 
-            + node
-            .getElementsByTagName(fld_name)
-            .item(0)
-            .getTextContent() 
-         );
-         */
+
         return node
                 .getElementsByTagName(fld_name)
                 .item(0)
                 .getTextContent();
     }
 
-    public String parseFileList(Map<Path, Document> fileList) {
-
-        // real function
-        Path path;
-        Document doc;
-        doc = null;
-        path = null;
-        String spath = "C:/Users/Daniel/Dropbox/Studium/API/daala/image_conv/files_conv";
-        path = Paths.get(spath);
-        for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
-            path = entry.getKey();
-            doc = entry.getValue();
+    // refac enclose everything in try catch, use function pointers ?
+    // not use func pointers use switch case
+    private String clean(String s) {
+        if (s != null) {
+            s = s.trim();
         }
-        //return path.normalize().toString();
-        return this.parse(path, doc);
+        return s;
     }
 
-    public String debug() {
-
-        try {
-            /*
-           *   debug stuff - todo delete on finish
-             */
-            // US\en\business\CNNcomBusiness\y2011\m11\d11
-            //Path archive = Paths.get("./../RSSCrawler/archive_dev");
-            Path archive = Paths.get("../Daniel_ESDemo_Crawler/data/");
-
-            Map<Path, Document> fileList = new HashMap<>();
-
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-
-            String name_sample_file;
-            name_sample_file = "_few/RSS973602347.xml";
-
-            name_sample_file = "US/en/business/CNNcomBusiness/y2011/m11/d11/RSS973602347_test.xml";
-            Path articlePath = Paths.get(name_sample_file);
-            Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
-
-            fileList.put(articlePath, articleXml);
-
-            String s = this.parseFileList(fileList);
-            return s;
-        } catch (SAXException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ParserConfigurationException ex) {
-            Logger.getLogger(XmlParser.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return "error happened";
-    }
-
-    public static String parse(Path path, Document doc) {
+    public Article parse(Path path, Document doc) {
         String s = "";
+        ArticleParser ap = new ArticleParser();
+
+        // Article - set id
+        String id = path.normalize().toString();
+        Article article = new Article(id);
+
+        // bug todo - check id, is path normal? this long string thingy?
         try {
 
-            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
-            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            /*
-         String xml_str= "<?xml version=\"1.0\"?><class><student></student></class>";
-         InputSource inputFile = new InputSource( new ByteArrayInputStream(xml_str.getBytes("utf-8") )  );
-             */
-            //File inputFile = new File("input.txt");
-            //File inputFile = new File("article.xml");
-
-            //Document doc = dBuilder.parse(inputFile);
+            // Get proper nodes from xml
             doc.getDocumentElement().normalize();
 
-//         System.out.println("Root element :" 
-//            + doc.getDocumentElement().getNodeName());
             Element doc_el;
             doc_el = doc.getDocumentElement();
 
-            // @now - these attributes are bad, they read wrong stuff from the xml file
-            //parse_xml(doc_el, "title");
-            //parse_xml(doc_el, "language");
-            //parse_xml(doc_el, "description");
-            //parse_xml(doc_el, "pubDate");
-            NodeList nList = doc.getElementsByTagName("image");
-            Node image_node = nList.item(0);
-            Element image_elem = (Element) image_node;
-
-            // @now - thes attributes are useless, they are from some title image
-            //parse_xml( image_elem, "url");
-            //parse_xml( image_elem, "link");
-            // @now -  this is important, it finds the item (the article item in the xml file)
-            //         and reads this item node
             NodeList nList_c = doc.getElementsByTagName("item");
             Node item_node = nList_c.item(0);
             Element item_elem = (Element) item_node;
 
-            // id source and topic and author is missing TODO
-            s += parse_xml(item_elem, "title");
-            s += "\n";
-            s += parse_xml(item_elem, "link"); // = url
-            String link = parse_xml(item_elem, "link");
-            s += "\n";
-            //s += parse_xml(item_elem, "description");
-            //s += "\n";
-            s += parse_xml(item_elem, "pubDate");
-            s += "\n";
+            // Article - set several attributes
+            // set title
+            String a_title = "";
+            a_title = parse_xml(item_elem, "title");
+            a_title = clean(a_title);
+            article.setTitle(a_title);
 
-            String path_str = path.normalize().toString();
-
-            s += path_str;
-
-            String line = "This order was placed for QT3000! OK?";
-            String pattern;
-            //line = path_str;
-            line = link;
-            //String pattern = ".*htt(p).*";
-            //String pattern = "http://(\\d+)(.*).";
-            //                  https 
-
-            // US\en\
-            // Germany\de\
-            String us = "US\\en\\";
-            String p_us = Pattern.quote("US\\en");
-            String p_end = Pattern.quote("\\");
-            pattern = ".*" + p_us + "(.*)" + p_end + ".*";
-            /*
-            * parse url
-            * https:// , http:// - split on "//" sign
-            * blog.google.com/hello/devblog/info.html
-            */
-            pattern = ".*//(.*)/.*";
-            System.out.println(pattern);
-            //   \\.*
-
-            // Create a Pattern object
-            Pattern r = Pattern.compile(pattern);
-
-            // Now create matcher object.
-            Matcher m = r.matcher(line);
-            System.out.println("in line:   " + line);
-            if (m.find()) {
-                System.out.println("Found value: " + m.group(0));
-                System.out.println("Found value: " + m.group(1));
-                System.out.println("Found value: " + m.group(2));
-            } else {
-                System.out.println("NO MATCH");
+            // set pubDate
+            //String a_pubDate = "<This is default for date>";
+            String a_pubDate = "";
+            try {
+                a_pubDate = parse_xml(item_elem, "pubDate"); // bug try catch here !
+            } catch (NullPointerException ex) {
+                // slightly suboptimal by catching NPE
+                //System.out.println("NPE encountered in body");
+            } catch (IllegalFieldValueException ex) {
+                // detect function behaviour refac
+                System.out.println("illegal filed value");
             }
+            // refac catch more / all exceptions here !!
 
-            parse_xml(item_elem, "ExtractedText");
+            a_pubDate = ap.parse_pubDate(a_pubDate);
+            a_pubDate = clean(a_pubDate);
+            article.setPubDate(a_pubDate);
+
+            // set extractedText
+            String a_extractedText = "";
+            a_extractedText = parse_xml(item_elem, "ExtractedText");
+            a_extractedText = clean(a_extractedText);
+            article.setExtractedText(a_extractedText);
+
+            // set author
+            //String a_author = "<This is the default string for author>";
+            String a_author = "";
+            try {
+                a_author = parse_xml(item_elem, "author"); // todo check xml files for author
+
+            } catch (NullPointerException ex) {
+                // slightly suboptimal by catching NPE
+                //System.out.println("no author field set"); // refac
+            }
+            a_author = clean(a_author);
+            article.setAuthor(a_author);
+
+            // set topic
+            String a_topic = path.normalize().toString();
+            a_topic = ap.parse_topic(a_topic);
+            a_topic = clean(a_topic);
+            article.setTopic(a_topic);
+
+            // set source
+            String a_source = parse_xml(item_elem, "link");
+            a_source = ap.parse_source(a_source);
+            a_source = clean(a_source);
+            article.setSource(a_source);
+
+            // set url
+            String a_url = parse_xml(item_elem, "link");
+            //a_url = ap.parse_url(a_url);
+            a_url = clean(a_url);
+            article.setUrl(a_url);
 
             // @now
             // TODO - these are missing
-            // id, source, topic, author 
+            // id,source, topic, author 
             // HOW TO FIND id, source, topic and author :
             // ----------------------------------------------
             // id - find by parsing file path
@@ -208,10 +148,66 @@ public class XmlParser {
             // author - find by parsing xml file, sometimes they have this in the xml file (didn't see this so far)
             s += "";
 
+            // collect sets
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return s;
+
+        return article;
+    }
+
+    /**
+     * Generates List<Article> object from a Hashmap <Path, Document>
+     *
+     * @param fileList - Hashmap of files
+     */
+    public List<Article> parseFileList(Map<Path, Document> fileList) {
+        List<Article> articles = new ArrayList<Article>();
+        Set<String> topics_set = new HashSet<String>();
+        Path path;
+        Document doc;
+        // . = null;
+        // needed to avoid - object might not have been initialized error
+        doc = null;
+        path = null;
+
+        for (Map.Entry<Path, Document> entry : fileList.entrySet()) {
+            path = entry.getKey();
+            doc = entry.getValue();
+            Article article = this.parse(path, doc);
+            articles.add(article);
+            if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
+                topics_set.add(article.getTopic());
+                GlobalsDebug.set_cnt++;
+                System.out.println(article);
+            }
+        }
+        System.out.println(topics_set);
+        return articles;
+    }
+
+    /**
+     * Debug functions
+     *
+     * @author dbeckstein
+     */
+    public String debug() {
+
+        FileService tmp_FileService = new FileService();
+
+        Map<Path, Document> fileList; //bug
+        fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
+
+        Map<Path, Document> fileList_germany = tmp_FileService.getArticles_debug("germany/");
+        Map<Path, Document> fileList_us = tmp_FileService.getArticles_debug("US"); //bug
+
+        System.out.println(fileList.size());
+        List<Article> articles;
+        //articles = this.parseFileList(fileList);
+        articles = this.parseFileList(fileList_us);
+        articles = this.parseFileList(fileList_germany);
+
+        return "... finished debug";
     }
 
 }
