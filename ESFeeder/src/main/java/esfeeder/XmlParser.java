@@ -110,7 +110,7 @@ public class XmlParser {
             //String a_author = "<This is the default string for author>";
             String a_author = "";
             try {
-                a_author = parse_xml(item_elem, "author"); // todo check xml files for author
+                a_author = parse_xml(item_elem, "dc:creator"); // todo check xml files for author, <author><dc:...>
 
             } catch (NullPointerException ex) {
                 // slightly suboptimal by catching NPE
@@ -176,8 +176,8 @@ public class XmlParser {
             doc = entry.getValue();
             Article article = this.parse(path, doc);
             articles.add(article);
-            if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
-                topics_set.add(article.getTopic());
+            if (GlobalsDebug.set_cnt < 1000) {
+                topics_set.add(article.getAuthor());
                 GlobalsDebug.set_cnt++;
                 System.out.println(article);
             }

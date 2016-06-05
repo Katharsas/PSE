@@ -51,7 +51,7 @@ public class Article {
         int get_first_n_chars = 130;
         tmp_et = this.getExtractedText();
 
-        if (tmp_et.length() < 100) {
+        if (tmp_et.length() < get_first_n_chars) {
             get_first_n_chars = tmp_et.length();
         }
 
