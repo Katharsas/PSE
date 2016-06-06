@@ -19,19 +19,19 @@ import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
-import shared.metadata.ElasticSearchMetaDataReader;
-import shared.metadata.ElasticSearchMetaDataWriter;
 import shared.metadata.MetaDataSerializer;
+import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataWriter;
 import shared.metadata.MetaDataType;
 
 /**
  *
  * @author akolb
  * @author dbeckstein
+ * @author jmothes
  */
 
 public class ElasticSearchWriter extends ElasticSearchController
-	implements ElasticSearchMetaDataWriter, ElasticSearchMetaDataReader {
+		implements ElasticSearchMetaDataWriter {
 
 	//var is hardcoded, because it's not necessary to create writers with custom indexes
 	private final String mainIndex = "mainIndex";
@@ -238,21 +238,18 @@ public class ElasticSearchWriter extends ElasticSearchController
 	public void delete(){}
 
 
-	public void mergeMetaData(Collection<String> newMetaData, MetaDataType filterType){
+	/**
+	 * Merge new metaData from new articles with old metaData from old article and save result.
+	 */
+	private void mergeMetaData(Collection<String> newMetaData, MetaDataType filterType){
     	Set<String> current = MetaDataSerializer.deserializeSet(filterType, this);
         current.addAll(newMetaData);
         MetaDataSerializer.serializeSet(current, filterType, this);
     }
 
-	@Override
-	public String getMetaDataFromIndex(MetaDataType filterTypes) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+	
 	@Override
 	public void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
-		// TODO Auto-generated method stub
-		
+		// TODO Overwrite document at metaData index of given type
 	}
 }

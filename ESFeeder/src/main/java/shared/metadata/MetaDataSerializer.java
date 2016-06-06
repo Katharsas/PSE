@@ -9,8 +9,26 @@ import java.io.UncheckedIOException;
 import java.util.Base64;
 import java.util.Set;
 
+/**
+ * 
+ * @author jmothes
+ */
 public class MetaDataSerializer {
 
+	public static interface ElasticSearchMetaDataReader {
+		/**
+		 * Get meta-data of given type from index.
+		 */
+		public String getMetaDataFromIndex(MetaDataType type);
+	}
+	
+	public interface ElasticSearchMetaDataWriter {
+		/**
+		 * Overwrites meta-data in ElasticSearch for given FilterType.
+		 */
+		public void writeMetaDataToIndex(String encoded, MetaDataType type);
+	}
+	
     public static void serializeSet(Set<?> anySet, MetaDataType filterType, ElasticSearchMetaDataWriter es) {
     	ByteArrayOutputStream baos;
         try (ObjectOutputStream oos = new ObjectOutputStream(baos = new ByteArrayOutputStream())) {

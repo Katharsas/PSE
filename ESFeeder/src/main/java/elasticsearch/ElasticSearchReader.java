@@ -1,6 +1,7 @@
 package elasticsearch;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.elasticsearch.action.get.GetResponse;
@@ -10,16 +11,17 @@ import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
 import esfeeder.ArticleId;
-import shared.metadata.ElasticSearchMetaDataReader;
+import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataType;
 
 /**
  *
  * @author akolb
+ * @author jmothes
  */
 
 public class ElasticSearchReader extends ElasticSearchController
-	implements ElasticSearchMetaDataReader {
+		implements MetaDataProvider {
 
 	private SearchResponse currentSearchResponse;
 
@@ -110,9 +112,13 @@ public class ElasticSearchReader extends ElasticSearchController
 	}
 
 	@Override
-	public String getMetaDataFromIndex(MetaDataType filterTypes) {
-		// TODO Auto-generated method stub
-		return null;
+	public Collection<String> getSources() {
+		return MetaDataSerializer.deserializeSet(MetaDataType.SOURCE, this);
+	}
+
+	@Override
+	public Collection<String> getTopics() {
+		return MetaDataSerializer.deserializeSet(MetaDataType.TOPIC, this);
 	}
 
 }

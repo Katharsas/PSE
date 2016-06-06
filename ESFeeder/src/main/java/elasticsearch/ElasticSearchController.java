@@ -1,16 +1,20 @@
 package elasticsearch;
 
-import org.elasticsearch.common.settings.Settings;
-import org.elasticsearch.node.NodeBuilder;
-import org.elasticsearch.node.Node;
 import org.elasticsearch.client.Client;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.node.Node;
+import org.elasticsearch.node.NodeBuilder;
+
+import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataReader;
+import shared.metadata.MetaDataType;
 
 /**
  *
  * @author akolb
  */
 
-public abstract class ElasticSearchController{
+public abstract class ElasticSearchController
+		implements ElasticSearchMetaDataReader {
 
     /*
      * Are shared
@@ -50,5 +54,11 @@ public abstract class ElasticSearchController{
 
 		node.close();
 
+	}
+	
+	@Override
+	public String getMetaDataFromIndex(MetaDataType filterTypes) {
+		// TODO Get full string from document from metaData index
+		return null;
 	}
 }
