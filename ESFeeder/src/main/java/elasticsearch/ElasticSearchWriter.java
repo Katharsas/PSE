@@ -4,7 +4,9 @@ import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 
 import java.io.IOException;
+import java.util.Collection;
 import java.util.List;
+import java.util.Set;
 
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
@@ -17,6 +19,10 @@ import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
+import shared.metadata.ElasticSearchMetaDataReader;
+import shared.metadata.ElasticSearchMetaDataWriter;
+import shared.metadata.MetaDataSerializer;
+import shared.metadata.MetaDataType;
 
 /**
  *
@@ -24,7 +30,8 @@ import esfeeder.Article;
  * @author dbeckstein
  */
 
-public class ElasticSearchWriter extends ElasticSearchController{
+public class ElasticSearchWriter extends ElasticSearchController
+	implements ElasticSearchMetaDataWriter, ElasticSearchMetaDataReader {
 
 	//var is hardcoded, because it's not necessary to create writers with custom indexes
 	private final String mainIndex = "mainIndex";
@@ -231,4 +238,21 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	public void delete(){}
 
 
+	public void mergeMetaData(Collection<String> newMetaData, MetaDataType filterType){
+    	Set<String> current = MetaDataSerializer.deserializeSet(filterType, this);
+        current.addAll(newMetaData);
+        MetaDataSerializer.serializeSet(current, filterType, this);
+    }
+
+	@Override
+	public String getMetaDataFromIndex(MetaDataType filterTypes) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
+		// TODO Auto-generated method stub
+		
+	}
 }

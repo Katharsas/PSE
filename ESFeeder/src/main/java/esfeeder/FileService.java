@@ -1,27 +1,18 @@
 package esfeeder;
 
 import java.io.File;
-
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-
 import java.util.ArrayList;
-
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -67,7 +58,7 @@ public class FileService {
      * @param deleteNotificationFiles - If true,
      * @return - All lines as a list of Path objects.
      */
-    public List<Path> getSubscribedArticlePaths(boolean deleteNotificationFiles) {
+    private List<Path> getSubscribedArticlePaths(boolean deleteNotificationFiles) {
         try {
             if (!notificationFolder.toFile().exists()) {
                 notificationFolder.toFile().mkdirs();
@@ -122,47 +113,6 @@ public class FileService {
 
         } catch (ParserConfigurationException | SAXException e) {
             throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
-        }
-    }
-
-    /**
-     * @param topics - Any topics that might need to be added for CWA filter. Will be merged with already knwon topics.
-     */
-    public void addTopicsForCWA(Collection<String> topics) {
-        Set<String> current = deserializeSet(cwaTopics);
-        current.addAll(topics);
-        serializeSet(cwaTopics, current);
-    }
-
-    /**
-     * @param sources - Any sources that might need to be added for CWA filter. Will be merged with already knwon sources.
-     */
-    public void addSourcesForCWA(Collection<String> sources) {
-        Set<String> current = deserializeSet(cwaSources);
-        current.addAll(sources);
-        serializeSet(cwaSources, current);
-    }
-
-    private void serializeSet(Path path, Set<?> anySet) {
-        try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(path.toFile()));) {
-            oos.writeObject(anySet);
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
-        }
-    }
-
-    private <T> Set<T> deserializeSet(Path path) {
-        if (!path.toFile().exists()) {
-            return new HashSet<T>();
-        }
-        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream(path.toFile()));) {
-            @SuppressWarnings("unchecked")
-            Set<T> anySet = (Set<T>) ois.readObject();
-            return anySet;
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("Could not convert serialized object to Set!", e);
         } catch (IOException e) {
             throw new UncheckedIOException(e);
         }

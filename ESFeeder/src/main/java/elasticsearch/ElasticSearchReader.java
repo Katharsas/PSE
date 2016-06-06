@@ -10,13 +10,16 @@ import org.elasticsearch.search.SearchHit;
 
 import esfeeder.Article;
 import esfeeder.ArticleId;
+import shared.metadata.ElasticSearchMetaDataReader;
+import shared.metadata.MetaDataType;
 
 /**
  *
  * @author akolb
  */
 
-public class ElasticSearchReader extends ElasticSearchController {
+public class ElasticSearchReader extends ElasticSearchController
+	implements ElasticSearchMetaDataReader {
 
 	private SearchResponse currentSearchResponse;
 
@@ -106,5 +109,10 @@ public class ElasticSearchReader extends ElasticSearchController {
 	
 	}
 
+	@Override
+	public String getMetaDataFromIndex(MetaDataType filterTypes) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 }
