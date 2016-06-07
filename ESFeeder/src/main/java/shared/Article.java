@@ -1,14 +1,17 @@
 package shared;
 
+import java.lang.ClassCastException;
+import java.lang.NullPointerException;
+
 /**
  * @author dbeckstein
  * @author akolb
  */
-public class Article {
+public class Article implements Comparable{
 
     private final ArticleId id; //hashed article name
 
-    // _tmp is a placeholder string to make formatting 
+    // _tmp is a placeholder string to make formatting
     // of following attributes here nicer
     private String _tmp,
             title,
@@ -25,6 +28,25 @@ public class Article {
     public Article(String id) {
         this.id = new ArticleId(id);
     }
+
+	//@Anmerkung
+	//diskutable, nach was sortiert wird
+	@Override
+	public int compareTo(Object that) throws ClassCastException, NullPointerException{
+	
+		try{
+			return this.getArticleId().compareTo(
+                    ((Article) that).getArticleId()
+            );
+
+        }catch(NullPointerException nllptrEx){
+        	throw nllptrEx;
+        }
+        catch(ClassCastException classEx){
+        	throw classEx;
+        }
+	
+	}
 
     @Override
     public String toString() {

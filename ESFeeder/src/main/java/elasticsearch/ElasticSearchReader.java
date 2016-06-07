@@ -13,6 +13,7 @@ import shared.Article;
 import shared.ArticleId;
 import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataType;
+import util.Container;
 
 /**
  *
@@ -70,45 +71,45 @@ public class ElasticSearchReader extends ElasticSearchController
 	 */
 	public void getByQuery(){}
 
-	
+
 	/**
 	 * Searches for similair Articles
-	 * returns a List with 10 articles
+	 * returns a Container with 10 articles
 	 */
-	public List<Article> getSimilair(Article article){
-	
+	public Container<Article> getSimilair(Article article){
+
 		String content = article.getExtractedText();
-		List<Article> resultList = new ArrayList<Article>(); //TODO welche Art von Liste?
-		
+		Container<Article> resultList = new Container()<Article>; //Container is a Wrapper for somekind of List. Can be changed in util.Container
+
 		//Only the contents are compared
-//		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
-//		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
+		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
+		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
 
 		//Execute and get a response
-//		currentSearchResponse = client.prepareSearch(indexName)
-//                .setTypes(indexType)
-//                .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
-//                .setQuery(queryBuilder)
-//                //.setFrom(0) //0 is default
-//                //.setSize(10) //10 is default; either it returns 10 items per hitlist or 10 in total; NEEDS TO BE TESTED
-//                .get();
+		currentSearchResponse = client.prepareSearch(indexName)
+                .setTypes(indexType)
+                .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
+                .setQuery(queryBuilder)
+                //.setFrom(0) //0 is default
+                //.setSize(10) //10 is default; either it returns 10 items per hitlist or 10 in total; NEEDS TO BE TESTED
+                .get();
 
         for (SearchHit hit : currentSearchResponse.getHits().hits()) {
-        		
-//                  resultList.add(
-//                      new Article()
-//                      .setArticleId(new ArticleId().setId(hit.getId()))
-//                      .setTitle(hit.getSource().get(obj_title))
-//                      .setPubDate(hit.getSource().get(obj_pubDate))
-//                      .setExtractedText(hit.getSource().get(obj_ExtractedText))
-//                      .setAuthor(hit.getSource().get(obj_source))
-//                      .setTopic(hit.getSource().get(obj_topic))
-//                      .setUrl(hit.getSource().get(obj_url))
-//                  );
+
+                  resultList.addItem(
+                      new Article()
+                      .setArticleId(new ArticleId().setId(hit.getId()))
+                      .setTitle(hit.getSource().get(obj_title))
+                      .setPubDate(hit.getSource().get(obj_pubDate))
+                      .setExtractedText(hit.getSource().get(obj_ExtractedText))
+                      .setAuthor(hit.getSource().get(obj_source))
+                      .setTopic(hit.getSource().get(obj_topic))
+                      .setUrl(hit.getSource().get(obj_url))
+                  );
         }
-        
+
         return resultList;
-	
+
 	}
 
 	@Override
