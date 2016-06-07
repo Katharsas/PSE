@@ -7,7 +7,6 @@ package esfeeder;
 public class ESFeederRunnable implements Runnable {
 
 	private NewArticleManager newArticleManager;
-	private DuplicateManager duplicateManager;
 
     @Override
     public void run() {
