@@ -35,6 +35,8 @@ import org.joda.time.IllegalFieldValueException;
 
 import org.xml.sax.SAXException;
 
+import shared.Article;
+
 public class XmlParser {
 
     private static String parse_xml(Element node, String fld_name) {

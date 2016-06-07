@@ -1,4 +1,4 @@
-package esfeeder;
+package shared;
 
 import java.util.Objects;
 

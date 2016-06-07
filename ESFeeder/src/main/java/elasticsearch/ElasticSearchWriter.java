@@ -18,7 +18,7 @@ import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 
-import esfeeder.Article;
+import shared.Article;
 import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataWriter;
 import shared.metadata.MetaDataType;

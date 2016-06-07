@@ -9,8 +9,8 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.index.IndexNotFoundException;
 import org.elasticsearch.search.SearchHit;
 
-import esfeeder.Article;
-import esfeeder.ArticleId;
+import shared.Article;
+import shared.ArticleId;
 import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataType;
 

@@ -8,6 +8,7 @@ import org.w3c.dom.Document;
 
 import elasticsearch.ElasticSearchController;
 import elasticsearch.ElasticSearchWriter;
+import shared.ArticleId;
 
 public class NewArticleManager {
 	private static NewArticleManager newArticleManager;

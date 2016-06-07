@@ -1,6 +1,8 @@
 package esfeeder;
 import java.util.List;
 
+import shared.ArticleId;
+
 public class DuplicateManager {
 	private static DuplicateManager duplicateManager;
 	
