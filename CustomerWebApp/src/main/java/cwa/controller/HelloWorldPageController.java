@@ -1,8 +1,12 @@
 package cwa.controller;
 
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -28,12 +32,15 @@ public class HelloWorldPageController {
     public String parse_post(@RequestBody String json) throws UnsupportedEncodingException {
     
         String json_url_decoded = java.net.URLDecoder.decode(json, "UTF-8");
-        try(  PrintWriter out = new PrintWriter( "C:/Users/Daniel/Documents/PSE/CustomerWebApp/src/main/java/cwa/controller/log.txt" )  ){
+        String logFileName =  "C:/Users/Daniel/Documents/PSE/CustomerWebApp/src/main/java/cwa/controller/log.txt";
+        try(  PrintWriter out = new PrintWriter( new FileWriter( logFileName,true ) )    ){
             out.println( json_url_decoded );
         }catch (FileNotFoundException ex) {
-            //Logger.getLogger(HelloWorldPageController.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(HelloWorldPageController.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(HelloWorldPageController.class.getName()).log(Level.SEVERE, null, ex);
         }
-       String result = "{'name':'John Johnson','street':'Oslo West 16','phone':'555 1234567'}";
+       //String result = "{'name':'John Johnson','street':'Oslo West 16','phone':'555 1234567'}";
       
       
 		return json_url_decoded;//result;
