@@ -8,6 +8,9 @@ import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.index.IndexNotFoundException;
 import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
+import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
+import org.elasticsearch.action.search.SearchType;
 
 import shared.Article;
 import shared.ArticleId;
@@ -79,14 +82,14 @@ public class ElasticSearchReader extends ElasticSearchController
 	public Container<Article> getSimilair(Article article){
 
 		String content = article.getExtractedText();
-		Container<Article> resultList = new Container()<Article>; //Container is a Wrapper for somekind of List. Can be changed in util.Container
+		Container<Article> resultList = new Container<Article>(); //Container is a Wrapper for somekind of List. Can be changed in util.Container
 
 		//Only the contents are compared
 		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
-		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
+//		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
 
 		//Execute and get a response
-		currentSearchResponse = client.prepareSearch(indexName)
+		currentSearchResponse = client.prepareSearch(searchIndex)
                 .setTypes(indexType)
                 .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
                 .setQuery(queryBuilder)
@@ -97,14 +100,13 @@ public class ElasticSearchReader extends ElasticSearchController
         for (SearchHit hit : currentSearchResponse.getHits().hits()) {
 
                   resultList.addItem(
-                      new Article()
-                      .setArticleId(new ArticleId().setId(hit.getId()))
-                      .setTitle(hit.getSource().get(obj_title))
-                      .setPubDate(hit.getSource().get(obj_pubDate))
-                      .setExtractedText(hit.getSource().get(obj_ExtractedText))
-                      .setAuthor(hit.getSource().get(obj_source))
-                      .setTopic(hit.getSource().get(obj_topic))
-                      .setUrl(hit.getSource().get(obj_url))
+                      new Article(hit.getId())
+                      .setTitle((String) hit.getSource().get(obj_title))
+                      .setPubDate((String) hit.getSource().get(obj_pubDate))
+                      .setExtractedText((String) hit.getSource().get(obj_content))
+                      .setAuthor((String) hit.getSource().get(obj_source))
+                      .setTopic((String) hit.getSource().get(obj_topic))
+                      .setUrl((String) hit.getSource().get(obj_url))
                   );
         }
 
