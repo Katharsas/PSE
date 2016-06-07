@@ -79,7 +79,7 @@
     
     function do_post(){
         //p =  {action:"action_name"};
-        p =  {action:"search_by_keyword", words:"twitter barack obama"};
+        p =  {action:"search_by_keyword", words:"ktwitter barack obama"};
         post(p,returnData);
     }
     do_post();
