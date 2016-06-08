@@ -20,6 +20,13 @@ import org.joda.time.IllegalFieldValueException;
  */
 public class ArticleParser {
 
+	//TODO Variablennamen vergeben!
+	/**
+	 * 
+	 * @param s
+	 * @return
+	 * @throws IllegalFieldValueException
+	 */
     public String parse_pubDate(String s) throws IllegalFieldValueException {
         String r, s_raw, d_formatted;
 
@@ -55,10 +62,8 @@ public class ArticleParser {
         return r;
     }
 
-    /**
-     *
-     * todo
-     *
+    //TODO
+    /*
      * actionlogout, ActionSay ... ! site/say?message=lkj alles in site conntroler
      *
      * article proper stirng object print parse data, topic ....
@@ -73,6 +78,12 @@ public class ArticleParser {
      *
      *
      *
+     */
+    
+    
+    /**
+     * @param s
+     * @return
      */
     public String parse_source(String s) {
         String r;
@@ -116,6 +127,11 @@ public class ArticleParser {
         return r;
     }
 
+    /**
+     * 
+     * @param topic
+     * @return
+     */
     public String parse_topic(String topic) {
         String r;
         r = null;
