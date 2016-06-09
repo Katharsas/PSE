@@ -38,7 +38,13 @@ import org.xml.sax.SAXException;
 import shared.Article;
 
 public class XmlParser {
-
+    /**
+     * Returns content of xml node
+     * 
+     * @param node - document node (xml-node)
+     * @param fld_name - name of xml field
+     * @return 
+     */
     private static String parse_xml(Element node, String fld_name) {
 
         return node
@@ -47,8 +53,8 @@ public class XmlParser {
                 .getTextContent();
     }
 
-    // refac enclose everything in try catch, use function pointers ?
-    // not use func pointers use switch case
+    
+    // Trim string
     private String clean(String s) {
         if (s != null) {
             s = s.trim();
@@ -56,18 +62,26 @@ public class XmlParser {
         return s;
     }
 
+    /**
+     * Parse HashMap element <Path, Document> to Article element
+     * 
+     * @param path
+     * @param doc
+     * @return 
+     */
     public Article parse(Path path, Document doc) {
         String s = "";
         ArticleParser ap = new ArticleParser();
 
-        // Article - set id
+        // Article - set id on init
         String id = path.normalize().toString();
+        // Create Article element
         Article article = new Article(id);
 
-        // bug todo - check id, is path normal? this long string thingy?
+        // bug todo - check id, is path normal? this long string thingy?, check null
         try {
 
-            // Get proper nodes from xml
+            // Select proper nodes from xml
             doc.getDocumentElement().normalize();
 
             Element doc_el;
@@ -77,7 +91,8 @@ public class XmlParser {
             Node item_node = nList_c.item(0);
             Element item_elem = (Element) item_node;
 
-            // Article - set several attributes
+            // Article - set several attributes of Article Class
+            
             // set title
             String a_title = "";
             a_title = parse_xml(item_elem, "title");
@@ -85,18 +100,15 @@ public class XmlParser {
             article.setTitle(a_title);
 
             // set pubDate
-            //String a_pubDate = "<This is default for date>";
             String a_pubDate = "";
             try {
                 a_pubDate = parse_xml(item_elem, "pubDate"); // bug try catch here !
             } catch (NullPointerException ex) {
-                // slightly suboptimal by catching NPE
                 //System.out.println("NPE encountered in body");
             } catch (IllegalFieldValueException ex) {
                 // detect function behaviour refac
                 System.out.println("illegal filed value");
             }
-            // refac catch more / all exceptions here !!
 
             a_pubDate = ap.parse_pubDate(a_pubDate);
             a_pubDate = clean(a_pubDate);
@@ -109,13 +121,11 @@ public class XmlParser {
             article.setExtractedText(a_extractedText);
 
             // set author
-            //String a_author = "<This is the default string for author>";
             String a_author = "";
             try {
                 a_author = parse_xml(item_elem, "dc:creator"); // todo check xml files for author, <author><dc:...>
 
             } catch (NullPointerException ex) {
-                // slightly suboptimal by catching NPE
                 //System.out.println("no author field set"); // refac
             }
             a_author = clean(a_author);
@@ -141,16 +151,10 @@ public class XmlParser {
 
             // @now
             // TODO - these are missing
-            // id,source, topic, author 
-            // HOW TO FIND id, source, topic and author :
-            // ----------------------------------------------
-            // id - find by parsing file path
-            // source - find by parsing link
-            // topic - find by parsing
-            // author - find by parsing xml file, sometimes they have this in the xml file (didn't see this so far)
+            // better catch, try ... structure here - refac todo 
             s += "";
 
-            // collect sets
+            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -168,8 +172,7 @@ public class XmlParser {
         Set<String> topics_set = new HashSet<String>();
         Path path;
         Document doc;
-        // . = null;
-        // needed to avoid - object might not have been initialized error
+        // Setting null needed to avoid - object might not have been initialized error
         doc = null;
         path = null;
 
@@ -189,7 +192,7 @@ public class XmlParser {
     }
 
     /**
-     * Debug functions
+     * Debug functions - run debug code
      *
      * @author dbeckstein
      */
@@ -197,15 +200,17 @@ public class XmlParser {
 
         FileService tmp_FileService = new FileService();
 
-        Map<Path, Document> fileList; //bug
+        Map<Path, Document> fileList;
+        
         fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
 
+        // init files lists for german & us articles
         Map<Path, Document> fileList_germany = tmp_FileService.getArticles_debug("germany/");
         Map<Path, Document> fileList_us = tmp_FileService.getArticles_debug("US"); //bug
 
         System.out.println(fileList.size());
         List<Article> articles;
-        //articles = this.parseFileList(fileList);
+        
         articles = this.parseFileList(fileList_us);
         articles = this.parseFileList(fileList_germany);
 
