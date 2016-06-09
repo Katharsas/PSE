@@ -50,6 +50,7 @@ public class ElasticSearchReader extends ElasticSearchController
 
         // renamed id, to id_str because, ArticleId id already uses variable "id"
         String id_str = id.getId();
+        // TODO isExists check id existing
 
         //executes and gets the response
         GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
@@ -86,6 +87,10 @@ public class ElasticSearchReader extends ElasticSearchController
     }
 
     /**
+     * =================
+	 * TODO throw NullPointerException oder IllegalArgumentException für articleId nicht existent
+	 * =================
+     * 
      * Searches for similair Articles
      *
      * @return a List with articles

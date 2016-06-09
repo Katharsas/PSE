@@ -15,7 +15,14 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import cwa.service.ArticleProvider;
 import shared.Article;
+import shared.ArticleId;
 
+/**
+ * Controller for search query and similar search with easy custom validation
+ * mechanism.
+ * 
+ * @author jmothes
+ */
 @Controller
 public class SearchController {
 	
@@ -26,6 +33,41 @@ public class SearchController {
 		this.articleProvider = articleProvider;
 	}
 	
+	/**
+	 * @param id - id of the article of which to find similar articles
+	 * @param range - range in form "x-y" where x is skipped articles, y is limit (1-based)
+	 * 
+	 * @return Similar articles or "validation" error or "idNotFound" error.
+	 */
+	@RequestMapping(value = "/similar", method = RequestMethod.GET)
+	@ResponseBody
+	public ArticleResult similar(
+			@RequestParam(value = "id", required = true) String id,
+			@RequestParam(value = "range", required = false) String range
+			) {
+		try {
+			// TODO check if article for this id exists or catch exception or something
+			// and return "idNotFound" if no article exists
+			ArticleId articleId = new ArticleId(id);
+			final Pair<Integer, Integer> rangeParsed = parseRange(range);
+			ArrayList<Article> articles = articleProvider.getSimilar(articleId, rangeParsed.a, rangeParsed.b);
+			return new ArticleResult(articles);
+		} catch(ValidationException e) {
+			return new ArticleResult("validation", e.getMessage());
+		}
+	}
+	
+	/**
+	 * 
+	 * @param query - search string
+	 * @param range - range in form "x-y" where x is skipped articles, y is limit (1-based)
+	 * @param topics - allowed topics if any, otherwise all topics are allowed
+	 * @param sources - allowed sources if any, otherwise all sources are allowed
+	 * @param from - limit old article dates if exists, otherwise no limit towards the past
+	 * @param to - limit new article dates if exists, otherwise no limit towards current day
+	 * 
+	 * @return Subset of matching articles according to range & filters or "validation" error.
+	 */
 	@RequestMapping(value = "/search", method = RequestMethod.GET)
 	@ResponseBody
 	public ArticleResult search(
@@ -46,7 +88,7 @@ public class SearchController {
 					rangeParsed.a, rangeParsed.b, topicsParsed, sourceParsed, fromParsed, toParsed);
 			return new ArticleResult(articles);
 		} catch(ValidationException e) {
-			return new ArticleResult(e.getMessage());
+			return new ArticleResult("validation", e.getMessage());
 		}
 	}
 
@@ -99,7 +141,7 @@ public class SearchController {
 	protected static class ArticleResult {
 		public final String errorMessage;
 		public final ArrayList<Article> articles;
-		public ArticleResult(String errorMessage) {
+		public ArticleResult(String error, String errorMessage) {
 			this.errorMessage = errorMessage;
 			this.articles = null;
 		}
