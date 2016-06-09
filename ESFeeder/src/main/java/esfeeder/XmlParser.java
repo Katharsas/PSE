@@ -38,12 +38,13 @@ import org.xml.sax.SAXException;
 import shared.Article;
 
 public class XmlParser {
+
     /**
      * Returns content of xml node
-     * 
+     *
      * @param node - document node (xml-node)
      * @param fld_name - name of xml field
-     * @return 
+     * @return
      */
     private static String parse_xml(Element node, String fld_name) {
 
@@ -53,7 +54,6 @@ public class XmlParser {
                 .getTextContent();
     }
 
-    
     // Trim string
     private String clean(String s) {
         if (s != null) {
@@ -64,13 +64,14 @@ public class XmlParser {
 
     /**
      * Parse HashMap element <Path, Document> to Article element
-     * 
+     *
      * @param path
      * @param doc
-     * @return 
+     * @return
      */
     public Article parse(Path path, Document doc) {
         String s = "";
+        // Create ArticleParser to parse content of xml-tags, into Article class (this is like a tiny util class)
         ArticleParser ap = new ArticleParser();
 
         // Article - set id on init
@@ -92,7 +93,6 @@ public class XmlParser {
             Element item_elem = (Element) item_node;
 
             // Article - set several attributes of Article Class
-            
             // set title
             String a_title = "";
             a_title = parse_xml(item_elem, "title");
@@ -154,7 +154,6 @@ public class XmlParser {
             // better catch, try ... structure here - refac todo 
             s += "";
 
-            
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -201,7 +200,7 @@ public class XmlParser {
         FileService tmp_FileService = new FileService();
 
         Map<Path, Document> fileList;
-        
+
         fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
 
         // init files lists for german & us articles
@@ -210,7 +209,7 @@ public class XmlParser {
 
         System.out.println(fileList.size());
         List<Article> articles;
-        
+
         articles = this.parseFileList(fileList_us);
         articles = this.parseFileList(fileList_germany);
 
