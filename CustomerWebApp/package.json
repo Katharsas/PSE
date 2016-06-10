@@ -9,10 +9,18 @@
 		"gulp": "^3.9.1",
 		"gulp-if": "^2.0.0",
 		"gulp-notify": "^2.2.0",
-		"gulp-typescript": "2.13.4" 
+		"browserify": "^13.0.1",
+		"tsify": "0.16.0",
+		"gulp-uglify": "^1.5.3",
+		"walk-sync": "^0.2.6",
+		"vinyl-source-stream": "^1.1.0",
+		"vinyl-buffer": "^1.0.0",
+		"gulp-rename": "^1.2.2",
+		"event-stream": "^3.3.2"
 	},
 	"unused": {
-		"typescript": "1.8.10"
+		"typescript": "1.8.10",
+		"gulp-typescript": "2.13.4"
 	},
 	"scripts": {
 		"gulp-ts": "gulp typescript",

@@ -5,8 +5,9 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.regex.PatternSyntaxException;
 
+import javax.inject.Inject;
+
 import org.apache.commons.lang3.StringUtils;
-import org.elasticsearch.common.inject.Inject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -48,11 +49,12 @@ public class SearchController {
 		try {
 			// TODO check if article for this id exists or catch exception or something
 			// and return "idNotFound" if no article exists
-			ArticleId articleId = new ArticleId(id);
+			final ArticleId articleId = new ArticleId(id);
 			final Pair<Integer, Integer> rangeParsed = parseRange(range);
-			ArrayList<Article> articles = articleProvider.getSimilar(articleId, rangeParsed.a, rangeParsed.b);
+			final ArrayList<Article> articles =
+					articleProvider.getSimilar(articleId, rangeParsed.a, rangeParsed.b);
 			return new ArticleResult(articles);
-		} catch(ValidationException e) {
+		} catch(final ValidationException e) {
 			return new ArticleResult("validation", e.getMessage());
 		}
 	}
@@ -84,10 +86,10 @@ public class SearchController {
 			final String[] sourceParsed = parseStringList(sources);
 			final LocalDate fromParsed = parseDate(from);
 			final LocalDate toParsed = parseDate(to);
-			ArrayList<Article> articles = articleProvider.getByQuery(query,
+			final ArrayList<Article> articles = articleProvider.getByQuery(query,
 					rangeParsed.a, rangeParsed.b, topicsParsed, sourceParsed, fromParsed, toParsed);
 			return new ArticleResult(articles);
-		} catch(ValidationException e) {
+		} catch(final ValidationException e) {
 			return new ArticleResult("validation", e.getMessage());
 		}
 	}
@@ -112,7 +114,7 @@ public class SearchController {
 			limit = 10;
 		} else {
 			try {
-				int seperatorCount = StringUtils.countMatches(range, '-');
+				final int seperatorCount = StringUtils.countMatches(range, '-');
 				if (seperatorCount == 0) {
 					skip = 0;
 					limit = Integer.parseInt(range);

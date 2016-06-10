@@ -1,5 +1,0 @@
-{
-  "watch": true,
-  "rootPath": "ts_lazy/",
-  "outputPath": "js_lazy/"
-}

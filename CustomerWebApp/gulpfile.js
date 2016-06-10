@@ -1,25 +1,83 @@
+// ==================
+// IMPORTS
+// ==================
 var gulp = require('gulp');
-var ts = require('gulp-typescript');
+var gulpif = require('gulp-if');
+var notify = require("gulp-notify");
 
-var tsSource = "./src/main/typescript/**/*.ts";
-var tsTarget = "./src/main/webapp/WEB-INF/resources/js";
-var tsTargetFile = "index.bundle.js";
+var browserify = require('browserify');
+var tsify = require('tsify');
+var uglify = require('gulp-uglify');
+
+var walkSync = require('walk-sync');
+var sourceStream = require("vinyl-source-stream");
+var buffer = require('vinyl-buffer');
+var rename = require("gulp-rename");
+var eventStream = require("event-stream");
+
+//==================
+// OPTIONS
+// ==================
+
+var tsFiles = ["index.ts"]
+
+var jsSourceMaps = true;
+var jsMinify = false;
+
+var tsSource = "./src/main/typescript/";
+var tsTarget = "./src/main/webapp/resources/js/";
+
 var tsOptions = {
 	target: "es5",
-	outFile: tsTargetFile,
 	noImplicitAny: true,
 	noExternalResolve : true
+};
+
+//==================
+// BUILD SCRIPTS
+//==================
+
+function handleErrors() {
+	var args = Array.prototype.slice.call(arguments);
+	notify.onError({
+		title: "Compile Error in line <%= error.lineNumber %>",
+		message: "<%= error.message %>"
+	}).apply(this, args);
+	this.emit("end"); // Keep gulp from hanging on this task
 }
 
 /**
- * Compiles all typescript files to javascript modules (as specified in tsOptions).
+ * Compiles specified ts files to javascript modules (as specified in tsOptions).
  */
 gulp.task('typescript', function() {
-	var fullTarget = tsTarget + '/' + tsTargetFile
-    console.log('Compiling and bundling typescript to ' + fullTarget);
-    return gulp.src([tsSource])
-        .pipe(ts(tsOptions))
-		.pipe(gulp.dest(tsTarget));
+	var tasks = tsFiles.map(function(file) {
+		
+		var configBrowserify = {
+			entries: [tsSource + file],
+			debug: jsSourceMaps
+		};
+		var bundler = browserify(configBrowserify);
+		
+		var typingsFolder = tsSource + "typings";
+		walkSync(typingsFolder).forEach(function(file) {
+		    if (file.match(/\.d\.ts$/)) {
+		    	bundler.add(typingsFolder + "/" + file);
+		    }
+		});
+		
+		return bundler
+			.plugin(tsify, tsOptions)
+			.bundle()
+			.on("error", handleErrors)
+			.pipe(sourceStream(file))
+			.pipe(gulpif(jsMinify, buffer()))
+			.pipe(gulpif(jsMinify, uglify()))
+			.pipe(rename({
+				extname: ".bundle.js"
+			}))
+			.pipe(gulp.dest(tsTarget));
+	});
+	return eventStream.merge.apply(null, tasks);
 });
 
 /**
