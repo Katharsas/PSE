@@ -251,3 +251,4 @@ nb-configuration.xml
 *.bak~*
 *.lock
 node_modules
+CustomerWebApp/src/main/java/cwa/controller/log.txt
