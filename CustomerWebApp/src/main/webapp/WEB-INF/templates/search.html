@@ -29,7 +29,7 @@
             <input id="fld_search" class="search" type="text" placeholder="Enter keywords here" autofocus />
             <a href="#search_keywords">
             <div id="img_search_container" >
-                <img id ="img_search" class="search" src="http://localhost/resources/img/lupe.png"/>
+                <img id ="img_search" class="search" th:src="@{/resources/img/lupe.png}"/>
             </div>
             </a>
             <a href="#search_filter">
@@ -157,7 +157,7 @@
                         -->
                         <div class="container_buttons">
                             <div class="myButton">
-                                <a href="#cache_id_13244_"><img src="http://localhost/resources/img/cache_arrow_down_small_grey.png"/>Cache</a>
+                                <a href="#cache_id_13244_"><img th:src="@{/resources/img/cache_arrow_down_small_grey.png}"/>Cache</a>
                             </div>
                             <div class="myButton">
                                 <a href="#similar_id_13244_">Similar</a>
