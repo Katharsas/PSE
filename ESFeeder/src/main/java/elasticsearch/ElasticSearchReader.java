@@ -137,31 +137,33 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * @params to - give me only articles that are older then <to>, can be null -> <to> == today
 	 */
 	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
-
+		
+		//check if null
+		Objects.requireNonNull(topics);
+		Objects.requireNonNull(sources);
+		Objects.requireNonNull(query);
+		
 		BoolQueryBuilder boolQueryBuilder = boolQuery();
 
 		//add queries for getting articles that only have one of the listed topics
-//		if(topics.length > 0){
-		    for(String topic : topics){
-                boolQueryBuilder.must(
-                	boolQuery().should(
-                		matchQuery(obj_topic, topic)
-                	)
-                );
-            }
-//        }
+
+		for(String topic : topics){
+        	boolQueryBuilder.must(
+            	boolQuery().should(
+                	matchQuery(obj_topic, topic)
+                )
+            );
+        }
 
         //add queries for getting articles that only have one of the listed sources
-//        if(sources.length > 0){
-		    for(String source : sources){
-		    	boolQueryBuilder.must(
-		    		boolQuery().should(
-                		matchQuery(obj_source, source)
+		for(String source : sources){
+			boolQueryBuilder.must(
+		    	boolQuery().should(
+                	matchQuery(obj_source, source)
                 	)
-                );
-		    }
-//		}
-
+            );
+		}
+		    
 		//add query for getting articles with a puDate greater-euqals then from
 		boolQueryBuilder.must(
 			rangeQuery(obj_pubDate).gte(from)
