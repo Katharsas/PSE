@@ -55,7 +55,7 @@ public abstract class ElasticSearchController
 		node.close();
 
 	}
-	
+
 	@Override
 	public String getMetaDataFromIndex(MetaDataType filterTypes) {
 		// TODO Get full string from document from metaData index

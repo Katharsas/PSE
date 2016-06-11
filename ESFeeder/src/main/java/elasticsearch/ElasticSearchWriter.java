@@ -18,6 +18,7 @@ import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 
+//import shared.ElasticSearchController;
 import shared.Article;
 import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataWriter;
@@ -158,7 +159,7 @@ public class ElasticSearchWriter extends ElasticSearchController
                 .get();
 
         for (SearchHit hit : searchResponse.getHits().hits()) {
-        		
+
 //                  new Article().setArticleId( new ArticleId().setId(  ) )
 //                  .setTitle(hit.getSource().get(obj_title))
 //                  .setPubDate(hit.getSource().get(obj_pubDate))
@@ -166,7 +167,7 @@ public class ElasticSearchWriter extends ElasticSearchController
 //                  .setAuthor(hit.getSource().get(obj_source))
 //                  .setTopic(hit.getSource().get(obj_topic))
 //                  .setUrl(hit.getSource().get(obj_url));
-                  
+
                   System.out.println(hit.getScore());
         }
         return false;
@@ -247,7 +248,7 @@ public class ElasticSearchWriter extends ElasticSearchController
         MetaDataSerializer.serializeSet(current, filterType, this);
     }
 
-	
+
 	@Override
 	public void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
 		// TODO Overwrite document at metaData index of given type
