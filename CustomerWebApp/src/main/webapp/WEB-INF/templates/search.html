@@ -2,12 +2,12 @@
 <head>
     <meta charset="UTF-8">
     
-    <link rel="icon" href="http://localhost/resources/img/favicon_white.ico" type="image/x-icon" />
+    <link rel="icon" th:href="@{/resources/img/favicon_white.ico}" type="image/x-icon" />
     
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     
-    <link rel="stylesheet" type="text/css" href="http://localhost/resources/css/main.css">
+    <link rel="stylesheet" type="text/css" th:href="@{/resources/css/main.css}">
     
     <!--
     // compile sass with cmd: 
@@ -16,8 +16,8 @@
     <script type="text/javascript" src="js/collection.js"></script>
     -->
     
-    <script type="text/javascript" src="http://localhost/resources/js/main.js"></script>
-    <script type="text/javascript" src="http://localhost/resources/js/jquery-1.11.3.js"></script>
+    <script type="text/javascript" th:src="@{/resources/js/main.js}"></script>
+    <script type="text/javascript" th:src="@{/resources/js/jquery-1.11.3.js}"></script>
     
     <title>Search Engine</title>  
     
@@ -29,7 +29,7 @@
             <input id="fld_search" class="search" type="text" placeholder="Enter keywords here" autofocus />
             <a href="#search_keywords">
             <div id="img_search_container" >
-                <img id ="img_search" class="search" src="http://localhost/resources/img/lupe.png"/>
+                <img id ="img_search" class="search" th:src="@{/resources/img/lupe.png}"/>
             </div>
             </a>
             <a href="#search_filter">
@@ -157,7 +157,7 @@
                         -->
                         <div class="container_buttons">
                             <div class="myButton">
-                                <a href="#cache_id_13244_"><img src="http://localhost/resources/img/cache_arrow_down_small_grey.png"/>Cache</a>
+                                <a href="#cache_id_13244_"><img th:src="@{/resources/img/cache_arrow_down_small_grey.png}"/>Cache</a>
                             </div>
                             <div class="myButton">
                                 <a href="#similar_id_13244_">Similar</a>
@@ -182,9 +182,9 @@
         <div class="about">About</div>
     </div>
     
-    <script type="text/javascript" src="http://localhost/resources/js_lazy/onload.js"></script>
+    <script type="text/javascript" th:src="@{/resources/js_lazy/onload.js}"></script>
     <!-- bug , bug lancheck add network-->
-    <script type="text/javascript" src="http://localhost/resources/js_lazy/polyfiller_date.js"></script>
+    <script type="text/javascript" th:src="@{/resources/js_lazy/polyfiller_date.js}"></script>
   <!--
     <div class="footer">
                 <p>Copyright (c) 2008</p>

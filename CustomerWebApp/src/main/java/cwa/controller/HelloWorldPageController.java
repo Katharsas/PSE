@@ -32,7 +32,7 @@ public class HelloWorldPageController {
     public String parse_post(@RequestBody String json) throws UnsupportedEncodingException {
     
         String json_url_decoded = java.net.URLDecoder.decode(json, "UTF-8");
-        String logFileName =  "C:/Users/Daniel/Documents/PSE/CustomerWebApp/src/main/java/cwa/controller/log.txt";
+        String logFileName =  "src/main/java/cwa/controller/log.txt";
         try(  PrintWriter out = new PrintWriter( new FileWriter( logFileName,true ) )    ){
             out.println( json_url_decoded );
         }catch (FileNotFoundException ex) {

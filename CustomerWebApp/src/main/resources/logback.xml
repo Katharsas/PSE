@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 
+	Levels:
+	
+	ALL < TRACE < DEBUG < INFO <  WARN < ERROR < OFF
+	
+	To decide if message gets logged, root/logger level is compared with level
+	from method call. No level attribute is synonym to level OFF or INHERITED.
+ -->
+
+<!-- Enable scanning of this config file -->
+<configuration scan="true" scanPeriod="30 seconds" debug="false">
+	<appender name="consoleAppender" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<Pattern>%d{HH:mm:ss.SSS} %-5level %logger{200} - %msg %n</Pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+			<level>DEBUG</level>
+		</filter>
+	</appender>
+  	
+  	<logger name="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" level="WARN"/>
+<!-- 	<logger name="org.springframework" level="WARN"/> -->
+
+	<root>
+		<level value="INFO" />
+		<appender-ref ref="consoleAppender" />
+	</root>
+
+</configuration>

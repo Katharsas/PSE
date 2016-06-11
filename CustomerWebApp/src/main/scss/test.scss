@@ -1,0 +1,9 @@
+@import 'test-colors';
+
+.class-parent {
+	background-color: $parentColor;
+	
+	.class-children {
+		background-color: $childColor;
+	}
+}

@@ -126,6 +126,12 @@ public class FileService {
      * @return
      */
     //private final static Path archive_devDaniel = Paths.get("../Daniel_ESDemo_Crawler/data/_few");
+    /**
+     * List all files that are in this path, including all subdirectories recursively)
+     *
+     * @param directoryName
+     * @return
+     */
     private static List<File> listFiles_debug(String directoryName) {
         File directory = new File(directoryName);
 
@@ -145,6 +151,12 @@ public class FileService {
         return resultList;
     }
 
+    /**
+     * Parses articles in folder "subpath_name" into Map<Path, Document>
+     *
+     * @param subpath_name - name of archive directory (where the Crawler files are located)
+     * @return
+     */
     public Map<Path, Document> getArticles_debug(String subpath_name) {
 
         String path_name = "../Daniel_ESDemo_Crawler/data/" + subpath_name; // bug todo, not use this bad String concat
