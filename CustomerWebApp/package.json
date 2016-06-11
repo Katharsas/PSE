@@ -16,7 +16,9 @@
 		"vinyl-source-stream": "^1.1.0",
 		"vinyl-buffer": "^1.0.0",
 		"gulp-rename": "^1.2.2",
-		"event-stream": "^3.3.2"
+		"event-stream": "^3.3.2",
+		"gulp-sass": "^2.2.0",
+		"gulp-sourcemaps": "^1.6.0"
 	},
 	"unused": {
 		"typescript": "1.8.10",
@@ -24,6 +26,7 @@
 	},
 	"scripts": {
 		"gulp-ts": "gulp typescript",
+		"gulp-scss": "gulp sass",
 		"gulp-watch": "gulp watch"
 	}
 }

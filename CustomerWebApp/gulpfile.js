@@ -1,3 +1,5 @@
+"use strict";
+
 // ==================
 // IMPORTS
 // ==================
@@ -15,8 +17,11 @@ var buffer = require('vinyl-buffer');
 var rename = require("gulp-rename");
 var eventStream = require("event-stream");
 
+var sass = require("gulp-sass");
+var sourcemaps = require("gulp-sourcemaps");
+
 //==================
-// OPTIONS
+// OPTIONS TS
 // ==================
 
 var tsFiles = ["index.ts"]
@@ -34,7 +39,16 @@ var tsOptions = {
 };
 
 //==================
-// BUILD SCRIPTS
+//OPTIONS CSS
+//==================
+
+var cssSourceMaps = true;
+var sassSource = "./src/main/scss/";
+var sassTarget = "./src/main/webapp/resources/css/";
+var sassFilter = "**/*.scss";
+
+//==================
+// BUILD TS
 //==================
 
 function handleErrors() {
@@ -80,10 +94,29 @@ gulp.task('typescript', function() {
 	return eventStream.merge.apply(null, tasks);
 });
 
+//==================
+//BUILD CSS
+//==================
+
+gulp.task("sass", function () {
+	return gulp
+		.src(sassSource + sassFilter)
+		.pipe(gulpif(cssSourceMaps, sourcemaps.init()))
+		.pipe(sass().on("error", sass.logError))
+		.pipe(gulpif(cssSourceMaps, sourcemaps.write()))
+		.pipe(gulp.dest(sassTarget));
+});
+
+//==================
+//WATCH
+//==================
+
 /**
  * Watches all typescript files and recompiles on change.
  */
 gulp.task('watch', function() {
 	console.log('Watching files at ' + tsSource + ' for changes...');
-    gulp.watch(tsSource, ['typescript']);
+    gulp.watch(tsSource + "**/*.ts", ['typescript']);
+    console.log('Watching files at ' + sassSource + ' for changes...');
+    gulp.watch(sassSource + sassFilter, ['sass']);
 });
