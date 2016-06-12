@@ -119,6 +119,7 @@ public class ElasticSearchWriter extends ElasticSearchController
             // isCreated() is true if the document is a new one, false if it has been updated
             boolean created = indexResponse.isCreated();
             System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
+/*DEBUG*/
 
 	}
 
@@ -143,6 +144,7 @@ public class ElasticSearchWriter extends ElasticSearchController
 	 */
 	private boolean similairArticleIsAlreadyIndexed( Article article, String indexName ){
 
+		float tooSimilair = 0.8f; //arbitrary value
 		String content = article.getExtractedText();
 
 		//Only the contents are compared
@@ -160,15 +162,11 @@ public class ElasticSearchWriter extends ElasticSearchController
 
         for (SearchHit hit : searchResponse.getHits().hits()) {
 
-//                  new Article().setArticleId( new ArticleId().setId(  ) )
-//                  .setTitle(hit.getSource().get(obj_title))
-//                  .setPubDate(hit.getSource().get(obj_pubDate))
-//                  .setExtractedText(hit.getSource().get(obj_ExtractedText))
-//                  .setAuthor(hit.getSource().get(obj_source))
-//                  .setTopic(hit.getSource().get(obj_topic))
-//                  .setUrl(hit.getSource().get(obj_url));
+System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.getScore());
 
-                  System.out.println(hit.getScore());
+			if(hit.getScore() >= tooSimilair){
+            	return true;
+            }
         }
         return false;
 	}
@@ -252,5 +250,8 @@ public class ElasticSearchWriter extends ElasticSearchController
 	@Override
 	public void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
 		// TODO Overwrite document at metaData index of given type
+		
+		//turn filterType into an String? Use MetaDataType as a key?
+		//which format should the String be in?
 	}
 }

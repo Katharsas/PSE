@@ -57,8 +57,13 @@ public abstract class ElasticSearchController
 	}
 
 	@Override
-	public String getMetaDataFromIndex(MetaDataType filterTypes) {
+	public String getMetaDataFromIndex(MetaDataType filterType) {
 		// TODO Get full string from document from metaData index
+		
+		//turn filterType into an String? Use MetaDataType as a key?
+		//which format should the String be in?
+		//better return
+		
 		return null;
 	}
 }

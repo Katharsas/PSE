@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.time.LocalDate;
+import java.util.Objects;
 
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
@@ -137,16 +138,21 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * @params to - give me only articles that are older then <to>, can be null -> <to> == today
 	 */
 	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
-		
+
 		//check if null
 		Objects.requireNonNull(topics);
 		Objects.requireNonNull(sources);
 		Objects.requireNonNull(query);
-		
+
 		BoolQueryBuilder boolQueryBuilder = boolQuery();
+		
+		//add query for getting articles that have simlair content
+		//default value is 30% smilarity, see "minimum_should_match" in https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_8
+		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).likeText(query); //deprecated
+//		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).like(content);
+		boolQueryBuilder.must(moreLikeThisQueryBuilder);
 
 		//add queries for getting articles that only have one of the listed topics
-
 		for(String topic : topics){
         	boolQueryBuilder.must(
             	boolQuery().should(
@@ -163,7 +169,7 @@ public class ElasticSearchReader extends ElasticSearchController
                 	)
             );
 		}
-		    
+
 		//add query for getting articles with a puDate greater-euqals then from
 		boolQueryBuilder.must(
 			rangeQuery(obj_pubDate).gte(from)
@@ -194,6 +200,7 @@ public class ElasticSearchReader extends ElasticSearchController
 		String content = article.getExtractedText();
 
 		//Only the contents are compared
+		//default value is 30% smilarity, see "minimum_should_match" in https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_8
 		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).likeText(content); //deprecated
 //		MoreLikeThisQueryBuilder queryBuilder = moreLikeThisQuery(obj_content).like(content);
 
