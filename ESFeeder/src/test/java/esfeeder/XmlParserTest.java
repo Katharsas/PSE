@@ -47,7 +47,7 @@ public class XmlParserTest {
 			method = targetClass.getDeclaredMethod("parse_xml", cArg);
 			method.setAccessible(true);
 
-			method.invoke(targetClass, cArg);
+			method.invoke(targetClass, null, null);
 			fail("Should throw NullPointer");
 		} catch (NoSuchMethodException e1) {
 			// TODO Auto-generated catch block
