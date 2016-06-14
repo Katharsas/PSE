@@ -2,7 +2,7 @@ package esfeeder;
 
 /**
  *
- * @author Daniel
+ * @author dbeckstein
  */
 public class GlobalsDebug {
 

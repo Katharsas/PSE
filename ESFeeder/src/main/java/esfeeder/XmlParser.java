@@ -69,7 +69,7 @@ public class XmlParser {
      * @param doc
      * @return
      */
-    public Article parse(Path path, Document doc) {
+    private Article parse(Path path, Document doc) {
         String s = "";
         // Create ArticleParser to parse content of xml-tags, into Article class (this is like a tiny util class)
         ArticleParser ap = new ArticleParser();
@@ -151,7 +151,7 @@ public class XmlParser {
 
             // @now
             // TODO - these are missing
-            // better catch, try ... structure here - refac todo 
+            // better catch, try ... structure here - refac todo
             s += "";
 
         } catch (Exception e) {
@@ -168,7 +168,7 @@ public class XmlParser {
      */
     public List<Article> parseFileList(Map<Path, Document> fileList) {
         List<Article> articles = new ArrayList<Article>();
-        Set<String> topics_set = new HashSet<String>();
+		Set<String> topics_set = new HashSet<String>(); //DEBUG
         Path path;
         Document doc;
         // Setting null needed to avoid - object might not have been initialized error
