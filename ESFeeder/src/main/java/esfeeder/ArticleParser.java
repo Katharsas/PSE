@@ -118,7 +118,8 @@ public class ArticleParser {
 
     /**
      * Parses topic of article
-     * 
+     * Input: US\en\science\CNNcomScienceandSpace\y2008\m11\d26\RSS-1080352252.xml
+     * Output: science
      * @param topic - topic of article
      * @return topic that is formatted properly
      */
