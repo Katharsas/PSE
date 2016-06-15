@@ -8,6 +8,11 @@ import java.util.Collection;
 import java.util.List;
 import java.util.Set;
 
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectOutputStream;
+import java.io.UncheckedIOException;
+import java.util.Base64;
+
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import org.elasticsearch.action.admin.indices.flush.FlushRequest;
@@ -20,8 +25,6 @@ import org.elasticsearch.search.SearchHit;
 
 //import shared.ElasticSearchController;
 import shared.Article;
-import shared.metadata.MetaDataSerializer;
-import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataWriter;
 import shared.metadata.MetaDataType;
 import shared.ElasticSearchController;
 
@@ -32,8 +35,7 @@ import shared.ElasticSearchController;
  * @author jmothes
  */
 
-public class ElasticSearchWriter extends ElasticSearchController
-		implements ElasticSearchMetaDataWriter {
+public class ElasticSearchWriter extends ElasticSearchController{
 
 	//var is hardcoded, because it's not necessary to create writers with custom indexes
 	private final String mainIndex = "mainIndex";
@@ -230,29 +232,31 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 
 	}
 
-	/*
-	 * deletes an object from an index
-	 * needs the name and type of the created index and an ID for the object
-	 * obsolete?
-     */
-	public void delete(){}
-
-
 	/**
 	 * Merge new metaData from new articles with old metaData from old article and save result.
 	 */
 	private void mergeMetaData(Collection<String> newMetaData, MetaDataType filterType){
-    	Set<String> current = MetaDataSerializer.deserializeSet(filterType, this);
+    	Set<String> current = this.deserializeSet(filterType);
         current.addAll(newMetaData);
-        MetaDataSerializer.serializeSet(current, filterType, this);
+        this.serializeSet(current, filterType);
     }
 
 
-	@Override
-	public void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
+	private void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
 		// TODO Overwrite document at metaData index of given type
-		
+
 		//turn filterType into an String? Use MetaDataType as a key?
 		//which format should the String be in?
 	}
+	
+	private void serializeSet(Set<?> anySet, MetaDataType filterType) {
+    	ByteArrayOutputStream baos;
+        try (ObjectOutputStream oos = new ObjectOutputStream(baos = new ByteArrayOutputStream())) {
+            oos.writeObject(anySet);
+            final String base64 = Base64.getEncoder().encodeToString(baos.toByteArray());
+            this.writeMetaDataToIndex(base64, filterType);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+    }
 }

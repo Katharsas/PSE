@@ -1,4 +1,4 @@
-package elasticsearch;
+package cwa.service;
 
 import java.util.Collection;
 

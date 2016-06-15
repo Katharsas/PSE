@@ -1,11 +1,18 @@
 package shared;
 
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.UncheckedIOException;
+import java.util.Base64;
+import java.util.Set;
+
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.node.Node;
 import org.elasticsearch.node.NodeBuilder;
 
-import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataReader;
 import shared.metadata.MetaDataType;
 
 /**
@@ -13,8 +20,7 @@ import shared.metadata.MetaDataType;
  * @author akolb
  */
 
-public abstract class ElasticSearchController
-		implements ElasticSearchMetaDataReader {
+public abstract class ElasticSearchController {
 
     /*
      * Are shared
@@ -56,14 +62,28 @@ public abstract class ElasticSearchController
 
 	}
 
-	@Override
-	public String getMetaDataFromIndex(MetaDataType filterType) {
+	protected String getMetaDataFromIndex(MetaDataType filterType){
 		// TODO Get full string from document from metaData index
-		
+
 		//turn filterType into an String? Use MetaDataType as a key?
 		//which format should the String be in?
 		//better return
-		
+
 		return null;
 	}
+	
+	protected <T> Set<T> deserializeSet(MetaDataType filterType){
+	
+    	byte[] base64 = Base64.getDecoder().decode(this.getMetaDataFromIndex(filterType));
+        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(base64))) {
+            @SuppressWarnings("unchecked")
+            Set<T> anySet = (Set<T>) ois.readObject();
+            return anySet;
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException("Could not convert serialized object to Set!", e);
+        } catch (IOException e) {
+            throw new UncheckedIOException(e);
+        }
+        
+    }
 }

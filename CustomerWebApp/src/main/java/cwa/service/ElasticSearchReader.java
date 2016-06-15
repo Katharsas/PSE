@@ -24,9 +24,9 @@ import static org.elasticsearch.index.query.QueryBuilders.rangeQuery;
 //import shared.ElasticSearchController;
 import shared.Article;
 import shared.ArticleId;
-import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataType;
 import shared.ElasticSearchController;
+import cwa.service.MetaDataProvider;
 
 /**
  *
@@ -146,7 +146,7 @@ public class ElasticSearchReader extends ElasticSearchController
 		Objects.requireNonNull(query);
 
 		BoolQueryBuilder boolQueryBuilder = boolQuery();
-		
+
 		//add query for getting articles that have simlair content
 		//default value is 30% smilarity, see "minimum_should_match" in https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_8
 		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).likeText(query); //deprecated
@@ -211,12 +211,12 @@ public class ElasticSearchReader extends ElasticSearchController
 
     @Override
     public Collection<String> getSources() {
-        return MetaDataSerializer.deserializeSet(MetaDataType.SOURCE, this);
+        return this.deserializeSet(MetaDataType.SOURCE);
     }
 
     @Override
     public Collection<String> getTopics() {
-        return MetaDataSerializer.deserializeSet(MetaDataType.TOPIC, this);
+        return this.deserializeSet(MetaDataType.TOPIC);
     }
 
 }
