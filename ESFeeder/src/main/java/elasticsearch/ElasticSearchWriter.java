@@ -96,7 +96,7 @@ public class ElasticSearchWriter extends ElasticSearchController
 	 */
 	private void put(Article article, String index) throws IOException{
 
-		//Werte aus dem Artikelobjekt rauslesen
+		//get values from article object
 		String id = article.getArticleId().getId(), title = article.getTitle(), pubDate = article.getPubDate(), content = article.getExtractedText(), author = article.getAuthor(), topic = article.getTopic(), source = article.getSource(), url = article.getUrl();
 
 		//get() executes and gets the response
@@ -139,7 +139,7 @@ public class ElasticSearchWriter extends ElasticSearchController
 
 	/**
 	 * is called whenever an Article should be indexed
-	 * similair article
+	 * similar article
 	 * if true -> don't add to DB
 	 */
 	private boolean similairArticleIsAlreadyIndexed( Article article, String indexName ){
@@ -202,7 +202,7 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 			this.put(article, mainIndex);
 		}
 
-		//Only index if there aren't similair articles indexed
+		//Only index if there aren't similar articles indexed
 		if(!this.similairArticleIsAlreadyIndexed(article, searchIndex)){
 			this.put(article, searchIndex);
 		}

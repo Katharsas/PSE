@@ -19,16 +19,16 @@ public abstract class ElasticSearchController
     /*
      * Are shared
      * vars are hardcoded, because we don't need custom controllers
-     * also gurantees that reader and writer acces the same index
+     * also guarantees that reader and writer access the same index
      */
     protected static final String searchIndex = "searchIndex", indexType = "article";
-    //article attributes; obj_id is not required; link/source/topic?
+    //article attributes; obj_id is not required;
     protected static final String obj_title = "title", obj_pubDate = "pubDate", obj_content = "content", obj_author = "author", obj_topic = "topic", obj_source = "source", obj_url = "url";
 
     /*
      * Must not be shared
      */
-    //pathESvalueValue doesn't need to be shared if relativ path. can be shared if absolut path
+    //pathESvalueValue doesn't need to be shared if relative path. can be shared if absolute path
     //pathESkey is a Key for Settings.Builder and must not be changed; the value for this key is pathESvalue
     protected String pathESvalue = "../../ESServer", pathESkey = "path.home";
     protected Node node;
