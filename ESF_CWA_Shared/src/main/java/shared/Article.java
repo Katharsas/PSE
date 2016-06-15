@@ -1,8 +1,5 @@
 package shared;
 
-import java.lang.ClassCastException;
-import java.lang.NullPointerException;
-
 /**
  * @author dbeckstein
  * @author akolb
@@ -157,14 +154,6 @@ public class Article implements Comparable{
     public Article setUrl(String url) {
         this.url = url;
         return this;
-    }
-
-    public String[] getMeta() {
-        return meta;
-    }
-
-    public void setMeta(String[] meta) {
-        this.meta = meta;
     }
 
 }
