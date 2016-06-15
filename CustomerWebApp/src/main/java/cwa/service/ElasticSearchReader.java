@@ -1,4 +1,4 @@
-package elasticsearch;
+package cwa.service;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -26,6 +26,7 @@ import shared.Article;
 import shared.ArticleId;
 import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataType;
+import shared.ElasticSearchController;
 
 /**
  *

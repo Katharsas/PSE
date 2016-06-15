@@ -23,6 +23,7 @@ import shared.Article;
 import shared.metadata.MetaDataSerializer;
 import shared.metadata.MetaDataSerializer.ElasticSearchMetaDataWriter;
 import shared.metadata.MetaDataType;
+import shared.ElasticSearchController;
 
 /**
  *

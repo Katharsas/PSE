@@ -1,4 +1,4 @@
-package elasticsearch;
+package shared;
 
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
