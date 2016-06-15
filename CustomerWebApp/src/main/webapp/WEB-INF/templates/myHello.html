@@ -2,12 +2,16 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		
-		<script type="text/javascript" th:src="@{/resources/js/jquery-2.0.3.js}"></script>
-		<script type="text/javascript" th:src="@{/resources/js/index.bundle.js}"></script>
 		<title>myHello.html</title>
+		
+		<script th:inline="javascript">
+			var contextUrl = /*[[@{/}]]*/ undefined;
+		</script>
+		<script type="text/javascript" th:src="@{/resources/js/jquery-2.0.3.js}"></script>
+		<script type="text/javascript" th:src="@{/resources/js/myHello.bundle.js}"></script>
 	</head>
 	<body>
-		Hello World3!
+		Hello World!<br>
+		Look at the console to see Typescript output!
 	</body>
 </html>

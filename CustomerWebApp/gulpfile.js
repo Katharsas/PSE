@@ -24,19 +24,13 @@ var sourcemaps = require("gulp-sourcemaps");
 // OPTIONS TS
 // ==================
 
-var tsFiles = ["index.ts"]
+var tsFiles = ["myHello.ts"]
 
 var jsSourceMaps = true;
 var jsMinify = false;
 
 var tsSource = "./src/main/typescript/";
 var tsTarget = "./src/main/webapp/resources/js/";
-
-var tsOptions = {
-	target: "es5",
-	noImplicitAny: true,
-	noExternalResolve : true
-};
 
 //==================
 //OPTIONS CSS
@@ -80,7 +74,7 @@ gulp.task('typescript', function() {
 		});
 		
 		return bundler
-			.plugin(tsify, tsOptions)
+			.plugin(tsify)
 			.bundle()
 			.on("error", handleErrors)
 			.pipe(sourceStream(file))
