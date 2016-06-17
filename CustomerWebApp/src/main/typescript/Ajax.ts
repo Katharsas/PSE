@@ -3,7 +3,7 @@ import {FilterOptions} from "./FilterOptions";
 declare var contextUrl: string;
 
 export module Ajax {
-	const urlBase: string = contextUrl + "search";
+	const urlBase: string = contextUrl + "getArticles/search";
 	const headers = { accept: "application/json,*/*;q=0.8" };
 
 	export function getByQuery(query: String, filters: FilterOptions, skip: number, limit: number): JQueryXHR {
