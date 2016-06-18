@@ -15,8 +15,8 @@ import org.w3c.dom.Document;
 
 import shared.Article;
 import elasticsearch.ElasticSearchWriter;
- 
- 
+
+
 public class ESFeederRunnable implements Runnable {
 
     @Override
@@ -34,12 +34,12 @@ System.out.println("Executing ESFeeder..."); //DEBUG
     	FileService fileService = new FileService();
     	XmlParser xmlParser = new XmlParser();
     	ElasticSearchWriter esWriter;
-    	
+
 		//Returns a Map with Path to Document; false -> don't delete Notification Files
 		Map<Path, Document> newArticlePaths = fileService.getSubscribedArticles(false);
 		//Uses the Map and returns an ArrayList with Articles
 		List<Article> newArticles = xmlParser.parseFileList(newArticlePaths);
-    	
+
     	try{
     		esWriter = new ElasticSearchWriter();
     		try{
@@ -47,14 +47,16 @@ System.out.println("Executing ESFeeder..."); //DEBUG
 			}catch(IOException putArticle){
 				//Puts the Articles from the ArrayList in ES
 				putArticle.printStackTrace();
+				//last call to esWriter that can and must be done! esWriter == destroyed
+				esWriter.free();
 			}
     	}catch(IOException createESW){
     		createESW.printStackTrace();
     	}catch(Exception e){
     		e.printStackTrace();
     	}
-		
-		
+
+
 
         /*
         * Daniel's code
