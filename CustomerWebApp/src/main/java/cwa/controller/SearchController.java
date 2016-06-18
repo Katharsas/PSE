@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import cwa.service.ArticleProvider;
+import cwa.service.MetaDataProvider;
 import shared.Article;
 import shared.ArticleId;
 
@@ -28,10 +29,17 @@ import shared.ArticleId;
 public class SearchController {
 	
 	private final ArticleProvider articleProvider;
+	private final MetaDataProvider metaDataProvider;
 	
 	@Inject
-	public SearchController(ArticleProvider articleProvider) {
+	public SearchController(ArticleProvider articleProvider, MetaDataProvider metaDataProvider) {
 		this.articleProvider = articleProvider;
+		this.metaDataProvider = metaDataProvider;
+	}
+	
+	@RequestMapping(value = "/", method = RequestMethod.GET)
+	public String indexPage() {
+		return "search.html";
 	}
 	
 	/**
@@ -40,7 +48,7 @@ public class SearchController {
 	 * 
 	 * @return Similar articles or "validation" error or "idNotFound" error.
 	 */
-	@RequestMapping(value = "/similar", method = RequestMethod.GET)
+	@RequestMapping(value = "/getArticles/similar", method = RequestMethod.GET)
 	@ResponseBody
 	public ArticleResult similar(
 			@RequestParam(value = "id", required = true) String id,
@@ -70,7 +78,7 @@ public class SearchController {
 	 * 
 	 * @return Subset of matching articles according to range & filters or "validation" error.
 	 */
-	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	@RequestMapping(value = "/getArticles/search", method = RequestMethod.GET)
 	@ResponseBody
 	public ArticleResult search(
 			@RequestParam(value = "query", required = true) String query,
