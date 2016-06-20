@@ -55,8 +55,8 @@ public class ArticleParserTest {
 			fail("Should throw something");
 			articleParser.parse_pubDate("Tes");
 			fail("Should throw something");
-			articleParser.parse_pubDate("Göbbels");
-			fail("Göbbelstest failed!");
+			articleParser.parse_pubDate("Goebel");
+			fail("Goebeltest failed!");
 			articleParser.parse_pubDate("123");
 			fail("Should throw something");
 			articleParser.parse_pubDate("XYZ, 40 Fex 0001 99:99:99 ECT");
