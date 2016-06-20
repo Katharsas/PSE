@@ -35,8 +35,8 @@ public class ArticleParser {
         pubDate_original = pubDate;
         pubDate_formatted = null;
 
-        // if pubDate is empty, return empty string
-        if (pubDate.length() == 0) {
+        // if pubDate is empty, or is null, return empty string
+        if (pubDate.length() == 0 || pubDate==null) {
             return "";
         }
         
@@ -74,6 +74,10 @@ public class ArticleParser {
      * @return source that is formatted properly
      */
     public String parse_source(String source) {
+        // if source is empty, or is null, return empty string
+        if (source.length() == 0 || source==null) {
+            return "";
+        }
         String source_formatted;
         source_formatted = null;
 
@@ -124,6 +128,10 @@ public class ArticleParser {
      * @return topic that is formatted properly
      */
     public String parse_topic(String topic) {
+        // if topic is empty, or is null, return empty string
+        if (topic.length() == 0 || topic==null) {
+            return "";
+        }
         String topic_formatted;
         topic_formatted = null;
         String pattern_str;

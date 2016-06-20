@@ -48,10 +48,17 @@ public class XmlParser {
      */
     private static String parse_xml(Element node, String fld_name) {
 
-        return node
+        String return_value = node
                 .getElementsByTagName(fld_name)
                 .item(0)
                 .getTextContent();
+        if (return_value == null){
+            return_value = "";
+        }
+        if (return_value.length()==0){
+            return_value = "";
+        }
+        return return_value;
     }
 
     // Trim string
