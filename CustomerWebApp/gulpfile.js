@@ -24,7 +24,7 @@ var sourcemaps = require("gulp-sourcemaps");
 // OPTIONS TS
 // ==================
 
-var tsFiles = ["myHello.ts"]
+var tsFiles = ["myHello.ts","main.ts"]
 
 var jsSourceMaps = true;
 var jsMinify = false;

@@ -7,7 +7,7 @@
             //webshims.setOptions('forms-ext', {types: 'date'});
             //webshims.polyfill('forms forms-ext');
             
-            on_load();
+            //on_load();
             
             
             
@@ -97,7 +97,7 @@
          
             });
             */
-         });
+  });
          
          // Just lazy on_load function here
          

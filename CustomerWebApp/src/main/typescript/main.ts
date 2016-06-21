@@ -18,33 +18,11 @@
       ]
    };
    
-   function cmp_cards_speed(a, b) { 
-       var ea = a.front.id;
-       var eb = b.front.id;
-       return ea - eb ;
-   }
-
-   class Greeter {
-       constructor(public greeting: string) { }
-       greet() {
-            var s =""
-            
-            var cards = result.cards;
-            //cards.sort(cmp_cards_speed);
-            
-            for(var card of cards){
-               s += card.action.type;
-               s += "<br>";
-               console.log( card );
-            }
-        
-           return "<h1>" + s + "</h1>";
-       }
-   };
+   
 
    class MyConsole {
        constructor() { }
-       log(s) {
+       log(s : string) {
            console.log(""+s);
        }
        get(id : string){
@@ -53,7 +31,7 @@
    };
    class ServerConnection {
        constructor() { }
-       post(s) {
+       post(s: string) {
            cs.log(""+s);
            jl.log("post: "+s, "ntf");
        }
@@ -61,7 +39,7 @@
    
    class JsLog {
        constructor() { }
-       log(s,status_name) {
+       log(s:string,status_name:string) {
          //#json?? FF9838
          var status = ["err", "msg", "ntf" ];
          var status_display = ["Error", "Message", "Notification" ];
@@ -84,16 +62,27 @@
    };
    
 
-   var greeter = new Greeter("Hello, world!");
+   //var greeter = new Greeter("Hello, world!");
    // Excat order of these next commands is important 
    var cs = new MyConsole();    
    var jl = new JsLog();
    var conn = new ServerConnection();
    // var jl = document.getElementById("js_log"); bug why not here global
+   /*
+       $(document).ready(() => {
+             console.log('ts 1');
+    });
+    window.onload
+    */
+    
+         document.addEventListener("DOMContentLoaded", function(event) { 
+            //var k = "kj";
+            on_load();
+        });
    
    function on_load(){
-      cs.log("hi");
-      cs.get("res").innerHTML = greeter.greet();
+      cs.log("hi k--jk--");
+      //cs.get("res").innerHTML = greeter.greet();
       
       var list = document.getElementById("result_sample_list");
       var sample = document.getElementById("result_sample");
@@ -116,19 +105,19 @@
          //cs.log(i);
          // bug errof of typescript ??
       }
-      function element_set_display(id, val){
+      function element_set_display(id : string, val : string){
          var el = (<any> document.getElementById(id)  );
          el.style.display = val;
       }
-      function element_show(id){
+      function element_show(id : string){
          element_set_display(id, "block");
       }
-      function element_hide(id){
+      function element_hide(id : string){
          //check status? raise error if hidden?
          element_set_display(id, "none");
       }
       
-      function span_hidden_create(id,text){
+      function span_hidden_create(id : string,text : string){
          var el = document.getElementById(id);
          
          var elements_to_remove = el.getElementsByClassName("span_hidden");
@@ -145,7 +134,7 @@
          el.appendChild(e);
          console.log(e);
       }
-      function span_hidden_delete(id){
+      function span_hidden_delete(id : string){
          var el = document.getElementById(id);
          
          var elements_to_remove = el.getElementsByClassName("span_hidden");
@@ -156,7 +145,7 @@
       }
       
       
-      function span_hidden_check(id,text){
+      function span_hidden_check(id : string,text : string){
          var el = document.getElementById(id);
          var bool = false;
          var span_list = el.getElementsByClassName("span_hidden");
@@ -170,19 +159,19 @@
             bool = ( ""+text == ""+span.innerHTML );
          }else{
          }
-         cs.log(bool);
+         cs.log(""+bool);
          return bool;
          
       }
       
-      function f_search_keywords(el){ 
+      function f_search_keywords(el: any){ 
          var fld_search = document.getElementById("fld_search");
          var fld = (<HTMLInputElement> fld_search).value;
          var keywords = fld;
          conn.post(keywords);
       }
       
-      function f_search_filter(el){ // bug key not used
+      function f_search_filter(el : any){ // bug key not used
          var check = span_hidden_check("filter_settings","state_show");
          if (check){
             element_hide("filter_settings");
@@ -198,10 +187,10 @@
       var date_start = document.getElementById("date_start");
       var date_start_str =  (<HTMLInputElement> date_start).value.replace(/-/g, "/");
       var date_start_date = new Date(date_start_str);
-      cs.log(date_start_date);
+      cs.log(""+date_start_date);
       cs.log(date_start_date.toString());
       
-      function check_url_name(event){
+      function check_url_name(event : any){
          //var url_name = window.location;//.pathname;
          //cs.log(url_name);
          var url_hash = window.location.hash;//.pathname;
@@ -218,7 +207,7 @@
          // then show, post update grey are progress bar, filter infos get local storage filters__.., get filters from page? marked (span marke, real value, display...
        }
       
-      function process_click_or_enter(ev){
+      function process_click_or_enter(ev : any){
          console.log(ev);
          el = this;
 
@@ -317,9 +306,9 @@
         window.dispatchEvent(new Event('popstate'));
       };
             
-      var dateString = $("#date").val().replace(/-/g, "/");
-      var date = new Date(dateString);
-      //date.toString());	
+      var datestring = $("#date").val().replace(/-/g, "/");
+      var date = new Date(datestring);
+      //date.tostring());	
       var elements_sel= document.querySelectorAll('#Test, #Test *');
       .addEventListener('click', function() {
           alert('Hello world again!!!');
