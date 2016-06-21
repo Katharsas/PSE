@@ -1,0 +1,44 @@
+.calander, 
+.calander select,
+.calander table, 
+.calander th, 
+.calander td {
+    background: #fff;
+    color: #000;
+    text-shadow: none;
+    height: auto;
+    width: auto;
+    padding: 0;
+    line-height: normal;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.calander {
+    position: absolute;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+}
+div.calander{
+     margin-top:5px;
+}
+
+.calander select {    
+    margin: 3px 5px;
+    border: 1px solid #c0c0c0;
+}
+
+.calander th, .calander td {
+    width: 14%;
+    padding: 4px;
+    text-align: center;
+}
+
+.calander td {
+    cursor: pointer;
+}
+    
+.calander .selected {
+    font-weight: bold;
+}
