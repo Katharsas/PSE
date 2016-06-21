@@ -75,8 +75,8 @@ public class XmlParserTest {
 		// Test NullPointerException
 		try {
 			try {
-				method.invoke(xmlParser, null, null);
-				fail("Should throw NullPointer");
+				returnValue = (String) method.invoke(xmlParser, null, null);
+				assertEquals("Empty string expecto patronum", "", returnValue);
 			} catch (InvocationTargetException e) {
 				if (e.getCause() instanceof RuntimeException)
 					throw (RuntimeException) e.getCause();
@@ -109,18 +109,27 @@ public class XmlParserTest {
 
 		item_elem = generateElement("../Daniel_ESDemo_Crawler/data/US/en/technology/CNNcomTechnology/y2012/m8/d3",
 				"RSS1635295952.xml");
-
 		try {
 			returnValue = (String) method.invoke(targetClass, item_elem, "pubDate");
-			System.out.println(returnValue);
 			assertEquals("Implementation incorrect", "Fri, 03 Aug 2012 11:59:24 EDT", returnValue);
 			returnValue = (String) method.invoke(targetClass, item_elem, "category");
 			assertEquals("Implementation incorrect", "", returnValue);
-			returnValue = (String) method.invoke(targetClass, item_elem, "nosuchthingtagthingy");
+			returnValue = (String) method.invoke(targetClass, item_elem, "description");
 			assertEquals("Implementation incorrect",
-					"Put your phone down for a second, teen texters -- there are some things you've got to hear.&lt;img src=\"http://feeds.feedburner.com/~r/rss/edition_technology/~4/mFKZeL3oHyM\" height=\"\1\" width=\"1\"/&gt;",
+					"Put your phone down for a second, teen texters -- there are some things you've got to hear.<img src=\"http://feeds.feedburner.com/~r/rss/edition_technology/~4/mFKZeL3oHyM\" height=\"1\" width=\"1\"/>",
 					returnValue);
 
+		} catch (NullPointerException e) {
+
+		} catch (InvocationTargetException | IllegalAccessException e) {
+			fail("Should not throw NullPointerException!");
+			e.printStackTrace();
+		}
+
+		item_elem = generateElement("data/testfiles/xmltestfiles", "strangecharacters.xml");
+		try {
+			returnValue = (String) method.invoke(targetClass, item_elem, "category");
+			assertEquals("Implementation incorrect", "人物", returnValue);
 		} catch (NullPointerException e) {
 
 		} catch (InvocationTargetException | IllegalAccessException e) {
@@ -131,38 +140,34 @@ public class XmlParserTest {
 
 	@Test
 	public void testParse() {
-		Document doc = null;
+		fail("Not yet implemented");
 
-		String returnValue;
+	}
+
+	@Test
+	public void testClean() {
+		String returnValue = "";
+		
+		// Declaration of the method for making the method public
 		Class<? extends XmlParser> targetClass = xmlParser.getClass();
-		Class[] cArg = new Class[2];
-		cArg[0] = Path.class;
-		cArg[1] = Document.class;
+		Class[] cArg = new Class[1];
+		cArg[0] = String.class;
 		Method method = null;
-
 		try {
-			method = targetClass.getDeclaredMethod("parse", cArg);
-			method.setAccessible(true);
-		} catch (NoSuchMethodException | SecurityException e) {
+			method = targetClass.getDeclaredMethod("clean", cArg);
+		} catch (NoSuchMethodException | SecurityException e1) {
+			e1.printStackTrace();
+		}
+		method.setAccessible(true);
+		
+		try {
+			returnValue = (String) method.invoke(xmlParser, null);
+			assertEquals("Implementation incomplete", null, returnValue);
+		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-
-		try {
-			try {
-				method.invoke(targetClass, null, null);
-				fail("Should throw NullPointer");
-			} catch (InvocationTargetException e) {
-				if (e.getCause() instanceof RuntimeException)
-					throw (RuntimeException) e.getCause();
-				else
-					throw e;
-			}
-		} catch (NullPointerException e) {
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
-
+		
 	}
 
 	@Test

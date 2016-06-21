@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+<title>
+      ZEIT ONLINE: Alles digital</title>
+<description>Nachrichten, Analysen und Reportagen zu den Themen Internet, Datenschutz, Netzkultur, Mobil und Games. Sie finden hier die Trends, Features und Entwicklungen sowie aktuelle Tests aus dem Ressort Digital.</description>
+<pubDate>Wed, 10 Dec 2014 10:22:42 GMT</pubDate>
+<lastBuildDate>Wed, 10 Dec 2014 16:59:24 +0100</lastBuildDate>
+<language>de-de</language>
+<link>http://www.zeit.de/digital/index</link>
+<atom:link href="http://newsfeed.zeit.de/digital/index" rel="self" type="application/rss+xml"/>
+<copyright>Copyright (c) 2014, ZEIT ONLINE GmbH</copyright>
+<docs>http://www.zeit.de/hilfe/rss</docs>
+<generator>mod_xslt LePenguin</generator>
+<managingEditor>online-cr@zeit.de (Chefredaktion ZEIT ONLINE)</managingEditor>
+<webMaster>webmaster@zeit.de (Internettechnik ZEIT ONLINE)</webMaster>
+<image>
+      <url>http://images.zeit.de/bilder/elemente_01_06/logos/homepage_top.gif</url>
+      <title>
+      ZEIT ONLINE: Alles digital</title>
+      <link>http://www.zeit.de/digital/index</link>
+    </image>
+<item>
+      <link>http://www.zeit.de/digital/internet/2014-12/netzneutralitaet-konzept-bundesregierung-spezialdienste</link>
+      <guid>http://www.zeit.de/digital/internet/2014-12/netzneutralitaet-konzept-bundesregierung-spezialdienste</guid>
+      <category>人物</category>
+      <title>Spezialdienste: Bundesregierung will NetzneutralitÃ¤t mit HintertÃ¼r</title>
+      <description>&lt;a href="http://www.zeit.de/digital/internet/2014-12/netzneutralitaet-konzept-bundesregierung-spezialdienste"&gt;&lt;img style="float:left; margin-right:5px" src="http://images.zeit.de/digital/internet/2014-12/netzneutralitat-bundesregierung-konzept-spezialdienste/netzneutralitat-bundesregierung-konzept-spezialdienste-148x84.jpg"/&gt;&lt;/a&gt; Mit einem Kompromissvorschlag will die Regierung die NetzneutralitÃ¤t auf EU-Ebene verankern. Ein groÃŸes Schlupfloch lÃ¤sst sie den Netzbetreibern aber offen.</description>
+      <dc:creator>ZEIT ONLINE : Digital - Friedhelm Greis</dc:creator>
+      <pubDate>Fri, 05 Dec 2014 14:52:35 GMT</pubDate>
+    <ExtractedText>Spezialdienste:Â Bundesregierung will NetzneutralitÃ¤t mit HintertÃ¼r
+Spezialdienste: Bundesregierung will NetzneutralitÃ¤t mit HintertÃ¼r
+Mit einem Kompromissvorschlag will die Regierung die NetzneutralitÃ¤t auf EU-Ebene verankern. Ein groÃŸes Schlupfloch lÃ¤sst sie den Netzbetreibern aber offen. vonÂ Friedhelm Greis
+Erschienen bei golem.de 5. Dezember 2014Â           15:51 UhrÂ  18 Kommentare
+Stecker eines Netzwerkkabels Â Â |Â Â Â©  David Ebener / dpa
+Die Bundesregierung will sich auf europÃ¤ischer Ebene fÃ¼r eine recht starke Verankerung der NetzneutralitÃ¤t einsetzen. In einem nun vorgelegten Papier lehnt sie sich deutlich an die Position des europÃ¤ischen Parlaments an und will sogenannte Spezialdienste nur unter engen Auflagen erlauben. Allerdings lÃ¤sst sie ein groÃŸes Schlupfloch fÃ¼r die Provider: Diese kÃ¶nnen ausdrÃ¼cklich Spezialdienste aus der BeschrÃ¤nkung von Datenvolumina und Ãœbertragungsgeschwindigkeiten ausnehmen, heiÃŸt es in dem Vorschlag, der auf netzpolitik.org verÃ¶ffentlicht wurde . Unklar ist jedoch, welche Dienste letztlich als Spezialdienste vermarktet werden dÃ¼rfen.
+Ebenso wie das EU-Parlament will die Regierung Spezialdienste grundsÃ¤tzlich erlauben. Sie Ã¼bernimmt auch die Definition des Parlaments , wonach ein solcher Dienst "Ã¼ber logisch getrennte KapazitÃ¤ten und mit separater Zugangskontrolle erbracht wird". So lautet der Vorschlag fÃ¼r Artikel 2 der Verordnung zum digitalen Binnenmarkt, wobei das Parlament eine "strenge Zugangskontrolle" fordert. Im Vorschlag fÃ¼r Artikel 23 heiÃŸt es zudem: "Spezialdienste dÃ¼rfen nicht als Ersatz fÃ¼r einen uneingeschrÃ¤nkten oder beschrÃ¤nkten Internetzugang vertrieben werden." Telekommunikationsanbieter dÃ¼rfen auch nicht "zwischen bestimmten Inhalten oder funktional gleichwertigen Anwendungen oder Diensten diskriminieren".
+Anzeige
+Die RegulierungsbehÃ¶rden sollen die Spezialdienste genau Ã¼berwachen (Artikel 24) und garantieren, "dass nicht diskriminierende Internetzugangsdienste mit einem QualitÃ¤tsniveau, das den Fortschritt der Technik widerspiegelt und durch Spezialdienste nicht beeintrÃ¤chtigt wird, kontinuierlich zur VerfÃ¼gung stehen". Dazu sollen drei GrundsÃ¤tze berÃ¼cksichtigt werden: Demnach sollen die KapazitÃ¤ten fÃ¼r Spezialdienste ausreichen, "um sie parallel zu Internetzugangsdiensten bereit zu stellen". AuÃŸerdem sollen die Dienste "nicht als Substitut des Internetzugangsdienstes angeboten werden und dÃ¼rfen das Best-Effort-Internet und dessen Entwicklung infolge des technischen Fortschritts nicht beeintrÃ¤chtigen". Zu guter Letzt soll die Bereitstellung "ohne Diskriminierung der Anbieter von Inhalten, Anwendungen, Diensten oder der Endnutzer erfolgen".
+Dem Vorschlag zufolge mÃ¼ssen Spezialdienste allerdings nicht vorab genehmigt werden. Die RegulierungsbehÃ¶rden dÃ¼rfen aber Mindestanforderungen fÃ¼r die DienstqualitÃ¤t verlangen und sollen Beschwerdestellen fÃ¼r Nutzer und Anbieter einrichten.
+Wie diese Bestimmungen in der Praxis von den Providern umgesetzt werden, dÃ¼rfte noch Gegenstand heftiger Diskussionen werden. So stellt sich die Frage, ob die Deutsche Telekom beispielsweise ihre Entertain-Angebote unter diesen Bedingungen als Spezialdienste vermarkten und damit auch von einer Drosselung ausnehmen darf. Denn dies kÃ¶nnte eine Diskriminierung zwischen funktional gleichwertigen Anwendungen und Diensten darstellen, was verboten ist. Dieses Verbot dÃ¼rfte auch verhindern, dass zahlungskrÃ¤ftige Inhalteprovider wie YouTube oder Facebook sich von einer Datendrosselung freikaufen. MÃ¶glich ist daher, dass die Inhalteanbieter stattdessen mithilfe von bezahltem Peering die ÃœbertragungsqualitÃ¤t sicherstellen wollen.
+NetzneutralitÃ¤t wird beim Breitbandausbau zur Verhandlungsmasse
+Die Digitale Gesellschaft hatte an der fast gleichlautenden Position des EU-Parlaments moniert : "Indem die Verordnung nur den Ersatz des Internetzugangs insgesamt, nicht hingegen den Ersatz einzelner Ã¼ber das Internet zugÃ¤nglicher Inhalte durch Spezialdienste ausschlieÃŸt, wird es ermÃ¶glicht, beliebte Online-Dienste wie etwa Plattformen fÃ¼r Video- und Musikstreaming aus dem offenen Internet auszugliedern und auf kostenpflichtige Spezialdienste auszulagern." Ebenfalls stellt sich die Frage, ob Peer-to-Peer-Dienste wie BitTorrent weiterhin gedrosselt werden dÃ¼rfen.
+Die Bundesregierung hatte zuletzt betont, dass sie mit der grundsÃ¤tzlichen Erlaubnis von Spezialdiensten die Investitionsbereitschaft in den Breitbandausbau fÃ¶rdern wolle. Bei der Vorstellung der Digitalen Agenda und des Kursbuchs Netzausbau pochte die Industrie auf die EinfÃ¼hrung von sogenannten QualitÃ¤tsklassen im Netz . "Regelungen zur NetzneutralitÃ¤t sollten daher keine neuen GeschÃ¤ftsmodelle zu Lasten zukÃ¼nftiger Innovationen und Produktvielfalt erschweren", heiÃŸt es im Kursbuch. Die deutsche Telekommunikationsbranche benÃ¶tige ein "planbares Regulierungsumfeld", in dem "neue GeschÃ¤ftsmodelle auch auf der Basis von QualitÃ¤tsdifferenzierung (Quality of Service) mÃ¶glich werden". Das grundsÃ¤tzliche Dilemma langsamer InternetzugÃ¤nge lÃ¤sst sich damit aber nicht lÃ¶sen. Wer nur Ã¼ber eine geringe Bandbreite wie zwei Megabit pro Sekunde verfÃ¼gt, wird auch von einem Spezialdienst nicht profitieren. Bei einem schnellen Internetzugang von 100 Megabit pro Sekunde dÃ¼rften aber nur sehr wenige Spezialdienste fÃ¼r normale Nutzer interessant sein.
+Die schwierigste Aufgabe der Bundesregierung wird nun darin bestehen, die Ã¼brigen EU-Mitgliedsstaaten auf ihren Kurs zu bringen. Hier gibt es groÃŸe Differenzen, was die Verankerung der NetzneutralitÃ¤t betrifft. Einer Einigung mit dem EU-Parlament und der EU-Kommission in den sogenannten Trilog-Verhandlungen dÃ¼rfte mit diesem Papier aber wenig entgegenstehen, zumal der deutsche EU-Kommissar GÃ¼nther Oettinger fÃ¼r dieses Thema verantwortlich ist. Eine Einigung kÃ¶nnte im ersten Halbjahr 2015 erfolgen.
+Parallel zur Debatte um die NetzneutralitÃ¤t treibt die  Bundesregierung die im Koalitionsvertrag versprochene Abschaffung des  Routerzwangs fÃ¼r Internet-Anwender voran. Noch im Dezember werde das  Bundeswirtschaftsministerium eine entsprechende Ã„nderung des  Telekommunikationsgesetzes auf den Weg bringen, hieÃŸ es am Freitag. In  der konkreten Umsetzung sollen Versuche von  Telekommunikationsunternehmen und Kabelbetreibern zurÃ¼ckgewiesen werden,  das GerÃ¤t zur Internetanbindung (Router) als Teil der technischen  Infrastruktur zu definieren, die von den Anwendern nicht verÃ¤ndert  werden dÃ¼rfe.
+</ExtractedText>
+</item>
+</channel>
+</rss>
