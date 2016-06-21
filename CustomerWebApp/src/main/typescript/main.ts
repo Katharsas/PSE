@@ -1,5 +1,6 @@
 import {Ajax} from "./Ajax";
 import {FilterOptions} from "./FilterOptions";
+import {HtmlBuilder} from "./HtmlBuilder";
 
 class ArticleResult {
 	errorMessage: string;
@@ -103,6 +104,11 @@ class ArticleResult {
                 for (let article of result.articles) {
                     console.log(cs_log_ajax_hint,article);
                     console.log(article.author);
+                    
+                    var list = <Node> document.getElementById("result_sample_list");
+                    //var sample = (<Node> document.getElementById("result_sample") );
+                    console.log(list);
+                    HtmlBuilder.buildArticle(article,list);
                 }
             }
         })
@@ -110,7 +116,7 @@ class ArticleResult {
             console.log(cs_log_ajax_hint,"Sending request failed!");
         });
 
-      cs.log("hi k--jk--");
+      cs.log("hi ------ ");
       //cs.get("res").innerHTML = greeter.greet();
       
       var list = document.getElementById("result_sample_list");
