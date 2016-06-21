@@ -12,6 +12,7 @@ export module Ajax {
 		params.push("query=" + query);
 
 		let filterParams: string = filters.toUrlParam();
+        console.log("__filter__",filterParams);
 		if (filterParams !== "") params.push(filterParams);
 
 		params.push("range=" + skip + "-" + limit);

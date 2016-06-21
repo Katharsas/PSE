@@ -107,7 +107,11 @@ public class SearchController {
 	 */
 	private LocalDate parseDate(String date) {
 		if (date == null) return null;
-		else return LocalDate.parse(date, DateTimeFormatter.ISO_OFFSET_DATE);
+		else {
+            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+            // this is yoda time DateTimeFormatter formatter = DateTimeFormat.forPattern("dd MMM yyyy HH:mm:ss");
+            return LocalDate.parse(date, formatter);//DateTimeFormatter.ISO_OFFSET_DATE);
+        }
 	}
 	
 	private String[] parseStringList(String strings) {

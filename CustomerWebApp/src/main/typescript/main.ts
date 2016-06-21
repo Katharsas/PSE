@@ -86,10 +86,15 @@ class ArticleResult {
             //var k = "kj";
             on_load();
         });
-   
+ var global_filterOptions : any; 
  function on_load(){
+    global_filterOptions = new FilterOptions();
     var cs_log_ajax_hint = "___ajax___ ";
-    Ajax.getByQuery("Suchwort", new FilterOptions(), 0, 10)
+    global_filterOptions.topics.push("Politics");
+    global_filterOptions.sources.push("cnn");
+    global_filterOptions.toDate = "2016-12-25";
+    //global_filterOptions.fromDate = "2000-12-25";
+    Ajax.getByQuery("Tiger Woods", global_filterOptions, 0, 10)
         .done(function(result: ArticleResult) {
             if (result.errorMessage !== null) {
                 console.log(cs_log_ajax_hint,result.errorMessage);
@@ -97,6 +102,7 @@ class ArticleResult {
                 console.log(cs_log_ajax_hint,"Articles received:");
                 for (let article of result.articles) {
                     console.log(cs_log_ajax_hint,article);
+                    console.log(article.author);
                 }
             }
         })
@@ -112,14 +118,14 @@ class ArticleResult {
       
       var topic_list = document.getElementById("select_topic_list");
       
-      for (var i=0; i< 3; i++){
+      for (var i=0; i< 0; i++){ //bug
          var el = sample.cloneNode(true); // bug overwritten by ts
          list.appendChild(el);
          //jl.log("This post was\n","err");
          //jl.log(i,"msg");
          //cs.log(i);
       }
-      
+      // bug get sources todo !!
       for (var i=0; i< 15; i++){
          var el =  (<Node> document.createElement('li')  );
          var text_node = document.createTextNode("Topic "+i) ;
@@ -128,6 +134,8 @@ class ArticleResult {
          //cs.log(i);
          // bug errof of typescript ??
       }
+      //*/
+      
       function element_set_display(id : string, val : string){
          var el = (<any> document.getElementById(id)  );
          el.style.display = val;

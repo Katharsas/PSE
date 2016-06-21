@@ -82,7 +82,9 @@
         p =  {action:"search_by_keyword", words:"ktwitter barack obama"};
         post(p,returnData);
     }
-    do_post();
+    // bug here todo refac, do_post laufen lassen?
+    
+    //do_post();
             
             //$('.sys input[type=text], .sys select').each(function() {...})
             /*
