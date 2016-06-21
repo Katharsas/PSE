@@ -3,6 +3,7 @@ import {FilterOptions} from "./FilterOptions";
 declare var contextUrl: string;
 
 export module Ajax {
+    var contextUrl = "http://localhost:8080/CWA/";
 	const urlBase: string = contextUrl + "getArticles/search";
 	const headers = { accept: "application/json,*/*;q=0.8" };
 

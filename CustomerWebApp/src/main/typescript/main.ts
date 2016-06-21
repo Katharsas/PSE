@@ -1,3 +1,10 @@
+import {Ajax} from "./Ajax";
+import {FilterOptions} from "./FilterOptions";
+
+class ArticleResult {
+	errorMessage: string;
+	articles: any[]; // TODO define Article when Article server class is stable
+}
 
    //declare var $; bug, place this in definiton file?, how to embed other js docs=?
 
@@ -80,7 +87,23 @@
             on_load();
         });
    
-   function on_load(){
+ function on_load(){
+    var cs_log_ajax_hint = "___ajax___ ";
+    Ajax.getByQuery("Suchwort", new FilterOptions(), 0, 10)
+        .done(function(result: ArticleResult) {
+            if (result.errorMessage !== null) {
+                console.log(cs_log_ajax_hint,result.errorMessage);
+            } else {
+                console.log(cs_log_ajax_hint,"Articles received:");
+                for (let article of result.articles) {
+                    console.log(cs_log_ajax_hint,article);
+                }
+            }
+        })
+        .fail(function() {
+            console.log(cs_log_ajax_hint,"Sending request failed!");
+        });
+
       cs.log("hi k--jk--");
       //cs.get("res").innerHTML = greeter.greet();
       
