@@ -297,7 +297,9 @@ $line_height_gap:1.5em;
    
    
    ul.results li div.result div.link{
+
       font-size:1.4rem;
+      
       color:green;
       color:#FF4823;
       color:#FF2A00;
@@ -330,7 +332,8 @@ $line_height_gap:1.5em;
    }  
       
    ul.results li div.result  div.container_topic div.myButton{
-      display:inline;
+      position:relative;
+      
       border: 2px solid #22B8EB;
       border: 2px solid #aaa;
       border-radius: 0.4rem;
@@ -346,6 +349,8 @@ $line_height_gap:1.5em;
       position:relative;
       float:right;
       float:left;
+      display:inline-block;
+      float:right;
    }  
    
    ul.results li div.result div.container_date span.time{
