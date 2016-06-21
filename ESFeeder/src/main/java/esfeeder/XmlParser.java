@@ -47,11 +47,16 @@ public class XmlParser {
      * @return
      */
     private static String parse_xml(Element node, String fld_name) {
-
-        String return_value = node
+        String return_value = null;
+        try {
+            return_value = node
                 .getElementsByTagName(fld_name)
                 .item(0)
                 .getTextContent();
+            } catch (NullPointerException ex) {
+                System.out.println("NullPointerException encountered in parse_xml");
+        }
+        
         if (return_value == null){
             return_value = "";
         }
