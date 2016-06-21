@@ -34,7 +34,7 @@ import cwa.service.MetaDataProvider;
  * @author jmothes
  */
 public class ElasticSearchReader extends ElasticSearchController
-        implements MetaDataProvider {
+        implements MetaDataProvider, ArticleProvider {
 
     /**
      * Can only be created after the writer was started once! Throws an exception otherwise
@@ -138,6 +138,7 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * @params from - give me only article that are newer then <from>, can be null -> no restrictions to the past
 	 * @params to - give me only articles that are older then <to>, can be null -> <to> == today
 	 */
+	@Override
 	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
 
 		//check if null
@@ -194,7 +195,8 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * @param skip - don't give me the first <skip> results
 	 * @param limit - give me max. <limit> article
 	 */
-	public ArrayList<Article> getSimilair(ArticleId articleId, int skip, int limit){
+	@Override
+	public ArrayList<Article> getSimilar(ArticleId articleId, int skip, int limit){
 
 		//Article aus ArticleId lesen
 		Article article = this.getById(articleId);
