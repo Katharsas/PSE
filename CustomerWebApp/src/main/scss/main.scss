@@ -321,7 +321,15 @@ $line_height_gap:1.5em;
       font-weight:100 !important;
       line-height:1.2; /* bug lines all just one (or two here), then force split , wrap ... */
    }
-   
+   ul.results li div.result div.content, ul.results li div.result div.content_cache{
+      font-size:1.4rem;
+      color:#333;
+      font-weight:100 !important;
+      line-height:1.2; /* bug lines all just one (or two here), then force split , wrap ... */
+   }
+   ul.results li div.result div.content_cache{
+        display:none;
+   }
 
    ul.results li div.result div.container_topic{
       margin-top: 0.5rem;
