@@ -44,6 +44,37 @@ export module HtmlBuilder{
         
         root.appendChild( title );
         
+            var link = createElem("div","link");
+                addText( link, article.link );        
+        
+        root.appendChild( link );
+        
+            var date = createElem("div","container_date");
+                var date_button = createElem("div","myButton");
+                var date_date = createElem("span","date");
+                addText( date_date, article.date);
+                date_button.appendChild(date_date);
+                //var date_time = createElem("span","time");
+                //date_button.appendChild(date_time);
+            date.appendChild(date_button);
+        root.appendChild(date);
+        
+        root.appendChild( tmp_clearfix );
+        
+            var content = createElem("div","content");
+                addText( content, article.epub );        
+        
+        root.appendChild( content );
+        
+        
+            var author = createElem("div","author");
+                addText( author, article.author );        
+        
+        root.appendChild( author );
+        
+        
+        root.appendChild( tmp_clearfix );
+        
         
         
         
