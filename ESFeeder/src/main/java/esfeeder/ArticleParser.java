@@ -1,16 +1,11 @@
 package esfeeder;
 
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.time.OffsetDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.joda.time.DateTime;
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
+
 import org.joda.time.IllegalFieldValueException;
 
 /**
@@ -55,15 +50,16 @@ public class ArticleParser {
             //System.out.println(secs);
             pubDate = pubDate.substring(0, pubDate.length() - 2) + "59";
         }
+        pubDate += "+01:00";
         
         // Set locale , needed to parse ("Nov, Dec") of date string
         Locale.setDefault(new Locale("en", "US"));
-        DateTimeFormatter formatter = DateTimeFormat.forPattern("dd MMM yyyy HH:mm:ss");
-        DateTime dt = formatter.parseDateTime(pubDate);
-
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd MMM yyyy HH:mm:ssZZZZZ");
+        OffsetDateTime dateTime = OffsetDateTime.parse(pubDate, formatter);
+        
         // Specify date format you want to get
-        pubDate_formatted = new SimpleDateFormat("yyyy MM dd HH:mm:ss").format(dt.toDate());
-
+        pubDate_formatted = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(dateTime);
+        
         return pubDate_formatted;
     }
     

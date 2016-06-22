@@ -1,18 +1,15 @@
 package shared;
 
 
-import java.io.ByteArrayInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.UncheckedIOException;
-import java.util.Base64;
+import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
+import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.client.Client;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.node.Node;
 import org.elasticsearch.node.NodeBuilder;
-import org.elasticsearch.action.get.GetResponse;
 
 import shared.metadata.MetaDataType;
 
@@ -28,9 +25,9 @@ public abstract class ElasticSearchController {
      * vars are hardcoded, because we don't need custom controllers
      * also guarantees that reader and writer access the same index
      */
-    protected static final String searchIndex = "searchIndex", indexType = "article";
+    protected static final String searchIndex = "search-index", indexType = "article";
     //Stuff for Metaindexes
-    protected static final String metaIndex = "metaIndex", metaIndexType = "metaData", meta_data = "data";
+    protected static final String metaIndex = "meta-index", metaIndexType = "meta-data", meta_data = "data";
     //article attributes; obj_id is not required;
     protected static final String obj_title = "title", obj_pubDate = "pubDate", obj_content = "content", obj_author = "author", obj_topic = "topic", obj_source = "source", obj_url = "url";
 
@@ -39,9 +36,9 @@ public abstract class ElasticSearchController {
      */
     //pathESvalueValue doesn't need to be shared if relative path. can be shared if absolute path
     //pathESkey is a Key for Settings.Builder and must not be changed; the value for this key is pathESvalue
-    protected String pathESvalue = "../../ESServer", pathESkey = "path.home";
-    protected Node node;
-    protected Client client;
+    protected final String pathESvalue = "../../ESServer", pathESkey = "path.home";
+    protected final Node node;
+    protected final Client client;
 
 	public ElasticSearchController(){
 
@@ -50,8 +47,8 @@ public abstract class ElasticSearchController {
     	NodeBuilder nodeBuilder = NodeBuilder.nodeBuilder();
     	nodeBuilder.settings(settings).client(true);
 
-    	Node node = nodeBuilder.node();
-        Client client = node.client();
+    	this.node = nodeBuilder.node();
+    	this.client = node.client();
 
 	}
 
@@ -97,23 +94,26 @@ public abstract class ElasticSearchController {
 		String id_str = filterType.name();
 		//executes and gets the response
 		GetResponse getResponse = client.prepareGet(metaIndex, metaIndexType, id_str).get();
-		String metaData = (String) getResponse.getSource().get(meta_data);
+		Map<String, Object> map = getResponse.getSource();
+		String metaData = (String) map.get(meta_data);
 		return metaData;
 		
 	}
 
 	protected <T> Set<T> deserializeSet(MetaDataType filterType){
 
-    	byte[] base64 = Base64.getDecoder().decode(this.getMetaDataFromIndex(filterType));
-        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(base64))) {
-            @SuppressWarnings("unchecked")
-            Set<T> anySet = (Set<T>) ois.readObject();
-            return anySet;
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("Could not convert serialized object to Set!", e);
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
-        }
-
+		// TODO enable when getMetaDataFromIndex works
+		
+//    	byte[] base64 = Base64.getDecoder().decode(this.getMetaDataFromIndex(filterType));
+//        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(base64))) {
+//            @SuppressWarnings("unchecked")
+//            Set<T> anySet = (Set<T>) ois.readObject();
+//            return anySet;
+//        } catch (ClassNotFoundException e) {
+//            throw new RuntimeException("Could not convert serialized object to Set!", e);
+//        } catch (IOException e) {
+//            throw new UncheckedIOException(e);
+//        }
+		return new HashSet<T>();
     }
 }

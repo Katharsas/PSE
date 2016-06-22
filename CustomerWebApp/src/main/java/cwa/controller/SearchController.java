@@ -10,6 +10,7 @@ import java.util.regex.PatternSyntaxException;
 import javax.inject.Inject;
 
 import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -34,7 +35,7 @@ public class SearchController {
 	private final MetaDataProvider metaDataProvider;
 	
 	@Inject
-	public SearchController(ArticleProvider articleProvider, MetaDataProvider metaDataProvider) {
+	public SearchController(@Qualifier("prod") ArticleProvider articleProvider, @Qualifier("mock") MetaDataProvider metaDataProvider) {
 		this.articleProvider = articleProvider;
 		this.metaDataProvider = metaDataProvider;
 	}
@@ -44,7 +45,7 @@ public class SearchController {
 		return "search.html";
 	}
 	
-	@RequestMapping(value = "/getMetaData", method = RequestMethod.GET)
+	@RequestMapping(value = "/getMetadata", method = RequestMethod.GET)
 	@ResponseBody
 	public Map<String, List<String>> metaData() {
 		Map<String, List<String>> metaData = new HashMap<>();
@@ -119,9 +120,9 @@ public class SearchController {
 	private LocalDate parseDate(String date) {
 		if (date == null) return null;
 		else {
-            DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-            // this is yoda time DateTimeFormatter formatter = DateTimeFormat.forPattern("dd MMM yyyy HH:mm:ss");
-            return LocalDate.parse(date, formatter);//DateTimeFormatter.ISO_OFFSET_DATE);
+			date += "+01:00";// TODO client should set timezone from browser
+            DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE;
+            return LocalDate.parse(date, formatter);
         }
 	}
 	

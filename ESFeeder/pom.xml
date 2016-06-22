@@ -40,6 +40,12 @@
 		    <artifactId>elasticsearch</artifactId>
 		    <version>2.2.0</version>
 		</dependency>
+		<!-- Needed by ElasticSearch -->
+		<dependency>
+			<groupId>net.java.dev.jna</groupId>
+			<artifactId>jna</artifactId>
+			<version>4.2.2</version>
+		</dependency>
 	</dependencies>
 	
 	<build>

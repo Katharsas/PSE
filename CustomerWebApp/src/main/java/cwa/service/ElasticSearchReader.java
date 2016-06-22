@@ -1,38 +1,40 @@
 package cwa.service;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
+import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
+import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
+
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
-import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.IndexNotFoundException;
-import org.elasticsearch.search.SearchHits;
-import org.elasticsearch.search.SearchHit;
-import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
-import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
-import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
 import org.elasticsearch.index.query.BoolQueryBuilder;
-import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
-import static org.elasticsearch.index.query.QueryBuilders.rangeQuery;
+import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.SearchHits;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Service;
 
 //import shared.ElasticSearchController;
 import shared.Article;
 import shared.ArticleId;
-import shared.metadata.MetaDataType;
 import shared.ElasticSearchController;
-import cwa.service.MetaDataProvider;
+import shared.metadata.MetaDataType;
 
 /**
  *
  * @author akolb
  * @author jmothes
  */
+@Service
+@Qualifier("prod")
 public class ElasticSearchReader extends ElasticSearchController
         implements MetaDataProvider, ArticleProvider {
 
@@ -50,6 +52,20 @@ public class ElasticSearchReader extends ElasticSearchController
         } else {
             //Everything is good
         }
+        
+        String testid = "archive_dev\\en\\business\\WorldbusinessnewsCNNMoneycom\\y2016\\m5\\d25\\RSS-1768727040.xml";
+        Article testResult = getById(new ArticleId(testid));
+        System.out.println(testResult.getTitle());
+        
+//        String query = "The SEC is investigating Alibaba";
+        String query = "Alibaba";
+        System.out.println("-------------------- START");
+        ArrayList<Article> results = getByQuery(query, 0, 10, new String[]{}, new String[]{}, null, null);
+        for(Article article : results) {
+        	System.out.println();
+        	System.out.println(article.getExtractedText());
+        }
+        System.out.println("-------------------- END");
     }
 
     /**
@@ -127,6 +143,43 @@ public class ElasticSearchReader extends ElasticSearchController
 
 
 	}
+	
+	@Override
+	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
+		
+		QueryBuilder qb = QueryBuilders.matchQuery(obj_title, query);
+//		QueryBuilder qb = QueryBuilders.termQuery(obj_title, query);
+        
+//		QueryBuilder qb;
+//		qb = moreLikeThisQuery(obj_title)
+//				.likeText(query)
+//				.minTermFreq(1)
+//				.maxQueryTerms(800);
+		
+		SearchResponse scrollResp = client.prepareSearch(searchIndex)
+//                .setTypes(indexType)
+                .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
+                .setScroll(new TimeValue(60000))
+                .setQuery(qb)
+                .setFrom(0)
+                .setSize(100)
+                .execute()
+                .actionGet();
+		while (true) {
+			System.out.println("Loop");
+			for (SearchHit hit : scrollResp.getHits().getHits()) {
+				System.out.println("Hit!");
+				System.out.println(hit.getSource().get(obj_title));
+			}
+			scrollResp = client.prepareSearchScroll(scrollResp.getScrollId()).setScroll(new TimeValue(60000)).execute()
+					.actionGet();
+			// Break condition: No hits are returned
+			if (scrollResp.getHits().getHits().length == 0) {
+				break;
+			}
+		}
+		return new ArrayList<>();
+	}
 
 	/**
 	 * @return a list with Article from the db
@@ -138,8 +191,8 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * @params from - give me only article that are newer then <from>, can be null -> no restrictions to the past
 	 * @params to - give me only articles that are older then <to>, can be null -> <to> == today
 	 */
-	@Override
-	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
+//	@Override
+	public ArrayList<Article> getByQueryOld(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
 
 		//check if null
 		Objects.requireNonNull(topics);
@@ -150,37 +203,37 @@ public class ElasticSearchReader extends ElasticSearchController
 
 		//add query for getting articles that have simlair content
 		//default value is 30% smilarity, see "minimum_should_match" in https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-mlt-query.html#_parameters_8
-		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).likeText(query); //deprecated
-//		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).like(content);
+//		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).likeText(query); //deprecated
+		MoreLikeThisQueryBuilder moreLikeThisQueryBuilder = moreLikeThisQuery(obj_content).like(query);
 		boolQueryBuilder.must(moreLikeThisQueryBuilder);
 
 		//add queries for getting articles that only have one of the listed topics
-		for(String topic : topics){
-        	boolQueryBuilder.must(
-            	boolQuery().should(
-                	matchQuery(obj_topic, topic)
-                )
-            );
-        }
+//		for(String topic : topics){
+//        	boolQueryBuilder.must(
+//            	boolQuery().should(
+//                	matchQuery(obj_topic, topic)
+//                )
+//            );
+//        }
 
         //add queries for getting articles that only have one of the listed sources
-		for(String source : sources){
-			boolQueryBuilder.must(
-		    	boolQuery().should(
-                	matchQuery(obj_source, source)
-                	)
-            );
-		}
+//		for(String source : sources){
+//			boolQueryBuilder.must(
+//		    	boolQuery().should(
+//                	matchQuery(obj_source, source)
+//                	)
+//            );
+//		}
 
 		//add query for getting articles with a puDate greater-euqals then from
-		boolQueryBuilder.must(
-			rangeQuery(obj_pubDate).gte(from)
-		);
+//		boolQueryBuilder.must(
+//			rangeQuery(obj_pubDate).gte(from)
+//		);
 
 		//add query for getting articles with a puDate lesser-equals then to
-		boolQueryBuilder.must(
-			rangeQuery(obj_pubDate).lte(to)
-		);
+//		boolQueryBuilder.must(
+//			rangeQuery(obj_pubDate).lte(to)
+//		);
 
 		//execute the search with the query and return an arraylist with reults
 		return this.getResults(searchIndex, indexType, 60000, boolQueryBuilder, skip, limit);
@@ -212,13 +265,13 @@ public class ElasticSearchReader extends ElasticSearchController
     }
 
     @Override
-    public Collection<String> getSources() {
-        return this.deserializeSet(MetaDataType.SOURCE);
+    public List<String> getSources() {
+        return new ArrayList<>(this.deserializeSet(MetaDataType.SOURCE));
     }
 
     @Override
-    public Collection<String> getTopics() {
-        return this.deserializeSet(MetaDataType.TOPIC);
+    public List<String> getTopics() {
+        return new ArrayList<>(this.deserializeSet(MetaDataType.TOPIC));
     }
 
 }

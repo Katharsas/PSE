@@ -1,0 +1,6 @@
+1. delete "ESServer/data/elasticsearch/nodes/*"
+2. start "ESServer/bin/elasticsearch.bat"
+3. Make sure there are non-empty notification files in "ESFeeder/notifications", that were crawled into archive_dev
+4. install shared
+5. run ESFeeder twice (first time to fix hard deletion)
+6. run CWA
