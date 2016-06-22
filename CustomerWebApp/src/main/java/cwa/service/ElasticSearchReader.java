@@ -5,7 +5,6 @@ import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Objects;
 
 import org.elasticsearch.action.get.GetResponse;
@@ -265,13 +264,13 @@ public class ElasticSearchReader extends ElasticSearchController
     }
 
     @Override
-    public List<String> getSources() {
-        return new ArrayList<>(this.deserializeSet(MetaDataType.SOURCE));
+    public ArrayList<String> getSources() {
+        return new ArrayList<String>(this.deserializeSet(MetaDataType.SOURCE));
     }
 
     @Override
-    public List<String> getTopics() {
-        return new ArrayList<>(this.deserializeSet(MetaDataType.TOPIC));
+    public ArrayList<String> getTopics() {
+        return new ArrayList<String>(this.deserializeSet(MetaDataType.TOPIC));
     }
 
 }
