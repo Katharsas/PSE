@@ -337,6 +337,7 @@ class ArticleResult {
          */
          
       }
+   }
       
       //var anch = null;
       /*
@@ -384,7 +385,6 @@ class ArticleResult {
       
       //$('.sys input[type=text], .sys select').each(function() {})
 
-   }
    
    //window.onload = on_load();
    
