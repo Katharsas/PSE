@@ -1,3 +1,7 @@
+/*
+ *@auhor dbeckstein, jfranz
+ */
+
 import {Ajax} from "./Ajax";
 import {FilterOptions} from "./FilterOptions";
 import {HtmlBuilder} from "./HtmlBuilder";
