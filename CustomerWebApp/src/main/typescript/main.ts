@@ -134,6 +134,22 @@ class ArticleResult {
       // bug get sources todo !!
       var topic_set : any = [];
       topic_set = ["topic 1","topic 2","topic 3"];
+      
+      var cs_log_ajax_hint_1 = "______new_ajax____";
+      Ajax.getMetadata()
+        .done(function(result: ArticleResult) {
+            if (result.errorMessage !== null) {
+                console.log(cs_log_ajax_hint_1,result.errorMessage);
+            } else {
+                console.log(cs_log_ajax_hint_1,"New Articles received:");
+                console.log(result);//.articles);
+            }
+        })
+        .fail(function() {
+            console.log(cs_log_ajax_hint_1,"Sending request failed!");
+        });
+
+      
       for (var i=0; i< topic_set.length; i++){
         var topicName = topic_set[i];
         var el =  (<Node> document.createElement('li')  );
@@ -290,7 +306,7 @@ class ArticleResult {
          console.log(el);
          //cs.log(el.getAttribute("href"));
       }
-      
+      //repeat this each 0.25 second !! bug todo refac
       var col_a = (<any> document.getElementsByTagName("A")  );
       //var list_a = Array.prototype.slice.call( col_a, 0 );
       var list_a: any = [];

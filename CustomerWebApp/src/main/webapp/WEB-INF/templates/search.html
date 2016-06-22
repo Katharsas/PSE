@@ -18,7 +18,9 @@
     
     <!--
     -->
-    
+    <script th:inline="javascript">
+        var contextUrl = /*[[@{/}]]*/ undefined;
+    </script>
     <script type="text/javascript" th:src="@{/resources/js/main.bundle.js}"></script>
     <script type="text/javascript" th:src="@{/resources/js/myHello.bundle.js}"></script>
     <script type="text/javascript" th:src="@{/resources/js/jquery-1.11.3.js}"></script>
@@ -186,7 +188,9 @@
         
 
     <div id="container_footer">  
-        <div class="about">About</div>
+        <div class="about">
+        Team - Die fünf Fragezeichen - Studienarbeit bei Prof. Göbel - SS 2016
+        </div>
     </div>
     
     <script type="text/javascript" th:src="@{/resources/js_lazy/onload.js}"></script>
