@@ -83,9 +83,10 @@ export module HtmlBuilder{
         // img src="/CWA/resources/img/cache_arrow_down_small_grey.png";
         
         var container_buttons = createElem("div","container_buttons");
+            
             // bug refac todo, here aufklappen langer text !
             var cache_button = createElem("div","myButton");
-                 var a = <any> document.createElement('a');
+                var a = <any> document.createElement('a');
                 a.href = "#cache_id_1123243";
                 var img = <any> document.createElement('img');
                 img.src = "/CWA/resources/img/cache_arrow_down_small_grey.png";//"";
@@ -96,13 +97,12 @@ export module HtmlBuilder{
             container_buttons.appendChild(cache_button);
                 
             var similar_button = createElem("div","myButton");
-                 var a = <any> document.createElement('a');
+                var a = <any> document.createElement('a');
                 a.href = "#similar_id_1123243";
                 addText( a, "Similar" );
             similar_button.appendChild(a);
                 
             container_buttons.appendChild(similar_button);
-            
         
         root.appendChild( container_buttons );
         

@@ -132,6 +132,16 @@ class ArticleResult {
          //cs.log(i);
       }
       // bug get sources todo !!
+      var topic_set : any = [];
+      topic_set = ["topic 1","topic 2","topic 3"];
+      for (var i=0; i< topic_set.length; i++){
+        var topicName = topic_set[i];
+        var el =  (<Node> document.createElement('li')  );
+        var text_node = document.createTextNode(topicName) ;
+        el.appendChild( text_node );
+        topic_list.appendChild(el);
+      }
+      
       for (var i=0; i< 15; i++){
          var el =  (<Node> document.createElement('li')  );
          var text_node = document.createTextNode("Topic "+i) ;
