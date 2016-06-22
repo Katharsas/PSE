@@ -39,7 +39,7 @@ public class FileService {
     private final static String notificationFilePrefix = "notification_";
 
     // archive
-    private final static Path archive = Paths.get("./../RSSCrawler/archive_dev");
+    private final static Path archiveParent = Paths.get("./../RSSCrawler");
 
     // filter for cwa
     private final static Path cwaTopics = Paths.get("./cwaFilter/topics.ser");
@@ -70,6 +70,8 @@ public class FileService {
 
             List<Path> newArticles = notificationFiles.stream()
                     .flatMap(getLines)
+                    .peek(articlePathString -> System.out.println(
+                    		"Reading path from notification file: " + articlePathString))
                     .map(articlePathString -> Paths.get(articlePathString))
                     .collect(Collectors.toList());
 
@@ -106,7 +108,7 @@ public class FileService {
 
             Map<Path, Document> result = new HashMap<>();
             for (Path articlePath : articlePaths) {
-                Document articleXml = dBuilder.parse(archive.resolve(articlePath).toFile());
+                Document articleXml = dBuilder.parse(archiveParent.resolve(articlePath).toFile());
                 result.put(articlePath, articleXml);
             }
             return result;
@@ -139,7 +141,6 @@ public class FileService {
 
         // get all the files from a directory
         File[] fList = directory.listFiles();
-        //resultList.addAll(Arrays.asList(fList));
         for (File file : fList) {
             if (file.isFile()) {
                 resultList.add(file);

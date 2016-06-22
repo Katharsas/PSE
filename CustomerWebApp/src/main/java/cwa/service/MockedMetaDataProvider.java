@@ -7,7 +7,7 @@ import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 
 @Service
-@Order(4)
+@Order(2)
 public class MockedMetaDataProvider implements MetaDataProvider {
 
 	@Override
