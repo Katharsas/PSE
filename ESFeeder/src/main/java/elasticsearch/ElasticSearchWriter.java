@@ -5,6 +5,7 @@ import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 
 import java.io.IOException;
 import java.util.Collection;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -79,6 +80,23 @@ public class ElasticSearchWriter extends ElasticSearchController{
                     .endObject()
         		.endObject()
         );
+    
+    }
+    /**
+     * Creates an index for Metainfo (in our case for Topic and Source)
+     *
+     */ 
+    private void createMetaIndex(String indexName) throws IOException, Exception{
+
+		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
+		indexBuilder.addMapping(metaIndexType, jsonBuilder()
+        		.startObject()
+                	.startObject(meta_data)
+                    	.field("type","string")
+                        .field("index", "not_analyzed")
+                    .endObject()
+        		.endObject()
+		);
 
         //executes and get's the response
         CreateIndexResponse createResponse = indexBuilder.get();
@@ -185,12 +203,16 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 		// org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse.isExists()
 		boolean mainIndex_exists =  client.admin().indices().prepareExists(mainIndex).get().isExists();
 		boolean searchIndex_exists =  client.admin().indices().prepareExists(searchIndex).get().isExists();
-
+		boolean metaIndex_exists =  client.admin().indices().prepareExists(metaIndex).get().isExists();
+		
 		if(!searchIndex_exists){
 			createIndex(searchIndex);
 		}
-		if( !mainIndex_exists ){
+		if(!mainIndex_exists){
 			createIndex(mainIndex);
+		}
+		if(!metaIndex_exists){
+			createMetaIndex(metaIndex);
 		}
 	}
 
@@ -199,7 +221,7 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 	 * passes the IOException from private put()
 	 */
 	public void put(Article article) throws IOException{
-
+		
 		//Only index unless it is already in
 		if(!this.articleIsAlreadyIndexed(article, mainIndex)){
 			this.put(article, mainIndex);
@@ -222,18 +244,27 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 
 	/*
 	 * puts a list of articles in both indexes
+	 * collects all topics and sources
 	 * passes the IOException from public put()
 	 */
 	public void putMany( List<Article> list ) throws IOException{
+	
+		Collection<String> topics = new ArrayList<String>();
+		Collection<String> sources = new ArrayList<String>();
 
 		for( Article article : list ){
 			this.put( article );
+			topics.add(article.getTopic());
+			sources.add(article.getSource());
 		}
-
+		
+		this.mergeMetaData(topics, MetaDataType.TOPIC);
+		this.mergeMetaData(sources, MetaDataType.SOURCE);
+		
 	}
 
 	/**
-	 * Merge new metaData from new articles with old metaData from old article and save result.
+	 * Merge new metaData from new articles with old metaData from old article and save result (metaData = topic/source)
 	 */
 	private void mergeMetaData(Collection<String> newMetaData, MetaDataType filterType){
     	Set<String> current = this.deserializeSet(filterType);
@@ -242,13 +273,27 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
     }
 
 
-	private void writeMetaDataToIndex(String encoded, MetaDataType filterType) {
-		// TODO Overwrite document at metaData index of given type
-
-		//turn filterType into an String? Use MetaDataType as a key?
-		//which format should the String be in?
-	}
+	private void writeMetaDataToIndex(String encoded, MetaDataType filterType) throws IOException{
 	
+		String id = filterType.name();
+
+		//get() executes and gets the response
+		IndexResponse indexResponse = client.prepareIndex(metaIndex, metaIndexType, id)
+            .setSource(jsonBuilder()
+                .startObject()
+                    .field(meta_data, encoded)
+                .endObject()
+            ).get();
+
+/*DEBUG*/String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
+            // Version (if it's the first time you index this document, you will get: 1)
+            long _version = indexResponse.getVersion();
+            // isCreated() is true if the document is a new one, false if it has been updated
+            boolean created = indexResponse.isCreated();
+            System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
+/*DEBUG*/
+	}
+
 	private void serializeSet(Set<?> anySet, MetaDataType filterType) {
     	ByteArrayOutputStream baos;
         try (ObjectOutputStream oos = new ObjectOutputStream(baos = new ByteArrayOutputStream())) {

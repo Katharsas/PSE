@@ -1,40 +1,38 @@
 package cwa.service;
 
-import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
-import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
-import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
-import static org.elasticsearch.index.query.QueryBuilders.rangeQuery;
-
-import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.time.LocalDate;
 import java.util.Objects;
 
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.IndexNotFoundException;
-import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilder;
-import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
-import org.springframework.core.annotation.Order;
-import org.springframework.stereotype.Service;
+import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
+import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
+import static org.elasticsearch.index.query.QueryBuilders.boolQuery;
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import static org.elasticsearch.index.query.QueryBuilders.matchQuery;
+import static org.elasticsearch.index.query.QueryBuilders.rangeQuery;
 
 //import shared.ElasticSearchController;
 import shared.Article;
 import shared.ArticleId;
-import shared.ElasticSearchController;
 import shared.metadata.MetaDataType;
+import shared.ElasticSearchController;
+import cwa.service.MetaDataProvider;
 
 /**
  *
  * @author akolb
  * @author jmothes
  */
-@Service
-@Order(3)
 public class ElasticSearchReader extends ElasticSearchController
         implements MetaDataProvider, ArticleProvider {
 
@@ -214,13 +212,13 @@ public class ElasticSearchReader extends ElasticSearchController
     }
 
     @Override
-    public ArrayList<String> getSources() {
-        return new ArrayList<String>(this.deserializeSet(MetaDataType.SOURCE));
+    public Collection<String> getSources() {
+        return this.deserializeSet(MetaDataType.SOURCE);
     }
 
     @Override
-    public ArrayList<String> getTopics() {
-        return new ArrayList<String>(this.deserializeSet(MetaDataType.TOPIC));
+    public Collection<String> getTopics() {
+        return this.deserializeSet(MetaDataType.TOPIC);
     }
 
 }
