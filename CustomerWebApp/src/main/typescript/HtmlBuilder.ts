@@ -22,7 +22,7 @@ export module HtmlBuilder{
 	 */
 	export function buildArticle(article : any, parent : any){
     
-        const tmp_clearfix = createElem("div","clearfix");
+        //var tmp_clearfix = createElem("div","clearfix");
         
         var root = createElem("div","result");
         
@@ -33,7 +33,7 @@ export module HtmlBuilder{
         
         root.appendChild( topic );
         
-        root.appendChild( tmp_clearfix );
+        root.appendChild( createElem("div","clearfix") );
         
         
             var title = createElem("div","title");
@@ -45,24 +45,36 @@ export module HtmlBuilder{
         root.appendChild( title );
         
             var link = createElem("div","link");
-                addText( link, article.link );        
+                addText( link, article.url );        
         
         root.appendChild( link );
         
             var date = createElem("div","container_date");
                 var date_button = createElem("div","myButton");
                 var date_date = createElem("span","date");
-                addText( date_date, article.date);
+                var raw_date = article.pubDate;
+                
+                //bug substr other behaviour than substring
+                var date_y = raw_date.substring(0,4);
+                var date_m = raw_date.substring(5,7); // here bug
+                var date_d = raw_date.substring(8,10);
+                console.log("-----");
+                console.log(date_y);
+                console.log(date_m);
+                console.log(date_d);
+
+                var formatted_date = date_d + "." + date_m + "." + date_y
+                addText( date_date, formatted_date + "..." + raw_date);
                 date_button.appendChild(date_date);
                 //var date_time = createElem("span","time");
                 //date_button.appendChild(date_time);
             date.appendChild(date_button);
         root.appendChild(date);
         
-        root.appendChild( tmp_clearfix );
+        root.appendChild( createElem("div","clearfix") );
         
             var content = createElem("div","content");
-                addText( content, article.epub );        
+                addText( content, article.extractedText.substring(0,300));        
         
         root.appendChild( content );
         
@@ -73,7 +85,7 @@ export module HtmlBuilder{
         root.appendChild( author );
         
         
-        root.appendChild( tmp_clearfix );
+        root.appendChild( createElem("div","clearfix") );
         
         
         
