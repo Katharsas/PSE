@@ -135,7 +135,7 @@ class ArticleResult {
       var topic_set : any = [];
       topic_set = ["topic 1","topic 2","topic 3"];
       
-      var cs_log_ajax_hint_1 = "______new_ajax____";
+      var cs_log_ajax_hint_1 = "____new_ajax____";
       Ajax.getMetadata()
         .done(function(result: ArticleResult) {
             if (result.errorMessage !== null) {
