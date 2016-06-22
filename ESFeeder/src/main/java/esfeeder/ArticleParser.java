@@ -52,7 +52,7 @@ public class ArticleParser {
         // check if seconds == 60, which is invalid, and correct it to 59
         String secs = pubDate.substring(pubDate.length() - 2, pubDate.length());
         if (secs.equals("60")) {
-            System.out.println(secs);
+            //System.out.println(secs);
             pubDate = pubDate.substring(0, pubDate.length() - 2) + "59";
         }
         
@@ -96,7 +96,7 @@ public class ArticleParser {
         if (m.find()) {
             source_formatted = m.group(1);
         } else {
-            System.out.println("NO MATCH");
+            //System.out.println("NO MATCH");
         }
 
         // Find position of second dot = "." from right side of url
@@ -155,7 +155,7 @@ public class ArticleParser {
         if (m_topic.find()) {
             topic_formatted = m_topic.group(1);
         } else {
-            System.out.println("NO MATCH");
+           // System.out.println("NO MATCH");
         }
 
         return topic_formatted;

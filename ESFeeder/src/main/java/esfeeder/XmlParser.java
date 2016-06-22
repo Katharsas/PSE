@@ -54,7 +54,7 @@ public class XmlParser {
                 .item(0)
                 .getTextContent();
             } catch (NullPointerException ex) {
-                System.out.println("NullPointerException encountered in parse_xml");
+                //System.out.println("NullPointerException encountered in parse_xml");
                 // return_value is left as = null, gets checked lateron with (if (return_value == null))
         }
         
@@ -120,7 +120,7 @@ public class XmlParser {
                 //System.out.println("NPE encountered in body");
             } catch (IllegalFieldValueException ex) {
                 // detect function behaviour refac
-                System.out.println("illegal filed value");
+                //System.out.println("illegal filed value");
             }
 
             a_pubDate = ap.parse_pubDate(a_pubDate);
@@ -168,7 +168,7 @@ public class XmlParser {
             s += "";
 
         } catch (Exception e) {
-            e.printStackTrace();
+            e.printStackTrace();//bug refac ?
         }
 
         return article;
@@ -196,10 +196,10 @@ public class XmlParser {
             if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
                 topics_set.add(article.getTopic());
                 GlobalsDebug.set_cnt++;
-                System.out.println(article);
+                //System.out.println(article);
             }
         }
-        System.out.println(topics_set);
+        //System.out.println(topics_set);
         return articles;
     }
 

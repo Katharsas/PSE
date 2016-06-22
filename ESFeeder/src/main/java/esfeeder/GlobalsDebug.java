@@ -6,7 +6,7 @@ package esfeeder;
  */
 public class GlobalsDebug {
 
-    public static final int set_cnt_max = 8;
+    public static final int set_cnt_max = 4;
     public static int set_cnt = 0;
 }
 
