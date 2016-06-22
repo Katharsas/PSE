@@ -74,6 +74,11 @@ export module HtmlBuilder{
                 addText( content, article.extractedText.substring(0,300));        
         
         root.appendChild( content );
+            var content_cache = createElem("div","content_cache");
+                addText( content_cache, article.extractedText);        
+        
+        root.appendChild( content_cache );
+        
         
             var author = createElem("div","author");
                 addText( author, article.author );        
@@ -87,7 +92,7 @@ export module HtmlBuilder{
             // bug refac todo, here aufklappen langer text !
             var cache_button = createElem("div","myButton");
                 var a = <any> document.createElement('a');
-                a.href = "#cache_id_1123243";
+                a.href = "#cache_id_"+article.articleId_str;
                 var img = <any> document.createElement('img');
                 img.src = "/CWA/resources/img/cache_arrow_down_small_grey.png";//"";
                 a.appendChild(img);
@@ -98,7 +103,7 @@ export module HtmlBuilder{
                 
             var similar_button = createElem("div","myButton");
                 var a = <any> document.createElement('a');
-                a.href = "#similar_id_1123243";
+                a.href = "#similar_id_"+article.articleId_str; //1123243
                 addText( a, "Similar" );
             similar_button.appendChild(a);
                 
