@@ -58,13 +58,9 @@ export module HtmlBuilder{
                 var date_y = raw_date.substring(0,4);
                 var date_m = raw_date.substring(5,7); // here bug
                 var date_d = raw_date.substring(8,10);
-                console.log("-----");
-                console.log(date_y);
-                console.log(date_m);
-                console.log(date_d);
 
                 var formatted_date = date_d + "." + date_m + "." + date_y
-                addText( date_date, formatted_date + "..." + raw_date);
+                addText( date_date, formatted_date );
                 date_button.appendChild(date_date);
                 //var date_time = createElem("span","time");
                 //date_button.appendChild(date_time);
