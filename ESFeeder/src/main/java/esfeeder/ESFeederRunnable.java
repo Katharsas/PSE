@@ -64,8 +64,9 @@ System.out.println("Executing ESFeeder..."); //DEBUG
          */
         XmlParser x = new XmlParser();
         //String s = x.parse(sample_file);
-        String s = x.debug();
-        System.out.println(s);
-        System.out.println("... finished");
-	}
+        // -------------------------------------- new debug stuff
+        //String s = x.debug();
+        //System.out.println(s);
+        //System.out.println("... finished");
+    }
 }
