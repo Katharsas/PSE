@@ -48,6 +48,7 @@ public class SearchController {
 	@RequestMapping(value = "/getMetadata", method = RequestMethod.GET)
 	@ResponseBody
 	public Map<String, List<String>> metaData() {
+		System.out.println("Controller: MetaData called");
 		Map<String, List<String>> metaData = new HashMap<>();
 		metaData.put("sources", metaDataProvider.getSources());
 		metaData.put("topcis", metaDataProvider.getTopics());

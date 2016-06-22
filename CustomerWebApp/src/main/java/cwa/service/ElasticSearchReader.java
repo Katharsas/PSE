@@ -51,20 +51,6 @@ public class ElasticSearchReader extends ElasticSearchController
         } else {
             //Everything is good
         }
-        
-        String testid = "archive_dev\\en\\business\\WorldbusinessnewsCNNMoneycom\\y2016\\m5\\d25\\RSS-1768727040.xml";
-        Article testResult = getById(new ArticleId(testid));
-        System.out.println(testResult.getTitle());
-        
-//        String query = "The SEC is investigating Alibaba";
-        String query = "Alibaba";
-        System.out.println("-------------------- START");
-        ArrayList<Article> results = getByQuery(query, 0, 10, new String[]{}, new String[]{}, null, null);
-        for(Article article : results) {
-        	System.out.println();
-        	System.out.println(article.getExtractedText());
-        }
-        System.out.println("-------------------- END");
     }
 
     /**
@@ -164,11 +150,25 @@ public class ElasticSearchReader extends ElasticSearchController
                 .setSize(100)
                 .execute()
                 .actionGet();
+		
+		ArrayList<Article> resultList = new ArrayList<Article>();
+		System.out.println("Querying ElasticSearch...");
 		while (true) {
-			System.out.println("Loop");
 			for (SearchHit hit : scrollResp.getHits().getHits()) {
-				System.out.println("Hit!");
-				System.out.println(hit.getSource().get(obj_title));
+				System.out.println("Hit: ");
+				System.out.println("  ->  " + hit.getSource().get(obj_title));
+				
+				 resultList.add(
+                         new Article(hit.getId())
+                         .setTitle((String) hit.getSource().get(obj_title))
+                         .setPubDate((String) hit.getSource().get(obj_pubDate))
+                         .setExtractedText((String) hit.getSource().get(obj_content))
+                         .setAuthor((String) hit.getSource().get(obj_source))
+                         .setTopic((String) hit.getSource().get(obj_topic))
+                         .setUrl((String) hit.getSource().get(obj_url))
+                         .setAuthor((String) hit.getSource().get(obj_author))
+                     );
+				
 			}
 			scrollResp = client.prepareSearchScroll(scrollResp.getScrollId()).setScroll(new TimeValue(60000)).execute()
 					.actionGet();
@@ -177,7 +177,7 @@ public class ElasticSearchReader extends ElasticSearchController
 				break;
 			}
 		}
-		return new ArrayList<>();
+		return resultList;
 	}
 
 	/**

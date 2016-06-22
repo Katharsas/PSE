@@ -143,11 +143,13 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 */
 	private void put(Article article, String index) throws IOException{
 
+		System.out.println(article.toString());
+		
 		//get values from article object
 		String id = article.getArticleId().getId(), title = article.getTitle(), pubDate = article.getPubDate(), content = article.getExtractedText(), author = article.getAuthor(), topic = article.getTopic(), source = article.getSource(), url = article.getUrl();
 
-		System.out.println("ID ADDED:");
-		System.out.println(id);
+//		System.out.println("ID ADDED:");
+//		System.out.println(id);
 		
 		//get() executes and gets the response
 		IndexResponse indexResponse = client.prepareIndex(index, this.indexType, id)
@@ -168,7 +170,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
             long _version = indexResponse.getVersion();
             // isCreated() is true if the document is a new one, false if it has been updated
             boolean created = indexResponse.isCreated();
-            System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
+//            System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
 /*DEBUG*/
 
 	}

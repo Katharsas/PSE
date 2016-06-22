@@ -49,7 +49,7 @@ public class Article implements Comparable{
     public String toString() {
         String s = "";
         s += "_______________ \n";
-        s += "#Article object \n";
+        s += "#Article object \n\n";
         s += "articleID:     ";
         s += this.getArticleId_str() + "\n";
         s += "title:         ";
