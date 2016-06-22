@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:09:18 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<item>
+<title>Hackers could bring down a bank</title>
+<link>http://rss.cnn.com/r/8d7efa044e/0Lmoney0Bcnn0Bcom0C20A160C0A50C240Cnews0Cswift0Ebank0Ehack0Eceo0Cindex0Bhtml0Dsection0Fmoney0Inews0Iinternational</link>
+<guid>http://money.cnn.com/2016/05/24/news/swift-bank-hack-ceo/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/160517193253-wall-street-bank-hackers-120x90.jpg" width="120"/>
+<description>The head of banking communications network SWIFT has put global banks on notice: Hackers will strike again, and if they're successful, they could bring down a bank. </description>
+<pubDate>Tue, 24 May 2016 06:21:50 EDT</pubDate>
+<ExtractedText>SWIFT, or the Society for Worldwide Interbank Financial Telecommunication, has already warned customers that the attacks appear to be "part of a wider and highly adaptive campaign."
+In each case, the criminals followed the same basic pattern:
+Attackers used malware to circumvent a bank's local security systems.
+They gained access to the SWIFT messaging network.
+Fraudulent messages were sent via SWIFT to initiate cash transfers from accounts at larger banks.
+Leibbrandt said the method is much more serious than a typical data breach or theft of customer information. Instead, the loss of control over payment channels could bring down a bank.
+"In the recent cases, thieves were able to move just some of those banks' overseas assets," he said. "As a result, for the banks concerned, the events haven't been existential. The point is that they could have been."
+Related: Casinos, money laundering and wire transfers: Inside a global bank heist
+The attacks underscore the vulnerability of smaller banks that can't afford cutting-edge defenses. If hackers are able to break into a weaker bank, they can fabricate transfer requests in order to pull money out of a bigger bank.
+In the case of Bangladesh Bank, hackers used the tactic to transfer money out of its accounts at the New York Fed. Investigators have yet to publicly identify any suspects in the case. Banco del Austro's funds were being held in accounts at Wells Fargo ( WFC ).
+SWIFT is taking additional measures to secure client banks, including sharing more information, supporting security audits and introducing tougher requirements for local bank computer networks, Leibbrandt said.
+SWIFT's network and core messaging services have not been compromised by the attacks, he added.
+Related: Two hours and 1,600 fake credit cards later: $13 million is gone
+Leibbrandt said the attack on Bangladesh Bank was a "watershed" moment that means the industry must "work even harder at our collective defensive efforts."
+"The financial industry, as a community, has to be clear that cyber risk is big; there will be more cyber attacks. And inevitably some will be successful," he said.
+CNNMoney (New Delhi) First published May 24, 2016: 6:18 AM ET
+</ExtractedText>
+</item>
+</channel>
+</rss>

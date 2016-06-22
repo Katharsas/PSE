@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Mon, 23 May 2016 16:07:20 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Astronomers fire up powerful lasers for space exploration</title>
+<guid>http://www.cnn.com/2016/04/28/tech/lasers-telescope-chile-irpt/index.html</guid>
+<link>http://rss.cnn.com/r/66bd6a36da/0L0Scnn0Bcom0C20A160C0A40C280Ctech0Clasers0Etelescope0Echile0Eirpt0Cindex0Bhtml0Deref0Frss0Itech</link>
+<description>It's the kind of laser show you'd expect from the Death Star, only there are four of them. &lt;Br&gt;&lt;Br&gt;&lt;a href="http://podcast.cnn.com" rel="nofollow"&gt;&lt;img src="http://podcasts.cnn.net/cnnpodcasts/feeds/images/300-gps.jpg"&gt;&lt;/a&gt;</description>
+<pubDate>Thu, 19 May 2016 07:25:09 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160428131006-05-lasers-telescope-chile-irpt-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160428131006-05-lasers-telescope-chile-irpt-top-tease.jpg" width="90"/>
+<ExtractedText>8 of 8
+Story highlights
+A set of powerful lasers has been turned on for the first time in a remote Chilean desert
+The lasers will help ESO's Very Big Telescope take clearer images of the sky
+(CNN)
+It's the kind of laser show you'd expect from the Death Star, only there are four of them.
+A powerful set of lasers was turned on for the first time this week at the European Space Observatory's Very Large Telescope in Chile's remote Atacama Desert.
+The new Four Laser Guide Star Facility was fired up on Tuesday after years of development . ESO says the lasers are the most powerful laser guide stars to be used for astronomy.  With this technology, scientists hope to capture a clearer display of our universe.
+Right now, what serves as a barrier between ground telescope and the stars is Earth's atmosphere, creating atmospheric turbulence.
+"[It] causes a romantic but undesired effect in astronomy: Twinkling stars result in blurred images," ESO said on its website.
+Read More
+A way to solve this problem is by using an adaptive optics system, which needs a light source from a bright star as a reference.
+A laser guide star is an artificial star image used for astronomical imaging. These lasers, along with some mirrors used for adaptive optics, will help ESO's Very Large Telescope pierce through the blurriness created by the Earth's atmosphere so it can take crisper images of the night sky.
+When turned on, the lasers excite sodium atoms floating in Earth's upper atmosphere, giving the molecules a fluorescent glow. This process is important because the glowing atoms are used by the telescope to correct wavelength distortion created by the atmosphere.
+Although these lasers will be used to take better images of our skies, some astronomers have proposed using powerful lasers to help hide Earth from potentially dangerous aliens. Those scientists include Stephen Hawking, who warned against humans broadcasting our presence to avoid attracting extraterrestrial foes.
+</ExtractedText>
+</item>
+</channel>
+</rss>

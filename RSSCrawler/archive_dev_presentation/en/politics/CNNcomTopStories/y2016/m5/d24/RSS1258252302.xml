@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>India's homegrown 'space shuttle'</title>
+<guid>http://edition.cnn.com/2016/05/23/asia/india-space-shuttle-success/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C230Casia0Cindia0Espace0Eshuttle0Esuccess0Cindex0Bhtml0Deref0Fedition</link>
+<description>It's one small step for India, but a potentially giant leap for cheaper space travel.&lt;br&gt;&lt;Br&gt;Sponsored:&lt;br&gt; &lt;b&gt;Drivers With No Tickets In 3 Years Read This&lt;/b&gt; &lt;br&gt; &lt;a href="http://www.dailyconsumerlife.com/articles/auto/?t202id=5141&amp;t202kw=" target="_blank"&gt;Do NOT pay your next car insurance bill until you try this.&lt;/a&gt; &lt;Br&gt;&lt;Br&gt;</description>
+<pubDate>Tue, 24 May 2016 06:01:22 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160523134043-india-space-shuttle-test-1-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160523134043-india-space-shuttle-test-1-top-tease.jpg" width="90"/>
+<ExtractedText>India successfully tests first 'space shuttle'
+Craft is a prototype of a re-usable launch vehicle
+New Delhi, India (CNN)
+It's one small step for India, but a potentially giant leap for cheaper space travel.
+In the early hours of Monday morning, the Indian Space Research Organization (ISRO) successfully launched its first "Re-usable Launch Vehicle," which at full-size will be able to lift satellites into orbit.
+Scientists launched the unmanned model to a peak altitude of 65 km (40 miles) before turning it around for a controlled descent into the Bay of Bengal. The total flight lasted about 13 minutes.
+"We are very excited," said Deviprasad Karnika, a spokesman for ISRO. "The team has been working on the project for the past 10 years, with the past five spent on designing the actual model."
+Prototype liftoff
+But Karnik cautioned that there was a long road ahead.
+Read More
+"This is just an experiment, which is a baby step to the final reusable launch vehicle which will take years to realize," he told CNN a week prior to the launch.
+There is no concrete next step for the team, but to analyze the data for now, he added.
+</ExtractedText>
+</item>
+</channel>
+</rss>

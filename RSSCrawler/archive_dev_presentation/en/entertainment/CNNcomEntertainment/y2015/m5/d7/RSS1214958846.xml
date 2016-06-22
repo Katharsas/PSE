@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Mon, 23 May 2016 12:50:44 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Guess who? Mothers of celebrities</title>
+<guid>http://www.cnn.com/2013/05/10/showbiz/gallery/celeb-moms/index.html</guid>
+<link>http://rss.cnn.com/r/27117e3c72/0L0Scnn0Bcom0C20A130C0A50C10A0Cshowbiz0Cgallery0Cceleb0Emoms0Cindex0Bhtml0Deref0Frss0Ishowbiz</link>
+<description/>
+<pubDate>Thu, 07 May 2015 07:10:35 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/130510090036-celeb-moms-slate-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/130510090036-celeb-moms-slate-top-tease.jpg" width="90"/>
+<ExtractedText>Guess who? Mothers of celebrities
+Updated 1114 GMT (1914 HKT) May 6, 2015
+54 photos: Guess who? Mothers of celebrities
+Think you know which celebrities calls these women mother? Take a look and find out.
+Hide Caption
+</ExtractedText>
+</item>
+</channel>
+</rss>

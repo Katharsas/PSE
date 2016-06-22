@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Secret hotels you don't know exist</title>
+<guid>http://edition.cnn.com/2016/05/18/hotels/hotel-within-a-hotel/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C180Chotels0Chotel0Ewithin0Ea0Ehotel0Cindex0Bhtml0Deref0Fedition</link>
+<description>Exclusive hotels-within-hotels are popping up at select properties across North America. </description>
+<pubDate>Mon, 23 May 2016 01:32:06 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160516143550-hotel-within-hotel-hideaway-room-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160516143550-hotel-within-hotel-hideaway-room-top-tease.jpg" width="90"/>
+<ExtractedText>Flagler Club, Palm Beach, Florida
+The Breakers is an iconic Florida beachfront resort dating to 1896, and its guest registry over the years includes names like J.P. Morgan and Andrew Carnegie.
+Had the recently opened Flagler Club been around inside The Breakers back in the day, you surely would have found them enjoying its stylish digs and plentiful perks, like complimentary fully stocked mini-bar, exclusive use of the chauffer-driven Tesla house car and the dedicated staff there to wait on guests hand and foot.
+From $950 a night.
+Hotel 32, Las Vegas
+Vegas is at the forefront of the hotel-within-a-hotel trend, and this retreat on the top floor of the Monte Carlo casino is just one of the secret hotels-within-a-hotel in the MGM Resorts collection.
+Its 51 rooms are decidedly larger than those in the main hotel, and the long list of amenities includes private check-in, walk-in chromatherapy rain showers, complimentary airport limo pickup and free clothes pressing and shoe shining.
+Best of all, Hotel 32 is one of the more affordable hotels-within-a-hotel you'll come across.
+From $150 a night.
+Canyon Suites at the Phoenician, Scottsdale, Arizona
+Canyon Suites, Arizona's only Forbes Five-Star/AAA Five Diamond hotel, is located at the foot of Camelback Mountain within the 250 acres of the itself-spectacular Phoenician resort.
+Guests can hang out in one of the Canyon Suites' 60 rooms and suites or in one of the cabanas at the private infinity pool.
+They'll also have access to a daily wine tasting with a resident sommelier, a personal Canyon Ambassador to assist them with requests, plush bedding and bowls and other perks for their pets.
+Therapeutic Turndown service -- a bath prepared with a variety of soothing salts -- caps off a day at Canyon Suites.
+From $484 a night.
+Hideaway at Royalton Riviera Cancun, Mexico
+This 343-room hotel within the Royalton Riviera Cancun takes exclusivity to the next level by restricting it to visitors over the age of 18.
+Hideaway guests enjoy access to all of the main resort's restaurants, bars, activities and fitness facilities, but when they want more privacy, they can retreat to this adults-only haven.
+Complimentary extras like weekly champagne and chocolate parties, in-room aromatherapy, 24-hour concierge service and personalized beach bags are available to guests.
+From $166 a night.
+</ExtractedText>
+</item>
+</channel>
+</rss>

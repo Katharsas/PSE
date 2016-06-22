@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 25 May 2016 09:05:08 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Russia frees Ukrainian hero pilot</title>
+<guid>http://edition.cnn.com/2016/05/25/europe/nadiya-savchenko-ukraine-russia/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C250Ceurope0Cnadiya0Esavchenko0Eukraine0Erussia0Cindex0Bhtml0Deref0Fedition</link>
+<description>Nadiya Savchenko, the Ukrainian pilot who became a national hero during her two years of detention by Russia, has been released, her lawyer said Wednesday on Twitter.&lt;Br&gt;&lt;Br&gt;&lt;a href="http://podcast.cnn.com" rel="nofollow"&gt;&lt;img src="http://podcasts.cnn.net/cnnpodcasts/feeds/images/300-axe.jpg"&gt;&lt;/a&gt;</description>
+<pubDate>Wed, 25 May 2016 09:04:57 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/150302193857-aman-nadiya-savchenko-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/150302193857-aman-nadiya-savchenko-top-tease.jpg" width="90"/>
+<ExtractedText>Savchenko became a symbol of Ukrainian resistance against Russia
+She was voted into parliament during her detention
+(CNN)
+Nadiya Savchenko, the Ukrainian pilot who became a national hero during her two years of detention by Russia, has been released, her lawyer said Wednesday on Twitter.
+"Two years ago I made a promise to the Ukrainian people that I would make every effort to free Nadiya," lawyer Mark Feygin wrote . "So look. I know how to keep my word. She is coming home to Ukraine."
+Details of her release remained under wraps Wednesday afternoon. The Kiev Post and other outlets reported she was being exchanged for two Russian prisoners held by Ukraine.
+The newspaper reported some 100 reporters had gathered at an airport terminal awaiting her arrival Wednesday afternoon.
+Russia claimed the 35-year-old was responsible the deaths of two Russian journalists hit by mortar fire at a checkpoint in eastern Ukraine and sentenced her to 22 years in prison in a trial denounced by Human Rights Watch as "unsound" and "highly politicized."
+Read More
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Brazil turmoil as new minister steps down</title>
+<guid>http://edition.cnn.com/2016/05/23/americas/brazil-politics/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C230Camericas0Cbrazil0Epolitics0Cindex0Bhtml0Deref0Fedition</link>
+<description>Political upheaval continued to roil Brazil on Monday with the announcement that a top Cabinet minister would be stepping down, less than two weeks after his appointment to the position.</description>
+<pubDate>Tue, 24 May 2016 02:50:56 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160512194609-cnnee-dilma-rousseff-michel-temer-split-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160512194609-cnnee-dilma-rousseff-michel-temer-split-top-tease.jpg" width="90"/>
+<ExtractedText>Brazil's Michel Temer: 5 things to know
+Read More
+"Because of all the speculation about the news, he decided that he is going to step down for now in order to ensure that everything is going to be [followed] according to the law," Diniz added.
+Juca was appointed to the position of planning minister 11 days ago, as part of the Cabinet of acting President Michel Temer. Temer replaced Brazil's elected President Dilma Rousseff, who was suspended earlier this month during the Senate impeachment investigation that accuses her of breaking budget laws.
+</ExtractedText>
+</item>
+</channel>
+</rss>

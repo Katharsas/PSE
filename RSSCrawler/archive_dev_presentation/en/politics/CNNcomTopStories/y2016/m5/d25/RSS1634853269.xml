@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 25 May 2016 08:51:14 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Trump wins Washington primary</title>
+<guid>http://edition.cnn.com/2016/05/24/politics/washington-republican-primary-results-donald-trump/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C240Cpolitics0Cwashington0Erepublican0Eprimary0Eresults0Edonald0Etrump0Cindex0Bhtml0Deref0Fedition</link>
+<description>Donald Trump will move closer to clinching the Republican presidential nomination Tuesday with an expected win in the Washington primary.</description>
+<pubDate>Wed, 25 May 2016 05:55:04 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160523071704-donald-trump-california-republican-convention-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160523071704-donald-trump-california-republican-convention-top-tease.jpg" width="90"/>
+<ExtractedText>Donald Trump won Washington's Republican primary
+Both parties are voting, but only the GOP results count
+Washington (CNN)
+Donald Trump is less than 10 delegates shy of clinching the Republican presidential nomination following a win Tuesday in the Washington state primary.
+The victory -- winning at least 40 of Washington's delegates -- means Trump now has 1,229 of the 1,237 delegates he needs to clinch the GOP nomination, according to CNN estimates. Four more Washington delegates are still to be decided, potentially bumping Trump's total even higher.
+Washington didn't have enough delegates to put him over the line Tuesday. Its results do, however, leave him inches short of it with a slate of contests on June 7 in California, New Jersey, New Mexico, Montana and South Dakota sure to seal the deal.
+Trump became the presumptive nominee earlier this month with a decisive win in Indiana that forced his remaining rivals out of the race and ended months of talk about the potential of a contested convention.
+News of Trump's victory was overshadowed on Tuesday night by the clashes between anti-Trump protesters and police outside his event in Albuquerque, New Mexico.
+Read More
+Protesters broke through police barricades, lit fires and threw rocks at the city's convention center, smashing one door. Some taunted police and jumped on police vehicles. Officers in riot gear and on police horses moved the protesters away from the convention center as anti-Trump chants rang through the city's streets.
+Police in Albuquerque showed restraint, noting on Twitter late Tuesday evening that none of the protesters outside the Trump event had been arrested.
+Only arrests at this point have been from inside the rally.
+</ExtractedText>
+</item>
+</channel>
+</rss>

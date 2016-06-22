@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Mon, 23 May 2016 16:07:20 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Technology</title>
+<link>http://www.cnn.com/TECH/index.html?eref=rss_tech</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>If dogs could talk... this is what they would say</title>
+<guid>http://www.cnn.com/2016/05/18/tech/talking-dogs-georgia-institute-technology/index.html</guid>
+<link>http://rss.cnn.com/r/66bd6a36da/0L0Scnn0Bcom0C20A160C0A50C180Ctech0Ctalking0Edogs0Egeorgia0Einstitute0Etechnology0Cindex0Bhtml0Deref0Frss0Itech</link>
+<description>Scientists at Georgia Tech have developed technology that allows dogs to trigger audible cues or send text message alerts. </description>
+<pubDate>Fri, 20 May 2016 14:42:57 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160517204622-if-dogs-could-talk-georgia-tech-mobile-orig-mss-00000418-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160517204622-if-dogs-could-talk-georgia-tech-mobile-orig-mss-00000418-top-tease.jpg" width="90"/>
+<ExtractedText>GoPro shows what pup does home alone
+Atlanta (CNN)
+If dogs could talk, Melody Jackson knows what they would say. Or at least, what she'd like them to say.
+Jackson, an associate professor at the Georgia Institute of Technology, has developed technology that is giving dogs a voice, an ability she says is crucial for search and rescue, bomb detection and therapy dogs. The dogs wear vests equipped with sensors that can send either audible cues or text notifications to a smartphone.
+Jackson earned her Ph.D. in computer science from Georgia Tech in 1998 and has trained assistance dogs for nearly 20 years. Now she's putting her two passions together. Jackson's research team, which includes professor Thad Starner and research scientist Clint Zeagler, has created high-tech vests for canines for a project called FIDO, which stands for "Facilitating Interactions for Dogs with Occupations." The program is sponsored by The National Science Foundation and also the Defense Advanced Research Projects Agency, better known as DARPA.
+The vests have been approved by Jackson's 8-year-old border collie, Sky.
+"He actually has helped us design a lot of these sensors, by telling us what works and what doesn't work," she says. "So, he's sort of our first line of testing before we go out to the rest of the world. He's a very critical part of our design team."
+Read More
+The vest has side sensors that the dogs trigger with a bite or a nudge of their nose. They're trained with toys, identifying between a Frisbee or a ball, and telling their handler which is which. Jackson explains this is an example of a "discrimination task" that can be translated to more important tasks, such as bomb detection, where the dog would tell his handler what explosive he or she has scented.
+Jackson has been observing bomb dog training in hopes of putting her vests to the test with canines on patrol with soldiers on the battlefield.
+"A bomb-sniffing dog has pretty much one alert that says, 'Hey, I found an explosive." But that dog knows what explosive is in there. ... They know if it's something stable like C4 or something unstable and dangerous like TATP that needs to be handled carefully," Jackson says. The problem is "they have no way to tell their handler."
+Jackson and her research team have also developed a medical alert vest that allows a dog to find a missing or trapped person, activate a sensor, and let that person know that help is on the way. This task could be instrumental during an earthquake or disaster rescue where a trapped or  injured person is in need of assistance. This vest is being beta tested by a real service dog team in California, Jackson says.
+Georgia Tech is also working to develop a vest that allows the handler to track the dog wearing it. When the dog finds its target, the dog activates a sensor that sends GPS coordinates back to the handler. The dog then tells the person in jeopardy that help is on the way, and the rescue canine does not have to leave the victim's side.
+Jackson believes there are personal applications for this technology as well.
+"What if that dog could reach around and pull a tab on its vest and call 911 with your GPS location, and text your husband: 'By the way she's at Starbucks on Fifth and Spring, and she's having a seizure right now.' Your husband would know immediately that 911 is on the way."
+The vest could be helpful for a person who cannot speak or a hearing-impaired person. The dog could tell others to get help with the phrase "Excuse me, my handler needs your attention." Jackson's dogs are also trained to discriminate between a doorbell or a fire alarm, and to activate the appropriate sensor on their vest to text a message to the handler's cell phone.
+"A hearing dog helps someone who's deaf, so they alert to things like the doorbell ringing or the baby crying or someone calling your name," Jackson says. "What they'll do is nudge their owner and take them to the source of the sound. ... What if that sounds is a tornado siren? That's just in the environment. The dog has no way to lead you to the source of that sound."
+Jackson says one of her dogs was able to understand the vest and its capabilities in just 27 seconds. She believes any trainable dog would be able to pick up on the technology very quickly.
+&lt;div id="ad_rect_atf_01" class="ad-ad_rect_atf_01 ad-refresh-adtop"&gt;&lt;/div&gt;
+</ExtractedText>
+</item>
+</channel>
+</rss>

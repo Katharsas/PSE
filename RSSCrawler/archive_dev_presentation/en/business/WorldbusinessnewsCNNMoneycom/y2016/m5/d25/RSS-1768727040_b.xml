@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 25 May 2016 10:40:23 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<item>
+<title>The SEC is investigating Alibaba and Washington</title>
+<link>http://rss.cnn.com/r/8d7efa044e/0Lmoney0Bcnn0Bcom0C20A160C0A50C250Cinvesting0Calibaba0Esec0Einvestigation0Cindex0Bhtml0Dsection0Fmoney0Inews0Iinternational</link>
+<guid>http://money.cnn.com/2016/05/25/investing/alibaba-sec-investigation/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/150203130757-jack-ma-alibaba-120x90.jpg" width="120"/>
+<description>Read full story for latest details.</description>
+<pubDate>Wed, 25 May 2016 10:03:25 EDT</pubDate>
+<ExtractedText>The SEC is investigating Alibaba
+by Charles Riley   @CRrileyCNN May 25, 2016: 10:03 AM ET
+How online purchases are delivered in China
+Alibaba has disclosed that it is being investigated by the U.S. Securities and Exchange Commission over its accounting practices and how it reports data from its blockbuster Singles' Day sale.
+The Chinese e-commerce firm said it has been told that regulators are looking for potential violations of federal securities laws. The SEC has requested documents and information on a logistics firm with close ties to Alibaba and data reporting from the company's sale on Singles' Day, which is China's version of Black Friday or Cyber Monday.
+"This matter is ongoing, and, as with any regulatory proceeding, we cannot predict when it will be concluded," Alibaba said in a regulatory filing. Alibaba ( BABA , Tech30 ) shares dropped nearly 3% in premarket trading.
+The focus of the SEC probe was not immediately clear, but critics have in the past complained that Alibaba reports Singles' Day sales in terms of gross merchandise volume, or GMV.
+GMV tallies the monetary value of buying activity over a certain period of time, but it doesn't take into account various hiccups -- for example, customer returns, or if the seller runs out of stock and can't deliver the product. Last year, the Hangzhou-based firm reported GMV sales of $14.3 billion on Singles' Day.
+The other focus of the SEC's probe is Cainiao Network, a logistics and distribution platform that handles the vast majority of Alibaba's deliveries. Alibaba owns a 47% stake in the firm, which recently raised 10 billion yuan ($1.5 billion) from investors.
+</ExtractedText>
+</item>
+</channel>
+</rss>

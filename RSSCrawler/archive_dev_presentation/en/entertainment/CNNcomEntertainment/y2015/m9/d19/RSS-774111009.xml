@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Mon, 23 May 2016 12:50:44 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>30 years of celebrity portraits</title>
+<guid>http://www.cnn.com/2015/09/18/entertainment/gallery/holz-hollywood-celebrity-portraits/index.html</guid>
+<link>http://rss.cnn.com/r/27117e3c72/0L0Scnn0Bcom0C20A150C0A90C180Centertainment0Cgallery0Cholz0Ehollywood0Ecelebrity0Eportraits0Cindex0Bhtml0Deref0Frss0Ishowbiz</link>
+<description/>
+<pubDate>Fri, 18 Sep 2015 23:39:37 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/150918094930-01-holz-hollywood-tease-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/150918094930-01-holz-hollywood-tease-top-tease.jpg" width="90"/>
+<ExtractedText>George Holz's Hollywood
+Updated 2158 GMT (0558 HKT) September 20, 2015
+16 photos: George Holz's Hollywood
+Photographer George Holz has built his career photographing the stars. In his new book, "Holz Hollywood," he showcases celebrity portraits spanning 30 years. Seen here is Heather Graham in 1998.
+Hide Caption
+</ExtractedText>
+</item>
+</channel>
+</rss>

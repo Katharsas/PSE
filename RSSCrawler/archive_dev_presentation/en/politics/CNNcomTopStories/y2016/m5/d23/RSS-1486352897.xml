@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Lego figures more violent?</title>
+<guid>http://edition.cnn.com/video/data/2.0/video/world/2016/05/23/lego-weaponed-warriors-sfc-orig.cnn.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0Cvideo0Cdata0C20B0A0Cvideo0Cworld0C20A160C0A50C230Clego0Eweaponed0Ewarriors0Esfc0Eorig0Bcnn0Bhtml0Deref0Fedition</link>
+<description>A report by New Zealand academics claims Lego toys are becoming more violent, as the number of Lego figures with weapons increases.</description>
+<pubDate>Mon, 23 May 2016 13:23:39 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160523180508-lego-knight-figure-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160523180508-lego-knight-figure-top-tease.jpg" width="90"/>
+<ExtractedText>Facebook Twitter Instagram
+&lt;div class="banner" id="cnn_300x250_sync_freewheel-rail_0_banner"&gt;&lt;span id="cnn_300x250_sync_freewheel-rail_0" class="_fwph"&gt;&lt;form id="_fw_form_cnn_300x250_sync_freewheel-rail_0" style="display:none"&gt;&lt;input type="hidden" name="_fw_input_cnn_300x250_sync_freewheel-rail_0" id="_fw_input_cnn_300x250_sync_freewheel-rail_0" value="ptgt=s&amp;envp=g_js&amp;w=300&amp;h=250&amp;slau=300x250_sync&amp;adUnit=300x250_sync"&gt;&lt;/form&gt;&lt;span id="_fw_container_cnn_300x250_sync_freewheel-rail_0" class="cn-shingle__ad"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+JUST WATCHED
+</ExtractedText>
+</item>
+</channel>
+</rss>

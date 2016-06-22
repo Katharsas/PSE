@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Mon, 23 May 2016 12:50:44 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Entertainment</title>
+<link>http://www.cnn.com/SHOWBIZ/index.html?eref=rss_showbiz</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>'Weird Al': Meeting MJ was surreal</title>
+<guid>http://www.cnn.com/video/data/2.0/video/tv/2016/05/04/conan-weird-al-yankovic-michael-jackson.team-coco.html</guid>
+<link>http://rss.cnn.com/r/27117e3c72/0L0Scnn0Bcom0Cvideo0Cdata0C20B0A0Cvideo0Ctv0C20A160C0A50C0A40Cconan0Eweird0Eal0Eyankovic0Emichael0Ejackson0Bteam0Ecoco0Bhtml0Deref0Frss0Ishowbiz</link>
+<description>"Weird Al" Yankovic talks about the first time he met Michael Jackson and reveals why Paul McCartney turned down a "Live and Let Die" parody "Chicken Pot Pie" on strict moral grounds. Watch Conan weeknights at 11 PM ET on TBS.</description>
+<pubDate>Thu, 05 May 2016 07:57:45 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160504185939-conan-weird-al-yankovic-michael-jackson-00004426-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160504185939-conan-weird-al-yankovic-michael-jackson-00004426-top-tease.jpg" width="90"/>
+<ExtractedText>'Weird Al': Meeting Michael Jackson was surreal
+MUST WATCH
+'Weird Al': Meeting Michael Jackson was surreal
+"Weird Al" Yankovic talks about the first time he met Michael Jackson and reveals why Paul McCartney turned down a "Live and Let Die" parody "Chicken Pot Pie" on strict moral grounds. Watch Conan weeknights at 11 PM ET on TBS.
+</ExtractedText>
+</item>
+</channel>
+</rss>

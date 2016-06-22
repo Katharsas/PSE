@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Summer air travel: Get ready to wait</title>
+<guid>http://edition.cnn.com/2016/05/18/aviation/tsa-summer-travel-growth/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C180Caviation0Ctsa0Esummer0Etravel0Egrowth0Cindex0Bhtml0Deref0Fedition</link>
+<description>Think U.S. security lines are bad now? Airlines for America, an industry trade group, says the summer travel season is going to get even busier. </description>
+<pubDate>Wed, 18 May 2016 10:33:40 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160516094731-airport-lines-monday-atlanta-irpt-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160516094731-airport-lines-monday-atlanta-irpt-top-tease.jpg" width="90"/>
+<ExtractedText>— Kate Sparano (@KSparanoRecruit) May 17, 2016
+"It has been a challenging spring with fliers waiting in lines that take more than 60 to 90 minutes to get through security," said Sharon Pinkerton, Airlines for America's senior vice president of legislative and regulatory affairs, in a statement.
+"We encourage TSA to quickly hire and train new staff to help alleviate this problem, and we also encourage more travelers to enroll in TSA PreCheck as we move into another record-setting travel season."
+The TSA has 42,525 front-line staffers this year, a 10% drop since fiscal year 2013, according to the agency.
+The staffing numbers are what the TSA says it can afford based on congressional appropriations.
+Congress has allowed the Department of Homeland Security, which oversees the TSA, to shift funds to pay existing TSA officers overtime and hire new security officers.
+The TSA hopes to have 768 new security officers in place as early as mid-June, Department of Homeland Security Secretary Jeh Johnson said last week.
+In a Wednesday conference call, Airlines for America's Pinkerton also urged Congress to redirect increased September 11 passenger security fees to  pay for air travel security, which was the fee's original intent. A December 2013 budget deal increased the fee but directed most of the new revenue to pay down the federal deficit.
+Airlines for America launched the hashtag #ihatethewait for travelers to share their security wait times.
+The group also encouraged travelers to sign up for TSA Pre-Check or Customs and Border Protection's Global Entry -- which includes Pre-Check -- to get expedited screening at the airport.
+Some 2.5 million travelers have signed up for the TSA program, far short of the 25 million the TSA would like to enroll, according to The New York Times.
+Reports of long lines at many of the nation's airports seem to have inspired more people to consider the program.
+Pre-Check applications increased from 8,400 per day in April to more than 11,000 per day in May, according to the TSA.
+</ExtractedText>
+</item>
+</channel>
+</rss>

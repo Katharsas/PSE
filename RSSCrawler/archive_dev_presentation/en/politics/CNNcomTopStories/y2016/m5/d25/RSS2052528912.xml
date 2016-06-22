@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 25 May 2016 08:51:14 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>WHO slams 'massive' mosquito failures</title>
+<guid>http://edition.cnn.com/2016/05/24/health/margaret-chan-world-health-assembly-zika/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C240Chealth0Cmargaret0Echan0Eworld0Ehealth0Eassembly0Ezika0Cindex0Bhtml0Deref0Fedition</link>
+<description>World Health Organization (WHO) Director-General Margaret Chan lashed out at family planning and mosquito control "failures" as root causes of the ongoing Zika crisis in an address to the World Health Assembly Monday. </description>
+<pubDate>Tue, 24 May 2016 21:31:43 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160524132109-margaret-chan-who-world-health-assembly-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160524132109-margaret-chan-who-world-health-assembly-top-tease.jpg" width="90"/>
+<ExtractedText>WHO chief: Countries "dropped the ball" on mosquito control
+Increased cases of dengue, chikungunya and Zika evidence of a "dramatic resurgence" of infectious diseases
+(CNN)
+World Health Organization (WHO) Director-General Margaret Chan lashed out at family planning and mosquito control "failures" as root causes of the ongoing Zika crisis in an address to the World Health Assembly Monday.
+Chan said that countries "dropped the ball" on mosquito control in the 1970s and called the ending of effective control practices a "massive policy failure."
+She said that abandoning policies that kept mosquito numbers down set the stage for a resurgence of a disease that had "slumbered" for six decades in Africa and Asia, only to "wake up on a new continent to cause a global health emergency."
+JUST WATCHED
+MUST WATCH
+NIH Director: Zika virus unprecedented 02:32
+Chan also said that family planning and sex education failures illustrated an "extreme consequence" of the disease, as causal links between the mosquito-borne virus and microcephaly, a condition which results in babies being born with severe brain abnormalities, become scientific consensus.
+"The possibility that a mosquito bite during pregnancy could be linked to severe brain abnormalities in newborns alarmed the public and astonished scientists," she told the Assembly, the supreme decision-making body of the WHO, in Geneva.
+Read More
+In April, the WHO confirmed that the virus causes microcephaly and Guillain-Barre syndrome, a condition which attacks nerve cells in the victim's nervous system and can lead to paralysis.
+Latin American and the Caribbean have the highest proportion of unintended pregnancies globally, she said.
+</ExtractedText>
+</item>
+</channel>
+</rss>

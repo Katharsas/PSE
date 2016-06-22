@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Police bodycam footage shows moments before man's death</title>
+<guid>http://edition.cnn.com/video/data/2.0/video/us/2016/05/20/man-dies-in-police-custody-bodycam-video-pkg.kpix.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0Cvideo0Cdata0C20B0A0Cvideo0Cus0C20A160C0A50C20A0Cman0Edies0Ein0Epolice0Ecustody0Ebodycam0Evideo0Epkg0Bkpix0Bhtml0Deref0Fedition</link>
+<description>The family of a man who was pulled over by police in Hayward, San Francisco has released police bodycam footage of the man, moments before his death. CNN affiliate KPIX has more.</description>
+<pubDate>Fri, 20 May 2016 07:25:33 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160519231908-man-dies-in-police-custody-bodycam-video-pkg-00011717-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160519231908-man-dies-in-police-custody-bodycam-video-pkg-00011717-top-tease.jpg" width="90"/>
+<ExtractedText>Facebook Twitter Instagram
+&lt;div class="banner" id="cnn_300x250_sync_freewheel-rail_0_banner"&gt;&lt;span id="cnn_300x250_sync_freewheel-rail_0" class="_fwph"&gt;&lt;form id="_fw_form_cnn_300x250_sync_freewheel-rail_0" style="display:none"&gt;&lt;input type="hidden" name="_fw_input_cnn_300x250_sync_freewheel-rail_0" id="_fw_input_cnn_300x250_sync_freewheel-rail_0" value="ptgt=s&amp;envp=g_js&amp;w=300&amp;h=250&amp;slau=300x250_sync&amp;adUnit=300x250_sync"&gt;&lt;/form&gt;&lt;span id="_fw_container_cnn_300x250_sync_freewheel-rail_0" class="cn-shingle__ad"&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+JUST WATCHED
+</ExtractedText>
+</item>
+</channel>
+</rss>

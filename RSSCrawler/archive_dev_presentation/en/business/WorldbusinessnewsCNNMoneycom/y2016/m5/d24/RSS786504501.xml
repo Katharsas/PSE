@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+<language>en-us</language>
+<copyright>© 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:09:18 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>World business news - CNNMoney.com</title>
+<link>http://money.cnn.com/news/international/?section=money_news_international</link>
+<url>http://i.cnn.net/money/images/cnnmoney_logo_144x30.gif</url>
+<width>144</width>
+<height>30</height>
+<description>CNNMoney.com, the business website of CNN, combines business news and in-depth market analysis with practical advice and answers to personal finance questions.</description>
+</image>
+<item>
+<title>Facebook finds no evidence of Trending bias</title>
+<link>http://rss.cnn.com/r/8d7efa044e/0Lmoney0Bcnn0Bcom0C20A160C0A50C230Ctechnology0Cfacebook0Esenate0Eresponse0Cindex0Bhtml0Dsection0Fmoney0Inews0Iinternational</link>
+<guid>http://money.cnn.com/2016/05/23/technology/facebook-senate-response/index.html?section=money_news_international</guid>
+<media:thumbnail height="90" url="http://i2.cdn.turner.com/money/dam/assets/160513142519-facebook-algorithms-code-bias-120x90.jpg" width="120"/>
+<description>The company said it found no evidence of bias but would make some changes to how its Trending Topics are chosen. &lt;Br&gt;&lt;Br&gt;&lt;a href="http://podcast.cnn.com" rel="nofollow"&gt;&lt;img src="http://podcasts.cnn.net/cnnpodcasts/feeds/images/300-amanpour.jpg"&gt;&lt;/a&gt;</description>
+<pubDate>Tue, 24 May 2016 08:08:22 EDT</pubDate>
+<ExtractedText>Facebook finds no evidence of Trending bias, but makes changes anyway
+by Heather Kelly   @heatherkelly May 23, 2016: 10:39 PM ET
+Facebook has found "no evidence of systematic political bias" in how news stories are chosen for its Trending Topics features, according to results of an internal investigation released Monday.
+However, it will make some changes to how the tool works, including no longer using outside sites to determine if a trending story is relevant.
+The announcement was part of a response to an inquiry from the Senate Commerce Committee, which had asked Facebook about accusations of political bias in its Trending Topics feature.
+"Our analysis indicated that the rates of approval of conservative and liberal topics are virtually identical in Trending Topics. Moreover, we were unable to substantiate any of the specific allegations of politically-motivated suppression of subjects or sources, as reported in the media. To the contrary, we confirmed that most of those subjects were in fact included as trending topics on multiple occasions," said Facebook's general counsel Colin Stretch in the letter.
+Related: Did Facebook suppress conservative news?
+Facebook did acknowledge it's possible an individual contractor could had been biased.
+"Despite the findings of our investigation, it is impossible to fully exclude the possibility that, over the years of the feature's existence, a specific reviewer took isolated actions with an improper motive," said Stretch.
+Earlier this month, Senator John Thune, chairman of the Commerce Committee, had asked Facebook if employees manipulated what showed up in the section. He requested details on how the topics are chosen, and an update on Facebook's investigation into the accusations.
+Stretch met personally with Thune last week to discuss the matter. Thune thanked the company for its transparency, and said the process relied more on human judgment than previously thought.
+"Facebook has recognized the limitations of efforts to keep information systems fully free from potential bias, which lends credibility to its findings," said Thune in a statement . "While the committee remains open to new information on this matter, transparency -- not regulation -- remains the goal, so I thank the company for its efforts to acknowledge relevant facts and its recognition of a continuing need to transparently address relevant user questions."
+The social network will make a number of changes to how Trending Topics are chosen. It will not rely on lists of external sites to determine which topics are important, including its top 10 list of media outlets. It will no longer determine the "importance level" of a subject based on how many of those top media outlets are covering it.
+It is also clarifying its internal guidelines, giving reviewers additional anti-bias training, and adding new oversight for the review team.
+Related: Senate demands answers from Facebook
+This is the latest attempt by Facebook to quell dispel claims that its Trending Topics box is biased against conservative sources. Last week, the company invited 16 conservative commentators and leaders to its Menlo Park headquarters to meet with Zuckerberg.
+The controversy began when anonymous former Facebook contractors told tech blog Gizmodo they routinely suppressed news with a conservative bent.
+CNNMoney (San Francisco) First published May 23, 2016: 7:40 PM ET
+</ExtractedText>
+</item>
+</channel>
+</rss>

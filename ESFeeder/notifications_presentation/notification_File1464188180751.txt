@@ -1,0 +1,3 @@
+./archive_dev/en/business/WorldbusinessnewsCNNMoneycom/y2016/m5/d25/RSS2087537239.xml
+./archive_dev/en/business/WorldbusinessnewsCNNMoneycom/y2016/m5/d25/RSS-1768727040.xml
+./archive_dev/en/business/WorldbusinessnewsCNNMoneycom/y2016/m5/d25/RSS-1768727040_b.xml

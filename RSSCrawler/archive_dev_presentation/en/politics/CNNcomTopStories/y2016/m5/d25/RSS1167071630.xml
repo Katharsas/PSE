@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Wed, 25 May 2016 10:48:24 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Obama beatboxes for rapper</title>
+<guid>http://edition.cnn.com/2016/05/25/politics/vietnamese-rapper-barack-obama/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C250Cpolitics0Cvietnamese0Erapper0Ebarack0Eobama0Cindex0Bhtml0Deref0Fedition</link>
+<description>President Barack Obama spoke Wednesday about the importance of the arts in international politics, making some music of his own to drop a very brief beat for Vietnam's "Queen of Hip Hop."</description>
+<pubDate>Wed, 25 May 2016 09:32:26 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160525094731-vietnam-obama-beat-box-rap-sot-00005928-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160525094731-vietnam-obama-beat-box-rap-sot-00005928-top-tease.jpg" width="90"/>
+<ExtractedText>President Barack Obama held a town hall in Ho Chi Minh City in Vietnam
+He spoke with a young rapper named Suboi who rapped in Vietnamese
+Washington (CNN)
+President Barack Obama spoke Wednesday about the importance of the arts in international politics, making some music of his own to drop a very brief beat for Vietnam's "Queen of Hip Hop ."
+During the final moments of a town hall in Ho Chi Minh City, Obama got a question from a 26-year-old rapper "Suboi," who spit a verse for the President after he offered to beatbox for her.
+Suboi asked Obama about the role of the arts in international relations.
+"I want to know how important it is for a nation to really help and promote their art and culture to help nations in the future," she asked.
+Obama's answer was that artistic expression is important for helping people relate to each other.
+Read More
+"Music, poetry, representations of life as it is and how it should be -- those are the things that inspire people. And if I listen to a Vietnamese rap and it connects to the things I'm feeling, now I feel closer to a country on the other side of the world."
+And because of that, Obama, who is on a diplomatic trip to several Asian countries, spoke against countries' efforts to suppress the arts.
+"Let's be honest. Sometimes art is dangerous, though. And that's why governments sometimes get nervous about art," he said. "But one of the things I truly believe is if you try to suppress the arts, then I think you are suppressing the deepest dreams and aspirations of the people."
+</ExtractedText>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>Pop star stabbed repeatedly by fan</title>
+<guid>http://edition.cnn.com/2016/05/23/asia/japan-pop-star-stabbing/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C230Casia0Cjapan0Epop0Estar0Estabbing0Cindex0Bhtml0Deref0Fedition</link>
+<description>Police in Japan have arrested a man in connection with the stabbing of a pop star in Koganei City, western Tokyo. </description>
+<pubDate>Mon, 23 May 2016 12:28:20 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160523172948-mayu-tomita-stabbing-suspect-tomohiro-iwazaki-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160523172948-mayu-tomita-stabbing-suspect-tomohiro-iwazaki-top-tease.jpg" width="90"/>
+<ExtractedText>J-pop star stabbed by man before concert
+The suspect reportedly admits crime
+(CNN)
+Police in Japan have arrested a man in connection with the stabbing of a pop star in Koganei City, western Tokyo.
+Tokyo Metropolitan Police arrested Tomohiro Iwazaki, 27, after he allegedly attacked pop idol Mayu Tomita with a knife, stabbing her 20 times. The attack occurred around 5 p.m. on Saturday.
+The Japan Times reported that the singer had earlier filed a complaint with Tokyo Metropolitan Police saying that a man named Iwazaki had been "persistently" sending her messages over social media.
+When a teen pop star breaks J-pop 'bushido' code
+Suspect Tomohiro Iwazaki
+The performer was scheduled to give a live performance later that night where she was stabbed, according to her blog .
+Read More
+Last year, a Japanese man was sentenced to six years in jail for slashing two members of the popular J-pop group AKB48, along with a minder, with a saw at a fan event. The attack left the three victims severely injured
+Satoru Umeta, 24, was convicted of assaulting singers Rina Kawaei and Anna Iriyama, both 19, along with one of the group's male employees at a "hand-shaking event" for fans in Takizawa City, Iwate Prefecture in May 2014, CNN's affiliate TV Asahi reported.
+Tomita remains in critical condition.
+</ExtractedText>
+</item>
+</channel>
+</rss>

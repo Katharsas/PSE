@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+<channel>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+<language>en-US</language>
+<copyright>Copyright 2016 Cable News Network LP, LLLP.</copyright>
+<pubDate>Tue, 24 May 2016 08:38:36 EDT</pubDate>
+<ttl>10</ttl>
+<image>
+<title>CNN.com - Top Stories</title>
+<link>http://edition.cnn.com/index.html?eref=edition</link>
+<url>http://i.cdn.turner.com/cnn/.e/img/1.0/logo/cnn.logo.rss.gif</url>
+<width>144</width>
+<height>33</height>
+<description>CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.</description>
+</image>
+<item>
+<title>What 'bathroom' case is really about</title>
+<guid>http://edition.cnn.com/2016/05/13/opinions/north-carolina-bathroom-bill-coates/index.html</guid>
+<link>http://rss.cnn.com/r/60d8b2c855/0Ledition0Bcnn0Bcom0C20A160C0A50C130Copinions0Cnorth0Ecarolina0Ebathroom0Ebill0Ecoates0Cindex0Bhtml0Deref0Fedition</link>
+<description>The legal controversy surrounding North Carolina's "bathroom bill" is not about bigotry. To be sure, unequal treatment of and discrimination against the transgender community could be one of the intended consequences of what is being proposed. But ultimately, the legal battle being forged between the Department of Justice's Civil Rights Division and the State of North Carolina is an issue of separation of power. And it's not clear that this is a battle that the Justice Department can win.</description>
+<pubDate>Tue, 24 May 2016 03:50:37 EDT</pubDate>
+<media:thumbnail height="51" url="http://i2.cdn.turner.com/cnn/dam/assets/160508204654-all-gender-restroom-california-top-tease.jpg" width="90"/>
+<media:content height="51" medium="image" type="image/jpeg" url="http://i2.cdn.turner.com/cnn/dam/assets/160508204654-all-gender-restroom-california-top-tease.jpg" width="90"/>
+<ExtractedText>The Justice Department has filed a civil rights lawsuit over North Carolina's so-called bathroom bill
+Laura Coates: The Justice Department is acting on its own interpretation of a now-ambiguous law
+Laura Coates is a CNN legal analyst.  She is a former assistant U.S. attorney for the District of Columbia and trial attorney in the Civil Rights Division of the Department of Justice. The views expressed are her own.
+(CNN)
+The legal controversy surrounding North Carolina's "bathroom bill" is not about bigotry. To be sure, unequal treatment of and discrimination against the transgender community could be one of the intended consequences of what is being proposed. But ultimately, the legal battle being forged between the Department of Justice's Civil Rights Division and the State of North Carolina is an issue of separation of power. And it's not clear that this is a battle that the Justice Department can win.
+Remember that whatever our own particular social views, our democracy requires a clear separation of power between the three branches of government. Congress makes the law. The judiciary, including the Supreme Court, interprets the law. And the executive branch -- which includes the president and the Department of Justice -- enforces it.
+Over the course of Barack Obama's presidency, the Department of Justice has consistently interpreted Title VII's and Title IX's of the Civil Rights Act's definition of protected class to include gender identity. In announcing the department's federal lawsuit against North Carolina, Attorney General Loretta Lynch vehemently stated that denying legal protection for gender identity highlights a difference without a distinction from protections already guaranteed for gender and sexual orientation.
+Laura Coates
+Practically speaking, gender identity is a clear extension of gender. Legally speaking, though, the distinction is more than semantics.
+In drafting Title VII and Title IX, Congress specifically identified classes of individuals who must be protected against civil rights abuses, including: race, color, sex, religion and national origin. But Congress was silent on the issue of gender identity. (Interestingly enough, and obviously in response to the Jim Crow era of segregation, Congress made clear that having separate but equal bathrooms for men and women is legal and does not violate a person's civil rights).
+Read More
+It is unknown whether Congress's silence was the result of a naive omission or an intentional exclusion. Either way, proponents and opponents of HB2 have since interpreted the silence to their respective advantages. Proponents of HB2 argue that Congress never intended to include gender identity as a protected class, allowing states to create laws that may lead to unequal treatment based on that concept. Opponents of HB2 argue instead that Congress didn't specifically identify gender identity because the concept was already subsumed within the definition of gender. The latter is the Justice Department's position.
+</ExtractedText>
+</item>
+</channel>
+</rss>
