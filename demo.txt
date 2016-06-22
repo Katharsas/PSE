@@ -1,6 +1,16 @@
 1. delete "ESServer/data/elasticsearch/nodes/*"
 2. start "ESServer/bin/elasticsearch.bat"
 3. Make sure there are non-empty notification files in "ESFeeder/notifications", that were crawled into archive_dev
-4. install shared
-5. run ESFeeder twice (first time to fix hard deletion)
-6. run CWA
+
+- ESFeeder/ change notification_presentation to notification
+- RSSCrawler/  change archive_dev_presentation to archive_dev
+- ESShared/ install shared (mvn clean install)
+- ESFeeder/ compile (mvn compile)
+- ESFeeder/ run (mvn exec:java)
+- ESFeeder/ run (mvn exec:jave) - second time important ( fixes harddelete ) 
+--> Leuten zeigen Objekte wurden hinzugefügt
+	(cmd log zeigen)
+
+- CustomerWebApp/ mvn tomcat7:run
+--> Leute Webseite zeigen (evntl nach Alibaba suchen)
+

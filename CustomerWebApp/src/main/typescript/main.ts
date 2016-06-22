@@ -92,14 +92,29 @@ document.addEventListener("DOMContentLoaded", function(event) {
     on_load();
 });
 var global_filterOptions: any;
+
+function search_demo(){
+    
+    console.log("--------------search_demo----------");
+    on_load();
+}
+
 function on_load() {
+    
+    //(<any> document.getElementById("search_demo")).onclick = search_demo;
+    
+    
+    
     global_filterOptions = new FilterOptions();
     var cs_log_ajax_hint = "___ajax___ ";
     global_filterOptions.topics.push("Politics");
     global_filterOptions.sources.push("cnn");
     global_filterOptions.toDate = "2016-12-25";
     //global_filterOptions.fromDate = "2000-12-25";
-    Ajax.getByQuery("Alibaba", global_filterOptions, 0, 10)
+   
+   var keywords = (<any>document.getElementById("fld_search")).value;
+   console.log("__keyword__"+"-"+keywords+"-");
+    Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
         .done(function(result: ArticleResult) {
             if (result.errorMessage !== null) {
                 console.log(cs_log_ajax_hint, result.errorMessage);
@@ -124,6 +139,7 @@ function on_load() {
     //cs.get("res").innerHTML = greeter.greet();
       
     var list = document.getElementById("result_sample_list");
+    list.innerHTML ="";
     var sample = document.getElementById("result_sample");
 
     var topic_list = document.getElementById("select_topic_list");
@@ -231,11 +247,16 @@ function on_load() {
 
     }
 
-    function f_search_keywords(el: any) {
+    function f_search_keywords_old(el: any) {
         var fld_search = document.getElementById("fld_search");
         var fld = (<HTMLInputElement> fld_search).value;
         var keywords = fld;
         conn.post(keywords);
+    }
+    
+    function f_search_keywords(el: any){
+       console.log("--------------search_demo----------");
+        on_load();
     }
 
     function f_search_filter(el: any) { // bug key not used
@@ -323,7 +344,11 @@ function on_load() {
         // todo bug, refac, check if class is normal link, then dont add any special onclick handling
         //console.log("i", anch);
         //var anch = (<any> list_a[i]  );
+        
+        // bug todo refac bad important
         anch.onclick = process_click_or_enter;
+        
+        
         /*function(){/* some code * /
            ( anch );
         }
