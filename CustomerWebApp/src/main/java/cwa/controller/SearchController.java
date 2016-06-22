@@ -2,7 +2,9 @@ package cwa.controller;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.regex.PatternSyntaxException;
 
 import javax.inject.Inject;
@@ -42,6 +44,15 @@ public class SearchController {
 		return "search.html";
 	}
 	
+	@RequestMapping(value = "/getMetaData", method = RequestMethod.GET)
+	@ResponseBody
+	public Map<String, List<String>> metaData() {
+		Map<String, List<String>> metaData = new HashMap<>();
+		metaData.put("sources", metaDataProvider.getSources());
+		metaData.put("topcis", metaDataProvider.getTopics());
+		return metaData;
+	}
+	
 	/**
 	 * @param id - id of the article of which to find similar articles
 	 * @param range - range in form "x-y" where x is skipped articles, y is limit (1-based)
@@ -59,7 +70,7 @@ public class SearchController {
 			// and return "idNotFound" if no article exists
 			final ArticleId articleId = new ArticleId(id);
 			final Pair<Integer, Integer> rangeParsed = parseRange(range);
-			final ArrayList<Article> articles =
+			final List<Article> articles =
 					articleProvider.getSimilar(articleId, rangeParsed.a, rangeParsed.b);
 			return new ArticleResult(articles);
 		} catch(final ValidationException e) {
@@ -94,7 +105,7 @@ public class SearchController {
 			final String[] sourceParsed = parseStringList(sources);
 			final LocalDate fromParsed = parseDate(from);
 			final LocalDate toParsed = parseDate(to);
-			final ArrayList<Article> articles = articleProvider.getByQuery(query,
+			final List<Article> articles = articleProvider.getByQuery(query,
 					rangeParsed.a, rangeParsed.b, topicsParsed, sourceParsed, fromParsed, toParsed);
 			return new ArticleResult(articles);
 		} catch(final ValidationException e) {
@@ -154,12 +165,12 @@ public class SearchController {
 	
 	protected static class ArticleResult {
 		public final String errorMessage;
-		public final ArrayList<Article> articles;
+		public final List<Article> articles;
 		public ArticleResult(String error, String errorMessage) {
 			this.errorMessage = errorMessage;
 			this.articles = null;
 		}
-		public ArticleResult(ArrayList<Article> articles) {
+		public ArticleResult(List<Article> articles) {
 			this.articles = articles;
 			this.errorMessage = null;
 		}

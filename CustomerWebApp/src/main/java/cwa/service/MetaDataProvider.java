@@ -1,12 +1,12 @@
 package cwa.service;
 
-import java.util.Collection;
+import java.util.List;
 
 /**
  * 
  * @author jmothes
  */
 public interface MetaDataProvider {
-	public Collection<String> getSources();
-	public Collection<String> getTopics();
+	public List<String> getSources();
+	public List<String> getTopics();
 }

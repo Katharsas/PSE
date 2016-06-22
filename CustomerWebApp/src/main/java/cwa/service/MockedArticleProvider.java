@@ -3,12 +3,14 @@ package cwa.service;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Service;
 
 import shared.Article;
 import shared.ArticleId;
 
 @Service
+@Order(2)
 public class MockedArticleProvider implements ArticleProvider {
 
 	@Override
