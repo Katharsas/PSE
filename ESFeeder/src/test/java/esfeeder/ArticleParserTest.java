@@ -10,6 +10,11 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+/**
+ * 
+ * @author pmarek
+ *
+ */
 public class ArticleParserTest {
 
 	ArticleParser articleParser;
@@ -44,11 +49,19 @@ public class ArticleParserTest {
 		returnValue = articleParser.parse_pubDate("");
 		assertEquals("Empty String not catched!", "", returnValue);
 
+		try {
+			returnValue = articleParser.parse_pubDate(null);
+			assertEquals("null String not catched!", "", returnValue);
+		} catch (NullPointerException e) {
+
+		}
 		returnValue = articleParser.parse_pubDate("Sat, 12 Nov 2011 13:02:53 EST");
 		assertEquals("Implementation incorrect", "2011 11 12 13:02:53", returnValue);
 
 		returnValue = articleParser.parse_pubDate("Tue, 14 Jun 2016 10:50:20 EST");
 		assertEquals("Implementation incorrect", "2016 06 14 10:50:20", returnValue);
+
+		returnValue = articleParser.parse_pubDate("Tue, 14 Jun 2016 10:50:60 EST");
 
 		try {
 			articleParser.parse_pubDate("SomeRandomCharaktersAndStuffYouSeeEveryDayAnItIsPrettyLong");
@@ -62,7 +75,6 @@ public class ArticleParserTest {
 			articleParser.parse_pubDate("XYZ, 40 Fex 0001 99:99:99 ECT");
 			fail("Should throw something");
 		} catch (Exception e) {
-
 		}
 	}
 
@@ -102,8 +114,9 @@ public class ArticleParserTest {
 		}
 		returnValue = articleParser.parse_topic("");
 		assertEquals("Empty String not catched!", "", returnValue);
-		returnValue = articleParser.parse_topic("US\\en\\science\\CNNcomScienceandSpace\\y2008\\m11\\d26\\RSS-1080352252.xml");
-		assertEquals("Implementation incomplete","science",returnValue);
+		returnValue = articleParser
+				.parse_topic("US\\en\\science\\CNNcomScienceandSpace\\y2008\\m11\\d26\\RSS-1080352252.xml");
+		assertEquals("Implementation incomplete", "science", returnValue);
 	}
 
 }

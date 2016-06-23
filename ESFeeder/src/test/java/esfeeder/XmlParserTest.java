@@ -140,14 +140,55 @@ public class XmlParserTest {
 
 	@Test
 	public void testParse() {
-		fail("Not yet implemented");
+		String returnValue;
+		Article returnArticle;
+		Path path;
+		Document doc = null;
+		File inputFile;
+		DocumentBuilderFactory dbFactory;
+		DocumentBuilder dBuilder;
+		String filePath, file;
 
+		// Declaration of the method for making the method public
+		Class<? extends XmlParser> targetClass = xmlParser.getClass();
+		Class[] cArg = new Class[2];
+		cArg[0] = Path.class;
+		cArg[1] = Document.class;
+		Method method = null;
+		try {
+			method = targetClass.getDeclaredMethod("parse", cArg);
+		} catch (NoSuchMethodException | SecurityException e1) {
+			e1.printStackTrace();
+		}
+		method.setAccessible(true);
+		
+		filePath = "../Daniel_ESDemo_Crawler/data/germany/de/career/HherweiterKarriere/y2016/m2/d16";
+		file = "RSS634430312.xml";
+		inputFile = new File(filePath + "/" + file);
+		dbFactory = DocumentBuilderFactory.newInstance();
+		try {
+			dBuilder = dbFactory.newDocumentBuilder();
+			doc = dBuilder.parse(inputFile);
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			e.printStackTrace();
+		}
+		doc.getDocumentElement().normalize();		
+		
+		try{
+			path = inputFile.toPath();
+			
+			returnArticle = (Article) method.invoke(xmlParser, path, doc);
+			System.out.println(returnArticle.getPubDate());
+			assertEquals("Implementation incomplete", "2016 02 16 19:08:35", returnArticle.getPubDate());
+		} catch (Exception e){
+			
+		}
 	}
 
 	@Test
 	public void testClean() {
 		String returnValue = "";
-		
+
 		// Declaration of the method for making the method public
 		Class<? extends XmlParser> targetClass = xmlParser.getClass();
 		Class[] cArg = new Class[1];
@@ -159,15 +200,17 @@ public class XmlParserTest {
 			e1.printStackTrace();
 		}
 		method.setAccessible(true);
-		
+
 		try {
-			returnValue = (String) method.invoke(xmlParser, null);
-			assertEquals("Implementation incomplete", null, returnValue);
+			returnValue = (String) method.invoke(xmlParser, "");
+			assertEquals("Implementation incomplete", "", returnValue);
+			returnValue = (String) method.invoke(xmlParser, " 人物 ");
+			assertEquals("Implementation incomplete", "人物", returnValue);
 		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+
 	}
 
 	@Test
