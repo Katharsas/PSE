@@ -5,6 +5,7 @@ import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Map;
 import java.util.Objects;
 
 import org.elasticsearch.action.get.GetResponse;
@@ -52,33 +53,29 @@ public class ElasticSearchReader extends ElasticSearchController
             //Everything is good
         }
     }
+    
+    private Article createArticleFromSource(Map<String, Object> source, String id) {
+    	return new Article(id)
+            .setTitle((String) source.get(obj_title))
+            .setPubDate((String) source.get(obj_content))
+            .setExtractedText((String) source.get(obj_content))
+            .setAuthor((String) source.get(obj_author))
+            .setTopic((String) source.get(obj_topic))
+            .setSource((String) source.get(obj_source))
+            .setUrl((String) source.get(obj_url));
+    }
+    
 
     /**
      * @return an Article from the ES db needs the ID of the object
      */
     private Article getById(ArticleId id) {
-
-        // renamed id, to id_str because, ArticleId id already uses variable "id"
-		String id_str = id.getId();
+		final String id_str = id.getId();
+		
 		// TODO isExists check id existing
-		//executes and gets the response
+		
 		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
-		String title = (String) getResponse.getSource().get(obj_title);
-		String pubDate = (String) getResponse.getSource().get(obj_pubDate);
-		String content = (String) getResponse.getSource().get(obj_content);
-		String author = (String) getResponse.getSource().get(obj_author);
-		String source = (String) getResponse.getSource().get(obj_source);
-		String topic = (String) getResponse.getSource().get(obj_topic);
-		String url = (String) getResponse.getSource().get(obj_url);
-
-		return new Article(id.getId())
-                      .setTitle(title)
-                      .setPubDate(pubDate)
-                      .setExtractedText(content)
-                      .setAuthor(source)
-                      .setTopic(topic)
-                      .setUrl(url);
-
+		return createArticleFromSource(getResponse.getSource(), id_str);
 	}
 
 	/**
@@ -89,13 +86,13 @@ public class ElasticSearchReader extends ElasticSearchController
 
 		//Execute and get a response
 		SearchResponse searchResponse = client.prepareSearch(searchIndex)
-        													.setTypes(indexType)
-                                                            .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
-                                                            .setScroll(new TimeValue(time)) //ES should remember this SearchRequest for <time> seconds
-                                                            .setQuery(queryBuilder)
-                                                            .setFrom(skip) //0 is default
-                                                            .setSize(limit) //10 is default; either <limit> applies to the hitlist (unlikely) or to the total search; TODO: NEEDS TO BE TESTED
-                                                            .get(); //execute and return Response
+			.setTypes(indexType)
+            .setSearchType(SearchType.QUERY_AND_FETCH) //arbitrary choice, see http://javadoc.kyubu.de/elasticsearch/v2.2.0/org/elasticsearch/action/search/SearchType.html
+            .setScroll(new TimeValue(time)) //ES should remember this SearchRequest for <time> seconds
+            .setQuery(queryBuilder)
+            .setFrom(skip) //0 is default
+            .setSize(limit) //10 is default; either <limit> applies to the hitlist (unlikely) or to the total search; TODO: NEEDS TO BE TESTED
+            .get(); //execute and return Response
 
         SearchHits searchHits = searchResponse.getHits();
 
@@ -105,17 +102,7 @@ public class ElasticSearchReader extends ElasticSearchController
 		//ES returns max. 10 hits per List, we can't change that
 		while( searchHits.hits().length != 0 ){ //breaks if the list is empty
             for (SearchHit hit : searchHits.hits()){
-
-                      resultList.add(
-                          new Article(hit.getId())
-                          .setTitle((String) hit.getSource().get(obj_title))
-                          .setPubDate((String) hit.getSource().get(obj_pubDate))
-                          .setExtractedText((String) hit.getSource().get(obj_content))
-                          .setAuthor((String) hit.getSource().get(obj_source))
-                          .setTopic((String) hit.getSource().get(obj_topic))
-                          .setUrl((String) hit.getSource().get(obj_url))
-                          .setAuthor((String) hit.getSource().get(obj_author))
-                      );
+                resultList.add(createArticleFromSource(hit.getSource(), hit.getId()));
             }
 
             //get me the next hits. ES knows which articles are already delivered by using the Search-ID
@@ -125,24 +112,16 @@ public class ElasticSearchReader extends ElasticSearchController
 
         // if ES didn't find any articles resultsList should be empty + the size should be zero
         return resultList;
-
-
 	}
 	
 	@Override
 	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources, LocalDate from, LocalDate to){
 		
-		QueryBuilder qb = QueryBuilders.matchQuery(obj_title, query);
-//		QueryBuilder qb = QueryBuilders.termQuery(obj_title, query);
-        
-//		QueryBuilder qb;
-//		qb = moreLikeThisQuery(obj_title)
-//				.likeText(query)
-//				.minTermFreq(1)
-//				.maxQueryTerms(800);
+		QueryBuilder qb = QueryBuilders
+				.multiMatchQuery(query, obj_title, obj_content, obj_author)
+				.fuzziness(1); // TODO maybe use "AUTO" ?
 		
 		SearchResponse scrollResp = client.prepareSearch(searchIndex)
-//                .setTypes(indexType)
                 .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
                 .setScroll(new TimeValue(60000))
                 .setQuery(qb)
@@ -158,17 +137,7 @@ public class ElasticSearchReader extends ElasticSearchController
 				System.out.println("Hit: ");
 				System.out.println("  ->  " + hit.getSource().get(obj_title));
 				
-				 resultList.add(
-                         new Article(hit.getId())
-                         .setTitle((String) hit.getSource().get(obj_title))
-                         .setPubDate((String) hit.getSource().get(obj_pubDate))
-                         .setExtractedText((String) hit.getSource().get(obj_content))
-                         .setAuthor((String) hit.getSource().get(obj_source))
-                         .setTopic((String) hit.getSource().get(obj_topic))
-                         .setUrl((String) hit.getSource().get(obj_url))
-                         .setAuthor((String) hit.getSource().get(obj_author))
-                     );
-				
+				resultList.add(createArticleFromSource(hit.getSource(), hit.getId()));
 			}
 			scrollResp = client.prepareSearchScroll(scrollResp.getScrollId()).setScroll(new TimeValue(60000)).execute()
 					.actionGet();

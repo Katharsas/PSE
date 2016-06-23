@@ -1,48 +1,34 @@
 package shared;
 
+import java.util.Objects;
+
 /**
  * @author dbeckstein
  * @author akolb
  */
-public class Article implements Comparable{
+public class Article implements Comparable<Article> {
 
     private final ArticleId id; //hashed article name
 
     // _tmp is a placeholder string to make formatting
     // of following attributes here nicer
-    private String _tmp,
+    private String
             title,
             pubDate, //"2000-12-11"
             extractedText,
             author = "",
-            topic, //buisiness, culture
+            topic, //business, culture
             source, //spiegel.de, cnn.com
             url; //link to article
 
-    //metainfos can be placed here if needed
-    private String[] meta;
-
     public Article(String id) {
+    	Objects.requireNonNull(id);
         this.id = new ArticleId(id);
     }
 
-	//@Anmerkung
-	//diskutable, nach was sortiert wird
 	@Override
-	public int compareTo(Object that) throws ClassCastException, NullPointerException{
-	
-		try{
-			return this.getArticleId().compareTo(
-                    ((Article) that).getArticleId()
-            );
-
-        }catch(NullPointerException nllptrEx){
-        	throw nllptrEx;
-        }
-        catch(ClassCastException classEx){
-        	throw classEx;
-        }
-	
+	public int compareTo(Article that) {
+		return this.getArticleId().compareTo(that.getArticleId());
 	}
 
     @Override
@@ -98,6 +84,7 @@ public class Article implements Comparable{
     }
 
     public Article setTitle(String title) {
+    	Objects.requireNonNull(title);
         this.title = title;
         return this;
     }
@@ -107,6 +94,7 @@ public class Article implements Comparable{
     }
 
     public Article setPubDate(String pubDate) {
+    	Objects.requireNonNull(pubDate);
         this.pubDate = pubDate;
         return this;
     }
@@ -116,6 +104,7 @@ public class Article implements Comparable{
     }
 
     public Article setExtractedText(String extractedText) {
+    	Objects.requireNonNull(extractedText);
         this.extractedText = extractedText;
         return this;
     }
@@ -125,6 +114,7 @@ public class Article implements Comparable{
     }
 
     public Article setAuthor(String author) {
+    	Objects.requireNonNull(author);
         this.author = author;
         return this;
     }
@@ -134,6 +124,7 @@ public class Article implements Comparable{
     }
 
     public Article setTopic(String topic) {
+    	Objects.requireNonNull(topic);
         this.topic = topic;
         return this;
     }
@@ -143,6 +134,7 @@ public class Article implements Comparable{
     }
 
     public Article setSource(String source) {
+    	Objects.requireNonNull(source);
         this.source = source;
         return this;
     }
@@ -152,6 +144,7 @@ public class Article implements Comparable{
     }
 
     public Article setUrl(String url) {
+    	Objects.requireNonNull(url);
         this.url = url;
         return this;
     }

@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.io.UncheckedIOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Base64;
 import java.util.Collection;
 import java.util.List;
@@ -86,7 +87,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	                    .endObject()
 	                    .startObject(obj_author)
 	                    	.field("type","string")
-	                        .field("index", "not_analyzed")
+	                        .field("index", "analyzed")
 	                    .endObject()
 	                    .startObject(obj_topic)
 	                    	.field("type","string")
@@ -118,7 +119,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	        		.startObject("properties")
 	                	.startObject(meta_data)
 		                	.field("type","string")
-		                    .field("index", "not_analyzed")
+		                    .field("index", "no")
 	                    .endObject()
 	        		.endObject()
         		.endObject()
@@ -131,7 +132,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
         if (!createResponse.isAcknowledged()) {
             throw new Exception("Failed to create index <" + indexName + ">");
         }else{
-/*DEBUG*/System.out.println("The index "+ indexName +" was created");
+        	System.out.println("The index "+ indexName +" was created");
         }
 
 
@@ -146,33 +147,33 @@ public class ElasticSearchWriter extends ElasticSearchController{
 		System.out.println(article.toString());
 		
 		//get values from article object
-		String id = article.getArticleId().getId(), title = article.getTitle(), pubDate = article.getPubDate(), content = article.getExtractedText(), author = article.getAuthor(), topic = article.getTopic(), source = article.getSource(), url = article.getUrl();
+		String id = article.getArticleId().getId();
 
 //		System.out.println("ID ADDED:");
 //		System.out.println(id);
 		
 		//get() executes and gets the response
-		IndexResponse indexResponse = client.prepareIndex(index, this.indexType, id)
+		IndexResponse indexResponse = client.prepareIndex(index, indexType, id)
             .setSource(jsonBuilder()
                 .startObject()
-                    .field(obj_title, title)
-                    .field(obj_pubDate, pubDate)
-                    .field(obj_content, content)
-                    .field(obj_author, author)
-                    .field(obj_topic, topic)
-                    .field(obj_source, source)
-                    .field(obj_url, url)
+                    .field(obj_title, article.getTitle())
+                    .field(obj_pubDate, article.getPubDate())
+                    .field(obj_content, article.getExtractedText())
+                    .field(obj_author, article.getAuthor())
+                    .field(obj_topic, article.getTopic())
+                    .field(obj_source, article.getSource())
+                    .field(obj_url, article.getUrl())
                 .endObject()
             ).get();
 
-/*DEBUG*/String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
-            // Version (if it's the first time you index this document, you will get: 1)
-            long _version = indexResponse.getVersion();
-            // isCreated() is true if the document is a new one, false if it has been updated
-            boolean created = indexResponse.isCreated();
-//            System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
-/*DEBUG*/
-
+		/*DEBUG*/
+//		String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
+        // Version (if it's the first time you index this document, you will get: 1)
+//        long _version = indexResponse.getVersion();
+        // isCreated() is true if the document is a new one, false if it has been updated
+//        boolean created = indexResponse.isCreated();
+//        System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
+        /*DEBUG*/
 	}
 
 	/**
@@ -236,24 +237,24 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 		System.out.println(adminClient);
 		IndicesAdminClient client = adminClient.indices();
 		boolean searchIndex_exists =  client.prepareExists(searchIndex).get().isExists();
-//		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
+		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
 		
 
 		if(!searchIndex_exists){
-			System.out.println("INDEX CREATED: ");
-			System.out.println(searchIndex);
+			System.out.println("SEARCH-INDEX CREATED: " + searchIndex);
 			createIndex(searchIndex);
 		}
-//		if(!metaIndex_exists){
-//			createMetaIndex(metaIndex);
-//		}
+		if(!metaIndex_exists){
+			System.out.println("META-INDEX CREATED: " + metaIndex);
+			createMetaIndex(metaIndex);
+		}
 	}
 
 	/*
 	 * puts an article in both indexes
 	 * passes the IOException from private put()
 	 */
-	public void put(Article article) throws IOException{
+	private void put(Article article) throws IOException{
 		
 		//Only index unless it is already in
 //		if(!this.articleIsAlreadyIndexed(article, mainIndex)){
@@ -287,13 +288,18 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 
 		for( Article article : list ){
 			this.put( article );
-			topics.add(article.getTopic());
-			sources.add(article.getSource());
+			if (article.getTopic() != null) {
+				topics.add(article.getTopic());
+			}
+			if (article.getSource() != null) {
+				sources.add(article.getSource());
+			}
 		}
 		
-		// TODO enable when metadata works
-//		this.mergeMetaData(topics, MetaDataType.TOPIC);
-//		this.mergeMetaData(sources, MetaDataType.SOURCE);
+		System.out.println(Arrays.toString(topics.toArray()));
+		System.out.println(Arrays.toString(sources.toArray()));
+		this.mergeMetaData(topics, MetaDataType.TOPIC);
+		this.mergeMetaData(sources, MetaDataType.SOURCE);
 		
 	}
 
@@ -309,25 +315,24 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 
 	private void writeMetaDataToIndex(String encoded, MetaDataType filterType) throws IOException{
 		
-		// TODO indexResponse wrong: .startObject("properties") missing
+		System.out.println("Writing encoded metadata " + filterType.name() + ": " + encoded);
 		
 		String id = filterType.name();
 
-		//get() executes and gets the response
+		// get() executes and gets the response
 		IndexResponse indexResponse = client.prepareIndex(metaIndex, metaIndexType, id)
-            .setSource(jsonBuilder()
-                .startObject()
-                    .field(meta_data, encoded)
-                .endObject()
-            ).get();
+				.setSource(jsonBuilder().startObject().field(meta_data, encoded).endObject()).get();
 
-/*DEBUG*/String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
-            // Version (if it's the first time you index this document, you will get: 1)
-            long _version = indexResponse.getVersion();
-            // isCreated() is true if the document is a new one, false if it has been updated
-            boolean created = indexResponse.isCreated();
-            System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
-/*DEBUG*/
+		/* DEBUG */String _index = indexResponse.getIndex(), _type = indexResponse.getType(),
+				_id = indexResponse.getId();
+		// Version (if it's the first time you index this document, you will
+		// get: 1)
+		long _version = indexResponse.getVersion();
+		// isCreated() is true if the document is a new one, false if it has
+		// been updated
+		boolean created = indexResponse.isCreated();
+		System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version
+				+ " Indexed(t) or Updated(f): " + created);
 	}
 
 	private void serializeSet(Set<?> anySet, MetaDataType filterType) {

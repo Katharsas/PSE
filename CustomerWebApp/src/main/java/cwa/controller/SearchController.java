@@ -35,7 +35,7 @@ public class SearchController {
 	private final MetaDataProvider metaDataProvider;
 	
 	@Inject
-	public SearchController(@Qualifier("prod") ArticleProvider articleProvider, @Qualifier("mock") MetaDataProvider metaDataProvider) {
+	public SearchController(@Qualifier("prod") ArticleProvider articleProvider, @Qualifier("prod") MetaDataProvider metaDataProvider) {
 		this.articleProvider = articleProvider;
 		this.metaDataProvider = metaDataProvider;
 	}

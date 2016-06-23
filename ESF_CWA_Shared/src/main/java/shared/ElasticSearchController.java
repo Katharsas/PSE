@@ -1,6 +1,12 @@
 package shared;
 
 
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.UncheckedIOException;
+import java.util.Arrays;
+import java.util.Base64;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
@@ -61,33 +67,33 @@ public abstract class ElasticSearchController {
 		node.close();
 
 	}
-	  /**
-     * @return an Article from the ES db needs the ID of the object
-     */
-    private Article getById(ArticleId id) {
-
-        // renamed id, to id_str because, ArticleId id already uses variable "id"
-		String id_str = id.getId();
-		// TODO isExists check id existing
-		//executes and gets the response
-		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
-		String title = (String) getResponse.getSource().get(obj_title);
-		String pubDate = (String) getResponse.getSource().get(obj_pubDate);
-		String content = (String) getResponse.getSource().get(obj_content);
-		String author = (String) getResponse.getSource().get(obj_author);
-		String source = (String) getResponse.getSource().get(obj_source);
-		String topic = (String) getResponse.getSource().get(obj_topic);
-		String url = (String) getResponse.getSource().get(obj_url);
-
-		return new Article(id.getId())
-                      .setTitle(title)
-                      .setPubDate(pubDate)
-                      .setExtractedText(content)
-                      .setAuthor(source)
-                      .setTopic(topic)
-                      .setUrl(url);
-
-	}
+//	  /**
+//     * @return an Article from the ES db needs the ID of the object
+//     */
+//    private Article getById(ArticleId id) {
+//
+//        // renamed id, to id_str because, ArticleId id already uses variable "id"
+//		String id_str = id.getId();
+//		// TODO isExists check id existing
+//		//executes and gets the response
+//		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
+//		String title = (String) getResponse.getSource().get(obj_title);
+//		String pubDate = (String) getResponse.getSource().get(obj_pubDate);
+//		String content = (String) getResponse.getSource().get(obj_content);
+//		String author = (String) getResponse.getSource().get(obj_author);
+//		String source = (String) getResponse.getSource().get(obj_source);
+//		String topic = (String) getResponse.getSource().get(obj_topic);
+//		String url = (String) getResponse.getSource().get(obj_url);
+//
+//		return new Article(id.getId())
+//                      .setTitle(title)
+//                      .setPubDate(pubDate)
+//                      .setExtractedText(content)
+//                      .setAuthor(source)
+//                      .setTopic(topic)
+//                      .setUrl(url);
+//
+//	}
 
 	protected String getMetaDataFromIndex(MetaDataType filterType){
 	
@@ -95,25 +101,33 @@ public abstract class ElasticSearchController {
 		//executes and gets the response
 		GetResponse getResponse = client.prepareGet(metaIndex, metaIndexType, id_str).get();
 		Map<String, Object> map = getResponse.getSource();
-		String metaData = (String) map.get(meta_data);
-		return metaData;
-		
+		if (!getResponse.isSourceEmpty()) {
+			String metaData = (String) map.get(meta_data);
+			return metaData;
+		} else {
+			return null;
+		}
 	}
 
 	protected <T> Set<T> deserializeSet(MetaDataType filterType){
 
-		// TODO enable when getMetaDataFromIndex works
-		
-//    	byte[] base64 = Base64.getDecoder().decode(this.getMetaDataFromIndex(filterType));
-//        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(base64))) {
-//            @SuppressWarnings("unchecked")
-//            Set<T> anySet = (Set<T>) ois.readObject();
-//            return anySet;
-//        } catch (ClassNotFoundException e) {
-//            throw new RuntimeException("Could not convert serialized object to Set!", e);
-//        } catch (IOException e) {
-//            throw new UncheckedIOException(e);
-//        }
-		return new HashSet<T>();
+		String encoded = this.getMetaDataFromIndex(filterType);
+		if (encoded == null) {
+			return new HashSet<T>();
+		} else {
+	    	byte[] base64 = Base64.getDecoder().decode(this.getMetaDataFromIndex(filterType));
+	        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(base64))) {
+	            @SuppressWarnings("unchecked")
+	            Set<T> anySet = (Set<T>) ois.readObject();
+	            
+	            System.out.println("Reading metadata " + filterType.name() + ": " + Arrays.toString(anySet.toArray()));
+	            
+	            return anySet;
+	        } catch (ClassNotFoundException e) {
+	            throw new RuntimeException("Could not convert serialized object to Set!", e);
+	        } catch (IOException e) {
+	            throw new UncheckedIOException(e);
+	        }
+		}
     }
 }
