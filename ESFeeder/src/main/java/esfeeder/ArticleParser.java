@@ -133,9 +133,11 @@ public class ArticleParser {
         String pattern_str;
 
         // us - matches us articles in filepath inside archiv-folder
-        String us = "US\\en\\";
+        //String us = "US\\en\\";
+        String us = "\\en\\";
         // de - matches germany articles in filepath inside archiv-folder
-        String de = "germany\\de\\";
+        //String de = "germany\\de\\";
+        String de = "\\de\\";
 
         String p_us = Pattern.quote(us);
         String p_de = Pattern.quote(de);
