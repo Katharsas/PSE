@@ -56,12 +56,13 @@ public class ArticleParserTest {
 
 		}
 		returnValue = articleParser.parse_pubDate("Sat, 12 Nov 2011 13:02:53 EST");
-		assertEquals("Implementation incorrect", "2011 11 12 13:02:53", returnValue);
+		assertEquals("Implementation incorrect", "2011-11-12T13:02:53-05:00", returnValue);
 
-		returnValue = articleParser.parse_pubDate("Tue, 14 Jun 2016 10:50:20 EST");
-		assertEquals("Implementation incorrect", "2016 06 14 10:50:20", returnValue);
+		returnValue = articleParser.parse_pubDate("Tue, 14 Jun 2016 10:50:20 CET");
+		assertEquals("Implementation incorrect", "2016-06-14-10:50:20+01:00", returnValue);
 
-		returnValue = articleParser.parse_pubDate("Tue, 14 Jun 2016 10:50:60 EST");
+		returnValue = articleParser.parse_pubDate("Tue, 14 Jun 2016 10:50:60 CET");
+		assertEquals("Implementatio incorrect", "2016-06-15-10:50:60+01:00", returnValue);
 
 		try {
 			articleParser.parse_pubDate("SomeRandomCharaktersAndStuffYouSeeEveryDayAnItIsPrettyLong");
@@ -88,18 +89,18 @@ public class ArticleParserTest {
 		} catch (NullPointerException e) {
 
 		}
-		try {
-			returnValue = articleParser.parse_source("RandomUselessStringAndShit");
-			fail("Should throw something");
-		} catch (Exception e) {
 
-		}
+		returnValue = articleParser.parse_source("RandomUselessStringAndShit");
+		assertEquals("Should return empty string", "", returnValue);
+
 		returnValue = articleParser.parse_source("http://blog.google.com/hello/devblog/info.html");
 		assertEquals("Implementation incorrect", "google.com", returnValue);
 		returnValue = articleParser.parse_source("");
 		assertEquals("Empty String not catched!", "", returnValue);
+
 		returnValue = articleParser.parse_source("https://www.google.de");
 		assertEquals("Implementation incomplete", "google.de", returnValue);
+
 		returnValue = articleParser.parse_source("http://blog.tumblr.co.uk/index.html");
 		assertEquals("Implementation incomplete", "tumblr.co.uk", returnValue);
 	}

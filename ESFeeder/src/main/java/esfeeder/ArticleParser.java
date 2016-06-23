@@ -75,7 +75,7 @@ public class ArticleParser {
             return "";
         }
         String source_formatted;
-        source_formatted = null;
+        source_formatted = "";
 
         // parse url https:// , http:// - split on "//" sign and on "/" sign after the domain name
         // Example:
@@ -129,7 +129,7 @@ public class ArticleParser {
             return "";
         }
         String topic_formatted;
-        topic_formatted = null;
+        topic_formatted = "";
         String pattern_str;
 
         // us - matches us articles in filepath inside archiv-folder
