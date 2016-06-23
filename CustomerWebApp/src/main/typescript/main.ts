@@ -10,6 +10,13 @@ class ArticleResult {
     errorMessage: string;
     articles: any[]; // TODO define Article when Article server class is stable
 }
+class MetadataResult {
+    //articles: any[]; // TODO define Article when Article server class is stable
+    errorMessage: string;
+    sources: string[];
+    topics: string[];
+}
+
 
 //declare var $; bug, place this in definiton file?, how to embed other js docs=?
 
@@ -98,12 +105,56 @@ function search_demo(){
     console.log("--------------search_demo----------");
     on_load();
 }
+function set_metaData(result : MetadataResult){
+    var topic_list = document.getElementById("select_topic_list");
+    var topic_set: any = [];
+    topic_set = ["topic 1", "topic 2", "topic 3"];
+
+    topic_set = result.topics;
+    
+    
+    for (var i = 0; i < topic_set.length; i++) {
+        var topicName = topic_set[i];
+        var el = (<Node> document.createElement('li'));
+        var text_node = document.createTextNode(topicName);
+        el.appendChild(text_node);
+        topic_list.appendChild(el);
+    }
+    /*
+    for (var i = 0; i < 15; i++) {
+        var el = (<Node> document.createElement('li'));
+        var text_node = document.createTextNode("Topic " + i);
+        el.appendChild(text_node);
+        topic_list.appendChild(el);
+        //cs.log(i);
+        // bug errof of typescript ??
+    }
+    //*/
+}
+
+function ini_set_metaData() : any{
+        var cs_log_ajax_hint_1 = "____new_ajax____";
+        Ajax.getMetadata()
+            .done(function(result: MetadataResult) {
+                if (result.errorMessage !== null) {
+                    console.log(cs_log_ajax_hint_1, result.errorMessage);
+                } else {
+                    console.log(cs_log_ajax_hint_1, "New topics received:");
+                    console.log(cs_log_ajax_hint_1, result.topics);//.articles);
+                    set_metaData(result);
+                    //return result; //bug asynchronuos !!
+                }
+            })
+            .fail(function() {
+                console.log(cs_log_ajax_hint_1, "Sending request failed!");
+            });
+    }
 
 function on_load() {
     
     //(<any> document.getElementById("search_demo")).onclick = search_demo;
     
-    
+    ini_set_metaData();
     
     global_filterOptions = new FilterOptions();
     var cs_log_ajax_hint = "___ajax___ ";
@@ -142,7 +193,6 @@ function on_load() {
     list.innerHTML ="";
     var sample = document.getElementById("result_sample");
 
-    var topic_list = document.getElementById("select_topic_list");
 
     for (var i = 0; i < 0; i++) { //bug
         var el = sample.cloneNode(true); // bug overwritten by ts
@@ -151,42 +201,10 @@ function on_load() {
         //jl.log(i,"msg");
         //cs.log(i);
     }
+    
     // bug get sources todo !!
-    var topic_set: any = [];
-    topic_set = ["topic 1", "topic 2", "topic 3"];
-
-    var cs_log_ajax_hint_1 = "____new_ajax____";
-    Ajax.getMetadata()
-        .done(function(result: ArticleResult) {
-            if (result.errorMessage !== null) {
-                console.log(cs_log_ajax_hint_1, result.errorMessage);
-            } else {
-                console.log(cs_log_ajax_hint_1, "New Articles received:");
-                console.log(result);//.articles);
-            }
-        })
-        .fail(function() {
-            console.log(cs_log_ajax_hint_1, "Sending request failed!");
-        });
-
-
-    for (var i = 0; i < topic_set.length; i++) {
-        var topicName = topic_set[i];
-        var el = (<Node> document.createElement('li'));
-        var text_node = document.createTextNode(topicName);
-        el.appendChild(text_node);
-        topic_list.appendChild(el);
-    }
-
-    for (var i = 0; i < 15; i++) {
-        var el = (<Node> document.createElement('li'));
-        var text_node = document.createTextNode("Topic " + i);
-        el.appendChild(text_node);
-        topic_list.appendChild(el);
-        //cs.log(i);
-        // bug errof of typescript ??
-    }
-    //*/
+    
+    
       
     function element_set_display(id: string, val: string) {
         var el = (<any> document.getElementById(id));

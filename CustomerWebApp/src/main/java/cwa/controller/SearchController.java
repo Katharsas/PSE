@@ -51,7 +51,8 @@ public class SearchController {
 		System.out.println("Controller: MetaData called");
 		Map<String, List<String>> metaData = new HashMap<>();
 		metaData.put("sources", metaDataProvider.getSources());
-		metaData.put("topcis", metaDataProvider.getTopics());
+		metaData.put("topics", metaDataProvider.getTopics());
+        metaData.put("errorMessage", null);
 		return metaData;
 	}
 	
