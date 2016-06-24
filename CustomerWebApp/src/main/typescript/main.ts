@@ -100,19 +100,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 var global_filterOptions: any;
 
-function search_demo(){
-    
+function search_demo() {
+
     console.log("--------------search_demo----------");
     on_load();
 }
-function set_metaData(result : MetadataResult){
+function set_metaData(result: MetadataResult) {
     var topic_list = document.getElementById("select_topic_list");
     var topic_set: any = [];
     topic_set = ["topic 1", "topic 2", "topic 3"];
 
     topic_set = result.topics;
-    
-    
+
+
     for (var i = 0; i < topic_set.length; i++) {
         var topicName = topic_set[i];
         var el = (<Node> document.createElement('li'));
@@ -132,39 +132,39 @@ function set_metaData(result : MetadataResult){
     //*/
 }
 
-function ini_set_metaData() : any{
-        var cs_log_ajax_hint_1 = "____new_ajax____";
-        Ajax.getMetadata()
-            .done(function(result: MetadataResult) {
-                if (result.errorMessage !== null) {
-                    console.log(cs_log_ajax_hint_1, result.errorMessage);
-                } else {
-                    console.log(cs_log_ajax_hint_1, "New topics received:");
-                    console.log(cs_log_ajax_hint_1, result.topics);//.articles);
-                    set_metaData(result);
-                    //return result; //bug asynchronuos !!
-                }
-            })
-            .fail(function() {
-                console.log(cs_log_ajax_hint_1, "Sending request failed!");
-            });
-    }
+function ini_set_metaData(): any {
+    var cs_log_ajax_hint_1 = "____new_ajax____";
+    Ajax.getMetadata()
+        .done(function(result: MetadataResult) {
+            if (result.errorMessage !== null) {
+                console.log(cs_log_ajax_hint_1, result.errorMessage);
+            } else {
+                console.log(cs_log_ajax_hint_1, "New topics received:");
+                console.log(cs_log_ajax_hint_1, result.topics);//.articles);
+                set_metaData(result);
+                //return result; //bug asynchronuos !!
+            }
+        })
+        .fail(function() {
+            console.log(cs_log_ajax_hint_1, "Sending request failed!");
+        });
+}
 
 function on_load() {
     
     //(<any> document.getElementById("search_demo")).onclick = search_demo;
     
     ini_set_metaData();
-    
+
     global_filterOptions = new FilterOptions();
     var cs_log_ajax_hint = "___ajax___ ";
-    global_filterOptions.topics.push("Politics");
-    global_filterOptions.sources.push("cnn");
-    global_filterOptions.toDate = "2016-12-25";
+    //global_filterOptions.topics.push("Politics");
+    //global_filterOptions.sources.push("cnn");
+    //global_filterOptions.toDate = "2016-12-25";
     //global_filterOptions.fromDate = "2000-12-25";
    
-   var keywords = (<any>document.getElementById("fld_search")).value;
-   console.log("__keyword__"+"-"+keywords+"-");
+    var keywords = (<any>document.getElementById("fld_search")).value;
+    console.log("__keyword__" + "-" + keywords + "-");
     Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
         .done(function(result: ArticleResult) {
             if (result.errorMessage !== null) {
@@ -190,7 +190,7 @@ function on_load() {
     //cs.get("res").innerHTML = greeter.greet();
       
     var list = document.getElementById("result_sample_list");
-    list.innerHTML ="";
+    list.innerHTML = "";
     var sample = document.getElementById("result_sample");
 
 
@@ -271,9 +271,9 @@ function on_load() {
         var keywords = fld;
         conn.post(keywords);
     }
-    
-    function f_search_keywords(el: any){
-       console.log("--------------search_demo----------");
+
+    function f_search_keywords(el: any) {
+        console.log("--------------search_demo----------");
         on_load();
     }
 
