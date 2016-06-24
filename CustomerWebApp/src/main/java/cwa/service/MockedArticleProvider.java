@@ -1,11 +1,11 @@
 package cwa.service;
 
-import java.time.LocalDate;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
+import cwa.controller.FilterSettings;
 import shared.Article;
 import shared.ArticleId;
 
@@ -14,8 +14,7 @@ import shared.ArticleId;
 public class MockedArticleProvider implements ArticleProvider {
 
 	@Override
-	public ArrayList<Article> getByQuery(String query, int skip, int limit, String[] topics, String[] sources,
-			LocalDate from, LocalDate to) {
+	public ArrayList<Article> getByQuery(String query, int skip, int limit, FilterSettings filters) {
 		final Article testArticle = new Article("testId");
 		testArticle.setAuthor("testAuthor");
 		testArticle.setExtractedText("testExtractedText");

@@ -5,7 +5,6 @@ import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.UncheckedIOException;
-import java.util.Arrays;
 import java.util.Base64;
 import java.util.HashSet;
 import java.util.Map;
@@ -119,9 +118,6 @@ public abstract class ElasticSearchController {
 	        try (ObjectInputStream ois = new ObjectInputStream(new ByteArrayInputStream(base64))) {
 	            @SuppressWarnings("unchecked")
 	            Set<T> anySet = (Set<T>) ois.readObject();
-	            
-	            System.out.println("Reading metadata " + filterType.name() + ": " + Arrays.toString(anySet.toArray()));
-	            
 	            return anySet;
 	        } catch (ClassNotFoundException e) {
 	            throw new RuntimeException("Could not convert serialized object to Set!", e);

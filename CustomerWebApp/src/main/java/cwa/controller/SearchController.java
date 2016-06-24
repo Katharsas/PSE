@@ -1,7 +1,8 @@
 package cwa.controller;
 
-import java.time.LocalDate;
+import java.time.OffsetDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -48,11 +49,12 @@ public class SearchController {
 	@RequestMapping(value = "/getMetadata", method = RequestMethod.GET)
 	@ResponseBody
 	public Map<String, List<String>> metaData() {
-		System.out.println("Controller: MetaData called");
+		System.out.println("------------------------------------- getMetaData Request START");
 		Map<String, List<String>> metaData = new HashMap<>();
 		metaData.put("sources", metaDataProvider.getSources());
 		metaData.put("topics", metaDataProvider.getTopics());
         metaData.put("errorMessage", null);
+        System.out.println("------------------------------------- getMetaData Request END");
 		return metaData;
 	}
 	
@@ -69,12 +71,14 @@ public class SearchController {
 			@RequestParam(value = "range", required = false) String range
 			) {
 		try {
+			System.out.println("------------------------------------- getSimilar Request START");
 			// TODO check if article for this id exists or catch exception or something
 			// and return "idNotFound" if no article exists
 			final ArticleId articleId = new ArticleId(id);
 			final Pair<Integer, Integer> rangeParsed = parseRange(range);
 			final List<Article> articles =
 					articleProvider.getSimilar(articleId, rangeParsed.a, rangeParsed.b);
+			System.out.println("------------------------------------- getSimilar Request END");
 			return new ArticleResult(articles);
 		} catch(final ValidationException e) {
 			return new ArticleResult("validation", e.getMessage());
@@ -103,13 +107,22 @@ public class SearchController {
 			@RequestParam(value = "to", required = false) String to
 			) {
 		try {
+			System.out.println();
+			System.out.println("------------------------------------- getArticles Request START");
+			System.out.println("Controller query from user: " + "query");
 			final Pair<Integer, Integer> rangeParsed = parseRange(range);
 			final String[] topicsParsed = parseStringList(topics);
-			final String[] sourceParsed = parseStringList(sources);
-			final LocalDate fromParsed = parseDate(from);
-			final LocalDate toParsed = parseDate(to);
-			final List<Article> articles = articleProvider.getByQuery(query,
-					rangeParsed.a, rangeParsed.b, topicsParsed, sourceParsed, fromParsed, toParsed);
+			final String[] sourcesParsed = parseStringList(sources);
+			System.out.println("Controller topicsFilter from user: " + Arrays.toString(topicsParsed));
+			System.out.println("Controller sourcesFilter from user: " + Arrays.toString(sourcesParsed));
+			final OffsetDateTime fromParsed = parseDate(from);
+			final OffsetDateTime toParsed = parseDate(to).plusDays(1);
+			
+			final FilterSettings filters =
+					new FilterSettings(topicsParsed, sourcesParsed, fromParsed, toParsed);
+			final List<Article> articles =
+					articleProvider.getByQuery(query, rangeParsed.a, rangeParsed.b, filters);
+			System.out.println("------------------------------------- getArticles Request END");
 			return new ArticleResult(articles);
 		} catch(final ValidationException e) {
 			return new ArticleResult("validation", e.getMessage());
@@ -119,12 +132,12 @@ public class SearchController {
 	/**
 	 * @param date - format: yyyy-mm-dd UTC-Offset
 	 */
-	private LocalDate parseDate(String date) {
+	private OffsetDateTime parseDate(String date) {
 		if (date == null) return null;
 		else {
-			date += "+01:00";// TODO client should set timezone from browser
-            DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE;
-            return LocalDate.parse(date, formatter);
+			date += "T00:00:00+01:00";// TODO client should set timezone from browser
+            DateTimeFormatter formatter = DateTimeFormatter.ISO_OFFSET_DATE_TIME;
+            return OffsetDateTime.parse(date, formatter);
         }
 	}
 	
