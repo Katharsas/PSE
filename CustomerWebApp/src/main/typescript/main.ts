@@ -238,6 +238,7 @@ function on_load() {
         }
         //show hide, not toggle !!
     }
+    
     var date_start = document.getElementById("date_start");
     var date_start_str = (<HTMLInputElement> date_start).value.replace(/-/g, "/");
     var date_start_date = new Date(date_start_str);
@@ -331,29 +332,8 @@ function on_load() {
 }
       
       
-            /*
       
-            bug add serach button search button
       
-      window.addEventListener('popstate', listener);
-
-        const pushUrl = (href) => {
-        history.pushState({}, '', href);
-        window.dispatchEvent(new Event('popstate'));
-      };
-            
-      var datestring = $("#date").val().replace(/-/g, "/");
-      var date = new Date(datestring);
-      //date.tostring());	
-      var elements_sel= document.querySelectorAll('#Test, #Test *');
-      .addEventListener('click', function() {
-          alert('Hello world again!!!');
-      }, false);
-      */
-      
-      //$('.sys input[type=text], .sys select').each(function() {})
-
-   
    //window.onload = on_load();
    
    //#tsc --watch -p js
