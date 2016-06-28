@@ -18,27 +18,6 @@ class MetadataResult {
 }
 
 
-//declare var $; bug, place this in definiton file?, how to embed other js docs=?
-
-var result = {
-    "cards": [
-        {
-            "action": {
-                "type": "Source",
-                "job": "This is a job",
-            }
-        },
-        {
-            "action": {
-                "type": "Pource",
-                "job": "This is a join",
-            }
-        },
-    ]
-};
-
-
-
 class MyConsole {
     constructor() { }
     log(s: string) {
@@ -86,22 +65,14 @@ class JsLog {
 var cs = new MyConsole();
 var jl = new JsLog();
 var conn = new ServerConnection();
-// var jl = document.getElementById("js_log"); bug why not here global
-/*
-    $(document).ready(() => {
-          console.log('ts 1');
- });
- window.onload
- */
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-    //var k = "kj";
     on_load();
 });
+
 var global_filterOptions: any;
 
 function search_demo() {
-
     console.log("--------------search_demo----------");
     on_load();
 }
@@ -112,7 +83,6 @@ function set_metaData(result: MetadataResult) {
 
     topic_set = result.topics;
 
-
     for (var i = 0; i < topic_set.length; i++) {
         var topicName = topic_set[i];
         var el = (<Node> document.createElement('li'));
@@ -120,16 +90,7 @@ function set_metaData(result: MetadataResult) {
         el.appendChild(text_node);
         topic_list.appendChild(el);
     }
-    /*
-    for (var i = 0; i < 15; i++) {
-        var el = (<Node> document.createElement('li'));
-        var text_node = document.createTextNode("Topic " + i);
-        el.appendChild(text_node);
-        topic_list.appendChild(el);
-        //cs.log(i);
-        // bug errof of typescript ??
-    }
-    //*/
+    
 }
 
 function ini_set_metaData(): any {
@@ -151,9 +112,7 @@ function ini_set_metaData(): any {
 }
 
 function on_load() {
-    
-    //(<any> document.getElementById("search_demo")).onclick = search_demo;
-    
+      
     ini_set_metaData();
 
     global_filterOptions = new FilterOptions();
@@ -185,10 +144,7 @@ function on_load() {
         .fail(function() {
             console.log(cs_log_ajax_hint, "Sending request failed!");
         });
-
-    cs.log("hi ------ ");
-    //cs.get("res").innerHTML = greeter.greet();
-      
+        
     var list = document.getElementById("result_sample_list");
     list.innerHTML = "";
     var sample = document.getElementById("result_sample");
@@ -197,15 +153,8 @@ function on_load() {
     for (var i = 0; i < 0; i++) { //bug
         var el = sample.cloneNode(true); // bug overwritten by ts
         list.appendChild(el);
-        //jl.log("This post was\n","err");
-        //jl.log(i,"msg");
-        //cs.log(i);
     }
-    
-    // bug get sources todo !!
-    
-    
-      
+     
     function element_set_display(id: string, val: string) {
         var el = (<any> document.getElementById(id));
         el.style.display = val;
@@ -250,8 +199,7 @@ function on_load() {
         var el = document.getElementById(id);
         var bool = false;
         var span_list = el.getElementsByClassName("span_hidden");
-        //el.getElementById("span_hidden_"+id);
-         
+
         // Wenn kein Hidden Span da, dann wert immer falsch!!
         //bug assumes just one clas raise warnign if more classes !! , cleared, by check lenght == 1
         if (span_list.length == 1) {
@@ -382,30 +330,7 @@ function on_load() {
     }
 }
       
-      //var anch = null;
-      /*
-      for(var x in result) { // if you have named properties
-         anch = result[x];
-      }
-      */
       
-      //document.getElementById('anchorID')
-      //document.getElementById('anchorID').
-      
-       
-      /*
-      if (window.onpopstate != undefined) {
-         window.onpopstate = check_url_name;
-      } else {
-         window.onhashchange = check_url_name;
-      }
-      */
-      /*
-      window.onpopstate = function(event) {
-         //console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
-         check_url_name();
-      };
-      */
             /*
       
             bug add serach button search button
@@ -454,12 +379,7 @@ function on_load() {
       
       - filter add < < ^arrow down dazu aufklapp arrow !!
       - json to html for result !!
-      - popstate io, IE ?? 
-      
-      - parse date, topic on server for validating !!
-      - mark use of other author libraries !! for date !!, 
-      - close filter x (hide filder / symbolP?)
-      
+
       apply filter
    
    */
