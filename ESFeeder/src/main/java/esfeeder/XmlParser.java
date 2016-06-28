@@ -57,7 +57,7 @@ public class XmlParser {
                 //System.out.println("NullPointerException encountered in parse_xml");
                 // return_value is left as = null, gets checked lateron with (if (return_value == null))
         }
-        
+
         if (return_value == null){
             return_value = "";
         }
@@ -192,6 +192,7 @@ public class XmlParser {
             path = entry.getKey();
             doc = entry.getValue();
             Article article = this.parse(path, doc);
+                    	System.out.println("88888888888" + article);
             articles.add(article);
             if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
                 topics_set.add(article.getTopic());

@@ -105,14 +105,14 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	        	.endObject()
         );
 		CreateIndexResponse response = indexBuilder.execute().actionGet();
-    
+
     }
     /**
      * Creates an index for Metainfo (in our case for Topic and Source)
      *
-     */ 
+     */
     private void createMetaIndex(String indexName) throws IOException, Exception{
-
+        	System.out.println("888888888888888888888888888888888888888888888888888888888");
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		indexBuilder.addMapping(metaIndexType, jsonBuilder()
         		.startObject()
@@ -145,13 +145,13 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	private void put(Article article, String index) throws IOException{
 
 		System.out.println(article.toString());
-		
+
 		//get values from article object
 		String id = article.getArticleId().getId();
 
 //		System.out.println("ID ADDED:");
 //		System.out.println(id);
-		
+
 		//get() executes and gets the response
 		IndexResponse indexResponse = client.prepareIndex(index, indexType, id)
             .setSource(jsonBuilder()
@@ -238,7 +238,7 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 		IndicesAdminClient client = adminClient.indices();
 		boolean searchIndex_exists =  client.prepareExists(searchIndex).get().isExists();
 		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
-		
+
 
 		if(!searchIndex_exists){
 			System.out.println("SEARCH-INDEX CREATED: " + searchIndex);
@@ -255,7 +255,7 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 	 * passes the IOException from private put()
 	 */
 	private void put(Article article) throws IOException{
-		
+
 		//Only index unless it is already in
 //		if(!this.articleIsAlreadyIndexed(article, mainIndex)){
 //			this.put(article, mainIndex);
@@ -282,7 +282,7 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 	 * passes the IOException from public put()
 	 */
 	public void putMany( List<Article> list ) throws IOException{
-	
+
 		Collection<String> topics = new ArrayList<String>();
 		Collection<String> sources = new ArrayList<String>();
 
@@ -295,12 +295,12 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 				sources.add(article.getSource());
 			}
 		}
-		
+
 		System.out.println(Arrays.toString(topics.toArray()));
 		System.out.println(Arrays.toString(sources.toArray()));
 		this.mergeMetaData(topics, MetaDataType.TOPIC);
 		this.mergeMetaData(sources, MetaDataType.SOURCE);
-		
+
 	}
 
 	/**
@@ -314,9 +314,9 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 
 
 	private void writeMetaDataToIndex(String encoded, MetaDataType filterType) throws IOException{
-		
+
 		System.out.println("Writing encoded metadata " + filterType.name() + ": " + encoded);
-		
+
 		String id = filterType.name();
 
 		// get() executes and gets the response
