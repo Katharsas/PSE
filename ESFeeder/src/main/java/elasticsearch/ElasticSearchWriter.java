@@ -45,6 +45,31 @@ public class ElasticSearchWriter extends ElasticSearchController{
 //	private final static String mainIndex = "main-index";
 
 	/**
+	 * Also creates indexes
+	 * Throws the Exceptions from createIndex, especially because the Writer is unusable if one Index is missing.
+	 */
+	public ElasticSearchWriter() throws IOException, Exception{
+	
+		super();
+	
+		// org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse.isExists()
+		AdminClient adminClient =  this.client.admin();
+		System.out.println(adminClient);
+		IndicesAdminClient client = adminClient.indices();
+		boolean searchIndex_exists =  client.prepareExists(searchIndex).get().isExists();
+		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
+		
+	
+		if(!searchIndex_exists){
+			System.out.println("SEARCH-INDEX CREATED: " + searchIndex);
+			createIndex(searchIndex);
+		}
+		if(!metaIndex_exists){
+			System.out.println("META-INDEX CREATED: " + metaIndex);
+			createMetaIndex(metaIndex);
+		}
+	}
+	/**
 	 * Creates an index in ES
 	 * jsonBuilder throws an IOException if an issue occurs
 	 */
@@ -222,32 +247,6 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
             }
         }
         return false;
-	}
-
-	/**
-	 * Also creates indexes
-	 * Throws the Exceptions from createIndex, especially because the Writer is unusable if one Index is missing.
-	 */
-	public ElasticSearchWriter() throws IOException, Exception{
-
-		super();
-
-		// org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse.isExists()
-		AdminClient adminClient =  this.client.admin();
-		System.out.println(adminClient);
-		IndicesAdminClient client = adminClient.indices();
-		boolean searchIndex_exists =  client.prepareExists(searchIndex).get().isExists();
-		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
-		
-
-		if(!searchIndex_exists){
-			System.out.println("SEARCH-INDEX CREATED: " + searchIndex);
-			createIndex(searchIndex);
-		}
-		if(!metaIndex_exists){
-			System.out.println("META-INDEX CREATED: " + metaIndex);
-			createMetaIndex(metaIndex);
-		}
 	}
 
 	/*
