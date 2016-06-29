@@ -97,6 +97,9 @@
         topic_set = result.topics;
 
         var topic_list = document.getElementById("select_topic_list");
+        // check length 
+        var children = topic_list.getElementsByTagName("li");
+        if children.lenght//
         
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
@@ -213,7 +216,7 @@
 
         function f_search_keywords(el: any) {
             console.log("--------------search_demo----------");
-            on_load();
+           // on_load(); // bug todo ,
         }
 
         function f_search_filter(el: any) { // bug key not used
@@ -306,6 +309,9 @@
     
 
     function on_load() {
+    
+        // todo search more button !!
+        // todo doku, js mini klassendiagramm 
           
         // load mataData (sources, and topics) bug todo sources 
         ini_set_metaData();
@@ -321,7 +327,10 @@
        
         var keywords = (<any>document.getElementById("fld_search")).value;
         console.log("_k_keyword__" + "-" + keywords + "-");
-        Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
+       
+       // bug as function abkapseln
+       
+       Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
             .done(function(result: ArticleResult) {
                 if (result.errorMessage !== null) {
                     console.log(cs_log_ajax_hint, result.errorMessage);
