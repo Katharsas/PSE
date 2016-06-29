@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<!--
+                        @auhor dbeckstein, jfranz
+-->
 <head>
     <meta charset="UTF-8">
     
@@ -8,16 +11,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     
     <link rel="stylesheet" type="text/css" th:href="@{/resources/css/main.css}">
-    
-    <!--
-    // compile sass with cmd: 
-    //                           node-sass scss/ -o css/
-    
-    <script type="text/javascript" src="js/collection.js"></script>
-    -->
-    
-    <!--
-    -->
+  
     <script th:inline="javascript">
         var contextUrl = /*[[@{/}]]*/ undefined;
     </script>
@@ -90,34 +84,7 @@
                             last n days
                         </li>
                     </ul>
-                    <!--    
-                    
-                     <tr>
-                            <td>Start
-                            </td>
-                            <td>&nbsp;&nbsp;&nbsp;&nbsp;
-                            </td>
-                            <td>End
-                            </td>
-                            
-                        </tr>
-                    
-                        last weglassen ?
-                        <li>
-                            last week
-                        </li>
-                        <li>
-                            last month
-                        </li>
-                         <li>
-                            last quater
-                        </li>
-                        <li>
-                            last year
-                        </li>
-                    Start:
-                    End:
-                    -->
+                   
                 </div>
             </div>
         </div>
@@ -190,32 +157,10 @@
         </div>
     </div>
     
+    <!-- lazy js - loads these js files only after page content already loaded -->
     <script type="text/javascript" th:src="@{/resources/js_lazy/onload.js}"></script>
-    <!-- bug , bug lancheck add network-->
     <script type="text/javascript" th:src="@{/resources/js_lazy/polyfiller_date.js}"></script>
-  <!--
-    <div class="footer">
-                <p>Copyright (c) 2008</p>
-          </div>
-    <ul>
-        <li class="1 half">
-        
-        billions, elementary castle , house cards, 
-        so movies kinox, endtittiles movie, leverages, nvidia keynote gtc (see 2015), machine learning conf, y.lecun
-        xiv deringing, time energy image ??? see presentations??, variable size??
-        daale, nvidia gtc, check auch 2015 
-            <span id="res"></span>
-        </li><li class="2">
-            <span>Hello this is greate!</span>
-        </li>
-    </ul>
-    
-      <div class="clear"></div>
-        -->
-        
-        
-    <!-- lazy js -->
-    
+  
 </body>
 
 
