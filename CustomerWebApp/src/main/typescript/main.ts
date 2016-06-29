@@ -87,10 +87,16 @@
         
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
-            var el = (<Node> document.createElement('li'));
+            var a = (<any> document.createElement('a'));
+            a.href = "#set_filter"; // topics this, add to at
+            //a.href = "#similar_id_" + article.articleId_str; //1123243
+            a.setAttribute('data-filter-name', topicName);
+            a.setAttribute('data-filter-type', "topic");
+            var el = (<Element> document.createElement('li'));
             var text_node = document.createTextNode(topicName);
             el.appendChild(text_node);
-            topic_list.appendChild(el);
+            a.appendChild(el);
+            topic_list.appendChild(a);
         }  
     }
     
@@ -267,7 +273,9 @@
         }
         
         function f_search_similar(el : any){
-            console.log("similar",el);
+            console.log("------similar----",el);
+            var id  = el.getAttribute('data-radio-isSelected');
+            console.log(id);
         }
 
         function process_click_or_enter(ev: any) {
@@ -310,6 +318,19 @@
             console.log(el);
             //cs.log(el.getAttribute("href"));
         }
+        
+        function date_was_changed(type : string){
+            var el = this;
+            var date = el.value();
+            console.log(type,date);
+        }
+        
+        // Listen for changes of date
+        var el_date_start = <any> document.getElementById("date_start");
+        var el_date_end = <any> document.getElementById("date_end");
+        el_date_start.onBlur = date_was_changed("start");
+        el_date_end.onBlur = date_was_changed("end");
+        
         //repeat this each 0.25 second !! bug todo refac
         var col_a = (<any> document.getElementsByTagName("A"));
         //var list_a = Array.prototype.slice.call( col_a, 0 );
