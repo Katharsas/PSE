@@ -103,7 +103,9 @@
 
             var similar_button = createElem("div", "myButton");
             var a = <any> document.createElement('a');
-            a.href = "#similar_id_" + article.articleId_str; //1123243
+            a.href = "#search_similar";
+            //a.href = "#similar_id_" + article.articleId_str; //1123243
+            a.setAttribute('data-articleId', article.articleId_str);
             addText(a, "Similar");
             similar_button.appendChild(a);
 

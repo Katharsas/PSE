@@ -74,22 +74,27 @@
         console.log("--------------search_demo----------");
         on_load();
     }
+    
+    //Creates list of metadata li elements
+    
     function set_metaData(result: MetadataResult) {
-        var topic_list = document.getElementById("select_topic_list");
         var topic_set: any = [];
-        topic_set = ["topic 1", "topic 2", "topic 3"];
+        //topic_set = ["topic 1", "topic 2", "topic 3"];
 
         topic_set = result.topics;
 
+        var topic_list = document.getElementById("select_topic_list");
+        
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
             var el = (<Node> document.createElement('li'));
             var text_node = document.createTextNode(topicName);
             el.appendChild(text_node);
             topic_list.appendChild(el);
-        }
-        
+        }  
     }
+    
+    // Loads metadata
 
     function ini_set_metaData(): any {
         var cs_log_ajax_hint_1 = "____new_ajax____";
@@ -111,6 +116,7 @@
 
     function on_load() {
           
+        // load mataData (sources, and topics) bug todo sources 
         ini_set_metaData();
 
         global_filterOptions = new FilterOptions();
@@ -259,6 +265,10 @@
             // if keywords, post action = serach subaction = keywords data = keywords array, or cache_id request infos..., 
             // then show, post update grey are progress bar, filter infos get local storage filters__.., get filters from page? marked (span marke, real value, display...
         }
+        
+        function f_search_similar(el : any){
+            console.log("similar",el);
+        }
 
         function process_click_or_enter(ev: any) {
             console.log(ev);
@@ -285,6 +295,10 @@
                 case "search_keywords":
                     f_search_keywords(el);
                     break;
+                case "search_similar":
+                    f_search_similar(el);
+                    break;
+                    
                 default:
                 //default code block
                 // do nothing
