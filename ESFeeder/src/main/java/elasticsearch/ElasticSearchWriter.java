@@ -17,7 +17,6 @@ import java.util.Set;
 import org.elasticsearch.action.admin.indices.create.CreateIndexRequestBuilder;
 import org.elasticsearch.action.admin.indices.create.CreateIndexResponse;
 import org.elasticsearch.action.admin.indices.flush.FlushRequest;
-import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.index.IndexResponse;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
@@ -39,17 +38,21 @@ import shared.metadata.MetaDataType;
  * @author jmothes
  */
 
+/**
+ * Provides methods to add indices, articles and metadata to ESServer.
+ * @author akolb 
+ */
 public class ElasticSearchWriter extends ElasticSearchController{
 
 	//var is hardcoded, because it's not necessary to create writers with custom indexes
-//	private final static String mainIndex = "main-index";
+	//	private final static String mainIndex = "main-index";
 
 	/**
-	 * Also creates indexes
-	 * Throws the Exceptions from createIndex, especially because the Writer is unusable if one Index is missing.
+	 * Creates an admin connection to ElasticSearch.
+	 * Creates all necessary indexes if they don't yet exist.
+	 * @exception see {@link #createIndex(String)}
 	 */
-	public ElasticSearchWriter() throws IOException, Exception{
-	
+	public ElasticSearchWriter() throws IOException {
 		super();
 	
 		// org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse.isExists()
@@ -59,41 +62,27 @@ public class ElasticSearchWriter extends ElasticSearchController{
 		boolean searchIndex_exists =  client.prepareExists(searchIndex).get().isExists();
 		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
 		
-	
 		if(!searchIndex_exists){
-			System.out.println("SEARCH-INDEX CREATED: " + searchIndex);
-			createIndex(searchIndex);
+			createSearchIndex();
 		}
 		if(!metaIndex_exists){
-			System.out.println("META-INDEX CREATED: " + metaIndex);
-			createMetaIndex(metaIndex);
+			createMetaIndex();
 		}
 	}
+	
 	/**
-	 * Creates an index in ES
-	 * jsonBuilder throws an IOException if an issue occurs
+	 * Creates an index in ElasticSearch.
+	 * @exception IOException thrown by {@link org.elasticsearch.common.xcontent.XContentBuilder}
+	 * 		used to create JSON indexes.
 	 */
-	private void createIndex(String indexName) throws IOException, Exception{
-
+	private void createSearchIndex() throws IOException {
+		
+		final String indexName = searchIndex;
+		
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		// TODO settings deutsch/englisch
 		indexBuilder.setSettings(Settings.builder().loadFromSource(jsonBuilder()
                 .startObject()
-                	.startObject("analysis")
-//                		.startObject("analyzer")
-//                			.startObject("my_analyzer")
-//                				.field("type", "custom")
-//            					.field("tokenizer", "standard")
-//            					.field("filter", new String[]{"english_snowball", "lowercase"})
-//    						.endObject()
-//						.endObject()
-//						.startObject("filter")
-//							.startObject("english_snowball")
-//								.field("type", "snowball")
-//									.field("language", "english")
-//								.endObject()
-//							.endObject()
-//						.endObject()
                 .endObject().string()));
 		indexBuilder.addMapping(indexType, jsonBuilder()
         		.startObject()
@@ -129,15 +118,23 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	        		.endObject()
 	        	.endObject()
         );
-		CreateIndexResponse response = indexBuilder.execute().actionGet();
+		CreateIndexResponse createResponse = indexBuilder.get();
     
+		//Check if index is created
+        if (!createResponse.isAcknowledged()) {
+            throw new IllegalStateException("Failed to create index <" + indexName + ">");
+        }else{
+        	System.out.println("The index "+ indexName +" was created");
+        }
     }
     /**
      * Creates an index for Metainfo (in our case for Topic and Source)
      *
      */ 
-    private void createMetaIndex(String indexName) throws IOException, Exception{
-
+    private void createMetaIndex() throws IOException {
+    	
+    	final String indexName = metaIndex;
+    	
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		indexBuilder.addMapping(metaIndexType, jsonBuilder()
         		.startObject()
@@ -155,65 +152,62 @@ public class ElasticSearchWriter extends ElasticSearchController{
 
         //Check if index is created
         if (!createResponse.isAcknowledged()) {
-            throw new Exception("Failed to create index <" + indexName + ">");
-        }else{
+            throw new IllegalStateException("Failed to create index <" + indexName + ">");
+        } else{
         	System.out.println("The index "+ indexName +" was created");
         }
-
-
-	}
-
-	/*
-	 * indexes an object in the ES db
-	 * jsonBuilder throws an IOException if an issue occurs
-	 */
-	private void put(Article article, String index) throws IOException{
-
-		System.out.println(article.toString());
-		
-		//get values from article object
-		String id = article.getArticleId().getId();
-
-//		System.out.println("ID ADDED:");
-//		System.out.println(id);
-		
-		//get() executes and gets the response
-		IndexResponse indexResponse = client.prepareIndex(index, indexType, id)
-            .setSource(jsonBuilder()
-                .startObject()
-                    .field(obj_title, article.getTitle())
-                    .field(obj_pubDate, article.getPubDate())
-                    .field(obj_content, article.getExtractedText())
-                    .field(obj_author, article.getAuthor())
-                    .field(obj_topic, article.getTopic())
-                    .field(obj_source, article.getSource())
-                    .field(obj_url, article.getUrl())
-                .endObject()
-            ).get();
-
-		/*DEBUG*/
-//		String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
-        // Version (if it's the first time you index this document, you will get: 1)
-//        long _version = indexResponse.getVersion();
-        // isCreated() is true if the document is a new one, false if it has been updated
-//        boolean created = indexResponse.isCreated();
-//        System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
-        /*DEBUG*/
 	}
 
 	/**
-	 * is called whenever an Article should be indexed
-	 * identical article
-	 * if true -> don't add to DB
+	 * Puts an article into the ES search index.
+	 * @exception IOException thrown by {@link org.elasticsearch.common.xcontent.XContentBuilder} used 
+	 * 		to convert articles to json for ElasticSearch
 	 */
-	private boolean articleIsAlreadyIndexed(Article article, String indexName){
+	private void put(Article article, String index) throws IOException{
 
-		String id = article.getArticleId().getId();
+		//Only index if there aren't similar articles indexed
+		if(!this.similairArticleIsAlreadyIndexed(article, index)){
+			System.out.println(article.toString());
+			
+			//get values from article object
+			String id = article.getArticleId().getId();
 
-		//executes and gets the response
-		GetResponse getResponse = client.prepareGet(indexName, indexType, id).get();
-		return getResponse.isExists();
+//			System.out.println("ID ADDED:");
+//			System.out.println(id);
+			
+			//get() executes and gets the response
+			IndexResponse indexResponse = client.prepareIndex(index, indexType, id)
+	            .setSource(jsonBuilder()
+	                .startObject()
+	                    .field(obj_title, article.getTitle())
+	                    .field(obj_pubDate, article.getPubDate())
+	                    .field(obj_content, article.getExtractedText())
+	                    .field(obj_author, article.getAuthor())
+	                    .field(obj_topic, article.getTopic())
+	                    .field(obj_source, article.getSource())
+	                    .field(obj_url, article.getUrl())
+	                .endObject()
+	            ).get();
+
+			/*DEBUG*/
+//			String _index = indexResponse.getIndex(), _type = indexResponse.getType(), _id = indexResponse.getId();
+	        // Version (if it's the first time you index this document, you will get: 1)
+//	        long _version = indexResponse.getVersion();
+	        // isCreated() is true if the document is a new one, false if it has been updated
+//	        boolean created = indexResponse.isCreated();
+//	        System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
+	        /*DEBUG*/
+		}
+		
+		/*
+		makes sure, that no data is in the node
+		new FlushRequest(): no parameters, so all indices are flushed
+		force(true): forces to flush, even if it is not necessary
+		actionGet(): execute and return a org.elasticsearch.action.admin.indices.flush.FlushResponse which isn't used
+		*/
+		client.admin().indices().flush( new FlushRequest().force(true) ).actionGet();
 	}
+
 
 	/**
 	 * is called whenever an Article should be indexed
@@ -240,7 +234,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 
         for (SearchHit hit : searchResponse.getHits().hits()) {
 
-System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.getScore());
+        	System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.getScore());
 
 			if(hit.getScore() >= tooSimilair){
             	return true;
@@ -249,44 +243,18 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
         return false;
 	}
 
-	/*
-	 * puts an article in both indexes
-	 * passes the IOException from private put()
+	/**
+	 * Puts a list of articles into the search index and collects all topics and sources to merge
+	 * them with existing metadata.
+	 * @exception IOException see {@link #put(Article)}
 	 */
-	private void put(Article article) throws IOException{
-		
-		//Only index unless it is already in
-//		if(!this.articleIsAlreadyIndexed(article, mainIndex)){
-//			this.put(article, mainIndex);
-//		}
-
-		//Only index if there aren't similar articles indexed
-		if(!this.similairArticleIsAlreadyIndexed(article, searchIndex)){
-			this.put(article, searchIndex);
-		}
-
-		/*
-		makes sure, that no data is in the node
-		new FlushRequest(): no parameters, so all indices are flushed
-		force(true): forces to flush, even if it is not necessary
-		actionGet(): execute and return a org.elasticsearch.action.admin.indices.flush.FlushResponse which isn't used
-		*/
-		client.admin().indices().flush( new FlushRequest().force(true) ).actionGet();
-
-	}
-
-	/*
-	 * puts a list of articles in both indexes
-	 * collects all topics and sources
-	 * passes the IOException from public put()
-	 */
-	public void putMany( List<Article> list ) throws IOException{
+	public void putMany( List<Article> list ) throws IOException {
 	
 		Collection<String> topics = new ArrayList<String>();
 		Collection<String> sources = new ArrayList<String>();
 
 		for( Article article : list ){
-			this.put( article );
+			this.put( article, searchIndex );
 			if (article.getTopic() != null) {
 				topics.add(article.getTopic());
 			}
@@ -299,7 +267,6 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 		System.out.println(Arrays.toString(sources.toArray()));
 		this.mergeMetaData(topics, MetaDataType.TOPIC);
 		this.mergeMetaData(sources, MetaDataType.SOURCE);
-		
 	}
 
 	/**
@@ -334,6 +301,10 @@ System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.get
 				+ " Indexed(t) or Updated(f): " + created);
 	}
 
+	/**
+	 * Counterpart to {@link shared.ElasticSearchController#deserialzeSet(MetaDataType)}
+	 * Serializes a set of anything to binary with ObjectOutputStream and the binary to Base64 string.
+	 */
 	private void serializeSet(Set<?> anySet, MetaDataType filterType) {
     	ByteArrayOutputStream baos;
         try (ObjectOutputStream oos = new ObjectOutputStream(baos = new ByteArrayOutputStream())) {
