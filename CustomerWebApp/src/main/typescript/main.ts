@@ -75,6 +75,20 @@
         on_load();
     }
     
+        // Listen for changes of date
+    
+        function date_was_changedk(){
+            var datek = "k";//this.value;
+            //var type="kktype";
+            //console.log(type_,date);
+        }
+        
+        
+        // var el_date_start = <any> document.getElementById("date_start");
+        // var el_date_end = <any> document.getElementById("date_end");
+        // el_date_start.onblur = date_was_changed(el_date_start);
+        // el_date_end.onblur = date_was_changed(el_date_end);
+    
     //Creates list of metadata li elements
     
     function set_metaData(result: MetadataResult) {
@@ -319,17 +333,6 @@
             //cs.log(el.getAttribute("href"));
         }
         
-        function date_was_changed(type : string){
-            var el = this;
-            var date = el.value();
-            console.log(type,date);
-        }
-        
-        // Listen for changes of date
-        var el_date_start = <any> document.getElementById("date_start");
-        var el_date_end = <any> document.getElementById("date_end");
-        el_date_start.onBlur = date_was_changed("start");
-        el_date_end.onBlur = date_was_changed("end");
         
         //repeat this each 0.25 second !! bug todo refac
         var col_a = (<any> document.getElementsByTagName("A"));

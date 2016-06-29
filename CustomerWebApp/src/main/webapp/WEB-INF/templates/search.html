@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-<!--
-                        @auhor dbeckstein, jfranz
--->
 <head>
     <meta charset="UTF-8">
     
@@ -24,6 +21,9 @@
 </head>
 
 <body> 
+    <!--
+                            @auhor dbeckstein, jfranz
+    -->
 
         <div id="container_top">
             <input id="fld_search" class="search" type="text" placeholder="Enter keywords here" autofocus />
@@ -51,15 +51,21 @@
                     <ul id="select_topic_list">
                     </ul>
                 </div>
+                <script>
+                     function date_was_changed(type){
+                        var date = this.value;
+                        console.log(type,date);
+                    }
+                </script>
                 
                 <div class="select_date date_pick">
                     <table>
                         <tr>
-                            <td><input id="date_start" type="date" value="2016-03-01" style="color:white;"/>
+                            <td><input id="date_start" onblur="date_was_changed('start')" type="date" value="2016-03-01" style="color:white;"/>
                             </td>
                             <td>&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;
                             </td>
-                            <td><input id="date_end" type="date"    value="2016-03-10" style="color:white;"/>
+                            <td><input id="date_end" onblur="date_was_changed('end')" type="date"    value="2016-03-10" style="color:white;"/>
                             </td>
                         </tr>
                     </table>
