@@ -1,3 +1,8 @@
+/*
+ *@auhor dbeckstein, jfranz
+ */
+
+
 @import "reset";   
 @import "calendar";   
 
@@ -143,6 +148,9 @@ $line_height_gap:1.5em;
    }
    
    
+   #container_top div.filter_settings div.select_topic ul a, #container_top div.filter_settings div.select_topic ul a:visited{
+        color:white;
+   }
    #container_top div.filter_settings div.select_topic ul li{
       white-space:nowrap;
       background: silver;
@@ -154,6 +162,8 @@ $line_height_gap:1.5em;
       margin-top: 1rem;
       padding: 0.7rem 2rem;
       font-size:1rem;
+      
+      
       
       padding: 0.4rem 0.8rem; 
       padding-top: 0.5rem;
@@ -168,9 +178,10 @@ $line_height_gap:1.5em;
       /*padding: 0.8rem 0.7rem; /
       */
    }
-    #container_top div.filter_settings div.select_date{
-      
-    }
+
+    #container_top div.filter_settings div.select_date ul li{
+        color:white !important;
+   }
    
     #container_top div.filter_settings div.select_date table{
       padding:2rem;
@@ -337,6 +348,7 @@ $line_height_gap:1.5em;
       position:relative;
       float:right;
       float:left;
+      
    }  
       
    ul.results li div.result  div.container_topic div.myButton{

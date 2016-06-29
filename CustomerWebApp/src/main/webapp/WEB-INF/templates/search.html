@@ -8,16 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     
     <link rel="stylesheet" type="text/css" th:href="@{/resources/css/main.css}">
-    
-    <!--
-    // compile sass with cmd: 
-    //                           node-sass scss/ -o css/
-    
-    <script type="text/javascript" src="js/collection.js"></script>
-    -->
-    
-    <!--
-    -->
+  
     <script th:inline="javascript">
         var contextUrl = /*[[@{/}]]*/ undefined;
     </script>
@@ -30,6 +21,9 @@
 </head>
 
 <body> 
+    <!--
+                            @auhor dbeckstein, jfranz
+    -->
 
         <div id="container_top">
             <input id="fld_search" class="search" type="text" placeholder="Enter keywords here" autofocus />
@@ -57,67 +51,60 @@
                     <ul id="select_topic_list">
                     </ul>
                 </div>
+                <script>
+                     function date_was_changed(type){
+                        var el = document.getElementById("date_"+type);
+
+                        var date = el.value;
+                        if (type == "start"){
+                            console.log("change start date", date);
+                        }
+                        if (type == "end"){
+                            console.log("change start end ", date);
+                        }
+                    }
+                </script>
                 
                 <div class="select_date date_pick">
                     <table>
                         <tr>
-                            <td><input id="date_start" type="date" value="2016-03-01" style="color:white;"/>
+                            <td><input id="date_start" onblur="date_was_changed('start')" type="date" value="2016-03-01" style="color:white;"/>
                             </td>
                             <td>&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;
                             </td>
-                            <td><input id="date_end" type="date"    value="2016-03-10" style="color:white;"/>
+                            <td><input id="date_end" onblur="date_was_changed('end')" type="date"    value="2016-03-10" style="color:white;"/>
                             </td>
                         </tr>
                     </table>
                             
                     <ul>
-                        <li>
-                            today
-                        </li>
-                        <li>
-                            last 3 days
-                        </li>
-                        <li>
-                            last 7 days
-                        </li>
-                        <li>
-                            last 30 days
-                        </li>
-                        <li>
-                            last 300 days
-                        </li>
-                        <li>
-                            last n days
-                        </li>
+                        <a href="#date_set_range" data-date-range-days="0" >
+                            <li>
+                                today
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="3" >
+                            <li>
+                                last 3 days
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="7" >
+                            <li>
+                                last 7 days
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="30" >
+                            <li>
+                                last 30 days
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="300" >
+                            <li>
+                                last 300 days
+                            </li>
+                        </a>
                     </ul>
-                    <!--    
-                    
-                     <tr>
-                            <td>Start
-                            </td>
-                            <td>&nbsp;&nbsp;&nbsp;&nbsp;
-                            </td>
-                            <td>End
-                            </td>
-                            
-                        </tr>
-                    
-                        last weglassen ?
-                        <li>
-                            last week
-                        </li>
-                        <li>
-                            last month
-                        </li>
-                         <li>
-                            last quater
-                        </li>
-                        <li>
-                            last year
-                        </li>
-                    Start:
-                    End:
-                    -->
+                   
                 </div>
             </div>
         </div>
@@ -190,32 +177,10 @@
         </div>
     </div>
     
+    <!-- lazy js - loads these js files only after page content already loaded -->
     <script type="text/javascript" th:src="@{/resources/js_lazy/onload.js}"></script>
-    <!-- bug , bug lancheck add network-->
     <script type="text/javascript" th:src="@{/resources/js_lazy/polyfiller_date.js}"></script>
-  <!--
-    <div class="footer">
-                <p>Copyright (c) 2008</p>
-          </div>
-    <ul>
-        <li class="1 half">
-        
-        billions, elementary castle , house cards, 
-        so movies kinox, endtittiles movie, leverages, nvidia keynote gtc (see 2015), machine learning conf, y.lecun
-        xiv deringing, time energy image ??? see presentations??, variable size??
-        daale, nvidia gtc, check auch 2015 
-            <span id="res"></span>
-        </li><li class="2">
-            <span>Hello this is greate!</span>
-        </li>
-    </ul>
-    
-      <div class="clear"></div>
-        -->
-        
-        
-    <!-- lazy js -->
-    
+  
 </body>
 
 
