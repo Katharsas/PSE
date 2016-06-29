@@ -63,6 +63,10 @@
     var cs = new MyConsole();
     var jl = new JsLog();
     var conn = new ServerConnection();
+    
+    function mytest(){
+        console.log("kkkkkk");
+    }
 
     var global_filterOptions: any;
 
@@ -77,12 +81,7 @@
     
         // Listen for changes of date
     
-        function date_was_changedk(){
-            var datek = "k";//this.value;
-            //var type="kktype";
-            //console.log(type_,date);
-        }
-        
+        // fucntion date
         
         // var el_date_start = <any> document.getElementById("date_start");
         // var el_date_end = <any> document.getElementById("date_end");
@@ -106,6 +105,7 @@
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-filter-name', topicName);
             a.setAttribute('data-filter-type', "topic");
+            a.onclick = process_click_or_enter;
             var el = (<Element> document.createElement('li'));
             var text_node = document.createTextNode(topicName);
             el.appendChild(text_node);
@@ -133,42 +133,9 @@
                 console.log(cs_log_ajax_hint_1, "Sending request failed!");
             });
     }
-
-    function on_load() {
-          
-        // load mataData (sources, and topics) bug todo sources 
-        ini_set_metaData();
-
-        global_filterOptions = new FilterOptions();
-        var cs_log_ajax_hint = "___ajax___ ";
-        //global_filterOptions.topics.push("Politics");
-        //global_filterOptions.sources.push("cnn");
-        //global_filterOptions.toDate = "2016-12-25";
-        //global_filterOptions.fromDate = "2000-12-25";
-       
-        var keywords = (<any>document.getElementById("fld_search")).value;
-        console.log("__keyword__" + "-" + keywords + "-");
-        Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
-            .done(function(result: ArticleResult) {
-                if (result.errorMessage !== null) {
-                    console.log(cs_log_ajax_hint, result.errorMessage);
-                } else {
-                    console.log(cs_log_ajax_hint, "Articles received:");
-                    for (let article of result.articles) {
-                        console.log(cs_log_ajax_hint, article);
-                        console.log(article.author);
-
-                        var list = <Node> document.getElementById("result_sample_list");
-                        //var sample = (<Node> document.getElementById("result_sample") );
-                        console.log(list);
-                        HtmlBuilder.buildArticle(article, list);
-                    }
-                }
-            })
-            .fail(function() {
-                console.log(cs_log_ajax_hint, "Sending request failed!");
-            });
-            
+    
+    
+        
         var list = document.getElementById("result_sample_list");
         list.innerHTML = "";
         var sample = document.getElementById("result_sample");
@@ -263,11 +230,11 @@
             //show hide, not toggle !!
         }
         
-        var date_start = document.getElementById("date_start");
-        var date_start_str = (<HTMLInputElement> date_start).value.replace(/-/g, "/");
-        var date_start_date = new Date(date_start_str);
-        cs.log("" + date_start_date);
-        cs.log(date_start_date.toString());
+        //var date_start = document.getElementById("date_start");
+        //var date_start_str = (<HTMLInputElement> date_start).value.replace(/-/g, "/");
+        //var date_start_date = new Date(date_start_str);
+        //cs.log("" + date_start_date);
+        //cs.log(date_start_date.toString());
 
         function check_url_name(event: any) {
             //var url_name = window.location;//.pathname;
@@ -291,13 +258,17 @@
             var id  = el.getAttribute('data-radio-isSelected');
             console.log(id);
         }
-
+        
+        function f_date_set_range(el : any){
+           var days_back_from_now = el.getAttribute('data-date-range-days');
+            console.log(days_back_from_now);
+        }
+        
         function process_click_or_enter(ev: any) {
             console.log(ev);
             el = this;
 
-            // bad gives full href with link
-            //var href = el.href; 
+            // bad gives full href with link //var href = el.href; 
             // nice, gives raw href, from element only ( e.g. #search_filter, instead of www.google.com/#seach_filter)
             var href = (<any>el).getAttribute("href");
             href = href.slice(1);
@@ -320,50 +291,90 @@
                 case "search_similar":
                     f_search_similar(el);
                     break;
+                case "date_set_range":
+                    f_date_set_range(el);
+                    break;
                     
                 default:
-                //default code block
                 // do nothing
             }
 
-
-            cs.log("# selection was - " + href);
-            console.log("href", href);
-            console.log(el);
-            //cs.log(el.getAttribute("href"));
+            // cs.log("# selection was - " + href);  // console.log("href", href);  // console.log(el);   //cs.log(el.getAttribute("href"));
         }
         
         
-        //repeat this each 0.25 second !! bug todo refac
-        var col_a = (<any> document.getElementsByTagName("A"));
-        //var list_a = Array.prototype.slice.call( col_a, 0 );
-        var list_a: any = [];
-        for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
-        console.log("li", list_a);
-        console.log("li", col_a.length);
+    
 
-        for (var i = 0; i < col_a.length; i++) { // if you have named properties
-            var anch = list_a[i]; // (<any> x);
-            // todo bug, refac, check if class is normal link, then dont add any special onclick handling
-            //console.log("i", anch);
-            //var anch = (<any> list_a[i]  );
-            
-            // bug todo refac bad important
-            anch.onclick = process_click_or_enter;
-            
-            
-            /*function(){/* some code * /
-               ( anch );
-            }
-            // Need this for IE, Chrome ?
-            /* 
-            anch.onkeypress=function(e){ //ie ??
-               if(e.which == 13){//Enter key pressed
-                  process_click_or_enter( anch );
-               }
-            }
-            */
+    function on_load() {
+          
+        // load mataData (sources, and topics) bug todo sources 
+        ini_set_metaData();
+        
+        setInterval(function(){ add_anchor_tags_to_onClick_processing(); }, 500);
 
+        global_filterOptions = new FilterOptions();
+        var cs_log_ajax_hint = "___ajax___ ";
+        //global_filterOptions.topics.push("Politics");
+        //global_filterOptions.sources.push("cnn");
+        //global_filterOptions.toDate = "2016-12-25";
+        //global_filterOptions.fromDate = "2000-12-25";
+       
+        var keywords = (<any>document.getElementById("fld_search")).value;
+        console.log("_k_keyword__" + "-" + keywords + "-");
+        Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
+            .done(function(result: ArticleResult) {
+                if (result.errorMessage !== null) {
+                    console.log(cs_log_ajax_hint, result.errorMessage);
+                } else {
+                    console.log(cs_log_ajax_hint, "Articles received:");
+                    for (let article of result.articles) {
+                        console.log(cs_log_ajax_hint, article);
+                        console.log(article.author);
+
+                        var list = <Node> document.getElementById("result_sample_list");
+                        //var sample = (<Node> document.getElementById("result_sample") );
+                        console.log(list);
+                        HtmlBuilder.buildArticle(article, list);
+                    }
+                }
+            })
+            .fail(function() {
+                console.log(cs_log_ajax_hint, "Sending request failed!");
+            });
+        
+        function add_anchor_tags_to_onClick_processing(){
+            //repeat this each 0.25 second !! bug todo refac
+            var col_a = (<any> document.getElementsByTagName("A"));
+            //var list_a = Array.prototype.slice.call( col_a, 0 );
+            var list_a: any = [];
+            for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
+            //console.log("li", list_a);
+            //console.log("li", col_a.length);
+
+            for (var i = 0; i < col_a.length; i++) { // if you have named properties
+                var anch = list_a[i]; // (<any> x);
+                // todo bug, refac, check if class is normal link, then dont add any special onclick handling
+                //console.log("i", anch);
+                //var anch = (<any> list_a[i]  );
+                
+                // bug todo refac bad important
+                anch.onclick = process_click_or_enter;
+                //anch.addEventListener("click", process_click_or_enter, false); 
+                
+                
+                /*function(){/* some code * /
+                   ( anch );
+                }
+                // Need this for IE, Chrome ?
+                /* 
+                anch.onkeypress=function(e){ //ie ??
+                   if(e.which == 13){//Enter key pressed
+                      process_click_or_enter( anch );
+                   }
+                }
+                */
+
+            }
         }
     }
           

@@ -53,8 +53,15 @@
                 </div>
                 <script>
                      function date_was_changed(type){
-                        var date = this.value;
-                        console.log(type,date);
+                        var el = document.getElementById("date_"+type);
+
+                        var date = el.value;
+                        if (type == "start"){
+                            console.log("change start date", date);
+                        }
+                        if (type == "end"){
+                            console.log("change start end ", date);
+                        }
                     }
                 </script>
                 
@@ -71,24 +78,31 @@
                     </table>
                             
                     <ul>
-                        <li>
-                            today
-                        </li>
-                        <li>
-                            last 3 days
-                        </li>
-                        <li>
-                            last 7 days
-                        </li>
-                        <li>
-                            last 30 days
-                        </li>
-                        <li>
-                            last 300 days
-                        </li>
-                        <li>
-                            last n days
-                        </li>
+                        <a href="#date_set_range" data-date-range-days="0" >
+                            <li>
+                                today
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="3" >
+                            <li>
+                                last 3 days
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="7" >
+                            <li>
+                                last 7 days
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="30" >
+                            <li>
+                                last 30 days
+                            </li>
+                        </a>
+                        <a href="#date_set_range" data-date-range-days="300" >
+                            <li>
+                                last 300 days
+                            </li>
+                        </a>
                     </ul>
                    
                 </div>

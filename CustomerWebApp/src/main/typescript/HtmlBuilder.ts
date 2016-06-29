@@ -92,7 +92,8 @@
             // bug refac todo, here aufklappen langer text !
             var cache_button = createElem("div", "myButton");
             var a = <any> document.createElement('a');
-            a.href = "#cache_id_" + article.articleId_str;
+            a.href = "#cache"; // + article.articleId_str;
+            a.setAttribute('data-articleId', article.articleId_str);
             var img = <any> document.createElement('img');
             img.src = "/CWA/resources/img/cache_arrow_down_small_grey.png";//"";
             a.appendChild(img);
@@ -106,6 +107,7 @@
             a.href = "#search_similar";
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-articleId', article.articleId_str);
+            //a.onclick = process_click_or_enter;
             addText(a, "Similar");
             similar_button.appendChild(a);
 
