@@ -181,7 +181,6 @@ public class XmlParser {
      */
     public List<Article> parseFileList(Map<Path, Document> fileList) {
         List<Article> articles = new ArrayList<Article>();
-		Set<String> topics_set = new HashSet<String>(); //DEBUG
         Path path;
         Document doc;
         // Setting null needed to avoid - object might not have been initialized error
@@ -194,40 +193,8 @@ public class XmlParser {
             Article article = this.parse(path, doc);
                     	System.out.println("88888888888" + article);
             articles.add(article);
-            if (GlobalsDebug.set_cnt < GlobalsDebug.set_cnt_max) {
-                topics_set.add(article.getTopic());
-                GlobalsDebug.set_cnt++;
-                //System.out.println(article);
-            }
         }
         //System.out.println(topics_set);
         return articles;
     }
-
-    /**
-     * Debug functions - run debug code
-     *
-     * @author dbeckstein
-     */
-    public String debug() {
-
-        FileService tmp_FileService = new FileService();
-
-        Map<Path, Document> fileList;
-
-        fileList = tmp_FileService.getArticles_debug("_few_de/"); //bug
-
-        // init files lists for german & us articles
-        Map<Path, Document> fileList_germany = tmp_FileService.getArticles_debug("germany/");
-        Map<Path, Document> fileList_us = tmp_FileService.getArticles_debug("US"); //bug
-
-        System.out.println(fileList.size());
-        List<Article> articles;
-
-        articles = this.parseFileList(fileList_us);
-        articles = this.parseFileList(fileList_germany);
-
-        return "... finished debug";
-    }
-
 }
