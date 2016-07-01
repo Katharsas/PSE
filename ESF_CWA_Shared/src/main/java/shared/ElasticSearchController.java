@@ -2,6 +2,7 @@ package shared;
 
 
 import java.io.ByteArrayInputStream;
+import java.io.Closeable;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.UncheckedIOException;
@@ -19,11 +20,13 @@ import org.elasticsearch.node.NodeBuilder;
 import shared.metadata.MetaDataType;
 
 /**
+ * Creates a connection to the ElasticSearch Server using the ElasticSearch Java API.
+ * This connection can be used by inheriting this class. Also provides some attributes & methods
+ * that are needed by all inheriting classes.
  *
  * @author akolb
  */
-
-public abstract class ElasticSearchController {
+public abstract class ElasticSearchController implements Closeable {
 
     /*
      * Are shared
@@ -56,44 +59,18 @@ public abstract class ElasticSearchController {
     	this.client = node.client();
 
 	}
+	
+	@Override
+	public void close() throws IOException {
+		if(node != null) {
+			node.close();
+		}
+	}
 
 	/**
-	 * Workaround for Java not having destructors -.-
-	 * closes the connection to ES before the Object get's destroyed by GC
-	*/
-	public void free(){
-
-		node.close();
-
-	}
-//	  /**
-//     * @return an Article from the ES db needs the ID of the object
-//     */
-//    private Article getById(ArticleId id) {
-//
-//        // renamed id, to id_str because, ArticleId id already uses variable "id"
-//		String id_str = id.getId();
-//		// TODO isExists check id existing
-//		//executes and gets the response
-//		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
-//		String title = (String) getResponse.getSource().get(obj_title);
-//		String pubDate = (String) getResponse.getSource().get(obj_pubDate);
-//		String content = (String) getResponse.getSource().get(obj_content);
-//		String author = (String) getResponse.getSource().get(obj_author);
-//		String source = (String) getResponse.getSource().get(obj_source);
-//		String topic = (String) getResponse.getSource().get(obj_topic);
-//		String url = (String) getResponse.getSource().get(obj_url);
-//
-//		return new Article(id.getId())
-//                      .setTitle(title)
-//                      .setPubDate(pubDate)
-//                      .setExtractedText(content)
-//                      .setAuthor(source)
-//                      .setTopic(topic)
-//                      .setUrl(url);
-//
-//	}
-
+	 * Returns encoded metadata string. The String is Base64 encoded binary, the binary is a
+	 * a serialized Set containing metadata of the given filterType.
+	 */
 	protected String getMetaDataFromIndex(MetaDataType filterType){
 	
 		String id_str = filterType.name();
@@ -108,6 +85,11 @@ public abstract class ElasticSearchController {
 		}
 	}
 
+	/**
+	 * Counterpart to {@link esfeeder.elasticsearch.ElasticSearchWriter#serializeSet(Set<?, MetaDataType)}
+	 * Uses ObjectInputStream to deserialize a Set of Metadata strings. The set must have been encoded
+	 * to binary and then encoded as Base64.
+	 */
 	protected <T> Set<T> deserializeSet(MetaDataType filterType){
 
 		String encoded = this.getMetaDataFromIndex(filterType);

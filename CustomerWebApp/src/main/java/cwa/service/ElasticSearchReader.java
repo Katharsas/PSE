@@ -30,6 +30,7 @@ import shared.ElasticSearchController;
 import shared.metadata.MetaDataType;
 
 /**
+ * Provides methods to search for articles and to get metadata from ESServer.
  *
  * @author akolb
  * @author jmothes
@@ -92,7 +93,6 @@ public class ElasticSearchReader extends ElasticSearchController
 
 	/**
 	 * @return a resultlist for the respective query
-	 *
 	 */
 	private ArrayList<Article> executeQuery(String searchIndex, String indexType, long time, QueryBuilder queryBuilder, int skip, int limit){
 

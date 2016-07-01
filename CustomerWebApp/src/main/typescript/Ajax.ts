@@ -1,3 +1,8 @@
+    /*
+     *@auhor jmothes
+     */
+
+
 import {FilterOptions} from "./FilterOptions";
 
 declare var contextUrl: string;

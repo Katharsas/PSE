@@ -1,3 +1,7 @@
+    /*
+     *@auhor jmothes
+     */
+
 export class FilterOptions {
 
 	topics: string[] = [];
