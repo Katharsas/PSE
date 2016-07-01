@@ -63,10 +63,6 @@
     var cs = new MyConsole();
     var jl = new JsLog();
     var conn = new ServerConnection();
-    
-    function mytest(){
-        console.log("kkkkkk");
-    }
 
     var global_filterOptions: any;
 
@@ -78,7 +74,7 @@
         console.log("--------------search_demo----------");
         on_load();
     }
-    
+        // todo date changed is in html
         // Listen for changes of date
     
         // fucntion date
@@ -99,7 +95,7 @@
         var topic_list = document.getElementById("select_topic_list");
         // check length 
         var children = topic_list.getElementsByTagName("li");
-        if children.lenght//
+        //if children.lenght
         
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
