@@ -100,7 +100,7 @@
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
             var a = (<any> document.createElement('a'));
-            a.href = "#set_filter"; // topics this, add to at
+            a.href = "#toggle_filter"; // topics this, add to at
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-filter-name', topicName);
             a.setAttribute('data-filter-type', "topic");
@@ -279,7 +279,16 @@
             el.style.display = "block";
         }
         
-        
+               
+        function f_toggle_filter(el:any){
+            console.log(el);
+            
+            console.log("------filter----",el);
+            var type  = el.getAttribute('data-filter-type');
+            var name  = el.getAttribute('data-filter-name');
+            console.log(name);
+            console.log(type);
+        }
         
         function f_cache_toggle(el : any){
             console.log("------cache----",el);
@@ -328,6 +337,9 @@
                     break;
                 case "search_similar":
                     f_search_similar(el);
+                    break;
+                case "toggle_filter":
+                    f_toggle_filter(el);
                     break;
                 case "date_set_range":
                     f_date_set_range(el);
