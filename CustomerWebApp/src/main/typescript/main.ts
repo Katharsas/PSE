@@ -254,7 +254,7 @@
         
         function f_search_similar(el : any){
             console.log("------similar----",el);
-            var id  = el.getAttribute('data-radio-isSelected');
+            var id  = el.getAttribute('data-articleId');
             console.log(id);
         }
         

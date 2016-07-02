@@ -71,14 +71,18 @@
             root.appendChild(createElem("div", "clearfix"));
 
             var content = createElem("div", "content");
-            addText(content, article.extractedText.substring(0, 301));
+            addText(content, article.extractedText.substring(0, 300));
 
             root.appendChild(content);
             var content_cache = createElem("div", "content_cache");
             addText(content_cache, article.extractedText);
-
+            var br_tag = createElem("br","nothing_special");
+            content_cache.appendChild(br_tag);
+            var br_tag = createElem("br","nothing_special");
+            content_cache.appendChild(br_tag);
+            
+            addText(content_cache, article.source);
             root.appendChild(content_cache);
-
 
             var author = createElem("div", "author");
             addText(author, article.author);
