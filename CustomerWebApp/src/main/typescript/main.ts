@@ -263,6 +263,16 @@
             console.log(days_back_from_now);
         }
         
+        function f_cache_toggle(el : any){
+            console.log("------cache----",el);
+            var id  = el.getAttribute('data-articleId');
+            console.log(id);
+            var pe : any = el.parentElement.parentElement.parentElement;
+            var pid : any = pe.className;
+            console.log(pe);
+            console.log(pid);
+        }
+        
         function process_click_or_enter(ev: any) {
             console.log(ev);
             el = this;
@@ -293,6 +303,10 @@
                 case "date_set_range":
                     f_date_set_range(el);
                     break;
+                case "cache":
+                    f_cache_toggle(el);
+                    break;
+                
                     
                 default:
                 // do nothing
