@@ -63,10 +63,6 @@
     var cs = new MyConsole();
     var jl = new JsLog();
     var conn = new ServerConnection();
-    
-    function mytest(){
-        console.log("kkkkkk");
-    }
 
     var global_filterOptions: any;
 
@@ -78,7 +74,7 @@
         console.log("--------------search_demo----------");
         on_load();
     }
-    
+        // todo date changed is in html
         // Listen for changes of date
     
         // fucntion date
@@ -97,6 +93,9 @@
         topic_set = result.topics;
 
         var topic_list = document.getElementById("select_topic_list");
+        // check length 
+        var children = topic_list.getElementsByTagName("li");
+        //if children.lenght
         
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
@@ -213,7 +212,7 @@
 
         function f_search_keywords(el: any) {
             console.log("--------------search_demo----------");
-            on_load();
+           // on_load(); // bug todo ,
         }
 
         function f_search_filter(el: any) { // bug key not used
@@ -264,6 +263,16 @@
             console.log(days_back_from_now);
         }
         
+        function f_cache_toggle(el : any){
+            console.log("------cache----",el);
+            var id  = el.getAttribute('data-articleId');
+            console.log(id);
+            var pe : any = el.parentElement.parentElement.parentElement;
+            var pid : any = pe.className;
+            console.log(pe);
+            console.log(pid);
+        }
+        
         function process_click_or_enter(ev: any) {
             console.log(ev);
             el = this;
@@ -294,6 +303,10 @@
                 case "date_set_range":
                     f_date_set_range(el);
                     break;
+                case "cache":
+                    f_cache_toggle(el);
+                    break;
+                
                     
                 default:
                 // do nothing
@@ -306,6 +319,9 @@
     
 
     function on_load() {
+    
+        // todo search more button !!
+        // todo doku, js mini klassendiagramm 
           
         // load mataData (sources, and topics) bug todo sources 
         ini_set_metaData();
@@ -321,7 +337,10 @@
        
         var keywords = (<any>document.getElementById("fld_search")).value;
         console.log("_k_keyword__" + "-" + keywords + "-");
-        Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
+       
+       // bug as function abkapseln
+       
+       Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
             .done(function(result: ArticleResult) {
                 if (result.errorMessage !== null) {
                     console.log(cs_log_ajax_hint, result.errorMessage);

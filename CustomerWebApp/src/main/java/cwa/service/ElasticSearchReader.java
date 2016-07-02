@@ -6,6 +6,7 @@ import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Objects;
+import java.lang.IllegalArgumentException;
 
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
@@ -45,8 +46,8 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * Can be set to "AUTO" (see ElasticSearch documentation on "funzziness")
 	 */
 	private final Object allowedUserTypingErrors = 1;
-	
-    /**
+
+	/**
      * Can only be created after the writer was started once! Throws an exception otherwise
      */
     public ElasticSearchReader() throws IndexNotFoundException {
@@ -55,11 +56,11 @@ public class ElasticSearchReader extends ElasticSearchController
             throw new IndexNotFoundException(searchIndex);
         }
     }
-    
+
     private boolean doesSearchIndexExist() {
     	return client.admin().indices().prepareExists(searchIndex).get().isExists();
     }
-    
+
     private Article createArticleFromSource(Map<String, Object> source, String id) {
     	return new Article(id)
             .setTitle((String) source.get(obj_title))
@@ -74,12 +75,17 @@ public class ElasticSearchReader extends ElasticSearchController
     /**
      * @return an Article from the ES db needs the ID of the object
      */
-    private Article getById(ArticleId id) {
+    private Article getById(ArticleId id)throws IllegalArgumentException{
 		final String id_str = id.getId();
-		
-		// TODO isExists check id existing
-		
+
 		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
+
+		// response is empty -> articel with this Id doesn't exists in the db
+		//don't know the difference between methods so using both
+		if( !getResponse.isExists() || getResponse.isSourceEmpty() ){
+			throw new IllegalArgumentException("404: Article with the ID " + id_str + " was not found in the database");
+		}
+
 		return createArticleFromSource(getResponse.getSource(), id_str);
 	}
 
@@ -89,7 +95,7 @@ public class ElasticSearchReader extends ElasticSearchController
 	private ArrayList<Article> executeQuery(String searchIndex, String indexType, long time, QueryBuilder queryBuilder, int skip, int limit){
 
 		System.out.println("Querying ElasticSearch...");
-		
+
 		//Execute and get a response
 		SearchResponse searchResponse = client.prepareSearch(searchIndex)
 			.setTypes(indexType)
@@ -106,10 +112,10 @@ public class ElasticSearchReader extends ElasticSearchController
 		int listLength = searchHits.totalHits() > maxLength ?
 				maxLength : (int) searchHits.totalHits();
 				//TODO: .totalHits() might return the amount of elements in current SearchHits (which shouldn't be the case), not the total amount of found articles. CRITICAL! Needs to be testet
-		
+
 		System.out.println(searchHits.totalHits() + " matching articles exist.");
 		System.out.println("Clipping result to " + maxLength + " articles if necessary.");
-		ArrayList<Article> resultList = new ArrayList<Article>(listLength); //relustList has either the size of the requestet amount of articles or less if ES returns less resluts
+		ArrayList<Article> resultList = new ArrayList<Article>(listLength); //relustList has either the size of the requested amount of articles or less if ES returns less resluts
 
 		//ES returns max. 10 hits per List, we can't change that
 		while( searchHits.hits().length != 0 ){ //breaks if the list is empty
@@ -128,20 +134,20 @@ public class ElasticSearchReader extends ElasticSearchController
         // if ES didn't find any articles resultsList should be empty + the size should be zero
         return resultList;
 	}
-	
+
 	@Override
 	public ArrayList<Article> getByQuery(String query, int skip, int limit, FilterSettings filters){
 		Objects.requireNonNull(query);
 		Objects.requireNonNull(filters);
-		
+
 		BoolQueryBuilder composedQuery = boolQuery();
-		
+
 		//add query for search keywords
 		QueryBuilder matchQuery = QueryBuilders
 				.multiMatchQuery(query, obj_title, obj_content, obj_author)
 				.fuzziness(allowedUserTypingErrors);
 		composedQuery.must(matchQuery);
-		
+
 		if(filters.topics.length > 0) {
 			// articles must have one of the listed topics
 			BoolQueryBuilder filterQuery = boolQuery();
@@ -158,7 +164,7 @@ public class ElasticSearchReader extends ElasticSearchController
 	        }
 			composedQuery.must(innerQuery);
 		}
-//		
+//
 //		// articles must have a puDate greater-equals than "from"
 //		QueryBuilder fromQuery = QueryBuilders.rangeQuery(obj_pubDate).gte(filters.from);
 //		composedQuery.must(fromQuery);
@@ -169,11 +175,15 @@ public class ElasticSearchReader extends ElasticSearchController
 		return this.executeQuery(searchIndex, indexType, 60000, composedQuery, skip, limit);
 	}
 
-	@Override
-	public ArrayList<Article> getSimilar(ArticleId articleId, int skip, int limit){
+	/**
+	 *
+	 * @return a list with Articles that are "similar"
+	 * throws the Exception from getById()
+	 */
 
-		// TODO throw NullPointerException oder IllegalArgumentException fuer articleId nicht existent
-		
+	@Override
+	public ArrayList<Article> getSimilar(ArticleId articleId, int skip, int limit)throws IllegalArgumentException{
+
 		//Article aus ArticleId lesen
 		Article article = this.getById(articleId);
 		String content = article.getExtractedText();

@@ -37,7 +37,7 @@ public class XmlParser {
                 //System.out.println("NullPointerException encountered in parse_xml");
                 // return_value is left as = null, gets checked lateron with (if (return_value == null))
         }
-        
+
         if (return_value == null){
             return_value = "";
         }
