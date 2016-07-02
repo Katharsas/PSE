@@ -253,7 +253,7 @@
         }
         
         function f_search_similar(el : any){
-            console.log("------similar----",el);
+            console.log("------similar----k",el);
             var id  = el.getAttribute('data-radio-isSelected');
             console.log(id);
         }
@@ -261,6 +261,16 @@
         function f_date_set_range(el : any){
            var days_back_from_now = el.getAttribute('data-date-range-days');
             console.log(days_back_from_now);
+        }
+        
+        function f_cache_toggle(el : any){
+            console.log("------cache----",el);
+            var id  = el.getAttribute('data-articleId');
+            console.log(id);
+            var pe : any = el.parentElement.parentElement.parentElement;
+            var pid : any = pe.className;
+            console.log(pe);
+            console.log(pid);
         }
         
         function process_click_or_enter(ev: any) {
@@ -293,6 +303,10 @@
                 case "date_set_range":
                     f_date_set_range(el);
                     break;
+                case "cache":
+                    f_cache_toggle(el);
+                    break;
+                
                     
                 default:
                 // do nothing

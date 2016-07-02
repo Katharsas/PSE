@@ -71,7 +71,7 @@
             root.appendChild(createElem("div", "clearfix"));
 
             var content = createElem("div", "content");
-            addText(content, article.extractedText.substring(0, 300));
+            addText(content, article.extractedText.substring(0, 301));
 
             root.appendChild(content);
             var content_cache = createElem("div", "content_cache");
