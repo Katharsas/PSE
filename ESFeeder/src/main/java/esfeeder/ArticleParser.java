@@ -26,9 +26,6 @@ public class ArticleParser {
      * @throws IllegalFieldValueException
      */
     public String parse_pubDate(String pubDate) throws IllegalFieldValueException {
-        String pubDate_original, pubDate_formatted;
-        pubDate_original = pubDate;
-        pubDate_formatted = null;
 
         // if pubDate is empty, or is null, return empty string
         if (pubDate.length() == 0 || pubDate==null) {
@@ -58,7 +55,7 @@ public class ArticleParser {
         OffsetDateTime dateTime = OffsetDateTime.parse(pubDate, formatter);
         
         // Specify date format you want to get
-        pubDate_formatted = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(dateTime);
+        String pubDate_formatted = DateTimeFormatter.ISO_OFFSET_DATE_TIME.format(dateTime);
         
         return pubDate_formatted;
     }

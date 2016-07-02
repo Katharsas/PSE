@@ -26,23 +26,16 @@ import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.index.query.MoreLikeThisQueryBuilder;
 import org.elasticsearch.search.SearchHit;
 
-//import shared.ElasticSearchController;
 import shared.Article;
 import shared.ElasticSearchController;
 import shared.metadata.MetaDataType;
 
-/**
- *
- * @author akolb
- * @author dbeckstein
- * @author jmothes
- */
 
 /**
  * Provides methods to add indices, articles and metadata to ESServer.
  * @author akolb 
  */
-public class ElasticSearchWriter extends ElasticSearchController{
+public class ElasticSearchWriter extends ElasticSearchController {
 
 	//var is hardcoded, because it's not necessary to create writers with custom indexes
 	//	private final static String mainIndex = "main-index";
@@ -159,7 +152,9 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	}
 
 	/**
-	 * Puts an article into the ES search index.
+	 * Puts an article into the ES search index, if there are no too similar articles in the
+	 * index already.
+	 * 
 	 * @exception IOException thrown by {@link org.elasticsearch.common.xcontent.XContentBuilder} used 
 	 * 		to convert articles to json for ElasticSearch
 	 */
@@ -245,7 +240,9 @@ public class ElasticSearchWriter extends ElasticSearchController{
 
 	/**
 	 * Puts a list of articles into the search index and collects all topics and sources to merge
-	 * them with existing metadata.
+	 * them with existing metadata. Also checks for every article, if similar articles already exist
+	 * (see {@link #put(Article, String)}).
+	 * 
 	 * @exception IOException see {@link #put(Article)}
 	 */
 	public void putMany( List<Article> list ) throws IOException {

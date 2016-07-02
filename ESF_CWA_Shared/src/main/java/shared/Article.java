@@ -3,12 +3,14 @@ package shared;
 import java.util.Objects;
 
 /**
+ * Data access object for all needed article data.
+ * 
  * @author dbeckstein
  * @author akolb
  */
 public class Article implements Comparable<Article> {
 
-    private final ArticleId id; //hashed article name
+    private final ArticleId id; //hashed article name (filepath)
 
     // _tmp is a placeholder string to make formatting
     // of following attributes here nicer

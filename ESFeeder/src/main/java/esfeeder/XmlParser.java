@@ -1,42 +1,22 @@
 package esfeeder;
 
-/**
- *
- * @author dbeckstein
- * @author akraft
- * @author jfranz
- */
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
-import org.xml.sax.InputSource;
-import java.io.*;
 import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
-import javax.xml.parsers.ParserConfigurationException;
-import org.joda.time.IllegalFieldValueException;
+import java.util.Map;
 
-import org.xml.sax.SAXException;
+import org.joda.time.IllegalFieldValueException;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
 
 import shared.Article;
 
+/**
+ * Provides methods to convert articles and their filepaths to {@link Article} objects.
+ * Uses {@link ArticleParser}
+ */
 public class XmlParser {
 
     /**
@@ -85,7 +65,7 @@ public class XmlParser {
     private Article parse(Path path, Document doc) {
         String s = "";
         // Create ArticleParser to parse content of xml-tags, into Article class (this is like a tiny util class)
-        ArticleParser ap = new ArticleParser();
+        ArticleParser articleParser = new ArticleParser();
 
         // Article - set id on init
         String id = path.normalize().toString();
@@ -123,7 +103,7 @@ public class XmlParser {
                 //System.out.println("illegal filed value");
             }
 
-            a_pubDate = ap.parse_pubDate(a_pubDate);
+            a_pubDate = articleParser.parse_pubDate(a_pubDate);
             a_pubDate = clean(a_pubDate);
             article.setPubDate(a_pubDate);
 
@@ -146,19 +126,18 @@ public class XmlParser {
 
             // set topic
             String a_topic = path.normalize().toString();
-            a_topic = ap.parse_topic(a_topic);
+            a_topic = articleParser.parse_topic(a_topic);
             a_topic = clean(a_topic);
             article.setTopic(a_topic);
 
             // set source
             String a_source = parse_xml(item_elem, "link");
-            a_source = ap.parse_source(a_source);
+            a_source = articleParser.parse_source(a_source);
             a_source = clean(a_source);
             article.setSource(a_source);
 
             // set url
             String a_url = parse_xml(item_elem, "link");
-            //a_url = ap.parse_url(a_url);
             a_url = clean(a_url);
             article.setUrl(a_url);
 
