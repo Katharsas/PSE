@@ -191,7 +191,6 @@ public class XmlParser {
             path = entry.getKey();
             doc = entry.getValue();
             Article article = this.parse(path, doc);
-                    	System.out.println("88888888888" + article);
             articles.add(article);
         }
         //System.out.println(topics_set);

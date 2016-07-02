@@ -46,7 +46,7 @@ public class ElasticSearchReader extends ElasticSearchController
 	 * Can be set to "AUTO" (see ElasticSearch documentation on "funzziness")
 	 */
 	private final Object allowedUserTypingErrors = 1;
-	
+
 	/**
      * Can only be created after the writer was started once! Throws an exception otherwise
      */
@@ -55,8 +55,6 @@ public class ElasticSearchReader extends ElasticSearchController
         if (!doesSearchIndexExist()) {
             throw new IndexNotFoundException(searchIndex);
         }
-        
-        this.getSimilar( new ArticleId("archive_dev\\en\\politics\\CNNcomTopStories\\y2016\\m5\\d25\\RSS-129419294.xml"), 0, 10 );
     }
 
     private boolean doesSearchIndexExist() {
@@ -81,13 +79,13 @@ public class ElasticSearchReader extends ElasticSearchController
 		final String id_str = id.getId();
 
 		GetResponse getResponse = client.prepareGet(searchIndex, indexType, id_str).get();
-		
+
 		// response is empty -> articel with this Id doesn't exists in the db
 		//don't know the difference between methods so using both
-		if( !getResponse.isExists() || !getResponse.isSourceEmpty() ){
-			throw new IllegalArgumentException("404: Article with the ID " + id + " was not found in the database");
+		if( !getResponse.isExists() || getResponse.isSourceEmpty() ){
+			throw new IllegalArgumentException("404: Article with the ID " + id_str + " was not found in the database");
 		}
-		
+
 		return createArticleFromSource(getResponse.getSource(), id_str);
 	}
 
@@ -178,14 +176,14 @@ public class ElasticSearchReader extends ElasticSearchController
 	}
 
 	/**
-	 * 
+	 *
 	 * @return a list with Articles that are "similar"
 	 * throws the Exception from getById()
 	 */
 
 	@Override
 	public ArrayList<Article> getSimilar(ArticleId articleId, int skip, int limit)throws IllegalArgumentException{
-		
+
 		//Article aus ArticleId lesen
 		Article article = this.getById(articleId);
 		String content = article.getExtractedText();

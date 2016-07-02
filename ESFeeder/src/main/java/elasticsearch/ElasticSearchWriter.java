@@ -51,14 +51,14 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	 */
 	public ElasticSearchWriter() throws IOException {
 		super();
-	
+
 		// org.elasticsearch.action.admin.indices.exists.indices.IndicesExistsResponse.isExists()
 		AdminClient adminClient =  this.client.admin();
 		System.out.println(adminClient);
 		IndicesAdminClient client = adminClient.indices();
 		boolean searchIndex_exists =  client.prepareExists(searchIndex).get().isExists();
 		boolean metaIndex_exists =  client.prepareExists(metaIndex).get().isExists();
-		
+
 		if(!searchIndex_exists){
 			createSearchIndex();
 		}
@@ -66,16 +66,16 @@ public class ElasticSearchWriter extends ElasticSearchController{
 			createMetaIndex();
 		}
 	}
-	
+
 	/**
 	 * Creates an index in ElasticSearch.
 	 * @exception IOException thrown by {@link org.elasticsearch.common.xcontent.XContentBuilder}
 	 * 		used to create JSON indexes.
 	 */
 	private void createSearchIndex() throws IOException {
-		
+
 		final String indexName = searchIndex;
-		
+
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		// TODO settings deutsch/englisch
 		indexBuilder.setSettings(Settings.builder().loadFromSource(jsonBuilder()
@@ -117,7 +117,7 @@ public class ElasticSearchWriter extends ElasticSearchController{
 	        	.endObject()
         );
 		CreateIndexResponse createResponse = indexBuilder.get();
-    
+
 		//Check if index is created
         if (!createResponse.isAcknowledged()) {
             throw new IllegalStateException("Failed to create index <" + indexName + ">");
@@ -128,12 +128,11 @@ public class ElasticSearchWriter extends ElasticSearchController{
     /**
      * Creates an index for Metainfo (in our case for Topic and Source)
      *
-     */ 
+     */
     private void createMetaIndex() throws IOException {
-System.out.println("888888888888888888888888888888888888888888888888888888888");
-    	
+
     	final String indexName = metaIndex;
-    	
+
 		CreateIndexRequestBuilder indexBuilder = client.admin().indices().prepareCreate(indexName);
 		indexBuilder.addMapping(metaIndexType, jsonBuilder()
         		.startObject()
@@ -159,7 +158,7 @@ System.out.println("888888888888888888888888888888888888888888888888888888888");
 
 	/**
 	 * Puts an article into the ES search index.
-	 * @exception IOException thrown by {@link org.elasticsearch.common.xcontent.XContentBuilder} used 
+	 * @exception IOException thrown by {@link org.elasticsearch.common.xcontent.XContentBuilder} used
 	 * 		to convert articles to json for ElasticSearch
 	 */
 	private void put(Article article, String index) throws IOException{
@@ -167,13 +166,13 @@ System.out.println("888888888888888888888888888888888888888888888888888888888");
 		//Only index if there aren't similar articles indexed
 		if(!this.similairArticleIsAlreadyIndexed(article, index)){
 			System.out.println(article.toString());
-			
+
 			//get values from article object
 			String id = article.getArticleId().getId();
 
 //			System.out.println("ID ADDED:");
 //			System.out.println(id);
-			
+
 			//get() executes and gets the response
 			IndexResponse indexResponse = client.prepareIndex(index, indexType, id)
 	            .setSource(jsonBuilder()
@@ -197,7 +196,7 @@ System.out.println("888888888888888888888888888888888888888888888888888888888");
 //	        System.out.println("Index: " + _index + " Type: " + _type + " ID: " + _id + " Version: " + _version + " Indexed(t) or Updated(f): " +created);
 	        /*DEBUG*/
 		}
-		
+
 		/*
 		makes sure, that no data is in the node
 		new FlushRequest(): no parameters, so all indices are flushed
@@ -248,7 +247,7 @@ System.out.println("888888888888888888888888888888888888888888888888888888888");
 	 * @exception IOException see {@link #put(Article)}
 	 */
 	public void putMany( List<Article> list ) throws IOException {
-	
+
 		Collection<String> topics = new ArrayList<String>();
 		Collection<String> sources = new ArrayList<String>();
 
@@ -261,7 +260,7 @@ System.out.println("888888888888888888888888888888888888888888888888888888888");
 				sources.add(article.getSource());
 			}
 		}
-		
+
 		System.out.println(Arrays.toString(topics.toArray()));
 		System.out.println(Arrays.toString(sources.toArray()));
 		this.mergeMetaData(topics, MetaDataType.TOPIC);
@@ -279,9 +278,9 @@ System.out.println("888888888888888888888888888888888888888888888888888888888");
 
 
 	private void writeMetaDataToIndex(String encoded, MetaDataType filterType) throws IOException{
-		
+
 		System.out.println("Writing encoded metadata " + filterType.name() + ": " + encoded);
-		
+
 		String id = filterType.name();
 
 		// get() executes and gets the response
