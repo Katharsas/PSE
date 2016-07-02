@@ -11,6 +11,7 @@ export module Ajax {
     //var contextUrl = "http://localhost:8080/CWA/";
 	const urlBase: string = contextUrl + "getArticles/search";
 	const urlBase_metadata: string = contextUrl + "getMetadata";
+	const urlBase_similar: string = contextUrl + "getArticles/similar";
 	const headers = { accept: "application/json,*/*;q=0.8" };
 
 	export function getByQuery(query: String, filters: FilterOptions, skip: number, limit: number): JQueryXHR {
@@ -38,7 +39,7 @@ export module Ajax {
     
     export function getMetadata(): JQueryXHR {
 		let url: string = urlBase_metadata ;
-		// TODO make xhr request, return jqXHR
+		// TODO make xhr request, return jqXHR 
 		
 		let settings = {
 			url: url,
@@ -52,7 +53,21 @@ export module Ajax {
 
 
 	export function getBySimilar(articleId: String, skip: number, limit: number): JQueryXHR {
-		// TODO
-		return null;
+
+        let params: string[] = [];
+		params.push("id=" + articleId);
+		params.push("range=" + skip + "-" + limit);
+
+		let url: string = urlBase_similar + "?" + params.join("&");
+        console.log("__getById__",url);
+
+		let settings = {
+			url: url,
+			headers: headers,
+			processData: false,
+			contentType: false,
+			type: "GET"
+		};
+		return $.ajax(settings);
 	}
 }
