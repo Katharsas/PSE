@@ -56,7 +56,7 @@ public class ElasticSearchReader extends ElasticSearchController
             throw new IndexNotFoundException(searchIndex);
         }
         
-        this.getSimilar( new ArticleId("archive_dev\en\politics\CNNcomTopStories\y2016\m5\d25\RSS-129419294.xml"), 0, 10 );
+        this.getSimilar( new ArticleId("archive_dev\\en\\politics\\CNNcomTopStories\\y2016\\m5\\d25\\RSS-129419294.xml"), 0, 10 );
     }
 
     private boolean doesSearchIndexExist() {
