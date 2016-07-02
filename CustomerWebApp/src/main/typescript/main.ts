@@ -253,7 +253,7 @@
         }
         
         function f_search_similar(el : any){
-            console.log("------similar----k",el);
+            console.log("------similar----",el);
             var id  = el.getAttribute('data-radio-isSelected');
             console.log(id);
         }
@@ -261,7 +261,25 @@
         function f_date_set_range(el : any){
            var days_back_from_now = el.getAttribute('data-date-range-days');
             console.log(days_back_from_now);
+            var date_end = new Date();
+            //var ds = "" + d.toLocaleDateString("en-US");
+            var date_end_str = (date_end.getFullYear() ) + "-" + date_end.getMonth() + "-" + date_end.getDate();
+            ( <any>document.getElementById("date_end") ).value = date_end_str;
+            var date_start = new Date();
+            date_start.setDate(date_start.getDate() - days_back_from_now);
+            //var date_start = date_end - 1;
+            //days_back_from_now
+            var date_start_str = (date_start.getFullYear() ) + "-" + date_start.getMonth() + "-" + date_start.getDate();
+            ( <any>document.getElementById("date_start") ).value = date_start_str;
         }
+        function css_hide(el:any){
+            el.style.display = "none";
+        }
+        function css_show(el:any){
+            el.style.display = "block";
+        }
+        
+        
         
         function f_cache_toggle(el : any){
             console.log("------cache----",el);
@@ -271,6 +289,17 @@
             var pid : any = pe.className;
             console.log(pe);
             console.log(pid);
+            var e_con : any = pe.getElementsByClassName("content")[0];
+            var e_con_cache : any = pe.getElementsByClassName("content_cache")[0];
+            if (e_con_cache.style.display != "block"){
+                css_show(e_con_cache);
+                css_hide(e_con);
+            }else{
+                css_hide(e_con_cache);
+                css_show(e_con);
+            }
+            console.log(e_con);
+            
         }
         
         function process_click_or_enter(ev: any) {
