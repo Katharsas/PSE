@@ -76,9 +76,13 @@
             root.appendChild(content);
             var content_cache = createElem("div", "content_cache");
             addText(content_cache, article.extractedText);
-
+            var br_tag = createElem("br","nothing_special");
+            content_cache.appendChild(br_tag);
+            var br_tag = createElem("br","nothing_special");
+            content_cache.appendChild(br_tag);
+            
+            addText(content_cache, article.source);
             root.appendChild(content_cache);
-
 
             var author = createElem("div", "author");
             addText(author, article.author);

@@ -1,7 +1,26 @@
-    /*
+    /* 
      *@auhor jmothes
      */
 
+  // util function for clean 
+  function pad(n : string, width : number ) {
+  //var z = z || '0';
+  var z = '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+     
+ // __filter__ from=1980-01-01&to=2020-01-01
+ // __filter__ from=2015-8-7&to=2016-6-3
+ function clean(date : string){
+    var parts = date.split("-");
+    parts[0] = pad( parts[0], 4 );
+    parts[1] = pad( parts[1], 2 );
+    parts[2] = pad( parts[2], 2 );
+    //return "1980-01-01";
+    return parts.join("-");
+ }
+     
 export class FilterOptions {
 
 	topics: string[] = [];
@@ -20,8 +39,14 @@ export class FilterOptions {
 
 		if (this.topics.length !== 0) params.push("topics=" + this.concatMultiParam(this.topics));
 		if (this.sources.length !== 0) params.push("sources=" + this.concatMultiParam(this.sources));
-		if (this.fromDate !== null) params.push("from=" + this.fromDate);
-		if (this.toDate !== null) params.push("to=" + this.toDate);
+		if (this.fromDate !== null) {
+            this.fromDate = clean(this.fromDate);
+            params.push("from=" + this.fromDate);
+        }
+		if (this.toDate !== null) {
+            this.toDate = clean(this.toDate);
+            params.push("to=" + this.toDate);
+        }
 
 		return params.join("&");
 	}

@@ -132,14 +132,14 @@ $line_height_gap:1.5em;
       */
    }
    
-   #container_top div.filter_settings div.select_topic{
+   #container_top div.filter_settings div.select_topic, #container_top div.filter_settings div.select_source{
       margin-top: 2rem;
-      min-height: 8rem;
+      min-height: 3rem;
       background: grey;
       background:none;
       padding-left:0.5rem;
    }
-   #container_top div.filter_settings div.select_topic ul{
+   #container_top div.filter_settings div.select_topic ul,#container_top div.filter_settings div.select_source ul{
       margin-top: 4rem;
       background:white;
       background:none;
@@ -151,7 +151,29 @@ $line_height_gap:1.5em;
    #container_top div.filter_settings div.select_topic ul a, #container_top div.filter_settings div.select_topic ul a:visited{
         color:white;
    }
-   #container_top div.filter_settings div.select_topic ul li{
+   #container_top div.filter_settings div.select_source ul a, #container_top div.filter_settings div.select_source ul a:visited{
+        color:orange;
+   }
+   
+   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=false] li{
+        background:none !important;
+   }
+   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=true] li{
+        background:#666 !important;
+   }
+   #container_top div.filter_settings div.select_source ul a[data-filter-selected=false] li{
+        background:none !important;
+   }
+   #container_top div.filter_settings div.select_source ul a[data-filter-selected=true] li{
+        background:#666 !important;
+   }
+   
+   
+    /*
+    li[data-radio-group=group_2]{
+    li[data-filter-selected=false]{
+   */
+   #container_top div.filter_settings div.select_topic ul li, #container_top div.filter_settings div.select_source ul li{
       white-space:nowrap;
       background: silver;
       background: none;
@@ -175,7 +197,7 @@ $line_height_gap:1.5em;
       border-radius: 0.8rem;
       /*
       /*padding: 0.4rem 0.8rem; /
-      /*padding: 0.8rem 0.7rem; /
+      /*padding: 0.8rem 0.7rem;  /
       */
    }
 
@@ -252,6 +274,8 @@ $line_height_gap:1.5em;
       background:#ddd;
       background: #22354C;
       color:#eee;
+      /* dissable for debugging, else bug */
+      display:none;
    }
    #js_log{
       line-height:1.4;

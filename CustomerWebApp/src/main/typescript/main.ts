@@ -88,22 +88,25 @@
     
     function set_metaData(result: MetadataResult) {
         var topic_set: any = [];
+        var source_set: any = [];
         //topic_set = ["topic 1", "topic 2", "topic 3"];
-
+        console.log ("---now---",result.sources);
         topic_set = result.topics;
+        source_set = result.sources;
 
         var topic_list = document.getElementById("select_topic_list");
         // check length 
-        var children = topic_list.getElementsByTagName("li");
+        //var children = topic_list.getElementsByTagName("li");
         //if children.lenght
         
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
             var a = (<any> document.createElement('a'));
-            a.href = "#set_filter"; // topics this, add to at
+            a.href = "#toggle_filter"; // topics this, add to at
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-filter-name', topicName);
             a.setAttribute('data-filter-type', "topic");
+            a.setAttribute('data-filter-selected', false);
             a.onclick = process_click_or_enter;
             var el = (<Element> document.createElement('li'));
             var text_node = document.createTextNode(topicName);
@@ -111,6 +114,31 @@
             a.appendChild(el);
             topic_list.appendChild(a);
         }  
+        
+        var source_list = document.getElementById("select_source_list");
+        // check length 
+        //var children_source = source_list.getElementsByTagName("li");
+        //if children.lenght
+        
+        for (var i = 0; i < source_set.length; i++) {
+            var sourceName = source_set[i];
+            var a = (<any> document.createElement('a'));
+            a.href = "#toggle_filter"; // sources this, add to at
+            //a.href = "#similar_id_" + article.articleId_str; //1123243
+            a.setAttribute('data-filter-name', sourceName);
+            a.setAttribute('data-filter-type', "source");
+            a.setAttribute('data-filter-selected', false);
+            a.onclick = process_click_or_enter;
+            var el = (<Element> document.createElement('li'));
+            var text_node = document.createTextNode(sourceName);
+            el.appendChild(text_node);
+            a.appendChild(el);
+            source_list.appendChild(a);
+        }  
+        
+        
+        
+        
     }
     
     // Loads metadata
@@ -124,6 +152,9 @@
                 } else {
                     console.log(cs_log_ajax_hint_1, "New topics received:");
                     console.log(cs_log_ajax_hint_1, result.topics);//.articles);
+                    console.log(cs_log_ajax_hint_1, "New sources received:");
+                    console.log(cs_log_ajax_hint_1, result.sources);//.articles);
+                    
                     set_metaData(result);
                     //return result; //bug asynchronuos !!
                 }
@@ -134,16 +165,16 @@
     }
     
     
-        
+        /*
         var list = document.getElementById("result_sample_list");
         list.innerHTML = "";
         var sample = document.getElementById("result_sample");
-
 
         for (var i = 0; i < 0; i++) { //bug
             var el = sample.cloneNode(true); // bug overwritten by ts
             list.appendChild(el);
         }
+        */
          
         function element_set_display(id: string, val: string) {
             var el = (<any> document.getElementById(id));
@@ -209,10 +240,44 @@
             var keywords = fld;
             conn.post(keywords);
         }
+        
+        function util_empty_node(myNode : Node){
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+        }
 
-        function f_search_keywords(el: any) {
+        function f_search_keywords() {
             console.log("--------------search_demo----------");
-           // on_load(); // bug todo ,
+            // on_load(); // bug todo , <- done
+               
+            var cs_log_ajax_hint = "___ajax___ ";
+            var keywords = (<any>document.getElementById("fld_search")).value;
+            console.log("_k_keyword__" + "-" + keywords + "-");
+
+            Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
+                .done(function(result: ArticleResult) {
+                    if (result.errorMessage !== null) {
+                        console.log(cs_log_ajax_hint, result.errorMessage);
+                    } else {
+                        console.log(cs_log_ajax_hint, "Articles received:");
+                        var list = <Node> document.getElementById("result_sample_list");
+                        util_empty_node(list);
+                        for (let article of result.articles) {
+                            console.log(cs_log_ajax_hint, article);
+                            console.log(article.author);
+                            //var sample = (<Node> document.getElementById("result_sample") );
+                            console.log(list);
+                            HtmlBuilder.buildArticle(article, list);
+                        }
+                    }
+                })
+                .fail(function() {
+                    console.log(cs_log_ajax_hint, "Sending request failed!");
+                });
+
+           
+           
         }
 
         function f_search_filter(el: any) { // bug key not used
@@ -254,13 +319,114 @@
         
         function f_search_similar(el : any){
             console.log("------similar----",el);
-            var id  = el.getAttribute('data-radio-isSelected');
-            console.log(id);
+            var articleId  = el.getAttribute('data-articleId');
+            console.log(articleId);
+  
+            var cs_log_ajax_hint = "___similar___";
+            
+               Ajax.getBySimilar(articleId, 0, 10)
+                   .done(function(result: ArticleResult) {
+                    if (result.errorMessage !== null) {
+                        console.log(cs_log_ajax_hint, result.errorMessage);
+                    } else {
+                        console.log(cs_log_ajax_hint, "Articles received:");
+                        var list = <Node> document.getElementById("result_sample_list");
+                        util_empty_node(list);
+                        for (let article of result.articles) {
+                            console.log(cs_log_ajax_hint, article);
+                            console.log(article.author);
+                            //var sample = (<Node> document.getElementById("result_sample") );
+                            console.log(list);
+                            HtmlBuilder.buildArticle(article, list);
+                        }
+                    }
+                })
+                .fail(function() {
+                    console.log(cs_log_ajax_hint, "Sending request failed!");
+                });
+           
         }
         
         function f_date_set_range(el : any){
            var days_back_from_now = el.getAttribute('data-date-range-days');
             console.log(days_back_from_now);
+            var date_end = new Date();
+            //var ds = "" + d.toLocaleDateString("en-US");
+            var date_end_str = (date_end.getFullYear() ) + "-" + date_end.getMonth() + "-" + date_end.getDate();
+            ( <any>document.getElementById("date_end") ).value = date_end_str;
+            global_filterOptions.toDate = date_end_str;
+            var date_start = new Date();
+            date_start.setDate(date_start.getDate() - days_back_from_now);
+            //var date_start = date_end - 1;
+            //days_back_from_now
+            var date_start_str = (date_start.getFullYear() ) + "-" + date_start.getMonth() + "-" + date_start.getDate();
+            ( <any>document.getElementById("date_start") ).value = date_start_str;
+            global_filterOptions.fromDate = date_start_str;
+        }
+        function css_hide(el:any){
+            el.style.display = "none";
+        }
+        function css_show(el:any){
+            el.style.display = "block";
+        }
+        
+               
+        function f_toggle_filter(el:any){
+            console.log(el);
+            
+            console.log("------filter----",el);
+            var type  = el.getAttribute('data-filter-type');
+            var name  = el.getAttribute('data-filter-name');
+            var isSelected  = el.getAttribute('data-filter-selected');
+            var isSelected_pre = el.getAttribute('data-filter-selected');
+            var filter : any;
+            
+            if (type == "topic"){
+                filter = global_filterOptions.topics;
+            }else{
+                filter = global_filterOptions.sources;
+            }
+            if (isSelected==="true"){
+                el.setAttribute('data-filter-selected', "false");
+                var index = filter.indexOf(name);
+                
+                //bug ??
+                if ( index!==(-1) ){
+                    filter.splice(index, 1); 
+                }
+
+            }else{
+                el.setAttribute('data-filter-selected', "true");
+                filter.push(name);
+            }
+            console.log(name);
+            console.log(type);
+            //console.log("__filter__contenet__", global_filterOptions.topics);
+            //console.log("__filter__contenet__", global_filterOptions.sources);
+            console.log("__filter__is________", isSelected);
+            console.log("__filter__is__pre___", isSelected_pre);
+            console.log("__filter__is________", filter);
+        }
+        
+        function f_cache_toggle(el : any){
+            console.log("------cache----",el);
+            var id  = el.getAttribute('data-articleId');
+            console.log(id);
+            var pe : any = el.parentElement.parentElement.parentElement;
+            var pid : any = pe.className;
+            console.log(pe);
+            console.log(pid);
+            var e_con : any = pe.getElementsByClassName("content")[0];
+            var e_con_cache : any = pe.getElementsByClassName("content_cache")[0];
+            if (e_con_cache.style.display != "block"){
+                css_show(e_con_cache);
+                css_hide(e_con);
+            }else{
+                css_hide(e_con_cache);
+                css_show(e_con);
+            }
+            console.log(e_con);
+            
         }
         
         function f_cache_toggle(el : any){
@@ -275,7 +441,7 @@
         
         function process_click_or_enter(ev: any) {
             console.log(ev);
-            el = this;
+            var el = this;
 
             // bad gives full href with link //var href = el.href; 
             // nice, gives raw href, from element only ( e.g. #search_filter, instead of www.google.com/#seach_filter)
@@ -295,10 +461,13 @@
                     f_search_filter(el);
                     break;
                 case "search_keywords":
-                    f_search_keywords(el);
+                    f_search_keywords();
                     break;
                 case "search_similar":
                     f_search_similar(el);
+                    break;
+                case "toggle_filter":
+                    f_toggle_filter(el);
                     break;
                 case "date_set_range":
                     f_date_set_range(el);
@@ -315,86 +484,66 @@
             // cs.log("# selection was - " + href);  // console.log("href", href);  // console.log(el);   //cs.log(el.getAttribute("href"));
         }
         
-        
-    
 
+    
+    
+    
+    // intervall onClick processing
+    
+    function add_anchor_tags_to_onClick_processing(){
+        //repeat this each 0.25 second !! bug todo refac
+        var col_a = (<any> document.getElementsByTagName("A"));
+        //var list_a = Array.prototype.slice.call( col_a, 0 );
+        var list_a: any = [];
+        for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
+        //console.log("li", list_a); //console.log("li", col_a.length);
+
+        for (var i = 0; i < col_a.length; i++) { // if you have named properties
+            var anch = list_a[i]; // (<any> x);
+            anch.onclick = process_click_or_enter;
+            //anch.addEventListener("click", process_click_or_enter, false); 
+        }
+        var d_start : any = document.getElementById("date_start");
+        d_start.onchange = d_start_change;
+        var d_end : any = document.getElementById("date_end");
+        d_end.onchange = d_end_change;
+        
+    }
+    
+    // function set_global_filterOptions_fromDate(d:string){
+        // //global_filterOptions.fromDate = d;
+        // //bug
+    // }
+    
+    function d_start_change(){
+        var date_start = ( <any>document.getElementById("date_start") ).value;
+        global_filterOptions.fromDate = date_start;
+        console.log("click date start");
+    }
+    function d_end_change(){
+        var date_end = ( <any>document.getElementById("date_end") ).value;
+        global_filterOptions.toDate = date_end;
+        console.log("click date end");
+    }
+    
+    
     function on_load() {
     
-        // todo search more button !!
-        // todo doku, js mini klassendiagramm 
-          
-        // load mataData (sources, and topics) bug todo sources 
         ini_set_metaData();
+        // add source 
         
-        setInterval(function(){ add_anchor_tags_to_onClick_processing(); }, 500);
-
         global_filterOptions = new FilterOptions();
-        var cs_log_ajax_hint = "___ajax___ ";
-        //global_filterOptions.topics.push("Politics");
+
+        //global_filterOptions.topics.push("politics");
+        //global_filterOptions.topics.push("business");
         //global_filterOptions.sources.push("cnn");
         //global_filterOptions.toDate = "2016-12-25";
         //global_filterOptions.fromDate = "2000-12-25";
-       
-        var keywords = (<any>document.getElementById("fld_search")).value;
-        console.log("_k_keyword__" + "-" + keywords + "-");
-       
-       // bug as function abkapseln
-       
-       Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
-            .done(function(result: ArticleResult) {
-                if (result.errorMessage !== null) {
-                    console.log(cs_log_ajax_hint, result.errorMessage);
-                } else {
-                    console.log(cs_log_ajax_hint, "Articles received:");
-                    for (let article of result.articles) {
-                        console.log(cs_log_ajax_hint, article);
-                        console.log(article.author);
-
-                        var list = <Node> document.getElementById("result_sample_list");
-                        //var sample = (<Node> document.getElementById("result_sample") );
-                        console.log(list);
-                        HtmlBuilder.buildArticle(article, list);
-                    }
-                }
-            })
-            .fail(function() {
-                console.log(cs_log_ajax_hint, "Sending request failed!");
-            });
         
-        function add_anchor_tags_to_onClick_processing(){
-            //repeat this each 0.25 second !! bug todo refac
-            var col_a = (<any> document.getElementsByTagName("A"));
-            //var list_a = Array.prototype.slice.call( col_a, 0 );
-            var list_a: any = [];
-            for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
-            //console.log("li", list_a);
-            //console.log("li", col_a.length);
-
-            for (var i = 0; i < col_a.length; i++) { // if you have named properties
-                var anch = list_a[i]; // (<any> x);
-                // todo bug, refac, check if class is normal link, then dont add any special onclick handling
-                //console.log("i", anch);
-                //var anch = (<any> list_a[i]  );
-                
-                // bug todo refac bad important
-                anch.onclick = process_click_or_enter;
-                //anch.addEventListener("click", process_click_or_enter, false); 
-                
-                
-                /*function(){/* some code * /
-                   ( anch );
-                }
-                // Need this for IE, Chrome ?
-                /* 
-                anch.onkeypress=function(e){ //ie ??
-                   if(e.which == 13){//Enter key pressed
-                      process_click_or_enter( anch );
-                   }
-                }
-                */
-
-            }
-        }
+        setInterval(function(){ add_anchor_tags_to_onClick_processing(); }, 500);
+        
+        f_search_keywords();
+       
     }
           
           
@@ -428,6 +577,11 @@
 
           apply filter
        
+        // todo search more button !!
+        // todo doku, js mini klassendiagramm 
+          
+        // load mataData (sources, and topics) bug todo sources 
+        
        */
        
        

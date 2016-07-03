@@ -40,7 +40,7 @@
             </a>
             
             <!--
-                Advanced Search
+                Advanced Search 
             <input id="btn_search" class="login_submit" type="submit" value="Search">
             </input>
             --> 
@@ -51,28 +51,19 @@
                     <ul id="select_topic_list">
                     </ul>
                 </div>
-                <script>
-                     function date_was_changed(type){
-                        var el = document.getElementById("date_"+type);
+                <div class="select_source">
+                    <ul id="select_source_list">
+                    </ul>
+                </div>
 
-                        var date = el.value;
-                        if (type == "start"){
-                            console.log("change start date", date);
-                        }
-                        if (type == "end"){
-                            console.log("change start end ", date);
-                        }
-                    }
-                </script>
-                
                 <div class="select_date date_pick">
                     <table>
                         <tr>
-                            <td><input id="date_start" onblur="date_was_changed('start')" type="date" value="2016-03-01" style="color:white;"/>
+                            <td><input id="date_start" onchange="date_was_changed('start')" type="date" value="1980-01-01" style="color:white;"/>
                             </td>
                             <td>&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;
                             </td>
-                            <td><input id="date_end" onblur="date_was_changed('end')" type="date"    value="2016-03-10" style="color:white;"/>
+                            <td><input id="date_end" onchange="date_was_changed('end')" type="date"    value="2020-01-01" style="color:white;"/>
                             </td>
                         </tr>
                     </table>
