@@ -139,7 +139,7 @@
         list.innerHTML = "";
         var sample = document.getElementById("result_sample");
 
-        
+
         for (var i = 0; i < 0; i++) { //bug
             var el = sample.cloneNode(true); // bug overwritten by ts
             list.appendChild(el);
@@ -256,7 +256,7 @@
             console.log("------similar----",el);
             var articleId  = el.getAttribute('data-articleId');
             console.log(articleId);
-              /*  
+  
             var list = document.getElementById("result_sample_list");
             list.innerHTML = "";
             var sample = document.getElementById("result_sample");
@@ -283,8 +283,6 @@
                     .fail(function() {
                         console.log(cs_log_ajax_hint, "Sending request failed!");
                     });
-                
-                */
         }
         
         function f_date_set_range(el : any){
