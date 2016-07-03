@@ -96,7 +96,7 @@
 
         var topic_list = document.getElementById("select_topic_list");
         // check length 
-        var children = topic_list.getElementsByTagName("li");
+        //var children = topic_list.getElementsByTagName("li");
         //if children.lenght
         
         for (var i = 0; i < topic_set.length; i++) {
@@ -106,6 +106,7 @@
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-filter-name', topicName);
             a.setAttribute('data-filter-type', "topic");
+            a.setAttribute('data-filter-selected', false);
             a.onclick = process_click_or_enter;
             var el = (<Element> document.createElement('li'));
             var text_node = document.createTextNode(topicName);
@@ -113,6 +114,28 @@
             a.appendChild(el);
             topic_list.appendChild(a);
         }  
+        
+        var source_list = document.getElementById("select_source_list");
+        // check length 
+        //var children_source = source_list.getElementsByTagName("li");
+        //if children.lenght
+        
+        for (var i = 0; i < source_set.length; i++) {
+            var sourceName = source_set[i];
+            var a = (<any> document.createElement('a'));
+            a.href = "#toggle_filter"; // sources this, add to at
+            //a.href = "#similar_id_" + article.articleId_str; //1123243
+            a.setAttribute('data-filter-name', sourceName);
+            a.setAttribute('data-filter-type', "source");
+            a.onclick = process_click_or_enter;
+            var el = (<Element> document.createElement('li'));
+            var text_node = document.createTextNode(sourceName);
+            el.appendChild(text_node);
+            a.appendChild(el);
+            source_list.appendChild(a);
+        }  
+        
+        
         
         
     }
@@ -128,6 +151,9 @@
                 } else {
                     console.log(cs_log_ajax_hint_1, "New topics received:");
                     console.log(cs_log_ajax_hint_1, result.topics);//.articles);
+                    console.log(cs_log_ajax_hint_1, "New sources received:");
+                    console.log(cs_log_ajax_hint_1, result.sources);//.articles);
+                    
                     set_metaData(result);
                     //return result; //bug asynchronuos !!
                 }
@@ -350,8 +376,32 @@
             console.log("------filter----",el);
             var type  = el.getAttribute('data-filter-type');
             var name  = el.getAttribute('data-filter-name');
+            var isSelected  = el.getAttribute('data-filter-selected');
+            var filter : any;
+            
+            if (type == "topic"){
+                filter = global_filterOptions.topics;
+            }else{
+                filter = global_filterOptions.sources;
+            }
+            if (isSelected){
+                var index = filter.indexOf(name);
+                
+                //bug ??
+                if ( index!==(-1) ){
+                    filter.splice(index, 1); 
+                }
+
+                el.setAttribute('data-filter-selected', false);
+            }else{
+                filter.push(name);
+                el.setAttribute('data-filter-selected', true);
+            }
             console.log(name);
             console.log(type);
+            console.log("__filter__contenet__", global_filterOptions.topics);
+            console.log("__filter__contenet__", global_filterOptions.sources);
+            console.log("__filter__is________", isSelected);
         }
         
         function f_cache_toggle(el : any){

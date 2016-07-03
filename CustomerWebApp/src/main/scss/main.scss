@@ -155,6 +155,17 @@ $line_height_gap:1.5em;
         color:orange;
    }
    
+   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=false]{
+        color:grey !important;
+   }
+   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=true]{
+        color:blue !important;
+   }
+   
+    /*
+    li[data-radio-group=group_2]{
+    li[data-filter-selected=false]{
+   */
    #container_top div.filter_settings div.select_topic ul li, #container_top div.filter_settings div.select_source ul li{
       white-space:nowrap;
       background: silver;
