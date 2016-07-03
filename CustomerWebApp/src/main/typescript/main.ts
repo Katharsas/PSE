@@ -384,7 +384,7 @@
             }else{
                 filter = global_filterOptions.sources;
             }
-            if (isSelected){
+            if (isSelected==true){
                 var index = filter.indexOf(name);
                 
                 //bug ??
@@ -402,6 +402,7 @@
             console.log("__filter__contenet__", global_filterOptions.topics);
             console.log("__filter__contenet__", global_filterOptions.sources);
             console.log("__filter__is________", isSelected);
+            console.log("__filter__is________", filter);
         }
         
         function f_cache_toggle(el : any){
