@@ -155,12 +155,19 @@ $line_height_gap:1.5em;
         color:orange;
    }
    
-   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=false]{
-        color:grey !important;
+   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=false] li{
+        background:none !important;
    }
-   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=true]{
-        color:blue !important;
+   #container_top div.filter_settings div.select_topic ul a[data-filter-selected=true] li{
+        background:#666 !important;
    }
+   #container_top div.filter_settings div.select_source ul a[data-filter-selected=false] li{
+        background:none !important;
+   }
+   #container_top div.filter_settings div.select_source ul a[data-filter-selected=true] li{
+        background:#666 !important;
+   }
+   
    
     /*
     li[data-radio-group=group_2]{

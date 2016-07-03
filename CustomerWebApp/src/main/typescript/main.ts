@@ -127,6 +127,7 @@
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-filter-name', sourceName);
             a.setAttribute('data-filter-type', "source");
+            a.setAttribute('data-filter-selected', false);
             a.onclick = process_click_or_enter;
             var el = (<Element> document.createElement('li'));
             var text_node = document.createTextNode(sourceName);
@@ -377,6 +378,7 @@
             var type  = el.getAttribute('data-filter-type');
             var name  = el.getAttribute('data-filter-name');
             var isSelected  = el.getAttribute('data-filter-selected');
+            var isSelected_pre = el.getAttribute('data-filter-selected');
             var filter : any;
             
             if (type == "topic"){
@@ -384,7 +386,8 @@
             }else{
                 filter = global_filterOptions.sources;
             }
-            if (isSelected==true){
+            if (isSelected==="true"){
+                el.setAttribute('data-filter-selected', "false");
                 var index = filter.indexOf(name);
                 
                 //bug ??
@@ -392,16 +395,16 @@
                     filter.splice(index, 1); 
                 }
 
-                el.setAttribute('data-filter-selected', false);
             }else{
+                el.setAttribute('data-filter-selected', "true");
                 filter.push(name);
-                el.setAttribute('data-filter-selected', true);
             }
             console.log(name);
             console.log(type);
-            console.log("__filter__contenet__", global_filterOptions.topics);
-            console.log("__filter__contenet__", global_filterOptions.sources);
+            //console.log("__filter__contenet__", global_filterOptions.topics);
+            //console.log("__filter__contenet__", global_filterOptions.sources);
             console.log("__filter__is________", isSelected);
+            console.log("__filter__is__pre___", isSelected_pre);
             console.log("__filter__is________", filter);
         }
         
