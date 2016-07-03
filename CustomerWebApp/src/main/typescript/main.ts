@@ -209,10 +209,44 @@
             var keywords = fld;
             conn.post(keywords);
         }
+        
+        function util_empty_node(myNode : Node){
+            while (myNode.firstChild) {
+                myNode.removeChild(myNode.firstChild);
+            }
+        }
 
-        function f_search_keywords(el: any) {
+        function f_search_keywords() {
             console.log("--------------search_demo----------");
-           // on_load(); // bug todo ,
+            // on_load(); // bug todo , <- done
+               
+            var cs_log_ajax_hint = "___ajax___ ";
+            var keywords = (<any>document.getElementById("fld_search")).value;
+            console.log("_k_keyword__" + "-" + keywords + "-");
+
+            Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
+                .done(function(result: ArticleResult) {
+                    if (result.errorMessage !== null) {
+                        console.log(cs_log_ajax_hint, result.errorMessage);
+                    } else {
+                        console.log(cs_log_ajax_hint, "Articles received:");
+                        var list = <Node> document.getElementById("result_sample_list");
+                        util_empty_node(list);
+                        for (let article of result.articles) {
+                            console.log(cs_log_ajax_hint, article);
+                            console.log(article.author);
+                            //var sample = (<Node> document.getElementById("result_sample") );
+                            console.log(list);
+                            HtmlBuilder.buildArticle(article, list);
+                        }
+                    }
+                })
+                .fail(function() {
+                    console.log(cs_log_ajax_hint, "Sending request failed!");
+                });
+
+           
+           
         }
 
         function f_search_filter(el: any) { // bug key not used
@@ -257,32 +291,30 @@
             var articleId  = el.getAttribute('data-articleId');
             console.log(articleId);
   
-            var list = document.getElementById("result_sample_list");
-            list.innerHTML = "";
-            var sample = document.getElementById("result_sample");
-            
             var cs_log_ajax_hint = "___similar___";
             
                Ajax.getBySimilar(articleId, 0, 10)
-                    .done(function(result: ArticleResult) {
-                        if (result.errorMessage !== null) {
-                            console.log(cs_log_ajax_hint, result.errorMessage);
-                        } else {
-                            console.log(cs_log_ajax_hint, "Articles received:");
-                            for (let article of result.articles) {
-                                console.log(cs_log_ajax_hint, article);
-                                console.log(article.author);
-
-                                var list = <Node> document.getElementById("result_sample_list");
-                                //var sample = (<Node> document.getElementById("result_sample") );
-                                console.log(list);
-                                HtmlBuilder.buildArticle(article, list);
-                            }
+                   .done(function(result: ArticleResult) {
+                    if (result.errorMessage !== null) {
+                        console.log(cs_log_ajax_hint, result.errorMessage);
+                    } else {
+                        console.log(cs_log_ajax_hint, "Articles received:");
+                        var list = <Node> document.getElementById("result_sample_list");
+                        util_empty_node(list);
+                        for (let article of result.articles) {
+                            console.log(cs_log_ajax_hint, article);
+                            console.log(article.author);
+                            //var sample = (<Node> document.getElementById("result_sample") );
+                            console.log(list);
+                            HtmlBuilder.buildArticle(article, list);
                         }
-                    })
-                    .fail(function() {
-                        console.log(cs_log_ajax_hint, "Sending request failed!");
-                    });
+                    }
+                })
+                .fail(function() {
+                    console.log(cs_log_ajax_hint, "Sending request failed!");
+                });
+
+           
         }
         
         function f_date_set_range(el : any){
@@ -360,7 +392,7 @@
                     f_search_filter(el);
                     break;
                 case "search_keywords":
-                    f_search_keywords(el);
+                    f_search_keywords();
                     break;
                 case "search_similar":
                     f_search_similar(el);
@@ -383,86 +415,49 @@
             // cs.log("# selection was - " + href);  // console.log("href", href);  // console.log(el);   //cs.log(el.getAttribute("href"));
         }
         
-        
-    
 
+    
+    
+    
+    // intervall onClick processing
+    
+    function add_anchor_tags_to_onClick_processing(){
+        //repeat this each 0.25 second !! bug todo refac
+        var col_a = (<any> document.getElementsByTagName("A"));
+        //var list_a = Array.prototype.slice.call( col_a, 0 );
+        var list_a: any = [];
+        for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
+        //console.log("li", list_a); //console.log("li", col_a.length);
+
+        for (var i = 0; i < col_a.length; i++) { // if you have named properties
+            var anch = list_a[i]; // (<any> x);
+            anch.onclick = process_click_or_enter;
+            //anch.addEventListener("click", process_click_or_enter, false); 
+        }
+    }
+    
+    function set_global_filterOptions_fromDate(d:string){
+        //global_filterOptions.fromDate = d;
+        //bug
+    }
+    
     function on_load() {
     
-        // todo search more button !!
-        // todo doku, js mini klassendiagramm 
-          
-        // load mataData (sources, and topics) bug todo sources 
         ini_set_metaData();
+        // add source 
         
-        setInterval(function(){ add_anchor_tags_to_onClick_processing(); }, 500);
-
         global_filterOptions = new FilterOptions();
-        var cs_log_ajax_hint = "___ajax___ ";
-        //global_filterOptions.topics.push("Politics");
+
+        //global_filterOptions.topics.push("politics");
+        //global_filterOptions.topics.push("business");
         //global_filterOptions.sources.push("cnn");
         //global_filterOptions.toDate = "2016-12-25";
         //global_filterOptions.fromDate = "2000-12-25";
-       
-        var keywords = (<any>document.getElementById("fld_search")).value;
-        console.log("_k_keyword__" + "-" + keywords + "-");
-       
-       // bug as function abkapseln
-       
-       Ajax.getByQuery(keywords, global_filterOptions, 0, 10)
-            .done(function(result: ArticleResult) {
-                if (result.errorMessage !== null) {
-                    console.log(cs_log_ajax_hint, result.errorMessage);
-                } else {
-                    console.log(cs_log_ajax_hint, "Articles received:");
-                    for (let article of result.articles) {
-                        console.log(cs_log_ajax_hint, article);
-                        console.log(article.author);
-
-                        var list = <Node> document.getElementById("result_sample_list");
-                        //var sample = (<Node> document.getElementById("result_sample") );
-                        console.log(list);
-                        HtmlBuilder.buildArticle(article, list);
-                    }
-                }
-            })
-            .fail(function() {
-                console.log(cs_log_ajax_hint, "Sending request failed!");
-            });
         
-        function add_anchor_tags_to_onClick_processing(){
-            //repeat this each 0.25 second !! bug todo refac
-            var col_a = (<any> document.getElementsByTagName("A"));
-            //var list_a = Array.prototype.slice.call( col_a, 0 );
-            var list_a: any = [];
-            for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
-            //console.log("li", list_a);
-            //console.log("li", col_a.length);
-
-            for (var i = 0; i < col_a.length; i++) { // if you have named properties
-                var anch = list_a[i]; // (<any> x);
-                // todo bug, refac, check if class is normal link, then dont add any special onclick handling
-                //console.log("i", anch);
-                //var anch = (<any> list_a[i]  );
-                
-                // bug todo refac bad important
-                anch.onclick = process_click_or_enter;
-                //anch.addEventListener("click", process_click_or_enter, false); 
-                
-                
-                /*function(){/* some code * /
-                   ( anch );
-                }
-                // Need this for IE, Chrome ?
-                /* 
-                anch.onkeypress=function(e){ //ie ??
-                   if(e.which == 13){//Enter key pressed
-                      process_click_or_enter( anch );
-                   }
-                }
-                */
-
-            }
-        }
+        setInterval(function(){ add_anchor_tags_to_onClick_processing(); }, 500);
+        
+        f_search_keywords();
+       
     }
           
           
@@ -496,6 +491,11 @@
 
           apply filter
        
+        // todo search more button !!
+        // todo doku, js mini klassendiagramm 
+          
+        // load mataData (sources, and topics) bug todo sources 
+        
        */
        
        

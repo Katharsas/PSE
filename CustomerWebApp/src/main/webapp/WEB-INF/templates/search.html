@@ -58,9 +58,12 @@
                         var date = el.value;
                         if (type == "start"){
                             console.log("change start date", date);
+                            set_global_filterOptions_fromDate(date);
+                            //global_filterOptions.fromDate = date;
                         }
                         if (type == "end"){
                             console.log("change start end ", date);
+                            //global_filterOptions.toDate = date;
                         }
                     }
                 </script>
@@ -68,11 +71,11 @@
                 <div class="select_date date_pick">
                     <table>
                         <tr>
-                            <td><input id="date_start" onblur="date_was_changed('start')" type="date" value="1980-01-01" style="color:white;"/>
+                            <td><input id="date_start" onchange="date_was_changed('start')" type="date" value="1980-01-01" style="color:white;"/>
                             </td>
                             <td>&nbsp;&nbsp;&nbsp; to &nbsp;&nbsp;&nbsp;
                             </td>
-                            <td><input id="date_end" onblur="date_was_changed('end')" type="date"    value="2020-01-01" style="color:white;"/>
+                            <td><input id="date_end" onchange="date_was_changed('end')" type="date"    value="2020-01-01" style="color:white;"/>
                             </td>
                         </tr>
                     </table>
