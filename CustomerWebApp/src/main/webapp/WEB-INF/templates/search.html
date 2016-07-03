@@ -51,23 +51,7 @@
                     <ul id="select_topic_list">
                     </ul>
                 </div>
-                <script>
-                     function date_was_changed(type){
-                        var el = document.getElementById("date_"+type);
 
-                        var date = el.value;
-                        if (type == "start"){
-                            console.log("change start date", date);
-                            set_global_filterOptions_fromDate(date);
-                            //global_filterOptions.fromDate = date;
-                        }
-                        if (type == "end"){
-                            console.log("change start end ", date);
-                            //global_filterOptions.toDate = date;
-                        }
-                    }
-                </script>
-                
                 <div class="select_date date_pick">
                     <table>
                         <tr>

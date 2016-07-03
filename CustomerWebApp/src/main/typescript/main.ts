@@ -313,7 +313,6 @@
                 .fail(function() {
                     console.log(cs_log_ajax_hint, "Sending request failed!");
                 });
-
            
         }
         
@@ -324,12 +323,14 @@
             //var ds = "" + d.toLocaleDateString("en-US");
             var date_end_str = (date_end.getFullYear() ) + "-" + date_end.getMonth() + "-" + date_end.getDate();
             ( <any>document.getElementById("date_end") ).value = date_end_str;
+            global_filterOptions.toDate = date_end_str;
             var date_start = new Date();
             date_start.setDate(date_start.getDate() - days_back_from_now);
             //var date_start = date_end - 1;
             //days_back_from_now
             var date_start_str = (date_start.getFullYear() ) + "-" + date_start.getMonth() + "-" + date_start.getDate();
             ( <any>document.getElementById("date_start") ).value = date_start_str;
+            global_filterOptions.fromDate = date_start_str;
         }
         function css_hide(el:any){
             el.style.display = "none";
@@ -434,12 +435,29 @@
             anch.onclick = process_click_or_enter;
             //anch.addEventListener("click", process_click_or_enter, false); 
         }
+        var d_start : any = document.getElementById("date_start");
+        d_start.onchange = d_start_change;
+        var d_end : any = document.getElementById("date_end");
+        d_end.onchange = d_end_change;
+        
     }
     
-    function set_global_filterOptions_fromDate(d:string){
-        //global_filterOptions.fromDate = d;
-        //bug
+    // function set_global_filterOptions_fromDate(d:string){
+        // //global_filterOptions.fromDate = d;
+        // //bug
+    // }
+    
+    function d_start_change(){
+        var date_start = ( <any>document.getElementById("date_start") ).value;
+        global_filterOptions.fromDate = date_start;
+        console.log("click date start");
     }
+    function d_end_change(){
+        var date_end = ( <any>document.getElementById("date_end") ).value;
+        global_filterOptions.toDate = date_end;
+        console.log("click date end");
+    }
+    
     
     function on_load() {
     
