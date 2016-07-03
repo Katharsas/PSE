@@ -132,14 +132,14 @@ $line_height_gap:1.5em;
       */
    }
    
-   #container_top div.filter_settings div.select_topic{
+   #container_top div.filter_settings div.select_topic, #container_top div.filter_settings div.select_source{
       margin-top: 2rem;
       min-height: 8rem;
       background: grey;
       background:none;
       padding-left:0.5rem;
    }
-   #container_top div.filter_settings div.select_topic ul{
+   #container_top div.filter_settings div.select_topic ul,#container_top div.filter_settings div.select_source ul{
       margin-top: 4rem;
       background:white;
       background:none;
@@ -151,7 +151,11 @@ $line_height_gap:1.5em;
    #container_top div.filter_settings div.select_topic ul a, #container_top div.filter_settings div.select_topic ul a:visited{
         color:white;
    }
-   #container_top div.filter_settings div.select_topic ul li{
+   #container_top div.filter_settings div.select_source ul a, #container_top div.filter_settings div.select_source ul a:visited{
+        color:orange;
+   }
+   
+   #container_top div.filter_settings div.select_topic ul li, #container_top div.filter_settings div.select_source ul li{
       white-space:nowrap;
       background: silver;
       background: none;

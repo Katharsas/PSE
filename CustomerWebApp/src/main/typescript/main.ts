@@ -88,9 +88,11 @@
     
     function set_metaData(result: MetadataResult) {
         var topic_set: any = [];
+        var source_set: any = [];
         //topic_set = ["topic 1", "topic 2", "topic 3"];
-
+        console.log ("---now---",result.sources);
         topic_set = result.topics;
+        source_set = result.sources;
 
         var topic_list = document.getElementById("select_topic_list");
         // check length 
@@ -111,6 +113,8 @@
             a.appendChild(el);
             topic_list.appendChild(a);
         }  
+        
+        
     }
     
     // Loads metadata
