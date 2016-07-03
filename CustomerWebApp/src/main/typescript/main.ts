@@ -134,16 +134,16 @@
     }
     
     
-        
+        /*
         var list = document.getElementById("result_sample_list");
         list.innerHTML = "";
         var sample = document.getElementById("result_sample");
-
 
         for (var i = 0; i < 0; i++) { //bug
             var el = sample.cloneNode(true); // bug overwritten by ts
             list.appendChild(el);
         }
+        */
          
         function element_set_display(id: string, val: string) {
             var el = (<any> document.getElementById(id));
@@ -340,7 +340,7 @@
         
         function process_click_or_enter(ev: any) {
             console.log(ev);
-            el = this;
+            var el = this;
 
             // bad gives full href with link //var href = el.href; 
             // nice, gives raw href, from element only ( e.g. #search_filter, instead of www.google.com/#seach_filter)
