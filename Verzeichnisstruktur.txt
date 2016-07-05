@@ -29,8 +29,8 @@ ConsumerWebApp
                         //  um ein getrenntes Entwickeln von Server und GUI 
                             zu ermöglichen gibt es Mocked-Server Responses,
                             die mit Dummy-Werten gefüllt sind
-                        - MockedArticleProvider - Dummy-Werte für Article
-                        - MockedMetaDataProvider - Dummy-Werte für MetaData
+                        - MockedArticleProvider - Dummy-Werte für Article-Anfrage
+                        - MockedMetaDataProvider - Dummy-Werte für MetaData-Anfrage
                     
                     
 			resources - java server conf (compiled to WEB-INF/classes folder)
