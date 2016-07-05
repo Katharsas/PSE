@@ -1,5 +1,7 @@
 doc
+
 RSSCrawler
+
 ESFeeder
 	archive
 	src
@@ -9,17 +11,56 @@ ESFeeder
 			java
 	doc
 	pom.xml - Maven build Konfigurationsdatei
+    
 ConsumerWebApp
 	src
 		main
-			java - java server code (compiled to WEB-INF/classes folder)
+			java
+                cwa - java server code (compiled to WEB-INF/classes folder)
+                
+                    controller
+                        - FilterSettings.java - Controller for search queries
+                        - SearchController.java - Manager for search query filters
+                    
+                    service 
+                        - ArticleProvider - @Jan
+                        - ElasticSearchReader - @Jan
+                        - MetaDataProvider - @Jan
+                        //  um ein getrenntes Entwickeln von Server und GUI 
+                            zu ermöglichen gibt es Mocked-Server Responses,
+                            die mit Dummy-Werten gefüllt sind
+                        - MockedArticleProvider - Dummy-Werte für Article
+                        - MockedMetaDataProvider - Dummy-Werte für MetaData
+                    
+                    
 			resources - java server conf (compiled to WEB-INF/classes folder)
-			frontend - frontend code (compiled to webapp/resources folder)
+            
+			scss
+                - main.scss - SCSS code für HTML-Layout, wird kompiliert zu CSS
+                
+            typescript
+                - Ajax.ts - ts-Klasse - verwaltet Server Anfragen
+                - FilterOptions.ts - ts-Klasse - verwaltet Filter für SuchAnfragen
+                - HtmlBuilder.ts - ts-Klasse - baut HTML für jeden Article dynamisch auf
+                - main.ts - main-Methode - 
+            
 			webapp
 				web.xml
-				WEB-INF - hidden server files
+                
+                WEB-INF - hidden server files
+                    templates
+                        - search.html - HTML Template der Website
+                    
+                    
 				resources - public server files
+                    css - kompilierte scss files
+                    js - kompilierte ts files
+                    img - Bilder der Website
+                
 		test
 			java
 	doc
 	pom.xml - Maven Konfigurationsdatei
+
+    
+    
