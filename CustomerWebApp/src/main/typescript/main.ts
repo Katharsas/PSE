@@ -1,11 +1,17 @@
     /*
      *@auhor dbeckstein, jfranz
      */
-
+     
+     
+    // Import typescript - classes
+    
     import {Ajax} from "./Ajax";
     import {FilterOptions} from "./FilterOptions";
     import {HtmlBuilder} from "./HtmlBuilder";
 
+    
+    // Create local typescript - classes
+    
     class ArticleResult {
         errorMessage: string;
         articles: any[];
@@ -35,23 +41,24 @@
         }
     };
 
+    // JS-Logger for debugging
+    
     class JsLog {
         constructor() { }
         log(s: string, status_name: string) {
-            //#json?? FF9838
+
             var status = ["err", "msg", "ntf"];
             var status_display = ["Error", "Message", "Notification"];
             var colors = ["FF6159", "FF9F51", "22B8EB", "", ""]; 
-            //             orange  
-            var jl = document.getElementById("js_log"); //in constructor rein
+
+            var jl = document.getElementById("js_log"); 
             var col_id = status.indexOf(status_name);
-            // allert rasie bug , erro rif col_id < 0
+
             var status_display_name = status_display[col_id]
             s = s.replace("\n", "<br>");
             s = status_display_name + "\n\n" + s;
             var txt = s.replace("\n", "<br><br>");
             jl.innerHTML = txt;
-            //jl.parentElement.style.background = "#"+colors[col_id];
             jl.style.borderColor = "#" + colors[col_id];
         }
         get(id: string) {
@@ -59,51 +66,35 @@
         }
     };
 
-    // Excat order of these next commands is important 
+    // Exact order of these next commands is important 
     var cs = new MyConsole();
     var jl = new JsLog();
     var conn = new ServerConnection();
-
+    
     var global_filterOptions: any;
 
+    // Add event listener for DOMContentLoaded event - fires when all pages content is loaded
+    
     document.addEventListener("DOMContentLoaded", function(event) { 
         on_load();
     });
-
-    function search_demo() {
-        console.log("--------------search_demo----------");
-        on_load();
-    }
-        // todo date changed is in html
-        // Listen for changes of date
     
-        // fucntion date
-        
-        // var el_date_start = <any> document.getElementById("date_start");
-        // var el_date_end = <any> document.getElementById("date_end");
-        // el_date_start.onblur = date_was_changed(el_date_start);
-        // el_date_end.onblur = date_was_changed(el_date_end);
-    
-    //Creates list of metadata li elements
+    //Create list of metadata li elements
     
     function set_metaData(result: MetadataResult) {
         var topic_set: any = [];
         var source_set: any = [];
-        //topic_set = ["topic 1", "topic 2", "topic 3"];
+
         console.log ("---now---",result.sources);
         topic_set = result.topics;
         source_set = result.sources;
 
         var topic_list = document.getElementById("select_topic_list");
-        // check length 
-        //var children = topic_list.getElementsByTagName("li");
-        //if children.lenght
-        
+
         for (var i = 0; i < topic_set.length; i++) {
             var topicName = topic_set[i];
             var a = (<any> document.createElement('a'));
-            a.href = "#toggle_filter"; // topics this, add to at
-            //a.href = "#similar_id_" + article.articleId_str; //1123243
+            a.href = "#toggle_filter"; 
             a.setAttribute('data-filter-name', topicName);
             a.setAttribute('data-filter-type', "topic");
             a.setAttribute('data-filter-selected', false);
@@ -116,15 +107,11 @@
         }  
         
         var source_list = document.getElementById("select_source_list");
-        // check length 
-        //var children_source = source_list.getElementsByTagName("li");
-        //if children.lenght
-        
+
         for (var i = 0; i < source_set.length; i++) {
             var sourceName = source_set[i];
             var a = (<any> document.createElement('a'));
-            a.href = "#toggle_filter"; // sources this, add to at
-            //a.href = "#similar_id_" + article.articleId_str; //1123243
+            
             a.setAttribute('data-filter-name', sourceName);
             a.setAttribute('data-filter-type', "source");
             a.setAttribute('data-filter-selected', false);
@@ -135,13 +122,9 @@
             a.appendChild(el);
             source_list.appendChild(a);
         }  
-        
-        
-        
-        
     }
     
-    // Loads metadata
+    // Loads results of metadata-request and displays them as tags
 
     function ini_set_metaData(): any {
         var cs_log_ajax_hint_1 = "____new_ajax____";
@@ -164,18 +147,8 @@
             });
     }
     
+        // GUI functions hide, display multiple elements
     
-        /*
-        var list = document.getElementById("result_sample_list");
-        list.innerHTML = "";
-        var sample = document.getElementById("result_sample");
-
-        for (var i = 0; i < 0; i++) { //bug
-            var el = sample.cloneNode(true); // bug overwritten by ts
-            list.appendChild(el);
-        }
-        */
-         
         function element_set_display(id: string, val: string) {
             var el = (<any> document.getElementById(id));
             el.style.display = val;
@@ -184,7 +157,6 @@
             element_set_display(id, "block");
         }
         function element_hide(id: string) {
-            //check status? raise error if hidden?
             element_set_display(id, "none");
         }
 
@@ -233,6 +205,8 @@
             return bool;
 
         }
+        
+        // Multiple functions trigger on onclick
 
         function f_search_keywords_old(el: any) {
             var fld_search = document.getElementById("fld_search");
@@ -248,8 +222,7 @@
         }
 
         function f_search_keywords() {
-            console.log("--------------search_demo----------");
-            // on_load(); // bug todo , <- done
+            console.log("--------------search----------")
                
             var cs_log_ajax_hint = "___ajax___ ";
             var keywords = (<any>document.getElementById("fld_search")).value;
@@ -266,13 +239,11 @@
                         for (let article of result.articles) {
                             console.log(cs_log_ajax_hint, article);
                             console.log(article.author);
-                            //var sample = (<Node> document.getElementById("result_sample") );
                             console.log(list);
                             HtmlBuilder.buildArticle(article, list);
                         }
                         
                         if (result.articles.length <= 0){
-                            //list.articles();
                             var tmp = (<Node> document.createTextNode("No results found"));
                             list.appendChild(tmp);
                         }
@@ -287,7 +258,7 @@
            
         }
 
-        function f_search_filter(el: any) { // bug key not used
+        function f_search_filter(el: any) { 
             var check = span_hidden_check("filter_settings", "state_show");
             if (check) {
                 element_hide("filter_settings");
@@ -298,18 +269,10 @@
                 span_hidden_create("filter_settings", "state_show");
                 jl.log("Filter \n is opening.", "ntf");
             }
-            //show hide, not toggle !!
         }
         
-        //var date_start = document.getElementById("date_start");
-        //var date_start_str = (<HTMLInputElement> date_start).value.replace(/-/g, "/");
-        //var date_start_date = new Date(date_start_str);
-        //cs.log("" + date_start_date);
-        //cs.log(date_start_date.toString());
-
         function check_url_name(event: any) {
-            //var url_name = window.location;//.pathname;
-            //cs.log(url_name);
+
             var url_hash = window.location.hash;//.pathname;
             console.log(url_hash); // does not work in ie?? !!!
             var key = "search_filter";
@@ -317,11 +280,6 @@
                 f_search_filter(key);
                 cs.log(key);
             }
-            //if #search_filter in url_hash
-            //multiflag_last_hash = search_filter...
-            //show fileter, seach keywords, show cache (grey, blue, black and white, theme all new cache, do post req.)
-            // if keywords, post action = serach subaction = keywords data = keywords array, or cache_id request infos..., 
-            // then show, post update grey are progress bar, filter infos get local storage filters__.., get filters from page? marked (span marke, real value, display...
         }
         
         function f_search_similar(el : any){
@@ -342,12 +300,10 @@
                         for (let article of result.articles) {
                             console.log(cs_log_ajax_hint, article);
                             console.log(article.author);
-                            //var sample = (<Node> document.getElementById("result_sample") );
                             console.log(list);
                             HtmlBuilder.buildArticle(article, list);
                         }
                         if (result.articles.length <= 0){
-                            //list.articles();
                             var tmp = (<Node> document.createTextNode("No results found"));
                             list.appendChild(tmp);
                         }
@@ -363,14 +319,13 @@
            var days_back_from_now = el.getAttribute('data-date-range-days');
             console.log(days_back_from_now);
             var date_end = new Date();
-            //var ds = "" + d.toLocaleDateString("en-US");
+
             var date_end_str = (date_end.getFullYear() ) + "-" + date_end.getMonth() + "-" + date_end.getDate();
             ( <any>document.getElementById("date_end") ).value = date_end_str;
             global_filterOptions.toDate = date_end_str;
             var date_start = new Date();
             date_start.setDate(date_start.getDate() - days_back_from_now);
-            //var date_start = date_end - 1;
-            //days_back_from_now
+
             var date_start_str = (date_start.getFullYear() ) + "-" + date_start.getMonth() + "-" + date_start.getDate();
             ( <any>document.getElementById("date_start") ).value = date_start_str;
             global_filterOptions.fromDate = date_start_str;
@@ -402,7 +357,6 @@
                 el.setAttribute('data-filter-selected', "false");
                 var index = filter.indexOf(name);
                 
-                //bug ??
                 if ( index!==(-1) ){
                     filter.splice(index, 1); 
                 }
@@ -413,8 +367,7 @@
             }
             console.log(name);
             console.log(type);
-            //console.log("__filter__contenet__", global_filterOptions.topics);
-            //console.log("__filter__contenet__", global_filterOptions.sources);
+            
             console.log("__filter__is________", isSelected);
             console.log("__filter__is__pre___", isSelected_pre);
             console.log("__filter__is________", filter);
@@ -454,20 +407,12 @@
         function process_click_or_enter(ev: any) {
             console.log(ev);
             var el = this;
-
-            // bad gives full href with link //var href = el.href; 
-            // nice, gives raw href, from element only ( e.g. #search_filter, instead of www.google.com/#seach_filter)
             var href = (<any>el).getAttribute("href");
             href = href.slice(1);
-            //var key = "search_filter";
-            //key = "#" + key;
-            /*
-            var is_same = (href == key) ;
-            if (is_same){ //url_hash.indexOf("#"+key) == 0
-            }
-            */
+
             console.log("info href swithc--" + href + "--");
             console.log("bool", href == "seach_filter", href, "seach_filter");
+            
             switch (href) {
                 case "search_filter":
                     f_search_filter(el);
@@ -493,27 +438,19 @@
                 // do nothing
             }
 
-            // cs.log("# selection was - " + href);  // console.log("href", href);  // console.log(el);   //cs.log(el.getAttribute("href"));
         }
         
-
-    
-    
-    
     // intervall onClick processing
     
     function add_anchor_tags_to_onClick_processing(){
-        //repeat this each 0.25 second !! bug todo refac
+        //repeat this each 0.500 second
         var col_a = (<any> document.getElementsByTagName("A"));
-        //var list_a = Array.prototype.slice.call( col_a, 0 );
         var list_a: any = [];
         for (var i = 0; i < col_a.length; i++) list_a.push(col_a[i]);
-        //console.log("li", list_a); //console.log("li", col_a.length);
-
-        for (var i = 0; i < col_a.length; i++) { // if you have named properties
-            var anch = list_a[i]; // (<any> x);
+        
+        for (var i = 0; i < col_a.length; i++) { 
+            var anch = list_a[i]; 
             anch.onclick = process_click_or_enter;
-            //anch.addEventListener("click", process_click_or_enter, false); 
         }
         var d_start : any = document.getElementById("date_start");
         d_start.onchange = d_start_change;
@@ -521,11 +458,6 @@
         d_end.onchange = d_end_change;
         
     }
-    
-    // function set_global_filterOptions_fromDate(d:string){
-        // //global_filterOptions.fromDate = d;
-        // //bug
-    // }
     
     function d_start_change(){
         var date_start = ( <any>document.getElementById("date_start") ).value;
@@ -538,19 +470,12 @@
         console.log("click date end");
     }
     
-    
+    // trigger functions on page load
     function on_load() {
     
         ini_set_metaData();
-        // add source 
         
         global_filterOptions = new FilterOptions();
-
-        //global_filterOptions.topics.push("politics");
-        //global_filterOptions.topics.push("business");
-        //global_filterOptions.sources.push("cnn");
-        //global_filterOptions.toDate = "2016-12-25";
-        //global_filterOptions.fromDate = "2000-12-25";
         
         setInterval(function(){ add_anchor_tags_to_onClick_processing(); }, 500);
         
@@ -558,42 +483,3 @@
        
     }
           
-          
-          
-          
-       //window.onload = on_load();
-       
-       //#tsc --watch -p js
-       
-       /*
-          clean up js, ts
-          - on enter search, advanced search
-          - offer date range
-          - offer themes/topics
-          - offer lupe show, use backroung image?? better, because css changebar
-          - onclick a href open cache, search similar (intervall get new url), event new page? onpageload?
-          - on 
-          - send post class, bind clicks ...
-          - Filter by topic, by date
-          - button , banner , progress bar for search, show post info !!
-          - favorite topics in separte/first line (write my favorites= ? or not)
-          
-          - topics ya <a> for keymove
-          - test everything keymove
-          - filter, lupe keymove color
-          
-          - bug add serach button search button
-          
-          - filter add < < ^arrow down dazu aufklapp arrow !!
-          - json to html for result !!
-
-          apply filter
-       
-        // todo search more button !!
-        // todo doku, js mini klassendiagramm 
-          
-        // load mataData (sources, and topics) bug todo sources 
-        
-       */
-       
-       
