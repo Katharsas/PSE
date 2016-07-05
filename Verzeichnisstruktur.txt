@@ -36,15 +36,18 @@ ConsumerWebApp
 			resources - java server conf (compiled to WEB-INF/classes folder)
             
 			scss
+            
                 - main.scss - SCSS code für HTML-Layout, wird kompiliert zu CSS
                 
-            typescript
+            typescript - ein "Java Script Dialekt" mit Types und Klassen
+            
                 - Ajax.ts - ts-Klasse - verwaltet Server Anfragen
                 - FilterOptions.ts - ts-Klasse - verwaltet Filter für SuchAnfragen
                 - HtmlBuilder.ts - ts-Klasse - baut HTML für jeden Article dynamisch auf
-                - main.ts - main-Methode - 
+                - main.ts - main-Methode - Verwalted SuchAnfragen und User-Interaction der HTML Seite
             
 			webapp
+            
 				web.xml
                 
                 WEB-INF - hidden server files
