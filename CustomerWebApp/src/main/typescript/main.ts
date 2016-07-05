@@ -270,6 +270,13 @@
                             console.log(list);
                             HtmlBuilder.buildArticle(article, list);
                         }
+                        
+                        if (result.articles.length <= 0){
+                            //list.articles();
+                            var tmp = (<Node> document.createTextNode("No results found"));
+                            list.appendChild(tmp);
+                        }
+                        
                     }
                 })
                 .fail(function() {
@@ -338,6 +345,11 @@
                             //var sample = (<Node> document.getElementById("result_sample") );
                             console.log(list);
                             HtmlBuilder.buildArticle(article, list);
+                        }
+                        if (result.articles.length <= 0){
+                            //list.articles();
+                            var tmp = (<Node> document.createTextNode("No results found"));
+                            list.appendChild(tmp);
                         }
                     }
                 })
@@ -429,7 +441,7 @@
             
         }
         
-        function f_cache_toggle(el : any){
+        function f_cache_toggle_old(el : any){
             console.log("------cache----",el);
             var id  = el.getAttribute('data-articleId');
             console.log(id);
