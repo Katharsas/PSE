@@ -8,7 +8,7 @@ import {FilterOptions} from "./FilterOptions";
 declare var contextUrl: string;
 
 export module Ajax {
-    //var contextUrl = "http://localhost:8080/CWA/";
+
 	const urlBase: string = contextUrl + "getArticles/search";
 	const urlBase_metadata: string = contextUrl + "getMetadata";
 	const urlBase_similar: string = contextUrl + "getArticles/similar";
@@ -25,7 +25,6 @@ export module Ajax {
 		params.push("range=" + skip + "-" + limit);
 
 		let url: string = urlBase + "?" + params.join("&");
-		// TODO make xhr request, return jqXHR
 		
 		let settings = {
 			url: url,
@@ -39,7 +38,7 @@ export module Ajax {
     
     export function getMetadata(): JQueryXHR {
 		let url: string = urlBase_metadata ;
-		// TODO make xhr request, return jqXHR 
+		// make xhr request, return jqXHR 
 		
 		let settings = {
 			url: url,

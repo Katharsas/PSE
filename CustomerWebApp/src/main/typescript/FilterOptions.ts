@@ -27,7 +27,7 @@ export class FilterOptions {
 	sources: string[] = [];
     
     fromDate: string = "1980-01-01";
-	toDate: string = "2020-01-01"; // bug , better defaults ? 
+	toDate: string = "2020-01-01";
     
 
 	/**
