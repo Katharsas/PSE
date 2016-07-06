@@ -6,7 +6,6 @@ import static org.elasticsearch.index.query.QueryBuilders.moreLikeThisQuery;
 import java.util.ArrayList;
 import java.util.Map;
 import java.util.Objects;
-import java.lang.IllegalArgumentException;
 
 import org.elasticsearch.action.get.GetResponse;
 import org.elasticsearch.action.search.SearchResponse;
@@ -164,13 +163,13 @@ public class ElasticSearchReader extends ElasticSearchController
 	        }
 			composedQuery.must(innerQuery);
 		}
-//
-//		// articles must have a puDate greater-equals than "from"
-//		QueryBuilder fromQuery = QueryBuilders.rangeQuery(obj_pubDate).gte(filters.from);
-//		composedQuery.must(fromQuery);
-//		// articles must a puDate lesser-equals than "to"
-//		QueryBuilder toQuery = QueryBuilders.rangeQuery(obj_pubDate).gte(filters.to);
-//		composedQuery.must(toQuery);
+
+		// articles must have a puDate greater-equals than "from"
+		QueryBuilder fromQuery = QueryBuilders.rangeQuery(obj_pubDate).gte(filters.from);
+		composedQuery.must(fromQuery);
+		// articles must a puDate lesser-equals than "to"
+		QueryBuilder toQuery = QueryBuilders.rangeQuery(obj_pubDate).gte(filters.to);
+		composedQuery.must(toQuery);
 
 		return this.executeQuery(searchIndex, indexType, 60000, composedQuery, skip, limit);
 	}

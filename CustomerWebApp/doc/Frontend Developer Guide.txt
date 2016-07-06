@@ -1,0 +1,18 @@
+﻿To use typescript (ts), you need to transpile it to javascript (the browser can only read javascript).
+To use sass (scss), you need to transpile it to css (the browser can only read javascript).
+
+Installation:
+- Install Node.js and npm on your system (npm is usually included in Node).
+- Check your installation by executing both "node" and "npm" on your command line.
+- Make sure your node installation isnt outdated: "npm -v" should give you a version higher than 4.0.0 .
+- Navigate command-line to project folder (which holds the package.json file).
+- Execute "npm install", which will install all the needed dependencies into a new folder "./node_modules" (ignored by git).
+
+Build:
+- Navigate command-line to project folder.
+- Execute "npm run gulp-ts" to transpile the ts source code to js (and scss).
+- Execute "npm run gulp-watch" to automatically transpile the ts source code to js whenever you change a source file (and scss).
+
+Files:
+- Top level TS files must be specified in gulpfile.js. Other modules can be importet into these files. The file ending of the compiled file will be .bundle.js. E.g. foo.ts => foo.bundle.js
+- Top level SCSS files must begin with an underscore. Other files can be included in these files. E.g. _foo.scss => foo.css

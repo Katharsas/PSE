@@ -116,7 +116,9 @@ public class SearchController {
 			System.out.println("Controller topicsFilter from user: " + Arrays.toString(topicsParsed));
 			System.out.println("Controller sourcesFilter from user: " + Arrays.toString(sourcesParsed));
 			final OffsetDateTime fromParsed = parseDate(from);
-			final OffsetDateTime toParsed = parseDate(to).plusDays(1);
+			final OffsetDateTime toParsed = to == null ? null : parseDate(to).plusDays(1);
+			System.out.println("Controller fromDate from user: " + fromParsed);
+			System.out.println("Controller toDate from user: " + toParsed);
 			
 			final FilterSettings filters =
 					new FilterSettings(topicsParsed, sourcesParsed, fromParsed, toParsed);

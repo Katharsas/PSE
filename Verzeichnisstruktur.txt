@@ -3,67 +3,47 @@ doc
 RSSCrawler
 
 ESFeeder
-	archive
+	pom.xml - Maven build Konfigurationsdatei
+	notifications - Subscription Ordner wie konfiguriert im RSSCrawler, enthält notification Dateien
 	src
 		main
-			java
+			java - java source code
 		test
-			java
-	doc
-	pom.xml - Maven build Konfigurationsdatei
-    
+			java - java unit tests
+			
 ConsumerWebApp
 	src
+		pom.xml - Maven Konfigurationsdatei
+		doc
+			Frontend Developer Guide - Explains how to build Javascript and CSS
+			
 		main
-			java
-                cwa - java server code (compiled to WEB-INF/classes folder)
-                
-                    controller
-                        - FilterSettings.java - Controller for search queries
-                        - SearchController.java - Manager for search query filters
-                    
-                    service 
-                        - ArticleProvider - @Jan
-                        - ElasticSearchReader - @Jan
-                        - MetaDataProvider - @Jan
-                        //  um ein getrenntes Entwickeln von Server und GUI 
-                            zu ermöglichen gibt es Mocked-Server Responses,
-                            die mit Dummy-Werten gefüllt sind
-                        - MockedArticleProvider - Dummy-Werte für Article-Anfrage
-                        - MockedMetaDataProvider - Dummy-Werte für MetaData-Anfrage
-                    
-                    
-			resources - java server conf (compiled to WEB-INF/classes folder)
-            
-			scss
-            
-                - main.scss - SCSS code für HTML-Layout, wird kompiliert zu CSS
-                
-            typescript - ein "Java Script Dialekt" mit Types und Klassen
-            
-                - Ajax.ts - ts-Klasse - verwaltet Server Anfragen
-                - FilterOptions.ts - ts-Klasse - verwaltet Filter für SuchAnfragen
-                - HtmlBuilder.ts - ts-Klasse - baut HTML für jeden Article dynamisch auf
-                - main.ts - main-Methode - Verwalted SuchAnfragen und User-Interaction der HTML Seite
-            
+			java - java server code (compiled to WEB-INF/classes folder when deplyed as .war) 
+				cwa - 
+					ApplicationConfiguration - Spring config
+					controller - Spring controller classes
+					service - Services used by the controllers
+					
+			resources - java server code resources (copied to WEB-INF/classes folder when deplyed as .war) 
+				logback.xml - logger settings
+			
+			scss - client source (siehe Frontend Developer Guide)
+			
+			typescript - client source (sieheFrontend Developer Guide)
+			
 			webapp
-            
-				web.xml
+			
+				web.xml - servlet configuration
                 
-                WEB-INF - hidden server files
-                    templates
-                        - search.html - HTML Template der Website
-                    
-                    
+				WEB-INF - hidden server files
+					templates - Thymeleaf HTML template source code (will be compiled to HTML dynamically when needed)
+						- search.html - HTML Template der Website
+						
 				resources - public server files
-                    css - kompilierte scss files
-                    js - kompilierte ts files
-                    img - Bilder der Website
-                
+					css - kompilierte scss files
+					js - kompilierte ts files
+					img - Bilder der Website
+					
 		test
-			java
-	doc
-	pom.xml - Maven Konfigurationsdatei
+			java - java server unit tests
 
-    
-    

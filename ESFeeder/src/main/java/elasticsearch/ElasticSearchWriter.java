@@ -214,7 +214,7 @@ public class ElasticSearchWriter extends ElasticSearchController {
 	 */
 	private boolean similairArticleIsAlreadyIndexed( Article article, String indexName ){
 
-		float tooSimilair = 0.8f; //arbitrary value
+		float tooSimilair = 0.9f; //arbitrary value
 		String content = article.getExtractedText();
 
 		//Only the contents are compared
@@ -232,7 +232,7 @@ public class ElasticSearchWriter extends ElasticSearchController {
 
         for (SearchHit hit : searchResponse.getHits().hits()) {
 
-        	System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.getScore());
+//        	System.out.println(hit.getSource().get(obj_title) + " has a score of " + hit.getScore());
 
 			if(hit.getScore() >= tooSimilair){
             	return true;
