@@ -9,6 +9,10 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -69,7 +73,7 @@ public class XmlParserTest {
 
 		// Declaration of Element
 
-		item_elem = generateElement("../Daniel_ESDemo_Crawler/data/germany/de/career/HherweiterKarriere/y2016/m2/d16",
+		item_elem = generateElement("../ESFeeder/data/testfiles/xmltestfiles",
 				"RSS634430312.xml");
 
 		// Test NullPointerException
@@ -107,7 +111,7 @@ public class XmlParserTest {
 			e.printStackTrace();
 		}
 
-		item_elem = generateElement("../Daniel_ESDemo_Crawler/data/US/en/technology/CNNcomTechnology/y2012/m8/d3",
+		item_elem = generateElement("../ESFeeder/data/testfiles/xmltestfiles",
 				"RSS1635295952.xml");
 		try {
 			returnValue = (String) method.invoke(targetClass, item_elem, "pubDate");
@@ -162,7 +166,7 @@ public class XmlParserTest {
 		}
 		method.setAccessible(true);
 		
-		filePath = "../Daniel_ESDemo_Crawler/data/germany/de/career/HherweiterKarriere/y2016/m2/d16";
+		filePath = "../ESFeeder/data/testfiles/xmltestfiles";
 		file = "RSS634430312.xml";
 		inputFile = new File(filePath + "/" + file);
 		dbFactory = DocumentBuilderFactory.newInstance();
@@ -179,7 +183,7 @@ public class XmlParserTest {
 			
 			returnArticle = (Article) method.invoke(xmlParser, path, doc);
 			System.out.println(returnArticle.getPubDate());
-			assertEquals("Implementation incomplete", "2016 02 16 19:08:35", returnArticle.getPubDate());
+			assertEquals("Implementation incomplete", "2016-02-16T19:08:35+01:00", returnArticle.getPubDate());
 		} catch (Exception e){
 			
 		}
@@ -215,13 +219,40 @@ public class XmlParserTest {
 
 	@Test
 	public void testParseFileList() {
+		List<Article> listArticle = new ArrayList<Article>();
+		Path path;
+		Document doc = null;
+		File inputFile;
+		DocumentBuilderFactory dbFactory;
+		DocumentBuilder dBuilder;
+		String filePath, file;
+		Map<Path, Document> mapDocPath = new HashMap<Path, Document>();
+		
+		filePath = "../ESFeeder/data/testfiles/xmltestfiles";
+		file = "RSS634430312.xml";
+		inputFile = new File(filePath + "/" + file);
+		dbFactory = DocumentBuilderFactory.newInstance();
+		try {
+			dBuilder = dbFactory.newDocumentBuilder();
+			doc = dBuilder.parse(inputFile);
+		} catch (ParserConfigurationException | SAXException | IOException e) {
+			e.printStackTrace();
+		}
+		doc.getDocumentElement().normalize();
+		path = inputFile.toPath();
+		
+		mapDocPath.put(path, doc);
+		
+		listArticle = xmlParser.parseFileList(mapDocPath);
+		System.out.println(listArticle.size());
+		assertEquals("Implementation incorrect","2016-02-16T19:08:35+01:00", listArticle.get(0).getPubDate());
+		
 		try {
 			xmlParser.parseFileList(null);
 			fail("Should throw Nullpointer");
 		} catch (NullPointerException e) {
 
 		}
-		fail("Not yet implemented");
 	}
 
 	private Element generateElement(String path, String file) {
