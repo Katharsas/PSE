@@ -112,7 +112,7 @@
             //a.href = "#similar_id_" + article.articleId_str; //1123243
             a.setAttribute('data-articleId', article.articleId_str);
             //a.onclick = process_click_or_enter;
-            addText(a, "Similar");
+            addText(a, "Similar2");
             similar_button.appendChild(a);
 
             container_buttons.appendChild(similar_button);
